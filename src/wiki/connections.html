@@ -1,0 +1,61 @@
+title: Connections
+seo_title: AI connections: every API and MCP server Chris Abraham uses
+description: Every service Chris Abraham's AI tools can reach, through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, GitHub, and more.
+updated: 2026-10-16
+categories: Reference, Infrastructure
+info.Protocol: [[Model Context Protocol]] plus plain REST APIs
+info.Hubs: [[Blackbox]], Claude Code, OpenAI Codex
+info.Server: [[Pinebox]]
+info.Rule: Anything that sends or changes something waits for a yes
+---
+<p>This is the running inventory of every service my AI tools can reach, and through what. Some connections are MCP servers, the [[Model Context Protocol]] connectors that let an AI client call a service's tools directly. Others are ordinary REST APIs with a key or an OAuth token kept in a file on [[Pinebox]]. Secrets never go into chat or git, and anything that sends, submits, or spends waits for my yes.</p>
+<h2>Blackbox</h2>
+<div class="table-scroll"><table class="wikitable">
+<tr><th>Service</th><th>How</th><th>What it does</th></tr>
+<tr><td>Todoist</td><td>REST API, token</td><td>The official task list: read, add, complete, reschedule, organize, with a permanent local log</td></tr>
+<tr><td>Google Calendar</td><td>Google API, Blackbox's own OAuth (Internal app in the Blackbox Cloud project)</td><td>Meetings and open blocks in the morning and night briefs</td></tr>
+<tr><td>Gmail</td><td>Google API, same OAuth</td><td>Reads unread mail and finds conversations owed a reply; sending goes through Alpine, only when I press Ctrl+X</td></tr>
+<tr><td>Upwork</td><td>Upwork's official MCP server, OAuth</td><td>New jobs, triage, proposals and their status, invitations, messages owed; read-only, never submits</td></tr>
+<tr><td>Anthropic</td><td>Claude API</td><td>One model per job, with fallbacks, wired but not yet the active backend</td></tr>
+<tr><td>OpenAI</td><td>API</td><td>The current backend, GPT-5.6 Terra, for briefs, chat, and pitches</td></tr>
+<tr><td>DigitalOcean</td><td>GenAI agent endpoint</td><td>Fallback model</td></tr>
+<tr><td>GitHub</td><td>git over HTTPS</td><td>The nightly encrypted backup goes to a private repository</td></tr>
+</table></div>
+<h2>Pinebox scripts</h2>
+<div class="table-scroll"><table class="wikitable">
+<tr><th>Service</th><th>How</th><th>What it does</th></tr>
+<tr><td>Google Places API (New)</td><td>API key, restricted to Places, in the Blackbox Cloud project</td><td>Public Google Business Profile data for local SEO checks and competitor pulls</td></tr>
+<tr><td>IndexNow</td><td>Key file plus a GitHub Action</td><td>Tells Bing and the other IndexNow engines about new pages on all five sites</td></tr>
+<tr><td>GitHub</td><td><code>gh</code> CLI, OAuth</td><td>Repositories, GitHub Pages settings, Actions, and domain checks for every site</td></tr>
+<tr><td>Anthropic and OpenAI</td><td>API keys</td><td>The AI visibility tracker, run only when I start it, because every run costs money</td></tr>
+</table></div>
+<h2>Claude Code</h2>
+<p>Claude Code on Pinebox has these connectors attached through my Claude account, plus everything on the machine itself:</p>
+<div class="table-scroll"><table class="wikitable">
+<tr><th>Connected</th><th>Notes</th></tr>
+<tr><td>Gmail, Google Calendar, Google Drive</td><td>Search, read, draft, and send mail; read and create events; read and create files</td></tr>
+<tr><td>Upwork</td><td>The same official MCP server Blackbox uses</td></tr>
+<tr><td>Todoist</td><td>Tasks, projects, comments, reminders</td></tr>
+<tr><td>Slack, Dropbox, Calendly</td><td>Messages and canvases, files and share links, scheduling</td></tr>
+<tr><td>Semrush</td><td>Keyword, backlink, and domain reports</td></tr>
+<tr><td>Wix</td><td>Site building and management</td></tr>
+<tr><td>Claude Docs and Artifacts</td><td>Shared documents and published pages</td></tr>
+<tr><td>Uber</td><td>Ride estimates</td></tr>
+<tr><td>Screaming Frog</td><td>Local MCP server for crawls, when the SEO Spider is running</td></tr>
+<tr><td>Signed out for now</td><td>Microsoft 365, PayPal, Spotify, Strava, Zoom: available, waiting for a sign-in</td></tr>
+</table></div>
+<h2>OpenAI Codex, ChatGPT, and Claude.ai</h2>
+<p>Codex on Pinebox has the Screaming Frog MCP server and a Gmail connector. ChatGPT and Claude.ai carry their own connectors on my accounts; they aren't inventoried here yet.</p>
+<h2>On the way</h2>
+<ul>
+<li><b>Basecamp.</b> I am moving from Basecamp 2 to Basecamp 5, which comes with a refreshed API, a command-line tool, and Skills for AI agents. One report says the official MCP server ships inside that CLI and runs locally.</li>
+</ul>
+<h2>Worth adding</h2>
+<ul>
+<li><b>Google Analytics.</b> Google publishes an official MCP server for Analytics. It is read-only and labeled experimental, and it would let any of these clients pull GA4 reports directly.</li>
+<li><b>Google's managed MCP servers.</b> As of April 2026 Google listed more than 50, including Gmail, Drive, Calendar, People, Chat, BigQuery, and Maps Grounding Lite for place and routing data.</li>
+<li><b>Google's Developer Knowledge MCP server</b>, which answers from Google's official documentation.</li>
+<li><b>Search Console.</b> There is a full API but no official MCP server that I could find, so it would be a Pinebox script like the Places one.</li>
+</ul>
+<h2>See also</h2>
+<ul><li>[[Model Context Protocol]]</li><li>[[Blackbox]]</li><li>[[Pinebox]]</li></ul>
