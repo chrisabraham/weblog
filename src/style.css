@@ -102,6 +102,14 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
 }
 .theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
 
+.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
+.topnav a.hire-tab, .topnav a.hire-tab:visited {
+  margin: 0 0 -9px auto; padding: 6px 14px 8px; border: 1px solid var(--rule); border-bottom: 0;
+  background: var(--paper); color: var(--orange); font-weight: bold; text-transform: none;
+  border-radius: 4px 4px 0 0; position: relative;
+}
+.topnav a.hire-tab:hover, .topnav a.hire-tab:focus-visible { background: var(--orange); color: var(--paper); }
+
 /* Columns */
 #cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
 #main { padding: 8px 28px 32px; min-width: 0; border-right: 1px dotted var(--rule); }
@@ -199,6 +207,7 @@ h1.post-title { font-size: 1.8rem; }
   #banner { padding: 16px 16px 0; }
   .site-title { font-size: 1.6rem; padding-right: 56px; }
   .topnav a { display: inline-block; margin: 2px 12px 4px 0; padding: 4px 0; }
+  .topnav a.hire-tab, .topnav a.hire-tab:visited { position: absolute; top: 12px; right: 66px; margin: 0; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 0; font-size: 0.7rem; }
   #cols { grid-template-columns: 1fr; }
   #main { padding: 4px 16px 24px; border-right: 0; }
   #sidebar { padding: 16px; border-top: 4px double var(--rule); font-size: 0.8rem; }

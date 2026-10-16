@@ -370,6 +370,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   <nav class="topnav" aria-label="Main">
     <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
     <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
   </nav>
 </header>
 <div id="cols">
@@ -726,6 +727,7 @@ def main():
     for f in sorted((SRC / "pages").glob("*.html")):
         m = parse(f)
         check_meta(f.name, m)
+        m["body"] = wikilinks(m["body"], wiki, set())
         path = f"/{f.stem}.html"
         schema = {"@context": "https://schema.org", "@type": m.get("schema", "WebPage"), "name": m["title"],
                   "url": SITE_URL + path, "description": m["description"],
