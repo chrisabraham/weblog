@@ -1,0 +1,76 @@
+title: MCP servers
+seo_title: MCP server cheat sheet: 59 official endpoints, tested live
+description: A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.
+updated: 2026-10-16
+categories: Reference, MCP
+infobox_title: MCP server cheat sheet
+info.Servers listed: 59
+info.Tested: October 16, 2026
+info.Method: A live MCP initialize request to each address
+info.Protocol: [[Model Context Protocol]]
+---
+<p>This is a cheat sheet of official remote [[Model Context Protocol|MCP]] servers: the address you paste into Claude, ChatGPT, Codex, Cursor, or any other MCP client to connect that service. Every address below was tested live on October 16, 2026, by sending it the same opening request an AI client sends. A server that wants you to sign in answers with an OAuth challenge; an open one answers with its name and tools. Anything that didn't answer correctly was left off. Most of these sign-ins are free; the service's own plan, fees, and limits still apply.</p>
+<p>Addresses change. When in doubt, check the vendor's own documentation, and remember that connecting a server gives an AI the same powers you have in that account. My own setup is on [[Connections]].</p>
+<h2>How to add a server</h2>
+<p><b>Claude and Claude.ai:</b> open the Connectors settings, add a custom connector, paste the address, and sign in. <b>ChatGPT:</b> turn on developer mode in settings, add the address as a connector, and approve the sign-in. <b>Claude Code:</b> run <code>claude mcp add --transport http NAME ADDRESS</code>. <b>OpenAI Codex:</b> add two lines to <code>~/.codex/config.toml</code>:</p>
+<pre>[mcp_servers.basecamp]
+url = "https://mcp.basecamp.com/mcp"</pre>
+<h2>Remote servers, by category</h2>
+<h3>Work and hiring</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.upwork.com/">Upwork</a></td><td><code>https://mcp.upwork.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Projects</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://asana.com/">Asana</a></td><td><code>https://mcp.asana.com/v2/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.atlassian.com/">Atlassian (Jira, Confluence)</a></td><td><code>https://mcp.atlassian.com/v1/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://basecamp.com/">Basecamp</a></td><td><code>https://mcp.basecamp.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://clickup.com/">ClickUp</a></td><td><code>https://mcp.clickup.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://linear.app/">Linear</a></td><td><code>https://mcp.linear.app/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://monday.com/">Monday.com</a></td><td><code>https://mcp.monday.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Tasks</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://todoist.com/">Todoist</a></td><td><code>https://ai.todoist.net/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Docs</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.notion.so/">Notion</a></td><td><code>https://mcp.notion.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Files</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.box.com/">Box</a></td><td><code>https://mcp.box.com</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.dropbox.com/">Dropbox</a></td><td><code>https://mcp.dropbox.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://workspace.google.com/">Google Drive</a></td><td><code>https://drivemcp.googleapis.com/mcp/v1</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3>Chat</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://slack.com/">Slack</a></td><td><code>https://mcp.slack.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Mail</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://workspace.google.com/">Gmail (Google)</a></td><td><code>https://gmailmcp.googleapis.com/mcp/v1</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3>Calendar</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://workspace.google.com/">Google Calendar</a></td><td><code>https://calendarmcp.googleapis.com/mcp/v1</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3>Scheduling</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://calendly.com/">Calendly</a></td><td><code>https://mcp.calendly.com</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Meetings</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://fireflies.ai/">Fireflies</a></td><td><code>https://api.fireflies.ai/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.granola.ai/">Granola</a></td><td><code>https://mcp.granola.ai/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>CRM</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.hubspot.com/">HubSpot</a></td><td><code>https://mcp.hubspot.com/</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Support</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.intercom.com/">Intercom</a></td><td><code>https://mcp.intercom.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Marketing</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.klaviyo.com/">Klaviyo</a></td><td><code>https://mcp.klaviyo.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>SEO</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://ahrefs.com/">Ahrefs</a></td><td><code>https://api.ahrefs.com/mcp/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://dataforseo.com/">DataForSEO</a></td><td><code>https://mcp.dataforseo.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.semrush.com/">Semrush</a></td><td><code>https://mcp.semrush.com/v1/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.similarweb.com/">Similarweb</a></td><td><code>https://mcp.similarweb.com</code></td><td>OAuth or API key</td></tr></table></div>
+<h3>Search</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://exa.ai/">Exa</a></td><td><code>https://mcp.exa.ai/mcp</code></td><td>None</td></tr></table></div>
+<h3>Websites</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://webflow.com/">Webflow</a></td><td><code>https://mcp.webflow.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.wix.com/">Wix</a></td><td><code>https://mcp.wix.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://wordpress.com/">WordPress.com</a></td><td><code>https://public-api.wordpress.com/wpcom/v2/mcp/v1</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Payments</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.paypal.com/">PayPal</a></td><td><code>https://mcp.paypal.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://squareup.com/">Square</a></td><td><code>https://mcp.squareup.com/sse</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://stripe.com/">Stripe</a></td><td><code>https://mcp.stripe.com</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Design</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.canva.com/">Canva</a></td><td><code>https://mcp.canva.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.figma.com/">Figma</a></td><td><code>https://mcp.figma.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://miro.com/">Miro</a></td><td><code>https://mcp.miro.com/</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Code</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://github.com/">GitHub</a></td><td><code>https://api.githubcopilot.com/mcp/</code></td><td>OAuth or personal token</td></tr></table></div>
+<h3>Developer tools</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.postman.com/">Postman</a></td><td><code>https://mcp.postman.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://sentry.io/">Sentry</a></td><td><code>https://mcp.sentry.dev/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Developer docs</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://aws.amazon.com/">AWS Knowledge</a></td><td><code>https://knowledge-mcp.global.api.aws</code></td><td>None</td></tr><tr><td><a href="https://context7.com/">Context7</a></td><td><code>https://mcp.context7.com/mcp</code></td><td>None</td></tr><tr><td><a href="https://deepwiki.com/">DeepWiki</a></td><td><code>https://mcp.deepwiki.com/mcp</code></td><td>None</td></tr><tr><td><a href="https://developers.google.com/knowledge">Google Developer Knowledge</a></td><td><code>https://developerknowledge.googleapis.com/mcp</code></td><td>Google Cloud project and sign-in</td></tr><tr><td><a href="https://learn.microsoft.com/">Microsoft Learn</a></td><td><code>https://learn.microsoft.com/api/mcp</code></td><td>None</td></tr></table></div>
+<h3>Hosting</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Browser Rendering</a></td><td><code>https://browser.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Docs</a></td><td><code>https://docs.mcp.cloudflare.com/mcp</code></td><td>None</td></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Observability</a></td><td><code>https://observability.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Workers Bindings</a></td><td><code>https://bindings.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.netlify.com/">Netlify</a></td><td><code>https://netlify-mcp.netlify.app/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://vercel.com/">Vercel</a></td><td><code>https://mcp.vercel.com</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Databases</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://neon.tech/">Neon</a></td><td><code>https://mcp.neon.tech/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://supabase.com/">Supabase</a></td><td><code>https://mcp.supabase.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Data</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://airtable.com/">Airtable</a></td><td><code>https://mcp.airtable.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://apify.com/">Apify</a></td><td><code>https://mcp.apify.com</code></td><td>OAuth or API key</td></tr><tr><td><a href="https://cloud.google.com/bigquery">BigQuery</a></td><td><code>https://bigquery.googleapis.com/mcp</code></td><td>Google Cloud project and sign-in</td></tr><tr><td><a href="https://radar.cloudflare.com/">Cloudflare Radar</a></td><td><code>https://radar.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3>Maps</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://mapsplatform.google.com/">Google Maps Grounding Lite</a></td><td><code>https://mapstools.googleapis.com/mcp</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3>AI</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://huggingface.co/">Hugging Face</a></td><td><code>https://huggingface.co/mcp</code></td><td>None (token optional)</td></tr></table></div>
+<h3>Automation</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.make.com/">Make</a></td><td><code>https://mcp.make.com</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://zapier.com/">Zapier</a></td><td><code>https://mcp.zapier.com/api/mcp/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h2>Local servers worth knowing</h2>
+<p>Some official servers run on your own machine instead of at a web address. Google's <a href="https://github.com/googleanalytics/google-analytics-mcp">Google Analytics MCP server</a> is read-only and labeled experimental, and runs through Python. Screaming Frog's SEO Spider can serve MCP to clients on the same computer. Basecamp's command-line tool can serve MCP locally too, alongside its hosted connector above.</p>
+<h2>What didn't make the list</h2>
+<p>Addresses I tried for Plaid, Jotform, Shopify's developer docs, Strava, Spotify, Uber, Zoom, Mailchimp, and Microsoft 365 didn't answer as MCP servers today. Some of those services offer connectors inside Claude or ChatGPT through other routes, and some have servers at addresses I didn't find. They will be added when they answer.</p>

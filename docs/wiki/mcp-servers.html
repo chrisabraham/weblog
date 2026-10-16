@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem("weblog-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<title>MCP server cheat sheet: 59 official endpoints, tested live</title>
+<meta name="description" content="A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Chris Abraham">
+<meta name="generator" content="build.py, written with AI in Claude Code">
+<meta name="theme-color" content="#ffffff" id="theme-color">
+<link rel="canonical" href="https://chrisabraham.net/wiki/mcp-servers.html">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham (RSS)" href="https://chrisabraham.net/rss.xml">
+<link rel="blogroll" type="text/x-opml" href="https://chrisabraham.net/blogroll.opml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="Chris Abraham">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MCP servers">
+<meta property="og:description" content="A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.">
+<meta property="og:url" content="https://chrisabraham.net/wiki/mcp-servers.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="MCP servers">
+<meta name="twitter:description" content="A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.">
+<meta property="og:image" content="https://chrisabraham.net/cards/wiki-mcp-servers.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chris Abraham: MCP servers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chrisabraham.net/cards/wiki-mcp-servers.png">
+<meta name="twitter:image:alt" content="Chris Abraham: MCP servers">
+<link rel="me" href="https://github.com/chrisabraham">
+<link rel="me" href="https://www.upwork.com/freelancers/chrisjabraham">
+<link rel="me" href="https://www.linkedin.com/in/chrisabraham">
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="me" href="https://www.reddit.com/user/chrisabraham/">
+<link rel="me" href="https://muckrack.com/chrisabraham">
+<link rel="author" href="https://chrisabraham.net/humans.txt">
+<style>/* A 2003 weblog template, rebuilt to read well on a phone in 2026: a
+   banner, a post column, a boxed sidebar with a blogroll, Verdana throughout, underlined blue links that turn
+   purple once visited. The dark button in the banner works like Hill
+   Mole's; with no saved choice it follows the system setting. */
+
+:root {
+  --page: #e9ecf2;
+  --paper: #ffffff;
+  --ink: #1b1b1b;
+  --muted: #474d58;
+  --link: #1d3d8f;
+  --visited: #6a2c8f;
+  --banner: #ffffff;
+  --banner-ink: #1b1b1b;
+  --banner-sub: #474d58;
+  --orange: #c75000;
+  --gerris-blue: #16729e;
+  --redlink: #b00000;
+  --box: #f4f6fa;
+  --box-head: #dfe5f1;
+  --rule: #c9d0dc;
+  --quote: #f6f3e6;
+  --date: #6b4500;
+  --sans: Verdana, "DejaVu Sans", Geneva, Tahoma, sans-serif;
+  --mono: "Courier New", "DejaVu Sans Mono", monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --page: #0e1014;
+  --paper: #16181d;
+  --ink: #e6e6e6;
+  --muted: #9aa3b2;
+  --link: #8fb0ff;
+  --visited: #d0a2f0;
+  --banner: #16181d;
+  --banner-ink: #e6e6e6;
+  --banner-sub: #9aa3b2;
+  --orange: #ff8a3d;
+  --gerris-blue: #5cb6e3;
+  --redlink: #ff8f8f;
+  --box: #1c1f26;
+  --box-head: #262b36;
+  --rule: #343a46;
+  --quote: #24221a;
+  --date: #e0b25c;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+/* No one-word last lines: browsers that support it rebalance the wrap. */
+p, li, dd, blockquote, .post-footer { text-wrap: pretty; }
+h1, h2, h3, .tagline, .site-title { text-wrap: balance; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: var(--visited); }
+a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-decoration: none; }
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 8px; top: 8px; background: var(--paper); padding: 6px; z-index: 2; }
+
+#wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  min-height: 100vh;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  background: var(--banner);
+  color: var(--banner-ink);
+  padding: 22px 24px 0;
+  border-bottom: 4px double var(--rule);
+}
+.site-title { margin: 0; font-family: var(--sans); font-size: 2rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
+.site-title a, .site-title a:visited { color: var(--orange); text-decoration: none; }
+.site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
+.tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
+.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
+.topnav a, .topnav a:visited { display: inline-block; padding: 4px 0; color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+.topnav a:hover { background: var(--link); color: var(--paper); }
+
+.theme-toggle {
+  position: absolute; top: 12px; right: 12px;
+  font: 0.7rem var(--sans); text-transform: lowercase;
+  color: var(--banner-ink); background: transparent;
+  border: 1px solid var(--rule); padding: 3px 9px; cursor: pointer;
+}
+.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
+
+.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
+.topnav a.hire-tab, .topnav a.hire-tab:visited {
+  margin: 0 0 -9px auto; padding: 6px 14px 8px; border: 1px solid var(--rule); border-bottom: 0;
+  background: var(--paper); color: var(--orange); font-weight: bold; text-transform: none;
+  border-radius: 4px 4px 0 0; position: relative;
+}
+.topnav a.hire-tab:hover, .topnav a.hire-tab:focus-visible { background: var(--orange); color: var(--paper); }
+
+/* Columns */
+#cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
+#main { padding: 8px 28px 32px; min-width: 0; border-right: 1px dotted var(--rule); }
+#sidebar { padding: 18px 16px 24px; font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; }
+
+/* Posts */
+.date-header {
+  margin: 26px 0 6px; padding-bottom: 2px;
+  font: bold 0.74rem var(--sans); color: var(--date);
+  text-transform: uppercase; letter-spacing: 1px;
+  border-bottom: 1px dotted var(--rule);
+}
+.post { margin: 0 0 30px; }
+.post-title { margin: 10px 0 8px; font-family: var(--sans); font-size: 1.45rem; line-height: 1.25; }
+h1.post-title { font-size: 1.8rem; }
+.post-title a, .post-title a:visited { color: var(--ink); text-decoration: none; }
+.post-title a:hover { background: none; color: var(--link); text-decoration: underline; }
+.post-body p { margin: 0 0 1em; }
+.post-body h2 { font-size: 1.2rem; margin: 1.4em 0 0.4em; }
+.post-body blockquote, .prompt blockquote {
+  margin: 1em 0; padding: 10px 16px;
+  background: var(--quote); border-left: 4px solid var(--rule);
+}
+.post-body code, .post-body pre { font-family: var(--mono); font-size: 0.85em; }
+.post-body pre { background: var(--box); border: 1px solid var(--rule); padding: 12px; overflow-x: auto; }
+.post-body img { max-width: 100%; height: auto; }
+.prompt { margin: 12px 0; font-family: var(--sans); font-size: 0.78rem; }
+.prompt summary { cursor: pointer; color: var(--muted); }
+.prompt blockquote { font-family: var(--mono); font-size: 0.82rem; white-space: pre-wrap; }
+.post-footer {
+  margin: 10px 0 0; padding-top: 6px;
+  font: 0.72rem var(--sans); color: var(--muted);
+  border-top: 1px dashed var(--rule);
+}
+.prevnext a { display: inline-block; padding: 4px 0; }
+.prevnext { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 0.75rem var(--sans); margin: 20px 0; }
+.older { font: 0.8rem var(--sans); }
+.page-title { font-size: 1.8rem; margin: 18px 0 12px; }
+.lede { font-style: italic; color: var(--muted); }
+.archive-list { list-style: none; padding: 0; }
+.archive-list li { margin: 4px 0; }
+.archive-list time { display: inline-block; min-width: 4.2em; font: 0.75rem var(--sans); color: var(--muted); }
+
+/* Projects */
+.project { border-bottom: 1px dotted var(--rule); padding-bottom: 6px; }
+.project h2 { font-size: 1.25rem; margin: 18px 0 2px; }
+.project-meta { font: 0.72rem var(--sans); color: var(--muted); margin: 0 0 6px; }
+.dot { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border: 1px solid var(--muted); vertical-align: 1px; }
+.dot-active, .dot-live { background: #2f9e44; }
+.dot-live-lab { background: #2f9e44; box-shadow: inset 0 0 0 2px #c75000; }
+.dot-planned { background: #f0c419; }
+.dot-paused { background: #999; }
+
+/* Sidebar */
+.box { background: var(--box); border: 1px solid var(--rule); margin: 0 0 14px; }
+.box h2 {
+  margin: 0; padding: 4px 8px;
+  background: var(--box-head); border-bottom: 1px solid var(--rule);
+  font: bold 0.72rem var(--sans); text-transform: uppercase; letter-spacing: 1px;
+}
+.box p, .box ul { margin: 8px; }
+.box ul { padding-left: 16px; }
+.box li { margin: 0; padding: 3px 0; }
+.box ul.projects { list-style: none; padding-left: 0; }
+.box small { color: var(--muted); }
+.opml { text-align: right; }
+
+/* 88x31 buttons, drawn in CSS so they stay sharp and cost no requests */
+.buttons { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; background: transparent; border: 0; }
+.badge, .badge:visited {
+  display: inline-flex; width: 88px; height: 31px; overflow: hidden;
+  border: 1px solid #000; font: bold 10px/29px var(--sans);
+  text-decoration: none; color: #000; background: #ddd;
+}
+.badge b { display: inline-block; padding: 0 4px; color: #fff; background: #333; margin-right: 4px; }
+.b-rss { background: #ff9a33; } .b-rss b { background: #a34600; }
+.b-claude { background: #f2d4c2; } .b-claude b { background: #9e4524; }
+.b-gh { background: #e0e0e0; } .b-gh b { background: #24292f; }
+.b-lynx { background: #c8f7c5; } .b-lynx b { background: #1e7a1e; }
+.b-html { background: #cfe0ff; } .b-html b { background: #1d3d8f; }
+.b-opml { background: #fff3a8; } .b-opml b { background: #6b5b00; }
+.b-wcag { background: #e3d7ff; } .b-wcag b { background: #4b2a99; }
+.b-lh { background: #d4f5e9; } .b-lh b { background: #0b6b4a; }
+.badge:hover { outline: 2px solid var(--link); background-color: inherit; }
+
+/* Footer */
+#footer { padding: 14px 24px 24px; border-top: 4px double var(--rule); font: 0.7rem var(--sans); color: var(--muted); }
+#footer p { margin: 4px 0 8px; }
+.footlinks { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.footlinks a { display: inline-block; padding: 4px 0; white-space: nowrap; }
+
+/* Phones: one column, sidebar after the posts, nothing sideways */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  #wrap { border: 0; }
+  #banner { padding: 16px 16px 0; }
+  .site-title { font-size: 1.6rem; padding-right: 56px; }
+  .topnav a { display: inline-block; margin: 2px 12px 4px 0; padding: 4px 0; }
+  .topnav a.hire-tab, .topnav a.hire-tab:visited { position: absolute; top: 12px; right: 66px; margin: 0; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 0; font-size: 0.7rem; }
+  #cols { grid-template-columns: 1fr; }
+  #main { padding: 4px 16px 24px; border-right: 0; }
+  #sidebar { padding: 16px; border-top: 4px double var(--rule); font-size: 0.8rem; }
+  .post-title { font-size: 1.3rem; }
+  h1.post-title, .page-title { font-size: 1.5rem; }
+  #footer { padding: 14px 16px 24px; }
+}
+
+@media print {
+  #sidebar, .theme-toggle, .topnav, .prevnext { display: none; }
+  #cols { display: block; }
+}
+
+/* Blogroll groups */
+.blogroll h3 { margin: 10px 8px 0; font: bold 0.68rem var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.blogroll h3:first-of-type { margin-top: 8px; }
+.blogroll ul { margin-top: 4px; }
+
+/* Wiki: MediaWiki's furniture (tabs, infobox, contents box, red links) in this site's type */
+.wiki-tabs { display: flex; flex-wrap: wrap; gap: 2px; margin: 18px 0 0; border-bottom: 1px solid var(--rule); font: 0.78rem var(--sans); }
+.wiki-tabs a, .wiki-tabs span { display: inline-block; padding: 6px 12px; border: 1px solid var(--rule); border-bottom: 0; background: var(--box); text-decoration: none; }
+.wiki-tabs .sel { background: var(--paper); color: var(--ink); font-weight: bold; position: relative; top: 1px; }
+.wiki-title { font-size: 1.8rem; margin: 14px 0 2px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); font-weight: normal; }
+.wiki-from { margin: 4px 0 14px; font: 0.78rem var(--sans); color: var(--muted); }
+.wiki-body h2 { font-size: 1.3rem; font-weight: normal; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin: 1.6em 0 0.5em; }
+.wiki-body h3 { font-size: 1.05rem; margin: 1.3em 0 0.4em; }
+.wiki-body ul { padding-left: 1.4em; }
+.wiki-body li { margin: 0.25em 0; }
+.wikilink.new, .wikilink.new:visited { color: var(--redlink); }
+.infobox { float: right; clear: right; width: 290px; max-width: 100%; margin: 0 0 16px 18px; border: 1px solid var(--rule); background: var(--box); border-collapse: collapse; font: 0.78rem/1.45 var(--sans); }
+.infobox caption { font-weight: bold; font-size: 0.95rem; padding: 6px; caption-side: top; }
+.infobox th, .infobox td { text-align: left; vertical-align: top; padding: 5px 8px; border-top: 1px solid var(--rule); }
+.infobox th { width: 38%; }
+.toc { display: inline-block; min-width: 14em; margin: 4px 0 16px; padding: 8px 14px 6px; border: 1px solid var(--rule); background: var(--box); font: 0.8rem/1.5 var(--sans); }
+.toc-title { margin: 0 0 4px; font-weight: bold; text-align: center; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0; }
+.toc li a { display: inline-block; padding: 4px 0; text-decoration: none; }
+.toc .toctext { text-decoration: underline; text-underline-offset: 2px; }
+.toc a:hover .toctext { text-decoration: none; }
+.toc .toc-3 { padding-left: 1.4em; }
+.tocnum { color: var(--ink); margin-right: 6px; }
+.wiki-cats { clear: both; margin: 24px 0 8px; padding: 6px 10px; border: 1px solid var(--rule); background: var(--box); font: 0.78rem var(--sans); }
+.wiki-backlinks h2 { font-size: 1rem; margin: 18px 0 4px; }
+.wiki-backlinks ul { font-size: 0.9rem; }
+.wiki-edited { font: 0.75rem var(--sans); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.wiki pre { white-space: pre; }
+@media (max-width: 760px) {
+  .infobox { float: none; width: 100%; margin: 0 0 16px; }
+  .toc { display: block; }
+}
+
+.disclosure { font: 0.78rem var(--sans); color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px; }
+
+/* Wiki tables */
+.wikitable { border-collapse: collapse; width: 100%; margin: 0.6em 0 1.2em; font: 0.8rem/1.5 var(--sans); }
+.wikitable th, .wikitable td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+.wikitable th { background: var(--box-head); }
+.wikitable tr:nth-child(even) td { background: var(--box); }
+.table-scroll { overflow-x: auto; }
+.editor-note { border: 1px solid var(--rule); border-left: 4px solid var(--orange); background: var(--box); padding: 4px 18px 8px; margin: 1.6em 0; }
+.editor-note h2 { font-size: 1.1rem; margin-top: 0.9em; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"MCP servers","description":"A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.","url":"https://chrisabraham.net/wiki/mcp-servers.html","dateModified":"2026-10-16","author":{"@id":"https://chrisabraham.net/about.html#chris"},"isPartOf":{"@type":"CollectionPage","name":"Chris Abraham wiki","url":"https://chrisabraham.net/wiki/"},"about":["Reference","MCP"],"image":{"@type":"ImageObject","url":"https://chrisabraham.net/cards/wiki-mcp-servers.png","width":1200,"height":630}}</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var off = {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
+  // EU, EEA, UK, and Swiss visitors get no analytics cookies (cookieless pings only).
+  gtag('consent', 'default', Object.assign({region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']}, off));
+  // Everyone else gets first-party analytics cookies and nothing for ads, unless the browser
+  // sends Global Privacy Control or Do Not Track, which turns analytics cookies off too.
+  var optout = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1';
+  gtag('consent', 'default', optout ? off : {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-KWXM1ZX7WQ', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  (function () {
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KWXM1ZX7WQ';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the posts</a>
+<div id="wrap">
+<header id="banner">
+  <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+  <p class="site-title"><a href="/" rel="home">Chris Abraham</a></p>
+  <p class="tagline">Notes from building things with AI, written by AI from my prompts.</p>
+  <nav class="topnav" aria-label="Main">
+    <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </nav>
+</header>
+<div id="cols">
+<main id="main">
+<div class="wiki">
+<nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Article</span><a href="https://github.com/chrisabraham/weblog/blob/main/src/wiki/mcp-servers.html">View source</a><a href="https://github.com/chrisabraham/weblog/commits/main/src/wiki/mcp-servers.html">History</a></nav>
+<h1 class="wiki-title">MCP servers</h1>
+<p class="wiki-from">From the <a href="/wiki/">Chris Abraham wiki</a></p>
+<div class="wiki-body post-body"><table class="infobox"><caption>MCP server cheat sheet</caption><tr><th scope="row">Servers listed</th><td>59</td></tr><tr><th scope="row">Tested</th><td>October 16, 2026</td></tr><tr><th scope="row">Method</th><td>A live MCP initialize request to each address</td></tr><tr><th scope="row">Protocol</th><td><a href="/wiki/model-context-protocol.html" class="wikilink">Model Context Protocol</a></td></tr></table><nav class="toc" aria-label="Contents"><p class="toc-title">Contents</p><ol><li class="toc-2"><a href="#how-to-add-a-server"><span class="tocnum">1</span><span class="toctext">How to add a server</span></a></li><li class="toc-2"><a href="#remote-servers-by-category"><span class="tocnum">2</span><span class="toctext">Remote servers, by category</span></a></li><li class="toc-3"><a href="#work-and-hiring"><span class="tocnum">2.1</span><span class="toctext">Work and hiring</span></a></li><li class="toc-3"><a href="#projects"><span class="tocnum">2.2</span><span class="toctext">Projects</span></a></li><li class="toc-3"><a href="#tasks"><span class="tocnum">2.3</span><span class="toctext">Tasks</span></a></li><li class="toc-3"><a href="#docs"><span class="tocnum">2.4</span><span class="toctext">Docs</span></a></li><li class="toc-3"><a href="#files"><span class="tocnum">2.5</span><span class="toctext">Files</span></a></li><li class="toc-3"><a href="#chat"><span class="tocnum">2.6</span><span class="toctext">Chat</span></a></li><li class="toc-3"><a href="#mail"><span class="tocnum">2.7</span><span class="toctext">Mail</span></a></li><li class="toc-3"><a href="#calendar"><span class="tocnum">2.8</span><span class="toctext">Calendar</span></a></li><li class="toc-3"><a href="#scheduling"><span class="tocnum">2.9</span><span class="toctext">Scheduling</span></a></li><li class="toc-3"><a href="#meetings"><span class="tocnum">2.10</span><span class="toctext">Meetings</span></a></li><li class="toc-3"><a href="#crm"><span class="tocnum">2.11</span><span class="toctext">CRM</span></a></li><li class="toc-3"><a href="#support"><span class="tocnum">2.12</span><span class="toctext">Support</span></a></li><li class="toc-3"><a href="#marketing"><span class="tocnum">2.13</span><span class="toctext">Marketing</span></a></li><li class="toc-3"><a href="#seo"><span class="tocnum">2.14</span><span class="toctext">SEO</span></a></li><li class="toc-3"><a href="#search"><span class="tocnum">2.15</span><span class="toctext">Search</span></a></li><li class="toc-3"><a href="#websites"><span class="tocnum">2.16</span><span class="toctext">Websites</span></a></li><li class="toc-3"><a href="#payments"><span class="tocnum">2.17</span><span class="toctext">Payments</span></a></li><li class="toc-3"><a href="#design"><span class="tocnum">2.18</span><span class="toctext">Design</span></a></li><li class="toc-3"><a href="#code"><span class="tocnum">2.19</span><span class="toctext">Code</span></a></li><li class="toc-3"><a href="#developer-tools"><span class="tocnum">2.20</span><span class="toctext">Developer tools</span></a></li><li class="toc-3"><a href="#developer-docs"><span class="tocnum">2.21</span><span class="toctext">Developer docs</span></a></li><li class="toc-3"><a href="#hosting"><span class="tocnum">2.22</span><span class="toctext">Hosting</span></a></li><li class="toc-3"><a href="#databases"><span class="tocnum">2.23</span><span class="toctext">Databases</span></a></li><li class="toc-3"><a href="#data"><span class="tocnum">2.24</span><span class="toctext">Data</span></a></li><li class="toc-3"><a href="#maps"><span class="tocnum">2.25</span><span class="toctext">Maps</span></a></li><li class="toc-3"><a href="#ai"><span class="tocnum">2.26</span><span class="toctext">AI</span></a></li><li class="toc-3"><a href="#automation"><span class="tocnum">2.27</span><span class="toctext">Automation</span></a></li><li class="toc-2"><a href="#local-servers-worth-knowing"><span class="tocnum">3</span><span class="toctext">Local servers worth knowing</span></a></li><li class="toc-2"><a href="#what-didn-t-make-the-list"><span class="tocnum">4</span><span class="toctext">What didn&#x27;t make the list</span></a></li></ol></nav>
+<p>This is a cheat sheet of official remote <a href="/wiki/model-context-protocol.html" class="wikilink">MCP</a> servers: the address you paste into Claude, ChatGPT, Codex, Cursor, or any other MCP client to connect that service. Every address below was tested live on October 16, 2026, by sending it the same opening request an AI client sends. A server that wants you to sign in answers with an OAuth challenge; an open one answers with its name and tools. Anything that didn't answer correctly was left off. Most of these sign-ins are free; the service's own plan, fees, and limits still apply.</p>
+<p>Addresses change. When in doubt, check the vendor's own documentation, and remember that connecting a server gives an AI the same powers you have in that account. My own setup is on <a href="/wiki/connections.html" class="wikilink">Connections</a>.</p>
+<h2 id="how-to-add-a-server">How to add a server</h2>
+<p><b>Claude and Claude.ai:</b> open the Connectors settings, add a custom connector, paste the address, and sign in. <b>ChatGPT:</b> turn on developer mode in settings, add the address as a connector, and approve the sign-in. <b>Claude Code:</b> run <code>claude mcp add --transport http NAME ADDRESS</code>. <b>OpenAI Codex:</b> add two lines to <code>~/.codex/config.toml</code>:</p>
+<pre>[mcp_servers.basecamp]
+url = "https://mcp.basecamp.com/mcp"</pre>
+<h2 id="remote-servers-by-category">Remote servers, by category</h2>
+<h3 id="work-and-hiring">Work and hiring</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.upwork.com/">Upwork</a></td><td><code>https://mcp.upwork.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="projects">Projects</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://asana.com/">Asana</a></td><td><code>https://mcp.asana.com/v2/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.atlassian.com/">Atlassian (Jira, Confluence)</a></td><td><code>https://mcp.atlassian.com/v1/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://basecamp.com/">Basecamp</a></td><td><code>https://mcp.basecamp.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://clickup.com/">ClickUp</a></td><td><code>https://mcp.clickup.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://linear.app/">Linear</a></td><td><code>https://mcp.linear.app/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://monday.com/">Monday.com</a></td><td><code>https://mcp.monday.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="tasks">Tasks</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://todoist.com/">Todoist</a></td><td><code>https://ai.todoist.net/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="docs">Docs</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.notion.so/">Notion</a></td><td><code>https://mcp.notion.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="files">Files</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.box.com/">Box</a></td><td><code>https://mcp.box.com</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.dropbox.com/">Dropbox</a></td><td><code>https://mcp.dropbox.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://workspace.google.com/">Google Drive</a></td><td><code>https://drivemcp.googleapis.com/mcp/v1</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3 id="chat">Chat</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://slack.com/">Slack</a></td><td><code>https://mcp.slack.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="mail">Mail</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://workspace.google.com/">Gmail (Google)</a></td><td><code>https://gmailmcp.googleapis.com/mcp/v1</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3 id="calendar">Calendar</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://workspace.google.com/">Google Calendar</a></td><td><code>https://calendarmcp.googleapis.com/mcp/v1</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3 id="scheduling">Scheduling</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://calendly.com/">Calendly</a></td><td><code>https://mcp.calendly.com</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="meetings">Meetings</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://fireflies.ai/">Fireflies</a></td><td><code>https://api.fireflies.ai/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.granola.ai/">Granola</a></td><td><code>https://mcp.granola.ai/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="crm">CRM</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.hubspot.com/">HubSpot</a></td><td><code>https://mcp.hubspot.com/</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="support">Support</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.intercom.com/">Intercom</a></td><td><code>https://mcp.intercom.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="marketing">Marketing</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.klaviyo.com/">Klaviyo</a></td><td><code>https://mcp.klaviyo.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="seo">SEO</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://ahrefs.com/">Ahrefs</a></td><td><code>https://api.ahrefs.com/mcp/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://dataforseo.com/">DataForSEO</a></td><td><code>https://mcp.dataforseo.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.semrush.com/">Semrush</a></td><td><code>https://mcp.semrush.com/v1/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.similarweb.com/">Similarweb</a></td><td><code>https://mcp.similarweb.com</code></td><td>OAuth or API key</td></tr></table></div>
+<h3 id="search">Search</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://exa.ai/">Exa</a></td><td><code>https://mcp.exa.ai/mcp</code></td><td>None</td></tr></table></div>
+<h3 id="websites">Websites</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://webflow.com/">Webflow</a></td><td><code>https://mcp.webflow.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.wix.com/">Wix</a></td><td><code>https://mcp.wix.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://wordpress.com/">WordPress.com</a></td><td><code>https://public-api.wordpress.com/wpcom/v2/mcp/v1</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="payments">Payments</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.paypal.com/">PayPal</a></td><td><code>https://mcp.paypal.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://squareup.com/">Square</a></td><td><code>https://mcp.squareup.com/sse</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://stripe.com/">Stripe</a></td><td><code>https://mcp.stripe.com</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="design">Design</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.canva.com/">Canva</a></td><td><code>https://mcp.canva.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.figma.com/">Figma</a></td><td><code>https://mcp.figma.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://miro.com/">Miro</a></td><td><code>https://mcp.miro.com/</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="code">Code</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://github.com/">GitHub</a></td><td><code>https://api.githubcopilot.com/mcp/</code></td><td>OAuth or personal token</td></tr></table></div>
+<h3 id="developer-tools">Developer tools</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.postman.com/">Postman</a></td><td><code>https://mcp.postman.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://sentry.io/">Sentry</a></td><td><code>https://mcp.sentry.dev/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="developer-docs">Developer docs</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://aws.amazon.com/">AWS Knowledge</a></td><td><code>https://knowledge-mcp.global.api.aws</code></td><td>None</td></tr><tr><td><a href="https://context7.com/">Context7</a></td><td><code>https://mcp.context7.com/mcp</code></td><td>None</td></tr><tr><td><a href="https://deepwiki.com/">DeepWiki</a></td><td><code>https://mcp.deepwiki.com/mcp</code></td><td>None</td></tr><tr><td><a href="https://developers.google.com/knowledge">Google Developer Knowledge</a></td><td><code>https://developerknowledge.googleapis.com/mcp</code></td><td>Google Cloud project and sign-in</td></tr><tr><td><a href="https://learn.microsoft.com/">Microsoft Learn</a></td><td><code>https://learn.microsoft.com/api/mcp</code></td><td>None</td></tr></table></div>
+<h3 id="hosting">Hosting</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Browser Rendering</a></td><td><code>https://browser.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Docs</a></td><td><code>https://docs.mcp.cloudflare.com/mcp</code></td><td>None</td></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Observability</a></td><td><code>https://observability.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.cloudflare.com/">Cloudflare Workers Bindings</a></td><td><code>https://bindings.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://www.netlify.com/">Netlify</a></td><td><code>https://netlify-mcp.netlify.app/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://vercel.com/">Vercel</a></td><td><code>https://mcp.vercel.com</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="databases">Databases</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://neon.tech/">Neon</a></td><td><code>https://mcp.neon.tech/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://supabase.com/">Supabase</a></td><td><code>https://mcp.supabase.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="data">Data</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://airtable.com/">Airtable</a></td><td><code>https://mcp.airtable.com/mcp</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://apify.com/">Apify</a></td><td><code>https://mcp.apify.com</code></td><td>OAuth or API key</td></tr><tr><td><a href="https://cloud.google.com/bigquery">BigQuery</a></td><td><code>https://bigquery.googleapis.com/mcp</code></td><td>Google Cloud project and sign-in</td></tr><tr><td><a href="https://radar.cloudflare.com/">Cloudflare Radar</a></td><td><code>https://radar.mcp.cloudflare.com/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h3 id="maps">Maps</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://mapsplatform.google.com/">Google Maps Grounding Lite</a></td><td><code>https://mapstools.googleapis.com/mcp</code></td><td>Google Cloud project and sign-in</td></tr></table></div>
+<h3 id="ai">AI</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://huggingface.co/">Hugging Face</a></td><td><code>https://huggingface.co/mcp</code></td><td>None (token optional)</td></tr></table></div>
+<h3 id="automation">Automation</h3>
+<div class="table-scroll"><table class="wikitable"><tr><th>Service</th><th>Server address</th><th>Sign-in</th></tr><tr><td><a href="https://www.make.com/">Make</a></td><td><code>https://mcp.make.com</code></td><td>OAuth sign-in</td></tr><tr><td><a href="https://zapier.com/">Zapier</a></td><td><code>https://mcp.zapier.com/api/mcp/mcp</code></td><td>OAuth sign-in</td></tr></table></div>
+<h2 id="local-servers-worth-knowing">Local servers worth knowing</h2>
+<p>Some official servers run on your own machine instead of at a web address. Google's <a href="https://github.com/googleanalytics/google-analytics-mcp">Google Analytics MCP server</a> is read-only and labeled experimental, and runs through Python. Screaming Frog's SEO Spider can serve MCP to clients on the same computer. Basecamp's command-line tool can serve MCP locally too, alongside its hosted connector above.</p>
+<h2 id="what-didn-t-make-the-list">What didn't make the list</h2>
+<p>Addresses I tried for Plaid, Jotform, Shopify's developer docs, Strava, Spotify, Uber, Zoom, Mailchimp, and Microsoft 365 didn't answer as MCP servers today. Some of those services offer connectors inside Claude or ChatGPT through other routes, and some have servers at addresses I didn't find. They will be added when they answer.</p>
+</div>
+<p class="wiki-cats">Categories: <a href="/wiki/#cat-reference">Reference</a> &middot; <a href="/wiki/#cat-mcp">MCP</a></p>
+<section class="wiki-backlinks"><h2>What links here</h2><ul><li><a href="/2026/10/mcp-server-cheat-sheet.html">I tested 70 MCP server addresses; here are the 59 that answered</a></li></ul></section>
+<p class="wiki-edited">This page was last edited on October 16, 2026. AI writes and edits the wiki from Chris' prompts; the <a href="https://github.com/chrisabraham/weblog/commits/main/src/wiki/mcp-servers.html">history</a> shows every change.</p>
+</div>
+</main>
+<aside id="sidebar" aria-label="Sidebar">
+<section class="box"><h2>About</h2>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a></p></section>
+<section class="box"><h2>Recent posts</h2><ul><li><a href="/2026/10/mcp-server-cheat-sheet.html">I tested 70 MCP server addresses; here are the 59 that answered</a></li><li><a href="/2026/10/five-live-sites-five-search-labs.html">Five live sites, five search labs</a></li><li><a href="/2026/10/every-app-has-a-door-for-ai.html">Every app I use is growing a door for AI</a></li><li><a href="/2026/10/state-of-blackbox-october.html">The state of Blackbox in mid October</a></li><li><a href="/2026/10/blackbox-a-few-weeks-in.html">Blackbox, a few weeks in</a></li><li><a href="/2026/10/a-weblog-written-by-claude.html">A weblog written by Claude, out in the open</a></li></ul></section>
+<section class="box"><h2>Wiki</h2><ul><li><a href="/wiki/adjutant.html">Adjutant</a></li><li><a href="/wiki/blackbox.html">Blackbox</a></li><li><a href="/wiki/blackbox-commands.html">Blackbox commands</a></li><li><a href="/wiki/connections.html">Connections</a></li><li><a href="/wiki/mcp-servers.html">MCP servers</a></li><li><a href="/wiki/model-context-protocol.html">Model Context Protocol</a></li><li><a href="/wiki/pinebox.html">Pinebox</a></li><li><a href="/wiki/upwork-verdicts.html">Upwork verdicts</a></li></ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
+<section class="box"><h2>Projects</h2><ul class="projects"><li><span class="dot dot-active" title="active"></span><a href="/projects.html#blackbox">Blackbox</a> <small>active</small></li><li><span class="dot dot-planned" title="planned"></span><a href="/projects.html#adjutant">Adjutant</a> <small>planned</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#this-weblog">This weblog</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#the-chris-abraham-show-site">The Chris Abraham Show site</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#hill-mole">Hill Mole</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#christopherabraham-com">christopherabraham.com</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#gerriscorp-com">gerriscorp.com</a> <small>live lab</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#ai-visibility-tracker">AI visibility tracker</a> <small>active</small></li></ul></section>
+<section class="box"><h2>Categories</h2><ul><li><a href="/category/ai-search.html" rel="tag">AI search</a> <small>(2)</small></li><li><a href="/category/blackbox.html" rel="tag">Blackbox</a> <small>(3)</small></li><li><a href="/category/claude-code.html" rel="tag">Claude Code</a> <small>(6)</small></li><li><a href="/category/mcp.html" rel="tag">MCP</a> <small>(2)</small></li><li><a href="/category/meta.html" rel="tag">Meta</a> <small>(1)</small></li><li><a href="/category/openai-codex.html" rel="tag">OpenAI Codex</a> <small>(2)</small></li><li><a href="/category/seo.html" rel="tag">SEO</a> <small>(1)</small></li></ul></section>
+<section class="box"><h2>Archives</h2><ul><li><a href="/2026/10/">October 2026</a></li></ul></section>
+<section class="box"><h2>Blogroll</h2><ul><li><a href="http://scripting.com/">Scripting News</a></li><li><a href="https://simonwillison.net/">Simon Willison</a></li><li><a href="https://www.oneusefulthing.org/">One Useful Thing</a></li><li><a href="https://kottke.org/">kottke.org</a></li><li><a href="https://daringfireball.net/">Daring Fireball</a></li><li><a href="https://anildash.com/">Anil Dash</a></li><li><a href="https://doc.searls.com/">Doc Searls Weblog</a></li><li><a href="https://seths.blog/">Seth&#x27;s Blog</a></li></ul><p><a href="/reading.html">The full reading list: 55 feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll"><h2>Elsewhere</h2><h3>My sites</h3><ul><li><a href="https://www.chrisabraham.com/" rel="me">Chris Abraham</a> <small>my long-running blog</small></li><li><a href="https://christopherabraham.com/" rel="me">Christopher Abraham</a> <small>SEO and AI search consulting</small></li><li><a href="https://gerriscorp.com/" rel="me">Gerris Corp</a> <small>my firm</small></li><li><a href="https://thechrisabrahamshow.com/" rel="me">The Chris Abraham Show</a> <small>my podcast</small></li><li><a href="https://hillmole.com/" rel="me">Hill Mole</a> <small>my serialized spy novel</small></li><li><a href="https://chrisabraham.substack.com/" rel="me">Chris Abraham on Substack</a> <small>newsletter</small></li><li><a href="https://www.reddit.com/r/slowjogging/" rel="me">r/slowjogging</a> <small>the subreddit I founded</small></li></ul><h3>Find me</h3><ul><li><a href="https://github.com/chrisabraham" rel="me">GitHub</a> <small>code, including this site</small></li><li><a href="https://www.upwork.com/freelancers/chrisjabraham" rel="me">Upwork</a> <small>hire me by the hour</small></li><li><a href="https://www.linkedin.com/in/chrisabraham" rel="me">LinkedIn</a></li><li><a href="https://calendly.com/chrisabraham/30" rel="me">Book a call</a> <small>30 minutes on Calendly</small></li><li><a href="https://mastodon.social/@chrisa" rel="me">Mastodon</a></li><li><a href="https://www.reddit.com/user/chrisabraham/" rel="me">Reddit</a></li><li><a href="https://muckrack.com/chrisabraham" rel="me">Muck Rack</a> <small>my clips</small></li></ul><h3>Bylines</h3><ul><li><a href="https://www.huffpost.com/author/chris-abraham" rel="me">HuffPost</a></li><li><a href="https://adage.com/author/chris-abraham/1797" rel="me">Ad Age</a></li><li><a href="https://biznology.com/author/chrisabraham/" rel="me">Biznology</a></li><li><a href="https://rheingold.com/Associates/team_abraham.html" rel="me">Rheingold Associates</a></li></ul></section>
+<section class="box buttons" aria-label="Badges">
+<a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
+<a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
+<a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
+<span class="badge b-lynx"><b>Lynx</b>friendly</span>
+<span class="badge b-html"><b>HTML</b>no JS req.</span>
+<a class="badge b-wcag" href="/accessibility.html"><b>WCAG</b>2.1 AA</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>a11y</b>100/100</a>
+<a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
+</section>
+</aside>
+</div>
+<footer id="footer">
+  <p>Copyright 2026 Chris Abraham. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Write back: <a href="mailto:cja@well.com">cja@well.com</a></p>
+  <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById("theme-toggle"),
+      meta = document.getElementById("theme-color");
+  function show(dark) {
+    btn.textContent = dark ? "light" : "dark";
+    btn.setAttribute("aria-label", dark ? "Switch to light reading mode" : "Switch to dark reading mode");
+    meta.setAttribute("content", dark ? "#16181d" : "#ffffff");
+  }
+  show(root.getAttribute("data-theme") === "dark");
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") !== "dark";
+    if (dark) root.setAttribute("data-theme", "dark"); else root.removeAttribute("data-theme");
+    try { localStorage.setItem("weblog-theme", dark ? "dark" : "light"); } catch (e) {}
+    show(dark);
+  });
+})();
+</script>
+</body>
+</html>
