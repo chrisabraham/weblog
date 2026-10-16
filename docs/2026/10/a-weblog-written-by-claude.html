@@ -11,10 +11,10 @@
 <meta name="generator" content="build.py, written by Claude in Claude Code">
 <meta name="theme-color" content="#ffffff" id="theme-color">
 <link rel="canonical" href="https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html">
-<link rel="alternate" type="application/rss+xml" title="Chris Abraham Weblog (RSS)" href="https://chrisabraham.net/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham (RSS)" href="https://chrisabraham.net/rss.xml">
 <link rel="blogroll" type="text/x-opml" href="https://chrisabraham.net/blogroll.opml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:site_name" content="Chris Abraham Weblog">
+<meta property="og:site_name" content="Chris Abraham">
 <meta property="og:type" content="article">
 <meta property="og:title" content="A weblog written by Claude, out in the open">
 <meta property="og:description" content="Why Chris Abraham started a 2000s-style weblog in 2026, why Claude writes every post from his prompts, and why each post shows the prompt underneath.">
@@ -37,9 +37,11 @@
   --muted: #5c6370;
   --link: #1d3d8f;
   --visited: #6a2c8f;
-  --banner: #1d3d8f;
-  --banner-ink: #ffffff;
-  --banner-sub: #c9d4f2;
+  --banner: #ffffff;
+  --banner-ink: #1b1b1b;
+  --banner-sub: #5c6370;
+  --orange: #c75000;
+  --gerris-blue: #16729e;
   --box: #f4f6fa;
   --box-head: #dfe5f1;
   --rule: #c9d0dc;
@@ -58,9 +60,11 @@
   --muted: #9aa3b2;
   --link: #8fb0ff;
   --visited: #d0a2f0;
-  --banner: #0f2459;
-  --banner-ink: #ffffff;
-  --banner-sub: #a9b9e6;
+  --banner: #16181d;
+  --banner-ink: #e6e6e6;
+  --banner-sub: #9aa3b2;
+  --orange: #ff8a3d;
+  --gerris-blue: #5cb6e3;
   --box: #1c1f26;
   --box-head: #262b36;
   --rule: #343a46;
@@ -105,21 +109,21 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
   padding: 22px 24px 0;
   border-bottom: 4px double var(--rule);
 }
-.site-title { margin: 0; font-family: var(--serif); font-size: 2.1rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
-.site-title a, .site-title a:visited { color: var(--banner-ink); text-decoration: none; }
-.site-title a:hover { background: none; text-decoration: underline; }
-.tagline { margin: 6px 0 14px; color: var(--banner-sub); font-family: var(--sans); font-size: 0.78rem; font-style: italic; max-width: 40em; }
-.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--banner-sub); }
-.topnav a, .topnav a:visited { color: var(--banner-ink); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
-.topnav a:hover { background: var(--banner-ink); color: var(--banner); }
+.site-title { margin: 0; font-family: var(--sans); font-size: 2rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
+.site-title a, .site-title a:visited { color: var(--orange); text-decoration: none; }
+.site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
+.tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
+.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
+.topnav a, .topnav a:visited { color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+.topnav a:hover { background: var(--link); color: var(--paper); }
 
 .theme-toggle {
   position: absolute; top: 12px; right: 12px;
   font: 0.7rem var(--sans); text-transform: lowercase;
   color: var(--banner-ink); background: transparent;
-  border: 1px solid var(--banner-sub); padding: 3px 9px; cursor: pointer;
+  border: 1px solid var(--rule); padding: 3px 9px; cursor: pointer;
 }
-.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--banner-ink); color: var(--banner); }
+.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
 
 /* Columns */
 #cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
@@ -258,7 +262,7 @@ h1.post-title { font-size: 1.8rem; }
 <div id="wrap">
 <header id="banner">
   <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
-  <p class="site-title"><a href="/" rel="home">Chris Abraham Weblog</a></p>
+  <p class="site-title"><a href="/" rel="home">Chris Abraham</a></p>
   <p class="tagline">Notes from building things with AI, written by Claude from my prompts, out in the open.</p>
   <nav class="topnav" aria-label="Main">
     <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/archives.html">Archives</a>

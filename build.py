@@ -25,7 +25,8 @@ SRC = ROOT / "src"
 OUT = ROOT / "docs"
 
 SITE_URL = "https://chrisabraham.net"   # the one place the domain lives
-TITLE = "Chris Abraham Weblog"
+TITLE = "Chris Abraham"
+HOME_TITLE = "Chris Abraham: a weblog about building with AI and Claude Code"
 TAGLINE = "Notes from building things with AI, written by Claude from my prompts, out in the open."
 AUTHOR = "Chris Abraham"
 EMAIL = "cja@well.com"
@@ -161,7 +162,7 @@ def cat_link(c):
 def page(*, title, description, path, body, site, posts, schema=None,
          noindex=False, og_type="website", extra_head=""):
     canonical = SITE_URL + path.replace("index.html", "")
-    full_title = title  # site name rides in og:site_name and schema, not every title
+    full_title = HOME_TITLE if path == "/index.html" else title  # site name rides in og:site_name and schema, not every title
     robots = "noindex, follow" if noindex else "index, follow, max-image-preview:large, max-snippet:-1"
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -594,7 +595,7 @@ Allow: /
 Sitemap: {SITE}/sitemap.xml
 """
 
-FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><rect width="16" height="16" fill="#1d3d8f"/>'
+FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><rect width="16" height="16" fill="#c75000"/>'
            '<text x="8" y="12.5" font-family="Verdana,sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">c</text></svg>')
 
 CSS = (ROOT / "src" / "style.css").read_text(encoding="utf-8") if (ROOT / "src" / "style.css").exists() else ""

@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>try{var t=localStorage.getItem("weblog-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
-<title>Chris Abraham Weblog</title>
+<title>Chris Abraham: a weblog about building with AI and Claude Code</title>
 <meta name="description" content="Notes from building things with AI, written by Claude from my prompts, out in the open.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="author" content="Chris Abraham">
 <meta name="generator" content="build.py, written by Claude in Claude Code">
 <meta name="theme-color" content="#ffffff" id="theme-color">
 <link rel="canonical" href="https://chrisabraham.net/">
-<link rel="alternate" type="application/rss+xml" title="Chris Abraham Weblog (RSS)" href="https://chrisabraham.net/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham (RSS)" href="https://chrisabraham.net/rss.xml">
 <link rel="blogroll" type="text/x-opml" href="https://chrisabraham.net/blogroll.opml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:site_name" content="Chris Abraham Weblog">
+<meta property="og:site_name" content="Chris Abraham">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Chris Abraham Weblog">
+<meta property="og:title" content="Chris Abraham">
 <meta property="og:description" content="Notes from building things with AI, written by Claude from my prompts, out in the open.">
 <meta property="og:url" content="https://chrisabraham.net/">
 <meta name="twitter:card" content="summary">
@@ -33,9 +33,11 @@
   --muted: #5c6370;
   --link: #1d3d8f;
   --visited: #6a2c8f;
-  --banner: #1d3d8f;
-  --banner-ink: #ffffff;
-  --banner-sub: #c9d4f2;
+  --banner: #ffffff;
+  --banner-ink: #1b1b1b;
+  --banner-sub: #5c6370;
+  --orange: #c75000;
+  --gerris-blue: #16729e;
   --box: #f4f6fa;
   --box-head: #dfe5f1;
   --rule: #c9d0dc;
@@ -54,9 +56,11 @@
   --muted: #9aa3b2;
   --link: #8fb0ff;
   --visited: #d0a2f0;
-  --banner: #0f2459;
-  --banner-ink: #ffffff;
-  --banner-sub: #a9b9e6;
+  --banner: #16181d;
+  --banner-ink: #e6e6e6;
+  --banner-sub: #9aa3b2;
+  --orange: #ff8a3d;
+  --gerris-blue: #5cb6e3;
   --box: #1c1f26;
   --box-head: #262b36;
   --rule: #343a46;
@@ -101,21 +105,21 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
   padding: 22px 24px 0;
   border-bottom: 4px double var(--rule);
 }
-.site-title { margin: 0; font-family: var(--serif); font-size: 2.1rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
-.site-title a, .site-title a:visited { color: var(--banner-ink); text-decoration: none; }
-.site-title a:hover { background: none; text-decoration: underline; }
-.tagline { margin: 6px 0 14px; color: var(--banner-sub); font-family: var(--sans); font-size: 0.78rem; font-style: italic; max-width: 40em; }
-.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--banner-sub); }
-.topnav a, .topnav a:visited { color: var(--banner-ink); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
-.topnav a:hover { background: var(--banner-ink); color: var(--banner); }
+.site-title { margin: 0; font-family: var(--sans); font-size: 2rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
+.site-title a, .site-title a:visited { color: var(--orange); text-decoration: none; }
+.site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
+.tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
+.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
+.topnav a, .topnav a:visited { color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+.topnav a:hover { background: var(--link); color: var(--paper); }
 
 .theme-toggle {
   position: absolute; top: 12px; right: 12px;
   font: 0.7rem var(--sans); text-transform: lowercase;
   color: var(--banner-ink); background: transparent;
-  border: 1px solid var(--banner-sub); padding: 3px 9px; cursor: pointer;
+  border: 1px solid var(--rule); padding: 3px 9px; cursor: pointer;
 }
-.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--banner-ink); color: var(--banner); }
+.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
 
 /* Columns */
 #cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
@@ -227,7 +231,7 @@ h1.post-title { font-size: 1.8rem; }
 .blogroll h3:first-of-type { margin-top: 8px; }
 .blogroll ul { margin-top: 4px; }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Blog","@id":"https://chrisabraham.net/#blog","name":"Chris Abraham Weblog","description":"Notes from building things with AI, written by Claude from my prompts, out in the open.","url":"https://chrisabraham.net/","author":{"@id":"https://chrisabraham.net/about.html#chris"},"inLanguage":"en-US","blogPost":[{"@type":"BlogPosting","headline":"Blackbox, a few weeks in","url":"https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html","datePublished":"2026-10-16T17:45:00-04:00"},{"@type":"BlogPosting","headline":"A weblog written by Claude, out in the open","url":"https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html","datePublished":"2026-10-16T17:30:00-04:00"}]},{"@type":"WebSite","@id":"https://chrisabraham.net/#site","name":"Chris Abraham Weblog","url":"https://chrisabraham.net/","publisher":{"@id":"https://chrisabraham.net/about.html#chris"}},{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html","sameAs":["https://www.chrisabraham.com/","https://christopherabraham.com/","https://gerriscorp.com/","https://thechrisabrahamshow.com/","https://hillmole.com/","https://chrisabraham.substack.com/","https://github.com/chrisabraham","https://www.upwork.com/freelancers/chrisjabraham","https://www.linkedin.com/in/chrisabraham","https://mastodon.social/@chrisa","https://www.reddit.com/user/chrisabraham/","https://muckrack.com/chrisabraham","https://www.huffpost.com/author/chris-abraham","https://adage.com/author/chris-abraham/1797","https://biznology.com/author/chrisabraham/","https://rheingold.com/Associates/team_abraham.html"]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Blog","@id":"https://chrisabraham.net/#blog","name":"Chris Abraham","description":"Notes from building things with AI, written by Claude from my prompts, out in the open.","url":"https://chrisabraham.net/","author":{"@id":"https://chrisabraham.net/about.html#chris"},"inLanguage":"en-US","blogPost":[{"@type":"BlogPosting","headline":"Blackbox, a few weeks in","url":"https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html","datePublished":"2026-10-16T17:45:00-04:00"},{"@type":"BlogPosting","headline":"A weblog written by Claude, out in the open","url":"https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html","datePublished":"2026-10-16T17:30:00-04:00"}]},{"@type":"WebSite","@id":"https://chrisabraham.net/#site","name":"Chris Abraham","url":"https://chrisabraham.net/","publisher":{"@id":"https://chrisabraham.net/about.html#chris"}},{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html","sameAs":["https://www.chrisabraham.com/","https://christopherabraham.com/","https://gerriscorp.com/","https://thechrisabrahamshow.com/","https://hillmole.com/","https://chrisabraham.substack.com/","https://github.com/chrisabraham","https://www.upwork.com/freelancers/chrisjabraham","https://www.linkedin.com/in/chrisabraham","https://mastodon.social/@chrisa","https://www.reddit.com/user/chrisabraham/","https://muckrack.com/chrisabraham","https://www.huffpost.com/author/chris-abraham","https://adage.com/author/chris-abraham/1797","https://biznology.com/author/chrisabraham/","https://rheingold.com/Associates/team_abraham.html"]}]}</script>
 <script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -254,7 +258,7 @@ h1.post-title { font-size: 1.8rem; }
 <div id="wrap">
 <header id="banner">
   <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
-  <p class="site-title"><a href="/" rel="home">Chris Abraham Weblog</a></p>
+  <p class="site-title"><a href="/" rel="home">Chris Abraham</a></p>
   <p class="tagline">Notes from building things with AI, written by Claude from my prompts, out in the open.</p>
   <nav class="topnav" aria-label="Main">
     <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/archives.html">Archives</a>
