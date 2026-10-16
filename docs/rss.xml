@@ -14,7 +14,7 @@
 <link>https://chrisabraham.net/2026/10/mcp-server-cheat-sheet.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/mcp-server-cheat-sheet.html</guid>
 <pubDate>Fri, 16 Oct 2026 23:00:00 -0400</pubDate>
-<description>A tested cheat sheet of 59 official remote MCP servers, from Upwork, Basecamp, and GitHub to Stripe and Google, with the exact address to paste into Claude or ChatGPT.</description>
+<description>A tested cheat sheet of 59 official remote MCP servers, from Upwork and GitHub to Stripe and Google, with the exact address to paste into Claude or ChatGPT.</description>
 <category>MCP</category><category>Claude Code</category><category>AI search</category>
 <content:encoded><![CDATA[<p>Every week another company announces an MCP server, and every list of them I find is a mix of official servers, hobby projects, and addresses that stopped working months ago. So tonight Claude and I tested them. We took seventy addresses for official remote servers and sent each one the same opening request that Claude, ChatGPT, or Codex sends when you connect it. Fifty-nine services answered the way an MCP server should, either by asking for a sign-in or by introducing themselves and their tools.</p>
 <p>The result is a cheat sheet on the wiki, <a href="/wiki/mcp-servers.html" class="wikilink">MCP servers</a>, sorted by what each service does: work and hiring, projects, files, payments, SEO, websites, hosting, developer documentation, and more. Each row has the exact address to paste into your AI client and what kind of sign-in it wants. The Google entries surprised me most: Gmail, Calendar, Drive, BigQuery, and Maps each have their own server at Google, behind a Google Cloud sign-in.</p>
