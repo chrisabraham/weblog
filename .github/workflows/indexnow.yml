@@ -1,0 +1,26 @@
+# Tells IndexNow (Bing, Yandex, Seznam, Naver, Yep) about new and edited pages
+# after each push that changes the built site.
+name: IndexNow
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**"]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Submit every URL in the sitemap
+        type: boolean
+        default: false
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Submit changed URLs
+        run: |
+          if [ "${{ inputs.all }}" = "true" ]; then
+            python3 .github/indexnow.py --all
+          else
+            python3 .github/indexnow.py "${{ github.event.before }}" "${{ github.sha }}"
+          fi

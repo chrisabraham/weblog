@@ -31,6 +31,8 @@ AUTHOR = "Chris Abraham"
 EMAIL = "cja@well.com"
 TZ = ZoneInfo("America/New_York")
 HOME_POSTS = 15
+GA_ID = ""            # GA4 measurement ID; empty means no analytics
+INDEXNOW_KEY = "cc740d643ba76c19773b15720256af8c"
 
 PERSON = {
     "@type": "Person",
@@ -38,6 +40,27 @@ PERSON = {
     "name": AUTHOR,
     "url": SITE_URL + "/about.html",
 }
+
+# GA loads on first interaction or 4 seconds after load, like the sibling sites.
+GA = """<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{id}');
+  (function () {
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id={id}';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>"""
 
 SPECULATION = ('<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, '
                '{"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>')
@@ -165,6 +188,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 {extra_head}<style>{CSS}</style>
 {ld(schema) if schema else ""}
 {SPECULATION}
+{GA.replace("{id}", GA_ID) if GA_ID else ""}
 </head>
 <body>
 <a class="skip" href="#main">Skip to the posts</a>
@@ -453,6 +477,7 @@ def main():
     write("/llms.txt", llms(posts, site, full=False))
     write("/llms-full.txt", llms(posts, site, full=True))
     write("/favicon.svg", FAVICON)
+    write(f"/{INDEXNOW_KEY}.txt", INDEXNOW_KEY)
     write("/CNAME", SITE_URL.split("//")[1] + "\n")
     write("/.nojekyll", "")
     print(f"built {len(posts)} posts, {len(sitemap)} sitemap URLs into docs/")
