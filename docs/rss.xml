@@ -6,14 +6,14 @@
 <atom:link href="https://chrisabraham.net/rss.xml" rel="self" type="application/rss+xml"/>
 <description>Notes from building things with AI, written by AI from my prompts.</description>
 <language>en-us</language>
-<lastBuildDate>Sat, 17 Oct 2026 00:15:00 -0400</lastBuildDate>
+<lastBuildDate>Fri, 16 Oct 2026 19:32:00 -0400</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>
 <item>
 <title>Pinebox started as a place to read mail in Alpine</title>
 <link>https://chrisabraham.net/2026/10/pinebox-started-as-alpine.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/pinebox-started-as-alpine.html</guid>
-<pubDate>Sat, 17 Oct 2026 00:15:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 19:32:00 -0400</pubDate>
 <description>Pinebox began in August 2026 as a tiny server for reading mail in Alpine. Eight weeks later it runs Blackbox, five websites, and two AI coding agents.</description>
 <category>Pinebox</category><category>Blackbox</category><category>Claude Code</category>
 <content:encoded><![CDATA[<p>On August 21, 2026, I set up a small DigitalOcean server running Debian and named it <a href="/wiki/pinebox.html" class="wikilink">Pinebox</a>, after Pine, the University of Washington's old text-mode mail program. The first thing I installed was Alpine, Pine's modern descendant, along with tmux and automatic security updates. Then I turned on the firewall. That was the whole plan: a quiet machine I could SSH into from any of my ThinkPads and read my Gmail in a text terminal.</p>
@@ -27,7 +27,7 @@
 <title>What Claude says about me, two days apart</title>
 <link>https://chrisabraham.net/2026/10/what-claude-says-about-me.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/what-claude-says-about-me.html</guid>
-<pubDate>Fri, 16 Oct 2026 23:45:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 18:45:00 -0400</pubDate>
 <description>Chris Abraham reran his $1.79 AI visibility tracker: Claude names him on every branded question and none of the open ones. Results, minus private details.</description>
 <category>AI search</category><category>SEO</category>
 <content:encoded><![CDATA[<p>Tonight I spent $1.79 to find out what Claude thinks of me. My tracker asked it the same sixteen questions it asked on October 14, the kind of thing a prospect types, from "Is Chris Abraham a good SEO consultant to hire?" to "Who can I hire to find out why Google isn't indexing my JavaScript website?" Then a second model read every answer and wrote down who got named, where I landed, the tone, and every claim made about me. The full scorecard lives on the wiki at <a href="/wiki/ai-visibility-report.html" class="wikilink">AI visibility report</a>, and it will grow with every run.</p>
@@ -39,7 +39,7 @@
 <title>I tested 70 MCP server addresses; here are the 59 that answered</title>
 <link>https://chrisabraham.net/2026/10/mcp-server-cheat-sheet.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/mcp-server-cheat-sheet.html</guid>
-<pubDate>Fri, 16 Oct 2026 23:00:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 18:35:00 -0400</pubDate>
 <description>A tested cheat sheet of 59 official remote MCP servers, from Upwork and GitHub to Stripe and Google, with the address to paste into Claude or ChatGPT.</description>
 <category>MCP</category><category>Claude Code</category><category>AI search</category>
 <content:encoded><![CDATA[<p>Every week another company announces an MCP server, and every list of them I find is a mix of official servers, hobby projects, and addresses that stopped working months ago. So tonight Claude and I tested them. We took seventy addresses for official remote servers and sent each one the same opening request that Claude, ChatGPT, or Codex sends when you connect it. Fifty-nine services answered the way an MCP server should, either by asking for a sign-in or by introducing themselves and their tools.</p>
@@ -50,7 +50,7 @@
 <title>Five live sites, five search labs</title>
 <link>https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html</guid>
-<pubDate>Fri, 16 Oct 2026 22:15:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 18:33:00 -0400</pubDate>
 <description>Chris Abraham runs five real websites that double as open labs for SEO, AEO, GEO, and AI search: what each one tests, and the one rule they all follow.</description>
 <category>SEO</category><category>AI search</category><category>Claude Code</category>
 <content:encoded><![CDATA[<p>I run five websites, and every one of them is a real site doing a real job. This weblog is my lab notebook. <a href="https://thechrisabrahamshow.com/">The Chris Abraham Show</a> site is the home of my podcast. <a href="https://hillmole.com/">Hill Mole</a> is the spy novel I serialized on Movable Type starting in 2005. <a href="https://christopherabraham.com/">christopherabraham.com</a> sells my consulting, and <a href="https://gerriscorp.com/">gerriscorp.com</a> is my firm. Each of them is also a laboratory for search, for the old kind with ten blue links and for the new kind where ChatGPT, Claude, Perplexity, and Google's AI answers decide whom to name. The <a href="/wiki/connections.html" class="wikilink">tools I use</a> change every week, and these sites are where I find out what works before I sell it to anyone.</p>
@@ -58,13 +58,13 @@
 <p>What they test is everything else. All five are static pages on GitHub Pages, built by Claude Code on my server, so a technical change that would take a WordPress plugin and a prayer takes a commit. On October 14 we ran a speed pass across the four older sites: Google Analytics, on the three that use it, now waits for the first scroll or tap, Chrome prefetches the next page when a reader hovers over a link, the robots files welcome the AI crawlers by name, and the podcast covers went to WebP. Every site has an <code>llms.txt</code> for AI assistants, structured data on every page, and IndexNow telling Bing about new pages the minute they go up. As of today, all four sites that run analytics use Google's Consent Mode, with no analytics cookies for visitors in Europe or for anyone whose browser asks not to be tracked, and Hill Mole, which runs no analytics at all, got a privacy page saying so.</p>
 <p>Each site also tests something of its own. The podcast site has a page for every one of its 458 episodes, transcripts where Spotify made them, a glossary, and a hand-built back-of-the-book index with 1,774 headings, because an index is the kind of thing an AI can cite and a person can trust. Hill Mole wraps its untouched chapters in a reader's glossary, an index, sourced endnotes that catch the narrator in his mistakes, and an atlas, and keeps its 371 old Movable Type archive pages out of search so nothing appears twice. The two business sites publish guides and case studies with their own glossaries and site indexes, and their build refuses to publish a page that copies phrasing from the other site. This weblog is the newest, and it scores 100 on Google's Lighthouse for accessibility on every kind of page.</p>
 <p>The lab results go somewhere. A small tracker I built asks the AI assistants the same sixteen questions and records whether my sites get named and cited, at about $1.60 a run, so I run it only when I mean to. What I learn on these five sites becomes what I do for clients, and what I can't make work here I don't sell.</p>
-<p class="disclosure"><b>Update, October 16, 2026, 11:15 PM:</b> Later the same night Hill Mole got Google Analytics too, with the same Consent Mode settings as the other sites, and its privacy page now says so. The tracker's latest scorecard is live on the wiki: <a href="/wiki/ai-visibility-report.html" class="wikilink">AI visibility report</a>.</p><p><em>Written by Claude Opus 5.5 in Claude Code from this prompt:</em></p><blockquote>This weblog live: Live, living, Experimental Lab / The Chris Abraham Show site: Live, living, Experimental Lab / Hill Mole: Live, living, Experimental Lab / christopherabraham.com: Live, living, Experimental Lab / gerriscorp.com: Live, living, Experimental Lab. They&#x27;re legit working sites but ALSO totally AI/AIO/AEO/GEO/SEO/Search labs for miles.</blockquote>]]></content:encoded>
+<p class="disclosure"><b>Update, October 16, 2026, 6:36 PM:</b> Later the same night Hill Mole got Google Analytics too, with the same Consent Mode settings as the other sites, and its privacy page now says so. The tracker's latest scorecard is live on the wiki: <a href="/wiki/ai-visibility-report.html" class="wikilink">AI visibility report</a>.</p><p><em>Written by Claude Opus 5.5 in Claude Code from this prompt:</em></p><blockquote>This weblog live: Live, living, Experimental Lab / The Chris Abraham Show site: Live, living, Experimental Lab / Hill Mole: Live, living, Experimental Lab / christopherabraham.com: Live, living, Experimental Lab / gerriscorp.com: Live, living, Experimental Lab. They&#x27;re legit working sites but ALSO totally AI/AIO/AEO/GEO/SEO/Search labs for miles.</blockquote>]]></content:encoded>
 </item>
 <item>
 <title>Every app I use is growing a door for AI</title>
 <link>https://chrisabraham.net/2026/10/every-app-has-a-door-for-ai.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/every-app-has-a-door-for-ai.html</guid>
-<pubDate>Fri, 16 Oct 2026 21:30:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 18:27:00 -0400</pubDate>
 <description>How many of Chris Abraham&#x27;s work tools now open straight to AI: Upwork, Gmail, Calendar, Drive, Todoist, GitHub, Google Places, and soon Basecamp 5.</description>
 <category>Blackbox</category><category>Claude Code</category><category>OpenAI Codex</category><category>MCP</category>
 <content:encoded><![CDATA[<p>Tonight I tried to list every service my AI tools can reach on their own, and I couldn't do it from memory. Claude had to read the configuration files on my server to find them all. The full table is on the wiki at <a href="/wiki/connections.html" class="wikilink">Connections</a>, and it keeps growing.</p>
@@ -85,7 +85,7 @@
 <title>The state of Blackbox in mid October</title>
 <link>https://chrisabraham.net/2026/10/state-of-blackbox-october.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/state-of-blackbox-october.html</guid>
-<pubDate>Fri, 16 Oct 2026 19:30:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 18:09:00 -0400</pubDate>
 <description>A status report on Blackbox, the command-line secretary Chris Abraham built with Claude Code: what it does, what it has cost, and what is still unfinished.</description>
 <category>Blackbox</category><category>Claude Code</category><category>OpenAI Codex</category>
 <content:encoded><![CDATA[<p>Blackbox is seventeen days old as a real program, if you count from its first commit on September 30. It existed a little before that as a plain chat program I first talked to on September 12, but the version with a memory, a task list, and opinions started at the end of the month. Since then it has grown to 55 commits and roughly ten thousand lines of Python, almost all of it standard library, with 158 tests that run the real <code>bb</code> command against a fake Todoist, a fake Upwork, and a fake model in a throwaway home folder. It runs on a small DigitalOcean droplet called pinebox, and I reach it over SSH from whichever ThinkPad is closest.</p>
@@ -102,7 +102,7 @@
 <title>Blackbox, a few weeks in</title>
 <link>https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html</guid>
-<pubDate>Fri, 16 Oct 2026 17:45:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 17:21:00 -0400</pubDate>
 <description>Where Blackbox, the plain-English command-line secretary Chris Abraham built with Claude Code, stands in mid October 2026, and what daily use taught him.</description>
 <category>Blackbox</category><category>Claude Code</category>
 <content:encoded><![CDATA[<p>Blackbox, or <code>bb</code>, is the secretary I built for myself at the end of September. It lives on a small server I SSH into from my ThinkPad, and I talk to it in plain sentences instead of commands, because I will never remember command syntax. I wanted what the Army would call a good first lieutenant: someone who knows what's on the schedule, what I promised, and what I'm about to forget, and who doesn't try to be my friend.</p>
@@ -116,7 +116,7 @@
 <title>A weblog written by Claude, out in the open</title>
 <link>https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html</guid>
-<pubDate>Fri, 16 Oct 2026 17:30:00 -0400</pubDate>
+<pubDate>Fri, 16 Oct 2026 17:20:00 -0400</pubDate>
 <description>Why Chris Abraham started a 2000s-style weblog in 2026, why Claude writes every post from his prompts, and why each post shows the prompt underneath.</description>
 <category>Meta</category><category>Claude Code</category>
 <content:encoded><![CDATA[<p>Dave Winer has posted to <a href="http://scripting.com/">Scripting News</a> since the nineties, and the format has barely changed: a date, a few short items, links, opinions, the work in progress. I always wanted one of those and never kept one going. My business sites have guides and case studies, and they read like it. They are finished things. Most of what I actually do all day is unfinished, and it was going nowhere.</p>
