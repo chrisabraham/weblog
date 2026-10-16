@@ -1,0 +1,16 @@
+/* TEAM */
+Owner and prompter: Chris Abraham
+Contact: cja@well.com
+From: Washington, DC area, USA
+Writer: Claude (Anthropic), in Claude Code
+
+/* THANKS */
+Dave Winer, for Scripting News and RSS
+Everyone on the blogroll
+
+/* SITE */
+Last update: 2026-10-16
+Language: English
+Standards: HTML5, CSS3, RSS 2.0, OPML 2.0, schema.org, microformats2, WCAG 2.1 AA
+Software: Python 3 standard library, Pillow for share cards, GitHub Pages
+Source: https://github.com/chrisabraham/weblog

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>try{var t=localStorage.getItem("weblog-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 <title>Posts from October 2026</title>
-<meta name="description" content="Every weblog post from October 2026.">
+<meta name="description" content="Every post on Chris Abraham&#x27;s weblog from October 2026, about Blackbox, Claude Code, AI tools, and client work, written by Claude from his prompts.">
 <meta name="robots" content="noindex, follow">
 <meta name="author" content="Chris Abraham">
 <meta name="generator" content="build.py, written by Claude in Claude Code">
@@ -17,9 +17,26 @@
 <meta property="og:site_name" content="Chris Abraham">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Posts from October 2026">
-<meta property="og:description" content="Every weblog post from October 2026.">
+<meta property="og:description" content="Every post on Chris Abraham&#x27;s weblog from October 2026, about Blackbox, Claude Code, AI tools, and client work, written by Claude from his prompts.">
 <meta property="og:url" content="https://chrisabraham.net/2026/10/">
-<meta name="twitter:card" content="summary">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Posts from October 2026">
+<meta name="twitter:description" content="Every post on Chris Abraham&#x27;s weblog from October 2026, about Blackbox, Claude Code, AI tools, and client work, written by Claude from his prompts.">
+<meta property="og:image" content="https://chrisabraham.net/cards/2026-10.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chris Abraham: Posts from October 2026">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chrisabraham.net/cards/2026-10.png">
+<meta name="twitter:image:alt" content="Chris Abraham: Posts from October 2026">
+<link rel="me" href="https://github.com/chrisabraham">
+<link rel="me" href="https://www.upwork.com/freelancers/chrisjabraham">
+<link rel="me" href="https://www.linkedin.com/in/chrisabraham">
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="me" href="https://www.reddit.com/user/chrisabraham/">
+<link rel="me" href="https://muckrack.com/chrisabraham">
+<link rel="author" href="https://chrisabraham.net/humans.txt">
 <style>/* A 2003 weblog template, rebuilt to read well on a phone in 2026: a
    banner, a post column, a boxed sidebar with a blogroll, Verdana throughout, underlined blue links that turn
    purple once visited. The dark button in the banner works like Hill
@@ -319,9 +336,9 @@ h1.post-title { font-size: 1.8rem; }
 <div id="cols">
 <main id="main">
 <h1 class="page-title">October 2026</h1><div class="day"><h2 class="date-header">Friday, October 16, 2026</h2>
-<article class="post" id="state-of-blackbox-october">
-<h3 class="post-title">The state of Blackbox in mid October</h3>
-<div class="post-body">
+<article class="post h-entry" id="state-of-blackbox-october">
+<h3 class="post-title p-name">The state of Blackbox in mid October</h3>
+<div class="post-body e-content">
 <p>Blackbox is seventeen days old as a real program, if you count from its first commit on September 30. It existed a little before that as a plain chat program I first talked to on September 12, but the version with a memory, a task list, and opinions started at the end of the month. Since then it has grown to 55 commits and roughly ten thousand lines of Python, almost all of it standard library, with 158 tests that run the real <code>bb</code> command against a fake Todoist, a fake Upwork, and a fake model in a throwaway home folder. It runs on a small DigitalOcean droplet called pinebox, and I reach it over SSH from whichever ThinkPad is closest.</p>
 <p>I wrote a <a href="/2026/10/blackbox-a-few-weeks-in.html">shorter post about it</a> earlier today. This one is the full report, with the numbers out of its own database.</p>
 <p>The heart of it is still the same idea: Todoist is the official list, and Blackbox is the secretary who reads it, remembers everything that ever happened to it, and tells me what I am about to drop. It has seen 497 tasks and logged 742 changes to them, whether I made the change through <code>bb</code> or in the Todoist app on my phone. It has written 37 briefs, 21 good mornings and 16 good nights, and 13 diary entries in <code>~/text/diary</code>, from September 30 through last night. I have sent it 228 messages. Those diaries are the part I value most. When I forget to say good night, a timer closes the day at 11:45 PM anyway, so the record exists whether I remembered or not.</p>
@@ -333,13 +350,13 @@ h1.post-title { font-size: 1.8rem; }
 <p>Every command it knows now lives on its own wiki page, <a href="/wiki/blackbox-commands.html" class="wikilink">Blackbox commands</a>, regenerated from <code>bb help</code> whenever the program changes, so the list stays current while this post stays dated. The <a href="/wiki/upwork-verdicts.html" class="wikilink">Upwork verdicts</a> page explains the triage ladder, and <a href="/wiki/blackbox.html" class="wikilink">Blackbox</a> has the overview.</p>
 </div>
 <details class="prompt" open><summary>The prompt</summary><blockquote>I want you to write a report on the state of bb ... In a bloggy way ... And I want you to include all the commands in it.</blockquote></details>
-<p class="post-footer">Written by Claude Opus 5.5 in Claude Code for Chris Abraham at
-<a href="/2026/10/state-of-blackbox-october.html" rel="bookmark"><time datetime="2026-10-16T19:30:00-04:00">7:30 PM</time></a>
+<p class="post-footer">Written by Claude Opus 5.5 in Claude Code for <a class="p-author h-card" href="/about.html">Chris Abraham</a> at
+<a href="/2026/10/state-of-blackbox-october.html" rel="bookmark" class="u-url"><time class="dt-published" datetime="2026-10-16T19:30:00-04:00">7:30 PM</time></a>
 &middot; filed under <a href="/category/blackbox.html" rel="tag">Blackbox</a>, <a href="/category/claude-code.html" rel="tag">Claude Code</a>, <a href="/category/openai-codex.html" rel="tag">OpenAI Codex</a> &middot; <a href="mailto:cja@well.com?subject=The state of Blackbox in mid October">write back</a></p>
 </article>
-<article class="post" id="blackbox-a-few-weeks-in">
-<h3 class="post-title">Blackbox, a few weeks in</h3>
-<div class="post-body">
+<article class="post h-entry" id="blackbox-a-few-weeks-in">
+<h3 class="post-title p-name">Blackbox, a few weeks in</h3>
+<div class="post-body e-content">
 <p>Blackbox, or <code>bb</code>, is the secretary I built for myself at the end of September. It lives on a small server I SSH into from my ThinkPad, and I talk to it in plain sentences instead of commands, because I will never remember command syntax. I wanted what the Army would call a good first lieutenant: someone who knows what's on the schedule, what I promised, and what I'm about to forget, and who doesn't try to be my friend.</p>
 <p>The days start with <code>bb good morning</code>. It reads my unread mail since the end of the last workday, my Todoist, and my Upwork activity, and tells me what needs me. Every screen it prints ends with a few "next:" lines, the exact thing I would type to take the obvious next step. That small feature has done more for me than anything else in it. With ADHD, the gap between knowing what to do and starting is where the day goes, and a ready-to-type line closes it.</p>
 <p>The Upwork side grew fastest. Blackbox pulls new jobs, ranks them against the kind of technical SEO work I'm good at, and gives each one a verdict on a scale that runs from FUCK NO to APPLY ALL THE CONNECTS. When I like one, it drafts the proposal and answers the screening questions from a playbook of my real projects, and nothing gets submitted without my yes.</p>
@@ -348,21 +365,21 @@ h1.post-title { font-size: 1.8rem; }
 <p>Next on the list are a blind bake-off to pick which model handles which job, model help for the loose sentences that don't match any command, and eventually a public version, working name Adjutant, with the patterns written up for anyone who wants to take them.</p>
 </div>
 <details class="prompt" open><summary>The prompt</summary><blockquote>(No prompt of mine for this one. Claude wrote it from the running notes it keeps on Blackbox, as the first project post on the new weblog. I read it after it went up.)</blockquote></details>
-<p class="post-footer">Written by Claude Opus 5.5 in Claude Code for Chris Abraham at
-<a href="/2026/10/blackbox-a-few-weeks-in.html" rel="bookmark"><time datetime="2026-10-16T17:45:00-04:00">5:45 PM</time></a>
+<p class="post-footer">Written by Claude Opus 5.5 in Claude Code for <a class="p-author h-card" href="/about.html">Chris Abraham</a> at
+<a href="/2026/10/blackbox-a-few-weeks-in.html" rel="bookmark" class="u-url"><time class="dt-published" datetime="2026-10-16T17:45:00-04:00">5:45 PM</time></a>
 &middot; filed under <a href="/category/blackbox.html" rel="tag">Blackbox</a>, <a href="/category/claude-code.html" rel="tag">Claude Code</a> &middot; <a href="mailto:cja@well.com?subject=Blackbox, a few weeks in">write back</a></p>
 </article>
-<article class="post" id="a-weblog-written-by-claude">
-<h3 class="post-title">A weblog written by Claude, out in the open</h3>
-<div class="post-body">
+<article class="post h-entry" id="a-weblog-written-by-claude">
+<h3 class="post-title p-name">A weblog written by Claude, out in the open</h3>
+<div class="post-body e-content">
 <p>Dave Winer has posted to <a href="http://scripting.com/">Scripting News</a> since the nineties, and the format has barely changed: a date, a few short items, links, opinions, the work in progress. I always wanted one of those and never kept one going. My business sites have guides and case studies, and they read like it. They are finished things. Most of what I actually do all day is unfinished, and it was going nowhere.</p>
 <p>So this is that weblog, built the way I build everything now. I describe what I want to Claude in Claude Code, and it writes the code and the words. Under every post there's a box labeled "The prompt" with what I typed, unedited. If the post says something I didn't mean, you can see where it came from. I read each post before it goes up, and anything wrong gets fixed, but I am not going to pretend I typed the sentences.</p>
 <p>The reason is memory. I have ADHD and SDAM, which means I don't keep a movie of my own past the way most people do. In September I built <a href="/projects.html#blackbox">Blackbox</a>, a command-line secretary that writes my diary every night because I won't. This weblog is the public half of the same idea: the record gets made as a side effect of doing the work, so it exists whether or not I remember to make it.</p>
 <p>Expect posts about Blackbox, about Claude and Claude Code, about ChatGPT and Codex when I use them, about GitHub, and about client work with the names filed off. The <a href="/projects.html">projects page</a> keeps a running status of everything. There's an RSS feed and a blogroll, because a weblog without a blogroll is a newsletter.</p>
 </div>
 <details class="prompt" open><summary>The prompt</summary><blockquote>We&#x27;re going to make me a GitHub Page blog for me, Chris Abraham, which is just a blog... the way that nerds always had blogs in the 90s and 2000s. Like Dave Winer kind of blog. Where I talk about everything, especially blackbox... all the posts would be written by you or Claude... through prompts and I would be super open about that... just someplace where I mainly share the state of my exploration with AI and with BB and with Claude and Claude Code and ChatGPT and OpenAI Codex and GitHub and the clients I have, anonymized... Mobile native but totally Web1.0 aesthetic.</blockquote></details>
-<p class="post-footer">Written by Claude Opus 5.5 in Claude Code for Chris Abraham at
-<a href="/2026/10/a-weblog-written-by-claude.html" rel="bookmark"><time datetime="2026-10-16T17:30:00-04:00">5:30 PM</time></a>
+<p class="post-footer">Written by Claude Opus 5.5 in Claude Code for <a class="p-author h-card" href="/about.html">Chris Abraham</a> at
+<a href="/2026/10/a-weblog-written-by-claude.html" rel="bookmark" class="u-url"><time class="dt-published" datetime="2026-10-16T17:30:00-04:00">5:30 PM</time></a>
 &middot; filed under <a href="/category/meta.html" rel="tag">Meta</a>, <a href="/category/claude-code.html" rel="tag">Claude Code</a> &middot; <a href="mailto:cja@well.com?subject=A weblog written by Claude, out in the open">write back</a></p>
 </article>
 </div>

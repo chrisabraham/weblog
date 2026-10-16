@@ -26,7 +26,8 @@ OUT = ROOT / "docs"
 
 SITE_URL = "https://chrisabraham.net"   # the one place the domain lives
 TITLE = "Chris Abraham"
-HOME_TITLE = "Chris Abraham: a weblog about building with AI and Claude Code"
+HOME_TITLE = "Chris Abraham, a weblog on building with AI and Claude Code"
+HOME_DESCRIPTION = "Chris Abraham's weblog on Blackbox, Claude Code, ChatGPT, Codex, GitHub, and client work, written by Claude from his prompts, with every prompt shown."
 TAGLINE = "Notes from building things with AI, written by Claude from my prompts."
 AUTHOR = "Chris Abraham"
 EMAIL = "cja@well.com"
@@ -237,12 +238,95 @@ def cat_link(c):
     return f'<a href="/category/{slugify(c)}.html" rel="tag">{e(c)}</a>'
 
 
+
+FONT_DIR = ROOT / "fonts"
+CARD_CACHE = {}
+
+
+def make_card(path, title, kicker):
+    """A 1200x630 share card per page: name in orange, kicker in Gerris blue, title in black."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        if not CARD_CACHE.get("warned"):
+            print("  warn: Pillow missing, no share cards (run with ~/.venvs/site/bin/python)")
+            CARD_CACHE["warned"] = True
+        return None
+    name = path.strip("/").replace("/", "-").replace(".html", "") or "home"
+    name = name.replace("-index", "") or "home"
+    out = OUT / "cards" / f"{name}.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    W, H, M = 1200, 630, 72
+    im = Image.new("RGB", (W, H), "#ffffff")
+    d = ImageDraw.Draw(im)
+    bold = lambda s: ImageFont.truetype(str(FONT_DIR / "DejaVuSans-Bold.ttf"), s)
+    reg = lambda s: ImageFont.truetype(str(FONT_DIR / "DejaVuSans.ttf"), s)
+    d.rectangle([0, 0, W, 14], fill="#c75000")
+    d.text((M, 64), TITLE, font=bold(58), fill="#c75000")
+    d.text((M, 146), kicker, font=reg(30), fill="#16729e")
+    def wrap(f, width):
+        lines, cur = [], ""
+        for w in title.split():
+            t = (cur + " " + w).strip()
+            if d.textlength(t, font=f) <= width or not cur:
+                cur = t
+            else:
+                lines.append(cur); cur = w
+        return lines + [cur]
+    size = 64
+    while True:
+        f = bold(size)
+        lines = wrap(f, W - 2 * M)
+        if len(lines) <= 4 or size <= 40:
+            break
+        size -= 4
+    # Balance: narrow the measure while the line count holds, so no last line is a lone word.
+    width = W - 2 * M
+    while width > 300 and len(wrap(f, width - 10)) == len(lines):
+        width -= 10
+    lines = wrap(f, width)
+    y = 230
+    for ln in lines[:4]:
+        d.text((M, y), ln, font=f, fill="#1b1b1b")
+        y += int(size * 1.25)
+    d.line([M, H - 96, W - M, H - 96], fill="#c9d0dc", width=2)
+    d.line([M, H - 90, W - M, H - 90], fill="#c9d0dc", width=2)
+    d.text((M, H - 74), SITE_URL.split("//")[1], font=bold(28), fill="#1d3d8f")
+    d.text((W - M, H - 74), "Written by Claude from my prompts", font=reg(26), fill="#474d58", anchor="ra")
+    im.save(out, optimize=True)
+    return f"{SITE_URL}/cards/{name}.png"
+
 # ---------------------------------------------------------------- page shell
 
 def page(*, title, description, path, body, site, posts, schema=None,
-         noindex=False, og_type="website", extra_head=""):
+         noindex=False, og_type="website", extra_head="", seo_title=None, kicker=None):
     canonical = SITE_URL + path.replace("index.html", "")
-    full_title = HOME_TITLE if path == "/index.html" else title  # site name rides in og:site_name and schema, not every title
+    full_title = HOME_TITLE if path == "/index.html" else (seo_title or title)
+    if not noindex:
+        if not 45 <= len(full_title) <= 60:
+            print(f"  warn {path}: title is {len(full_title)} chars (aim 50-60): {full_title}")
+        if not 120 <= len(description) <= 160:
+            print(f"  warn {path}: description is {len(description)} chars (aim 120-160)")
+        if re.search(r" [-\u2013\u2014|] |\|", full_title + description):
+            print(f"  warn {path}: separator dash or pipe in title or description")
+    card_title = "A weblog about building with AI, Blackbox, and Claude Code" if path == "/index.html" else title
+    img = make_card(path, card_title, kicker or ("Weblog" if path == "/index.html" else SITE_URL.split("//")[1]))
+    img_alt = f"{TITLE}: {card_title}"
+    if img and isinstance(schema, dict):
+        target = next((n for n in schema.get("@graph", [schema]) if n.get("@type") in ("BlogPosting", "Article", "Blog", "WebPage", "ProfilePage", "CollectionPage")), None)
+        if target is not None:
+            target["image"] = {"@type": "ImageObject", "url": img, "width": 1200, "height": 630}
+    cards = (f"""<meta property="og:image" content="{img}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(img_alt)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{img}">
+<meta name="twitter:image:alt" content="{e(img_alt)}">
+""" if img else '<meta name="twitter:card" content="summary">\n')
+    rel_me = "".join(f'<link rel="me" href="{e(x["url"])}">\n' for g in site["blogroll"] if g["group"] == "Find me"
+                     for x in g["links"] if "calendly" not in x["url"])
     robots = "noindex, follow" if noindex else "index, follow, max-image-preview:large, max-snippet:-1"
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -265,7 +349,10 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(description)}">
 <meta property="og:url" content="{canonical}">
-<meta name="twitter:card" content="summary">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="{e(title)}">
+<meta name="twitter:description" content="{e(description)}">
+{cards}{rel_me}<link rel="author" href="{SITE_URL}/humans.txt">
 {extra_head}<style>{CSS}</style>
 {ld(schema) if schema else ""}
 {SPECULATION}
@@ -284,7 +371,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   </nav>
 </header>
 <div id="cols">
-<main id="main">
+<main id="main"{' class="h-feed"' if path == "/index.html" else ""}>
 {body}
 </main>
 {sidebar(site, posts)}
@@ -369,22 +456,22 @@ def sidebar(site, posts):
 
 def post_block(p, *, full, heading="h2"):
     cats = ", ".join(cat_link(c) for c in p["cats"])
-    title = (f'<{heading} class="post-title">{e(p["title"])}</{heading}>' if full else
-             f'<{heading} class="post-title"><a href="{p["path"]}" rel="bookmark">{e(p["title"])}</a></{heading}>')
+    title = (f'<{heading} class="post-title p-name">{e(p["title"])}</{heading}>' if full else
+             f'<{heading} class="post-title p-name"><a href="{p["path"]}" rel="bookmark" class="u-url">{e(p["title"])}</a></{heading}>')
     prompt = ""
     if p.get("prompt"):
         prompt = (f'<details class="prompt"{" open" if full else ""}><summary>The prompt</summary>'
                   f'<blockquote>{e(p["prompt"])}</blockquote></details>')
     updated = (f' &middot; updated <time datetime="{p["updated"].isoformat()}">{p["updated"]:%b} {p["updated"].day}</time>'
                if p["updated"] != p["when"] else "")
-    return f"""<article class="post" id="{p['slug']}">
+    return f"""<article class="post h-entry" id="{p['slug']}">
 {title}
-<div class="post-body">
+<div class="post-body e-content">
 {p['body']}
 </div>
 {prompt}
-<p class="post-footer">Written by {e(p.get('model', 'Claude'))} for {AUTHOR} at
-<a href="{p['path']}" rel="bookmark"><time datetime="{p['when'].isoformat()}">{clock(p['when'])}</time></a>{updated}
+<p class="post-footer">Written by {e(p.get('model', 'Claude'))} for <a class="p-author h-card" href="/about.html">{AUTHOR}</a> at
+<a href="{p['path']}" rel="bookmark" class="u-url"><time class="dt-published" datetime="{p['when'].isoformat()}">{clock(p['when'])}</time></a>{updated}
 &middot; filed under {cats or 'nothing'} &middot; <a href="mailto:{EMAIL}?subject={e(p['title'])}">write back</a></p>
 </article>"""
 
@@ -481,7 +568,7 @@ def main():
          "publisher": {"@id": PERSON["@id"]}},
         PERSON]}
     older = '<p class="older"><a href="/archives.html">Older posts are in the archives</a></p>' if len(posts) > HOME_POSTS else ""
-    write("/index.html", page(title=TITLE, description=TAGLINE, path="/index.html",
+    write("/index.html", page(title=TITLE, description=HOME_DESCRIPTION, path="/index.html",
                               body=by_day(posts[:HOME_POSTS]) + older, schema=home_schema, **P))
     sitemap.append(("/", posts[0]["updated"] if posts else None))
 
@@ -500,6 +587,7 @@ def main():
                  f'<meta property="article:modified_time" content="{p["updated"].isoformat()}">\n'
                  + "".join(f'<meta property="article:tag" content="{e(c)}">\n' for c in p["cats"]))
         write(p["path"], page(title=p["title"], description=p["description"], path=p["path"], body=body,
+                              seo_title=p.get("seo_title"), kicker=f"Weblog \u00b7 {long_date(p['when'])}",
                               schema=post_schema(p), og_type="article", extra_head=extra, **P))
         sitemap.append((p["path"], p["updated"]))
 
@@ -509,7 +597,7 @@ def main():
         months.setdefault(f"{p['when']:%Y/%m}", []).append(p)
     for key, ps in months.items():
         label = f"{ps[0]['when']:%B %Y}"
-        write(f"/{key}/index.html", page(title=f"Posts from {label}", description=f"Every weblog post from {label}.",
+        write(f"/{key}/index.html", page(title=f"Posts from {label}", description=f"Every post on Chris Abraham's weblog from {label}, about Blackbox, Claude Code, AI tools, and client work, written by Claude from his prompts.",
               path=f"/{key}/index.html", body=f'<h1 class="page-title">{label}</h1>' + by_day(ps, full=True),
               noindex=True, **P))
     cats = {}
@@ -517,7 +605,7 @@ def main():
         for c in p["cats"]:
             cats.setdefault(c, []).append(p)
     for c, ps in cats.items():
-        write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", description=f"Weblog posts filed under {c}.",
+        write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", description=f"Every post on Chris Abraham's weblog filed under {c}, newest first, written by Claude from his prompts and showing each prompt.",
               path=f"/category/{slugify(c)}.html", body=f'<h1 class="page-title">Filed under {e(c)}</h1>' + by_day(ps),
               noindex=True, **P))
 
@@ -534,7 +622,7 @@ def main():
                      f'<a href="{p["path"]}">{e(p["title"])}</a></li>')
     if cur:
         lines.append("</ul>")
-    write("/archives.html", page(title="Archives of the Chris Abraham Weblog", description="Every post on the Chris Abraham Weblog by month, from Blackbox to Claude Code to client work, written by Claude from his prompts.",
+    write("/archives.html", page(title="Archives of the Chris Abraham Weblog", seo_title="Weblog archives: every post by Chris Abraham, by month", description="Every post on Chris Abraham's weblog by month, from Blackbox to Claude Code to anonymized client work, written by Claude from his prompts.",
           path="/archives.html", body='<h1 class="page-title">Archives</h1>' + "\n".join(lines), **P))
     sitemap.append(("/archives.html", posts[0]["updated"] if posts else None))
 
@@ -550,7 +638,7 @@ def main():
                        "url": SITE_URL + "/projects.html", "author": {"@id": PERSON["@id"]},
                        "hasPart": [{"@type": "CreativeWork", "name": x["name"], "url": x.get("url") or None,
                                     "creativeWorkStatus": x["status"]} for x in site["projects"]]}
-    write("/projects.html", page(title="Projects Chris Abraham is building now", description="What Chris Abraham is building and running right now, from Blackbox to his podcast site, with the status of each project kept current.",
+    write("/projects.html", page(title="Projects Chris Abraham is building now", seo_title="Projects Chris Abraham is building now, with status", description="What Chris Abraham is building and running right now, from Blackbox to his podcast site, with the status of each project kept current.",
           path="/projects.html", schema=projects_schema,
           body='<h1 class="page-title">Projects</h1><p class="lede">What I am building, running, or planning, with an honest status for each. Posts about a project link back here.</p>' + "\n".join(rows), **P))
     sitemap.append(("/projects.html", None))
@@ -582,6 +670,7 @@ def main():
                   "author": {"@id": PERSON["@id"]}, "isPartOf": {"@type": "CollectionPage", "name": "Chris Abraham wiki",
                   "url": SITE_URL + "/wiki/"}, "about": w["cats"]}
         write(w["path"], page(title=w["title"], description=w["description"], path=w["path"], body=html_body,
+                              seo_title=w.get("seo_title"), kicker="From the Chris Abraham wiki",
                               schema=schema, og_type="article", **P))
         sitemap.append((w["path"], dt.datetime.combine(w["edited"], dt.time(), TZ)))
 
@@ -605,7 +694,7 @@ def main():
 {groups}
 <h2>Recent edits</h2><ul class="archive-list">{recent_edits}</ul>
 </div></div>"""
-    write("/wiki/index.html", page(title="Chris Abraham wiki", description="Evergreen reference pages from Chris Abraham: Blackbox and every command it knows, pinebox, the Upwork verdicts, and Adjutant, edited in place.",
+    write("/wiki/index.html", page(title="Chris Abraham wiki", seo_title="Chris Abraham wiki: Blackbox, commands, and project notes", description="Evergreen reference pages from Chris Abraham: Blackbox and every command it knows, pinebox, the Upwork verdicts, and Adjutant, edited in place.",
           path="/wiki/index.html", body=main_body, schema={"@context": "https://schema.org", "@type": "CollectionPage",
           "name": "Chris Abraham wiki", "url": SITE_URL + "/wiki/", "author": {"@id": PERSON["@id"]},
           "hasPart": [{"@type": "Article", "headline": w["title"], "url": w["url"]} for w in wiki.values()]}, **P))
@@ -620,6 +709,7 @@ def main():
                   "url": SITE_URL + path, "description": m["description"],
                   "mainEntity" if m.get("schema") == "ProfilePage" else "author": PERSON}
         write(path, page(title=m["title"], description=m["description"], path=path, schema=schema,
+                         seo_title=m.get("seo_title"),
                          body=f'<h1 class="page-title">{e(m["title"])}</h1><div class="post-body">{add_toc(m["body"])[0]}</div>',
                          noindex=f.stem == "404", **P))
         if f.stem != "404":
@@ -636,6 +726,23 @@ def main():
     write("/llms.txt", llms(posts, site, full=False))
     write("/llms-full.txt", llms(posts, site, full=True))
     write("/favicon.svg", FAVICON)
+    write("/humans.txt", f"""/* TEAM */
+Owner and prompter: {AUTHOR}
+Contact: {EMAIL}
+From: Washington, DC area, USA
+Writer: Claude (Anthropic), in Claude Code
+
+/* THANKS */
+Dave Winer, for Scripting News and RSS
+Everyone on the blogroll
+
+/* SITE */
+Last update: {dt.date.today()}
+Language: English
+Standards: HTML5, CSS3, RSS 2.0, OPML 2.0, schema.org, microformats2, WCAG 2.1 AA
+Software: Python 3 standard library, Pillow for share cards, GitHub Pages
+Source: https://github.com/chrisabraham/weblog
+""")
     write(f"/{INDEXNOW_KEY}.txt", INDEXNOW_KEY)
     write("/CNAME", SITE_URL.split("//")[1] + "\n")
     write("/.nojekyll", "")
