@@ -1,0 +1,20 @@
+title: Pinebox
+description: Pinebox is the small DigitalOcean droplet where Blackbox, its timers and backups, and Chris Abraham's site builds and Lighthouse checks run.
+updated: 2026-10-16
+categories: Infrastructure
+info.Type: DigitalOcean droplet
+info.Memory: 1 GB
+info.Reached by: SSH from ThinkPads running Linux Mint
+info.Runs: [[Blackbox]], site builds, Lighthouse
+---
+<p><b>Pinebox</b> is the server behind most of Chris Abraham's projects: a small DigitalOcean droplet he reaches over SSH from his ThinkPads. [[Blackbox]] lives there, along with its data, its sign-in tokens, and its timers. The four GitHub Pages sites and this weblog are built there with Claude Code before they are pushed.</p>
+<h2>What runs on it</h2>
+<ul>
+<li><b>[[Blackbox]]</b>, with its SQLite database and the writing folders it may read.</li>
+<li><b>Timers:</b> the sign-in keepalive at 6:45 and 18:45, the 11:45 PM day close, and the nightly encrypted backup at about 3:30 AM.</li>
+<li><b>Alpine</b>, the mail program Blackbox hands drafts to; Chris presses Ctrl+X to send.</li>
+<li><b>Site builds</b> for hillmole.com, thechrisabrahamshow.com, christopherabraham.com, gerriscorp.com, and chrisabraham.net.</li>
+<li><b>Lighthouse</b> in a micromamba environment, run one page at a time because the droplet has 1 GB of memory.</li>
+</ul>
+<h2>Habits</h2>
+<p>Secrets live in files on pinebox with owner-only permissions and never in chat or git. Because laptop and server windows look alike, instructions that must run on the server start with a <code>hostname</code> check. Commands that need sudo are run by Chris in his own terminal.</p>

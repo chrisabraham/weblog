@@ -1,0 +1,30 @@
+title: Adjutant
+description: Adjutant is the planned public, open-source version of Blackbox, with Chris Abraham's name, clients, and data removed, meant to be read and borrowed.
+updated: 2026-10-16
+categories: Blackbox, Projects
+info.Status: Planned, not started
+info.Based on: [[Blackbox]]
+info.License: MIT, as is
+info.Working names: Adjutant; also Minutes, Aide, Secretary
+---
+<p><b>Adjutant</b> is the working name for a public spin-off of [[Blackbox]], agreed on October 1, 2026 and waiting until Blackbox has had a few more weeks of real use. The pitch is a command-line chief of staff for people whose memory doesn't hold on to things, built quickly with Claude Code and meant to be read and borrowed. Chris thinks of it as show-and-tell, an example rather than a product: no roadmap, no support promises.</p>
+<h2>Plan</h2>
+<ul>
+<li>A separate public repository with fresh history, so nothing private comes along.</li>
+<li>The same engine as Blackbox, with Chris' name, clients, data, prompt, and server details moved into private configuration first.</li>
+<li>A demo that runs with no accounts or keys, using the fakes the test suite already has.</li>
+<li>A release script that refuses to publish if it finds client names, personal paths, or secrets.</li>
+</ul>
+<h2>The patterns</h2>
+<ol>
+<li>An outside authority (Todoist) plus a local append-only history.</li>
+<li>Deterministic plain English first, tested by replaying your own message history.</li>
+<li>Minutes as data, with supersede and strike instead of delete.</li>
+<li>Briefs: gather a packet, make one model call, store the result.</li>
+<li>"What am I forgetting," with snoozes that remember why.</li>
+<li>Outside actions only on a human yes, with the email client as the send button.</li>
+<li>A model per job, with fallbacks and a cost ledger.</li>
+<li>Tests that run the real CLI against fakes in a throwaway home folder.</li>
+<li>An encrypted nightly backup with a tested restore.</li>
+<li>Secrets and data that cannot reach git.</li>
+</ol>

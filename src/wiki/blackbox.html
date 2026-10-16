@@ -1,0 +1,52 @@
+title: Blackbox
+description: Blackbox, or bb, is Chris Abraham's plain-English command-line secretary, built with Claude Code and running on his pinebox server since September 2026.
+updated: 2026-10-16
+categories: Blackbox, Projects
+infobox_title: Blackbox (bb)
+info.Type: Command-line secretary
+info.First commit: September 30, 2026
+info.Runs on: [[Pinebox]]
+info.Language: Python 3, standard library core
+info.Built with: Claude Code; the continuity feature with OpenAI Codex
+info.Model backend: OpenAI GPT-5.6 Terra (Claude routing built, not switched on)
+info.Data: SQLite, append-only records
+info.Source: Private repository
+info.Status: Active
+---
+<p><b>Blackbox</b>, usually typed <code>bb</code>, is the secretary Chris Abraham built for himself. It runs on [[Pinebox]], he reaches it over SSH from his ThinkPads, and he talks to it in plain sentences. It keeps his tasks, the minutes of his day, his diary, his Upwork pipeline, and his unread mail in one place, and tells him what he is about to forget. The design brief was a good first lieutenant: someone who knows the schedule and the promises and doesn't try to be a friend. The full command list is on [[Blackbox commands]].</p>
+<h2>What it does</h2>
+<h3>Tasks</h3>
+<p>Todoist is the official list. Blackbox reads it, changes it when asked, and keeps a permanent local log of every task it has seen and every change, whether made through <code>bb</code> or in the Todoist app. Tasks get short stable numbers, so <code>bb 12 done</code> always means the same task. Anything labeled <code>@bb</code> in Todoist on the phone becomes a minute on the next sync.</p>
+<h3>Minutes</h3>
+<p>Plain sentences such as "I decided…", "I owe Alice…", "Bob is blocked until…" are recorded as minutes with no AI call. Nothing is deleted: a correction supersedes an entry and "scratch that" strikes one, but the original stays.</p>
+<h3>Briefs and the diary</h3>
+<p><code>bb good morning</code> and <code>bb good night</code> each gather the day's record and make one model call, costing a few cents. The night close writes a diary entry to <code>~/text/diary</code>, append-only, with no approval step. If Chris forgets to say good night, a timer closes the day at 11:45 PM.</p>
+<h3>What am I forgetting</h3>
+<p>A ranked list built from Blackbox's own records with no AI call: a failing backup, people who owe something for five days or more, promises with no task, long blocks, tasks pushed back three or more times, duplicates, and unsaved drafts. Each item comes with the command that fixes it.</p>
+<h3>Email, inbox, and calendar</h3>
+<p>Blackbox drafts email in Chris' voice, but it never sends: <code>bb send</code> opens Alpine's compose screen already filled in, and the mail goes only when he presses Ctrl+X. It reads unread Gmail and the Google calendar through its own sign-in, read-only, and leaves payment, invoice, and pitch mail out of its reports.</p>
+<h3>Upwork</h3>
+<p>Through Upwork's official MCP server, Blackbox pulls new jobs, ranks them against Chris' lanes, and gives each a verdict from his playbook (see [[Upwork verdicts]]). It drafts proposals and screening answers in plain ASCII, checks them for length and placeholders, and never submits anything.</p>
+<h3>Continuity</h3>
+<p>Added on October 16, 2026, and written by OpenAI's Codex. Projects collect linked sources into a dossier, checkpoints record where work stopped, <code>bb I have 25 minutes</code> picks one task that fits and drafts the first piece, decisions can carry dated tripwires, scope can carry a cap in minutes, and an evidence bank holds claims Chris has checked before any proposal may cite them.</p>
+<h2>Design rules</h2>
+<ul>
+<li>Plain English first. Command words are ordinary speech unless the rest of the line fits the command.</li>
+<li>Misfires are loud. A short command-like line that matches nothing gets a warning instead of quietly going to the chat, because Chris types and moves on without checking.</li>
+<li>Every screen ends with ready-to-type <code>next:</code> lines.</li>
+<li>Nothing leaves without a yes. No sending, submitting, or spending on its own.</li>
+<li>Records are append-only, and database changes only ever add tables, so an older <code>bb</code> still opens a newer database.</li>
+<li>One model per job, with fallbacks and a local cost ledger (<code>bb cost</code>).</li>
+</ul>
+<h2>Operations</h2>
+<p>Three timers run on [[Pinebox]]: a keepalive at 6:45 and 18:45 that renews the Upwork and Google sign-ins, the 11:45 PM day close, and a backup at about 3:30 AM that encrypts the database and writing folders, decrypts them again to verify, and pushes the snapshot to a private repository, keeping fourteen nights. The test suite runs the real command against fake Todoist, Upwork, and model servers in a throwaway home folder.</p>
+<h2>Open items</h2>
+<ul>
+<li>Send the September 30 bake-off picks and switch the backend to Claude.</li>
+<li>Let a model propose minutes and tasks from sentences that match no command, confirmed with <code>bb yes</code>.</li>
+<li>Handoff packets that package a problem for ChatGPT or another tool.</li>
+<li>A daily email digest.</li>
+<li>[[Adjutant]], the public version.</li>
+</ul>
+<h2>See also</h2>
+<ul><li>[[Blackbox commands]]</li><li>[[Upwork verdicts]]</li><li>[[Pinebox]]</li><li>[[Adjutant]]</li></ul>

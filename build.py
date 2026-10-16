@@ -46,8 +46,15 @@ PERSON = {
 GA = """<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  var off = {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
+  // EU, EEA, UK, and Swiss visitors get no analytics cookies (cookieless pings only).
+  gtag('consent', 'default', Object.assign({region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']}, off));
+  // Everyone else gets first-party analytics cookies and nothing for ads, unless the browser
+  // sends Global Privacy Control or Do Not Track, which turns analytics cookies off too.
+  var optout = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1';
+  gtag('consent', 'default', optout ? off : {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
   gtag('js', new Date());
-  gtag('config', '{id}');
+  gtag('config', '{id}', {allow_google_signals: false, allow_ad_personalization_signals: false});
   (function () {
     var done = false;
     function load() {
@@ -129,6 +136,79 @@ def load_posts():
     return posts
 
 
+
+REPO = "https://github.com/chrisabraham/weblog"
+WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
+
+
+def load_wiki():
+    pages = {}
+    for path in sorted((SRC / "wiki").glob("*.html")):
+        m = parse(path)
+        check_meta("wiki/" + path.name, m)
+        m["slug"] = path.stem
+        m["path"] = f"/wiki/{path.stem}.html"
+        m["url"] = SITE_URL + m["path"]
+        m["src"] = f"src/wiki/{path.name}"
+        m["cats"] = [c.strip() for c in m.get("categories", "").split(",") if c.strip()]
+        m["edited"] = dt.date.fromisoformat(m["updated"])
+        m["info"] = [(k[5:], v) for k, v in m.items() if k.startswith("info.")]
+        pages[m["slug"]] = m
+    return pages
+
+
+def wikilinks(body, wiki, found):
+    """[[Page]] or [[Page|text]] becomes a link; a missing page is a red link, like a real wiki."""
+    def sub(mt):
+        target, text = mt.group(1).strip(), (mt.group(2) or mt.group(1)).strip()
+        slug = slugify(target)
+        found.add(slug)
+        if slug in wiki:
+            return f'<a href="/wiki/{slug}.html" class="wikilink">{text}</a>'
+        return f'<a href="/wiki/" class="wikilink new" title="{e(target)} (page does not exist yet)">{text}</a>'
+    return WIKILINK.sub(sub, body)
+
+
+def add_toc(body):
+    heads, n = [], [0, 0]
+    def sub(mt):
+        level, inner = mt.group(1), mt.group(2)
+        hid = slugify(re.sub(r"<[^>]+>", "", inner))
+        if level == "2":
+            n[0] += 1; n[1] = 0; num = f"{n[0]}"
+        else:
+            n[1] += 1; num = f"{n[0]}.{n[1]}"
+        heads.append((level, num, hid, re.sub(r"<[^>]+>", "", inner)))
+        return f'<h{level} id="{hid}">{inner}</h{level}>'
+    body = re.sub(r"<h([23])>(.*?)</h\1>", sub, body)
+    if len(heads) < 3:
+        return body, ""
+    items = "".join(f'<li class="toc-{lv}"><a href="#{hid}"><span class="tocnum">{num}</span><span class="toctext">{e(t)}</span></a></li>'
+                    for lv, num, hid, t in heads)
+    return body, f'<nav class="toc" aria-label="Contents"><p class="toc-title">Contents</p><ol>{items}</ol></nav>'
+
+
+AMAZON_TAG = "gerris-20"
+AMAZON_NOTE = '<p class="disclosure">As an Amazon Associate I earn from qualifying purchases. <a href="/disclosures.html#affiliate-links">About affiliate links</a></p>'
+
+
+def affiliate(body):
+    """Tag every Amazon link with gerris-20 and rel=sponsored; return (body, has_affiliate)."""
+    found = [False]
+    def sub(mt):
+        tag = mt.group(0)
+        href = re.search(r'href="([^"]+)"', tag).group(1)
+        if not re.match(r"https?://(www\.)?(amazon\.com|amzn\.to)/", href):
+            return tag
+        found[0] = True
+        if "amazon.com" in href and "tag=" not in href:
+            new = href + ("&amp;" if "?" in href else "?") + "tag=" + AMAZON_TAG
+            tag = tag.replace(f'href="{href}"', f'href="{new}"')
+        tag = re.sub(r'\srel="[^"]*"', "", tag)
+        return tag[:-1] + ' rel="sponsored noopener">'
+    body = re.sub(r"<a\s[^>]*href=\"[^\"]+\"[^>]*>", sub, body)
+    return body, found[0]
+
 # ---------------------------------------------------------------- helpers
 
 e = html.escape
@@ -196,11 +276,11 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <div id="wrap">
 <header id="banner">
   <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
-  <p class="site-title"><a href="/" rel="home">{e(TITLE)}</a></p>
+  <{"h1" if path == "/index.html" else "p"} class="site-title"><a href="/" rel="home">{e(TITLE)}</a></{"h1" if path == "/index.html" else "p"}>
   <p class="tagline">{e(TAGLINE)}</p>
   <nav class="topnav" aria-label="Main">
-    <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/archives.html">Archives</a>
-    <a href="/about.html">About</a> <a href="/colophon.html">Colophon</a> <a href="/rss.xml">RSS</a>
+    <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a> <a href="/rss.xml">RSS</a>
   </nav>
 </header>
 <div id="cols">
@@ -210,8 +290,9 @@ def page(*, title, description, path, body, site, posts, schema=None,
 {sidebar(site, posts)}
 </div>
 <footer id="footer">
-  <p>Copyright {dt.date.today().year} {AUTHOR}. Every post here is written by Claude from my prompts, and each one says which model and shows the prompt. Write back: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
-  <p><a href="/rss.xml">RSS</a> &middot; <a href="/blogroll.opml">Blogroll OPML</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/sitemap.xml">Sitemap</a> &middot; <a href="/colophon.html">Colophon</a></p>
+  <p>Copyright {dt.date.today().year} {AUTHOR}. Claude writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+  <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>
@@ -259,10 +340,13 @@ def sidebar(site, posts):
     arch = "".join(f'<li><a href="/{k}/">{d:%B %Y}</a></li>' for k, d in months.items())
     catl = "".join(f'<li>{cat_link(c)} <small>({n})</small></li>' for c, n in sorted(cats.items()))
     recent = "".join(f'<li><a href="{p["path"]}">{e(p["title"])}</a></li>' for p in posts[:6])
+    wikil = "".join(f'<li><a href="{w["path"]}">{e(w["title"])}</a></li>'
+                    for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
     return f"""<aside id="sidebar" aria-label="Sidebar">
 <section class="box"><h2>About</h2>
-<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. Claude writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More</a></p></section>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. Claude writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a></p></section>
 <section class="box"><h2>Recent posts</h2><ul>{recent}</ul></section>
+<section class="box"><h2>Wiki</h2><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
 <section class="box"><h2>Projects</h2><ul class="projects">{proj}</ul></section>
 <section class="box"><h2>Categories</h2><ul>{catl}</ul></section>
 <section class="box"><h2>Archives</h2><ul>{arch}</ul></section>
@@ -274,6 +358,8 @@ def sidebar(site, posts):
 <a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
 <span class="badge b-lynx"><b>Lynx</b>friendly</span>
 <span class="badge b-html"><b>HTML</b>no JS req.</span>
+<a class="badge b-wcag" href="/accessibility.html"><b>WCAG</b>2.1 AA</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>a11y</b>100/100</a>
 <a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
 </section>
 </aside>"""
@@ -339,6 +425,7 @@ def post_schema(p):
                 "wordCount": len(text_only(p["body"]).split()),
                 "inLanguage": "en-US",
                 "creditText": f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt",
+                "publishingPrinciples": SITE_URL + "/disclosures.html",
             },
             PERSON,
             {"@type": "BreadcrumbList", "itemListElement": [
@@ -363,6 +450,20 @@ def main():
     PERSON["sameAs"] = [x["url"] for g in site["blogroll"] for x in g["links"]
                         if "calendly" not in x["url"] and "slowjogging" not in x["url"]]
     posts = load_posts()
+    wiki = load_wiki()
+    site["_wiki"] = wiki
+    links_to = {}  # slug -> list of (title, path) that link to it
+    for p in posts + list(wiki.values()):
+        found = set()
+        p["body"] = wikilinks(p["body"], wiki, found)
+        p["body"], aff = affiliate(p["body"])
+        if aff or p.get("affiliate") == "yes":
+            p["body"] += AMAZON_NOTE if aff else '<p class="disclosure">This page contains affiliate links; I may earn a commission. <a href="/disclosures.html#affiliate-links">About affiliate links</a></p>'
+        if "info" in p:
+            p["info"] = [(k, wikilinks(v, wiki, found)) for k, v in p["info"]]
+        for s in found:
+            if s != p.get("slug") or p["path"].startswith("/20"):
+                links_to.setdefault(s, []).append((p["title"], p["path"]))
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir()
@@ -373,6 +474,7 @@ def main():
     home_schema = {"@context": "https://schema.org", "@graph": [
         {"@type": "Blog", "@id": SITE_URL + "/#blog", "name": TITLE, "description": TAGLINE,
          "url": SITE_URL + "/", "author": {"@id": PERSON["@id"]}, "inLanguage": "en-US",
+         "publishingPrinciples": SITE_URL + "/disclosures.html",
          "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": p["url"],
                        "datePublished": p["when"].isoformat()} for p in posts[:HOME_POSTS]]},
         {"@type": "WebSite", "@id": SITE_URL + "/#site", "name": TITLE, "url": SITE_URL + "/",
@@ -453,6 +555,62 @@ def main():
           body='<h1 class="page-title">Projects</h1><p class="lede">What I am building, running, or planning, with an honest status for each. Posts about a project link back here.</p>' + "\n".join(rows), **P))
     sitemap.append(("/projects.html", None))
 
+
+    # Wiki: evergreen pages, edited in place, with tabs, contents, and backlinks.
+    for w in wiki.values():
+        body, toc = add_toc(w["body"])
+        info = ""
+        if w["info"]:
+            rows = "".join(f'<tr><th scope="row">{e(k)}</th><td>{v}</td></tr>' for k, v in w["info"])
+            info = f'<table class="infobox"><caption>{e(w.get("infobox_title", w["title"]))}</caption>{rows}</table>'
+        back = sorted(set(links_to.get(w["slug"], [])), key=lambda x: x[0].lower())
+        backl = ("".join(f'<li><a href="{pp}">{e(t)}</a></li>' for t, pp in back)) or "<li>Nothing yet.</li>"
+        cats = " &middot; ".join(f'<a href="/wiki/#cat-{slugify(c)}">{e(c)}</a>' for c in w["cats"])
+        html_body = f"""<div class="wiki">
+<nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Article</span><a href="{REPO}/blob/main/{w['src']}">View source</a><a href="{REPO}/commits/main/{w['src']}">History</a></nav>
+<h1 class="wiki-title">{e(w['title'])}</h1>
+<p class="wiki-from">From the <a href="/wiki/">Chris Abraham wiki</a></p>
+<div class="wiki-body post-body">{info}{toc}
+{body}
+</div>
+<p class="wiki-cats">Categories: {cats or "none"}</p>
+<section class="wiki-backlinks"><h2>What links here</h2><ul>{backl}</ul></section>
+<p class="wiki-edited">This page was last edited on {w['edited']:%B} {w['edited'].day}, {w['edited']:%Y}. Claude writes and edits the wiki from Chris' prompts; the <a href="{REPO}/commits/main/{w['src']}">history</a> shows every change.</p>
+</div>"""
+        schema = {"@context": "https://schema.org", "@type": "Article", "headline": w["title"],
+                  "description": w["description"], "url": w["url"], "dateModified": w["edited"].isoformat(),
+                  "author": {"@id": PERSON["@id"]}, "isPartOf": {"@type": "CollectionPage", "name": "Chris Abraham wiki",
+                  "url": SITE_URL + "/wiki/"}, "about": w["cats"]}
+        write(w["path"], page(title=w["title"], description=w["description"], path=w["path"], body=html_body,
+                              schema=schema, og_type="article", **P))
+        sitemap.append((w["path"], dt.datetime.combine(w["edited"], dt.time(), TZ)))
+
+    # Wiki main page: every page by category, plus recent edits.
+    bycat = {}
+    for w in wiki.values():
+        for c in w["cats"] or ["Uncategorized"]:
+            bycat.setdefault(c, []).append(w)
+    groups = "".join(
+        f'<h2 id="cat-{slugify(c)}">{e(c)}</h2><ul>' + "".join(
+            f'<li><a href="{w["path"]}">{e(w["title"])}</a>: {e(w["description"])}</li>'
+            for w in sorted(ws, key=lambda w: w["title"].lower())) + "</ul>"
+        for c, ws in sorted(bycat.items()))
+    recent_edits = "".join(f'<li><time datetime="{w["edited"]}">{w["edited"]:%b} {w["edited"].day}</time> <a href="{w["path"]}">{e(w["title"])}</a></li>'
+                           for w in sorted(wiki.values(), key=lambda w: w["edited"], reverse=True)[:10])
+    main_body = f"""<div class="wiki">
+<nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Main page</span><a href="{REPO}/tree/main/src/wiki">View source</a><a href="{REPO}/commits/main/src/wiki">History</a></nav>
+<h1 class="wiki-title">Chris Abraham wiki</h1>
+<div class="wiki-body post-body">
+<p>The weblog is the diary; this is the reference shelf. Pages here hold what stays true for a while: how <a href="/wiki/blackbox.html">Blackbox</a> works and every command it knows, the machines it runs on, and the rules behind my projects. Posts are dated and never rewritten. Wiki pages are edited in place, and each one links to its full history. It looks like a wiki and behaves like one, except that only Claude and I edit it.</p>
+{groups}
+<h2>Recent edits</h2><ul class="archive-list">{recent_edits}</ul>
+</div></div>"""
+    write("/wiki/index.html", page(title="Chris Abraham wiki", description="Evergreen reference pages from Chris Abraham: Blackbox and every command it knows, pinebox, the Upwork verdicts, and Adjutant, edited in place.",
+          path="/wiki/index.html", body=main_body, schema={"@context": "https://schema.org", "@type": "CollectionPage",
+          "name": "Chris Abraham wiki", "url": SITE_URL + "/wiki/", "author": {"@id": PERSON["@id"]},
+          "hasPart": [{"@type": "Article", "headline": w["title"], "url": w["url"]} for w in wiki.values()]}, **P))
+    sitemap.append(("/wiki/", max((dt.datetime.combine(w["edited"], dt.time(), TZ) for w in wiki.values()), default=None)))
+
     # Static pages
     for f in sorted((SRC / "pages").glob("*.html")):
         m = parse(f)
@@ -462,7 +620,7 @@ def main():
                   "url": SITE_URL + path, "description": m["description"],
                   "mainEntity" if m.get("schema") == "ProfilePage" else "author": PERSON}
         write(path, page(title=m["title"], description=m["description"], path=path, schema=schema,
-                         body=f'<h1 class="page-title">{e(m["title"])}</h1><div class="post-body">{m["body"]}</div>',
+                         body=f'<h1 class="page-title">{e(m["title"])}</h1><div class="post-body">{add_toc(m["body"])[0]}</div>',
                          noindex=f.stem == "404", **P))
         if f.stem != "404":
             sitemap.append((path, None))
@@ -535,6 +693,7 @@ def opml(site):
 
 
 def llms(posts, site, *, full):
+    wiki = site.get("_wiki", {})
     out = [f"# {TITLE}", "", f"> {TAGLINE}", "",
            f"{AUTHOR}'s personal weblog about working with AI: Blackbox (his command-line secretary), Claude, Claude Code, ChatGPT, OpenAI Codex, GitHub, and anonymized client work. "
            "Claude writes every post from Chris' prompts; each post names the model and shows the prompt.", "",
@@ -542,10 +701,15 @@ def llms(posts, site, *, full):
            f"- [About]({SITE_URL}/about.html): who Chris is and how this weblog gets written",
            f"- [Projects]({SITE_URL}/projects.html): what he is building, with status",
            f"- [Archives]({SITE_URL}/archives.html): every post by month",
+           f"- [Wiki]({SITE_URL}/wiki/): evergreen reference pages",
            f"- [RSS]({SITE_URL}/rss.xml)", "", "## Posts", ""]
     for p in posts:
         out.append(f"- [{p['title']}]({p['url']}) ({p['when'].date()}): {p['description']}")
+    out += ["", "## Wiki", ""] + [f"- [{w['title']}]({w['url']}) (edited {w['edited']}): {w['description']}"
+                                   for w in sorted(wiki.values(), key=lambda w: w["title"].lower())]
     if full:
+        for w in sorted(wiki.values(), key=lambda w: w["title"].lower()):
+            out += ["", "---", "", f"# {w['title']}", "", f"{w['url']} · edited {w['edited']}", "", text_only(w["body"])]
         for p in posts:
             out += ["", "---", "", f"# {p['title']}", "", f"{p['url']} · {p['when'].date()} · {p.get('model', 'Claude')}", "",
                     text_only(p["body"])]

@@ -1,0 +1,164 @@
+title: Blackbox commands
+description: Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
+updated: 2026-10-16
+categories: Blackbox, Reference
+info.Source: <code>bb help</code> on [[Pinebox]]
+info.Groups: 12
+info.Regenerated: 2026-10-16
+info.Program: [[Blackbox]]
+---
+<p>This is the complete list of commands that [[Blackbox]] prints for <code>bb help</code>, regenerated from the live program whenever it changes. Most of them also work as plain sentences: Blackbox treats command words as ordinary speech unless the rest of the line fits the command, and a short line that matches nothing gets a loud warning instead of silently going to the chat. Examples use made-up names where the real help names real clients.</p>
+<p>Anything that sends, submits, or changes something outside Blackbox waits for a yes. Upwork is read-only, email goes out through Alpine only when Chris presses Ctrl+X, and Todoist changes are proposed before they happen. The [[Upwork verdicts]] page explains the triage labels.</p>
+<h2>Continuity and prepared work</h2>
+<p><em>local records; no sends or external changes.</em></p>
+<pre>bb alias PROJECT :: ALIAS
+bb unalias ALIAS
+bb link PROJECT :: m5                 also task:12, email:3, time:2, memory:1,
+                                     file:1, message:4, pitch:2
+bb unlink PROJECT :: SOURCE
+bb continuity sources audit          find source IDs in saved local records
+bb dossier PROJECT                   connected sources, dates and state
+bb checkpoint PROJECT :: STOPPED HERE :: NEXT STEP
+bb get me back into PROJECT          or: bb get me back into this (last checkpoint in this thread)
+bb prepare PROJECT                   generate and save the next work product
+bb estimate task:12 :: 20             minutes supplied by you
+bb I have 25 minutes                 select one fitting task and prepare work
+bb dismiss task:12 :: 7 :: REASON     suppress recommendation for seven days
+bb watch decision PROJECT :: m5 :: YYYY-MM-DD :: PROPOSED ACTION
+bb watch waiting PROJECT :: m5 :: m6 :: YYYY-MM-DD :: PROPOSED ACTION
+                                     m5=decision, m6=waiting/blocker/promise
+bb tripwires                         also included in morning briefs
+bb prepare trigger r1
+bb snooze trigger r1 :: YYYY-MM-DD
+bb resolve trigger r1
+bb scope set PROJECT :: confirmed :: 120 :: m5 :: AGREED DELIVERABLES
+                                     or estimate instead of confirmed; minutes cap
+bb scope request PROJECT :: m6 :: ADDITIONAL REQUEST
+bb scope PROJECT
+bb scope draft PROJECT               prepare a scope discussion; never send
+bb evidence add PROJECT :: m5 :: CLAIM
+bb evidence approve e1 :: internal   or shareable (explicit permission for external drafts)
+bb evidence retire e1
+bb evidence                          or evidence PROJECT
+bb work packets                      saved drafts
+bb work packet w1                    draft plus the exact source packet used</pre>
+<h2>Tasks</h2>
+<p><em>Todoist is the official list; plain English works.</em></p>
+<pre>bb ls                       all open tasks, grouped by date (or: what do I need to do)
+bb today | bb overdue       what&#x27;s due now
+bb add call Bob Friday p1   add to Todoist (its date words work)
+bb 12 done | bb Bob is done complete a task
+bb push 12 to Monday        reschedule
+bb reopen 12                undo a completion
+bb history of 12            everything that happened to a task
+bb what changed today       task changes, from bb or Todoist
+bb what did I finish this week</pre>
+<h2>Orientation</h2>
+<p><em>instant, no AI.</em></p>
+<pre>bb where was I              what you were doing + anything unfinished
+bb status                   backups, Todoist, AI spend, server health
+bb this day last week       also: a month ago, last year, sep 12
+bb who is Dana           people card: contact, promises, tasks, emails
+bb who are my clients       Todoist projects with open work
+bb start Atlas | bb stop | bb hours this week   (your own time log)</pre>
+<h2>What am I forgetting?</h2>
+<p><em>instant, no AI.</em></p>
+<pre>bb what am I forgetting     ranked: stale waiting, promises, overdue, duplicates...
+bb remind me about 2 Friday bb ignore 2 for a month   bb stop warning me about 2
+bb tidy up todoist          proposes closing duplicates / pushing stale tasks: bb yes
+bb rename 11 to ...         fix a broken task title
+bb organize todoist         proposes #Project + @labels for every task: bb yes
+bb move 12 to #Atlas   bb label 12 @seo @audit   bb unlabel 12 @seo
+bb kill 17                  close a task (reversible: bb reopen 17)
+bb sync                     pull Todoist now and say what changed
+In Todoist, label anything @bb and it becomes a minute on the next sync.</pre>
+<h2>Upwork</h2>
+<p><em>read-only; you pitch on Upwork itself.</em></p>
+<pre>bb connect upwork           one-time sign-in
+bb upwork                   short: invitations, replies owed, Connects, APPLY jobs with pitch links
+bb upwork new               freshest jobs in your lane, best opportunities first, each with why (bb upwork new 72)
+bb waiting                  everything waiting on you: offers, client replies, unsent drafts, APPLY jobs, email
+bb bids                     your proposals with Upwork&#x27;s status (submitted, OFFER, HIRED, declined, closed)
+bb upwork full              everything new (also: long, all), incl. untriaged and turned down
+bb verdicts | bb verdicts all   the shortlist / every verdict incl. PASS, RUN, FUCK NO
+bb upwork u3 | bb skip u3 | bb upwork watch | bb watch upwork for HubSpot SEO
+bb upwork floor 60          hide hourly jobs topping out below $60/hr (default $40)
+bb upwork fixed floor 1500  hide fixed-price jobs under $1,500 (default $500)
+bb triage                   verdicts on new jobs (FUCK NO/RUN/PASS/APPLY...), your playbook
+bb pitch u3                 proposal + screening answers, plain ASCII, checked before you see it
+bb tweak pitch: shorter     bb sent (records it, shows next) · bb next (skip) · bb bids
+bb questions for u3: ...    answers pasted screening questions (checked, ASCII)
+bb site u3 example.com      tell bb the client&#x27;s site so the pitch can open on it</pre>
+<h2>Inbox</h2>
+<p><em>Google, read-only; nothing is marked read.</em></p>
+<pre>bb inbox                    unread mail from people since 5 PM yesterday (Friday on Mondays), with links
+bb inbox all                the whole unread list   (good morning includes this automatically)
+bb unanswered               threads where a person wrote last, 2-14 days ago, and you haven&#x27;t replied
+bb drop e3                  not needed: keep it out of that list   (bb unanswered all: 45 days)</pre>
+<h2>Calendar</h2>
+<p><em>Google.</em></p>
+<pre>bb connect google           one-time sign-in (paste back the address Google sends you to)
+bb calendar | bb calendar tomorrow | bb calendar this week   (also in good morning/good night)</pre>
+<h2>Daily briefs</h2>
+<p><em>one AI call each, a few cents.</em></p>
+<pre>bb good morning             opening brief for today (also: good afternoon, good evening, morning,
+                            afternoon, evening: later in the day it&#x27;s a catch-up for the hours left)
+bb good night               (or close the day) summary, tomorrow&#x27;s three, diary draft
+bb show last night&#x27;s close  bb show this morning&#x27;s brief
+bb week in review           Fridays: the week, patterns, next week, diary</pre>
+<h2>Email</h2>
+<p><em>bb drafts; Alpine sends when you press Ctrl+X.</em></p>
+<pre>bb email Alice about the FAQ delay
+bb change make it shorter   bb send   bb discard   bb show the draft</pre>
+<h2>Forgotten tasks</h2>
+<p><em>one AI call; nothing added without you.</em></p>
+<pre>bb recover tasks            candidates from old conversations
+bb import c3 c5-c7          bb skip c4   bb skip handled</pre>
+<h2>Minutes</h2>
+<p><em>recorded as you say them; no AI call.</em></p>
+<pre>bb I decided ...            bb I owe Alice the FAQ tomorrow
+bb Alice owes me ...        bb waiting on Dana for ...
+bb Bob is blocked until ... bb note: ...    bb idea: ...
+bb what happened today      also: yesterday, this week
+bb what did I decide        bb what did I promise
+bb what do I owe Alice      bb what am I waiting on
+bb correction: ...          bb scratch that   bb m5 resolved</pre>
+<h2>Usage</h2>
+<pre>bb                         chat in the current thread
+bb TEXT                    ask once in the current thread
+bb current                 show the current thread
+bb threads                 list threads
+bb new NAME                create and switch to a thread
+bb use NAME                switch to an existing thread
+bb history [NAME]          show a thread&#x27;s history
+bb search TERMS            search permanent memory
+bb memory-stats            show memory statistics
+bb remember [SUBJECT ::] TEXT
+                           save Chris-verified memory
+bb memories [TERMS]        list/search verified memories
+bb correct ID TEXT         correct verified memory
+bb retire ID               supersede memory, preserving history
+bb project NAME :: SUMMARY save current project state
+bb project NAME            show one project
+bb projects                list projects
+bb next NAME :: ACTION     save a project&#x27;s next action
+bb files                    list files in your writing folders
+bb find TERMS               search your writing folders
+bb read diary/x.txt | bb read ~/poems/x.txt   read one file
+bb writing folders          bb also read ~/novel   bb stop reading ~/novel
+bb backend                  show active model backend
+bb backend claude           use Claude, one model per job (bb models)
+bb models                   which model does which job, and prices
+bb use sonnet for email     change a job&#x27;s model (opus/sonnet/haiku/fable/openai)
+bb backend openai           use direct GPT-5.6 Terra
+bb backend digitalocean     use DigitalOcean GPT-oss fallback
+bb cost                     show locally recorded token costs
+bb draft PATH :: INSTRUCTION
+                            stage an AI-proposed .txt change
+bb pending                  list unapplied file changes
+bb diff ID                  review a proposed change
+bb approve ID               apply after rechecking the base file
+bb reject ID                reject without modifying the file
+bb clear                   clear current active context
+bb --history               legacy alias for current history
+bb --new                   legacy alias for clear</pre>

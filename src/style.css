@@ -1,6 +1,5 @@
 /* A 2003 weblog template, rebuilt to read well on a phone in 2026: a
-   banner, a post column, a boxed sidebar with a blogroll, Verdana for the
-   furniture and Georgia for the writing, underlined blue links that turn
+   banner, a post column, a boxed sidebar with a blogroll, Verdana throughout, underlined blue links that turn
    purple once visited. The dark button in the banner works like Hill
    Mole's; with no saved choice it follows the system setting. */
 
@@ -8,20 +7,20 @@
   --page: #e9ecf2;
   --paper: #ffffff;
   --ink: #1b1b1b;
-  --muted: #5c6370;
+  --muted: #474d58;
   --link: #1d3d8f;
   --visited: #6a2c8f;
   --banner: #ffffff;
   --banner-ink: #1b1b1b;
-  --banner-sub: #5c6370;
+  --banner-sub: #474d58;
   --orange: #c75000;
   --gerris-blue: #16729e;
+  --redlink: #b00000;
   --box: #f4f6fa;
   --box-head: #dfe5f1;
   --rule: #c9d0dc;
   --quote: #f6f3e6;
-  --date: #8a5a00;
-  --serif: Georgia, "Times New Roman", "DejaVu Serif", serif;
+  --date: #6b4500;
   --sans: Verdana, "DejaVu Sans", Geneva, Tahoma, sans-serif;
   --mono: "Courier New", "DejaVu Sans Mono", monospace;
   color-scheme: light;
@@ -39,6 +38,7 @@
   --banner-sub: #9aa3b2;
   --orange: #ff8a3d;
   --gerris-blue: #5cb6e3;
+  --redlink: #ff8f8f;
   --box: #1c1f26;
   --box-head: #262b36;
   --rule: #343a46;
@@ -49,14 +49,17 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+/* No one-word last lines: browsers that support it rebalance the wrap. */
+p, li, dd, blockquote, .post-footer { text-wrap: pretty; }
+h1, h2, h3, .tagline, .site-title { text-wrap: balance; }
 
 body {
   margin: 0;
   background: var(--page);
   color: var(--ink);
-  font-family: var(--serif);
-  font-size: 18px;
-  line-height: 1.6;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
@@ -88,7 +91,7 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
 .site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
 .tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
 .topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
-.topnav a, .topnav a:visited { color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+.topnav a, .topnav a:visited { display: inline-block; padding: 4px 0; color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
 .topnav a:hover { background: var(--link); color: var(--paper); }
 
 .theme-toggle {
@@ -102,7 +105,7 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
 /* Columns */
 #cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
 #main { padding: 8px 28px 32px; min-width: 0; border-right: 1px dotted var(--rule); }
-#sidebar { padding: 18px 16px 24px; font-family: var(--sans); font-size: 0.72rem; line-height: 1.5; }
+#sidebar { padding: 18px 16px 24px; font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; }
 
 /* Posts */
 .date-header {
@@ -112,7 +115,7 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
   border-bottom: 1px dotted var(--rule);
 }
 .post { margin: 0 0 30px; }
-.post-title { margin: 10px 0 8px; font-family: var(--serif); font-size: 1.45rem; line-height: 1.25; }
+.post-title { margin: 10px 0 8px; font-family: var(--sans); font-size: 1.45rem; line-height: 1.25; }
 h1.post-title { font-size: 1.8rem; }
 .post-title a, .post-title a:visited { color: var(--ink); text-decoration: none; }
 .post-title a:hover { background: none; color: var(--link); text-decoration: underline; }
@@ -133,6 +136,7 @@ h1.post-title { font-size: 1.8rem; }
   font: 0.72rem var(--sans); color: var(--muted);
   border-top: 1px dashed var(--rule);
 }
+.prevnext a { display: inline-block; padding: 4px 0; }
 .prevnext { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 0.75rem var(--sans); margin: 20px 0; }
 .older { font: 0.8rem var(--sans); }
 .page-title { font-size: 1.8rem; margin: 18px 0 12px; }
@@ -159,7 +163,7 @@ h1.post-title { font-size: 1.8rem; }
 }
 .box p, .box ul { margin: 8px; }
 .box ul { padding-left: 16px; }
-.box li { margin: 3px 0; }
+.box li { margin: 0; padding: 3px 0; }
 .box ul.projects { list-style: none; padding-left: 0; }
 .box small { color: var(--muted); }
 .opml { text-align: right; }
@@ -168,25 +172,29 @@ h1.post-title { font-size: 1.8rem; }
 .buttons { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; background: transparent; border: 0; }
 .badge, .badge:visited {
   display: inline-flex; width: 88px; height: 31px; overflow: hidden;
-  border: 1px solid #000; font: bold 9px/29px var(--sans);
+  border: 1px solid #000; font: bold 10px/29px var(--sans);
   text-decoration: none; color: #000; background: #ddd;
 }
 .badge b { display: inline-block; padding: 0 4px; color: #fff; background: #333; margin-right: 4px; }
-.b-rss { background: #ff9a33; } .b-rss b { background: #c25400; }
-.b-claude { background: #f2d4c2; } .b-claude b { background: #c15f3c; }
+.b-rss { background: #ff9a33; } .b-rss b { background: #a34600; }
+.b-claude { background: #f2d4c2; } .b-claude b { background: #9e4524; }
 .b-gh { background: #e0e0e0; } .b-gh b { background: #24292f; }
 .b-lynx { background: #c8f7c5; } .b-lynx b { background: #1e7a1e; }
 .b-html { background: #cfe0ff; } .b-html b { background: #1d3d8f; }
 .b-opml { background: #fff3a8; } .b-opml b { background: #6b5b00; }
+.b-wcag { background: #e3d7ff; } .b-wcag b { background: #4b2a99; }
+.b-lh { background: #d4f5e9; } .b-lh b { background: #0b6b4a; }
 .badge:hover { outline: 2px solid var(--link); background-color: inherit; }
 
 /* Footer */
 #footer { padding: 14px 24px 24px; border-top: 4px double var(--rule); font: 0.7rem var(--sans); color: var(--muted); }
-#footer p { margin: 4px 0; }
+#footer p { margin: 4px 0 8px; }
+.footlinks { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.footlinks a { display: inline-block; padding: 4px 0; white-space: nowrap; }
 
 /* Phones: one column, sidebar after the posts, nothing sideways */
 @media (max-width: 760px) {
-  body { font-size: 17px; }
+  body { font-size: 16px; }
   #wrap { border: 0; }
   #banner { padding: 16px 16px 0; }
   .site-title { font-size: 1.6rem; padding-right: 56px; }
@@ -208,3 +216,39 @@ h1.post-title { font-size: 1.8rem; }
 .blogroll h3 { margin: 10px 8px 0; font: bold 0.68rem var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
 .blogroll h3:first-of-type { margin-top: 8px; }
 .blogroll ul { margin-top: 4px; }
+
+/* Wiki: MediaWiki's furniture (tabs, infobox, contents box, red links) in this site's type */
+.wiki-tabs { display: flex; flex-wrap: wrap; gap: 2px; margin: 18px 0 0; border-bottom: 1px solid var(--rule); font: 0.78rem var(--sans); }
+.wiki-tabs a, .wiki-tabs span { display: inline-block; padding: 6px 12px; border: 1px solid var(--rule); border-bottom: 0; background: var(--box); text-decoration: none; }
+.wiki-tabs .sel { background: var(--paper); color: var(--ink); font-weight: bold; position: relative; top: 1px; }
+.wiki-title { font-size: 1.8rem; margin: 14px 0 2px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); font-weight: normal; }
+.wiki-from { margin: 4px 0 14px; font: 0.78rem var(--sans); color: var(--muted); }
+.wiki-body h2 { font-size: 1.3rem; font-weight: normal; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin: 1.6em 0 0.5em; }
+.wiki-body h3 { font-size: 1.05rem; margin: 1.3em 0 0.4em; }
+.wiki-body ul { padding-left: 1.4em; }
+.wiki-body li { margin: 0.25em 0; }
+.wikilink.new, .wikilink.new:visited { color: var(--redlink); }
+.infobox { float: right; clear: right; width: 290px; max-width: 100%; margin: 0 0 16px 18px; border: 1px solid var(--rule); background: var(--box); border-collapse: collapse; font: 0.78rem/1.45 var(--sans); }
+.infobox caption { font-weight: bold; font-size: 0.95rem; padding: 6px; caption-side: top; }
+.infobox th, .infobox td { text-align: left; vertical-align: top; padding: 5px 8px; border-top: 1px solid var(--rule); }
+.infobox th { width: 38%; }
+.toc { display: inline-block; min-width: 14em; margin: 4px 0 16px; padding: 8px 14px 6px; border: 1px solid var(--rule); background: var(--box); font: 0.8rem/1.5 var(--sans); }
+.toc-title { margin: 0 0 4px; font-weight: bold; text-align: center; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0; }
+.toc li a { display: inline-block; padding: 4px 0; text-decoration: none; }
+.toc .toctext { text-decoration: underline; text-underline-offset: 2px; }
+.toc a:hover .toctext { text-decoration: none; }
+.toc .toc-3 { padding-left: 1.4em; }
+.tocnum { color: var(--ink); margin-right: 6px; }
+.wiki-cats { clear: both; margin: 24px 0 8px; padding: 6px 10px; border: 1px solid var(--rule); background: var(--box); font: 0.78rem var(--sans); }
+.wiki-backlinks h2 { font-size: 1rem; margin: 18px 0 4px; }
+.wiki-backlinks ul { font-size: 0.9rem; }
+.wiki-edited { font: 0.75rem var(--sans); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.wiki pre { white-space: pre; }
+@media (max-width: 760px) {
+  .infobox { float: none; width: 100%; margin: 0 0 16px; }
+  .toc { display: block; }
+}
+
+.disclosure { font: 0.78rem var(--sans); color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px; }
