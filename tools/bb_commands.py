@@ -37,7 +37,7 @@ for s in sections:
 
 today = dt.date.today().isoformat()
 OUT.write_text(f"""title: Blackbox commands
-seo_title: Blackbox commands: every bb command, from tasks to Upwork
+seo_title: Blackbox commands: every bb command, tasks to Upwork
 description: Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
 updated: {today}
 categories: Blackbox, Reference

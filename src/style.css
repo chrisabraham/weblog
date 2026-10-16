@@ -138,6 +138,7 @@ h1.post-title { font-size: 1.8rem; }
 .post-body img { max-width: 100%; height: auto; }
 .prompt { margin: 12px 0; font-family: var(--sans); font-size: 0.78rem; }
 .prompt summary { cursor: pointer; color: var(--muted); }
+.prompt-h { display: inline; font: 0.78rem var(--sans); margin: 0; color: var(--muted); }
 .prompt blockquote { font-family: var(--mono); font-size: 0.82rem; white-space: pre-wrap; }
 .post-footer {
   margin: 10px 0 0; padding-top: 6px;
@@ -165,7 +166,7 @@ h1.post-title { font-size: 1.8rem; }
 
 /* Sidebar */
 .box { background: var(--box); border: 1px solid var(--rule); margin: 0 0 14px; }
-.box h2 {
+.box .box-title {
   margin: 0; padding: 4px 8px;
   background: var(--box-head); border-bottom: 1px solid var(--rule);
   font: bold 0.72rem var(--sans); text-transform: uppercase; letter-spacing: 1px;

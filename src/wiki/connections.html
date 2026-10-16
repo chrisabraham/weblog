@@ -1,6 +1,6 @@
 title: Connections
-seo_title: AI connections: every API and MCP server Chris Abraham uses
-description: Every service Chris Abraham's AI tools can reach, through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, GitHub, and more.
+seo_title: AI connections: every API and MCP server I use
+description: Every service Chris Abraham's AI tools can reach through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, and GitHub.
 updated: 2026-10-16
 categories: Reference, Infrastructure
 info.Protocol: [[Model Context Protocol]] plus plain REST APIs
@@ -9,7 +9,7 @@ info.Server: [[Pinebox]]
 info.Rule: Anything that sends or changes something waits for a yes
 ---
 <p>This is the running inventory of every service my AI tools can reach, and through what. Some connections are MCP servers, the [[Model Context Protocol]] connectors that let an AI client call a service's tools directly. Others are ordinary REST APIs with a key or an OAuth token kept in a file on [[Pinebox]]. Secrets never go into chat or git, and anything that sends, submits, or spends waits for my yes.</p>
-<h2>Blackbox</h2>
+<h2>Through Blackbox</h2>
 <div class="table-scroll"><table class="wikitable">
 <tr><th>Service</th><th>How</th><th>What it does</th></tr>
 <tr><td>Todoist</td><td>REST API, token</td><td>The official task list: read, add, complete, reschedule, organize, with a permanent local log</td></tr>
@@ -21,7 +21,7 @@ info.Rule: Anything that sends or changes something waits for a yes
 <tr><td>DigitalOcean</td><td>GenAI agent endpoint</td><td>Fallback model</td></tr>
 <tr><td>GitHub</td><td>git over HTTPS</td><td>The nightly encrypted backup goes to a private repository</td></tr>
 </table></div>
-<h2>Pinebox scripts</h2>
+<h2>Through Pinebox scripts</h2>
 <div class="table-scroll"><table class="wikitable">
 <tr><th>Service</th><th>How</th><th>What it does</th></tr>
 <tr><td>Google Places API (New)</td><td>API key, restricted to Places, in the Blackbox Cloud project</td><td>Public Google Business Profile data for local SEO checks and competitor pulls</td></tr>
@@ -29,7 +29,7 @@ info.Rule: Anything that sends or changes something waits for a yes
 <tr><td>GitHub</td><td><code>gh</code> CLI, OAuth</td><td>Repositories, GitHub Pages settings, Actions, and domain checks for every site</td></tr>
 <tr><td>Anthropic and OpenAI</td><td>API keys</td><td>The AI visibility tracker, run only when I start it, because every run costs money</td></tr>
 </table></div>
-<h2>Claude Code</h2>
+<h2>Through Claude Code</h2>
 <p>Claude Code on Pinebox has these connectors attached through my Claude account, plus everything on the machine itself:</p>
 <div class="table-scroll"><table class="wikitable">
 <tr><th>Connected</th><th>Notes</th></tr>

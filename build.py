@@ -71,6 +71,8 @@ GA = """<script>
   })();
 </script>"""
 
+AUTHOR_REF = {"@type": "Person", "@id": SITE_URL + "/about.html#chris", "name": AUTHOR, "url": SITE_URL + "/about.html"}
+
 SPECULATION = ('<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, '
                '{"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>')
 
@@ -243,6 +245,18 @@ FONT_DIR = ROOT / "fonts"
 CARD_CACHE = {}
 
 
+def px(text, size):
+    """Rendered width in Arial-metric Liberation Sans, the way Screaming Frog measures snippets."""
+    try:
+        from PIL import ImageFont
+    except ImportError:
+        return 0
+    key = ("px", size)
+    if key not in CARD_CACHE:
+        CARD_CACHE[key] = ImageFont.truetype(str(FONT_DIR / "LiberationSans-Regular.ttf"), size)
+    return int(CARD_CACHE[key].getlength(text))
+
+
 def make_card(path, title, kicker):
     """A 1200x630 share card per page: name in orange, kicker in Gerris blue, title in black."""
     try:
@@ -303,9 +317,19 @@ def page(*, title, description, path, body, site, posts, schema=None,
     canonical = SITE_URL + path.replace("index.html", "")
     full_title = HOME_TITLE if path == "/index.html" else (seo_title or title)
     if not noindex:
+        tw, dw = px(full_title, 20), px(description, 13)
+        if tw > 561:
+            print(f"  warn {path}: title is {tw}px wide (Screaming Frog limit 561px): {full_title}")
+        if dw > 985:
+            print(f"  warn {path}: description is {dw}px wide (limit 985px)")
+        h1 = re.search(r"<h1[^>]*>(.*?)</h1>", body, re.S)
+        if path != "/index.html" and h1 and re.sub(r"<[^>]+>", "", h1.group(1)).strip() == full_title:
+            print(f"  warn {path}: title is the same as the H1")
+        if len(re.findall(r"<h1[\s>]", body)) + (path == "/index.html") != 1:
+            print(f"  warn {path}: page should have exactly one H1")
         if not 45 <= len(full_title) <= 60:
             print(f"  warn {path}: title is {len(full_title)} chars (aim 50-60): {full_title}")
-        if not 120 <= len(description) <= 160:
+        if not 120 <= len(description) <= 155:
             print(f"  warn {path}: description is {len(description)} chars (aim 120-160)")
         if re.search(r" [-\u2013\u2014|] |\|", full_title + description):
             print(f"  warn {path}: separator dash or pipe in title or description")
@@ -340,6 +364,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <meta name="author" content="{AUTHOR}">
 <meta name="generator" content="build.py, written with AI in Claude Code">
 <meta name="theme-color" content="#ffffff" id="theme-color">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="{canonical}">
 <link rel="alternate" type="application/rss+xml" title="{e(TITLE)} (RSS)" href="{SITE_URL}/rss.xml">
 <link rel="blogroll" type="text/x-opml" href="{SITE_URL}/blogroll.opml">
@@ -434,15 +459,15 @@ def sidebar(site, posts):
     wikil = "".join(f'<li><a href="{w["path"]}">{e(w["title"])}</a></li>'
                     for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
     return f"""<aside id="sidebar" aria-label="Sidebar">
-<section class="box"><h2>About</h2>
+<section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
 <p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a></p></section>
-<section class="box"><h2>Recent posts</h2><ul>{recent}</ul></section>
-<section class="box"><h2>Wiki</h2><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
-<section class="box"><h2>Projects</h2><ul class="projects">{proj}</ul></section>
-<section class="box"><h2>Categories</h2><ul>{catl}</ul></section>
-<section class="box"><h2>Archives</h2><ul>{arch}</ul></section>
-<section class="box"><h2>Blogroll</h2><ul>{reading}</ul><p><a href="/reading.html">The full reading list: {nfeeds} feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
-<section class="box blogroll"><h2>Elsewhere</h2>{roll}</section>
+<section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
+<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki">Wiki</p><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
+<section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects">{proj}</ul></section>
+<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories">Categories</p><ul>{catl}</ul></section>
+<section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul>{arch}</ul></section>
+<section class="box" aria-labelledby="sb-blogroll"><p class="box-title" id="sb-blogroll">Blogroll</p><ul>{reading}</ul><p><a href="/reading.html">The full reading list: {nfeeds} feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll" aria-labelledby="sb-elsewhere"><p class="box-title" id="sb-elsewhere">Elsewhere</p>{roll}</section>
 <section class="box buttons" aria-label="Badges">
 <a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
 <a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
@@ -464,14 +489,16 @@ def post_block(p, *, full, heading="h2"):
              f'<{heading} class="post-title p-name"><a href="{p["path"]}" rel="bookmark" class="u-url">{e(p["title"])}</a></{heading}>')
     prompt = ""
     if p.get("prompt"):
-        prompt = (f'<details class="prompt"{" open" if full else ""}><summary>The prompt</summary>'
+        ph = "h2" if heading == "h1" else "h4"
+        prompt = (f'<details class="prompt"{" open" if full else ""}><summary><{ph} class="prompt-h">The prompt for \u201c{e(p["title"])}\u201d</{ph}></summary>'
                   f'<blockquote>{e(p["prompt"])}</blockquote></details>')
     updated = (f' &middot; updated <time datetime="{p["updated"].isoformat()}">{p["updated"]:%b} {p["updated"].day}</time>'
                if p["updated"] != p["when"] else "")
+    body = p["body"] if heading == "h1" else re.sub(r"<(/?)h2([\s>])", r"<\1h4\2", p["body"])
     return f"""<article class="post h-entry" id="{p['slug']}">
 {title}
 <div class="post-body e-content">
-{p['body']}
+{body}
 </div>
 {prompt}
 <p class="post-footer">Written by {e(p.get('model', 'Claude'))} for <a class="p-author h-card" href="/about.html">{AUTHOR}</a> at
@@ -508,8 +535,8 @@ def post_schema(p):
                 "mainEntityOfPage": p["url"],
                 "datePublished": p["when"].isoformat(),
                 "dateModified": p["updated"].isoformat(),
-                "author": {"@id": PERSON["@id"]},
-                "publisher": {"@id": PERSON["@id"]},
+                "author": AUTHOR_REF,
+                "publisher": AUTHOR_REF,
                 "isPartOf": {"@id": SITE_URL + "/#blog"},
                 "keywords": p["cats"],
                 "articleSection": p["cats"][0] if p["cats"] else None,
@@ -564,12 +591,12 @@ def main():
     # Home
     home_schema = {"@context": "https://schema.org", "@graph": [
         {"@type": "Blog", "@id": SITE_URL + "/#blog", "name": TITLE, "description": TAGLINE,
-         "url": SITE_URL + "/", "author": {"@id": PERSON["@id"]}, "inLanguage": "en-US",
+         "url": SITE_URL + "/", "author": AUTHOR_REF, "inLanguage": "en-US",
          "publishingPrinciples": SITE_URL + "/disclosures.html",
          "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": p["url"],
                        "datePublished": p["when"].isoformat()} for p in posts[:HOME_POSTS]]},
         {"@type": "WebSite", "@id": SITE_URL + "/#site", "name": TITLE, "url": SITE_URL + "/",
-         "publisher": {"@id": PERSON["@id"]}},
+         "publisher": AUTHOR_REF},
         PERSON]}
     older = '<p class="older"><a href="/archives.html">Older posts are in the archives</a></p>' if len(posts) > HOME_POSTS else ""
     write("/index.html", page(title=TITLE, description=HOME_DESCRIPTION, path="/index.html",
@@ -639,7 +666,7 @@ def main():
 <p class="project-meta">{e(x['status'])} &middot; started {e(x['started'])} &middot; {link}</p>
 <p>{x['about']}</p></section>""")
     projects_schema = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Projects",
-                       "url": SITE_URL + "/projects.html", "author": {"@id": PERSON["@id"]},
+                       "url": SITE_URL + "/projects.html", "author": AUTHOR_REF,
                        "hasPart": [{"@type": "CreativeWork", "name": x["name"], "url": x.get("url") or None,
                                     "creativeWorkStatus": x["status"]} for x in site["projects"]]}
     write("/projects.html", page(title="Projects Chris Abraham is building now", seo_title="Projects Chris Abraham is building now, with status", description="What Chris Abraham is building and running right now, from Blackbox to his podcast site, with the status of each project kept current.",
@@ -671,8 +698,12 @@ def main():
 </div>"""
         schema = {"@context": "https://schema.org", "@type": "Article", "headline": w["title"],
                   "description": w["description"], "url": w["url"], "dateModified": w["edited"].isoformat(),
-                  "author": {"@id": PERSON["@id"]}, "isPartOf": {"@type": "CollectionPage", "name": "Chris Abraham wiki",
-                  "url": SITE_URL + "/wiki/"}, "about": w["cats"]}
+                  "author": AUTHOR_REF, "isPartOf": {"@type": "CollectionPage", "name": "Chris Abraham wiki",
+                  "url": SITE_URL + "/wiki/"}, "about": [{"@type": "Thing", "name": c} for c in w["cats"]],
+                  "breadcrumb": {"@type": "BreadcrumbList", "itemListElement": [
+                      {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/"},
+                      {"@type": "ListItem", "position": 2, "name": "Wiki", "item": SITE_URL + "/wiki/"},
+                      {"@type": "ListItem", "position": 3, "name": w["title"], "item": w["url"]}]}}
         write(w["path"], page(title=w["title"], description=w["description"], path=w["path"], body=html_body,
                               seo_title=w.get("seo_title"), kicker="From the Chris Abraham wiki",
                               schema=schema, og_type="article", **P))
@@ -684,7 +715,7 @@ def main():
         for c in w["cats"] or ["Uncategorized"]:
             bycat.setdefault(c, []).append(w)
     groups = "".join(
-        f'<h2 id="cat-{slugify(c)}">{e(c)}</h2><ul>' + "".join(
+        f'<h2 id="cat-{slugify(c)}">{e(c)} pages</h2><ul>' + "".join(
             f'<li><a href="{w["path"]}">{e(w["title"])}</a>: {e(w["description"])}</li>'
             for w in sorted(ws, key=lambda w: w["title"].lower())) + "</ul>"
         for c, ws in sorted(bycat.items()))
@@ -700,7 +731,7 @@ def main():
 </div></div>"""
     write("/wiki/index.html", page(title="Chris Abraham wiki", seo_title="Chris Abraham wiki: Blackbox, commands, and project notes", description="Evergreen reference pages from Chris Abraham: Blackbox and every command it knows, pinebox, the Upwork verdicts, and Adjutant, edited in place.",
           path="/wiki/index.html", body=main_body, schema={"@context": "https://schema.org", "@type": "CollectionPage",
-          "name": "Chris Abraham wiki", "url": SITE_URL + "/wiki/", "author": {"@id": PERSON["@id"]},
+          "name": "Chris Abraham wiki", "url": SITE_URL + "/wiki/", "author": AUTHOR_REF,
           "hasPart": [{"@type": "Article", "headline": w["title"], "url": w["url"]} for w in wiki.values()]}, **P))
     sitemap.append(("/wiki/", max((dt.datetime.combine(w["edited"], dt.time(), TZ) for w in wiki.values()), default=None)))
 
@@ -719,7 +750,7 @@ def main():
     write("/reading.html", page(title="Reading list", seo_title="Reading list: SEO, AI search, AI labs, and AI policy feeds",
           description=f"The {nfeeds} feeds Chris Abraham reads to keep up with SEO, AEO, GEO, AI search, AI models and labs, and AI policy, in one OPML file.",
           path="/reading.html", schema={"@context": "https://schema.org", "@type": "CollectionPage", "name": "Reading list",
-          "url": SITE_URL + "/reading.html", "author": {"@id": PERSON["@id"]}},
+          "url": SITE_URL + "/reading.html", "author": AUTHOR_REF},
           body=f'<h1 class="page-title">Reading list</h1><div class="post-body">{reading_intro}{groups_html}</div>', **P))
     sitemap.append(("/reading.html", None))
 

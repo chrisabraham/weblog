@@ -14,11 +14,11 @@ Chris Abraham's personal weblog about working with AI: Blackbox (his command-lin
 
 ## Posts
 
-- [I tested 70 MCP server addresses; here are the 59 that answered](https://chrisabraham.net/2026/10/mcp-server-cheat-sheet.html) (2026-10-16): A tested cheat sheet of 59 official remote MCP servers, from Upwork and GitHub to Stripe and Google, with the exact address to paste into Claude or ChatGPT.
+- [I tested 70 MCP server addresses; here are the 59 that answered](https://chrisabraham.net/2026/10/mcp-server-cheat-sheet.html) (2026-10-16): A tested cheat sheet of 59 official remote MCP servers, from Upwork and GitHub to Stripe and Google, with the address to paste into Claude or ChatGPT.
 - [Five live sites, five search labs](https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html) (2026-10-16): Chris Abraham runs five real websites that double as open labs for SEO, AEO, GEO, and AI search: what each one tests, and the one rule they all follow.
 - [Every app I use is growing a door for AI](https://chrisabraham.net/2026/10/every-app-has-a-door-for-ai.html) (2026-10-16): How many of Chris Abraham's work tools now open straight to AI: Upwork, Gmail, Calendar, Drive, Todoist, GitHub, Google Places, and soon Basecamp 5.
 - [The state of Blackbox in mid October](https://chrisabraham.net/2026/10/state-of-blackbox-october.html) (2026-10-16): A status report on Blackbox, the command-line secretary Chris Abraham built with Claude Code: what it does, what it has cost, and what is still unfinished.
-- [Blackbox, a few weeks in](https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html) (2026-10-16): Where Blackbox, the plain-English command-line secretary Chris Abraham built with Claude Code, stands in mid October 2026 and what he learned using it daily.
+- [Blackbox, a few weeks in](https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html) (2026-10-16): Where Blackbox, the plain-English command-line secretary Chris Abraham built with Claude Code, stands in mid October 2026, and what daily use taught him.
 - [A weblog written by Claude, out in the open](https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html) (2026-10-16): Why Chris Abraham started a 2000s-style weblog in 2026, why Claude writes every post from his prompts, and why each post shows the prompt underneath.
 
 ## Wiki
@@ -26,8 +26,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox (his command-lin
 - [Adjutant](https://chrisabraham.net/wiki/adjutant.html) (edited 2026-10-16): Adjutant is the planned public, open-source version of Blackbox, with Chris Abraham's name, clients, and data removed, meant to be read and borrowed.
 - [Blackbox](https://chrisabraham.net/wiki/blackbox.html) (edited 2026-10-16): Blackbox, or bb, is Chris Abraham's plain-English command-line secretary, built with Claude Code and running on his pinebox server since September 2026.
 - [Blackbox commands](https://chrisabraham.net/wiki/blackbox-commands.html) (edited 2026-10-16): Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
-- [Connections](https://chrisabraham.net/wiki/connections.html) (edited 2026-10-16): Every service Chris Abraham's AI tools can reach, through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, GitHub, and more.
+- [Connections](https://chrisabraham.net/wiki/connections.html) (edited 2026-10-16): Every service Chris Abraham's AI tools can reach through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, and GitHub.
 - [MCP servers](https://chrisabraham.net/wiki/mcp-servers.html) (edited 2026-10-16): A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.
-- [Model Context Protocol](https://chrisabraham.net/wiki/model-context-protocol.html) (edited 2026-10-16): The Model Context Protocol, or MCP, is the open standard that lets AI tools like Claude, ChatGPT, and Codex use other services: what it is and how it works.
+- [Model Context Protocol](https://chrisabraham.net/wiki/model-context-protocol.html) (edited 2026-10-16): MCP, the Model Context Protocol, is the open standard that lets AI tools like Claude, ChatGPT, and Codex use other services. What it is and how it works.
 - [Pinebox](https://chrisabraham.net/wiki/pinebox.html) (edited 2026-10-16): Pinebox is the small DigitalOcean droplet where Blackbox, its timers and backups, and Chris Abraham's site builds and Lighthouse checks run.
 - [Upwork verdicts](https://chrisabraham.net/wiki/upwork-verdicts.html) (edited 2026-10-16): The six verdicts Blackbox gives Upwork jobs, from FUCK NO to APPLY ALL THE CONNECTS, what each one means, and the order they are checked in.
