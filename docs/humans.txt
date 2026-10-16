@@ -1,7 +1,7 @@
 /* TEAM */
 Owner and prompter: Chris Abraham
 Contact: cja@well.com
-From: Washington, DC area, USA
+From: Sexy South Arlington, Virginia, USA
 Writer: Claude (Anthropic), in Claude Code
 
 /* THANKS */

@@ -812,7 +812,7 @@ def main():
     write("/humans.txt", f"""/* TEAM */
 Owner and prompter: {AUTHOR}
 Contact: {EMAIL}
-From: Washington, DC area, USA
+From: Sexy South Arlington, Virginia, USA
 Writer: Claude (Anthropic), in Claude Code
 
 /* THANKS */
