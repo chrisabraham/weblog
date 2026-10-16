@@ -431,7 +431,7 @@ def main():
                      f'<a href="{p["path"]}">{e(p["title"])}</a></li>')
     if cur:
         lines.append("</ul>")
-    write("/archives.html", page(title="Archives", description="Every post on the Chris Abraham Weblog by month, from Blackbox to Claude Code to client work, written by Claude from his prompts.",
+    write("/archives.html", page(title="Archives of the Chris Abraham Weblog", description="Every post on the Chris Abraham Weblog by month, from Blackbox to Claude Code to client work, written by Claude from his prompts.",
           path="/archives.html", body='<h1 class="page-title">Archives</h1>' + "\n".join(lines), **P))
     sitemap.append(("/archives.html", posts[0]["updated"] if posts else None))
 
@@ -447,7 +447,7 @@ def main():
                        "url": SITE_URL + "/projects.html", "author": {"@id": PERSON["@id"]},
                        "hasPart": [{"@type": "CreativeWork", "name": x["name"], "url": x.get("url") or None,
                                     "creativeWorkStatus": x["status"]} for x in site["projects"]]}
-    write("/projects.html", page(title="Projects", description="What Chris Abraham is building and running right now, from Blackbox to his podcast site, with the status of each project kept current.",
+    write("/projects.html", page(title="Projects Chris Abraham is building now", description="What Chris Abraham is building and running right now, from Blackbox to his podcast site, with the status of each project kept current.",
           path="/projects.html", schema=projects_schema,
           body='<h1 class="page-title">Projects</h1><p class="lede">What I am building, running, or planning, with an honest status for each. Posts about a project link back here.</p>' + "\n".join(rows), **P))
     sitemap.append(("/projects.html", None))
