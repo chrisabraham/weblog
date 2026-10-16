@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Chris Abraham's weblog into docs/ (GitHub Pages serves main:/docs).
+"""Build the Chris Abraham Weblog into docs/ (GitHub Pages serves main:/docs).
 
 Standard library only. Sources:
   src/posts/YYYY-MM-DD-slug.html  key: value header, a line of ---, then HTML
@@ -25,7 +25,7 @@ SRC = ROOT / "src"
 OUT = ROOT / "docs"
 
 SITE_URL = "https://chrisabraham.net"   # the one place the domain lives
-TITLE = "Chris Abraham's Weblog"
+TITLE = "Chris Abraham Weblog"
 TAGLINE = "Notes from building things with AI, written by Claude from my prompts, out in the open."
 AUTHOR = "Chris Abraham"
 EMAIL = "cja@well.com"
@@ -431,7 +431,7 @@ def main():
                      f'<a href="{p["path"]}">{e(p["title"])}</a></li>')
     if cur:
         lines.append("</ul>")
-    write("/archives.html", page(title="Archives", description="Every post on Chris Abraham's weblog by month, from Blackbox to Claude Code to client work, written by Claude from his prompts.",
+    write("/archives.html", page(title="Archives", description="Every post on the Chris Abraham Weblog by month, from Blackbox to Claude Code to client work, written by Claude from his prompts.",
           path="/archives.html", body='<h1 class="page-title">Archives</h1>' + "\n".join(lines), **P))
     sitemap.append(("/archives.html", posts[0]["updated"] if posts else None))
 

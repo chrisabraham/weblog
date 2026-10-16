@@ -1,4 +1,4 @@
-# Chris Abraham's Weblog
+# Chris Abraham Weblog
 
 > Notes from building things with AI, written by Claude from my prompts, out in the open.
 
