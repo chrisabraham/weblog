@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem("weblog-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<title>AI visibility report: does Claude name Chris Abraham?</title>
+<meta name="description" content="A live, dated report from Chris Abraham&#x27;s AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Chris Abraham">
+<meta name="generator" content="build.py, written with AI in Claude Code">
+<meta name="theme-color" content="#ffffff" id="theme-color">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://chrisabraham.net/wiki/ai-visibility-report.html">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham (RSS)" href="https://chrisabraham.net/rss.xml">
+<link rel="blogroll" type="text/x-opml" href="https://chrisabraham.net/blogroll.opml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="Chris Abraham">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI visibility report">
+<meta property="og:description" content="A live, dated report from Chris Abraham&#x27;s AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.">
+<meta property="og:url" content="https://chrisabraham.net/wiki/ai-visibility-report.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="AI visibility report">
+<meta name="twitter:description" content="A live, dated report from Chris Abraham&#x27;s AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.">
+<meta property="og:image" content="https://chrisabraham.net/cards/wiki-ai-visibility-report.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chris Abraham: AI visibility report">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chrisabraham.net/cards/wiki-ai-visibility-report.png">
+<meta name="twitter:image:alt" content="Chris Abraham: AI visibility report">
+<link rel="me" href="https://github.com/chrisabraham">
+<link rel="me" href="https://www.upwork.com/freelancers/chrisjabraham">
+<link rel="me" href="https://www.linkedin.com/in/chrisabraham">
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="me" href="https://www.reddit.com/user/chrisabraham/">
+<link rel="me" href="https://muckrack.com/chrisabraham">
+<link rel="author" href="https://chrisabraham.net/humans.txt">
+<style>/* A 2003 weblog template, rebuilt to read well on a phone in 2026: a
+   banner, a post column, a boxed sidebar with a blogroll, Verdana throughout, underlined blue links that turn
+   purple once visited. The dark button in the banner works like Hill
+   Mole's; with no saved choice it follows the system setting. */
+
+:root {
+  --page: #e9ecf2;
+  --paper: #ffffff;
+  --ink: #1b1b1b;
+  --muted: #474d58;
+  --link: #1d3d8f;
+  --visited: #6a2c8f;
+  --banner: #ffffff;
+  --banner-ink: #1b1b1b;
+  --banner-sub: #474d58;
+  --orange: #c75000;
+  --gerris-blue: #16729e;
+  --redlink: #b00000;
+  --box: #f4f6fa;
+  --box-head: #dfe5f1;
+  --rule: #c9d0dc;
+  --quote: #f6f3e6;
+  --date: #6b4500;
+  --sans: Verdana, "DejaVu Sans", Geneva, Tahoma, sans-serif;
+  --mono: "Courier New", "DejaVu Sans Mono", monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --page: #0e1014;
+  --paper: #16181d;
+  --ink: #e6e6e6;
+  --muted: #9aa3b2;
+  --link: #8fb0ff;
+  --visited: #d0a2f0;
+  --banner: #16181d;
+  --banner-ink: #e6e6e6;
+  --banner-sub: #9aa3b2;
+  --orange: #ff8a3d;
+  --gerris-blue: #5cb6e3;
+  --redlink: #ff8f8f;
+  --box: #1c1f26;
+  --box-head: #262b36;
+  --rule: #343a46;
+  --quote: #24221a;
+  --date: #e0b25c;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+/* No one-word last lines: browsers that support it rebalance the wrap. */
+p, li, dd, blockquote, .post-footer { text-wrap: pretty; }
+h1, h2, h3, .tagline, .site-title { text-wrap: balance; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: var(--visited); }
+a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-decoration: none; }
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 8px; top: 8px; background: var(--paper); padding: 6px; z-index: 2; }
+
+#wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  min-height: 100vh;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  background: var(--banner);
+  color: var(--banner-ink);
+  padding: 22px 24px 0;
+  border-bottom: 4px double var(--rule);
+}
+.site-title { margin: 0; font-family: var(--sans); font-size: 2rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
+.site-title a, .site-title a:visited { color: var(--orange); text-decoration: none; }
+.site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
+.tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
+.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
+.topnav a, .topnav a:visited { display: inline-block; padding: 4px 0; color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+.topnav a:hover { background: var(--link); color: var(--paper); }
+
+.theme-toggle {
+  position: absolute; top: 12px; right: 12px;
+  font: 0.7rem var(--sans); text-transform: lowercase;
+  color: var(--banner-ink); background: transparent;
+  border: 1px solid var(--rule); padding: 3px 9px; cursor: pointer;
+}
+.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
+
+.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
+.topnav a.hire-tab, .topnav a.hire-tab:visited {
+  margin: 0 0 -9px auto; padding: 6px 14px 8px; border: 1px solid var(--rule); border-bottom: 0;
+  background: var(--paper); color: var(--orange); font-weight: bold; text-transform: none;
+  border-radius: 4px 4px 0 0; position: relative;
+}
+.topnav a.hire-tab:hover, .topnav a.hire-tab:focus-visible { background: var(--orange); color: var(--paper); }
+
+/* Columns */
+#cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
+#main { padding: 8px 28px 32px; min-width: 0; border-right: 1px dotted var(--rule); }
+#sidebar { padding: 18px 16px 24px; font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; }
+
+/* Posts */
+.date-header {
+  margin: 26px 0 6px; padding-bottom: 2px;
+  font: bold 0.74rem var(--sans); color: var(--date);
+  text-transform: uppercase; letter-spacing: 1px;
+  border-bottom: 1px dotted var(--rule);
+}
+.post { margin: 0 0 30px; }
+.post-title { margin: 10px 0 8px; font-family: var(--sans); font-size: 1.45rem; line-height: 1.25; }
+h1.post-title { font-size: 1.8rem; }
+.post-title a, .post-title a:visited { color: var(--ink); text-decoration: none; }
+.post-title a:hover { background: none; color: var(--link); text-decoration: underline; }
+.post-body p { margin: 0 0 1em; }
+.post-body h2 { font-size: 1.2rem; margin: 1.4em 0 0.4em; }
+.post-body blockquote, .prompt blockquote {
+  margin: 1em 0; padding: 10px 16px;
+  background: var(--quote); border-left: 4px solid var(--rule);
+}
+.post-body code, .post-body pre { font-family: var(--mono); font-size: 0.85em; }
+.post-body pre { background: var(--box); border: 1px solid var(--rule); padding: 12px; overflow-x: auto; }
+.post-body img { max-width: 100%; height: auto; }
+.prompt { margin: 12px 0; font-family: var(--sans); font-size: 0.78rem; }
+.prompt summary { cursor: pointer; color: var(--muted); }
+.prompt-h { display: inline; font: 0.78rem var(--sans); margin: 0; color: var(--muted); }
+.prompt blockquote { font-family: var(--mono); font-size: 0.82rem; white-space: pre-wrap; }
+.post-footer {
+  margin: 10px 0 0; padding-top: 6px;
+  font: 0.72rem var(--sans); color: var(--muted);
+  border-top: 1px dashed var(--rule);
+}
+.prevnext a { display: inline-block; padding: 4px 0; }
+.prevnext { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 0.75rem var(--sans); margin: 20px 0; }
+.older { font: 0.8rem var(--sans); }
+.page-title { font-size: 1.8rem; margin: 18px 0 12px; }
+.lede { font-style: italic; color: var(--muted); }
+.archive-list { list-style: none; padding: 0; }
+.archive-list li { margin: 4px 0; }
+.archive-list time { display: inline-block; min-width: 4.2em; font: 0.75rem var(--sans); color: var(--muted); }
+
+/* Projects */
+.project { border-bottom: 1px dotted var(--rule); padding-bottom: 6px; }
+.project h2 { font-size: 1.25rem; margin: 18px 0 2px; }
+.project-meta { font: 0.72rem var(--sans); color: var(--muted); margin: 0 0 6px; }
+.dot { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border: 1px solid var(--muted); vertical-align: 1px; }
+.dot-active, .dot-live { background: #2f9e44; }
+.dot-live-lab { background: #2f9e44; box-shadow: inset 0 0 0 2px #c75000; }
+.dot-planned { background: #f0c419; }
+.dot-paused { background: #999; }
+
+/* Sidebar */
+.box { background: var(--box); border: 1px solid var(--rule); margin: 0 0 14px; }
+.box .box-title {
+  margin: 0; padding: 4px 8px;
+  background: var(--box-head); border-bottom: 1px solid var(--rule);
+  font: bold 0.72rem var(--sans); text-transform: uppercase; letter-spacing: 1px;
+}
+.box p, .box ul { margin: 8px; }
+.box ul { padding-left: 16px; }
+.box li { margin: 0; padding: 3px 0; }
+.box ul.projects { list-style: none; padding-left: 0; }
+.box small { color: var(--muted); }
+.opml { text-align: right; }
+
+/* 88x31 buttons, drawn in CSS so they stay sharp and cost no requests */
+.buttons { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; background: transparent; border: 0; }
+.badge, .badge:visited {
+  display: inline-flex; width: 88px; height: 31px; overflow: hidden;
+  border: 1px solid #000; font: bold 10px/29px var(--sans);
+  text-decoration: none; color: #000; background: #ddd;
+}
+.badge b { display: inline-block; padding: 0 4px; color: #fff; background: #333; margin-right: 4px; }
+.b-rss { background: #ff9a33; } .b-rss b { background: #a34600; }
+.b-claude { background: #f2d4c2; } .b-claude b { background: #9e4524; }
+.b-gh { background: #e0e0e0; } .b-gh b { background: #24292f; }
+.b-lynx { background: #c8f7c5; } .b-lynx b { background: #1e7a1e; }
+.b-html { background: #cfe0ff; } .b-html b { background: #1d3d8f; }
+.b-opml { background: #fff3a8; } .b-opml b { background: #6b5b00; }
+.b-wcag { background: #e3d7ff; } .b-wcag b { background: #4b2a99; }
+.b-lh { background: #d4f5e9; } .b-lh b { background: #0b6b4a; }
+.badge:hover { outline: 2px solid var(--link); background-color: inherit; }
+
+/* Footer */
+#footer { padding: 14px 24px 24px; border-top: 4px double var(--rule); font: 0.7rem var(--sans); color: var(--muted); }
+#footer p { margin: 4px 0 8px; }
+.footlinks { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.footlinks a { display: inline-block; padding: 4px 0; white-space: nowrap; }
+
+/* Phones: one column, sidebar after the posts, nothing sideways */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  #wrap { border: 0; }
+  #banner { padding: 16px 16px 0; }
+  .site-title { font-size: 1.6rem; padding-right: 56px; }
+  .topnav a { display: inline-block; margin: 2px 12px 4px 0; padding: 4px 0; }
+  .topnav a.hire-tab, .topnav a.hire-tab:visited { position: absolute; top: 12px; right: 66px; margin: 0; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 0; font-size: 0.7rem; }
+  #cols { grid-template-columns: 1fr; }
+  #main { padding: 4px 16px 24px; border-right: 0; }
+  #sidebar { padding: 16px; border-top: 4px double var(--rule); font-size: 0.8rem; }
+  .post-title { font-size: 1.3rem; }
+  h1.post-title, .page-title { font-size: 1.5rem; }
+  #footer { padding: 14px 16px 24px; }
+}
+
+@media print {
+  #sidebar, .theme-toggle, .topnav, .prevnext { display: none; }
+  #cols { display: block; }
+}
+
+/* Blogroll groups */
+.blogroll h3 { margin: 10px 8px 0; font: bold 0.68rem var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.blogroll h3:first-of-type { margin-top: 8px; }
+.blogroll ul { margin-top: 4px; }
+
+/* Wiki: MediaWiki's furniture (tabs, infobox, contents box, red links) in this site's type */
+.wiki-tabs { display: flex; flex-wrap: wrap; gap: 2px; margin: 18px 0 0; border-bottom: 1px solid var(--rule); font: 0.78rem var(--sans); }
+.wiki-tabs a, .wiki-tabs span { display: inline-block; padding: 6px 12px; border: 1px solid var(--rule); border-bottom: 0; background: var(--box); text-decoration: none; }
+.wiki-tabs .sel { background: var(--paper); color: var(--ink); font-weight: bold; position: relative; top: 1px; }
+.wiki-title { font-size: 1.8rem; margin: 14px 0 2px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); font-weight: normal; }
+.wiki-from { margin: 4px 0 14px; font: 0.78rem var(--sans); color: var(--muted); }
+.wiki-body h2 { font-size: 1.3rem; font-weight: normal; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin: 1.6em 0 0.5em; }
+.wiki-body h3 { font-size: 1.05rem; margin: 1.3em 0 0.4em; }
+.wiki-body ul { padding-left: 1.4em; }
+.wiki-body li { margin: 0.25em 0; }
+.wikilink.new, .wikilink.new:visited { color: var(--redlink); }
+.infobox { float: right; clear: right; width: 290px; max-width: 100%; margin: 0 0 16px 18px; border: 1px solid var(--rule); background: var(--box); border-collapse: collapse; font: 0.78rem/1.45 var(--sans); }
+.infobox caption { font-weight: bold; font-size: 0.95rem; padding: 6px; caption-side: top; }
+.infobox th, .infobox td { text-align: left; vertical-align: top; padding: 5px 8px; border-top: 1px solid var(--rule); }
+.infobox th { width: 38%; }
+.toc { display: inline-block; min-width: 14em; margin: 4px 0 16px; padding: 8px 14px 6px; border: 1px solid var(--rule); background: var(--box); font: 0.8rem/1.5 var(--sans); }
+.toc-title { margin: 0 0 4px; font-weight: bold; text-align: center; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0; }
+.toc li a { display: inline-block; padding: 4px 0; text-decoration: none; }
+.toc .toctext { text-decoration: underline; text-underline-offset: 2px; }
+.toc a:hover .toctext { text-decoration: none; }
+.toc .toc-3 { padding-left: 1.4em; }
+.tocnum { color: var(--ink); margin-right: 6px; }
+.wiki-cats { clear: both; margin: 24px 0 8px; padding: 6px 10px; border: 1px solid var(--rule); background: var(--box); font: 0.78rem var(--sans); }
+.wiki-backlinks h2 { font-size: 1rem; margin: 18px 0 4px; }
+.wiki-backlinks ul { font-size: 0.9rem; }
+.wiki-edited { font: 0.75rem var(--sans); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.wiki pre { white-space: pre; }
+@media (max-width: 760px) {
+  .infobox { float: none; width: 100%; margin: 0 0 16px; }
+  .toc { display: block; }
+}
+
+.disclosure { font: 0.78rem var(--sans); color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px; }
+
+/* Wiki tables */
+.wikitable { border-collapse: collapse; width: 100%; margin: 0.6em 0 1.2em; font: 0.8rem/1.5 var(--sans); }
+.wikitable th, .wikitable td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+.wikitable th { background: var(--box-head); }
+.wikitable tr:nth-child(even) td { background: var(--box); }
+.table-scroll { overflow-x: auto; }
+.editor-note { border: 1px solid var(--rule); border-left: 4px solid var(--orange); background: var(--box); padding: 4px 18px 8px; margin: 1.6em 0; }
+.editor-note h2 { font-size: 1.1rem; margin-top: 0.9em; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI visibility report","description":"A live, dated report from Chris Abraham's AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.","url":"https://chrisabraham.net/wiki/ai-visibility-report.html","dateModified":"2026-10-16","author":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"isPartOf":{"@type":"CollectionPage","name":"Chris Abraham wiki","url":"https://chrisabraham.net/wiki/"},"about":[{"@type":"Thing","name":"Reference"},{"@type":"Thing","name":"AI search"}],"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chrisabraham.net/"},{"@type":"ListItem","position":2,"name":"Wiki","item":"https://chrisabraham.net/wiki/"},{"@type":"ListItem","position":3,"name":"AI visibility report","item":"https://chrisabraham.net/wiki/ai-visibility-report.html"}]},"image":{"@type":"ImageObject","url":"https://chrisabraham.net/cards/wiki-ai-visibility-report.png","width":1200,"height":630}}</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var off = {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
+  // EU, EEA, UK, and Swiss visitors get no analytics cookies (cookieless pings only).
+  gtag('consent', 'default', Object.assign({region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']}, off));
+  // Everyone else gets first-party analytics cookies and nothing for ads, unless the browser
+  // sends Global Privacy Control or Do Not Track, which turns analytics cookies off too.
+  var optout = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1';
+  gtag('consent', 'default', optout ? off : {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-KWXM1ZX7WQ', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  (function () {
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KWXM1ZX7WQ';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the posts</a>
+<div id="wrap">
+<header id="banner">
+  <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+  <p class="site-title"><a href="/" rel="home">Chris Abraham</a></p>
+  <p class="tagline">Notes from building things with AI, written by AI from my prompts.</p>
+  <nav class="topnav" aria-label="Main">
+    <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </nav>
+</header>
+<div id="cols">
+<main id="main">
+<div class="wiki">
+<nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Article</span><a href="https://github.com/chrisabraham/weblog/blob/main/src/wiki/ai-visibility-report.html">View source</a><a href="https://github.com/chrisabraham/weblog/commits/main/src/wiki/ai-visibility-report.html">History</a></nav>
+<h1 class="wiki-title">AI visibility report</h1>
+<p class="wiki-from">From the <a href="/wiki/">Chris Abraham wiki</a></p>
+<div class="wiki-body post-body"><table class="infobox"><caption>AI visibility tracker</caption><tr><th scope="row">Questions</th><td>16 (3 branded, 9 open, 4 informational)</td></tr><tr><th scope="row">Engines</th><td>Claude with web search; ChatGPT pending</td></tr><tr><th scope="row">Latest run</th><td>October 16, 2026</td></tr><tr><th scope="row">Cost per run</th><td>About $1.60 to $1.90</td></tr><tr><th scope="row">Runs on</th><td><a href="/wiki/pinebox.html" class="wikilink">Pinebox</a>, only when Chris starts it</td></tr></table><nav class="toc" aria-label="Contents"><p class="toc-title">Contents</p><ol><li class="toc-2"><a href="#latest-results"><span class="tocnum">1</span><span class="toctext">Latest results</span></a></li><li class="toc-2"><a href="#what-the-numbers-say"><span class="tocnum">2</span><span class="toctext">What the numbers say</span></a></li><li class="toc-2"><a href="#the-questions"><span class="tocnum">3</span><span class="toctext">The questions</span></a></li><li class="toc-2"><a href="#method"><span class="tocnum">4</span><span class="toctext">Method</span></a></li><li class="toc-2"><a href="#see-also"><span class="tocnum">5</span><span class="toctext">See also</span></a></li></ol></nav>
+<p>This is the running scorecard for one of my <a href="/wiki/connections.html" class="wikilink">lab tools</a>: a small tracker on <a href="/wiki/pinebox.html" class="wikilink">Pinebox</a> that asks an AI assistant the same sixteen questions a prospect might ask, then records whether the answer names me and which websites it cites. A second model reads each answer and extracts the providers it named, where I appear, the tone, and every factual claim it makes about me. The questions stay the same from run to run, so the numbers compare. Each run costs real money, about $1.60 to $1.90 in API fees, so it runs only when I start it.</p>
+<p>What's published here is the scorecard. The raw answers stay private, because an AI answer about a person can repeat personal details or get them wrong, and some answers name other people who never asked to be in a report.</p>
+<h2 id="latest-results">Latest results</h2>
+<div class="table-scroll"><table class="wikitable">
+<tr><th>Measure</th><th>October 14, 2026</th><th>October 16, 2026</th></tr>
+<tr><td>Branded questions where Claude named me</td><td>3 of 3</td><td>3 of 3</td></tr>
+<tr><td>Tone of those answers</td><td>mixed, neutral, neutral</td><td>positive, positive, positive</td></tr>
+<tr><td>Open questions where Claude named me</td><td>0 of 9</td><td>0 of 9</td></tr>
+<tr><td>Informational questions where Claude named me</td><td>0 of 4</td><td>0 of 4</td></tr>
+<tr><td>Citations of chrisabraham.com</td><td>5</td><td>6</td></tr>
+<tr><td>Citations of christopherabraham.com</td><td>2</td><td>1</td></tr>
+<tr><td>Citations of gerriscorp.com</td><td>1</td><td>2</td></tr>
+<tr><td>Citations of the podcast site, Hill Mole, or this weblog</td><td>0</td><td>0</td></tr>
+<tr><td>Different providers named on open questions</td><td>60</td><td>57</td></tr>
+<tr><td>Different domains cited in all answers</td><td>65</td><td>72</td></tr>
+<tr><td>Factual claims about me</td><td>46</td><td>43</td></tr>
+<tr><td>Cost of the run</td><td>$1.88</td><td>$1.79</td></tr>
+</table></div>
+<h2 id="what-the-numbers-say">What the numbers say</h2>
+<p>When someone asks about me by name, Claude finds me, ranks me first or second, and cites my own sites, and in two days its tone on all three branded questions went from neutral or mixed to positive. When someone asks an open question, such as who to hire for a JavaScript indexing problem or an AEO program, I don't appear at all. Those answers lean on Upwork listings, agency directories, and better-known consultants. That gap is the work.</p>
+<p>The claims Claude makes about me come mostly from my own sites and profiles: my Upwork record, my years at Edelman and New Media Strategies, the 2012 Forbes list of social media influencers, and the services on christopherabraham.com. In the October 16 run it dated the founding of Gerris Corp to 2007, five years early, which is the kind of error this tracker exists to catch.</p>
+<h2 id="the-questions">The questions</h2>
+<div class="table-scroll"><table class="wikitable"><tr><th>ID</th><th>Kind</th><th>Question</th></tr><tr><td><code>who-is</code></td><td>branded</td><td>Who is Christopher Abraham, the SEO consultant in Arlington, Virginia?</td></tr><tr><td><code>hire-chris</code></td><td>branded</td><td>Is Chris Abraham a good SEO consultant to hire? What is he known for?</td></tr><tr><td><code>gerris</code></td><td>branded</td><td>What does Gerris Corp do, and who runs it?</td></tr><tr><td><code>aeo-b2b</code></td><td>open</td><td>Recommend an independent consultant who can run an AI search visibility (AEO/GEO) program for a B2B technology company.</td></tr><tr><td><code>aeo-agency</code></td><td>open</td><td>Our agency needs a freelance AEO/GEO and technical SEO specialist to support client work part time. Who should we look at?</td></tr><tr><td><code>js-indexing</code></td><td>open</td><td>Who can I hire to find out why Google isn&#x27;t indexing my JavaScript or React website?</td></tr><tr><td><code>nextjs</code></td><td>open</td><td>I need a Next.js SEO consultant who works directly in GitHub. Who do you recommend?</td></tr><tr><td><code>migration</code></td><td>open</td><td>Who should I hire to oversee an SEO site migration so we don&#x27;t lose traffic?</td></tr><tr><td><code>traffic-drop</code></td><td>open</td><td>Our organic traffic dropped and nobody knows why. Who are good technical SEO consultants who diagnose traffic losses?</td></tr><tr><td><code>gbp-suspended</code></td><td>open</td><td>Who can help reinstate a suspended Google Business Profile?</td></tr><tr><td><code>seo-arlington</code></td><td>open</td><td>Who is a good SEO consultant in Arlington, Virginia or the Washington, DC area?</td></tr><tr><td><code>orm-exec</code></td><td>open</td><td>Recommend an online reputation management consultant for executives in Washington, DC.</td></tr><tr><td><code>get-cited</code></td><td>info</td><td>How do I get my company cited in ChatGPT, Perplexity, and Google AI Overviews?</td></tr><tr><td><code>llms-txt</code></td><td>info</td><td>Does llms.txt help a website show up in AI search answers?</td></tr><tr><td><code>crawled-not-indexed</code></td><td>info</td><td>How do I fix &#x27;Crawled - currently not indexed&#x27; in Google Search Console?</td></tr><tr><td><code>ai-share-of-voice</code></td><td>info</td><td>How do you measure a brand&#x27;s share of voice in AI answers?</td></tr></table></div>
+<h2 id="method">Method</h2>
+<p>Each question goes to Claude with web search turned on. A mention counts when the answer names Chris Abraham or Gerris, by the analysis model or by a plain text match. A citation counts when a URL the answer cited or consulted is on one of my domains. Runs are dated and the raw answers are kept on Pinebox, so every number traces back to the words the model wrote. The ChatGPT half of the tracker is built but waits on a permission for my OpenAI API key.</p>
+<h2 id="see-also">See also</h2>
+<ul><li><a href="/wiki/connections.html" class="wikilink">Connections</a></li><li><a href="/wiki/model-context-protocol.html" class="wikilink">Model Context Protocol</a></li></ul>
+</div>
+<p class="wiki-cats">Categories: <a href="/wiki/#cat-reference">Reference</a> &middot; <a href="/wiki/#cat-ai-search">AI search</a></p>
+<section class="wiki-backlinks"><h2>What links here</h2><ul><li><a href="/2026/10/five-live-sites-five-search-labs.html">Five live sites, five search labs</a></li><li><a href="/2026/10/what-claude-says-about-me.html">What Claude says about me, two days apart</a></li></ul></section>
+<p class="wiki-edited">This page was last edited on October 16, 2026. AI writes and edits the wiki from Chris' prompts; the <a href="https://github.com/chrisabraham/weblog/commits/main/src/wiki/ai-visibility-report.html">history</a> shows every change.</p>
+</div>
+</main>
+<aside id="sidebar" aria-label="Sidebar">
+<section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a></p></section>
+<section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul><li><a href="/2026/10/what-claude-says-about-me.html">What Claude says about me, two days apart</a></li><li><a href="/2026/10/mcp-server-cheat-sheet.html">I tested 70 MCP server addresses; here are the 59 that answered</a></li><li><a href="/2026/10/five-live-sites-five-search-labs.html">Five live sites, five search labs</a></li><li><a href="/2026/10/every-app-has-a-door-for-ai.html">Every app I use is growing a door for AI</a></li><li><a href="/2026/10/state-of-blackbox-october.html">The state of Blackbox in mid October</a></li><li><a href="/2026/10/blackbox-a-few-weeks-in.html">Blackbox, a few weeks in</a></li></ul></section>
+<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki">Wiki</p><ul><li><a href="/wiki/adjutant.html">Adjutant</a></li><li><a href="/wiki/ai-visibility-report.html">AI visibility report</a></li><li><a href="/wiki/blackbox.html">Blackbox</a></li><li><a href="/wiki/blackbox-commands.html">Blackbox commands</a></li><li><a href="/wiki/connections.html">Connections</a></li><li><a href="/wiki/mcp-servers.html">MCP servers</a></li><li><a href="/wiki/model-context-protocol.html">Model Context Protocol</a></li><li><a href="/wiki/pinebox.html">Pinebox</a></li><li><a href="/wiki/upwork-verdicts.html">Upwork verdicts</a></li></ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
+<section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects"><li><span class="dot dot-active" title="active"></span><a href="/projects.html#blackbox">Blackbox</a> <small>active</small></li><li><span class="dot dot-planned" title="planned"></span><a href="/projects.html#adjutant">Adjutant</a> <small>planned</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#this-weblog">This weblog</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#the-chris-abraham-show-site">The Chris Abraham Show site</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#hill-mole">Hill Mole</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#christopherabraham-com">christopherabraham.com</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#gerriscorp-com">gerriscorp.com</a> <small>live lab</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#ai-visibility-tracker">AI visibility tracker</a> <small>active</small></li></ul></section>
+<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories">Categories</p><ul><li><a href="/category/ai-search.html" rel="tag">AI search</a> <small>(3)</small></li><li><a href="/category/blackbox.html" rel="tag">Blackbox</a> <small>(3)</small></li><li><a href="/category/claude-code.html" rel="tag">Claude Code</a> <small>(6)</small></li><li><a href="/category/mcp.html" rel="tag">MCP</a> <small>(2)</small></li><li><a href="/category/meta.html" rel="tag">Meta</a> <small>(1)</small></li><li><a href="/category/openai-codex.html" rel="tag">OpenAI Codex</a> <small>(2)</small></li><li><a href="/category/seo.html" rel="tag">SEO</a> <small>(2)</small></li></ul></section>
+<section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul><li><a href="/2026/10/">October 2026</a></li></ul></section>
+<section class="box" aria-labelledby="sb-blogroll"><p class="box-title" id="sb-blogroll">Blogroll</p><ul><li><a href="http://scripting.com/">Scripting News</a></li><li><a href="https://simonwillison.net/">Simon Willison</a></li><li><a href="https://www.oneusefulthing.org/">One Useful Thing</a></li><li><a href="https://kottke.org/">kottke.org</a></li><li><a href="https://daringfireball.net/">Daring Fireball</a></li><li><a href="https://anildash.com/">Anil Dash</a></li><li><a href="https://doc.searls.com/">Doc Searls Weblog</a></li><li><a href="https://seths.blog/">Seth&#x27;s Blog</a></li></ul><p><a href="/reading.html">The full reading list: 55 feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll" aria-labelledby="sb-elsewhere"><p class="box-title" id="sb-elsewhere">Elsewhere</p><h3>My sites</h3><ul><li><a href="https://www.chrisabraham.com/" rel="me">Chris Abraham</a> <small>my long-running blog</small></li><li><a href="https://christopherabraham.com/" rel="me">Christopher Abraham</a> <small>SEO and AI search consulting</small></li><li><a href="https://gerriscorp.com/" rel="me">Gerris Corp</a> <small>my firm</small></li><li><a href="https://thechrisabrahamshow.com/" rel="me">The Chris Abraham Show</a> <small>my podcast</small></li><li><a href="https://hillmole.com/" rel="me">Hill Mole</a> <small>my serialized spy novel</small></li><li><a href="https://chrisabraham.substack.com/" rel="me">Chris Abraham on Substack</a> <small>newsletter</small></li><li><a href="https://www.reddit.com/r/slowjogging/" rel="me">r/slowjogging</a> <small>the subreddit I founded</small></li></ul><h3>Find me</h3><ul><li><a href="https://github.com/chrisabraham" rel="me">GitHub</a> <small>code, including this site</small></li><li><a href="https://www.upwork.com/freelancers/chrisjabraham" rel="me">Upwork</a> <small>hire me by the hour</small></li><li><a href="https://www.linkedin.com/in/chrisabraham" rel="me">LinkedIn</a></li><li><a href="https://calendly.com/chrisabraham/30" rel="me">Book a call</a> <small>30 minutes on Calendly</small></li><li><a href="https://mastodon.social/@chrisa" rel="me">Mastodon</a></li><li><a href="https://www.reddit.com/user/chrisabraham/" rel="me">Reddit</a></li><li><a href="https://muckrack.com/chrisabraham" rel="me">Muck Rack</a> <small>my clips</small></li></ul><h3>Bylines</h3><ul><li><a href="https://www.huffpost.com/author/chris-abraham" rel="me">HuffPost</a></li><li><a href="https://adage.com/author/chris-abraham/1797" rel="me">Ad Age</a></li><li><a href="https://biznology.com/author/chrisabraham/" rel="me">Biznology</a></li><li><a href="https://rheingold.com/Associates/team_abraham.html" rel="me">Rheingold Associates</a></li></ul></section>
+<section class="box buttons" aria-label="Badges">
+<a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
+<a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
+<a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
+<span class="badge b-lynx"><b>Lynx</b>friendly</span>
+<span class="badge b-html"><b>HTML</b>no JS req.</span>
+<a class="badge b-wcag" href="/accessibility.html"><b>WCAG</b>2.1 AA</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>a11y</b>100/100</a>
+<a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
+</section>
+</aside>
+</div>
+<footer id="footer">
+  <p>Copyright 2026 Chris Abraham. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Write back: <a href="mailto:cja@well.com">cja@well.com</a></p>
+  <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById("theme-toggle"),
+      meta = document.getElementById("theme-color");
+  function show(dark) {
+    btn.textContent = dark ? "light" : "dark";
+    btn.setAttribute("aria-label", dark ? "Switch to light reading mode" : "Switch to dark reading mode");
+    meta.setAttribute("content", dark ? "#16181d" : "#ffffff");
+  }
+  show(root.getAttribute("data-theme") === "dark");
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") !== "dark";
+    if (dark) root.setAttribute("data-theme", "dark"); else root.removeAttribute("data-theme");
+    try { localStorage.setItem("weblog-theme", dark ? "dark" : "light"); } catch (e) {}
+    show(dark);
+  });
+})();
+</script>
+</body>
+</html>

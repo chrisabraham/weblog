@@ -1,0 +1,39 @@
+title: AI visibility report
+seo_title: AI visibility report: does Claude name Chris Abraham?
+description: A live, dated report from Chris Abraham's AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.
+updated: 2026-10-16
+categories: Reference, AI search
+infobox_title: AI visibility tracker
+info.Questions: 16 (3 branded, 9 open, 4 informational)
+info.Engines: Claude with web search; ChatGPT pending
+info.Latest run: October 16, 2026
+info.Cost per run: About $1.60 to $1.90
+info.Runs on: [[Pinebox]], only when Chris starts it
+---
+<p>This is the running scorecard for one of my [[Connections|lab tools]]: a small tracker on [[Pinebox]] that asks an AI assistant the same sixteen questions a prospect might ask, then records whether the answer names me and which websites it cites. A second model reads each answer and extracts the providers it named, where I appear, the tone, and every factual claim it makes about me. The questions stay the same from run to run, so the numbers compare. Each run costs real money, about $1.60 to $1.90 in API fees, so it runs only when I start it.</p>
+<p>What's published here is the scorecard. The raw answers stay private, because an AI answer about a person can repeat personal details or get them wrong, and some answers name other people who never asked to be in a report.</p>
+<h2>Latest results</h2>
+<div class="table-scroll"><table class="wikitable">
+<tr><th>Measure</th><th>October 14, 2026</th><th>October 16, 2026</th></tr>
+<tr><td>Branded questions where Claude named me</td><td>3 of 3</td><td>3 of 3</td></tr>
+<tr><td>Tone of those answers</td><td>mixed, neutral, neutral</td><td>positive, positive, positive</td></tr>
+<tr><td>Open questions where Claude named me</td><td>0 of 9</td><td>0 of 9</td></tr>
+<tr><td>Informational questions where Claude named me</td><td>0 of 4</td><td>0 of 4</td></tr>
+<tr><td>Citations of chrisabraham.com</td><td>5</td><td>6</td></tr>
+<tr><td>Citations of christopherabraham.com</td><td>2</td><td>1</td></tr>
+<tr><td>Citations of gerriscorp.com</td><td>1</td><td>2</td></tr>
+<tr><td>Citations of the podcast site, Hill Mole, or this weblog</td><td>0</td><td>0</td></tr>
+<tr><td>Different providers named on open questions</td><td>60</td><td>57</td></tr>
+<tr><td>Different domains cited in all answers</td><td>65</td><td>72</td></tr>
+<tr><td>Factual claims about me</td><td>46</td><td>43</td></tr>
+<tr><td>Cost of the run</td><td>$1.88</td><td>$1.79</td></tr>
+</table></div>
+<h2>What the numbers say</h2>
+<p>When someone asks about me by name, Claude finds me, ranks me first or second, and cites my own sites, and in two days its tone on all three branded questions went from neutral or mixed to positive. When someone asks an open question, such as who to hire for a JavaScript indexing problem or an AEO program, I don't appear at all. Those answers lean on Upwork listings, agency directories, and better-known consultants. That gap is the work.</p>
+<p>The claims Claude makes about me come mostly from my own sites and profiles: my Upwork record, my years at Edelman and New Media Strategies, the 2012 Forbes list of social media influencers, and the services on christopherabraham.com. In the October 16 run it dated the founding of Gerris Corp to 2007, five years early, which is the kind of error this tracker exists to catch.</p>
+<h2>The questions</h2>
+<div class="table-scroll"><table class="wikitable"><tr><th>ID</th><th>Kind</th><th>Question</th></tr><tr><td><code>who-is</code></td><td>branded</td><td>Who is Christopher Abraham, the SEO consultant in Arlington, Virginia?</td></tr><tr><td><code>hire-chris</code></td><td>branded</td><td>Is Chris Abraham a good SEO consultant to hire? What is he known for?</td></tr><tr><td><code>gerris</code></td><td>branded</td><td>What does Gerris Corp do, and who runs it?</td></tr><tr><td><code>aeo-b2b</code></td><td>open</td><td>Recommend an independent consultant who can run an AI search visibility (AEO/GEO) program for a B2B technology company.</td></tr><tr><td><code>aeo-agency</code></td><td>open</td><td>Our agency needs a freelance AEO/GEO and technical SEO specialist to support client work part time. Who should we look at?</td></tr><tr><td><code>js-indexing</code></td><td>open</td><td>Who can I hire to find out why Google isn&#x27;t indexing my JavaScript or React website?</td></tr><tr><td><code>nextjs</code></td><td>open</td><td>I need a Next.js SEO consultant who works directly in GitHub. Who do you recommend?</td></tr><tr><td><code>migration</code></td><td>open</td><td>Who should I hire to oversee an SEO site migration so we don&#x27;t lose traffic?</td></tr><tr><td><code>traffic-drop</code></td><td>open</td><td>Our organic traffic dropped and nobody knows why. Who are good technical SEO consultants who diagnose traffic losses?</td></tr><tr><td><code>gbp-suspended</code></td><td>open</td><td>Who can help reinstate a suspended Google Business Profile?</td></tr><tr><td><code>seo-arlington</code></td><td>open</td><td>Who is a good SEO consultant in Arlington, Virginia or the Washington, DC area?</td></tr><tr><td><code>orm-exec</code></td><td>open</td><td>Recommend an online reputation management consultant for executives in Washington, DC.</td></tr><tr><td><code>get-cited</code></td><td>info</td><td>How do I get my company cited in ChatGPT, Perplexity, and Google AI Overviews?</td></tr><tr><td><code>llms-txt</code></td><td>info</td><td>Does llms.txt help a website show up in AI search answers?</td></tr><tr><td><code>crawled-not-indexed</code></td><td>info</td><td>How do I fix &#x27;Crawled - currently not indexed&#x27; in Google Search Console?</td></tr><tr><td><code>ai-share-of-voice</code></td><td>info</td><td>How do you measure a brand&#x27;s share of voice in AI answers?</td></tr></table></div>
+<h2>Method</h2>
+<p>Each question goes to Claude with web search turned on. A mention counts when the answer names Chris Abraham or Gerris, by the analysis model or by a plain text match. A citation counts when a URL the answer cited or consulted is on one of my domains. Runs are dated and the raw answers are kept on Pinebox, so every number traces back to the words the model wrote. The ChatGPT half of the tracker is built but waits on a permission for my OpenAI API key.</p>
+<h2>See also</h2>
+<ul><li>[[Connections]]</li><li>[[Model Context Protocol]]</li></ul>
