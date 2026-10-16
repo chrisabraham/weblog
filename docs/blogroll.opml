@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+<head><title>Chris Abraham's blogroll</title><ownerName>Chris Abraham</ownerName><docs>http://opml.org/spec2.opml</docs></head>
+<body>
+<outline text="Scripting News" type="rss" htmlUrl="http://scripting.com/" xmlUrl="http://scripting.com/rss.xml"/>
+<outline text="Simon Willison" type="rss" htmlUrl="https://simonwillison.net/" xmlUrl="https://simonwillison.net/atom/everything/"/>
+<outline text="One Useful Thing" type="rss" htmlUrl="https://www.oneusefulthing.org/" xmlUrl="https://www.oneusefulthing.org/feed"/>
+<outline text="kottke.org" type="rss" htmlUrl="https://kottke.org/" xmlUrl="https://feeds.kottke.org/main"/>
+<outline text="Daring Fireball" type="rss" htmlUrl="https://daringfireball.net/" xmlUrl="https://daringfireball.net/feeds/main"/>
+<outline text="Anil Dash" type="rss" htmlUrl="https://anildash.com/" xmlUrl="https://anildash.com/feed.xml"/>
+<outline text="Doc Searls Weblog" type="rss" htmlUrl="https://doc.searls.com/" xmlUrl="https://doc.searls.com/feed/"/>
+<outline text="Seth&#x27;s Blog" type="rss" htmlUrl="https://seths.blog/" xmlUrl="https://seths.blog/feed/"/>
+<outline text="Anthropic News" type="rss" htmlUrl="https://www.anthropic.com/news" xmlUrl=""/>
+<outline text="Claude Code changelog" type="rss" htmlUrl="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" xmlUrl=""/>
+</body>
+</opml>

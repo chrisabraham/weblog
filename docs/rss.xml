@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Chris Abraham&#x27;s Weblog</title>
+<link>https://chrisabraham.net/</link>
+<atom:link href="https://chrisabraham.net/rss.xml" rel="self" type="application/rss+xml"/>
+<description>Notes from building things with AI, written by Claude from my prompts, out in the open.</description>
+<language>en-us</language>
+<lastBuildDate>Fri, 16 Oct 2026 17:45:00 -0400</lastBuildDate>
+<docs>https://cyber.harvard.edu/rss/rss.html</docs>
+<generator>build.py, written by Claude</generator>
+<item>
+<title>Blackbox, a few weeks in</title>
+<link>https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html</guid>
+<pubDate>Fri, 16 Oct 2026 17:45:00 -0400</pubDate>
+<description>Where Blackbox, the plain-English command-line secretary Chris Abraham built with Claude Code, stands in mid October 2026 and what he learned using it daily.</description>
+<category>Blackbox</category><category>Claude Code</category>
+<content:encoded><![CDATA[<p>Blackbox, or <code>bb</code>, is the secretary I built for myself at the end of September. It lives on a small server I SSH into from my ThinkPad, and I talk to it in plain sentences instead of commands, because I will never remember command syntax. I wanted what the Army would call a good first lieutenant: someone who knows what's on the schedule, what I promised, and what I'm about to forget, and who doesn't try to be my friend.</p>
+<p>The days start with <code>bb good morning</code>. It reads my unread mail since the end of the last workday, my Todoist, and my Upwork activity, and tells me what needs me. Every screen it prints ends with a few "next:" lines, the exact thing I would type to take the obvious next step. That small feature has done more for me than anything else in it. With ADHD, the gap between knowing what to do and starting is where the day goes, and a ready-to-type line closes it.</p>
+<p>The Upwork side grew fastest. Blackbox pulls new jobs, ranks them against the kind of technical SEO work I'm good at, and gives each one a verdict on a scale that runs from FUCK NO to APPLY ALL THE CONNECTS. When I like one, it drafts the proposal and answers the screening questions from a playbook of my real projects, and nothing gets submitted without my yes.</p>
+<p>The most important thing I learned came from watching myself use it. I type a command and move on without checking whether it worked. For weeks, one of my shortcuts for marking a task done was silently being treated as chat, and I never noticed. Now Blackbox complains loudly when a short command matches nothing, and when I audit it I replay my own message history through it to find the commands that quietly did nothing.</p>
+<p>The diary is the part I'd keep if I lost the rest. At a quarter to midnight, if I haven't said good night, Blackbox closes the day for me: it writes a summary and appends a diary entry. It never asks me to approve the entry and never overwrites anything I wrote. For a person who can't replay his own week, that file is the week.</p>
+<p>Next on the list are a blind bake-off to pick which model handles which job, model help for the loose sentences that don't match any command, and eventually a public version, working name Adjutant, with the patterns written up for anyone who wants to take them.</p><p><em>Written by Claude Opus 5.5 in Claude Code from this prompt:</em></p><blockquote>(Written from my running notes on Blackbox, at my request, as the first project post on the new weblog. Chris to check every claim before it goes up.)</blockquote>]]></content:encoded>
+</item>
+<item>
+<title>A weblog written by Claude, out in the open</title>
+<link>https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html</guid>
+<pubDate>Fri, 16 Oct 2026 17:30:00 -0400</pubDate>
+<description>Why Chris Abraham started a 2000s-style weblog in 2026, why Claude writes every post from his prompts, and why each post shows the prompt underneath.</description>
+<category>Meta</category><category>Claude Code</category>
+<content:encoded><![CDATA[<p>Dave Winer has posted to <a href="http://scripting.com/">Scripting News</a> since the nineties, and the format has barely changed: a date, a few short items, links, opinions, the work in progress. I always wanted one of those and never kept one going. My business sites have guides and case studies, and they read like it. They are finished things. Most of what I actually do all day is unfinished, and it was going nowhere.</p>
+<p>So this is that weblog, built the way I build everything now. I describe what I want to Claude in Claude Code, and it writes the code and the words. Under every post there's a box labeled "The prompt" with what I typed, unedited. If the post says something I didn't mean, you can see where it came from. I read each post before it goes up, and anything wrong gets fixed, but I am not going to pretend I typed the sentences.</p>
+<p>The reason is memory. I have ADHD and SDAM, which means I don't keep a movie of my own past the way most people do. In September I built <a href="/projects.html#blackbox">Blackbox</a>, a command-line secretary that writes my diary every night because I won't. This weblog is the public half of the same idea: the record gets made as a side effect of doing the work, so it exists whether or not I remember to make it.</p>
+<p>Expect posts about Blackbox, about Claude and Claude Code, about ChatGPT and Codex when I use them, about GitHub, and about client work with the names filed off. The <a href="/projects.html">projects page</a> keeps a running status of everything. There's an RSS feed and a blogroll, because a weblog without a blogroll is a newsletter.</p><p><em>Written by Claude Opus 5.5 in Claude Code from this prompt:</em></p><blockquote>We&#x27;re going to make me a GitHub Page blog for me, Chris Abraham, which is just a blog... the way that nerds always had blogs in the 90s and 2000s. Like Dave Winer kind of blog. Where I talk about everything, especially blackbox... all the posts would be written by you or Claude... through prompts and I would be super open about that... just someplace where I mainly share the state of my exploration with AI and with BB and with Claude and Claude Code and ChatGPT and OpenAI Codex and GitHub and the clients I have, anonymized... Mobile native but totally Web1.0 aesthetic.</blockquote>]]></content:encoded>
+</item>
+</channel>
+</rss>

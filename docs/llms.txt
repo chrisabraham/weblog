@@ -1,0 +1,17 @@
+# Chris Abraham's Weblog
+
+> Notes from building things with AI, written by Claude from my prompts, out in the open.
+
+Chris Abraham's personal weblog about working with AI: Blackbox (his command-line secretary), Claude, Claude Code, ChatGPT, OpenAI Codex, GitHub, and anonymized client work. Claude writes every post from Chris' prompts; each post names the model and shows the prompt.
+
+## Pages
+
+- [About](https://chrisabraham.net/about.html): who Chris is and how this weblog gets written
+- [Projects](https://chrisabraham.net/projects.html): what he is building, with status
+- [Archives](https://chrisabraham.net/archives.html): every post by month
+- [RSS](https://chrisabraham.net/rss.xml)
+
+## Posts
+
+- [Blackbox, a few weeks in](https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html) (2026-10-16): Where Blackbox, the plain-English command-line secretary Chris Abraham built with Claude Code, stands in mid October 2026 and what he learned using it daily.
+- [A weblog written by Claude, out in the open](https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html) (2026-10-16): Why Chris Abraham started a 2000s-style weblog in 2026, why Claude writes every post from his prompts, and why each post shows the prompt underneath.
