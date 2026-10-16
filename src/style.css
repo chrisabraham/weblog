@@ -199,3 +199,8 @@ h1.post-title { font-size: 1.8rem; }
   #sidebar, .theme-toggle, .topnav, .prevnext { display: none; }
   #cols { display: block; }
 }
+
+/* Blogroll groups */
+.blogroll h3 { margin: 10px 8px 0; font: bold 0.68rem var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.blogroll h3:first-of-type { margin-top: 8px; }
+.blogroll ul { margin-top: 4px; }

@@ -2,6 +2,31 @@
 <opml version="2.0">
 <head><title>Chris Abraham's blogroll</title><ownerName>Chris Abraham</ownerName><docs>http://opml.org/spec2.opml</docs></head>
 <body>
+<outline text="My sites">
+<outline text="Chris Abraham" type="link" url="https://www.chrisabraham.com/"/>
+<outline text="Christopher Abraham" type="link" url="https://christopherabraham.com/"/>
+<outline text="Gerris Corp" type="link" url="https://gerriscorp.com/"/>
+<outline text="The Chris Abraham Show" type="rss" htmlUrl="https://thechrisabrahamshow.com/" xmlUrl="https://anchor.fm/s/c0f56fc/podcast/rss"/>
+<outline text="Hill Mole" type="link" url="https://hillmole.com/"/>
+<outline text="Chris Abraham on Substack" type="rss" htmlUrl="https://chrisabraham.substack.com/" xmlUrl="https://chrisabraham.substack.com/feed"/>
+<outline text="r/slowjogging" type="link" url="https://www.reddit.com/r/slowjogging/"/>
+</outline>
+<outline text="Find me">
+<outline text="GitHub" type="link" url="https://github.com/chrisabraham"/>
+<outline text="Upwork" type="link" url="https://www.upwork.com/freelancers/chrisjabraham"/>
+<outline text="LinkedIn" type="link" url="https://www.linkedin.com/in/chrisabraham"/>
+<outline text="Book a call" type="link" url="https://calendly.com/chrisabraham/30"/>
+<outline text="Mastodon" type="link" url="https://mastodon.social/@chrisa"/>
+<outline text="Reddit" type="link" url="https://www.reddit.com/user/chrisabraham/"/>
+<outline text="Muck Rack" type="link" url="https://muckrack.com/chrisabraham"/>
+</outline>
+<outline text="Bylines">
+<outline text="HuffPost" type="link" url="https://www.huffpost.com/author/chris-abraham"/>
+<outline text="Ad Age" type="link" url="https://adage.com/author/chris-abraham/1797"/>
+<outline text="Biznology" type="link" url="https://biznology.com/author/chrisabraham/"/>
+<outline text="Rheingold Associates" type="link" url="https://rheingold.com/Associates/team_abraham.html"/>
+</outline>
+<outline text="Reading">
 <outline text="Scripting News" type="rss" htmlUrl="http://scripting.com/" xmlUrl="http://scripting.com/rss.xml"/>
 <outline text="Simon Willison" type="rss" htmlUrl="https://simonwillison.net/" xmlUrl="https://simonwillison.net/atom/everything/"/>
 <outline text="One Useful Thing" type="rss" htmlUrl="https://www.oneusefulthing.org/" xmlUrl="https://www.oneusefulthing.org/feed"/>
@@ -10,7 +35,8 @@
 <outline text="Anil Dash" type="rss" htmlUrl="https://anildash.com/" xmlUrl="https://anildash.com/feed.xml"/>
 <outline text="Doc Searls Weblog" type="rss" htmlUrl="https://doc.searls.com/" xmlUrl="https://doc.searls.com/feed/"/>
 <outline text="Seth&#x27;s Blog" type="rss" htmlUrl="https://seths.blog/" xmlUrl="https://seths.blog/feed/"/>
-<outline text="Anthropic News" type="rss" htmlUrl="https://www.anthropic.com/news" xmlUrl=""/>
-<outline text="Claude Code changelog" type="rss" htmlUrl="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" xmlUrl=""/>
+<outline text="Anthropic News" type="link" url="https://www.anthropic.com/news"/>
+<outline text="Claude Code changelog" type="link" url="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"/>
+</outline>
 </body>
 </opml>

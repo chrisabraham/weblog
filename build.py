@@ -4,7 +4,7 @@
 Standard library only. Sources:
   src/posts/YYYY-MM-DD-slug.html  key: value header, a line of ---, then HTML
   src/pages/<name>.html           same format, for About, Colophon, etc.
-  src/site.json                   blogroll, elsewhere links, projects
+  src/site.json                   blogroll (my own sites and profiles), reading list, projects
 
 Post header keys: title, date (2026-10-16 17:20), categories (comma list),
 description (120-160 chars, no dashes or pipes), model, prompt (Chris' own
@@ -37,12 +37,6 @@ PERSON = {
     "@id": SITE_URL + "/about.html#chris",
     "name": AUTHOR,
     "url": SITE_URL + "/about.html",
-    "sameAs": [
-        "https://christopherabraham.com/",
-        "https://www.chrisabraham.com/",
-        "https://github.com/chrisabraham",
-        "https://www.linkedin.com/in/chrisabraham/",
-    ],
 }
 
 SPECULATION = ('<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, '
@@ -231,8 +225,12 @@ def sidebar(site, posts):
         f'<li><span class="dot dot-{slugify(x["status"])}" title="{e(x["status"])}"></span>'
         f'<a href="/projects.html#{slugify(x["name"])}">{e(x["name"])}</a> <small>{e(x["status"])}</small></li>'
         for x in site["projects"] if x.get("sidebar", True))
-    roll = "".join(f'<li><a href="{e(b["url"])}">{e(b["name"])}</a></li>' for b in site["blogroll"])
-    mine = "".join(f'<li><a href="{e(b["url"])}" rel="me">{e(b["name"])}</a></li>' for b in site["elsewhere"])
+    roll = "".join(
+        f'<h3>{e(g["group"])}</h3><ul>' + "".join(
+            f'<li><a href="{e(b["url"])}" rel="me">{e(b["name"])}</a>'
+            + (f' <small>{e(b["note"])}</small>' if b.get("note") else "") + "</li>" for b in g["links"]) + "</ul>"
+        for g in site["blogroll"])
+    reading = "".join(f'<li><a href="{e(b["url"])}">{e(b["name"])}</a></li>' for b in site["reading"])
     arch = "".join(f'<li><a href="/{k}/">{d:%B %Y}</a></li>' for k, d in months.items())
     catl = "".join(f'<li>{cat_link(c)} <small>({n})</small></li>' for c, n in sorted(cats.items()))
     recent = "".join(f'<li><a href="{p["path"]}">{e(p["title"])}</a></li>' for p in posts[:6])
@@ -243,8 +241,8 @@ def sidebar(site, posts):
 <section class="box"><h2>Projects</h2><ul class="projects">{proj}</ul></section>
 <section class="box"><h2>Categories</h2><ul>{catl}</ul></section>
 <section class="box"><h2>Archives</h2><ul>{arch}</ul></section>
-<section class="box"><h2>Blogroll</h2><ul>{roll}</ul><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
-<section class="box"><h2>Elsewhere</h2><ul>{mine}</ul></section>
+<section class="box blogroll"><h2>Blogroll</h2>{roll}</section>
+<section class="box"><h2>Reading</h2><ul>{reading}</ul><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
 <section class="box buttons" aria-label="Badges">
 <a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
 <a class="badge b-claude" href="/about.html#how"><b>by</b>Claude</a>
@@ -337,6 +335,8 @@ def write(path, text):
 
 def main():
     site = json.loads((SRC / "site.json").read_text(encoding="utf-8"))
+    PERSON["sameAs"] = [x["url"] for g in site["blogroll"] for x in g["links"]
+                        if "calendly" not in x["url"] and "slowjogging" not in x["url"]]
     posts = load_posts()
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -492,8 +492,13 @@ def rss(posts):
 
 
 def opml(site):
-    outl = "".join(f'<outline text="{e(b["name"])}" type="rss" htmlUrl="{e(b["url"])}" xmlUrl="{e(b.get("feed", ""))}"/>\n'
-                   for b in site["blogroll"])
+    def row(b):
+        if b.get("feed"):
+            return f'<outline text="{e(b["name"])}" type="rss" htmlUrl="{e(b["url"])}" xmlUrl="{e(b["feed"])}"/>\n'
+        return f'<outline text="{e(b["name"])}" type="link" url="{e(b["url"])}"/>\n'
+    outl = "".join(f'<outline text="{e(g["group"])}">\n' + "".join(row(b) for b in g["links"]) + "</outline>\n"
+                   for g in site["blogroll"])
+    outl += '<outline text="Reading">\n' + "".join(row(b) for b in site["reading"]) + "</outline>\n"
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
 <head><title>{e(AUTHOR)}'s blogroll</title><ownerName>{AUTHOR}</ownerName><docs>http://opml.org/spec2.opml</docs></head>
