@@ -4,11 +4,11 @@
 <title>Chris Abraham</title>
 <link>https://chrisabraham.net/</link>
 <atom:link href="https://chrisabraham.net/rss.xml" rel="self" type="application/rss+xml"/>
-<description>Notes from building things with AI, written by Claude from my prompts.</description>
+<description>Notes from building things with AI, written by AI from my prompts.</description>
 <language>en-us</language>
 <lastBuildDate>Fri, 16 Oct 2026 19:30:00 -0400</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
-<generator>build.py, written by Claude</generator>
+<generator>build.py, written with AI</generator>
 <item>
 <title>The state of Blackbox in mid October</title>
 <link>https://chrisabraham.net/2026/10/state-of-blackbox-october.html</link>

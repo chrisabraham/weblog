@@ -1,8 +1,8 @@
 # Chris Abraham
 
-> Notes from building things with AI, written by Claude from my prompts.
+> Notes from building things with AI, written by AI from my prompts.
 
-Chris Abraham's personal weblog about working with AI: Blackbox (his command-line secretary), Claude, Claude Code, ChatGPT, OpenAI Codex, GitHub, and anonymized client work. Claude writes every post from Chris' prompts; each post names the model and shows the prompt.
+Chris Abraham's personal weblog about working with AI: Blackbox (his command-line secretary), Claude, Claude Code, ChatGPT, OpenAI Codex, GitHub, and anonymized client work. AI writes every post from Chris' prompts (mostly Claude, sometimes OpenAI Codex); each post names the model and shows the prompt.
 
 ## Pages
 

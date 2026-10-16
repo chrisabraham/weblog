@@ -4,7 +4,7 @@
 Standard library only. Sources:
   src/posts/YYYY-MM-DD-slug.html  key: value header, a line of ---, then HTML
   src/pages/<name>.html           same format, for About, Colophon, etc.
-  src/site.json                   blogroll (my own sites and profiles), reading list, projects
+  src/site.json                   elsewhere (my own sites and profiles), reading (the blogroll), projects
 
 Post header keys: title, date (2026-10-16 17:20), categories (comma list),
 description (120-160 chars, no dashes or pipes), model, prompt (Chris' own
@@ -27,8 +27,8 @@ OUT = ROOT / "docs"
 SITE_URL = "https://chrisabraham.net"   # the one place the domain lives
 TITLE = "Chris Abraham"
 HOME_TITLE = "Chris Abraham, a weblog on building with AI and Claude Code"
-HOME_DESCRIPTION = "Chris Abraham's weblog on Blackbox, Claude Code, ChatGPT, Codex, GitHub, and client work, written by Claude from his prompts, with every prompt shown."
-TAGLINE = "Notes from building things with AI, written by Claude from my prompts."
+HOME_DESCRIPTION = "Chris Abraham's weblog on Blackbox, Claude Code, ChatGPT, Codex, GitHub, and client work, written by AI from his prompts, with every prompt shown."
+TAGLINE = "Notes from building things with AI, written by AI from my prompts."
 AUTHOR = "Chris Abraham"
 EMAIL = "cja@well.com"
 TZ = ZoneInfo("America/New_York")
@@ -292,7 +292,7 @@ def make_card(path, title, kicker):
     d.line([M, H - 96, W - M, H - 96], fill="#c9d0dc", width=2)
     d.line([M, H - 90, W - M, H - 90], fill="#c9d0dc", width=2)
     d.text((M, H - 74), SITE_URL.split("//")[1], font=bold(28), fill="#1d3d8f")
-    d.text((W - M, H - 74), "Written by Claude from my prompts", font=reg(26), fill="#474d58", anchor="ra")
+    d.text((W - M, H - 74), "Written by AI from my prompts", font=reg(26), fill="#474d58", anchor="ra")
     im.save(out, optimize=True)
     return f"{SITE_URL}/cards/{name}.png"
 
@@ -325,7 +325,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <meta name="twitter:image" content="{img}">
 <meta name="twitter:image:alt" content="{e(img_alt)}">
 """ if img else '<meta name="twitter:card" content="summary">\n')
-    rel_me = "".join(f'<link rel="me" href="{e(x["url"])}">\n' for g in site["blogroll"] if g["group"] == "Find me"
+    rel_me = "".join(f'<link rel="me" href="{e(x["url"])}">\n' for g in site["elsewhere"] if g["group"] == "Find me"
                      for x in g["links"] if "calendly" not in x["url"])
     robots = "noindex, follow" if noindex else "index, follow, max-image-preview:large, max-snippet:-1"
     return f"""<!DOCTYPE html>
@@ -338,12 +338,14 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <meta name="description" content="{e(description)}">
 <meta name="robots" content="{robots}">
 <meta name="author" content="{AUTHOR}">
-<meta name="generator" content="build.py, written by Claude in Claude Code">
+<meta name="generator" content="build.py, written with AI in Claude Code">
 <meta name="theme-color" content="#ffffff" id="theme-color">
 <link rel="canonical" href="{canonical}">
 <link rel="alternate" type="application/rss+xml" title="{e(TITLE)} (RSS)" href="{SITE_URL}/rss.xml">
 <link rel="blogroll" type="text/x-opml" href="{SITE_URL}/blogroll.opml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="{e(TITLE)}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{e(title)}">
@@ -367,7 +369,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   <p class="tagline">{e(TAGLINE)}</p>
   <nav class="topnav" aria-label="Main">
     <a href="/">Home</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
-    <a href="/about.html">About</a> <a href="/rss.xml">RSS</a>
+    <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
   </nav>
 </header>
 <div id="cols">
@@ -377,7 +379,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 {sidebar(site, posts)}
 </div>
 <footer id="footer">
-  <p>Copyright {dt.date.today().year} {AUTHOR}. Claude writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
   <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
@@ -422,8 +424,9 @@ def sidebar(site, posts):
         f'<h3>{e(g["group"])}</h3><ul>' + "".join(
             f'<li><a href="{e(b["url"])}" rel="me">{e(b["name"])}</a>'
             + (f' <small>{e(b["note"])}</small>' if b.get("note") else "") + "</li>" for b in g["links"]) + "</ul>"
-        for g in site["blogroll"])
-    reading = "".join(f'<li><a href="{e(b["url"])}">{e(b["name"])}</a></li>' for b in site["reading"])
+        for g in site["elsewhere"])
+    nfeeds = sum(1 for g in site["reading"] for x in g["links"] if x.get("feed"))
+    reading = "".join(f'<li><a href="{e(b["url"])}">{e(b["name"])}</a></li>' for b in site["reading"][0]["links"])
     arch = "".join(f'<li><a href="/{k}/">{d:%B %Y}</a></li>' for k, d in months.items())
     catl = "".join(f'<li>{cat_link(c)} <small>({n})</small></li>' for c, n in sorted(cats.items()))
     recent = "".join(f'<li><a href="{p["path"]}">{e(p["title"])}</a></li>' for p in posts[:6])
@@ -431,17 +434,17 @@ def sidebar(site, posts):
                     for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
     return f"""<aside id="sidebar" aria-label="Sidebar">
 <section class="box"><h2>About</h2>
-<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. Claude writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a></p></section>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a></p></section>
 <section class="box"><h2>Recent posts</h2><ul>{recent}</ul></section>
 <section class="box"><h2>Wiki</h2><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
 <section class="box"><h2>Projects</h2><ul class="projects">{proj}</ul></section>
 <section class="box"><h2>Categories</h2><ul>{catl}</ul></section>
 <section class="box"><h2>Archives</h2><ul>{arch}</ul></section>
-<section class="box blogroll"><h2>Blogroll</h2>{roll}</section>
-<section class="box"><h2>Reading</h2><ul>{reading}</ul><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box"><h2>Blogroll</h2><ul>{reading}</ul><p><a href="/reading.html">The full reading list: {nfeeds} feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll"><h2>Elsewhere</h2>{roll}</section>
 <section class="box buttons" aria-label="Badges">
 <a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
-<a class="badge b-claude" href="/about.html#how"><b>by</b>Claude</a>
+<a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
 <a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
 <span class="badge b-lynx"><b>Lynx</b>friendly</span>
 <span class="badge b-html"><b>HTML</b>no JS req.</span>
@@ -534,7 +537,7 @@ def write(path, text):
 
 def main():
     site = json.loads((SRC / "site.json").read_text(encoding="utf-8"))
-    PERSON["sameAs"] = [x["url"] for g in site["blogroll"] for x in g["links"]
+    PERSON["sameAs"] = [x["url"] for g in site["elsewhere"] for x in g["links"]
                         if "calendly" not in x["url"] and "slowjogging" not in x["url"]]
     posts = load_posts()
     wiki = load_wiki()
@@ -597,7 +600,7 @@ def main():
         months.setdefault(f"{p['when']:%Y/%m}", []).append(p)
     for key, ps in months.items():
         label = f"{ps[0]['when']:%B %Y}"
-        write(f"/{key}/index.html", page(title=f"Posts from {label}", description=f"Every post on Chris Abraham's weblog from {label}, about Blackbox, Claude Code, AI tools, and client work, written by Claude from his prompts.",
+        write(f"/{key}/index.html", page(title=f"Posts from {label}", description=f"Every post on Chris Abraham's weblog from {label}, about Blackbox, Claude Code, AI tools, and client work, written by AI from his prompts.",
               path=f"/{key}/index.html", body=f'<h1 class="page-title">{label}</h1>' + by_day(ps, full=True),
               noindex=True, **P))
     cats = {}
@@ -605,7 +608,7 @@ def main():
         for c in p["cats"]:
             cats.setdefault(c, []).append(p)
     for c, ps in cats.items():
-        write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", description=f"Every post on Chris Abraham's weblog filed under {c}, newest first, written by Claude from his prompts and showing each prompt.",
+        write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", description=f"Every post on Chris Abraham's weblog filed under {c}, newest first, written by AI from his prompts and showing each prompt.",
               path=f"/category/{slugify(c)}.html", body=f'<h1 class="page-title">Filed under {e(c)}</h1>' + by_day(ps),
               noindex=True, **P))
 
@@ -622,7 +625,7 @@ def main():
                      f'<a href="{p["path"]}">{e(p["title"])}</a></li>')
     if cur:
         lines.append("</ul>")
-    write("/archives.html", page(title="Archives of the Chris Abraham Weblog", seo_title="Weblog archives: every post by Chris Abraham, by month", description="Every post on Chris Abraham's weblog by month, from Blackbox to Claude Code to anonymized client work, written by Claude from his prompts.",
+    write("/archives.html", page(title="Archives of the Chris Abraham Weblog", seo_title="Weblog archives: every post by Chris Abraham, by month", description="Every post on Chris Abraham's weblog by month, from Blackbox to Claude Code to anonymized client work, written by AI from his prompts.",
           path="/archives.html", body='<h1 class="page-title">Archives</h1>' + "\n".join(lines), **P))
     sitemap.append(("/archives.html", posts[0]["updated"] if posts else None))
 
@@ -663,7 +666,7 @@ def main():
 </div>
 <p class="wiki-cats">Categories: {cats or "none"}</p>
 <section class="wiki-backlinks"><h2>What links here</h2><ul>{backl}</ul></section>
-<p class="wiki-edited">This page was last edited on {w['edited']:%B} {w['edited'].day}, {w['edited']:%Y}. Claude writes and edits the wiki from Chris' prompts; the <a href="{REPO}/commits/main/{w['src']}">history</a> shows every change.</p>
+<p class="wiki-edited">This page was last edited on {w['edited']:%B} {w['edited'].day}, {w['edited']:%Y}. AI writes and edits the wiki from Chris' prompts; the <a href="{REPO}/commits/main/{w['src']}">history</a> shows every change.</p>
 </div>"""
         schema = {"@context": "https://schema.org", "@type": "Article", "headline": w["title"],
                   "description": w["description"], "url": w["url"], "dateModified": w["edited"].isoformat(),
@@ -700,6 +703,25 @@ def main():
           "hasPart": [{"@type": "Article", "headline": w["title"], "url": w["url"]} for w in wiki.values()]}, **P))
     sitemap.append(("/wiki/", max((dt.datetime.combine(w["edited"], dt.time(), TZ) for w in wiki.values()), default=None)))
 
+    # Reading list: every feed I follow, grouped, with feed links.
+    groups_html = "".join(
+        f'<h2>{e(g["group"])}</h2><ul class="reading">' + "".join(
+            f'<li><a href="{e(x["url"])}">{e(x["name"])}</a>'
+            + (f' <small>(<a href="{e(x["feed"])}" type="application/rss+xml">feed</a>)</small>' if x.get("feed") else "")
+            + (f' <small>{e(x["note"])}</small>' if x.get("note") else "") + "</li>" for x in g["links"]) + "</ul>"
+        for g in site["reading"])
+    nfeeds = sum(1 for g in site["reading"] for x in g["links"] if x.get("feed"))
+    reading_intro = (f'<p>These are the {nfeeds} feeds I read to keep up with search, AI search, the AI labs, and the policy around all of it. '
+                     'Each feed address was tested when it was added; the few marked below refused the test from my server and are listed at '
+                     'their standard addresses. To follow them all at once, import <a href="/blogroll.opml">the OPML file</a> into any feed '
+                     'reader.</p>')
+    write("/reading.html", page(title="Reading list", seo_title="Reading list: SEO, AI search, AI labs, and AI policy feeds",
+          description=f"The {nfeeds} feeds Chris Abraham reads to keep up with SEO, AEO, GEO, AI search, AI models and labs, and AI policy, in one OPML file.",
+          path="/reading.html", schema={"@context": "https://schema.org", "@type": "CollectionPage", "name": "Reading list",
+          "url": SITE_URL + "/reading.html", "author": {"@id": PERSON["@id"]}},
+          body=f'<h1 class="page-title">Reading list</h1><div class="post-body">{reading_intro}{groups_html}</div>', **P))
+    sitemap.append(("/reading.html", None))
+
     # Static pages
     for f in sorted((SRC / "pages").glob("*.html")):
         m = parse(f)
@@ -726,6 +748,7 @@ def main():
     write("/llms.txt", llms(posts, site, full=False))
     write("/llms-full.txt", llms(posts, site, full=True))
     write("/favicon.svg", FAVICON)
+    raster_icons()
     write("/humans.txt", f"""/* TEAM */
 Owner and prompter: {AUTHOR}
 Contact: {EMAIL}
@@ -775,7 +798,7 @@ def rss(posts):
 <language>en-us</language>
 <lastBuildDate>{last}</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
-<generator>build.py, written by Claude</generator>
+<generator>build.py, written with AI</generator>
 {chr(10).join(items)}
 </channel>
 </rss>
@@ -787,12 +810,12 @@ def opml(site):
         if b.get("feed"):
             return f'<outline text="{e(b["name"])}" type="rss" htmlUrl="{e(b["url"])}" xmlUrl="{e(b["feed"])}"/>\n'
         return f'<outline text="{e(b["name"])}" type="link" url="{e(b["url"])}"/>\n'
-    outl = "".join(f'<outline text="{e(g["group"])}">\n' + "".join(row(b) for b in g["links"]) + "</outline>\n"
-                   for g in site["blogroll"])
-    outl += '<outline text="Reading">\n' + "".join(row(b) for b in site["reading"]) + "</outline>\n"
+    outl = ""
+    outl += "".join(f'<outline text="{e(g["group"])}">\n' + "".join(row(b) for b in g["links"]) + "</outline>\n"
+                    for g in site["reading"])
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
-<head><title>{e(AUTHOR)}'s blogroll</title><ownerName>{AUTHOR}</ownerName><docs>http://opml.org/spec2.opml</docs></head>
+<head><title>{e(AUTHOR)}'s blogroll and reading list</title><ownerName>{AUTHOR}</ownerName><docs>http://opml.org/spec2.opml</docs></head>
 <body>
 {outl}</body>
 </opml>
@@ -803,7 +826,7 @@ def llms(posts, site, *, full):
     wiki = site.get("_wiki", {})
     out = [f"# {TITLE}", "", f"> {TAGLINE}", "",
            f"{AUTHOR}'s personal weblog about working with AI: Blackbox (his command-line secretary), Claude, Claude Code, ChatGPT, OpenAI Codex, GitHub, and anonymized client work. "
-           "Claude writes every post from Chris' prompts; each post names the model and shows the prompt.", "",
+           "AI writes every post from Chris' prompts (mostly Claude, sometimes OpenAI Codex); each post names the model and shows the prompt.", "",
            "## Pages", "",
            f"- [About]({SITE_URL}/about.html): who Chris is and how this weblog gets written",
            f"- [Projects]({SITE_URL}/projects.html): what he is building, with status",
@@ -866,8 +889,25 @@ Allow: /
 Sitemap: {SITE}/sitemap.xml
 """
 
-FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><rect width="16" height="16" fill="#c75000"/>'
-           '<text x="8" y="12.5" font-family="Verdana,sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">c</text></svg>')
+FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#ffffff"/>'
+           '<text x="16" y="22.5" font-family="Verdana,DejaVu Sans,sans-serif" font-size="17" font-weight="bold" '
+           'letter-spacing="-1" fill="#c75000" text-anchor="middle">CA</text></svg>')
+
+
+def raster_icons():
+    """favicon.ico (16, 32, 48) and a 180px apple-touch-icon: CA in orange on white."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        return
+    def icon(n):
+        im = Image.new("RGBA", (n, n), "#ffffff")
+        d = ImageDraw.Draw(im)
+        f = ImageFont.truetype(str(FONT_DIR / "DejaVuSans-Bold.ttf"), int(n * 0.5))
+        d.text((n / 2, n / 2 + n * 0.02), "CA", font=f, fill="#c75000", anchor="mm")
+        return im
+    icon(48).save(OUT / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
+    icon(180).convert("RGB").save(OUT / "apple-touch-icon.png", optimize=True)
 
 CSS = (ROOT / "src" / "style.css").read_text(encoding="utf-8") if (ROOT / "src" / "style.css").exists() else ""
 

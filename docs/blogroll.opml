@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
-<head><title>Chris Abraham's blogroll</title><ownerName>Chris Abraham</ownerName><docs>http://opml.org/spec2.opml</docs></head>
+<head><title>Chris Abraham's blogroll and reading list</title><ownerName>Chris Abraham</ownerName><docs>http://opml.org/spec2.opml</docs></head>
 <body>
-<outline text="My sites">
-<outline text="Chris Abraham" type="link" url="https://www.chrisabraham.com/"/>
-<outline text="Christopher Abraham" type="link" url="https://christopherabraham.com/"/>
-<outline text="Gerris Corp" type="link" url="https://gerriscorp.com/"/>
-<outline text="The Chris Abraham Show" type="rss" htmlUrl="https://thechrisabrahamshow.com/" xmlUrl="https://anchor.fm/s/c0f56fc/podcast/rss"/>
-<outline text="Hill Mole" type="link" url="https://hillmole.com/"/>
-<outline text="Chris Abraham on Substack" type="rss" htmlUrl="https://chrisabraham.substack.com/" xmlUrl="https://chrisabraham.substack.com/feed"/>
-<outline text="r/slowjogging" type="link" url="https://www.reddit.com/r/slowjogging/"/>
-</outline>
-<outline text="Find me">
-<outline text="GitHub" type="link" url="https://github.com/chrisabraham"/>
-<outline text="Upwork" type="link" url="https://www.upwork.com/freelancers/chrisjabraham"/>
-<outline text="LinkedIn" type="link" url="https://www.linkedin.com/in/chrisabraham"/>
-<outline text="Book a call" type="link" url="https://calendly.com/chrisabraham/30"/>
-<outline text="Mastodon" type="link" url="https://mastodon.social/@chrisa"/>
-<outline text="Reddit" type="link" url="https://www.reddit.com/user/chrisabraham/"/>
-<outline text="Muck Rack" type="link" url="https://muckrack.com/chrisabraham"/>
-</outline>
-<outline text="Bylines">
-<outline text="HuffPost" type="link" url="https://www.huffpost.com/author/chris-abraham"/>
-<outline text="Ad Age" type="link" url="https://adage.com/author/chris-abraham/1797"/>
-<outline text="Biznology" type="link" url="https://biznology.com/author/chrisabraham/"/>
-<outline text="Rheingold Associates" type="link" url="https://rheingold.com/Associates/team_abraham.html"/>
-</outline>
-<outline text="Reading">
+<outline text="Weblogs">
 <outline text="Scripting News" type="rss" htmlUrl="http://scripting.com/" xmlUrl="http://scripting.com/rss.xml"/>
 <outline text="Simon Willison" type="rss" htmlUrl="https://simonwillison.net/" xmlUrl="https://simonwillison.net/atom/everything/"/>
 <outline text="One Useful Thing" type="rss" htmlUrl="https://www.oneusefulthing.org/" xmlUrl="https://www.oneusefulthing.org/feed"/>
@@ -35,8 +11,64 @@
 <outline text="Anil Dash" type="rss" htmlUrl="https://anildash.com/" xmlUrl="https://anildash.com/feed.xml"/>
 <outline text="Doc Searls Weblog" type="rss" htmlUrl="https://doc.searls.com/" xmlUrl="https://doc.searls.com/feed/"/>
 <outline text="Seth&#x27;s Blog" type="rss" htmlUrl="https://seths.blog/" xmlUrl="https://seths.blog/feed/"/>
+</outline>
+<outline text="Search and SEO">
+<outline text="Google Search Central Blog" type="rss" htmlUrl="https://developers.google.com/search/blog" xmlUrl="https://developers.google.com/static/search/blog/feed.xml"/>
+<outline text="Bing Webmaster Blog" type="rss" htmlUrl="https://blogs.bing.com/webmaster" xmlUrl="https://blogs.bing.com/webmaster/feed"/>
+<outline text="Search Engine Land" type="rss" htmlUrl="https://searchengineland.com/" xmlUrl="https://searchengineland.com/feed"/>
+<outline text="Search Engine Roundtable" type="rss" htmlUrl="https://www.seroundtable.com/" xmlUrl="https://www.seroundtable.com/index.rdf"/>
+<outline text="Search Engine Journal" type="rss" htmlUrl="https://www.searchenginejournal.com/" xmlUrl="https://www.searchenginejournal.com/feed/"/>
+<outline text="Moz Blog" type="rss" htmlUrl="https://moz.com/blog" xmlUrl="https://feeds.feedburner.com/mozblog"/>
+<outline text="Ahrefs Blog" type="rss" htmlUrl="https://ahrefs.com/blog/" xmlUrl="https://ahrefs.com/blog/feed/"/>
+<outline text="Aleyda Solis" type="rss" htmlUrl="https://www.aleydasolis.com/en/" xmlUrl="https://www.aleydasolis.com/en/feed/"/>
+<outline text="Lily Ray" type="rss" htmlUrl="https://lilyraynyc.substack.com/" xmlUrl="https://lilyraynyc.substack.com/feed"/>
+<outline text="Marie Haynes" type="rss" htmlUrl="https://www.mariehaynes.com/" xmlUrl="https://www.mariehaynes.com/feed/"/>
+<outline text="Glenn Gabe (GSQi)" type="rss" htmlUrl="https://www.gsqi.com/marketing-blog/" xmlUrl="https://www.gsqi.com/marketing-blog/feed/"/>
+<outline text="Growth Memo (Kevin Indig)" type="rss" htmlUrl="https://www.growth-memo.com/" xmlUrl="https://www.growth-memo.com/feed"/>
+<outline text="SparkToro" type="rss" htmlUrl="https://sparktoro.com/blog/" xmlUrl="https://sparktoro.com/blog/feed/"/>
+<outline text="Detailed" type="rss" htmlUrl="https://detailed.com/" xmlUrl="https://detailed.com/feed/"/>
+<outline text="iPullRank" type="rss" htmlUrl="https://ipullrank.com/blog" xmlUrl="https://ipullrank.com/feed"/>
+<outline text="Screaming Frog" type="rss" htmlUrl="https://www.screamingfrog.co.uk/blog/" xmlUrl="https://www.screamingfrog.co.uk/feed/"/>
+<outline text="Yoast" type="rss" htmlUrl="https://yoast.com/seo-blog/" xmlUrl="https://yoast.com/feed/"/>
+<outline text="web.dev" type="rss" htmlUrl="https://web.dev/blog" xmlUrl="https://web.dev/static/blog/feed.xml"/>
+<outline text="Cloudflare Blog" type="rss" htmlUrl="https://blog.cloudflare.com/" xmlUrl="https://blog.cloudflare.com/rss/"/>
+<outline text="Schema.org Blog" type="rss" htmlUrl="https://blog.schema.org/" xmlUrl="https://blog.schema.org/feed/"/>
+</outline>
+<outline text="Local search">
+<outline text="Sterling Sky" type="rss" htmlUrl="https://www.sterlingsky.ca/blog/" xmlUrl="https://www.sterlingsky.ca/feed/"/>
+<outline text="Near Media" type="rss" htmlUrl="https://www.nearmedia.co/" xmlUrl="https://www.nearmedia.co/feed/"/>
+<outline text="Whitespark" type="rss" htmlUrl="https://whitespark.ca/blog/" xmlUrl="https://whitespark.ca/blog/feed/"/>
+</outline>
+<outline text="AI labs and tools">
 <outline text="Anthropic News" type="link" url="https://www.anthropic.com/news"/>
-<outline text="Claude Code changelog" type="link" url="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"/>
+<outline text="OpenAI News" type="rss" htmlUrl="https://openai.com/news/" xmlUrl="https://openai.com/news/rss.xml"/>
+<outline text="Google DeepMind" type="rss" htmlUrl="https://deepmind.google/discover/blog/" xmlUrl="https://deepmind.google/blog/rss.xml"/>
+<outline text="Google AI (The Keyword)" type="rss" htmlUrl="https://blog.google/technology/ai/" xmlUrl="https://blog.google/technology/ai/rss/"/>
+<outline text="Hugging Face Blog" type="rss" htmlUrl="https://huggingface.co/blog" xmlUrl="https://huggingface.co/blog/feed.xml"/>
+<outline text="GitHub Blog" type="rss" htmlUrl="https://github.blog/" xmlUrl="https://github.blog/feed/"/>
+<outline text="GitHub Changelog" type="rss" htmlUrl="https://github.blog/changelog/" xmlUrl="https://github.blog/changelog/feed/"/>
+<outline text="Claude Code releases" type="rss" htmlUrl="https://github.com/anthropics/claude-code/releases" xmlUrl="https://github.com/anthropics/claude-code/releases.atom"/>
+<outline text="OpenAI Codex releases" type="rss" htmlUrl="https://github.com/openai/codex/releases" xmlUrl="https://github.com/openai/codex/releases.atom"/>
+</outline>
+<outline text="AI news and analysis">
+<outline text="Import AI (Jack Clark)" type="rss" htmlUrl="https://importai.substack.com/" xmlUrl="https://importai.substack.com/feed"/>
+<outline text="Interconnects (Nathan Lambert)" type="rss" htmlUrl="https://www.interconnects.ai/" xmlUrl="https://www.interconnects.ai/feed"/>
+<outline text="Latent Space" type="rss" htmlUrl="https://www.latent.space/" xmlUrl="https://www.latent.space/feed"/>
+<outline text="Stratechery" type="rss" htmlUrl="https://stratechery.com/" xmlUrl="https://stratechery.com/feed/"/>
+<outline text="Platformer" type="rss" htmlUrl="https://www.platformer.news/" xmlUrl="https://www.platformer.news/rss/"/>
+<outline text="Gary Marcus" type="rss" htmlUrl="https://garymarcus.substack.com/" xmlUrl="https://garymarcus.substack.com/feed"/>
+<outline text="The Verge: AI" type="rss" htmlUrl="https://www.theverge.com/ai-artificial-intelligence" xmlUrl="https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"/>
+<outline text="Ars Technica: AI" type="rss" htmlUrl="https://arstechnica.com/ai/" xmlUrl="https://arstechnica.com/ai/feed/"/>
+<outline text="TechCrunch: AI" type="rss" htmlUrl="https://techcrunch.com/category/artificial-intelligence/" xmlUrl="https://techcrunch.com/category/artificial-intelligence/feed/"/>
+<outline text="MIT Technology Review: AI" type="rss" htmlUrl="https://www.technologyreview.com/topic/artificial-intelligence/" xmlUrl="https://www.technologyreview.com/topic/artificial-intelligence/feed"/>
+<outline text="Hacker News" type="rss" htmlUrl="https://news.ycombinator.com/" xmlUrl="https://news.ycombinator.com/rss"/>
+</outline>
+<outline text="AI policy">
+<outline text="EFF Deeplinks" type="rss" htmlUrl="https://www.eff.org/deeplinks" xmlUrl="https://www.eff.org/rss/updates.xml"/>
+<outline text="Tech Policy Press" type="rss" htmlUrl="https://www.techpolicy.press/" xmlUrl="https://techpolicy.press/rss/feed.xml"/>
+<outline text="AI as Normal Technology" type="rss" htmlUrl="https://www.normaltech.ai/" xmlUrl="https://www.normaltech.ai/feed"/>
+<outline text="Center for Democracy &amp; Technology" type="rss" htmlUrl="https://cdt.org/" xmlUrl="https://cdt.org/feed/"/>
+<outline text="Lawfare" type="rss" htmlUrl="https://www.lawfaremedia.org/" xmlUrl="https://www.lawfaremedia.org/feeds/articles"/>
 </outline>
 </body>
 </opml>
