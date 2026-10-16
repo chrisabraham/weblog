@@ -12,7 +12,7 @@ info.Example servers: Upwork, Google Workspace, Google Analytics, Basecamp
 ---
 <p>The <b>Model Context Protocol</b>, usually just <b>MCP</b>, is an open standard for connecting AI tools to other software. A service publishes an MCP server that describes its tools, such as "search jobs" or "create an event," and any MCP client can call them on your behalf after you sign in. It is the reason one connector from a company works in Claude, ChatGPT, Codex, and Cursor alike. Anthropic introduced it in November 2024 and on December 9, 2025 donated it to the Agentic AI Foundation, a fund under the Linux Foundation that Anthropic co-founded with Block and OpenAI.</p>
 <h2>Remote and local servers</h2>
-<p>A <b>remote</b> server lives at a web address and uses OAuth, so signing in is like any "connect your account" button: Upwork's is at <code>mcp.upwork.com/mcp</code>. A <b>local</b> server runs on your own machine and talks to the client directly; the Screaming Frog server on [[Pinebox]] is one, and so are the official Google Analytics server and, by one report, Basecamp's.</p>
+<p>A <b>remote</b> server lives at a web address and uses OAuth, so signing in is like any "connect your account" button: Upwork's is at <code>mcp.upwork.com/mcp</code> and Basecamp's at <code>mcp.basecamp.com/mcp</code>. A <b>local</b> server runs on your own machine and talks to the client directly; the Screaming Frog server on [[Pinebox]] is one, and so is the official Google Analytics server.</p>
 <h2>How Chris uses it</h2>
 <p>[[Blackbox]] talks to Upwork through Upwork's MCP server with the official Python SDK, and Claude Code and Codex reach Gmail, Calendar, Drive, Todoist, Slack, and more through connectors. The full list is on [[Connections]].</p>
 <h2>See also</h2>
