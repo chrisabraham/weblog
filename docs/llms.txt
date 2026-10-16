@@ -14,6 +14,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox (his command-lin
 
 ## Posts
 
+- [The new Tesla Roadster, for nerds: air tanks, fans, and rocket math](https://chrisabraham.net/2026/10/tesla-roadster-for-nerds.html) (2026-10-16): The nerdiest details of Tesla's new Roadster: 10,000 psi air tanks, 80 kN of cold-gas thrust, four suction fans, three trims, and how long the air lasts.
 - [Pinebox started as a place to read mail in Alpine](https://chrisabraham.net/2026/10/pinebox-started-as-alpine.html) (2026-10-16): Pinebox began in August 2026 as a tiny server for reading mail in Alpine. Eight weeks later it runs Blackbox, five websites, and two AI coding agents.
 - [What Claude says about me, two days apart](https://chrisabraham.net/2026/10/what-claude-says-about-me.html) (2026-10-16): The full data from Chris Abraham's AI visibility run: Claude names him on every branded question and none of the open ones, plus 43 claims checked.
 - [I tested 70 MCP server addresses; here are the 59 that answered](https://chrisabraham.net/2026/10/mcp-server-cheat-sheet.html) (2026-10-16): A tested cheat sheet of 59 official remote MCP servers, from Upwork and GitHub to Stripe and Google, with the address to paste into Claude or ChatGPT.

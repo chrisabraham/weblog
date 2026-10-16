@@ -272,3 +272,17 @@ h1.post-title { font-size: 1.8rem; }
 .table-scroll { overflow-x: auto; }
 .editor-note { border: 1px solid var(--rule); border-left: 4px solid var(--orange); background: var(--box); padding: 4px 18px 8px; margin: 1.6em 0; }
 .editor-note h2 { font-size: 1.1rem; margin-top: 0.9em; }
+
+/* Figures, credited images, and click-to-play video */
+.post-body figure { margin: 1.2em 0; }
+.post-body figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.post-body figcaption { font: 0.75rem/1.5 var(--sans); color: var(--muted); margin-top: 6px; }
+.video { position: relative; }
+.video a.video-link { display: block; position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
+.video a.video-link img { width: 100%; height: 100%; object-fit: cover; border: 0; }
+.video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 72px; height: 52px; border-radius: 12px; background: #c00; color: #fff; font: 28px/52px var(--sans); text-align: center; }
+.video iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; display: block; }
+.diagram { color: var(--ink); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram .legend { font: 0.85rem/1.5 var(--sans); margin: 10px 0 4px; padding-left: 1.4em; }
+.diagram .legend li { margin: 4px 0; }

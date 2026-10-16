@@ -87,8 +87,23 @@ def parse(path):
         if ":" in line:
             k, v = line.split(":", 1)
             meta[k.strip()] = v.strip()
-    meta["body"] = dashes(body.strip())
+    meta["body"] = youtube(dashes(body.strip()))
     return meta
+
+
+YOUTUBE = re.compile(r"\{\{youtube:([A-Za-z0-9_-]{6,20})\|([^}]+)\}\}")
+
+
+def youtube(body):
+    """{{youtube:ID|Title}} becomes a click-to-play facade: a link and thumbnail until the
+    reader presses play, then a youtube-nocookie.com player. Nothing loads from YouTube first."""
+    def sub(m):
+        vid, title = m.group(1), html.escape(m.group(2))
+        return (f'<figure class="video" data-yt="{vid}"><a class="video-link" href="https://www.youtube.com/watch?v={vid}">'
+                f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="Video: {title}" width="480" height="360" loading="lazy">'
+                f'<span class="video-play" aria-hidden="true">\u25b6</span></a>'
+                f'<figcaption>Video: {title}. Plays from YouTube when you press play.</figcaption></figure>')
+    return YOUTUBE.sub(sub, body)
 
 
 def dashes(body):
@@ -426,6 +441,16 @@ def page(*, title, description, path, body, site, posts, schema=None,
     if (dark) root.setAttribute("data-theme", "dark"); else root.removeAttribute("data-theme");
     try {{ localStorage.setItem("weblog-theme", dark ? "dark" : "light"); }} catch (e) {{}}
     show(dark);
+  }});
+  document.querySelectorAll("figure.video a.video-link").forEach(function (a) {{
+    a.addEventListener("click", function (ev) {{
+      ev.preventDefault();
+      var f = a.parentNode, i = document.createElement("iframe");
+      i.src = "https://www.youtube-nocookie.com/embed/" + f.getAttribute("data-yt") + "?autoplay=1";
+      i.title = a.querySelector("img").alt; i.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      i.setAttribute("allowfullscreen", ""); i.loading = "lazy";
+      f.replaceChild(i, a);
+    }});
   }});
 }})();
 </script>
@@ -780,6 +805,8 @@ def main():
     write("/robots.txt", ROBOTS.replace("{SITE}", SITE_URL))
     write("/llms.txt", llms(posts, site, full=False))
     write("/llms-full.txt", llms(posts, site, full=True))
+    if (SRC / "media").exists():
+        shutil.copytree(SRC / "media", OUT / "media")
     write("/favicon.svg", FAVICON)
     raster_icons()
     write("/humans.txt", f"""/* TEAM */
