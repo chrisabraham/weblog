@@ -161,7 +161,7 @@ def cat_link(c):
 def page(*, title, description, path, body, site, posts, schema=None,
          noindex=False, og_type="website", extra_head=""):
     canonical = SITE_URL + path.replace("index.html", "")
-    full_title = title if path == "/index.html" else f"{title} on {TITLE}"
+    full_title = title  # site name rides in og:site_name and schema, not every title
     robots = "noindex, follow" if noindex else "index, follow, max-image-preview:large, max-snippet:-1"
     return f"""<!DOCTYPE html>
 <html lang="en">
