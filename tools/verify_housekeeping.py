@@ -99,7 +99,7 @@ verify(redlined.exists(), "Approved standalone Oliver Uberti / 826DC memoir is p
 if redlined.exists():
     text826 = redlined.read_text(encoding="utf-8")
     verify('class="prompt"' in text826
-           and "As an aside and I think that it's an amazing kind of article" in text826
+           and "As an aside and I think that it&#x27;s an amazing kind of article" in text826
            and "About iterations and revisions and all that other stuff" in text826,
            "Original 826DC assignment and precise redlining edit instruction survive")
     verify(text826.index("The walls were giving everybody permission")
