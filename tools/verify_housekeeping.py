@@ -262,8 +262,15 @@ verify(".eai-lantern" in STYLE and "prefers-reduced-motion: no-preference" in ST
 
 # Navigation, syndication, and machine-readable outputs must all be built from
 # the same published source set. These tests inspect generated files, not promises.
-verify('href="/categories.html">Categories</a>' in HOME,
-       "Categories has an ordinary accessible entry in the top navigation")
+verify('href="/categories.html">Categories</a>' in HOME
+       and 'href="/reading.html">Reading</a>' in HOME,
+       "Category and reading directories remain linked in the footer")
+topnav = HOME.split('<nav class="topnav"', 1)[1].split('</nav>', 1)[0]
+verify('href="/categories.html"' not in topnav and 'href="/reading.html"' not in topnav,
+       "The mobile header avoids duplicate category and reading navigation")
+verify('#banner { display: grid;' in STYLE and '.topnav a.hire-tab, .topnav a.hire-tab:visited' in STYLE
+       and 'position: static; top: auto; right: auto' in STYLE,
+       "On phones, title and controls occupy distinct layout rows")
 verify('href="/atom.xml"' in HOME and 'type="application/atom+xml"' in HOME,
        "Every page autodiscovers the real Atom 1.0 feed")
 verify('href="/feeds.opml"' in HOME and 'type="text/x-opml"' in HOME,
