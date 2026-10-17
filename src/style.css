@@ -291,3 +291,6 @@ h1.post-title { font-size: 1.8rem; }
 .related ul { margin: 0; padding-left: 1.2em; }
 .related li { padding: 3px 0; }
 .b-cc { background: #e6e6e6; } .b-cc b { background: #222; }
+#footer p { text-wrap: balance; }
+#footer a { white-space: nowrap; }
+.b-opml { font-size: 9px; }
