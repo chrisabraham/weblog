@@ -294,3 +294,15 @@ h1.post-title { font-size: 1.8rem; }
 #footer p { text-wrap: balance; }
 #footer a { white-space: nowrap; }
 .b-opml { font-size: 9px; }
+
+/* ChatGPT source audit, October 16: focused text must remain legible.
+   Old skip-link and top-nav selectors gave 1:1 text/background contrast.
+   Strong visible outlines help keyboard readers in both reading themes. */
+a:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+a.skip:focus, a.skip:focus-visible { color: var(--ink); background: var(--paper); }
+.topnav a:focus-visible, .topnav a:visited:focus-visible {
+  background: var(--link); color: var(--paper); text-decoration: underline;
+}
+.badge:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+.post-excerpt { line-height: 1.6; }
+.read-more { margin-top: -0.3em; font-weight: bold; }
