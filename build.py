@@ -438,13 +438,15 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <a class="skip" href="#main">Skip to main content</a>
 <div id="wrap">
 <header id="banner">
-  <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+  <div class="banner-controls" aria-label="Display and contact">
+    <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </div>
   <{"h1" if path == "/index.html" else "p"} class="site-title"><a href="/" rel="home">{e(TITLE)}</a></{"h1" if path == "/index.html" else "p"}>
   <p class="tagline">{e(TAGLINE)}</p>
   <nav class="topnav" aria-label="Main">
     <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
     <a href="/about.html">About</a>
-    <a href="/hire.html" class="hire-tab">Hire me</a>
   </nav>
 </header>
 <div id="cols">
