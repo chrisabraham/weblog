@@ -1,0 +1,17 @@
+title: Lotus web standards
+seo_title: Lotus web standards for lightweight accessible sites
+description: A 2026 engineering compact for chrisabraham.net inspired by Colin Chapman's instruction to simplify, then add lightness, while respecting old-web culture.
+categories: Website engineering, Editorial practice
+updated: 2026-10-17
+---
+<p>The site's guiding rule is Colin Chapman's Lotus maxim: <em>Simplify, then add lightness.</em> The aesthetic borrows from early-2000s personal publishing; the engineering objective is current, accessible, fast, robust, and verifiable. Historical styling is a deliberate design decision rather than a reason to freeze standards at 2006.</p>
+<h2>Content and layout</h2>
+<p>A homepage is a useful index: title, one-paragraph summary, real date and attribution, and a descriptive link to the complete article. Full articles retain their original prompts, media, corrections, and stable canonical addresses. Provide short orientation material and a primer for newcomers without weakening technical pieces.</p>
+<h2>Accessibility and progressive enhancement</h2>
+<p>Prefer semantic HTML, descriptive accessible names, visible keyboard focus, adequate text contrast, meaningful headings, reading order, reflow, and controls usable without a mouse. Preserve content when JavaScript is disabled. WCAG conformance cannot be established by a score alone; validate with browser, keyboard, zoom, screen-reader, and automated checks.</p>
+<h2>Images and motion</h2>
+<p>Serve only the pixels needed, use responsive srcset for raster photographs and illustrations, prefer well-compressed modern formats where appropriate, and preserve faithful alt descriptions rather than repeating captions. Images that convey no content may have empty alt. The smallest SVG doodle is often cheaper than a large rendered scene. Decorative animations should heed prefers-reduced-motion. Never force beautiful images to look visibly broken simply to score fewer bytes.</p>
+<h2>Links, semantics, and search</h2>
+<p>Use real crawlable anchors with meaningful destinations. An external link need not open a new tab; only set a target when it is justified by the user experience. Use appropriate rel attributes for sponsorship, author identity, licensing, canonical pages, and feeds. Structured data should accurately represent things readers can see and verify. More schema types are not necessarily better; do not invent endorsements, reviews, credentials, or keyword lists.</p>
+<h2>Measurements and limits</h2>
+<p>Make changes with dated handoffs, check the generated files, quantify byte cost when possible, run the project's audit and browser tests, and state which checks were not performed. A fast-looking site is not proof of a fast page, and an accessibility declaration is not a certification.</p>
