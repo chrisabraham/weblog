@@ -349,7 +349,7 @@ if all(p.exists() for p in (gpath, ipath, mpath)):
            and 'class="back-index"' in index_html,
            "The subject index harvests substantial real page references")
     map_body = map_html.split('class="post-body reference-page"', 1)[1].split("</main>", 1)[0]
-    listed_urls = re.findall(r'<li><a href="(/[^"]+)"', map_body)
+    listed_urls = re.findall(r'<li><a href="(/[^"]*)"', map_body)
     map_expected = {x.removeprefix("https://chrisabraham.net") for x in sitemap_urls}
     verify(set(listed_urls) == map_expected and len(listed_urls) == len(map_expected),
            "HTML site map lists the complete XML canonical inventory exactly once")
