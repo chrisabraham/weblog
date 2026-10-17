@@ -20,7 +20,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
-- [Google Abhors a Vacuum](https://chrisabraham.net/2026/10/google-abhors-a-vacuum.html) (2026-10-17): A reputation veteran on defense, preventive work, bespoke coachbuilding, coral reefs, genuine reform and the cost of waiting for a crisis.
+- [Google Abhors a Vacuum](https://chrisabraham.net/2026/10/google-abhors-a-vacuum.html) (2026-10-17): The online information vacuum, from absent biographies and ghost-town websites to modern search, AI, professional identity and personal privacy.
 - [Build a 2004 weblog with AI and GitHub Pages](https://chrisabraham.net/2026/10/build-a-2004-weblog-with-ai.html) (2026-10-17): How to build your own old school personal weblog with Claude Code, Codex, GitHub Pages and plain English prompts, inspired by chrisabraham.net.
 - [Put the Redlined Manuscripts on the Walls](https://chrisabraham.net/2026/10/put-the-redlined-manuscripts-on-the-walls.html) (2026-10-17): My friend Oliver Uberti helped create a writing room at 826DC where redlined manuscripts taught me to show my own revisions and AI collaborations.
 - [My AI Writers Keep Stealing My Best Material](https://chrisabraham.net/2026/10/my-ai-writers-keep-stealing-my-best-material.html) (2026-10-17): I assign stories to Claude, ChatGPT, and Codex, publish the prompts, invite disagreement, and obsess over prose that sounds human on my AImaxxed weblog.
@@ -73,6 +73,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Wiki
 
 - [Adjutant](https://chrisabraham.net/wiki/adjutant.html) (edited 2026-10-16): Adjutant is the planned public, open-source version of Blackbox, with Chris Abraham's name, clients, and data removed, meant to be read and borrowed.
+- [AI editorial provenance and agent handoffs](https://chrisabraham.net/wiki/ai-editorial-provenance-and-handoffs.html) (edited 2026-10-17): A working standard for attributed AI writing, preserved human prompts, visible corrections, image provenance and reproducible coding-agent handoffs.
+- [AI search visibility measurement methods](https://chrisabraham.net/wiki/ai-search-visibility-methods.html) (edited 2026-10-17): Repeatable methodology for tracking named entities, competitor citations, factual errors and differences among AI search and answer services.
 - [AI visibility report](https://chrisabraham.net/wiki/ai-visibility-report.html) (edited 2026-10-16): A live, dated report from Chris Abraham's AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.
 - [Blackbox](https://chrisabraham.net/wiki/blackbox.html) (edited 2026-10-16): Blackbox, or bb, is Chris Abraham's plain-English command-line secretary, built with Claude Code and running on his pinebox server since September 2026.
 - [Blackbox commands](https://chrisabraham.net/wiki/blackbox-commands.html) (edited 2026-10-16): Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
@@ -80,5 +82,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Connections](https://chrisabraham.net/wiki/connections.html) (edited 2026-10-16): Every service Chris Abraham's AI tools can reach through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, and GitHub.
 - [MCP servers](https://chrisabraham.net/wiki/mcp-servers.html) (edited 2026-10-16): A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.
 - [Model Context Protocol](https://chrisabraham.net/wiki/model-context-protocol.html) (edited 2026-10-16): MCP, the Model Context Protocol, is the open standard that lets AI tools like Claude, ChatGPT, and Codex use other services. What it is and how it works.
+- [Online perception management field guide](https://chrisabraham.net/wiki/online-perception-management-field-guide.html) (edited 2026-10-17): A practical reference for online identity audits, professional profiles, archival evidence, privacy removals and recurring search maintenance.
 - [Pinebox](https://chrisabraham.net/wiki/pinebox.html) (edited 2026-10-16): Pinebox is the DigitalOcean droplet where Blackbox, its timers and backups, and Chris Abraham's site builds and Lighthouse checks run.
+- [Static weblog operations and publication checks](https://chrisabraham.net/wiki/static-weblog-operations.html) (edited 2026-10-17): Operational checklist for maintaining a Python-built GitHub Pages weblog, including deployment, navigation, feeds, metadata and indexing.
 - [Upwork verdicts](https://chrisabraham.net/wiki/upwork-verdicts.html) (edited 2026-10-16): The six verdicts Blackbox gives Upwork jobs, from FUCK NO to APPLY ALL THE CONNECTS, what each one means, and the order they are checked in.

@@ -106,7 +106,11 @@ def parse(path):
         if ":" in line:
             k, v = line.split(":", 1)
             meta[k.strip()] = v.strip()
-    meta["body"] = youtube(dashes(body.strip()))
+    # Keep original source filenames in git, publish modern compressed media.
+    clean = youtube(dashes(body.strip()))
+    meta["body"] = re.sub(
+        r'(/media/[A-Za-z0-9_.-]+)\.(?:jpe?g|png)(?=["\s<>])',
+        r'\1.webp', clean, flags=re.IGNORECASE)
     return meta
 
 
@@ -512,14 +516,13 @@ def sidebar(site, posts):
     arch = "".join(f'<li><a href="/{k}/">{d:%B %Y}</a></li>' for k, d in months.items())
     catl = "".join(f'<li>{cat_link(c)} <small>({n})</small></li>' for c, n in sorted(cats.items()))
     recent = "".join(f'<li><a href="{p["path"]}">{e(p["title"])}</a></li>' for p in posts[:6])
-    wikil = "".join(f'<li><a href="{w["path"]}">{e(w["title"])}</a></li>'
-                    for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
+    wiki_count = len(site.get("_wiki", {}))
     return f"""<aside id="sidebar" aria-label="Sidebar">
 <section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
 <p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
-<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki">Wiki</p><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
+<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki"><a href="/wiki/">Wiki</a></p><p>Evergreen guides and references. <a href="/wiki/">Browse {wiki_count} pages</a></p></section>
 <section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects">{proj}</ul></section>
 <section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories"><a href="/categories.html">Categories</a></p><ul>{catl}</ul><p class="opml"><a href="/categories.html">All categories</a></p></section>
 <section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul>{arch}</ul></section>
@@ -805,7 +808,7 @@ def main():
             info = f'<table class="infobox"><caption>{e(w.get("infobox_title", w["title"]))}</caption>{rows}</table>'
         back = sorted(set(links_to.get(w["slug"], [])), key=lambda x: x[0].lower())
         backl = ("".join(f'<li><a href="{pp}">{e(t)}</a></li>' for t, pp in back)) or "<li>Nothing yet.</li>"
-        cats = " &middot; ".join(f'<a href="/wiki/#cat-{slugify(c)}">{e(c)}</a>' for c in w["cats"])
+        cats = " &middot; ".join(e(c) for c in w["cats"])
         html_body = f"""<div class="wiki">
 <nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Article</span><a href="{REPO}/blob/main/{w['src']}">View source</a><a href="{REPO}/commits/main/{w['src']}">History</a></nav>
 <h1 class="wiki-title">{e(w['title'])}</h1>
@@ -830,27 +833,47 @@ def main():
                               schema=schema, og_type="article", **P))
         sitemap.append((w["path"], dt.datetime.combine(w["edited"], dt.time(), TZ)))
 
-    # Wiki main page: every page by category, plus recent edits.
-    bycat = {}
+    # Wiki main page: one entry per page, grouped by reader task.
+    # Multi-category pages must not repeat in multiple directory sections.
+    wiki_shelves = (
+        "Search and reputation",
+        "Publishing and editorial",
+        "Blackbox and work",
+        "Connections and infrastructure",
+        "Other references",
+    )
+
+    def wiki_shelf(w):
+        cats = set(w["cats"])
+        if cats & {"Reputation Management", "Search", "AI search", "Privacy", "Measurement"}:
+            return "Search and reputation"
+        if cats & {"Publishing", "Web Publishing", "Editorial", "Tutorials", "Documentation"}:
+            return "Publishing and editorial"
+        if cats & {"Blackbox", "Projects"}:
+            return "Blackbox and work"
+        if cats & {"Reference", "Infrastructure", "MCP", "Operations"}:
+            return "Connections and infrastructure"
+        return "Other references"
+
+    by_shelf = {name: [] for name in wiki_shelves}
     for w in wiki.values():
-        for c in w["cats"] or ["Uncategorized"]:
-            bycat.setdefault(c, []).append(w)
+        by_shelf[wiki_shelf(w)].append(w)
     groups = "".join(
-        f'<h2 id="cat-{slugify(c)}">{e(c)} pages</h2><ul>' + "".join(
-            f'<li><a href="{w["path"]}">{e(w["title"])}</a>: {e(w["description"])}</li>'
-            for w in sorted(ws, key=lambda w: w["title"].lower())) + "</ul>"
-        for c, ws in sorted(bycat.items()))
-    recent_edits = "".join(f'<li><time datetime="{w["edited"]}">{w["edited"]:%b} {w["edited"].day}</time> <a href="{w["path"]}">{e(w["title"])}</a></li>'
-                           for w in sorted(wiki.values(), key=lambda w: w["edited"], reverse=True)[:10])
+        f'<section class="wiki-shelf"><h2>{e(name)}</h2><ul>' + "".join(
+            f'<li><a href="{w["path"]}">{e(w["title"])}</a> <small>{e(w["description"])}</small></li>'
+            for w in sorted(ws, key=lambda w: w["title"].lower())) + "</ul></section>"
+        for name, ws in by_shelf.items() if ws)
+    latest = max((w["edited"] for w in wiki.values()), default=None)
+    last_edited = f"Last updated {latest:%B} {latest.day}, {latest:%Y}." if latest else ""
     main_body = f"""<div class="wiki">
 <nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Main page</span><a href="{REPO}/tree/main/src/wiki">View source</a><a href="{REPO}/commits/main/src/wiki">History</a></nav>
 <h1 class="wiki-title">Chris Abraham wiki</h1>
 <div class="wiki-body post-body">
-<p>The weblog is the diary; this is the reference shelf. Pages here hold what stays true for a while: how <a href="/wiki/blackbox.html">Blackbox</a> works and every command it knows, the machines it runs on, and the rules behind my projects. Posts are dated and never rewritten. Wiki pages are edited in place, and each one links to its full history. It looks like a wiki and behaves like one, with Chris and his invited AI collaborators maintaining the source.</p>
+<p>The weblog holds dated essays, experiments and reporting. This wiki is the reference shelf: commands, methods, field guides and technical notes that can be kept current. Each page appears once below. {last_edited} The <a href="{REPO}/commits/main/src/wiki">source history</a> records edits.</p>
 {groups}
-<h2>Recent edits</h2><ul class="archive-list">{recent_edits}</ul>
 </div></div>"""
-    write("/wiki/index.html", page(title="Chris Abraham wiki", seo_title="Chris Abraham wiki: Blackbox, commands, and project notes", description="Evergreen reference pages from Chris Abraham: Blackbox and every command it knows, pinebox, the Upwork verdicts, and Adjutant, edited in place.",
+    write("/wiki/index.html", page(title="Chris Abraham wiki", seo_title="Chris Abraham Wiki Reference Guides and Methods",
+          description="Practical reference pages for search visibility, publishing, AI tools, Blackbox and the infrastructure behind Chris Abraham's weblog.",
           path="/wiki/index.html", body=main_body, schema={"@context": "https://schema.org", "@type": "CollectionPage",
           "name": "Chris Abraham wiki", "url": SITE_URL + "/wiki/", "author": AUTHOR_REF,
           "hasPart": [{"@type": "Article", "headline": w["title"], "url": w["url"]} for w in wiki.values()]}, **P))
@@ -932,7 +955,33 @@ def main():
     write("/llms.txt", llms(posts, site, full=False))
     write("/llms-full.txt", llms(posts, site, full=True))
     if (SRC / "media").exists():
+        # Keep old JPEG URLs available for historic links while serving WebP to
+        # visitors. Retain untouched master artwork under src/media/.
+        from PIL import Image
         shutil.copytree(SRC / "media", OUT / "media")
+        total_source = total_webp = total_legacy = count = 0
+        for original in sorted((SRC / "media").iterdir()):
+            if original.suffix.lower() not in (".jpg", ".jpeg", ".png"):
+                continue
+            total_source += original.stat().st_size
+            with Image.open(original) as img:
+                if img.mode not in ("RGB", "RGBA"):
+                    img = img.convert("RGBA" if "A" in img.getbands() else "RGB")
+                target = OUT / "media" / (original.stem + ".webp")
+                img.save(target, format="WEBP", quality=67, method=6)
+                total_webp += target.stat().st_size
+                if original.suffix.lower() in (".jpg", ".jpeg"):
+                    if img.mode == "RGBA":
+                        img = img.convert("RGB")
+                    old_url_target = OUT / "media" / original.name
+                    img.save(old_url_target, format="JPEG", quality=66,
+                             optimize=True, progressive=True, subsampling=2)
+                    total_legacy += old_url_target.stat().st_size
+                count += 1
+        if count:
+            print(f"  raster media: {count} source assets "
+                  f"({total_source//1024} KiB), WebP {total_webp//1024} KiB, "
+                  f"legacy JPEG {total_legacy//1024} KiB")
     write("/favicon.svg", FAVICON)
     raster_icons()
     write("/humans.txt", f"""/* TEAM */
