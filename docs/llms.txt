@@ -12,6 +12,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Categories](https://chrisabraham.net/categories.html): every dated writing subject
 - [Archives](https://chrisabraham.net/archives.html): every post by month
 - [Wiki](https://chrisabraham.net/wiki/): evergreen reference pages
+- [Glossary](https://chrisabraham.net/glossary.html): concise definitions with contextual source links
+- [Index](https://chrisabraham.net/site-index.html): alphabetical subjects and page locators
+- [HTML site map](https://chrisabraham.net/site-map.html): every canonical published page
 - [RSS](https://chrisabraham.net/rss.xml): full-content RSS 2.0 feed
 - [Atom](https://chrisabraham.net/atom.xml): full-content Atom 1.0 feed
 - [Feeds OPML](https://chrisabraham.net/feeds.opml): import this weblog and reading list
