@@ -294,10 +294,10 @@ if categories.exists():
            "Categories directory lists exactly the generated categories")
     verify('name="robots" content="index, follow' in categories_html,
            "Category index is indexable and the member excerpts remain navigable")
-    verify(all('name="robots" content="noindex, follow' in
+    verify(all('name="robots" content="index, follow' in
                (DOCS / p.lstrip("/")).read_text(encoding="utf-8")
                for p in generated_categories),
-           "Category excerpt archives remain noindex to avoid duplicate pages")
+           "Category excerpt archives are indexable at publisher request")
 
 rss = ET.parse(DOCS / "rss.xml").getroot()
 atom = ET.parse(DOCS / "atom.xml").getroot()
@@ -333,8 +333,8 @@ verify("https://chrisabraham.net/categories.html" in sitemap_urls
        "Sitemap includes indexable home and category directory")
 verify(set(rss_urls).issubset(sitemap_urls),
        "Sitemap includes every article advertised in RSS and Atom")
-verify(not any("/category/" in x for x in sitemap_urls if x),
-       "Sitemap excludes noindex category archives")
+verify({"https://chrisabraham.net" + p for p in generated_categories}.issubset(sitemap_urls),
+       "Sitemap includes all canonical category archives")
 verify(len(sitemap_urls) == len(sitemap.findall("site:url", rns)),
        "Sitemap contains no duplicate canonical URLs")
 # Three quiet reference destinations: short glossary, subject index, HTML site map.

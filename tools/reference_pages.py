@@ -161,6 +161,10 @@ def build_reference_pages(*, src, site_url, site, posts, wiki, sitemap, authors,
               "/glossary.html": "Glossary", "/site-index.html": "Back-of-book index",
               "/site-map.html": "HTML site map"}
     others.update({path: meta["title"] for path, meta in static})
+    for post in posts:
+        for category in post["cats"]:
+            others[f"/category/{slugify(category)}.html"] = f"Posts about {category}"
+        others[post["when"].strftime("/%Y/%m/")] = post["when"].strftime("Posts from %B %Y")
     for path, title in sorted(others.items(), key=lambda item: item[1].casefold()):
         if path in expected:
             tree.append(link(path, title))

@@ -175,3 +175,7 @@ Atom for dated posts only. On new publications the HTML sitemap and index
 refresh from real source content; curate glossary definitions when warranted.
 Run tools/verify_housekeeping.py and check the published files before any
 diff-only IndexNow submission. Do not blast every URL unless instructed.
+
+## Sitemap inventory correction (October 17, 2026)
+
+Chris explicitly requested all category pages and monthly archives in sitemap.xml. This supersedes the earlier noindex/exclusion rules above. These collections are now indexable, use article teasers, and appear once by canonical URL in XML and HTML sitemaps. Omit malformed or truncated URLs such as /site-.
