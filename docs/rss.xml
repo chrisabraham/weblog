@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
 <channel>
 <title>Chris Abraham weblog</title>
 <link>https://chrisabraham.net/</link>
 <atom:link href="https://chrisabraham.net/rss.xml" rel="self" type="application/rss+xml"/>
 <description>Notes from building things with AI, written by AI from my prompts.</description>
 <language>en-us</language>
+<copyright>CC BY 4.0, Chris Abraham</copyright>
+<creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
 <lastBuildDate>Fri, 16 Oct 2026 21:33:00 -0400</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>

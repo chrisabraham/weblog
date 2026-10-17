@@ -396,6 +396,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <meta name="theme-color" content="#ffffff" id="theme-color">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="{canonical}">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <link rel="alternate" type="application/rss+xml" title="{e(TITLE)} (RSS)" href="{SITE_URL}/rss.xml">
 <link rel="blogroll" type="text/x-opml" href="{SITE_URL}/blogroll.opml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -436,6 +437,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 </div>
 <footer id="footer">
   <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
   <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
   <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
@@ -518,6 +520,7 @@ def sidebar(site, posts):
 <a class="badge b-wcag" href="/accessibility.html"><b>WCAG</b>2.1 AA</a>
 <a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>a11y</b>100/100</a>
 <a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
+<a class="badge b-cc" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><b>cc</b>BY 4.0</a>
 </section>
 </aside>"""
 
@@ -596,6 +599,7 @@ def post_schema(p):
                 "creditText": (f"Written by Claude Code ({p.get('model', 'Claude')}) in its own voice, at {AUTHOR}'s request"
                                if p.get("author") == "claude-code" else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
                 "publishingPrinciples": SITE_URL + "/disclosures.html",
+                "license": "https://creativecommons.org/licenses/by/4.0/",
             },
             PERSON,
             {"@type": "BreadcrumbList", "itemListElement": [
@@ -910,13 +914,15 @@ def rss(posts):
 </item>""")
     last = posts[0]["when"].strftime('%a, %d %b %Y %H:%M:%S %z') if posts else ""
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
 <channel>
 <title>{e(TITLE)}</title>
 <link>{SITE_URL}/</link>
 <atom:link href="{SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
 <description>{e(TAGLINE)}</description>
 <language>en-us</language>
+<copyright>CC BY 4.0, {AUTHOR}</copyright>
+<creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
 <lastBuildDate>{last}</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>
