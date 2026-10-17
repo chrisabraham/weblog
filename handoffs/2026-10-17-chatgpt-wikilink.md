@@ -28,3 +28,13 @@ Chris celebrates the unusual transparency of the publication: even technical shi
 The older alternate ChatGPT PR #3 was closed unmerged because a parallel housekeeping branch had already published substantially the same editorial work. Its commits remain a historical alternate draft. This smaller fix is intentionally independent.
 
 The publisher's style rule remains: **Sexy South Arlington**. The site's engineering rule remains: **2006 aesthetic, 2026 standards. Simplify, then add lightness.**
+
+## After merge: verified publication evidence
+
+- **Pull request:** [#4](https://github.com/chrisabraham/weblog/pull/4), merged successfully, merge commit `9745d0af9f1aa44a2224a8b50613f5af8bb718fa`.
+- **Automated source build and audit:** [GitHub Actions run 39002410410](https://github.com/chrisabraham/weblog/actions/runs/39002410410), completed successfully.
+- **GitHub Pages:** [Pages run 39002410286](https://github.com/chrisabraham/weblog/actions/runs/39002410286) reported successful build, deploy, and build-status jobs when inspected.
+- **Generated HTML on `main`:** `docs/2026/10/chaff-flares-reputation-work.html` now contains `href="/2026/10/little-boats-one-flotilla.html" class="postlink"`; the false `page does not exist yet` indicator for that article is absent.
+- **Independent live HTTP retrieval:** The assistant's web fetcher could not access the custom domain, so live-browser visual QA remains unverified; a successful GitHub Pages deployment is evidence of publication, not proof of every client-side experience.
+
+No private journal, credential, or client operational file was copied into this public record.
