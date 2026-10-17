@@ -378,6 +378,33 @@ h1.post-title { font-size: 1.8rem; }
   text-decoration: underline; outline: 2px solid var(--readme-accent);
   outline-offset: 2px;
 }
+
+
+/* A pocket-reference aesthetic: small alphabetical links, no extra scripts. */
+.reference-page { max-width: 100%; }
+.reference-alpha {
+  display: flex; flex-wrap: wrap; gap: 5px 10px;
+  padding: 8px 0 12px; margin: 12px 0 16px;
+  border-top: 1px dotted var(--rule); border-bottom: 1px dotted var(--rule);
+  font: 0.78rem/1.8 var(--sans);
+}
+.reference-alpha a { display: inline-block; min-width: 1.2em; text-align: center; }
+.reference-group h2 { font: bold 1.1rem var(--sans); margin: 1.3em 0 0.5em; border-bottom: 1px dotted var(--rule); }
+.glossary-list { margin: 0; }
+.glossary-entry { margin: 0; padding: 10px 0; border-bottom: 1px dotted var(--rule); scroll-margin-top: 16px; }
+.glossary-entry dt, .index-term { font: bold 0.88rem var(--sans); color: var(--ink); }
+.glossary-entry dd { margin: 4px 0 0; font-size: 0.94rem; line-height: 1.6; }
+.reference-source, .index-definition { font: 0.74rem var(--sans); }
+.reference-source { display: block; margin-top: 5px; }
+.back-index { list-style: none; padding-left: 0; margin: 0; }
+.back-index li { margin: 0; padding: 6px 0; border-bottom: 1px dotted var(--rule); font-size: 0.91rem; }
+.site-tree, .site-tree ul { list-style: none; margin: 0; padding-left: 18px; border-left: 1px dotted var(--rule); }
+.site-tree li { margin: 0; padding: 3px 0 3px 8px; }
+.site-tree strong { font-family: var(--sans); }
+@media (max-width: 760px) {
+  .reference-alpha { gap: 4px 9px; }
+  .site-tree, .site-tree ul { padding-left: 12px; }
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Static weblog operations and publication checks","description":"Operational checklist for maintaining a Python-built GitHub Pages weblog, including deployment, navigation, feeds, metadata and indexing.","url":"https://chrisabraham.net/wiki/static-weblog-operations.html","dateModified":"2026-10-17","author":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"isPartOf":{"@type":"CollectionPage","name":"Chris Abraham wiki","url":"https://chrisabraham.net/wiki/"},"about":[{"@type":"Thing","name":"Web Publishing"},{"@type":"Thing","name":"Operations"},{"@type":"Thing","name":"Accessibility"},{"@type":"Thing","name":"Search"}],"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chrisabraham.net/"},{"@type":"ListItem","position":2,"name":"Wiki","item":"https://chrisabraham.net/wiki/"},{"@type":"ListItem","position":3,"name":"Static weblog operations and publication checks","item":"https://chrisabraham.net/wiki/static-weblog-operations.html"}]},"image":{"@type":"ImageObject","url":"https://chrisabraham.net/cards/wiki-static-weblog-operations.png","width":1200,"height":630}}</script>
 <script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
@@ -498,7 +525,7 @@ python tools/verify_housekeeping.py</code></pre>
   <p>Copyright 2026 Chris Abraham. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
   <p>Write back: <a href="mailto:cja@well.com">cja@well.com</a></p>
-  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>

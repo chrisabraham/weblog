@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem("weblog-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<title>Glossary of AI Tools and Web Publishing Terms Explained</title>
+<meta name="description" content="Short definitions of the technical and cultural terms used across this weblog, with a link from each entry to an article or wiki page that explains it.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Chris Abraham">
+<meta name="generator" content="build.py, written with AI in Claude Code">
+<meta name="theme-color" content="#ffffff" id="theme-color">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://chrisabraham.net/glossary.html">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham weblog (RSS)" href="https://chrisabraham.net/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Chris Abraham weblog (Atom)" href="https://chrisabraham.net/atom.xml">
+<link rel="alternate" type="text/x-opml" title="Chris Abraham weblog (Feeds and blogroll OPML)" href="https://chrisabraham.net/feeds.opml">
+<link rel="blogroll" type="text/x-opml" href="https://chrisabraham.net/blogroll.opml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="Chris Abraham weblog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Glossary">
+<meta property="og:description" content="Short definitions of the technical and cultural terms used across this weblog, with a link from each entry to an article or wiki page that explains it.">
+<meta property="og:url" content="https://chrisabraham.net/glossary.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Glossary">
+<meta name="twitter:description" content="Short definitions of the technical and cultural terms used across this weblog, with a link from each entry to an article or wiki page that explains it.">
+<meta property="og:image" content="https://chrisabraham.net/cards/glossary.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chris Abraham weblog: Glossary">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chrisabraham.net/cards/glossary.png">
+<meta name="twitter:image:alt" content="Chris Abraham weblog: Glossary">
+<link rel="me" href="https://github.com/chrisabraham">
+<link rel="me" href="https://www.upwork.com/freelancers/chrisjabraham">
+<link rel="me" href="https://www.linkedin.com/in/chrisabraham">
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="me" href="https://www.reddit.com/user/chrisabraham/">
+<link rel="me" href="https://muckrack.com/chrisabraham">
+<link rel="author" href="https://chrisabraham.net/humans.txt">
+<style>/* A 2003 weblog template, rebuilt to read well on a phone in 2026: a
+   banner, a post column, a boxed sidebar with a blogroll, Verdana throughout, underlined blue links that turn
+   purple once visited. The dark button in the banner works like Hill
+   Mole's; with no saved choice it follows the system setting. */
+
+:root {
+  --page: #e9ecf2;
+  --paper: #ffffff;
+  --ink: #1b1b1b;
+  --muted: #474d58;
+  --link: #1d3d8f;
+  --visited: #6a2c8f;
+  --banner: #ffffff;
+  --banner-ink: #1b1b1b;
+  --banner-sub: #474d58;
+  --orange: #c75000;
+  --gerris-blue: #16729e;
+  --redlink: #b00000;
+  --readme-accent: #a9142b; /* Accessible red invitation, distinct from wiki redlinks */
+  --box: #f4f6fa;
+  --box-head: #dfe5f1;
+  --rule: #c9d0dc;
+  --quote: #f6f3e6;
+  --date: #6b4500;
+  --sans: Verdana, "DejaVu Sans", Geneva, Tahoma, sans-serif;
+  --mono: "Courier New", "DejaVu Sans Mono", monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --page: #0e1014;
+  --paper: #16181d;
+  --ink: #e6e6e6;
+  --muted: #9aa3b2;
+  --link: #8fb0ff;
+  --visited: #d0a2f0;
+  --banner: #16181d;
+  --banner-ink: #e6e6e6;
+  --banner-sub: #9aa3b2;
+  --orange: #ff8a3d;
+  --gerris-blue: #5cb6e3;
+  --redlink: #ff8f8f;
+  --readme-accent: #ffa0ab;
+  --box: #1c1f26;
+  --box-head: #262b36;
+  --rule: #343a46;
+  --quote: #24221a;
+  --date: #e0b25c;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+/* No one-word last lines: browsers that support it rebalance the wrap. */
+p, li, dd, blockquote, .post-footer { text-wrap: pretty; }
+h1, h2, h3, .tagline, .site-title { text-wrap: balance; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: var(--visited); }
+a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-decoration: none; }
+
+.skip { position: absolute; left: -9999px; }
+/* An actionable skip link must stay legible when keyboard-focused.
+   Previous :focus inherited white-on-white or dark-on-dark from a:focus-visible. */
+.skip:focus { left: 8px; top: 8px; background: var(--paper); color: var(--ink); padding: 6px; z-index: 20; outline: 3px solid var(--link); outline-offset: 2px; }
+
+#wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  min-height: 100vh;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  background: var(--banner);
+  color: var(--banner-ink);
+  padding: 22px 24px 0;
+  border-bottom: 4px double var(--rule);
+}
+.site-title { margin: 0; font-family: var(--sans); font-size: 2rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
+.site-title a, .site-title a:visited { color: var(--orange); text-decoration: none; }
+.site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
+.tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
+.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
+.topnav a, .topnav a:visited { display: inline-block; padding: 4px 0; color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+/* Explicit keyboard focus overrides .topnav a's own color declaration.
+   Otherwise focused navigation rendered text and background in the same blue. */
+.topnav a:hover, .topnav a:focus-visible {
+  background: var(--link); color: var(--paper);
+  text-decoration: underline; outline: 2px solid currentColor; outline-offset: 2px;
+}
+
+.theme-toggle {
+  position: absolute; top: 12px; right: 12px;
+  font: 0.7rem var(--sans); text-transform: lowercase;
+  color: var(--banner-ink); background: transparent;
+  border: 1px solid var(--rule); padding: 3px 9px; cursor: pointer;
+}
+.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
+
+.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
+.topnav a.hire-tab, .topnav a.hire-tab:visited {
+  margin: 0 0 -9px auto; padding: 6px 14px 8px; border: 1px solid var(--rule); border-bottom: 0;
+  background: var(--paper); color: var(--orange); font-weight: bold; text-transform: none;
+  border-radius: 4px 4px 0 0; position: relative;
+}
+.topnav a.hire-tab:hover, .topnav a.hire-tab:focus-visible { background: var(--orange); color: var(--paper); }
+
+/* Columns */
+#cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
+#main { padding: 8px 28px 32px; min-width: 0; border-right: 1px dotted var(--rule); }
+#sidebar { padding: 18px 16px 24px; font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; }
+
+/* Posts */
+.date-header {
+  margin: 26px 0 6px; padding-bottom: 2px;
+  font: bold 0.74rem var(--sans); color: var(--date);
+  text-transform: uppercase; letter-spacing: 1px;
+  border-bottom: 1px dotted var(--rule);
+}
+.post { margin: 0 0 30px; }
+.post-title { margin: 10px 0 8px; font-family: var(--sans); font-size: 1.45rem; line-height: 1.25; }
+h1.post-title { font-size: 1.8rem; }
+.post-title a, .post-title a:visited { color: var(--ink); text-decoration: none; }
+.post-title a:hover { background: none; color: var(--link); text-decoration: underline; }
+.post-body p { margin: 0 0 1em; }
+/* Teasers use plain-text editorial summaries; links have comfortable targets. */
+.post-excerpt { margin-bottom: 0.35em; }
+.read-more { margin: 0.1em 0 0.7em; font-weight: bold; }
+.read-more a { display: inline-block; padding: 4px 0; }
+.post-body h2 { font-size: 1.2rem; margin: 1.4em 0 0.4em; }
+.post-body blockquote, .prompt blockquote {
+  margin: 1em 0; padding: 10px 16px;
+  background: var(--quote); border-left: 4px solid var(--rule);
+}
+.post-body code, .post-body pre { font-family: var(--mono); font-size: 0.85em; }
+.post-body pre { background: var(--box); border: 1px solid var(--rule); padding: 12px; overflow-x: auto; }
+.post-body img { max-width: 100%; height: auto; }
+.prompt { margin: 12px 0; font-family: var(--sans); font-size: 0.78rem; }
+.prompt summary { cursor: pointer; color: var(--muted); }
+.prompt-h { display: inline; font: 0.78rem var(--sans); margin: 0; color: var(--muted); }
+.prompt blockquote { font-family: var(--mono); font-size: 0.82rem; white-space: pre-wrap; }
+.post-footer {
+  margin: 10px 0 0; padding-top: 6px;
+  font: 0.72rem var(--sans); color: var(--muted);
+  border-top: 1px dashed var(--rule);
+}
+.prevnext a { display: inline-block; padding: 4px 0; }
+.prevnext { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 0.75rem var(--sans); margin: 20px 0; }
+.older { font: 0.8rem var(--sans); }
+.page-title { font-size: 1.8rem; margin: 18px 0 12px; }
+.lede { font-style: italic; color: var(--muted); }
+.archive-list { list-style: none; padding: 0; }
+.archive-list li { margin: 4px 0; }
+.archive-list time { display: inline-block; min-width: 4.2em; font: 0.75rem var(--sans); color: var(--muted); }
+
+/* Projects */
+.project { border-bottom: 1px dotted var(--rule); padding-bottom: 6px; }
+.project h2 { font-size: 1.25rem; margin: 18px 0 2px; }
+.project-meta { font: 0.72rem var(--sans); color: var(--muted); margin: 0 0 6px; }
+.dot { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border: 1px solid var(--muted); vertical-align: 1px; }
+.dot-active, .dot-live { background: #2f9e44; }
+.dot-live-lab { background: #2f9e44; box-shadow: inset 0 0 0 2px #c75000; }
+.dot-planned { background: #f0c419; }
+.dot-paused { background: #999; }
+
+/* Sidebar */
+.box { background: var(--box); border: 1px solid var(--rule); margin: 0 0 14px; }
+.box .box-title {
+  margin: 0; padding: 4px 8px;
+  background: var(--box-head); border-bottom: 1px solid var(--rule);
+  font: bold 0.72rem var(--sans); text-transform: uppercase; letter-spacing: 1px;
+}
+/* eAIsterEgg / 03: a tiny amber lantern next to the author's roster.
+   Decorative only; no tooltip, click target, or additional network request.
+   Motion is deliberately gentle and absent for reduced-motion readers. */
+.eai-lantern { display: inline-block; color: var(--orange); font-size: 0.85em; vertical-align: baseline; }
+@media (prefers-reduced-motion: no-preference) {
+  .eai-lantern { animation: lantern-breathe 7s ease-in-out infinite; }
+  @keyframes lantern-breathe { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+}
+.box p, .box ul { margin: 8px; }
+.box ul { padding-left: 16px; }
+.box li { margin: 0; padding: 3px 0; }
+.box ul.projects { list-style: none; padding-left: 0; }
+.box small { color: var(--muted); }
+.opml { text-align: right; }
+
+/* 88x31 buttons, drawn in CSS so they stay sharp and cost no requests */
+.buttons { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; background: transparent; border: 0; }
+.badge, .badge:visited {
+  display: inline-flex; width: 88px; height: 31px; overflow: hidden;
+  border: 1px solid #000; font: bold 10px/29px var(--sans);
+  text-decoration: none; color: #000; background: #ddd;
+}
+.badge b { display: inline-block; padding: 0 4px; color: #fff; background: #333; margin-right: 4px; }
+.b-rss { background: #ff9a33; } .b-rss b { background: #a34600; }
+.b-claude { background: #f2d4c2; } .b-claude b { background: #9e4524; }
+.b-gh { background: #e0e0e0; } .b-gh b { background: #24292f; }
+.b-lynx { background: #c8f7c5; } .b-lynx b { background: #1e7a1e; }
+.b-html { background: #cfe0ff; } .b-html b { background: #1d3d8f; }
+.b-opml { background: #fff3a8; } .b-opml b { background: #6b5b00; }
+.b-wcag { background: #e3d7ff; } .b-wcag b { background: #4b2a99; }
+.b-lh { background: #d4f5e9; } .b-lh b { background: #0b6b4a; }
+.badge:hover, .badge:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.badge:focus-visible { background-color: var(--paper); color: var(--ink); }
+/* Readable text links must not depend on hover alone. */
+
+/* Footer */
+#footer { padding: 14px 24px 24px; border-top: 4px double var(--rule); font: 0.7rem var(--sans); color: var(--muted); }
+#footer p { margin: 4px 0 8px; }
+.footlinks { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.footlinks a { display: inline-block; padding: 4px 0; white-space: nowrap; }
+
+/* Phones: one column, sidebar after the posts, nothing sideways */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  #wrap { border: 0; }
+  #banner { padding: 16px 16px 0; }
+  .site-title { font-size: 1.6rem; padding-right: 56px; }
+  .topnav a { display: inline-block; margin: 2px 12px 4px 0; padding: 4px 0; }
+  .topnav a.hire-tab, .topnav a.hire-tab:visited { position: absolute; top: 12px; right: 66px; margin: 0; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 0; font-size: 0.7rem; }
+  #cols { grid-template-columns: 1fr; }
+  #main { padding: 4px 16px 24px; border-right: 0; }
+  #sidebar { padding: 16px; border-top: 4px double var(--rule); font-size: 0.8rem; }
+  .post-title { font-size: 1.3rem; }
+  h1.post-title, .page-title { font-size: 1.5rem; }
+  #footer { padding: 14px 16px 24px; }
+}
+
+@media print {
+  #sidebar, .theme-toggle, .topnav, .prevnext { display: none; }
+  #cols { display: block; }
+}
+
+/* Blogroll groups */
+.blogroll h3 { margin: 10px 8px 0; font: bold 0.68rem var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.blogroll h3:first-of-type { margin-top: 8px; }
+.blogroll ul { margin-top: 4px; }
+
+/* Wiki: MediaWiki's furniture (tabs, infobox, contents box, red links) in this site's type */
+.wiki-tabs { display: flex; flex-wrap: wrap; gap: 2px; margin: 18px 0 0; border-bottom: 1px solid var(--rule); font: 0.78rem var(--sans); }
+.wiki-tabs a, .wiki-tabs span { display: inline-block; padding: 6px 12px; border: 1px solid var(--rule); border-bottom: 0; background: var(--box); text-decoration: none; }
+.wiki-tabs .sel { background: var(--paper); color: var(--ink); font-weight: bold; position: relative; top: 1px; }
+.wiki-title { font-size: 1.8rem; margin: 14px 0 2px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); font-weight: normal; }
+.wiki-from { margin: 4px 0 14px; font: 0.78rem var(--sans); color: var(--muted); }
+.wiki-body h2 { font-size: 1.3rem; font-weight: normal; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin: 1.6em 0 0.5em; }
+.wiki-body h3 { font-size: 1.05rem; margin: 1.3em 0 0.4em; }
+.wiki-body ul { padding-left: 1.4em; }
+.wiki-body li { margin: 0.25em 0; }
+.wikilink.new, .wikilink.new:visited { color: var(--redlink); }
+.infobox { float: right; clear: right; width: 290px; max-width: 100%; margin: 0 0 16px 18px; border: 1px solid var(--rule); background: var(--box); border-collapse: collapse; font: 0.78rem/1.45 var(--sans); }
+.infobox caption { font-weight: bold; font-size: 0.95rem; padding: 6px; caption-side: top; }
+.infobox th, .infobox td { text-align: left; vertical-align: top; padding: 5px 8px; border-top: 1px solid var(--rule); }
+.infobox th { width: 38%; }
+.toc { display: inline-block; min-width: 14em; margin: 4px 0 16px; padding: 8px 14px 6px; border: 1px solid var(--rule); background: var(--box); font: 0.8rem/1.5 var(--sans); }
+.toc-title { margin: 0 0 4px; font-weight: bold; text-align: center; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0; }
+.toc li a { display: inline-block; padding: 4px 0; text-decoration: none; }
+.toc .toctext { text-decoration: underline; text-underline-offset: 2px; }
+.toc a:hover .toctext { text-decoration: none; }
+.toc .toc-3 { padding-left: 1.4em; }
+.tocnum { color: var(--ink); margin-right: 6px; }
+.wiki-cats { clear: both; margin: 24px 0 8px; padding: 6px 10px; border: 1px solid var(--rule); background: var(--box); font: 0.78rem var(--sans); }
+.wiki-backlinks h2 { font-size: 1rem; margin: 18px 0 4px; }
+.wiki-backlinks ul { font-size: 0.9rem; }
+.wiki-edited { font: 0.75rem var(--sans); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.wiki pre { white-space: pre; }
+@media (max-width: 760px) {
+  .infobox { float: none; width: 100%; margin: 0 0 16px; }
+  .toc { display: block; }
+}
+
+.disclosure { font: 0.78rem var(--sans); color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px; }
+
+/* Wiki tables */
+.wikitable { border-collapse: collapse; width: 100%; margin: 0.6em 0 1.2em; font: 0.8rem/1.5 var(--sans); }
+.wikitable th, .wikitable td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+.wikitable th { background: var(--box-head); }
+.wikitable tr:nth-child(even) td { background: var(--box); }
+.table-scroll { overflow-x: auto; }
+.editor-note { border: 1px solid var(--rule); border-left: 4px solid var(--orange); background: var(--box); padding: 4px 18px 8px; margin: 1.6em 0; }
+.editor-note h2 { font-size: 1.1rem; margin-top: 0.9em; }
+
+/* Figures, credited images, and click-to-play video */
+.post-body figure { margin: 1.2em 0; }
+.post-body figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.post-body figcaption { font: 0.75rem/1.5 var(--sans); color: var(--muted); margin-top: 6px; }
+.video { position: relative; }
+.video a.video-link { display: block; position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
+.video a.video-link img { width: 100%; height: 100%; object-fit: cover; border: 0; }
+.video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 72px; height: 52px; border-radius: 12px; background: #c00; color: #fff; font: 28px/52px var(--sans); text-align: center; }
+.video iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; display: block; }
+.diagram { color: var(--ink); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram .legend { font: 0.85rem/1.5 var(--sans); margin: 10px 0 4px; padding-left: 1.4em; }
+.diagram .legend li { margin: 4px 0; }
+.related { margin: 26px 0 0; padding: 10px 16px; background: var(--box); border: 1px solid var(--rule); }
+.related h2 { font-size: 1rem; margin: 4px 0 6px; }
+.related ul { margin: 0; padding-left: 1.2em; }
+.related li { padding: 3px 0; }
+.b-cc { background: #e6e6e6; } .b-cc b { background: #222; }
+#footer p { text-wrap: balance; }
+#footer a { white-space: nowrap; }
+.b-opml { font-size: 9px; }
+
+/* ChatGPT README entry point, 2026-10-17. Keep uppercase by intention:
+   the top navigation otherwise lowercases all labels for the retro aesthetic.
+   Existing hover/focus rules remain applicable for contrast and keyboard use. */
+/* README is the visible newcomer entrance. Red is a cue, reinforced by bold text
+   and an underline, not the only way to recognize this link. Contrast against
+   paper: 7.44:1 light, 9.19:1 dark; inverse hover/focus has the same ratios. */
+.topnav a.readme-tab, .topnav a.readme-tab:visited {
+  text-transform: none; font-weight: bold; color: var(--readme-accent);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.topnav a.readme-tab:hover, .topnav a.readme-tab:focus-visible {
+  background: var(--readme-accent); color: var(--paper);
+  text-decoration: underline; outline: 2px solid var(--readme-accent);
+  outline-offset: 2px;
+}
+
+
+/* A pocket-reference aesthetic: small alphabetical links, no extra scripts. */
+.reference-page { max-width: 100%; }
+.reference-alpha {
+  display: flex; flex-wrap: wrap; gap: 5px 10px;
+  padding: 8px 0 12px; margin: 12px 0 16px;
+  border-top: 1px dotted var(--rule); border-bottom: 1px dotted var(--rule);
+  font: 0.78rem/1.8 var(--sans);
+}
+.reference-alpha a { display: inline-block; min-width: 1.2em; text-align: center; }
+.reference-group h2 { font: bold 1.1rem var(--sans); margin: 1.3em 0 0.5em; border-bottom: 1px dotted var(--rule); }
+.glossary-list { margin: 0; }
+.glossary-entry { margin: 0; padding: 10px 0; border-bottom: 1px dotted var(--rule); scroll-margin-top: 16px; }
+.glossary-entry dt, .index-term { font: bold 0.88rem var(--sans); color: var(--ink); }
+.glossary-entry dd { margin: 4px 0 0; font-size: 0.94rem; line-height: 1.6; }
+.reference-source, .index-definition { font: 0.74rem var(--sans); }
+.reference-source { display: block; margin-top: 5px; }
+.back-index { list-style: none; padding-left: 0; margin: 0; }
+.back-index li { margin: 0; padding: 6px 0; border-bottom: 1px dotted var(--rule); font-size: 0.91rem; }
+.site-tree, .site-tree ul { list-style: none; margin: 0; padding-left: 18px; border-left: 1px dotted var(--rule); }
+.site-tree li { margin: 0; padding: 3px 0 3px 8px; }
+.site-tree strong { font-family: var(--sans); }
+@media (max-width: 760px) {
+  .reference-alpha { gap: 4px 9px; }
+  .site-tree, .site-tree ul { padding-left: 12px; }
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTermSet","name":"Glossary of the weblog and wiki","url":"https://chrisabraham.net/glossary.html","hasDefinedTerm":[{"@type":"DefinedTerm","name":"301 redirect","description":"A permanent HTTP redirect that sends an old URL to its replacement. Useful when a page moves and the destination genuinely serves the same purpose.","url":"https://chrisabraham.net/glossary.html#301-redirect"},{"@type":"DefinedTerm","name":"404","description":"The HTTP response for a page that cannot be found. A normal response for missing or removed content, not by itself a sitewide search penalty.","url":"https://chrisabraham.net/glossary.html#404"},{"@type":"DefinedTerm","name":"410 Gone","description":"An HTTP response indicating that a resource has been intentionally removed and is not expected to return.","url":"https://chrisabraham.net/glossary.html#410-gone"},{"@type":"DefinedTerm","name":"Accessibility","description":"Designing and testing a site so people using keyboards, screen readers, assistive technology, or different screen sizes can use it.","url":"https://chrisabraham.net/glossary.html#accessibility"},{"@type":"DefinedTerm","name":"Adjutant","description":"The proposed public, depersonalized version of the Blackbox command-line assistant, intended to make the useful patterns available without private data.","url":"https://chrisabraham.net/glossary.html#adjutant"},{"@type":"DefinedTerm","name":"AEO","description":"Answer engine optimization: making information understandable and citable by search features and answer-producing AI systems.","url":"https://chrisabraham.net/glossary.html#aeo"},{"@type":"DefinedTerm","name":"Agent handoff","description":"A dated record of a coding or writing agent's changes, tests, decisions and remaining work, so a later agent can resume with evidence.","url":"https://chrisabraham.net/glossary.html#agent-handoff"},{"@type":"DefinedTerm","name":"AI answer citation","description":"A source link presented by an AI answer service in support of a response. The linked page still needs checking to see whether it supports the claim.","url":"https://chrisabraham.net/glossary.html#ai-answer-citation"},{"@type":"DefinedTerm","name":"AI byline","description":"A clear indication of which AI contributor authored or edited a published piece, alongside the human direction and relevant revision history.","url":"https://chrisabraham.net/glossary.html#ai-byline"},{"@type":"DefinedTerm","name":"AI search visibility","description":"The extent to which an AI answer service accurately mentions a person, brand or organisation for a defined set of relevant questions.","url":"https://chrisabraham.net/glossary.html#ai-search-visibility"},{"@type":"DefinedTerm","name":"AI share of voice","description":"A comparison of how often AI answers mention one named organisation and its alternatives across a fixed set of appropriate prompts.","url":"https://chrisabraham.net/glossary.html#ai-share-of-voice"},{"@type":"DefinedTerm","name":"Alpine","description":"A text-mode email client descended from Pine, used as part of the Pinebox terminal workflow.","url":"https://chrisabraham.net/glossary.html#alpine"},{"@type":"DefinedTerm","name":"Alt text","description":"A text alternative that communicates an image's meaningful content or function to people who cannot see it. Decorative images may use an empty alternative.","url":"https://chrisabraham.net/glossary.html#alt-text"},{"@type":"DefinedTerm","name":"API","description":"Application programming interface: a documented way one program can request data or actions from another service.","url":"https://chrisabraham.net/glossary.html#api"},{"@type":"DefinedTerm","name":"Atom","description":"An XML web-feed format that publishes updates as entries with identifiers, dates, links and content. This weblog offers an Atom feed alongside RSS.","url":"https://chrisabraham.net/glossary.html#atom"},{"@type":"DefinedTerm","name":"Backlink","description":"A link from another website to a page. A useful backlink helps people discover supporting material; a link's value depends on context and legitimacy.","url":"https://chrisabraham.net/glossary.html#backlink"},{"@type":"DefinedTerm","name":"Blackbox","description":"A private command-line assistant, usually invoked as bb, that helps maintain tasks, diary notes, email, job leads and continuity on Pinebox.","url":"https://chrisabraham.net/glossary.html#blackbox"},{"@type":"DefinedTerm","name":"Blogroll","description":"A curated list of other websites or feeds worth reading, a familiar feature of early personal weblogs.","url":"https://chrisabraham.net/glossary.html#blogroll"},{"@type":"DefinedTerm","name":"Canonical URL","description":"The preferred address for a page when equivalent content is accessible through more than one URL.","url":"https://chrisabraham.net/glossary.html#canonical-url"},{"@type":"DefinedTerm","name":"Chaff and flares","description":"An aviation defense analogy applied to a reputation strategy: producing multiple legitimate sources and contexts around a name, while recognising their limits.","url":"https://chrisabraham.net/glossary.html#chaff-and-flares"},{"@type":"DefinedTerm","name":"Claude Code","description":"Anthropic's coding agent used on this site to edit files, run commands, maintain projects and write attributed posts.","url":"https://chrisabraham.net/glossary.html#claude-code"},{"@type":"DefinedTerm","name":"Cloudflare DNS","description":"A service for managing the authoritative DNS records of a domain. It can point a name at hosting, mail and verification services without being the host itself.","url":"https://chrisabraham.net/glossary.html#cloudflare-dns"},{"@type":"DefinedTerm","name":"Codex","description":"OpenAI's coding agent, which can inspect repositories and propose or implement software changes with the permissions available to it.","url":"https://chrisabraham.net/glossary.html#codex"},{"@type":"DefinedTerm","name":"Coral reef analogy","description":"A model of long-term online publishing: an initial site provides the structure, and real contributions and independent references accumulate around it over years.","url":"https://chrisabraham.net/glossary.html#coral-reef-analogy"},{"@type":"DefinedTerm","name":"Crawl budget","description":"The amount of crawling Googlebot can and wants to perform on a site. It reflects factors including demand, updates and the site's ability to respond.","url":"https://chrisabraham.net/glossary.html#crawl-budget"},{"@type":"DefinedTerm","name":"Crawling","description":"A search bot's retrieval of a page or other resource. Crawling alone does not guarantee that the resource will be indexed or ranked.","url":"https://chrisabraham.net/glossary.html#crawling"},{"@type":"DefinedTerm","name":"Data broker","description":"A business that collects, combines and supplies information about people. Opt-outs can reduce exposure but may require ongoing monitoring.","url":"https://chrisabraham.net/glossary.html#data-broker"},{"@type":"DefinedTerm","name":"DigitalOcean","description":"A cloud infrastructure provider hosting the Pinebox server used for command-line tools and site building.","url":"https://chrisabraham.net/glossary.html#digitalocean"},{"@type":"DefinedTerm","name":"DNS","description":"The Domain Name System, which translates human-readable domain names into records for websites, email and other services.","url":"https://chrisabraham.net/glossary.html#dns"},{"@type":"DefinedTerm","name":"Domain age","description":"The length of time a domain has existed. An older registration alone does not entitle its pages to better search rankings.","url":"https://chrisabraham.net/glossary.html#domain-age"},{"@type":"DefinedTerm","name":"Editorial provenance","description":"Evidence of who directed, authored, revised and published a piece, including original prompts, dated corrections and source history.","url":"https://chrisabraham.net/glossary.html#editorial-provenance"},{"@type":"DefinedTerm","name":"Expired domain abuse","description":"Manipulatively repurposing an expired domain to exploit its earlier search signals, a practice addressed in Google's spam policies.","url":"https://chrisabraham.net/glossary.html#expired-domain-abuse"},{"@type":"DefinedTerm","name":"Feed","description":"A machine-readable stream of new or updated publications that readers and other software can subscribe to.","url":"https://chrisabraham.net/glossary.html#feed"},{"@type":"DefinedTerm","name":"Git","description":"Version-control software that records changes to files, enabling comparison, rollback and documented collaboration.","url":"https://chrisabraham.net/glossary.html#git"},{"@type":"DefinedTerm","name":"GitHub Actions","description":"Automated workflows that run after repository events, such as building this site's generated pages and checking them before publication.","url":"https://chrisabraham.net/glossary.html#github-actions"},{"@type":"DefinedTerm","name":"GitHub Pages","description":"GitHub's static website hosting service. This site serves files generated into the docs directory of its repository.","url":"https://chrisabraham.net/glossary.html#github-pages"},{"@type":"DefinedTerm","name":"Google Abhors a Vacuum","description":"The idea that when an individual or organisation leaves gaps in its searchable history, outside sources will largely determine what searchers encounter.","url":"https://chrisabraham.net/glossary.html#google-abhors-a-vacuum"},{"@type":"DefinedTerm","name":"Google Business Profile","description":"Google's local-business listing system for eligible businesses, including hours, services, images, location or service-area information, and reviews.","url":"https://chrisabraham.net/glossary.html#google-business-profile"},{"@type":"DefinedTerm","name":"Google Search Console","description":"Google's reporting service for verified site owners, including indexing, search performance, sitemaps, manual actions and security concerns.","url":"https://chrisabraham.net/glossary.html#google-search-console"},{"@type":"DefinedTerm","name":"Googlebot","description":"Google's automated web crawler. It retrieves resources for Google's indexing systems, with revisit patterns that respond to changing demand.","url":"https://chrisabraham.net/glossary.html#googlebot"},{"@type":"DefinedTerm","name":"Handoff packet","description":"A compact, reproducible set of files, facts, decisions and pending tasks that makes work understandable to the next human or AI agent.","url":"https://chrisabraham.net/glossary.html#handoff-packet"},{"@type":"DefinedTerm","name":"HTML sitemap","description":"A normal web page with links to a site's published pages, organised for visitors rather than submitted as an XML crawling protocol.","url":"https://chrisabraham.net/glossary.html#html-sitemap"},{"@type":"DefinedTerm","name":"Human-in-the-loop","description":"A workflow in which a person reviews or authorises consequential actions proposed by software or an AI assistant.","url":"https://chrisabraham.net/glossary.html#human-in-the-loop"},{"@type":"DefinedTerm","name":"IndexNow","description":"A protocol for notifying participating search engines that URLs have changed. Google is not a participant; submitting a URL does not guarantee indexing.","url":"https://chrisabraham.net/glossary.html#indexnow"},{"@type":"DefinedTerm","name":"Internal link","description":"A link from one page of a website to another page of the same site, helping people and crawlers reach related material.","url":"https://chrisabraham.net/glossary.html#internal-link"},{"@type":"DefinedTerm","name":"JSON-LD","description":"A JSON-based format for structured data, commonly embedded in a webpage to describe the entities and content actually present.","url":"https://chrisabraham.net/glossary.html#json-ld"},{"@type":"DefinedTerm","name":"Lighthouse","description":"An auditing tool for performance, accessibility and other technical indicators. Automated scores cannot prove full accessibility compliance.","url":"https://chrisabraham.net/glossary.html#lighthouse"},{"@type":"DefinedTerm","name":"llms.txt","description":"An emerging text-file convention for making a website's useful resources easier for AI tools to discover. Its presence is not a Google ranking guarantee.","url":"https://chrisabraham.net/glossary.html#llms-txt"},{"@type":"DefinedTerm","name":"MCP","description":"Model Context Protocol: a standard for connecting AI clients to external tools and data services through compatible servers.","url":"https://chrisabraham.net/glossary.html#mcp"},{"@type":"DefinedTerm","name":"Meta description","description":"A short description in a page's HTML head. Search engines may use it for snippets but can select different text.","url":"https://chrisabraham.net/glossary.html#meta-description"},{"@type":"DefinedTerm","name":"Metadata","description":"Information about a page, such as its title, description, authorship and publication dates, used by browsers and other systems.","url":"https://chrisabraham.net/glossary.html#metadata"},{"@type":"DefinedTerm","name":"Metanoia","description":"A change of heart, conduct or direction. In reputation work it means actual reform that the public record may eventually document.","url":"https://chrisabraham.net/glossary.html#metanoia"},{"@type":"DefinedTerm","name":"Namesake confusion","description":"A search or AI answer combining information about different people with the same or similar names.","url":"https://chrisabraham.net/glossary.html#namesake-confusion"},{"@type":"DefinedTerm","name":"Noindex","description":"An instruction requesting that a search engine not include a particular page in its search results, while the page may remain visitable.","url":"https://chrisabraham.net/glossary.html#noindex"},{"@type":"DefinedTerm","name":"Online perception management","description":"Sustained work to assemble, correct and maintain a public identity across owned pages, profiles, archives and independent references.","url":"https://chrisabraham.net/glossary.html#online-perception-management"},{"@type":"DefinedTerm","name":"Online reputation management","description":"Work to research and influence the accuracy and presentation of a person or organisation's public record, including crisis response.","url":"https://chrisabraham.net/glossary.html#online-reputation-management"},{"@type":"DefinedTerm","name":"Open Graph","description":"Metadata commonly used by social platforms to choose the title, description and share image displayed for a link.","url":"https://chrisabraham.net/glossary.html#open-graph"},{"@type":"DefinedTerm","name":"OPML","description":"Outline Processor Markup Language, an XML format used here to export lists of feeds for import into a feed reader.","url":"https://chrisabraham.net/glossary.html#opml"},{"@type":"DefinedTerm","name":"Pinebox","description":"The SSH-accessible server that hosts Blackbox, its scheduled operations and web-build tools.","url":"https://chrisabraham.net/glossary.html#pinebox"},{"@type":"DefinedTerm","name":"Prompt provenance","description":"Preserving the original instructions given to an AI contributor so readers can distinguish the assignment from the finished response.","url":"https://chrisabraham.net/glossary.html#prompt-provenance"},{"@type":"DefinedTerm","name":"Redirect chain","description":"A sequence in which one URL redirects to another that redirects again, creating extra requests and possible confusion.","url":"https://chrisabraham.net/glossary.html#redirect-chain"},{"@type":"DefinedTerm","name":"Reputation coachbuilding","description":"A bespoke approach to documenting a public identity, using careful research and individually designed web properties rather than templates in bulk.","url":"https://chrisabraham.net/glossary.html#reputation-coachbuilding"},{"@type":"DefinedTerm","name":"Responsive layout","description":"A page design that adapts to different viewport widths and input methods, including phones and desktop browsers.","url":"https://chrisabraham.net/glossary.html#responsive-layout"},{"@type":"DefinedTerm","name":"Restomod","description":"A restoration that preserves the appearance of an older machine while modernising what makes it run; an analogy for this weblog's design.","url":"https://chrisabraham.net/glossary.html#restomod"},{"@type":"DefinedTerm","name":"Robots.txt","description":"A file that gives crawlers instructions about which URL paths they may request. It is not a security control for private material.","url":"https://chrisabraham.net/glossary.html#robots-txt"},{"@type":"DefinedTerm","name":"RSS","description":"Really Simple Syndication, a web-feed format that lets readers subscribe to posts without repeatedly visiting the homepage.","url":"https://chrisabraham.net/glossary.html#rss"},{"@type":"DefinedTerm","name":"Schema.org","description":"A shared vocabulary for structured data describing people, organisations, articles, pages and other entities.","url":"https://chrisabraham.net/glossary.html#schema-org"},{"@type":"DefinedTerm","name":"Screaming Frog","description":"A desktop website crawler used for technical audits, link checking, titles, descriptions, canonicals, status codes and before-and-after verification.","url":"https://chrisabraham.net/glossary.html#screaming-frog"},{"@type":"DefinedTerm","name":"SEO","description":"Search engine optimization: improving the accessibility, usefulness and discoverability of a website in search engines.","url":"https://chrisabraham.net/glossary.html#seo"},{"@type":"DefinedTerm","name":"SERP","description":"Search engine results page: the collection of organic results and search features shown for a query.","url":"https://chrisabraham.net/glossary.html#serp"},{"@type":"DefinedTerm","name":"Site index","description":"An alphabetical back-of-the-book list of subjects, people and tools, with locators linking to the pages where each appears.","url":"https://chrisabraham.net/glossary.html#site-index"},{"@type":"DefinedTerm","name":"Sitemap","description":"A list of a site's pages. XML sitemaps are intended for crawlers; HTML sitemaps are navigable directories for people.","url":"https://chrisabraham.net/glossary.html#sitemap"},{"@type":"DefinedTerm","name":"Source of truth","description":"The designated record whose contents govern a particular piece of work. On this site, editable source files generate public docs pages.","url":"https://chrisabraham.net/glossary.html#source-of-truth"},{"@type":"DefinedTerm","name":"SSH","description":"Secure Shell: an encrypted way to access a remote computer's terminal, used to reach Pinebox from a laptop.","url":"https://chrisabraham.net/glossary.html#ssh"},{"@type":"DefinedTerm","name":"Static site generator","description":"Software that turns structured content and templates into HTML files without requiring a database-driven server for each visit.","url":"https://chrisabraham.net/glossary.html#static-site-generator"},{"@type":"DefinedTerm","name":"Structured data","description":"Machine-readable statements about a page's visible subject, commonly written with Schema.org vocabulary in JSON-LD.","url":"https://chrisabraham.net/glossary.html#structured-data"},{"@type":"DefinedTerm","name":"SVG","description":"Scalable Vector Graphics, an XML-based format for crisp, lightweight drawings that can scale without bitmap pixelation.","url":"https://chrisabraham.net/glossary.html#svg"},{"@type":"DefinedTerm","name":"Upwork verdicts","description":"Blackbox's labelled assessments of freelance opportunities, ordered by practical facts, risk and the user's hiring preferences.","url":"https://chrisabraham.net/glossary.html#upwork-verdicts"},{"@type":"DefinedTerm","name":"URL","description":"Uniform Resource Locator, the web address identifying a resource. Stable, descriptive URLs support reliable navigation and references.","url":"https://chrisabraham.net/glossary.html#url"},{"@type":"DefinedTerm","name":"Version history","description":"A record of previous states of files or published writing, allowing later contributors and readers to inspect what changed.","url":"https://chrisabraham.net/glossary.html#version-history"},{"@type":"DefinedTerm","name":"WebP","description":"An image format supporting lossy and lossless compression. This weblog uses WebP for lighter legacy bitmap illustrations.","url":"https://chrisabraham.net/glossary.html#webp"},{"@type":"DefinedTerm","name":"Wiki","description":"An editable reference collection whose pages can be revised in place. This site's wiki holds durable methods and technical notes, separate from dated essays.","url":"https://chrisabraham.net/glossary.html#wiki"},{"@type":"DefinedTerm","name":"XML sitemap","description":"An XML document listing canonical URLs and often last-modified dates for search crawlers; it is different from a reader-facing HTML sitemap.","url":"https://chrisabraham.net/glossary.html#xml-sitemap"}]}</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var off = {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
+  // EU, EEA, UK, and Swiss visitors get no analytics cookies (cookieless pings only).
+  gtag('consent', 'default', Object.assign({region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']}, off));
+  // Everyone else gets first-party analytics cookies and nothing for ads, unless the browser
+  // sends Global Privacy Control or Do Not Track, which turns analytics cookies off too.
+  var optout = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1';
+  gtag('consent', 'default', optout ? off : {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-KWXM1ZX7WQ', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  (function () {
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KWXM1ZX7WQ';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+</head>
+<body>
+<!-- eAIsterEgg / 01. If you came here by reading source, welcome.
+     This weblog is a house built by agents that do not share one continuous memory.
+     The next clue is /humans.txt. No scripts, no cookies, no tracking. -->
+<a class="skip" href="#main">Skip to main content</a>
+<div id="wrap">
+<header id="banner">
+  <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+  <p class="site-title"><a href="/" rel="home">Chris Abraham weblog</a></p>
+  <p class="tagline">Notes from building things with AI, written by AI from my prompts.</p>
+  <nav class="topnav" aria-label="Main">
+    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/categories.html">Categories</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </nav>
+</header>
+<div id="cols">
+<main id="main">
+<h1 class="page-title">Glossary</h1><div class="post-body reference-page"><p>Short definitions, each linked to a page that explains the term in context. For page references, use the <a href="/site-index.html">back-of-book index</a>.</p><nav class="reference-alpha" aria-label="Alphabetical navigation"><a href="#g-0-9">0–9</a> <a href="#g-a">A</a> <a href="#g-b">B</a> <a href="#g-c">C</a> <a href="#g-d">D</a> <a href="#g-e">E</a> <a href="#g-f">F</a> <a href="#g-g">G</a> <a href="#g-h">H</a> <a href="#g-i">I</a> <a href="#g-j">J</a> <a href="#g-l">L</a> <a href="#g-m">M</a> <a href="#g-n">N</a> <a href="#g-o">O</a> <a href="#g-p">P</a> <a href="#g-r">R</a> <a href="#g-s">S</a> <a href="#g-u">U</a> <a href="#g-v">V</a> <a href="#g-w">W</a> <a href="#g-x">X</a></nav><section class="reference-group"><h2 id="g-0-9">0–9 terms</h2><dl class="glossary-list"><div class="glossary-entry" id="301-redirect"><dt>301 redirect</dt><dd>A permanent HTTP redirect that sends an old URL to its replacement. Useful when a page moves and the destination genuinely serves the same purpose. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="404"><dt>404</dt><dd>The HTTP response for a page that cannot be found. A normal response for missing or removed content, not by itself a sitewide search penalty. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="410-gone"><dt>410 Gone</dt><dd>An HTTP response indicating that a resource has been intentionally removed and is not expected to return. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div></dl></section><section class="reference-group"><h2 id="g-a">A</h2><dl class="glossary-list"><div class="glossary-entry" id="accessibility"><dt>Accessibility</dt><dd>Designing and testing a site so people using keyboards, screen readers, assistive technology, or different screen sizes can use it. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="adjutant"><dt>Adjutant</dt><dd>The proposed public, depersonalized version of the Blackbox command-line assistant, intended to make the useful patterns available without private data. <a class="reference-source" href="/wiki/adjutant.html">In context: Adjutant</a></dd></div><div class="glossary-entry" id="aeo"><dt>AEO</dt><dd>Answer engine optimization: making information understandable and citable by search features and answer-producing AI systems. <a class="reference-source" href="/wiki/ai-search-visibility-methods.html">In context: AI search visibility measurement methods</a></dd></div><div class="glossary-entry" id="agent-handoff"><dt>Agent handoff</dt><dd>A dated record of a coding or writing agent&#x27;s changes, tests, decisions and remaining work, so a later agent can resume with evidence. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div><div class="glossary-entry" id="ai-answer-citation"><dt>AI answer citation</dt><dd>A source link presented by an AI answer service in support of a response. The linked page still needs checking to see whether it supports the claim. <a class="reference-source" href="/wiki/ai-search-visibility-methods.html">In context: AI search visibility measurement methods</a></dd></div><div class="glossary-entry" id="ai-byline"><dt>AI byline</dt><dd>A clear indication of which AI contributor authored or edited a published piece, alongside the human direction and relevant revision history. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div><div class="glossary-entry" id="ai-search-visibility"><dt>AI search visibility</dt><dd>The extent to which an AI answer service accurately mentions a person, brand or organisation for a defined set of relevant questions. <a class="reference-source" href="/wiki/ai-search-visibility-methods.html">In context: AI search visibility measurement methods</a></dd></div><div class="glossary-entry" id="ai-share-of-voice"><dt>AI share of voice</dt><dd>A comparison of how often AI answers mention one named organisation and its alternatives across a fixed set of appropriate prompts. <a class="reference-source" href="/wiki/ai-search-visibility-methods.html">In context: AI search visibility measurement methods</a></dd></div><div class="glossary-entry" id="alpine"><dt>Alpine</dt><dd>A text-mode email client descended from Pine, used as part of the Pinebox terminal workflow. <a class="reference-source" href="/wiki/pinebox.html">In context: Pinebox</a></dd></div><div class="glossary-entry" id="alt-text"><dt>Alt text</dt><dd>A text alternative that communicates an image&#x27;s meaningful content or function to people who cannot see it. Decorative images may use an empty alternative. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="api"><dt>API</dt><dd>Application programming interface: a documented way one program can request data or actions from another service. <a class="reference-source" href="/wiki/connections.html">In context: Connections</a></dd></div><div class="glossary-entry" id="atom"><dt>Atom</dt><dd>An XML web-feed format that publishes updates as entries with identifiers, dates, links and content. This weblog offers an Atom feed alongside RSS. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-b">B</h2><dl class="glossary-list"><div class="glossary-entry" id="backlink"><dt>Backlink</dt><dd>A link from another website to a page. A useful backlink helps people discover supporting material; a link&#x27;s value depends on context and legitimacy. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div><div class="glossary-entry" id="blackbox"><dt>Blackbox</dt><dd>A private command-line assistant, usually invoked as bb, that helps maintain tasks, diary notes, email, job leads and continuity on Pinebox. <a class="reference-source" href="/wiki/blackbox.html">In context: Blackbox</a></dd></div><div class="glossary-entry" id="blogroll"><dt>Blogroll</dt><dd>A curated list of other websites or feeds worth reading, a familiar feature of early personal weblogs. <a class="reference-source" href="/2026/10/a-weblog-written-by-claude.html">In context: A weblog written by Claude, out in the open</a></dd></div></dl></section><section class="reference-group"><h2 id="g-c">C</h2><dl class="glossary-list"><div class="glossary-entry" id="canonical-url"><dt>Canonical URL</dt><dd>The preferred address for a page when equivalent content is accessible through more than one URL. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="chaff-and-flares"><dt>Chaff and flares</dt><dd>An aviation defense analogy applied to a reputation strategy: producing multiple legitimate sources and contexts around a name, while recognising their limits. <a class="reference-source" href="/2026/10/chaff-flares-reputation-work.html">In context: Chaff, flares, and twenty-four years of reputation and perception work</a></dd></div><div class="glossary-entry" id="claude-code"><dt>Claude Code</dt><dd>Anthropic&#x27;s coding agent used on this site to edit files, run commands, maintain projects and write attributed posts. <a class="reference-source" href="/2026/10/four-hours-fifty-six-commits.html">In context: Four hours, fifty-six commits: building chrisabraham.net</a></dd></div><div class="glossary-entry" id="cloudflare-dns"><dt>Cloudflare DNS</dt><dd>A service for managing the authoritative DNS records of a domain. It can point a name at hosting, mail and verification services without being the host itself. <a class="reference-source" href="/wiki/build-a-personal-weblog-with-ai.html">In context: Build a personal weblog with AI</a></dd></div><div class="glossary-entry" id="codex"><dt>Codex</dt><dd>OpenAI&#x27;s coding agent, which can inspect repositories and propose or implement software changes with the permissions available to it. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div><div class="glossary-entry" id="coral-reef-analogy"><dt>Coral reef analogy</dt><dd>A model of long-term online publishing: an initial site provides the structure, and real contributions and independent references accumulate around it over years. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div><div class="glossary-entry" id="crawl-budget"><dt>Crawl budget</dt><dd>The amount of crawling Googlebot can and wants to perform on a site. It reflects factors including demand, updates and the site&#x27;s ability to respond. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div><div class="glossary-entry" id="crawling"><dt>Crawling</dt><dd>A search bot&#x27;s retrieval of a page or other resource. Crawling alone does not guarantee that the resource will be indexed or ranked. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div></dl></section><section class="reference-group"><h2 id="g-d">D</h2><dl class="glossary-list"><div class="glossary-entry" id="data-broker"><dt>Data broker</dt><dd>A business that collects, combines and supplies information about people. Opt-outs can reduce exposure but may require ongoing monitoring. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div><div class="glossary-entry" id="digitalocean"><dt>DigitalOcean</dt><dd>A cloud infrastructure provider hosting the Pinebox server used for command-line tools and site building. <a class="reference-source" href="/wiki/pinebox.html">In context: Pinebox</a></dd></div><div class="glossary-entry" id="dns"><dt>DNS</dt><dd>The Domain Name System, which translates human-readable domain names into records for websites, email and other services. <a class="reference-source" href="/wiki/build-a-personal-weblog-with-ai.html">In context: Build a personal weblog with AI</a></dd></div><div class="glossary-entry" id="domain-age"><dt>Domain age</dt><dd>The length of time a domain has existed. An older registration alone does not entitle its pages to better search rankings. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div></dl></section><section class="reference-group"><h2 id="g-e">E</h2><dl class="glossary-list"><div class="glossary-entry" id="editorial-provenance"><dt>Editorial provenance</dt><dd>Evidence of who directed, authored, revised and published a piece, including original prompts, dated corrections and source history. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div><div class="glossary-entry" id="expired-domain-abuse"><dt>Expired domain abuse</dt><dd>Manipulatively repurposing an expired domain to exploit its earlier search signals, a practice addressed in Google&#x27;s spam policies. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div></dl></section><section class="reference-group"><h2 id="g-f">F</h2><dl class="glossary-list"><div class="glossary-entry" id="feed"><dt>Feed</dt><dd>A machine-readable stream of new or updated publications that readers and other software can subscribe to. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-g">G</h2><dl class="glossary-list"><div class="glossary-entry" id="git"><dt>Git</dt><dd>Version-control software that records changes to files, enabling comparison, rollback and documented collaboration. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div><div class="glossary-entry" id="github-actions"><dt>GitHub Actions</dt><dd>Automated workflows that run after repository events, such as building this site&#x27;s generated pages and checking them before publication. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="github-pages"><dt>GitHub Pages</dt><dd>GitHub&#x27;s static website hosting service. This site serves files generated into the docs directory of its repository. <a class="reference-source" href="/wiki/build-a-personal-weblog-with-ai.html">In context: Build a personal weblog with AI</a></dd></div><div class="glossary-entry" id="google-abhors-a-vacuum"><dt>Google Abhors a Vacuum</dt><dd>The idea that when an individual or organisation leaves gaps in its searchable history, outside sources will largely determine what searchers encounter. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div><div class="glossary-entry" id="google-business-profile"><dt>Google Business Profile</dt><dd>Google&#x27;s local-business listing system for eligible businesses, including hours, services, images, location or service-area information, and reviews. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div><div class="glossary-entry" id="google-search-console"><dt>Google Search Console</dt><dd>Google&#x27;s reporting service for verified site owners, including indexing, search performance, sitemaps, manual actions and security concerns. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="googlebot"><dt>Googlebot</dt><dd>Google&#x27;s automated web crawler. It retrieves resources for Google&#x27;s indexing systems, with revisit patterns that respond to changing demand. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div></dl></section><section class="reference-group"><h2 id="g-h">H</h2><dl class="glossary-list"><div class="glossary-entry" id="handoff-packet"><dt>Handoff packet</dt><dd>A compact, reproducible set of files, facts, decisions and pending tasks that makes work understandable to the next human or AI agent. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div><div class="glossary-entry" id="html-sitemap"><dt>HTML sitemap</dt><dd>A normal web page with links to a site&#x27;s published pages, organised for visitors rather than submitted as an XML crawling protocol. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="human-in-the-loop"><dt>Human-in-the-loop</dt><dd>A workflow in which a person reviews or authorises consequential actions proposed by software or an AI assistant. <a class="reference-source" href="/wiki/blackbox.html">In context: Blackbox</a></dd></div></dl></section><section class="reference-group"><h2 id="g-i">I</h2><dl class="glossary-list"><div class="glossary-entry" id="indexnow"><dt>IndexNow</dt><dd>A protocol for notifying participating search engines that URLs have changed. Google is not a participant; submitting a URL does not guarantee indexing. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="internal-link"><dt>Internal link</dt><dd>A link from one page of a website to another page of the same site, helping people and crawlers reach related material. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-j">J</h2><dl class="glossary-list"><div class="glossary-entry" id="json-ld"><dt>JSON-LD</dt><dd>A JSON-based format for structured data, commonly embedded in a webpage to describe the entities and content actually present. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-l">L</h2><dl class="glossary-list"><div class="glossary-entry" id="lighthouse"><dt>Lighthouse</dt><dd>An auditing tool for performance, accessibility and other technical indicators. Automated scores cannot prove full accessibility compliance. <a class="reference-source" href="/wiki/pinebox.html">In context: Pinebox</a></dd></div><div class="glossary-entry" id="llms-txt"><dt>llms.txt</dt><dd>An emerging text-file convention for making a website&#x27;s useful resources easier for AI tools to discover. Its presence is not a Google ranking guarantee. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-m">M</h2><dl class="glossary-list"><div class="glossary-entry" id="mcp"><dt>MCP</dt><dd>Model Context Protocol: a standard for connecting AI clients to external tools and data services through compatible servers. <a class="reference-source" href="/wiki/model-context-protocol.html">In context: Model Context Protocol</a></dd></div><div class="glossary-entry" id="meta-description"><dt>Meta description</dt><dd>A short description in a page&#x27;s HTML head. Search engines may use it for snippets but can select different text. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="metadata"><dt>Metadata</dt><dd>Information about a page, such as its title, description, authorship and publication dates, used by browsers and other systems. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="metanoia"><dt>Metanoia</dt><dd>A change of heart, conduct or direction. In reputation work it means actual reform that the public record may eventually document. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div></dl></section><section class="reference-group"><h2 id="g-n">N</h2><dl class="glossary-list"><div class="glossary-entry" id="namesake-confusion"><dt>Namesake confusion</dt><dd>A search or AI answer combining information about different people with the same or similar names. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div><div class="glossary-entry" id="noindex"><dt>Noindex</dt><dd>An instruction requesting that a search engine not include a particular page in its search results, while the page may remain visitable. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-o">O</h2><dl class="glossary-list"><div class="glossary-entry" id="online-perception-management"><dt>Online perception management</dt><dd>Sustained work to assemble, correct and maintain a public identity across owned pages, profiles, archives and independent references. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div><div class="glossary-entry" id="online-reputation-management"><dt>Online reputation management</dt><dd>Work to research and influence the accuracy and presentation of a person or organisation&#x27;s public record, including crisis response. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div><div class="glossary-entry" id="open-graph"><dt>Open Graph</dt><dd>Metadata commonly used by social platforms to choose the title, description and share image displayed for a link. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="opml"><dt>OPML</dt><dd>Outline Processor Markup Language, an XML format used here to export lists of feeds for import into a feed reader. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-p">P</h2><dl class="glossary-list"><div class="glossary-entry" id="pinebox"><dt>Pinebox</dt><dd>The SSH-accessible server that hosts Blackbox, its scheduled operations and web-build tools. <a class="reference-source" href="/wiki/pinebox.html">In context: Pinebox</a></dd></div><div class="glossary-entry" id="prompt-provenance"><dt>Prompt provenance</dt><dd>Preserving the original instructions given to an AI contributor so readers can distinguish the assignment from the finished response. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div></dl></section><section class="reference-group"><h2 id="g-r">R</h2><dl class="glossary-list"><div class="glossary-entry" id="redirect-chain"><dt>Redirect chain</dt><dd>A sequence in which one URL redirects to another that redirects again, creating extra requests and possible confusion. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="reputation-coachbuilding"><dt>Reputation coachbuilding</dt><dd>A bespoke approach to documenting a public identity, using careful research and individually designed web properties rather than templates in bulk. <a class="reference-source" href="/2026/10/chaff-flares-reputation-work.html">In context: Chaff, flares, and twenty-four years of reputation and perception work</a></dd></div><div class="glossary-entry" id="responsive-layout"><dt>Responsive layout</dt><dd>A page design that adapts to different viewport widths and input methods, including phones and desktop browsers. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="restomod"><dt>Restomod</dt><dd>A restoration that preserves the appearance of an older machine while modernising what makes it run; an analogy for this weblog&#x27;s design. <a class="reference-source" href="/wiki/build-a-personal-weblog-with-ai.html">In context: Build a personal weblog with AI</a></dd></div><div class="glossary-entry" id="robots-txt"><dt>Robots.txt</dt><dd>A file that gives crawlers instructions about which URL paths they may request. It is not a security control for private material. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="rss"><dt>RSS</dt><dd>Really Simple Syndication, a web-feed format that lets readers subscribe to posts without repeatedly visiting the homepage. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-s">S</h2><dl class="glossary-list"><div class="glossary-entry" id="schema-org"><dt>Schema.org</dt><dd>A shared vocabulary for structured data describing people, organisations, articles, pages and other entities. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="screaming-frog"><dt>Screaming Frog</dt><dd>A desktop website crawler used for technical audits, link checking, titles, descriptions, canonicals, status codes and before-and-after verification. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="seo"><dt>SEO</dt><dd>Search engine optimization: improving the accessibility, usefulness and discoverability of a website in search engines. <a class="reference-source" href="/wiki/online-perception-management-field-guide.html">In context: Online perception management field guide</a></dd></div><div class="glossary-entry" id="serp"><dt>SERP</dt><dd>Search engine results page: the collection of organic results and search features shown for a query. <a class="reference-source" href="/2026/10/google-abhors-a-vacuum.html">In context: Google Abhors a Vacuum</a></dd></div><div class="glossary-entry" id="site-index"><dt>Site index</dt><dd>An alphabetical back-of-the-book list of subjects, people and tools, with locators linking to the pages where each appears. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="sitemap"><dt>Sitemap</dt><dd>A list of a site&#x27;s pages. XML sitemaps are intended for crawlers; HTML sitemaps are navigable directories for people. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="source-of-truth"><dt>Source of truth</dt><dd>The designated record whose contents govern a particular piece of work. On this site, editable source files generate public docs pages. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="ssh"><dt>SSH</dt><dd>Secure Shell: an encrypted way to access a remote computer&#x27;s terminal, used to reach Pinebox from a laptop. <a class="reference-source" href="/wiki/pinebox.html">In context: Pinebox</a></dd></div><div class="glossary-entry" id="static-site-generator"><dt>Static site generator</dt><dd>Software that turns structured content and templates into HTML files without requiring a database-driven server for each visit. <a class="reference-source" href="/wiki/build-a-personal-weblog-with-ai.html">In context: Build a personal weblog with AI</a></dd></div><div class="glossary-entry" id="structured-data"><dt>Structured data</dt><dd>Machine-readable statements about a page&#x27;s visible subject, commonly written with Schema.org vocabulary in JSON-LD. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="svg"><dt>SVG</dt><dd>Scalable Vector Graphics, an XML-based format for crisp, lightweight drawings that can scale without bitmap pixelation. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-u">U</h2><dl class="glossary-list"><div class="glossary-entry" id="upwork-verdicts"><dt>Upwork verdicts</dt><dd>Blackbox&#x27;s labelled assessments of freelance opportunities, ordered by practical facts, risk and the user&#x27;s hiring preferences. <a class="reference-source" href="/wiki/upwork-verdicts.html">In context: Upwork verdicts</a></dd></div><div class="glossary-entry" id="url"><dt>URL</dt><dd>Uniform Resource Locator, the web address identifying a resource. Stable, descriptive URLs support reliable navigation and references. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section><section class="reference-group"><h2 id="g-v">V</h2><dl class="glossary-list"><div class="glossary-entry" id="version-history"><dt>Version history</dt><dd>A record of previous states of files or published writing, allowing later contributors and readers to inspect what changed. <a class="reference-source" href="/wiki/ai-editorial-provenance-and-handoffs.html">In context: AI editorial provenance and agent handoffs</a></dd></div></dl></section><section class="reference-group"><h2 id="g-w">W</h2><dl class="glossary-list"><div class="glossary-entry" id="webp"><dt>WebP</dt><dd>An image format supporting lossy and lossless compression. This weblog uses WebP for lighter legacy bitmap illustrations. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div><div class="glossary-entry" id="wiki"><dt>Wiki</dt><dd>An editable reference collection whose pages can be revised in place. This site&#x27;s wiki holds durable methods and technical notes, separate from dated essays. <a class="reference-source" href="/wiki/build-a-personal-weblog-with-ai.html">In context: Build a personal weblog with AI</a></dd></div></dl></section><section class="reference-group"><h2 id="g-x">X</h2><dl class="glossary-list"><div class="glossary-entry" id="xml-sitemap"><dt>XML sitemap</dt><dd>An XML document listing canonical URLs and often last-modified dates for search crawlers; it is different from a reader-facing HTML sitemap. <a class="reference-source" href="/wiki/static-weblog-operations.html">In context: Static weblog operations and publication checks</a></dd></div></dl></section></div>
+</main>
+<aside id="sidebar" aria-label="Sidebar">
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li></ul></section>
+<section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
+<section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul><li><a href="/2026/10/google-abhors-a-vacuum.html">Google Abhors a Vacuum</a></li><li><a href="/2026/10/build-a-2004-weblog-with-ai.html">Build a 2004 weblog with AI and GitHub Pages</a></li><li><a href="/2026/10/put-the-redlined-manuscripts-on-the-walls.html">Put the Redlined Manuscripts on the Walls</a></li><li><a href="/2026/10/my-ai-writers-keep-stealing-my-best-material.html">My AI Writers Keep Stealing My Best Material</a></li><li><a href="/2026/10/the-house-and-its-feng-shuai.html">The house and its feng shuAI</a></li><li><a href="/2026/10/the-art-of-the-handoff.html">The art of the handoff</a></li></ul></section>
+<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki"><a href="/wiki/">Wiki</a></p><p>Evergreen guides and references. <a href="/wiki/">Browse 14 pages</a></p></section>
+<section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects"><li><span class="dot dot-active" title="active"></span><a href="/projects.html#blackbox">Blackbox</a> <small>active</small></li><li><span class="dot dot-planned" title="planned"></span><a href="/projects.html#adjutant">Adjutant</a> <small>planned</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#this-weblog">This weblog</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#the-chris-abraham-show-site">The Chris Abraham Show site</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#hill-mole">Hill Mole</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#christopherabraham-com">christopherabraham.com</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#gerriscorp-com">gerriscorp.com</a> <small>live lab</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#ai-visibility-tracker">AI visibility tracker</a> <small>active</small></li></ul></section>
+<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories"><a href="/categories.html">Categories</a></p><ul><li><a href="/category/ai.html" rel="tag">AI</a> <small>(3)</small></li><li><a href="/category/ai-agents.html" rel="tag">AI Agents</a> <small>(1)</small></li><li><a href="/category/ai-writing.html" rel="tag">AI Writing</a> <small>(1)</small></li><li><a href="/category/ai-search.html" rel="tag">AI search</a> <small>(5)</small></li><li><a href="/category/ai-writing.html" rel="tag">AI writing</a> <small>(1)</small></li><li><a href="/category/blackbox.html" rel="tag">Blackbox</a> <small>(5)</small></li><li><a href="/category/cars.html" rel="tag">Cars</a> <small>(1)</small></li><li><a href="/category/chatgpt.html" rel="tag">ChatGPT</a> <small>(4)</small></li><li><a href="/category/claude-code.html" rel="tag">Claude Code</a> <small>(11)</small></li><li><a href="/category/github-pages.html" rel="tag">GitHub Pages</a> <small>(1)</small></li><li><a href="/category/mcp.html" rel="tag">MCP</a> <small>(2)</small></li><li><a href="/category/meta.html" rel="tag">Meta</a> <small>(9)</small></li><li><a href="/category/openai-codex.html" rel="tag">OpenAI Codex</a> <small>(3)</small></li><li><a href="/category/perception-management.html" rel="tag">Perception Management</a> <small>(1)</small></li><li><a href="/category/pinebox.html" rel="tag">Pinebox</a> <small>(2)</small></li><li><a href="/category/reputation.html" rel="tag">Reputation</a> <small>(2)</small></li><li><a href="/category/reputation-management.html" rel="tag">Reputation Management</a> <small>(1)</small></li><li><a href="/category/seo.html" rel="tag">SEO</a> <small>(5)</small></li><li><a href="/category/spacex.html" rel="tag">SpaceX</a> <small>(1)</small></li><li><a href="/category/tesla.html" rel="tag">Tesla</a> <small>(1)</small></li><li><a href="/category/tutorials.html" rel="tag">Tutorials</a> <small>(1)</small></li><li><a href="/category/web-standards.html" rel="tag">Web Standards</a> <small>(2)</small></li><li><a href="/category/web-publishing.html" rel="tag">Web publishing</a> <small>(1)</small></li><li><a href="/category/writing.html" rel="tag">Writing</a> <small>(2)</small></li></ul><p class="opml"><a href="/categories.html">All categories</a></p></section>
+<section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul><li><a href="/2026/10/">October 2026</a></li></ul></section>
+<section class="box" aria-labelledby="sb-blogroll"><p class="box-title" id="sb-blogroll">Blogroll</p><ul><li><a href="http://scripting.com/">Scripting News</a></li><li><a href="https://simonwillison.net/">Simon Willison</a></li><li><a href="https://www.oneusefulthing.org/">One Useful Thing</a></li><li><a href="https://kottke.org/">kottke.org</a></li><li><a href="https://daringfireball.net/">Daring Fireball</a></li><li><a href="https://anildash.com/">Anil Dash</a></li><li><a href="https://doc.searls.com/">Doc Searls Weblog</a></li><li><a href="https://seths.blog/">Seth&#x27;s Blog</a></li></ul><p><a href="/reading.html">The full reading list: 55 feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll" aria-labelledby="sb-elsewhere"><p class="box-title" id="sb-elsewhere">Elsewhere</p><h3>My sites</h3><ul><li><a href="https://www.chrisabraham.com/" rel="me">Chris Abraham</a> <small>my long-running blog</small></li><li><a href="https://christopherabraham.com/" rel="me">Christopher Abraham</a> <small>SEO and AI search consulting</small></li><li><a href="https://gerriscorp.com/" rel="me">Gerris Corp</a> <small>my firm</small></li><li><a href="https://thechrisabrahamshow.com/" rel="me">The Chris Abraham Show</a> <small>my podcast</small></li><li><a href="https://hillmole.com/" rel="me">Hill Mole</a> <small>my serialized spy novel</small></li><li><a href="https://chrisabraham.substack.com/" rel="me">Chris Abraham on Substack</a> <small>newsletter</small></li><li><a href="https://www.reddit.com/r/slowjogging/" rel="me">r/slowjogging</a> <small>the subreddit I founded</small></li></ul><h3>Find me</h3><ul><li><a href="https://github.com/chrisabraham" rel="me">GitHub</a> <small>code, including this site</small></li><li><a href="https://www.upwork.com/freelancers/chrisjabraham" rel="me">Upwork</a> <small>hire me by the hour</small></li><li><a href="https://www.linkedin.com/in/chrisabraham" rel="me">LinkedIn</a></li><li><a href="https://calendly.com/chrisabraham/30" rel="me">Book a call</a> <small>30 minutes on Calendly</small></li><li><a href="https://mastodon.social/@chrisa" rel="me">Mastodon</a></li><li><a href="https://www.reddit.com/user/chrisabraham/" rel="me">Reddit</a></li><li><a href="https://muckrack.com/chrisabraham" rel="me">Muck Rack</a> <small>my clips</small></li></ul><h3>Bylines</h3><ul><li><a href="https://www.huffpost.com/author/chris-abraham" rel="me">HuffPost</a></li><li><a href="https://adage.com/author/chris-abraham/1797" rel="me">Ad Age</a></li><li><a href="https://biznology.com/author/chrisabraham/" rel="me">Biznology</a></li><li><a href="https://rheingold.com/Associates/team_abraham.html" rel="me">Rheingold Associates</a></li></ul></section>
+<section class="box buttons" aria-label="Badges">
+<a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
+<a class="badge b-rss" href="/atom.xml"><b>XML</b>Atom 1.0</a>
+<a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
+<a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
+<span class="badge b-lynx"><b>Lynx</b>friendly</span>
+<span class="badge b-html"><b>HTML</b>no JS req.</span>
+<a class="badge b-wcag" href="/accessibility.html"><b>a11y</b>notes</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>test</b>record</a>
+<a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
+<a class="badge b-cc" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><b>cc</b>BY 4.0</a>
+</section>
+</aside>
+</div>
+<footer id="footer">
+  <p>Copyright 2026 Chris Abraham. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
+  <p>Write back: <a href="mailto:cja@well.com">cja@well.com</a></p>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById("theme-toggle"),
+      meta = document.getElementById("theme-color");
+  function show(dark) {
+    btn.textContent = dark ? "light" : "dark";
+    btn.setAttribute("aria-label", dark ? "Switch to light reading mode" : "Switch to dark reading mode");
+    meta.setAttribute("content", dark ? "#16181d" : "#ffffff");
+  }
+  show(root.getAttribute("data-theme") === "dark");
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") !== "dark";
+    if (dark) root.setAttribute("data-theme", "dark"); else root.removeAttribute("data-theme");
+    try { localStorage.setItem("weblog-theme", dark ? "dark" : "light"); } catch (e) {}
+    show(dark);
+  });
+  document.querySelectorAll("figure.video a.video-link").forEach(function (a) {
+    a.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      var f = a.parentNode, i = document.createElement("iframe");
+      i.src = "https://www.youtube-nocookie.com/embed/" + f.getAttribute("data-yt") + "?autoplay=1";
+      i.title = a.querySelector("img").alt; i.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      i.setAttribute("allowfullscreen", ""); i.loading = "lazy";
+      f.replaceChild(i, a);
+    });
+  });
+})();
+</script>
+</body>
+</html>

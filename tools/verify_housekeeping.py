@@ -325,6 +325,44 @@ verify(not any("/category/" in x for x in sitemap_urls if x),
        "Sitemap excludes noindex category archives")
 verify(len(sitemap_urls) == len(sitemap.findall("site:url", rns)),
        "Sitemap contains no duplicate canonical URLs")
+# Three quiet reference destinations: short glossary, subject index, HTML site map.
+# They are generated from source data and the identical canonical XML inventory.
+gpath = DOCS / "glossary.html"
+ipath = DOCS / "site-index.html"
+mpath = DOCS / "site-map.html"
+verify(all(p.exists() for p in (gpath, ipath, mpath)),
+       "Glossary, back-of-book index and HTML site map are generated")
+if all(p.exists() for p in (gpath, ipath, mpath)):
+    glossary_data = json.loads((root / "src/glossary.json").read_text(encoding="utf-8"))
+    glossary_html = gpath.read_text(encoding="utf-8")
+    index_html = ipath.read_text(encoding="utf-8")
+    map_html = mpath.read_text(encoding="utf-8")
+    term_ids = re.findall(r'class="glossary-entry" id="([^"]+)"', glossary_html)
+    verify(len(term_ids) == len(glossary_data) and len(term_ids) == len(set(term_ids)),
+           "Each glossary entry has one unique addressable definition")
+    verify(all(0 < len(x["definition"]) <= 500 for x in glossary_data),
+           "Definitions are accurate-sized reference notes, never over 500 characters")
+    verify(all("https://chrisabraham.net" + x["source"] in sitemap_urls
+               for x in glossary_data),
+           "Every glossary source points to an indexable published page")
+    verify(index_html.count('class="index-term"') >= 100
+           and 'class="back-index"' in index_html,
+           "The subject index harvests substantial real page references")
+    map_body = map_html.split('class="post-body reference-page"', 1)[1].split("</main>", 1)[0]
+    listed_urls = re.findall(r'<li><a href="(/[^"]*)"', map_body)
+    map_expected = {x.removeprefix("https://chrisabraham.net") for x in sitemap_urls}
+    verify(set(listed_urls) == map_expected and len(listed_urls) == len(map_expected),
+           "HTML site map lists the complete XML canonical inventory exactly once")
+    footer = HOME.split('<footer id="footer">', 1)[1]
+    banner = HOME.split("</header>", 1)[0]
+    refurls = ("/glossary.html", "/site-index.html", "/site-map.html")
+    verify(all('href="' + url + '"' in footer for url in refurls)
+           and all('href="' + url + '"' not in banner for url in refurls),
+           "Reference pages live in the small footer links, not the top navigation")
+    verify(all(url in (DOCS / "llms.txt").read_text(encoding="utf-8")
+               for url in refurls),
+           "AI-readable navigation also exposes the new reference surfaces")
+
 for machine_path in ("llms.txt", "llms-full.txt"):
     machine = (DOCS / machine_path).read_text(encoding="utf-8")
     verify(all(x in machine for x in
