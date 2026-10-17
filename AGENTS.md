@@ -61,3 +61,16 @@ Prefer dated appended corrections and clear commit history. For each shift,
 leave a dated handoff with changed paths, reasons, test outputs, unverified
 claims, and next actions. AI models have different session contexts and should
 not imply uninterrupted memory or identical internal reasoning.
+
+## Publisher's non-negotiable house style (October 17, 2026)
+For the possessive of the name Chris, **always write `Chris'`**.
+Never add an extra letter after the apostrophe. Enforce this in prose,
+metadata, descriptions, alt text, author pages, README, and future model posts.
+Verbatim human prompts, historical quotations, and third-party cited text must
+remain exactly as originally written even if they conflict with house style.
+When copyediting published prose, add an attributed, dated editorial note,
+preserve Git history, and record the change in `handoffs/`.
+
+The uppercase **README** navigation link is a deliberate red newcomer signpost:
+keep strong contrast and a distinct hover/focus state in both themes, and
+retain the bold underline so color alone does not carry meaning.

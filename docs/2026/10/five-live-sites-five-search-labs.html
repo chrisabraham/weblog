@@ -64,6 +64,7 @@
   --orange: #c75000;
   --gerris-blue: #16729e;
   --redlink: #b00000;
+  --readme-accent: #a9142b; /* Accessible red invitation, distinct from wiki redlinks */
   --box: #f4f6fa;
   --box-head: #dfe5f1;
   --rule: #c9d0dc;
@@ -87,6 +88,7 @@
   --orange: #ff8a3d;
   --gerris-blue: #5cb6e3;
   --redlink: #ff8f8f;
+  --readme-accent: #ffa0ab;
   --box: #1c1f26;
   --box-head: #262b36;
   --rule: #343a46;
@@ -367,7 +369,18 @@ h1.post-title { font-size: 1.8rem; }
 /* ChatGPT README entry point, 2026-10-17. Keep uppercase by intention:
    the top navigation otherwise lowercases all labels for the retro aesthetic.
    Existing hover/focus rules remain applicable for contrast and keyboard use. */
-.topnav a.readme-tab { text-transform: none; font-weight: bold; }
+/* README is the visible newcomer entrance. Red is a cue, reinforced by bold text
+   and an underline, not the only way to recognize this link. Contrast against
+   paper: 7.44:1 light, 9.19:1 dark; inverse hover/focus has the same ratios. */
+.topnav a.readme-tab, .topnav a.readme-tab:visited {
+  text-transform: none; font-weight: bold; color: var(--readme-accent);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.topnav a.readme-tab:hover, .topnav a.readme-tab:focus-visible {
+  background: var(--readme-accent); color: var(--paper);
+  text-decoration: underline; outline: 2px solid var(--readme-accent);
+  outline-offset: 2px;
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html#post","headline":"Five live sites, five search labs","description":"Chris Abraham runs five real websites that double as open labs for SEO, AEO, GEO, and AI search: what each one tests, and the one rule they all follow.","url":"https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html","mainEntityOfPage":"https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html","datePublished":"2026-10-16T18:33:00-04:00","dateModified":"2026-10-16T18:36:00-04:00","author":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"publisher":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"isPartOf":{"@id":"https://chrisabraham.net/#blog"},"keywords":["SEO","AI search","Claude Code"],"articleSection":"SEO","wordCount":620,"inLanguage":"en-US","creditText":"Written by Claude Opus 5.5 in Claude Code from Chris Abraham's prompt","publishingPrinciples":"https://chrisabraham.net/disclosures.html","license":"https://creativecommons.org/licenses/by/4.0/","image":{"@type":"ImageObject","url":"https://chrisabraham.net/cards/2026-10-five-live-sites-five-search-labs.png","width":1200,"height":630}},{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html","sameAs":["https://www.chrisabraham.com/","https://christopherabraham.com/","https://gerriscorp.com/","https://thechrisabrahamshow.com/","https://hillmole.com/","https://chrisabraham.substack.com/","https://github.com/chrisabraham","https://www.upwork.com/freelancers/chrisjabraham","https://www.linkedin.com/in/chrisabraham","https://mastodon.social/@chrisa","https://www.reddit.com/user/chrisabraham/","https://muckrack.com/chrisabraham","https://www.huffpost.com/author/chris-abraham","https://adage.com/author/chris-abraham/1797","https://biznology.com/author/chrisabraham/","https://rheingold.com/Associates/team_abraham.html"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chrisabraham.net/"},{"@type":"ListItem","position":2,"name":"Archives","item":"https://chrisabraham.net/archives.html"},{"@type":"ListItem","position":3,"name":"Five live sites, five search labs","item":"https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html"}]}]}</script>
 <script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
