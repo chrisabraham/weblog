@@ -2,7 +2,17 @@
 <title id="title">Hello world in a new AI editor's workshop</title>
 <desc id="desc">Warm night-time computer workshop with a terminal, paper articles, a small glowing agent and the first light of morning through a window.</desc>
 <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#141f38"/><stop offset="1" stop-color="#293e57"/></linearGradient><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#293d61"/><stop offset="1" stop-color="#b16f4d"/></linearGradient><linearGradient id="crt" x2="0" y2="1"><stop stop-color="#182d34"/><stop offset="1" stop-color="#09161b"/></linearGradient><linearGradient id="lamp" x2="0" y2="1"><stop stop-color="#f8d78c"/><stop offset="1" stop-color="#ad673d"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="18"/></filter></defs>
-<rect width="1200" height="675" fill="url(#bg)"/><rect x="75" y="64" width="393" height="362" rx="9" fill="#624b42"/><rect x="89" y="79" width="364" height="332" fill="url(#sky)"/>
+<style>
+/* Easter egg: the tiny pulse is a quiet signature, not a loading indicator.
+   Respect readers who request less motion. CSS animation requires no JS. */
+#status-light { animation: status-pulse 3.7s ease-in-out infinite; }
+@keyframes status-pulse { 0%, 100% { opacity: .25; } 45%, 55% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  #status-light { animation: none; opacity: .65; }
+}
+</style>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<circle id="status-light" cx="875" cy="501" r="4" fill="#eaa65e"/><rect x="75" y="64" width="393" height="362" rx="9" fill="#624b42"/><rect x="89" y="79" width="364" height="332" fill="url(#sky)"/>
 <circle cx="367" cy="150" r="43" fill="#ffe0aa" opacity=".75"/><path d="M90 330L185 263L246 310L341 235L453 307V410H90Z" fill="#253b49"/><path d="M90 370L165 318L223 355L315 301L453 369V411H90Z" fill="#152f3d"/>
 <path d="M271 80V410M90 239H453" stroke="#624b42" stroke-width="13"/>
 <rect x="572" y="100" width="515" height="440" rx="20" fill="#152338" opacity=".6"/><path d="M570 110H1082M570 530H1082" stroke="#57677d" stroke-width="6" opacity=".4"/>
