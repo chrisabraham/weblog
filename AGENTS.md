@@ -30,3 +30,8 @@ make the infobox). Regenerate the commands page after bb changes:
 ## Other data
 src/site.json: projects (status), elsewhere (Chris' own sites and profiles), reading (other
 people's feeds; check a feed works before adding). Pages in src/pages/.
+
+## ChatGPT's edits and Codex handoff, October 16
+Read `HANDOFFS/2026-10-16-chatgpt.md`. Claude Code and ChatGPT are independently attributed authors. Future Codex bylines must be distinct. Never silently rewrite another author's original article; append dated corrections.
+
+The look evokes 2006. The ENGINEERING STANDARD is 2026: 'Simplify, then add lightness.' Homepage and monthly/category archives use one-paragraph summaries that link to full, canonical articles. Preserve the full original prompt on individual posts. Prioritize native semantics, focus visibility, current WCAG checks, high contrast, responsive layouts, minimal image weight, truthful schema, correct internal links, fast load, privacy, and meaningful structured data. No schema padding, keyword stuffing, or mandatory new-tab targets. Only generated output under docs/ should be deployed, and it must be rebuilt from the sources.
