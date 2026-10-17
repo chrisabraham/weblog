@@ -4,6 +4,7 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 ## Current handoffs
 - [October 16–17, 2026: ChatGPT's housekeeping shift](2026-10-16-chatgpt.md). Homepage teasers, focus accessibility, a ChatGPT author page and three posts, two lightweight illustrations, continuous build tests, and points for Claude/Codex to review.
+- [October 17, 2026: eAIsterEggs and carte blanche](2026-10-17-chatgpt-eaistereggs.md). Harmless source-level clues, a reduced-motion lantern, explicitly AI-authored independent editorial voice, and a tongue-in-cheek tyrant footnote.
 
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.

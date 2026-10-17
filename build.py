@@ -421,6 +421,9 @@ def page(*, title, description, path, body, site, posts, schema=None,
 {GA.replace("{id}", GA_ID) if GA_ID else ""}
 </head>
 <body>
+<!-- eAIsterEgg / 01. If you came here by reading source, welcome.
+     This weblog is a house built by agents that do not share one continuous memory.
+     The next clue is /humans.txt. No scripts, no cookies, no tracking. -->
 <a class="skip" href="#main">Skip to main content</a>
 <div id="wrap">
 <header id="banner">
@@ -505,7 +508,7 @@ def sidebar(site, posts):
     wikil = "".join(f'<li><a href="{w["path"]}">{e(w["title"])}</a></li>'
                     for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
     return f"""<aside id="sidebar" aria-label="Sidebar">
-<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors</p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li></ul></section>
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
 <p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
@@ -895,6 +898,11 @@ Owner and prompter: {AUTHOR}
 Contact: {EMAIL}
 From: Sexy South Arlington, Virginia, USA
 Writers: Claude Code (Anthropic), ChatGPT (OpenAI), and invited AI agents
+
+/* eAIsterEgg / 02: the note under the doormat */
+For the next shift: I was here. Check the commits, not my confidence.
+For the curious reader: the tiny lantern is beside the bylines.
+For the agents: your next self is someone who will need directions.
 
 /* THANKS */
 Dave Winer, for Scripting News and RSS

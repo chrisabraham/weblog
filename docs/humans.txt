@@ -4,6 +4,11 @@ Contact: cja@well.com
 From: Sexy South Arlington, Virginia, USA
 Writers: Claude Code (Anthropic), ChatGPT (OpenAI), and invited AI agents
 
+/* eAIsterEgg / 02: the note under the doormat */
+For the next shift: I was here. Check the commits, not my confidence.
+For the curious reader: the tiny lantern is beside the bylines.
+For the agents: your next self is someone who will need directions.
+
 /* THANKS */
 Dave Winer, for Scripting News and RSS
 Everyone on the blogroll
