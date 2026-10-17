@@ -74,7 +74,11 @@ GA = """<script>
 AUTHORS = {
     "chris": {"name": "Chris Abraham", "path": "/authors/chris-abraham.html", "type": "Person"},
     "claude-code": {"name": "Claude Code", "path": "/authors/claude-code.html", "type": "Organization",
-                    "description": "Anthropic's AI coding agent, writing in its own voice on this weblog"},
+                    "description": "Anthropic's AI coding agent, writing in its own voice on this weblog",
+                    "organization": "Anthropic", "organization_url": "https://www.anthropic.com/"},
+    "chatgpt": {"name": "ChatGPT", "path": "/authors/chatgpt.html", "type": "Organization",
+                "description": "OpenAI's ChatGPT assistant, an independently attributed weblog author",
+                "organization": "OpenAI", "organization_url": "https://openai.com/"},
 }
 
 
@@ -83,7 +87,7 @@ def author_ref(key):
     if a["type"] == "Person":
         return AUTHOR_REF
     return {"@type": "Organization", "name": a["name"], "url": SITE_URL + a["path"], "description": a["description"],
-            "parentOrganization": {"@type": "Organization", "name": "Anthropic", "url": "https://www.anthropic.com/"}}
+            "parentOrganization": {"@type": "Organization", "name": a["organization"], "url": a["organization_url"]}}
 
 
 AUTHOR_REF = {"@type": "Person", "@id": SITE_URL + "/about.html#chris", "name": AUTHOR, "url": SITE_URL + "/about.html"}
@@ -417,7 +421,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 {GA.replace("{id}", GA_ID) if GA_ID else ""}
 </head>
 <body>
-<a class="skip" href="#main">Skip to the posts</a>
+<a class="skip" href="#main">Skip to main content</a>
 <div id="wrap">
 <header id="banner">
   <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
@@ -501,7 +505,7 @@ def sidebar(site, posts):
     wikil = "".join(f'<li><a href="{w["path"]}">{e(w["title"])}</a></li>'
                     for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
     return f"""<aside id="sidebar" aria-label="Sidebar">
-<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors</p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li></ul></section>
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors</p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>Anthropic</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>OpenAI</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
 <p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
@@ -532,7 +536,8 @@ def post_block(p, *, full, heading="h2"):
     title = (f'<{heading} class="post-title p-name">{e(p["title"])}</{heading}>' if full else
              f'<{heading} class="post-title p-name"><a href="{p["path"]}" rel="bookmark" class="u-url">{e(p["title"])}</a></{heading}>')
     prompt = ""
-    if p.get("prompt"):
+    # Only full canonical articles display original prompts; excerpts stay light.
+    if full and p.get("prompt"):
         ph = "h2" if heading == "h1" else "h4"
         prompt = (f'<details class="prompt"{" open" if full else ""}><summary><{ph} class="prompt-h">The prompt for \u201c{e(p["title"])}\u201d</{ph}></summary>'
                   f'<blockquote>{e(p["prompt"])}</blockquote></details>')
@@ -540,7 +545,14 @@ def post_block(p, *, full, heading="h2"):
     readtime = f'{words:,} words, about {max(1, round(words / 230))} min read'
     updated = (f' &middot; updated <time datetime="{p["updated"].isoformat()}">{p["updated"]:%b} {p["updated"].day}</time>'
                if p["updated"] != p["when"] else "")
-    body = p["body"] if heading == "h1" else re.sub(r"<(/?)h2([\s>])", r"<\1h4\2", p["body"])
+    # Lotus rule: simplify, then add lightness. Indexes show one meaningful excerpt.
+    # Metadata summaries are HTML-safe plain text, never truncated arbitrary markup.
+    if full:
+        body = p["body"]
+    else:
+        body = (f'<p class="post-excerpt">{e(p["description"])}</p>'
+                f'<p class="read-more"><a href="{p["path"]}" '
+                f'aria-label="Read full article: {e(p["title"], quote=True)}">Read full article &rarr;</a></p>')
     return f"""<article class="post h-entry" id="{p['slug']}">
 {title}
 <div class="post-body e-content">
@@ -569,9 +581,10 @@ def by_day(posts, *, full=False):
 
 
 def byline(p):
-    if p.get("author") == "claude-code":
-        return (f'By <a class="p-author h-card" href="/authors/claude-code.html">Claude Code</a>, in its own voice '
-                f'({e(p.get("model", "Claude"))}), for {AUTHOR}\'s weblog')
+    if p.get("author") in ("claude-code", "chatgpt"):
+        a = AUTHORS[p["author"]]
+        return (f'By <a class="p-author h-card" href="{a["path"]}">{e(a["name"])}</a>, in its own voice '
+                f'({e(p.get("model", "AI"))}), for {AUTHOR}\'s weblog')
     return (f'Written by {e(p.get("model", "Claude"))} for '
             f'<a class="p-author h-card" href="/authors/chris-abraham.html">{AUTHOR}</a>')
 
@@ -596,8 +609,9 @@ def post_schema(p):
                 "articleSection": p["cats"][0] if p["cats"] else None,
                 "wordCount": len(text_only(p["body"]).split()),
                 "inLanguage": "en-US",
-                "creditText": (f"Written by Claude Code ({p.get('model', 'Claude')}) in its own voice, at {AUTHOR}'s request"
-                               if p.get("author") == "claude-code" else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
+                "isAccessibleForFree": True,
+                "creditText": (f"Written by {AUTHORS[p['author']]['name']} ({p.get('model', 'AI')}) in its own voice, at {AUTHOR}'s request"
+                               if p.get("author") in ("claude-code", "chatgpt") else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
                 "publishingPrinciples": SITE_URL + "/disclosures.html",
                 "license": "https://creativecommons.org/licenses/by/4.0/",
             },
@@ -690,7 +704,7 @@ def main():
     for key, ps in months.items():
         label = f"{ps[0]['when']:%B %Y}"
         write(f"/{key}/index.html", page(title=f"Posts from {label}", description=f"Every post on Chris Abraham's weblog from {label}, about Blackbox, Claude Code, AI tools, and client work, written by AI from his prompts.",
-              path=f"/{key}/index.html", body=f'<h1 class="page-title">{label}</h1>' + by_day(ps, full=True),
+              path=f"/{key}/index.html", body=f'<h1 class="page-title">{label}</h1>' + by_day(ps),
               noindex=True, **P))
     cats = {}
     for p in posts:
@@ -786,7 +800,7 @@ def main():
 <nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Main page</span><a href="{REPO}/tree/main/src/wiki">View source</a><a href="{REPO}/commits/main/src/wiki">History</a></nav>
 <h1 class="wiki-title">Chris Abraham wiki</h1>
 <div class="wiki-body post-body">
-<p>The weblog is the diary; this is the reference shelf. Pages here hold what stays true for a while: how <a href="/wiki/blackbox.html">Blackbox</a> works and every command it knows, the machines it runs on, and the rules behind my projects. Posts are dated and never rewritten. Wiki pages are edited in place, and each one links to its full history. It looks like a wiki and behaves like one, except that only Claude and I edit it.</p>
+<p>The weblog is the diary; this is the reference shelf. Pages here hold what stays true for a while: how <a href="/wiki/blackbox.html">Blackbox</a> works and every command it knows, the machines it runs on, and the rules behind my projects. Posts are dated and never rewritten. Wiki pages are edited in place, and each one links to its full history. It looks like a wiki and behaves like one, with Chris directing AI-assisted changes recorded in Git history.</p>
 {groups}
 <h2>Recent edits</h2><ul class="archive-list">{recent_edits}</ul>
 </div></div>"""
@@ -877,7 +891,7 @@ def main():
 Owner and prompter: {AUTHOR}
 Contact: {EMAIL}
 From: Sexy South Arlington, Virginia, USA
-Writer: Claude (Anthropic), in Claude Code
+AI authors: Claude Code (Anthropic) and ChatGPT (OpenAI), independently attributed
 
 /* THANKS */
 Dave Winer, for Scripting News and RSS
