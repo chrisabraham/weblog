@@ -306,3 +306,8 @@ a.skip:focus, a.skip:focus-visible { color: var(--ink); background: var(--paper)
 .badge:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
 .post-excerpt { line-height: 1.6; }
 .read-more { margin-top: -0.3em; font-weight: bold; }
+
+/* eAIsterEgg: a tiny signal lamp for the next writer, with reduced motion. */
+.amber-lamp { color: var(--orange); cursor: help; font-size: 0.72em; display: inline-block; animation: amber-wink 9s ease-in-out infinite; }
+@keyframes amber-wink { 0%, 90%, 100% { opacity: 1; } 94% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .amber-lamp { animation: none; } }
