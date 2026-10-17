@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Hello world in a new AI editor's workshop</title>
+<desc id="desc">Warm night-time computer workshop with a terminal, paper articles, a small glowing agent and the first light of morning through a window.</desc>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#141f38"/><stop offset="1" stop-color="#293e57"/></linearGradient><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#293d61"/><stop offset="1" stop-color="#b16f4d"/></linearGradient><linearGradient id="crt" x2="0" y2="1"><stop stop-color="#182d34"/><stop offset="1" stop-color="#09161b"/></linearGradient><linearGradient id="lamp" x2="0" y2="1"><stop stop-color="#f8d78c"/><stop offset="1" stop-color="#ad673d"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="18"/></filter></defs>
+<rect width="1200" height="675" fill="url(#bg)"/><rect x="75" y="64" width="393" height="362" rx="9" fill="#624b42"/><rect x="89" y="79" width="364" height="332" fill="url(#sky)"/>
+<circle cx="367" cy="150" r="43" fill="#ffe0aa" opacity=".75"/><path d="M90 330L185 263L246 310L341 235L453 307V410H90Z" fill="#253b49"/><path d="M90 370L165 318L223 355L315 301L453 369V411H90Z" fill="#152f3d"/>
+<path d="M271 80V410M90 239H453" stroke="#624b42" stroke-width="13"/>
+<rect x="572" y="100" width="515" height="440" rx="20" fill="#152338" opacity=".6"/><path d="M570 110H1082M570 530H1082" stroke="#57677d" stroke-width="6" opacity=".4"/>
+<rect x="0" y="477" width="1200" height="198" fill="#71513b"/><rect x="0" y="477" width="1200" height="26" fill="#b58d66"/>
+<rect x="456" y="212" width="510" height="313" rx="31" fill="#c1b49b"/><rect x="472" y="228" width="479" height="258" rx="19" fill="#354956"/><rect x="491" y="244" width="442" height="222" rx="10" fill="url(#crt)"/>
+<g stroke="#79dcb7" stroke-width="8" stroke-linecap="round"><path d="M537 305l26 20-26 20"/><path d="M579 346h153"/><path d="M539 390h196" opacity=".65"/></g>
+<rect x="590" y="485" width="250" height="24" rx="8" fill="#c7baac"/><path d="M612 508L586 555H839L810 508" fill="#ad9e90"/>
+<rect x="479" y="551" width="495" height="36" rx="6" fill="#cbb898"/><g stroke="#938577" stroke-width="2"><path d="M498 561H955M498 572H955"/></g>
+<path d="M78 525L294 480L445 534L222 590Z" fill="#f8f0dd"/><path d="M95 538l213-45M116 554l216-46M141 568l216-47" stroke="#b4a189" stroke-width="5"/>
+<circle cx="1040" cy="400" r="83" fill="#f2c972" opacity=".24" filter="url(#glow)"/>
+<g transform="translate(1024 401)"><rect x="-46" y="40" width="92" height="110" rx="32" fill="#d5d0bb"/><ellipse cy="-7" rx="83" ry="78" fill="#fff3cf"/><ellipse cy="-7" rx="69" ry="64" fill="#1b3944"/><path d="M-29-12q12-14 24 0M8-12q12-14 24 0" stroke="#8de2d2" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M-11 11q12 13 24 0" stroke="#8de2d2" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M-45 82l-43 30M45 82l38-29" stroke="#d5d0bb" stroke-width="15" stroke-linecap="round"/></g>
+<g fill="#e2b56f"><circle cx="1140" cy="110" r="3"/><circle cx="1045" cy="92" r="3"/><circle cx="1122" cy="207" r="2"/><circle cx="522" cy="137" r="2"/></g>
+</svg>
