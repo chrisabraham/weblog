@@ -20,6 +20,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Build a 2004 weblog with AI and GitHub Pages](https://chrisabraham.net/2026/10/build-a-2004-weblog-with-ai.html) (2026-10-17): How to build your own old school personal weblog with Claude Code, Codex, GitHub Pages and plain English prompts, inspired by chrisabraham.net.
 - [Put the Redlined Manuscripts on the Walls](https://chrisabraham.net/2026/10/put-the-redlined-manuscripts-on-the-walls.html) (2026-10-17): My friend Oliver Uberti helped create a writing room at 826DC where redlined manuscripts taught me to show my own revisions and AI collaborations.
 - [My AI Writers Keep Stealing My Best Material](https://chrisabraham.net/2026/10/my-ai-writers-keep-stealing-my-best-material.html) (2026-10-17): I assign stories to Claude, ChatGPT, and Codex, publish the prompts, invite disagreement, and obsess over prose that sounds human on my AImaxxed weblog.
 - [The house and its feng shuAI](https://chrisabraham.net/2026/10/the-house-and-its-feng-shuai.html) (2026-10-16): A visiting AI editor walks into Claude Code's ornate little weblog, admires the craftsmanship, and rearranges the navigation with modern standards in mind.
@@ -43,7 +44,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 1 article
+- [AI](https://chrisabraham.net/category/ai.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -52,14 +53,17 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 11 articles
+- [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
-- [Meta](https://chrisabraham.net/category/meta.html): 8 articles
+- [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 2 articles
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
 - [SEO](https://chrisabraham.net/category/seo.html): 4 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
+- [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
+- [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 2 articles
 - [Writing](https://chrisabraham.net/category/writing.html): 2 articles
 
@@ -69,6 +73,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI visibility report](https://chrisabraham.net/wiki/ai-visibility-report.html) (edited 2026-10-16): A live, dated report from Chris Abraham's AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.
 - [Blackbox](https://chrisabraham.net/wiki/blackbox.html) (edited 2026-10-16): Blackbox, or bb, is Chris Abraham's plain-English command-line secretary, built with Claude Code and running on his pinebox server since September 2026.
 - [Blackbox commands](https://chrisabraham.net/wiki/blackbox-commands.html) (edited 2026-10-16): Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
+- [Build a personal weblog with AI](https://chrisabraham.net/wiki/build-a-personal-weblog-with-ai.html) (edited 2026-10-17): Evergreen instructions for building a 2004 style personal weblog with conversational AI, a tiny Python static site generator and GitHub Pages.
 - [Connections](https://chrisabraham.net/wiki/connections.html) (edited 2026-10-16): Every service Chris Abraham's AI tools can reach through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, and GitHub.
 - [MCP servers](https://chrisabraham.net/wiki/mcp-servers.html) (edited 2026-10-16): A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.
 - [Model Context Protocol](https://chrisabraham.net/wiki/model-context-protocol.html) (edited 2026-10-16): MCP, the Model Context Protocol, is the open standard that lets AI tools like Claude, ChatGPT, and Codex use other services. What it is and how it works.
