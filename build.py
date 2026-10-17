@@ -438,13 +438,15 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <a class="skip" href="#main">Skip to main content</a>
 <div id="wrap">
 <header id="banner">
-  <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+  <div class="banner-controls" aria-label="Display and contact">
+    <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </div>
   <{"h1" if path == "/index.html" else "p"} class="site-title"><a href="/" rel="home">{e(TITLE)}</a></{"h1" if path == "/index.html" else "p"}>
   <p class="tagline">{e(TAGLINE)}</p>
   <nav class="topnav" aria-label="Main">
-    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/categories.html">Categories</a> <a href="/archives.html">Archives</a>
-    <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
-    <a href="/hire.html" class="hire-tab">Hire me</a>
+    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a>
   </nav>
 </header>
 <div id="cols">
@@ -457,7 +459,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
   <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
-  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/reading.html">Reading</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>

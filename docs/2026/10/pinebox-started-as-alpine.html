@@ -153,21 +153,27 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
   text-decoration: underline; outline: 2px solid currentColor; outline-offset: 2px;
 }
 
+.banner-controls {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin: 0 0 12px; min-height: 32px;
+}
 .theme-toggle {
-  position: absolute; top: 12px; right: 12px;
+  position: static; flex: 0 0 auto;
   font: 0.7rem var(--sans); text-transform: lowercase;
   color: var(--banner-ink); background: transparent;
-  border: 1px solid var(--rule); padding: 3px 9px; cursor: pointer;
+  border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer;
 }
 .theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
-
-.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
-.topnav a.hire-tab, .topnav a.hire-tab:visited {
-  margin: 0 0 -9px auto; padding: 6px 14px 8px; border: 1px solid var(--rule); border-bottom: 0;
-  background: var(--paper); color: var(--orange); font-weight: bold; text-transform: none;
-  border-radius: 4px 4px 0 0; position: relative;
+.banner-controls a.hire-tab, .banner-controls a.hire-tab:visited {
+  flex: 0 0 auto; margin-left: auto; padding: 6px 12px;
+  border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--paper); color: var(--orange);
+  font: bold 0.75rem var(--sans); text-decoration: none; white-space: nowrap;
 }
-.topnav a.hire-tab:hover, .topnav a.hire-tab:focus-visible { background: var(--orange); color: var(--paper); }
+.banner-controls a.hire-tab:hover, .banner-controls a.hire-tab:focus-visible {
+  background: var(--orange); color: var(--paper);
+}
+.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
 
 /* Columns */
 #cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
@@ -279,10 +285,11 @@ h1.post-title { font-size: 1.8rem; }
 @media (max-width: 760px) {
   body { font-size: 16px; }
   #wrap { border: 0; }
-  #banner { padding: 16px 16px 0; }
-  .site-title { font-size: 1.6rem; padding-right: 56px; }
+  /* Separate first-row controls keep the vintage title fully visible. */
+  #banner { padding: 12px 16px 0; }
+  .banner-controls { margin-bottom: 12px; }
+  .site-title { font-size: 1.6rem; padding-right: 0; overflow-wrap: anywhere; }
   .topnav a { display: inline-block; margin: 2px 12px 4px 0; padding: 4px 0; }
-  .topnav a.hire-tab, .topnav a.hire-tab:visited { position: absolute; top: 12px; right: 66px; margin: 0; padding: 3px 9px; border: 1px solid var(--rule); border-radius: 0; font-size: 0.7rem; }
   #cols { grid-template-columns: 1fr; }
   #main { padding: 4px 16px 24px; border-right: 0; }
   #sidebar { padding: 16px; border-top: 4px double var(--rule); font-size: 0.8rem; }
@@ -447,13 +454,15 @@ h1.post-title { font-size: 1.8rem; }
 <a class="skip" href="#main">Skip to main content</a>
 <div id="wrap">
 <header id="banner">
-  <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+  <div class="banner-controls" aria-label="Display and contact">
+    <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </div>
   <p class="site-title"><a href="/" rel="home">Chris Abraham weblog</a></p>
   <p class="tagline">Notes from building things with AI, written by AI from my prompts.</p>
   <nav class="topnav" aria-label="Main">
-    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/categories.html">Categories</a> <a href="/archives.html">Archives</a>
-    <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
-    <a href="/hire.html" class="hire-tab">Hire me</a>
+    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a>
   </nav>
 </header>
 <div id="cols">
@@ -505,7 +514,7 @@ h1.post-title { font-size: 1.8rem; }
   <p>Copyright 2026 Chris Abraham. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
   <p>Write back: <a href="mailto:cja@well.com">cja@well.com</a></p>
-  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/reading.html">Reading</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>
