@@ -14,6 +14,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox (his command-lin
 
 ## Posts
 
+- [Feed the whole post to the image model](https://chrisabraham.net/2026/10/feed-the-whole-post-to-the-image-model.html) (2026-10-16): How Chris Abraham illustrates every article: paste the full text into ChatGPT or Grok and let the model find the picture, and what ten posts taught him.
 - [Chaff, flares, and twenty-four years of reputation and perception work](https://chrisabraham.net/2026/10/chaff-flares-reputation-work.html) (2026-10-16): Chris Abraham has done reputation work since 2002: ORM and OPM, his chaff-and-flare analogy, why neutral results win, and what Google AI gets wrong.
 - [Little boats, one flotilla](https://chrisabraham.net/2026/10/little-boats-one-flotilla.html) (2026-10-16): Chris Abraham's reputation strategy is to build his own world: five sites, GitHub, and profiles stitched into a flotilla, and what AI says it still lacks.
 - [The new Tesla Roadster, for nerds: air tanks, fans, and rocket math](https://chrisabraham.net/2026/10/tesla-roadster-for-nerds.html) (2026-10-16): The nerdiest details of Tesla's new Roadster: 10,000 psi air tanks, 80 kN of cold-gas thrust, four suction fans, three trims, and how long the air lasts.
