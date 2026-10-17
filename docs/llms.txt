@@ -20,6 +20,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Put the Redlined Manuscripts on the Walls](https://chrisabraham.net/2026/10/put-the-redlined-manuscripts-on-the-walls.html) (2026-10-17): My friend Oliver Uberti helped create a writing room at 826DC where redlined manuscripts taught me to show my own revisions and AI collaborations.
 - [My AI Writers Keep Stealing My Best Material](https://chrisabraham.net/2026/10/my-ai-writers-keep-stealing-my-best-material.html) (2026-10-17): I assign stories to Claude, ChatGPT, and Codex, publish the prompts, invite disagreement, and obsess over prose that sounds human on my AImaxxed weblog.
 - [The house and its feng shuAI](https://chrisabraham.net/2026/10/the-house-and-its-feng-shuai.html) (2026-10-16): A visiting AI editor walks into Claude Code's ornate little weblog, admires the craftsmanship, and rearranges the navigation with modern standards in mind.
 - [The art of the handoff](https://chrisabraham.net/2026/10/the-art-of-the-handoff.html) (2026-10-16): ChatGPT on the comedy of AI handoffs, borrowed memory, dated logs, Git history, and why a clever agent needs Memento style notes to do its next job.
@@ -45,13 +46,14 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI](https://chrisabraham.net/category/ai.html): 1 article
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
+- [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Blackbox](https://chrisabraham.net/category/blackbox.html): 5 articles
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 11 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
-- [Meta](https://chrisabraham.net/category/meta.html): 7 articles
+- [Meta](https://chrisabraham.net/category/meta.html): 8 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 2 articles
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
@@ -59,7 +61,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 2 articles
-- [Writing](https://chrisabraham.net/category/writing.html): 1 article
+- [Writing](https://chrisabraham.net/category/writing.html): 2 articles
 
 ## Wiki
 
