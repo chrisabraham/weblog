@@ -19,6 +19,20 @@ No separator dashes or pipes in titles or descriptions. `[[Wiki page]]` links wo
 `{{youtube:ID|Title}}` embeds a click-to-play video. Images go in src/media/ with captions
 that say whose they are.
 
+## Colin Chapman and the Lotus rule
+
+**"Simplify, then add lightness."** The Colin Chapman/Lotus engineering maxim is the
+site's design principle. Chris' web-performance adaptation is **"Simplify, then
+add quickness."** Keep the lovely, slightly eccentric 2003–2006 character,
+then remove unnecessary page weight, visual repetition, duplicate navigation
+and obsolete machinery. Every schema property, link collection, script, badge,
+image and feature should justify its cost. The homepage shows concise excerpts
+linking to full posts. Each wiki entry appears just once in the directory.
+The silly hand-coded SVG doodles honour the same rule, with all seven initial
+standalone SVG art assets together weighing only 34,672 bytes. Preserve working
+accessibility, feeds, archives, provenance and useful metadata: simplifying
+means subtracting friction, not discarding capabilities.
+
 ## New artwork house rule (October 17, 2026)
 New editorial illustrations and doodles must be original, quirky, hand-coded or AI-authored **SVG vector graphics** by default. The visual idiom is playful, slightly eccentric, 2003–2006-web, and low-bandwidth, while the markup and accessibility are modern. Prefer small stand-alone SVGs under `src/media/`, using descriptive `<title>`/`<desc>` where applicable, appropriate `viewBox`, and meaningful HTML `alt` text and illustration attribution. Keep paths and markup economical, check reduced motion for animation, and avoid embedded raster data. **Do not introduce new JPEG, PNG, WebP, AVIF or photographic/editorial bitmaps unless Chris explicitly supplies or requests them.** This rule governs *new editorial art*, not existing illustrations, necessary favicons, machine-generated OG/social share-card bitmaps or a publisher-provided screenshot used for evidence. Preserve the existing art rather than replacing it gratuitously.
 
