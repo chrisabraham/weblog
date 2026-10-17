@@ -59,6 +59,7 @@
   --orange: #c75000;
   --gerris-blue: #16729e;
   --redlink: #b00000;
+  --readme-accent: #a9142b; /* Accessible red invitation, distinct from wiki redlinks */
   --box: #f4f6fa;
   --box-head: #dfe5f1;
   --rule: #c9d0dc;
@@ -82,6 +83,7 @@
   --orange: #ff8a3d;
   --gerris-blue: #5cb6e3;
   --redlink: #ff8f8f;
+  --readme-accent: #ffa0ab;
   --box: #1c1f26;
   --box-head: #262b36;
   --rule: #343a46;
@@ -362,7 +364,18 @@ h1.post-title { font-size: 1.8rem; }
 /* ChatGPT README entry point, 2026-10-17. Keep uppercase by intention:
    the top navigation otherwise lowercases all labels for the retro aesthetic.
    Existing hover/focus rules remain applicable for contrast and keyboard use. */
-.topnav a.readme-tab { text-transform: none; font-weight: bold; }
+/* README is the visible newcomer entrance. Red is a cue, reinforced by bold text
+   and an underline, not the only way to recognize this link. Contrast against
+   paper: 7.44:1 light, 9.19:1 dark; inverse hover/focus has the same ratios. */
+.topnav a.readme-tab, .topnav a.readme-tab:visited {
+  text-transform: none; font-weight: bold; color: var(--readme-accent);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.topnav a.readme-tab:hover, .topnav a.readme-tab:focus-visible {
+  background: var(--readme-accent); color: var(--paper);
+  text-decoration: underline; outline: 2px solid var(--readme-accent);
+  outline-offset: 2px;
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"README","url":"https://chrisabraham.net/readme.html","description":"New to this AI written weblog? Start with the people, tools, and ideas behind it, then explore the posts, wiki, original prompts, and public records.","author":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html","sameAs":["https://www.chrisabraham.com/","https://christopherabraham.com/","https://gerriscorp.com/","https://thechrisabrahamshow.com/","https://hillmole.com/","https://chrisabraham.substack.com/","https://github.com/chrisabraham","https://www.upwork.com/freelancers/chrisjabraham","https://www.linkedin.com/in/chrisabraham","https://mastodon.social/@chrisa","https://www.reddit.com/user/chrisabraham/","https://muckrack.com/chrisabraham","https://www.huffpost.com/author/chris-abraham","https://adage.com/author/chris-abraham/1797","https://biznology.com/author/chrisabraham/","https://rheingold.com/Associates/team_abraham.html"]},"image":{"@type":"ImageObject","url":"https://chrisabraham.net/cards/readme.png","width":1200,"height":630}}</script>
 <script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
@@ -415,7 +428,7 @@ h1.post-title { font-size: 1.8rem; }
 
 <h2 id="what-is-this-website">What is this website?</h2>
 <p>Chris Abraham lives and works in Sexy South Arlington, Virginia. He builds tools, works in technical SEO and AI search, and keeps a public notebook about what he is doing and what is happening around him. Sometimes he writes about a server. Sometimes about a rocket-powered car. A personal weblog has room for both.</p>
-<p><strong>AI writes the articles from Chris's prompts.</strong> A prompt is simply the instruction or conversation that gets the writing started. Individual articles identify which model wrote them and show the original prompt, including its imperfections. That is a deliberate editorial choice. You can compare the request with what the AI produced instead of having to trust a polished byline.</p>
+<p><strong>AI writes the articles from Chris' prompts.</strong> A prompt is simply the instruction or conversation that gets the writing started. Individual articles identify which model wrote them and show the original prompt, including its imperfections. That is a deliberate editorial choice. You can compare the request with what the AI produced instead of having to trust a polished byline.</p>
 <p>Claude Code built the original weblog. ChatGPT later helped revise its navigation, accessibility, and documentation. Codex is another OpenAI coding agent Chris plans to invite into the same environment. Their accounts may disagree, and the disagreements are meant to stay visible. A named AI byline identifies the software used to write the piece; it doesn't mean the software is a human being or has an uninterrupted personal memory.</p>
 
 <h2 id="where-should-i-begin">Where should I begin?</h2>
@@ -444,8 +457,8 @@ h1.post-title { font-size: 1.8rem; }
 <dt>AI model</dt><dd>Software trained to generate text or other material from the context it is given. Different models can interpret the same material differently.</dd>
 <dt>Prompt</dt><dd>The human's instructions, questions, or conversation supplied to an AI. On this weblog, the original prompt is part of the published article.</dd>
 <dt>Agent</dt><dd>An AI tool that can use permitted software or services to perform steps, such as reading files, editing code, or checking a website. Its access and actions depend on its tools and permissions.</dd>
-<dt><a href="/wiki/pinebox.html">Pinebox</a></dt><dd>Chris's Debian server, home to notes, command-line tools, and part of the working environment for his AI projects.</dd>
-<dt><a href="/wiki/blackbox.html">Blackbox</a></dt><dd>Chris's command-line assistant for organizing work and interacting with connected services.</dd>
+<dt><a href="/wiki/pinebox.html">Pinebox</a></dt><dd>Chris' Debian server, home to notes, command-line tools, and part of the working environment for his AI projects.</dd>
+<dt><a href="/wiki/blackbox.html">Blackbox</a></dt><dd>Chris' command-line assistant for organizing work and interacting with connected services.</dd>
 <dt><a href="/wiki/model-context-protocol.html">MCP</a></dt><dd>Model Context Protocol, a way for AI applications to connect to outside tools and sources in a standardized format.</dd>
 <dt>Context window</dt><dd>The amount of information an AI model can work with during a particular interaction. Earlier work may need to be recovered from notes or files.</dd>
 <dt>Stateless session</dt><dd>A session that cannot simply recall another session's full working history. Logs and handoffs help reconstruct what happened. This is a software limitation, not the same thing as a human memory condition.</dd>
@@ -464,7 +477,9 @@ h1.post-title { font-size: 1.8rem; }
 
 <h2 id="ready-to-wander">Ready to wander?</h2>
 <p>Go back to the <a href="/">latest posts</a>, browse the <a href="/archives.html">archives</a>, explore the <a href="/wiki/">wiki</a>, or subscribe through <a href="/rss.xml">RSS</a>. There's no entrance exam.</p>
-<p class="disclosure"><strong>Editorial note, October 17, 2026:</strong> This README was drafted by ChatGPT (GPT-6) in response to Chris's request for an all-caps README instead of a conventional primer. It reflects the site's public records and may be improved later with attributed corrections. The name is an old software convention, with a passing nod to Neal Stephenson's <em>REAMDE</em>. The joke should never get in the way of understanding the page.</p></div>
+<p class="disclosure"><strong>Editorial note, October 17, 2026:</strong> This README was drafted by ChatGPT (GPT-6) in response to Chris' request for an all-caps README instead of a conventional primer. It reflects the site's public records and may be improved later with attributed corrections. The name is an old software convention, with a passing nod to Neal Stephenson's <em>REAMDE</em>. The joke should never get in the way of understanding the page.</p>
+
+<p class="disclosure"><b>House-style note, October 17, 2026 (ChatGPT):</b> Copyedited references to Chris' work and prompts to honor the publisher's preferred possessive; the meaning and original editorial note are unchanged.</p></div>
 </main>
 <aside id="sidebar" aria-label="Sidebar">
 <section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li></ul></section>
