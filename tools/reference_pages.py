@@ -35,7 +35,7 @@ def build_reference_pages(*, src, site_url, site, posts, wiki, sitemap, authors,
                            for letter in sorted(grouped)) + '</nav>')
     ghtml = []
     for letter, items in sorted(groups.items()):
-        ghtml.append(f'<section class="reference-group"><h2 id="g-{slugify(letter)}">{e(letter)}</h2>'
+        ghtml.append(f'<section class="reference-group"><h2 id="g-{slugify(letter)}">{e(letter + (" terms" if letter == "0–9" else ""))}</h2>'
                      '<dl class="glossary-list">')
         for term, definition, target, anchor in sorted(items, key=lambda x: x[0].casefold()):
             ghtml.append(f'<div class="glossary-entry" id="{anchor}"><dt>{e(term)}</dt>'
@@ -105,7 +105,7 @@ def build_reference_pages(*, src, site_url, site, posts, wiki, sitemap, authors,
         igroups.setdefault(letter, []).append((term, list(unique.values())[:7]))
     ihtml = []
     for letter, items in sorted(igroups.items()):
-        ihtml.append(f'<section class="reference-group"><h2 id="i-{slugify(letter)}">{e(letter)}</h2>'
+        ihtml.append(f'<section class="reference-group"><h2 id="i-{slugify(letter)}">{e(letter + (" topics" if letter == "0–9" else ""))}</h2>'
                      '<ul class="back-index">')
         for term, locators in sorted(items, key=lambda x: x[0].casefold()):
             links = ", ".join(f'<a href="{url}" title="{e(title)}">{e(title)}</a>'
