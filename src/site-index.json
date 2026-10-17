@@ -15,12 +15,6 @@
     ]
   },
   {
-    "term": "Ablation",
-    "patterns": [
-      "ablation"
-    ]
-  },
-  {
     "term": "Affiliate links",
     "patterns": [
       "affiliate links",
@@ -49,12 +43,6 @@
       "fact-check",
       "checked claims",
       "verification"
-    ]
-  },
-  {
-    "term": "Al-Anon",
-    "patterns": [
-      "Al-Anon"
     ]
   },
   {
@@ -145,12 +133,6 @@
     ]
   },
   {
-    "term": "Canton, Alexandra",
-    "patterns": [
-      "Alexandra Canton"
-    ]
-  },
-  {
     "term": "Chapman, Colin",
     "patterns": [
       "Colin Chapman",
@@ -187,13 +169,6 @@
       "AI collaborators",
       "writers",
       "editors"
-    ]
-  },
-  {
-    "term": "Community and authorship",
-    "patterns": [
-      "community",
-      "author"
     ]
   },
   {
@@ -238,13 +213,6 @@
     "patterns": [
       "privacy",
       "data brokers"
-    ]
-  },
-  {
-    "term": "Dave Winer",
-    "patterns": [
-      "Dave Winer",
-      "Scripting News"
     ]
   },
   {
@@ -436,7 +404,7 @@
     "term": "Keywords",
     "patterns": [
       "keywords",
-      "SEO"
+      "keyword hunting"
     ]
   },
   {
@@ -536,7 +504,9 @@
   {
     "term": "Page titles",
     "patterns": [
-      "title",
+      "SEO title",
+      "page titles",
+      "title tags",
       "seo_title"
     ]
   },
@@ -552,7 +522,7 @@
     "patterns": [
       "diary",
       "archive",
-      "personal"
+      "archival records"
     ]
   },
   {
