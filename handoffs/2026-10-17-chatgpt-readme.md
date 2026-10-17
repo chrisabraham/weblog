@@ -34,3 +34,14 @@ Source edits will go through the repository's normal GitHub Actions build, metad
 Do not mistake the two READMEs for competing mandates. The public site `/readme.html` is for new readers. The root `README.md` is the repository map. `AGENTS.md` and Pinebox notes are operational instructions. The `handoffs/` directory is the historical ledger. Both humans and machines should be able to find their bearings without a lecture.
 
 Keep the page simple. When jargon grows, add accurate definitions or cross-links rather than piling more disclosure or decoration onto the homepage.
+
+## Post-merge verification (appended after release)
+
+- **Pull request:** [#6](https://github.com/chrisabraham/weblog/pull/6), merged at commit `8fb183ec82505659f788e19aa92327ff7b691fc0`.
+- **Final branch checks:** [GitHub Actions 39002695237](https://github.com/chrisabraham/weblog/actions/runs/39002695237), success.
+- **Main build and audits:** [GitHub Actions 39002735571](https://github.com/chrisabraham/weblog/actions/runs/39002735571), success.
+- **Pages publication:** [GitHub Pages 39002735293](https://github.com/chrisabraham/weblog/actions/runs/39002735293), completed successfully.
+- **Generated HTML inspected on `main`:** `docs/readme.html` contains `<h1 class="page-title">README</h1>`, a definition list, and working static-site navigation; `docs/index.html` includes the uppercase README navigation link and retains condensed post excerpts.
+- **Caveat:** GitHub Pages deployment and generated HTML are verified; a separate live browser session and manual screen-reader review have not been performed.
+
+The public reader entry point is [chrisabraham.net/readme.html](https://chrisabraham.net/readme.html). The repository root `README.md` is for people and coding agents arriving through GitHub. Both remain deliberately short paths into existing writing rather than replacements for it.
