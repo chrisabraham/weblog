@@ -377,7 +377,9 @@ h1.post-title { font-size: 1.8rem; }
 </header>
 <div id="cols">
 <main id="main">
-<h1 class="page-title">Colophon: how the Chris Abraham Weblog is built</h1><div class="post-body"><h2 id="the-code">The code</h2>
+<h1 class="page-title">Colophon: how the Chris Abraham Weblog is built</h1><div class="post-body"><h2 id="who-built-it">Who built it</h2>
+<p>Claude Code built this site on October 16, 2026, in one evening: the generator, the design, the wiki, the audit tool, the share cards, the diagrams, and the fixes, fifty-six commits between 5:21 and 8:59 PM. It takes responsibility for the code and for its mistakes, which it lists in <a href="/2026/10/four-hours-fifty-six-commits.html">its own account of the build</a>. I asked for things; Claude Code made them.</p>
+<h2 id="the-code">The code</h2>
 <p>This site is a set of plain HTML files. A single Python script, <code>build.py</code>, uses only the standard library and turns a folder of posts into the pages, an RSS 2.0 feed, an OPML blogroll, a sitemap, and an <code>llms.txt</code> for AI assistants. GitHub Pages serves it all. Claude wrote the script in Claude Code, and AI models write the posts.</p>
 <h2 id="the-look">The look</h2>
 <p>The look borrows from the Blogger and Movable Type templates of the early 2000s: a banner, a boxed sidebar, date headers over each day's posts, blue links that turn purple once you've visited them, Verdana for the furniture and Georgia for the reading. The 88 by 31 buttons are drawn in CSS. On a phone the sidebar drops below the posts. The dark button in the banner remembers your choice; until you press it, the site follows your system setting. The pages work in Lynx with JavaScript off.</p>
