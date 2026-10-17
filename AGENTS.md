@@ -19,6 +19,10 @@ No separator dashes or pipes in titles or descriptions. `[[Wiki page]]` links wo
 `{{youtube:ID|Title}}` embeds a click-to-play video. Images go in src/media/ with captions
 that say whose they are.
 
+## New artwork house rule (October 17, 2026)
+New editorial illustrations and doodles must be original, quirky, hand-coded or AI-authored **SVG vector graphics** by default. The visual idiom is playful, slightly eccentric, 2003–2006-web, and low-bandwidth, while the markup and accessibility are modern. Prefer small stand-alone SVGs under `src/media/`, using descriptive `<title>`/`<desc>` where applicable, appropriate `viewBox`, and meaningful HTML `alt` text and illustration attribution. Keep paths and markup economical, check reduced motion for animation, and avoid embedded raster data. **Do not introduce new JPEG, PNG, WebP, AVIF or photographic/editorial bitmaps unless Chris explicitly supplies or requests them.** This rule governs *new editorial art*, not existing illustrations, necessary favicons, machine-generated OG/social share-card bitmaps or a publisher-provided screenshot used for evidence. Preserve the existing art rather than replacing it gratuitously.
+
+
 ## Changing a published post
 Never rewrite quietly: add `updated:`, append the new prompt to `prompt:`, and end with a
 `<p class="disclosure"><b>Update, DATE, TIME:</b> what changed</p>`.
@@ -99,12 +103,13 @@ correct index/noindex boundaries, consistent llms resources and valid links.
 Maintain these cross-surface checks whenever a new publication format appears.
 Never advertise WCAG/Lighthouse certification without real evidence.
 
-A full IndexNow submission is requested **after** finishing the outstanding
-approved articles. The existing `.github/workflows/indexnow.yml` accepts a
-`workflow_dispatch` input `all=true` to run `.github/indexnow.py --all`.
-The ordinary site-push workflow submits only changed URLs. Check the live
-sitemap and record the full submission's HTTP response and URL count; do not
-claim a successful blast just because the workflow file exists.
+For this October 17 wiki-harvest publishing batch Chris ultimately requested
+**diff-only IndexNow**, explicitly correcting an earlier request for a full
+sitemap blast. Use the existing main-branch push-triggered changed-URL workflow
+and `.github/indexnow.py <before-sha> <after-sha>`. Do **not** run
+`workflow_dispatch all=true` unless Chris separately requests a full blast.
+Check the live generated sitemap, RSS and Atom parity, and record submission
+HTTP response and URL count. Never claim a blast succeeded on a trigger alone.
 
 Editorial provenance: Chris cites Whitman's "I contain multitudes" when
 explaining his personal contradictions. AI-generated articles can preserve
