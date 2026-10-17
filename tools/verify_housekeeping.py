@@ -94,6 +94,47 @@ if readme.exists():
            "README keeps navigation and links to the reference wiki")
 verify('.topnav a.readme-tab' in STYLE, "README retains uppercase navigation styling")
 
+# Publisher's house style: possessive of Chris is always Chris'.
+# Leave original user prompt metadata unedited and exempt from the check.
+root = DOCS.parent
+samples = [root / "README.md"]
+samples += list((root / "src/pages").glob("*.html"))
+samples += list((root / "src/authors").glob("*.html"))
+samples += list((root / "src/posts").glob("*.html"))
+nonpreferred = []
+for source in samples:
+    raw = source.read_text(encoding="utf-8")
+    if source.parent.name == "posts":
+        head, divider, body = raw.partition("\n---\n")
+        head = "\n".join(line for line in head.splitlines()
+                         if not line.startswith("prompt:"))
+        raw = head + divider + body
+    if re.search(r"Chris(?:'s|’s)\b", raw):
+        nonpreferred.append(str(source.relative_to(root)))
+verify(not nonpreferred,
+       f"Chris' is the house possessive outside original prompts ({nonpreferred})")
+
+# Contrast of red README on the paper, and inverse focus text on red.
+accents = re.findall(r"--readme-accent:\s*(#[0-9a-fA-F]{6})\s*;", STYLE)
+def luminance(rgb):
+    channels = [int(rgb[i:i+2], 16)/255 for i in (1,3,5)]
+    linear = [c/12.92 if c<=0.04045 else ((c+0.055)/1.055)**2.4 for c in channels]
+    return sum(a*b for a,b in zip(linear,(0.2126,0.7152,0.0722)))
+def ratio(c1,c2):
+    bright,dark = sorted((luminance(c1),luminance(c2)),reverse=True)
+    return (bright+0.05)/(dark+0.05)
+verify(len(accents)==2, "README has red values in light and dark themes")
+if len(accents)==2:
+    for theme,accent,paper in (("light",accents[0],"#ffffff"),("dark",accents[1],"#16181d")):
+        verify(ratio(accent,paper)>=7.0,
+               f"{theme} README link and inverse-focus colors achieve AAA text contrast")
+verify(".topnav a.readme-tab:visited" in STYLE,
+       "Visited README remains visibly red")
+verify(".topnav a.readme-tab:focus-visible" in STYLE
+       and "background: var(--readme-accent); color: var(--paper)" in STYLE,
+       "README has a separate legible keyboard focus state")
+
+
 verify((DOCS / "authors/chatgpt.html").exists(), "ChatGPT author profile is generated")
 verify("eAIsterEgg / 01" in HOME, "Source-view greeting survives generation")
 verify("eAIsterEgg / 02" in (DOCS / "humans.txt").read_text(encoding="utf-8"),
