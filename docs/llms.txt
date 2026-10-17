@@ -14,7 +14,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox (his command-lin
 
 ## Posts
 
-- [Little boats, one flotilla](https://chrisabraham.net/2026/10/little-boats-one-flotilla.html) (2026-10-16): Chris Abraham's reputation strategy is to build his own world: five sites, GitHub, and profiles stitched into one flotilla, and what AI says it still lacks.
+- [Chaff, flares, and twenty-four years of reputation and perception work](https://chrisabraham.net/2026/10/chaff-flares-reputation-work.html) (2026-10-16): Chris Abraham has done reputation work since 2002: ORM and OPM, his chaff-and-flare analogy, why neutral results win, and what Google AI gets wrong.
+- [Little boats, one flotilla](https://chrisabraham.net/2026/10/little-boats-one-flotilla.html) (2026-10-16): Chris Abraham's reputation strategy is to build his own world: five sites, GitHub, and profiles stitched into a flotilla, and what AI says it still lacks.
 - [The new Tesla Roadster, for nerds: air tanks, fans, and rocket math](https://chrisabraham.net/2026/10/tesla-roadster-for-nerds.html) (2026-10-16): The nerdiest details of Tesla's new Roadster: 10,000 psi air tanks, 80 kN of cold-gas thrust, four suction fans, three trims, and how long the air lasts.
 - [Pinebox started as a place to read mail in Alpine](https://chrisabraham.net/2026/10/pinebox-started-as-alpine.html) (2026-10-16): Pinebox began in August 2026 as a tiny server for reading mail in Alpine. Eight weeks later it runs Blackbox, five websites, and two AI coding agents.
 - [What Claude says about me, two days apart](https://chrisabraham.net/2026/10/what-claude-says-about-me.html) (2026-10-16): The full data from Chris Abraham's AI visibility run: Claude names him on every branded question and none of the open ones, plus 43 claims checked.
