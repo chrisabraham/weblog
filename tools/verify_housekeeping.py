@@ -181,7 +181,7 @@ verify(wiki_index.exists(), "The wiki main directory is generated")
 if wiki_index.exists():
     wiki_html = wiki_index.read_text(encoding="utf-8")
     wiki_body = wiki_html.split('<div class="wiki-body post-body">', 1)[1].split("</div></div>", 1)[0]
-    listed = re.findall(r'<li><a href="(/wiki/[a-z0-9-]+\\.html)"', wiki_body)
+    listed = re.findall(r'<li><a href="(/wiki/[a-z0-9-]+\.html)"', wiki_body)
     expected_wiki = {"/wiki/" + p.name for p in (DOCS / "wiki").glob("*.html")
                      if p.name != "index.html"}
     verify(set(listed) == expected_wiki and len(listed) == len(expected_wiki),
