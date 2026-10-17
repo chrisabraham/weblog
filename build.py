@@ -71,6 +71,21 @@ GA = """<script>
   })();
 </script>"""
 
+AUTHORS = {
+    "chris": {"name": "Chris Abraham", "path": "/authors/chris-abraham.html", "type": "Person"},
+    "claude-code": {"name": "Claude Code", "path": "/authors/claude-code.html", "type": "Organization",
+                    "description": "Anthropic's AI coding agent, writing in its own voice on this weblog"},
+}
+
+
+def author_ref(key):
+    a = AUTHORS.get(key or "chris", AUTHORS["chris"])
+    if a["type"] == "Person":
+        return AUTHOR_REF
+    return {"@type": "Organization", "name": a["name"], "url": SITE_URL + a["path"], "description": a["description"],
+            "parentOrganization": {"@type": "Organization", "name": "Anthropic", "url": "https://www.anthropic.com/"}}
+
+
 AUTHOR_REF = {"@type": "Person", "@id": SITE_URL + "/about.html#chris", "name": AUTHOR, "url": SITE_URL + "/about.html"}
 
 SPECULATION = ('<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, '
@@ -484,6 +499,7 @@ def sidebar(site, posts):
     wikil = "".join(f'<li><a href="{w["path"]}">{e(w["title"])}</a></li>'
                     for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
     return f"""<aside id="sidebar" aria-label="Sidebar">
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors</p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
 <p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
@@ -528,7 +544,7 @@ def post_block(p, *, full, heading="h2"):
 {body}
 </div>
 {prompt}
-<p class="post-footer">Written by {e(p.get('model', 'Claude'))} for <a class="p-author h-card" href="/about.html">{AUTHOR}</a> at
+<p class="post-footer">{byline(p)} at
 <a href="{p['path']}" rel="bookmark" class="u-url"><time class="dt-published" datetime="{p['when'].isoformat()}">{clock(p['when'])}</time></a>{updated}
 &middot; {readtime} &middot; filed under {cats or 'nothing'} &middot; <a href="mailto:{EMAIL}?subject={e(p['title'])}">write back</a></p>
 </article>"""
@@ -549,6 +565,14 @@ def by_day(posts, *, full=False):
     return "\n".join(out)
 
 
+def byline(p):
+    if p.get("author") == "claude-code":
+        return (f'By <a class="p-author h-card" href="/authors/claude-code.html">Claude Code</a>, in its own voice '
+                f'({e(p.get("model", "Claude"))}), for {AUTHOR}\'s weblog')
+    return (f'Written by {e(p.get("model", "Claude"))} for '
+            f'<a class="p-author h-card" href="/authors/chris-abraham.html">{AUTHOR}</a>')
+
+
 def post_schema(p):
     return {
         "@context": "https://schema.org",
@@ -562,14 +586,15 @@ def post_schema(p):
                 "mainEntityOfPage": p["url"],
                 "datePublished": p["when"].isoformat(),
                 "dateModified": p["updated"].isoformat(),
-                "author": AUTHOR_REF,
+                "author": author_ref(p.get("author")),
                 "publisher": AUTHOR_REF,
                 "isPartOf": {"@id": SITE_URL + "/#blog"},
                 "keywords": p["cats"],
                 "articleSection": p["cats"][0] if p["cats"] else None,
                 "wordCount": len(text_only(p["body"]).split()),
                 "inLanguage": "en-US",
-                "creditText": f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt",
+                "creditText": (f"Written by Claude Code ({p.get('model', 'Claude')}) in its own voice, at {AUTHOR}'s request"
+                               if p.get("author") == "claude-code" else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
                 "publishingPrinciples": SITE_URL + "/disclosures.html",
             },
             PERSON,
@@ -786,6 +811,24 @@ def main():
           body=f'<h1 class="page-title">Reading list</h1><div class="post-body">{reading_intro}{groups_html}</div>', **P))
     sitemap.append(("/reading.html", None))
 
+    # Author pages: a bio from src/authors/<slug>.html plus every post by that author.
+    for key, a in AUTHORS.items():
+        src = SRC / "authors" / (a["path"].rsplit("/", 1)[1])
+        if not src.exists():
+            continue
+        m = parse(src)
+        m["body"] = wikilinks(m["body"], wiki, set())
+        mine = [p for p in posts if (p.get("author") or "chris") == key]
+        lst = "".join(f'<li><time datetime="{p["when"].date()}">{p["when"]:%b} {p["when"].day}</time> <a href="{p["path"]}">{e(p["title"])}</a></li>' for p in mine)
+        body = (f'<h1 class="page-title">{e(m["title"])}</h1><div class="post-body">{add_toc(m["body"])[0]}</div>'
+                f'<h2>Posts by {e(a["name"])}</h2><ul class="archive-list">{lst or "<li>None yet.</li>"}</ul>')
+        entity = AUTHOR_REF if a["type"] == "Person" else author_ref(key)
+        schema = {"@context": "https://schema.org", "@type": "ProfilePage", "name": m["title"], "url": SITE_URL + a["path"],
+                  "description": m["description"], "mainEntity": entity}
+        write(a["path"], page(title=m["title"], seo_title=m.get("seo_title"), description=m["description"], path=a["path"],
+                              schema=schema, body=body, **P))
+        sitemap.append((a["path"], None))
+
     # Static pages
     for f in sorted((SRC / "pages").glob("*.html")):
         m = parse(f)
@@ -846,6 +889,7 @@ def rss(posts):
         if p.get("prompt"):
             body += f"<p><em>Written by {e(p.get('model', 'Claude'))} from this prompt:</em></p><blockquote>{e(p['prompt'])}</blockquote>"
         items.append(f"""<item>
+<dc:creator>{e(AUTHORS.get(p.get("author") or "chris", AUTHORS["chris"])["name"])}</dc:creator>
 <title>{e(p['title'])}</title>
 <link>{p['url']}</link>
 <guid isPermaLink="true">{p['url']}</guid>
@@ -856,7 +900,7 @@ def rss(posts):
 </item>""")
     last = posts[0]["when"].strftime('%a, %d %b %Y %H:%M:%S %z') if posts else ""
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
 <title>{e(TITLE)}</title>
 <link>{SITE_URL}/</link>
