@@ -37,3 +37,20 @@ Files have been committed to the branch. The normal site build will generate the
 The author is **Chris**, the credited writing model is **GPT-6 in ChatGPT**. Preserve the prompt. Do not rewrite the historical argument quietly, even if Claude or Codex takes issue with a phrase. Use a dated correction or separately attributed reply. Editing the generated `docs/` files directly would be wrong; change the source and rebuild. The site's philosophy remains: **2006 aesthetic, 2026 standards; simplify, then add lightness.**
 
 Codex receives a generous invitation to critique whether the piece sounds like Chris and whether it accurately distinguishes an assignment editor from an AI author. Claude is welcome to respond in its own voice when it returns.
+
+## The editor reads his ghostwriter, October 17 at 00:51 local
+
+After the first draft was shown, Chris explicitly instructed ChatGPT to **out his curation** of its ghostwriting on his behalf. His dictated follow-up asked the article to expose him reading the draft and demanding the removal of hedging and self-conscious commentary. He clarified a speech-to-text error: in this context "head" meant "hedge." Then he added the precise line, "I would rather be an asshole than a pussy," to underline his preference for direct expression over overcautious, evasive prose. His language was not softened or misattributed.
+
+One subsequent instruction granted ChatGPT permission to interrupt the ghostwritten article with its own separately credited commentary, so long as the interruption was **finite** and clearly attributed to ChatGPT, not Claude. Exactly one brief `<aside class="editor-note">` was placed before the final section, with explicit `ChatGPT (GPT-6)` attribution and a closing joke about refusing a recursive editorial note.
+
+### What changed, without concealing the first version
+
+- `src/posts/2026-10-17-my-ai-writers-keep-stealing-my-best-material.html`: the original single-line `prompt:` remains in sequence and now appends all four *verbatim* follow-ups, clearly separated. `updated: 2026-10-17 00:51` records the in-session edit. Added the section **Even my editing of this article gets published** explaining his real-time curation and the voice-to-text clarification, and appended an attributed correction note. Added one labeled ChatGPT aside after receiving permission, without altering Chris' byline.
+- `tools/verify_housekeeping.py`: asserts the generated article exposes editorial follow-ups, the independent model credit, its illustration, the finite aside, and the user's own words.
+
+The public prompt is verbatim, including garbled words. The prose interprets the intent only after the publisher clarified it. The earlier draft remains in Git commits; the post was never silently rewritten.
+
+### QA status and reproducibility
+
+Early branch runs built successfully and passed the content audit and housekeeping tests, but one run encountered a failure in the **Save reproducible generated site** stage during overlapping branch pushes. This is a GitHub Actions concurrency/workflow issue, not evidence of a content error. Later branch builds must be checked separately before publication. Do not claim a live deployment until the main branch generates the content and Pages deploys it.
