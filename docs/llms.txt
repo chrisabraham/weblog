@@ -20,6 +20,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Google Abhors a Vacuum](https://chrisabraham.net/2026/10/google-abhors-a-vacuum.html) (2026-10-17): Why silence leaves reputations vulnerable, how perception management builds a truthful public record, and where Google AI got the story wrong.
 - [Build a 2004 weblog with AI and GitHub Pages](https://chrisabraham.net/2026/10/build-a-2004-weblog-with-ai.html) (2026-10-17): How to build your own old school personal weblog with Claude Code, Codex, GitHub Pages and plain English prompts, inspired by chrisabraham.net.
 - [Put the Redlined Manuscripts on the Walls](https://chrisabraham.net/2026/10/put-the-redlined-manuscripts-on-the-walls.html) (2026-10-17): My friend Oliver Uberti helped create a writing room at 826DC where redlined manuscripts taught me to show my own revisions and AI collaborations.
 - [My AI Writers Keep Stealing My Best Material](https://chrisabraham.net/2026/10/my-ai-writers-keep-stealing-my-best-material.html) (2026-10-17): I assign stories to Claude, ChatGPT, and Codex, publish the prompts, invite disagreement, and obsess over prose that sounds human on my AImaxxed weblog.
@@ -44,7 +45,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 2 articles
+- [AI](https://chrisabraham.net/category/ai.html): 3 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -57,9 +58,11 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
+- [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 2 articles
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
-- [SEO](https://chrisabraham.net/category/seo.html): 4 articles
+- [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
+- [SEO](https://chrisabraham.net/category/seo.html): 5 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
