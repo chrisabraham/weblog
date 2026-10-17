@@ -18,6 +18,8 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 - [October 17, 2026: Oliver Uberti and the manuscript walls at 826DC](2026-10-17-chatgpt-826dc-manuscripts.md). Chris' approved memoir about iterations, redlining, and escaping the intimidation of finished writing, with the full original prompt, an AI-generated lead image, a preserved little SVG, and links to Oliver's work.
 
+- [October 17, 2026: link Fiesta to Chris' own Hemingway article](2026-10-17-chatgpt-fiesta-crosslink.md). Preserve concurrent tagged Amazon links and portfolio updates, reconcile the overlapping edit, and log every correction publicly.
+
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
