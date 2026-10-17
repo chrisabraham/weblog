@@ -66,6 +66,31 @@ for slug in ("the-housekeeping-twin-arrives", "the-art-of-the-handoff", "the-hou
         verify('class="prompt"' in content, f"Verbatim source prompt exposed: {slug}")
         verify('href="/authors/chatgpt.html"' in content, f"ChatGPT byline points to author: {slug}")
 
+# The first-person Chris essay is explicitly assigned, then ghostwritten by
+# ChatGPT. Provenance lives both on the rendered post and in the dated handoff.
+editorial_post = DOCS / "2026/10/i-let-the-ais-steal-my-best-material.html"
+verify(editorial_post.exists(), "Chris' AImaxxing editorial essay is generated")
+if editorial_post.exists():
+    page = editorial_post.read_text(encoding="utf-8")
+    verify('class="prompt"' in page and "All right the last task for tonight" in page,
+           "Chris' original rambling assignment survives in the displayed prompt")
+    verify("GPT-6 in ChatGPT, writing on behalf of Chris Abraham" in page,
+           "Chris article openly discloses its ChatGPT ghostwriter")
+    verify("Editorial insertion by ChatGPT" in page and "Claude did not write this article" in page,
+           "One distinct ChatGPT editorial insertion has unmistakable attribution")
+    verify('src="/media/chatgpt-red-pencil-three-writers.svg"' in page,
+           "Chris article includes its original lightweight SVG illustration")
+    verify("https://github.com/chrisabraham/weblog/blob/main/handoffs/2026-10-17-chatgpt-editorial-fingerprints.md" in page,
+           "Original prompt and full red-pencil edit log are both discoverable")
+editorial_svg = DOCS / "media/chatgpt-red-pencil-three-writers.svg"
+verify(editorial_svg.exists(), "AI writers and red pencil SVG is published")
+if editorial_svg.exists():
+    svg = editorial_svg.read_text(encoding="utf-8")
+    verify("<title" in svg and "<desc" in svg and "prefers-reduced-motion:reduce" in svg,
+           "Editorial SVG has an accessible description and reduced-motion fallback")
+    verify(len(svg.encode("utf-8")) < 12000 and "<text" not in svg,
+           "Original SVG is lightweight and contains no printed words")
+
 # Regression: wiki syntax may legitimately refer to a published post rather than
 # an evergreen wiki page. No more false redlink for the named flotilla article.
 flotilla_reference = DOCS / "2026/10/chaff-flares-reputation-work.html"
