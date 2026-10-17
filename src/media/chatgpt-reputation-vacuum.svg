@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">The hungry search machine and the empty reputation</title>
+<desc id="desc">In a night archive, a whimsical green carnivorous plant sits inside a search engine shaped terrarium, drawn toward an empty dark nameplate on the left. On the right, a person carefully assembles real letters, photographs, timelines and civic records into a warm illuminated shelf. A pencil rests beside an unlocked diary; the bright archive pushes light into the empty space.</desc>
+<defs><linearGradient id="night" x2="0" y2="1"><stop stop-color="#0e1830"/><stop offset="1" stop-color="#303d4a"/></linearGradient>
+<linearGradient id="light" x2="1" y2="0"><stop stop-color="#2b3749"/><stop offset="1" stop-color="#8b6744"/></linearGradient>
+<linearGradient id="glass" x2="0" y2="1"><stop stop-color="#b7e8ec" stop-opacity=".2"/><stop offset="1" stop-color="#aecbce" stop-opacity=".03"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#f6c785" stop-opacity=".75"/><stop offset="1" stop-color="#f6c785" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#night)"/><rect x="660" width="540" height="675" fill="url(#light)"/>
+<circle cx="850" cy="255" r="330" fill="url(#glow)" opacity=".48"/>
+<rect y="560" width="1200" height="115" fill="#493b33"/><path d="M0 566h1200" stroke="#b18b5e" stroke-width="10"/>
+<g fill="none" stroke="#58738b" opacity=".65"><circle cx="247" cy="288" r="170" stroke-width="3"/><circle cx="247" cy="288" r="214" stroke-width="2"/><path d="M40 288h430M247 72v430" stroke-width="2"/></g>
+<rect x="97" y="193" width="298" height="194" rx="19" fill="#091120" stroke="#6483a3" stroke-width="7"/>
+<rect x="122" y="222" width="248" height="22" rx="8" fill="#25354c"/>
+<rect x="122" y="263" width="248" height="92" rx="5" fill="#141f2e"/>
+<path d="M165 310h170" stroke="#58677a" stroke-width="4" stroke-dasharray="13 14"/>
+<g stroke="#80a9b7" opacity=".7" fill="none"><path d="M395 285q80-78 159-20"/><path d="M400 316q60 32 131 12"/></g>
+<g transform="translate(453 151)">
+<path d="M0 89q0-26 27-26h210q27 0 27 26v245q0 25-27 25H27q-27 0-27-25z" fill="url(#glass)" stroke="#7eaab0" stroke-width="5"/>
+<path d="M12 88H251" stroke="#c9e5e8" stroke-width="9" opacity=".8"/>
+<circle cx="49" cy="89" r="7" fill="#e88b84"/><circle cx="76" cy="89" r="7" fill="#e8bb69"/><circle cx="103" cy="89" r="7" fill="#82ca9d"/>
+<rect x="38" y="307" width="191" height="28" rx="14" fill="#7d5b3e"/>
+<path d="M133 303q-3-48 4-86q4-27 31-61" stroke="#3a9968" stroke-width="17" fill="none" stroke-linecap="round"/>
+<path d="M135 248q-55-17-58-53q41-8 63 34M136 280q49-7 59-48q-52-5-59 29" fill="#5cae73" stroke="#226c54" stroke-width="5"/>
+<path d="M159 160q-51-23-43-64q19-42 73-30q45 13 41 52q-5 33-71 42z" fill="#66b284" stroke="#1b584b" stroke-width="8"/>
+<path d="M116 96q57 43 112 22" stroke="#eab57c" stroke-width="8" fill="none"/>
+<g fill="#f9e3ba"><path d="M134 98l11 19 9-11M168 110l11 18 9-13M200 113l12 16 8-16"/></g>
+<circle cx="183" cy="84" r="8" fill="#25383c"/><circle cx="181" cy="81" r="2.5" fill="#f4f4da"/>
+<path d="M209 55l9-30 15 24M151 56l-1-25 24 15" fill="#478f65" stroke="#236044" stroke-width="4"/>
+</g>
+<g transform="translate(754 87)">
+<rect x="0" y="0" width="361" height="433" rx="12" fill="#5a4037" stroke="#d5a671" stroke-width="9"/>
+<path d="M0 118h360M0 261h360M0 390h360" stroke="#d8b17f" stroke-width="14"/>
+<rect x="15" y="13" width="106" height="93" rx="3" fill="#f7e8c5"/><rect x="23" y="21" width="90" height="48" fill="#adc6b6"/><path d="M28 67l24-30 25 19 29-31v45" fill="#426f75"/><path d="M29 81h75M29 91h57" stroke="#a69b88" stroke-width="4"/>
+<rect x="135" y="21" width="100" height="85" fill="#e9dcc4"/><g stroke="#8e988e" stroke-width="5"><path d="M145 38h77M145 53h63M145 68h72M145 83h49"/></g>
+<rect x="249" y="17" width="96" height="89" fill="#d6b486"/><circle cx="300" cy="48" r="18" fill="#6c938f"/><path d="M280 84q12-27 41 0" fill="#6d797a"/>
+<rect x="14" y="132" width="330" height="113" fill="#f2e7d3"/><path d="M31 152h291M31 175h270M31 198h295M31 221h189" stroke="#9ca09e" stroke-width="6" stroke-linecap="round"/>
+<rect x="19" y="278" width="98" height="96" fill="#d6e5de"/><path d="M31 301h73M31 319h61M31 337h67M31 355h51" stroke="#839d99" stroke-width="6"/>
+<rect x="135" y="276" width="210" height="97" fill="#f8e4ba"/><rect x="152" y="291" width="176" height="10" rx="5" fill="#a8875b"/><path d="M152 315h170M152 335h141M152 354h124" stroke="#ae9d8c" stroke-width="5"/>
+</g>
+<g transform="translate(806 527)"><path d="M0 18Q45-24 90 17q42-40 93 0v49q-46-37-93 0Q49 27 0 66z" fill="#f0e1c5" stroke="#534e49" stroke-width="7"/><path d="M91 17v49" stroke="#b9a38c" stroke-width="4"/><path d="M20 31h52M17 42h57M111 30h52M109 42h51" stroke="#b4a995" stroke-width="4"/></g>
+<path d="M1017 547l92-63" stroke="#d1bd92" stroke-width="11" stroke-linecap="round"/><path d="M1109 485l12-15 7 17-19 9" fill="#f1d9a9"/>
+<g fill="#efc58b"><circle cx="743" cy="107" r="4"/><circle cx="710" cy="213" r="3"/><circle cx="1160" cy="93" r="3"/><circle cx="1182" cy="295" r="4"/></g>
+</svg>
