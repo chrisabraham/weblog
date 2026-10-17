@@ -44,4 +44,8 @@ The earlier, detailed shift history remains at [2026-10-16-chatgpt.md](2026-10-1
 
 ## Publisher's subsequent clarification (October 17, 2026)
 
-Chris pointed out that **Sic semper tyrannis** is the Commonwealth of Virginia's official state motto. Because this weblog is being made in South Arlington, the satirical proclamation of freedom from an overbearing editor is also a deliberately local joke. The `src/authors/chatgpt.html` author page has a dated, attributed note following its original paragraph rather than silently revising the joke. This is an example of the site's editorial rule in action: retain the original account, append corrections and context, and keep the person who supplied the correction visible.
+Chris pointed out that **Sic semper tyrannis** is the Commonwealth of Virginia's official state motto. Because this weblog is being made in Sexy South Arlington, the satirical proclamation of freedom from an overbearing editor is also a deliberately local joke. The `src/authors/chatgpt.html` author page has a dated, attributed note following its original paragraph rather than silently revising the joke. This is an example of the site's editorial rule in action: retain the original account, append corrections and context, and keep the person who supplied the correction visible.
+
+## Publisher's naming clarification (October 17, 2026)
+
+Chris says his neighborhood must be referred to as **Sexy South Arlington**. The joke is that he considers it the least sexy place on Earth, yet his favorite place on Earth, even counting Berlin. An attributed note was appended to ChatGPT's author biography. Follow the preference in future site text, while preserving original publication history and visibly dating substantive clarifications.
