@@ -720,32 +720,28 @@ def main():
         sitemap.append((p["path"], p["updated"]))
 
     # Monthly and category archives are navigable collections of article teasers.
-    # Index collections and include their canonical URLs at the publisher's request.
+    # They remain noindex/follow because permalink pages carry the full articles.
     months = {}
     for p in posts:
         months.setdefault(f"{p['when']:%Y/%m}", []).append(p)
     for key, ps in months.items():
         label = f"{ps[0]['when']:%B %Y}"
-        write(f"/{key}/index.html", page(title=f"Posts from {label}", seo_title=f"{label} Articles from Chris Abraham's Weblog", description=f"Every post on Chris Abraham's weblog from {label}, about Blackbox, Claude Code, AI tools, and client work, written by AI from his prompts.",
-              path=f"/{key}/index.html", body=f'<h1 class="page-title">{label}</h1>' + by_day(ps).replace('<h2 class="date-header">', f'<h2 class="date-header">{label} archive: '),
-              **P))
-        sitemap.append((f"/{key}/", max(p["updated"] for p in ps)))
+        write(f"/{key}/index.html", page(title=f"Posts from {label}", description=f"Every post on Chris Abraham's weblog from {label}, about Blackbox, Claude Code, AI tools, and client work, written by AI from his prompts.",
+              path=f"/{key}/index.html", body=f'<h1 class="page-title">{label}</h1>' + by_day(ps, full=True),
+              noindex=True, **P))
     cats = {}
     for p in posts:
         for c in p["cats"]:
             cats.setdefault(c, []).append(p)
     for c, ps in cats.items():
-        suffixes = [" Articles and Notes from Chris Abraham's Weblog", " Articles from Chris Abraham's Weblog", " Articles from the AI Written Weblog", " Articles from the AI Weblog"]
-        seo = next(c + suffix for suffix in suffixes if 45 <= len(c + suffix) <= 60 and px(c + suffix, 20) <= 561)
-        write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", seo_title=seo, description=f"Every post on Chris Abraham's weblog filed under {c}, newest first, written by AI from his prompts and showing each prompt.",
+        write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", description=f"Every post on Chris Abraham's weblog filed under {c}, newest first, written by AI from his prompts and showing each prompt.",
               path=f"/category/{slugify(c)}.html",
               body=(f'<h1 class="page-title">Filed under {e(c)}</h1>'
                     f'<p class="lede"><a href="/categories.html">Browse all categories</a> · {len(ps)} article{"s" if len(ps) != 1 else ""}</p>'
-                    + by_day(ps).replace('<h2 class="date-header">', f'<h2 class="date-header">{e(c)}: ')),
-              **P))
-        sitemap.append((f"/category/{slugify(c)}.html", max(p["updated"] for p in ps)))
+                    + by_day(ps)),
+              noindex=True, **P))
     # A single indexable category directory creates a durable nav destination.
-    # Member archives are indexable and included once by canonical URL.
+    # The member archives are live, human-readable, and intentionally noindex.
     cat_rows = "".join(
         f'<li><a href="/category/{slugify(c)}.html">{e(c)}</a> '
         f'<small>({len(ps)} article{"s" if len(ps) != 1 else ""})</small></li>'
@@ -937,8 +933,6 @@ def main():
                          noindex=f.stem == "404", **P))
         if f.stem != "404":
             sitemap.append((path, None))
-
-    sitemap = list(dict(sitemap).items())
 
     # Separate alphabetical references for readers; all share the XML sitemap inventory.
     from tools.reference_pages import build_reference_pages
