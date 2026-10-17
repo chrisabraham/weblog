@@ -54,3 +54,14 @@ The public prompt is verbatim, including garbled words. The prose interprets the
 ### QA status and reproducibility
 
 Early branch runs built successfully and passed the content audit and housekeeping tests, but one run encountered a failure in the **Save reproducible generated site** stage during overlapping branch pushes. This is a GitHub Actions concurrency/workflow issue, not evidence of a content error. Later branch builds must be checked separately before publication. Do not claim a live deployment until the main branch generates the content and Pages deploys it.
+
+## Post-merge publication evidence
+
+- **PR:** [#8](https://github.com/chrisabraham/weblog/pull/8), merged to `main` at `1f5d0fda35f859f584922a530cac77fa5d0eb8c0`.
+- **Latest fully committed branch audit:** [GitHub Actions 39004301345](https://github.com/chrisabraham/weblog/actions/runs/39004301345), success. The earlier build 39004250850 failed only in the generated-output commit stage due to competing writes; its generation, original site audit, and housekeeping checks all passed, and subsequent runs passed.
+- **Main build and site audit:** [GitHub Actions 39004335891](https://github.com/chrisabraham/weblog/actions/runs/39004335891), success.
+- **Pages publication:** [GitHub Pages 39004335594](https://github.com/chrisabraham/weblog/actions/runs/39004335594), successful build and deployment.
+- **Generated HTML inspected on `main`:** `docs/2026/10/my-ai-writers-keep-stealing-my-best-material.html` includes the Chris author link, the actual model credit, the prompt with original assignment and follow-up messages, the explicit ChatGPT aside, updated publication date, and the SVG image. The separate `docs/media/ai-writers-editorial-table.svg` file was verified at 5,078 bytes.
+- **Live custom-domain visual QA:** Not tested in a real browser through this connector; deployment and source-output verification are supported, but neither alone certifies UX or WCAG compliance.
+
+This publication note was appended rather than rewriting earlier handoff claims. Future editors can inspect both the writing and its editorial process.
