@@ -175,6 +175,9 @@ def load_posts():
 
 
 REPO = "https://github.com/chrisabraham/weblog"
+# Link titles in wiki-style notation can refer to canonical posts as well as wiki pages.
+# Resolve post targets to their actual permalink, not an unrelated wiki index.
+POST_LINKS = {}
 WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
 
 
@@ -201,7 +204,9 @@ def wikilinks(body, wiki, found):
         slug = slugify(target)
         found.add(slug)
         if slug in wiki:
-            return f'<a href="/wiki/{slug}.html" class="wikilink">{text}</a>'
+            return f'<a href="/wiki/{slug}.html" class="wikilink">{e(text)}</a>'
+        if slug in POST_LINKS:
+            return f'<a href="{POST_LINKS[slug]}" class="postlink">{e(text)}</a>'
         return f'<a href="/wiki/" class="wikilink new" title="{e(target)} (page does not exist yet)">{text}</a>'
     return WIKILINK.sub(sub, body)
 
@@ -638,6 +643,8 @@ def main():
     PERSON["sameAs"] = [x["url"] for g in site["elsewhere"] for x in g["links"]
                         if "calendly" not in x["url"] and "slowjogging" not in x["url"]]
     posts = load_posts()
+    POST_LINKS.clear()
+    POST_LINKS.update({slugify(p["title"]): p["path"] for p in posts})
     wiki = load_wiki()
     site["_wiki"] = wiki
     links_to = {}  # slug -> list of (title, path) that link to it
