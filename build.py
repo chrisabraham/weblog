@@ -848,9 +848,19 @@ def main():
     # Feeds and machine files
     write("/rss.xml", rss(posts))
     write("/blogroll.opml", opml(site))
+    def images_for(path):
+        """Every image on the page, plus its share card, for Google Images and AI crawlers."""
+        f = OUT / (path.lstrip("/") + ("index.html" if path.endswith("/") else ""))
+        if not f.exists():
+            return ""
+        t = f.read_text(encoding="utf-8")
+        srcs = re.findall(r'<img[^>]+src="(/media/[^"]+)"', t) + re.findall(r'<meta property="og:image" content="([^"]+)"', t)
+        seen = dict.fromkeys(s if s.startswith("http") else SITE_URL + s for s in srcs)
+        return "".join(f"<image:image><image:loc>{u}</image:loc></image:image>" for u in seen)
     write("/sitemap.xml", "".join([
-        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n',
-        *(f"<url><loc>{SITE_URL}{p}</loc>{f'<lastmod>{d.date()}</lastmod>' if d else ''}</url>\n" for p, d in sitemap),
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n',
+        *(f"<url><loc>{SITE_URL}{p}</loc>{f'<lastmod>{d.date()}</lastmod>' if d else ''}{images_for(p)}</url>\n" for p, d in sitemap),
         "</urlset>\n"]))
     write("/robots.txt", ROBOTS.replace("{SITE}", SITE_URL))
     write("/llms.txt", llms(posts, site, full=False))
