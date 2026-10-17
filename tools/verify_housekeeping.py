@@ -118,6 +118,33 @@ if redlined.exists():
            "Affiliate book links and the disclosure follow the existing house rule")
     verify("GPT-6 in ChatGPT" in text826 and 'href="/authors/chris-abraham.html"' in text826,
            "Oliver memoir has Chris' byline and ChatGPT's disclosed writing role")
+
+    # The visible italicized book titles themselves lead to the publisher's
+    # tagged Amazon listings; the British Fiesta title links to Chris' own essay.
+    book_titles = {
+        "London: The Information Capital": "0141978791",
+        "Where the Animals Go": "0393634027",
+        "Atlas of the Invisible": "0393651517",
+        "Atlas of Finance": "0300253052",
+        "Notes from a Public Typewriter": "1538729113",
+        "The Hidden Nations of Animals": "0593716841",
+        "The Sun Also Rises": "0743297334",
+    }
+    for book_title, asin in book_titles.items():
+        linked = (f'<a href="https://www.amazon.com/dp/{asin}?tag=gerris-20" '
+                  f'rel="sponsored noopener"><i>{book_title}</i></a>')
+        if book_title == "The Sun Also Rises":
+            linked = linked.replace("<i>", "<em>").replace("</i>", "</em>")
+        verify(linked in text826, f"Named book title itself carries the tagged Amazon link: {book_title}")
+    verify('<a href="https://chrisabraham.com/blog/fiesta-the-sun-also-rises-by-ernest-hemingway/"><em>Fiesta</em></a>' in text826,
+           "Fiesta title leads directly to Chris' own Hemingway essay")
+    verify('href="https://www.christies.com/en/lot/lot-3918708"' not in text826
+           and 'href="https://www.loa.org/books/the-annotated-sun-also-rises/"' not in text826,
+           "Obscure and mistaken book-title links have been replaced")
+    verify("FOLLOW-UP 16, VERBATIM" in text826
+           and "Update, October 17, 2026, 2:36 AM EDT" in text826,
+           "Original new editor instructions and dated editorial correction remain visible")
+
 verify((DOCS / "media/826dc-redlined-manuscripts.svg").exists(),
        "Saved original manuscript gallery SVG is present")
 lead_image = DOCS / "media/826dc-full-essay.avif"
