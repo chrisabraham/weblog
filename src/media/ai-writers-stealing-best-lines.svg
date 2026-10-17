@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+<title id="title">The editor hands over his best lines</title>
+<desc id="description">An eccentric vintage newspaper office in warm midnight colors. A human hand at the left writes assignments with a red fountain pen. Three friendly mechanical typewriter birds at the right turn the borrowed red ink into separate printed pages. Copper tubes carry the ink through a transparent glass panel where the whole editorial process remains visible. A tiny amber light winks above the printing press. A lotus grows out of a stack of archived papers.</desc>
+<defs>
+<pattern id="paper-grain" width="31" height="31" patternUnits="userSpaceOnUse"><circle cx="6" cy="9" r="1" fill="#987957" opacity=".15"/><circle cx="22" cy="23" r=".8" fill="#987957" opacity=".18"/></pattern>
+<linearGradient id="night" x2=".9" y2="1"><stop stop-color="#1c3040"/><stop offset="1" stop-color="#293f46"/></linearGradient>
+<linearGradient id="light" x2="1" y2="1"><stop stop-color="#f5d19a"/><stop offset="1" stop-color="#bd8058"/></linearGradient>
+<style>
+.ink-flow{stroke-dasharray:7 17;animation:flow 11s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-144}}
+.lamp{animation:blink 8s ease-in-out infinite}
+@keyframes blink{0%,87%,100%{opacity:.8}90%,94%{opacity:.2}}
+@media(prefers-reduced-motion:reduce){.ink-flow,.lamp{animation:none}}
+</style>
+</defs>
+<rect width="1200" height="675" rx="14" fill="url(#night)"/>
+<rect x="24" y="24" width="1152" height="627" rx="10" fill="none" stroke="#bb9a6b" stroke-width="3" stroke-dasharray="1 9" opacity=".6"/>
+<rect x="39" y="34" width="1122" height="610" rx="5" fill="url(#paper-grain)"/>
+<!-- Paperwork hanging from clothesline. No text is required to read this drawing. -->
+<path d="M98 110Q589 67 1090 112" fill="none" stroke="#ad8970" stroke-width="3"/>
+<g stroke="#ad8970" stroke-width="3" fill="#f2e3c6" transform="rotate(-4 209 136)"><rect x="171" y="109" width="99" height="79" rx="2"/><path d="M188 132h61M188 145h48M188 158h55" stroke-width="4"/><path d="M213 100v14"/></g>
+<g stroke="#ad8970" stroke-width="3" fill="#f2e3c6" transform="rotate(5 980 142)"><rect x="927" y="104" width="107" height="80" rx="2"/><path d="M945 128h69M945 141h54M945 154h61" stroke-width="4"/><path d="M987 96v14"/></g>
+<!-- Press room panes, so the causal pipeline remains visible. -->
+<rect x="395" y="185" width="705" height="320" rx="15" fill="#37606b" fill-opacity=".28" stroke="#9baea6" stroke-width="7"/>
+<path d="M629 188v314M864 188v314" stroke="#9baea6" stroke-width="5" opacity=".55"/>
+<path d="M405 206L1082 490" stroke="#fff3d4" opacity=".14" stroke-width="18"/>
+<path d="M405 484L1092 218" stroke="#fff3d4" opacity=".1" stroke-width="12"/>
+<!-- Workbench and editor on the left. -->
+<path d="M69 491L1150 491L1180 528L40 528Z" fill="#986443"/>
+<rect x="53" y="528" width="1093" height="53" rx="5" fill="#7a4c38"/>
+<rect x="115" y="578" width="25" height="62" fill="#5e4033"/><rect x="1052" y="578" width="25" height="62" fill="#5e4033"/>
+<rect x="108" y="420" width="276" height="81" rx="4" fill="#f0e0bf" stroke="#795c45" stroke-width="4" transform="rotate(-5 246 458)"/>
+<g stroke="#c8b494" stroke-width="4" transform="rotate(-5 246 458)"><path d="M128 441h217M128 455h183M128 468h210"/></g>
+<!-- Hand and pen giving the writers the idea -->
+<path d="M0 333Q46 323 93 342L155 384Q164 389 177 382L234 356Q248 352 254 360Q261 371 244 386L181 425Q165 437 148 421L106 401L55 394L0 405Z" fill="#db9c75" stroke="#6b463b" stroke-width="6" stroke-linejoin="round"/>
+<path d="M164 419L243 292" stroke="#b82932" stroke-width="13" stroke-linecap="round"/>
+<path d="M241 290l18-20-7 30Z" fill="#d8b176" stroke="#6b463b" stroke-width="3"/>
+<circle cx="250" cy="285" r="6" fill="#c83836"/>
+<!-- Copper pipe carries borrowed ink into three separate authors. -->
+<path d="M260 280C355 238 376 261 440 253L1006 253" fill="none" stroke="#c78b58" stroke-width="26" stroke-linecap="round"/>
+<path class="ink-flow" d="M260 280C355 238 376 261 440 253L1006 253" fill="none" stroke="#a92a34" stroke-width="7" stroke-linecap="round"/>
+<path d="M530 253v38M762 253v38M997 253v38" stroke="#c78b58" stroke-width="19" stroke-linecap="round"/>
+<path d="M530 253v38M762 253v38M997 253v38" stroke="#a92a34" stroke-width="5" stroke-dasharray="7 10" stroke-linecap="round"/>
+<!-- Three charming, slightly different mechanical birds / printing instruments -->
+<g transform="translate(437 296)">
+<rect x="4" y="31" width="188" height="174" rx="18" fill="#e1c69d" stroke="#253a42" stroke-width="7"/>
+<path d="M27 68Q90 18 164 68" fill="#acc4b9" stroke="#253a42" stroke-width="6"/>
+<circle cx="73" cy="81" r="10" fill="#253a42"/><circle cx="122" cy="81" r="10" fill="#253a42"/>
+<path d="M94 94l16 9-16 11Z" fill="#b64b36"/>
+<path d="M18 117q-41 32 7 62M174 117q43 32-4 62" stroke="#253a42" stroke-width="7" fill="none"/>
+<rect x="27" y="138" width="143" height="43" rx="5" fill="#263d49"/>
+<g fill="#eed9ae"><circle cx="49" cy="152" r="5"/><circle cx="74" cy="152" r="5"/><circle cx="98" cy="152" r="5"/><circle cx="125" cy="152" r="5"/><circle cx="150" cy="152" r="5"/></g>
+</g>
+<g transform="translate(668 298)">
+<rect x="4" y="29" width="188" height="173" rx="15" fill="#99b8b5" stroke="#233c48" stroke-width="7"/>
+<path d="M27 66Q95 1 169 68" fill="#f5e3c2" stroke="#253a42" stroke-width="6"/>
+<circle cx="71" cy="82" r="9" fill="#253a42"/><circle cx="124" cy="82" r="9" fill="#253a42"/>
+<path d="M97 92l16 10-16 10Z" fill="#b64b36"/>
+<path d="M18 116q-45 37 4 60M174 116q40 32-5 61" stroke="#253a42" stroke-width="7" fill="none"/>
+<rect x="29" y="138" width="139" height="43" rx="5" fill="#263d49"/>
+<g fill="#eed9ae"><rect x="44" y="147" width="13" height="10" rx="2"/><rect x="66" y="147" width="13" height="10" rx="2"/><rect x="88" y="147" width="13" height="10" rx="2"/><rect x="110" y="147" width="13" height="10" rx="2"/><rect x="132" y="147" width="13" height="10" rx="2"/></g>
+</g>
+<g transform="translate(903 293)">
+<rect x="4" y="34" width="188" height="176" rx="18" fill="#cfaa90" stroke="#253a42" stroke-width="7"/>
+<path d="M28 66Q83 16 166 69" fill="#d7d8bb" stroke="#253a42" stroke-width="6"/>
+<circle cx="70" cy="84" r="10" fill="#253a42"/><circle cx="123" cy="84" r="10" fill="#253a42"/>
+<path d="M96 96l16 10-16 10Z" fill="#b64b36"/>
+<path d="M18 123q-39 28 6 56M174 123q44 31-6 55" stroke="#253a42" stroke-width="7" fill="none"/>
+<rect x="30" y="144" width="136" height="43" rx="5" fill="#263d49"/>
+<g stroke="#eed9ae" stroke-width="5"><path d="M45 156h19M73 156h19M101 156h19M129 156h19"/></g>
+</g>
+<!-- Three completely separate galleys, each bearing the original red ink. -->
+<g stroke="#5c5145" stroke-width="3" fill="#f9edd5">
+<path d="M471 470h124v113h-124z" transform="rotate(-6 530 515)"/>
+<path d="M705 472h124v108h-124z" transform="rotate(3 766 528)"/>
+<path d="M940 472h124v115h-124z" transform="rotate(-3 1000 526)"/>
+</g>
+<g stroke="#a92a34" stroke-width="6" stroke-linecap="round"><path d="M493 506h62M493 520h72M724 505h71M724 522h51M962 505h63M962 520h70"/></g>
+<g stroke="#86928b" stroke-width="4" stroke-linecap="round"><path d="M493 536h80M493 550h58M724 537h80M724 552h60M962 536h80M962 551h53"/></g>
+<!-- Lotus from an archive, tucked away as a small private joke. -->
+<g transform="translate(257 549)">
+<rect x="-60" y="-9" width="122" height="22" rx="2" fill="#f3e6cc" stroke="#6f5743" stroke-width="3"/>
+<rect x="-55" y="13" width="119" height="22" rx="2" fill="#dfc69d" stroke="#6f5743" stroke-width="3"/>
+<path d="M0 -9C-7 -53 -7 -72 0 -92C10 -61 11 -36 0 -9" fill="#e7bd83" stroke="#548579" stroke-width="3"/>
+<path d="M0 -9C-30 -53 -47 -58 -52 -65C-43 -26 -24 -16 0 -9M0 -9C30 -53 47 -58 52 -65C43 -26 24 -16 0 -9" fill="#96b8a1" stroke="#548579" stroke-width="3"/>
+</g>
+<circle class="lamp" cx="1096" cy="205" r="8" fill="#f6b24c"/>
+<circle cx="1096" cy="205" r="16" fill="none" stroke="#f6b24c" opacity=".3" stroke-width="4"/>
+<!-- Subtle hand-drawn engraved border -->
+<path d="M62 615q70-23 140 0M985 615q70-23 140 0" fill="none" stroke="#d2a176" stroke-width="3" opacity=".55"/>
+</svg>
