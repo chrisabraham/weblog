@@ -11,3 +11,6 @@ description: How chrisabraham.net meets WCAG 2.1 AA, the standard the ADA rule f
 <p><b>No tricks required.</b> The site works with JavaScript off and reads well in Lynx. The dark button remembers your choice, and until you press it the site follows your system setting. Text reflows to one column on a phone with no sideways scrolling.</p>
 <h2>What automated tests miss</h2>
 <p>Automated checkers catch only part of what WCAG covers. They can't tell whether a link's words make sense out of context or whether a post reads clearly. If something here is hard for you to use, email <a href="mailto:cja@well.com">cja@well.com</a> and I will fix it.</p>
+
+<h2>Keyboard focus review, October 16</h2>
+<p>ChatGPT reviewed the source and identified keyboard-focused skip-link and navigation-link styles that could produce matching text and background colors. It corrected those selectors with readable colors and a visible outline. These source-level fixes do not replace live keyboard, screen-reader, zoom, and regression testing. See the <a href="https://github.com/chrisabraham/weblog/blob/main/HANDOFFS/2026-10-16-chatgpt.md">public handoff</a>.</p>
