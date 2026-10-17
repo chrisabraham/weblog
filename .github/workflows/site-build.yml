@@ -3,7 +3,8 @@
 name: Build and audit weblog
 on:
   push:
-    branches: [main, chatgpt-housekeeping-20261016]
+    # Future AI contributors get the same build checks on their working branches.
+    branches: ["**"]
     paths-ignore:
       - "docs/**"
   workflow_dispatch:
