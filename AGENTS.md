@@ -33,6 +33,21 @@ standalone SVG art assets together weighing only 34,672 bytes. Preserve working
 accessibility, feeds, archives, provenance and useful metadata: simplifying
 means subtracting friction, not discarding capabilities.
 
+## Raster compression and lightweight publishing
+
+This is a personal weblog with charming art, **not a photography portfolio**.
+Existing publisher-supplied photographs and earlier bitmap illustrations may
+be compressed firmly as lossy WebP. Quality need only be professionally
+acceptable: visible colour blotches, heavy blockiness, severe pixelation,
+unreadable image details or distracting GIF-like rendering mean quality is
+too low; pristine 24-bit archival fidelity is not the goal. Test on mobile
+and desktop at the actual displayed sizes. Keep original master files in
+`src/media/` and use generated WebP derivatives in the published HTML,
+RSS, Atom and image sitemap. Compress legacy JPEG URLs for continuity.
+Retain social share-card formats compatible with social platforms, and
+keep factual screenshots and diagrams legible. New editorial image defaults
+remain quirky SVG doodles unless Chris explicitly requests raster artwork.
+
 ## New artwork house rule (October 17, 2026)
 New editorial illustrations and doodles must be original, quirky, hand-coded or AI-authored **SVG vector graphics** by default. The visual idiom is playful, slightly eccentric, 2003–2006-web, and low-bandwidth, while the markup and accessibility are modern. Prefer small stand-alone SVGs under `src/media/`, using descriptive `<title>`/`<desc>` where applicable, appropriate `viewBox`, and meaningful HTML `alt` text and illustration attribution. Keep paths and markup economical, check reduced motion for animation, and avoid embedded raster data. **Do not introduce new JPEG, PNG, WebP, AVIF or photographic/editorial bitmaps unless Chris explicitly supplies or requests them.** This rule governs *new editorial art*, not existing illustrations, necessary favicons, machine-generated OG/social share-card bitmaps or a publisher-provided screenshot used for evidence. Preserve the existing art rather than replacing it gratuitously.
 
