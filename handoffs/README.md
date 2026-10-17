@@ -14,6 +14,8 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 - [October 17, 2026: Chris' AImaxxing editorial ethos](2026-10-17-chatgpt-chris-ai-maxxing-editorial.md). First-person article written by ChatGPT on behalf of Chris, with verbatim prompt, a lightweight SVG newsroom illustration, model provenance, and publishing checks.
 
+- [October 17, 2026: EXPERIMENTAL on the fuselage](2026-10-17-chatgpt-experimental-aircraft.md). All six of Chris' verbatim remarks about experimental aircraft, homemade versus commercial manufacture, and experimental GitHub sites; a labelled assistant analogy and an intentionally unpublished draft.
+
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
