@@ -420,6 +420,11 @@ verify(not broken, f"Generated internal links resolve ({len(broken)} broken): {b
 verify(not missing_alts, f"Images have nonempty alt attributes ({len(missing_alts)} missing): {missing_alts[:8]}")
 verify(not invalid_schema, f"JSON-LD parses ({len(invalid_schema)} invalid): {invalid_schema[:8]}")
 
+# Strip only a directory index filename, never the end of site-index.html.
+verify('<link rel="canonical" href="https://chrisabraham.net/site-index.html">' in
+       (DOCS / "site-index.html").read_text(encoding="utf-8"),
+       "Subject index canonical preserves its full filename")
+
 print(f"Housekeeping checks: {len(checks)} assertions across {len(list(DOCS.rglob('*.html')))} HTML pages.")
 for label in checks:
     print(("FAIL" if label in errors else "PASS") + " " + label)

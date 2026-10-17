@@ -357,7 +357,7 @@ def make_card(path, title, kicker):
 
 def page(*, title, description, path, body, site, posts, schema=None,
          noindex=False, og_type="website", extra_head="", seo_title=None, kicker=None):
-    canonical = SITE_URL + path.replace("index.html", "")
+    canonical = SITE_URL + (path[:-10] if path.endswith("/index.html") else path)
     full_title = HOME_TITLE if path == "/index.html" else (seo_title or title)
     if not noindex:
         tw, dw = px(full_title, 20), px(description, 13)
