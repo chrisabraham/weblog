@@ -9,6 +9,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 import json
 import re
+import xml.etree.ElementTree as ET
 
 DOCS = Path(__file__).resolve().parent.parent / "docs"
 HOME = (DOCS / "index.html").read_text(encoding="utf-8")
@@ -169,6 +170,85 @@ verify('class="eai-lantern" aria-hidden="true"' in HOME,
 verify(".eai-lantern" in STYLE and "prefers-reduced-motion: no-preference" in STYLE,
        "Animated decorative lantern respects reduced motion")
 
+
+# Navigation, syndication, and machine-readable outputs must all be built from
+# the same published source set. These tests inspect generated files, not promises.
+verify('href="/categories.html">Categories</a>' in HOME,
+       "Categories has an ordinary accessible entry in the top navigation")
+verify('href="/atom.xml"' in HOME and 'type="application/atom+xml"' in HOME,
+       "Every page autodiscovers the real Atom 1.0 feed")
+verify('href="/feeds.opml"' in HOME and 'type="text/x-opml"' in HOME,
+       "Every page autodiscovers the full subscription OPML")
+verify('href="/rss.xml"' in HOME and 'href="/blogroll.opml"' in HOME,
+       "RSS and historic blogroll OPML autodiscovery survive")
+
+categories = DOCS / "categories.html"
+verify(categories.exists(), "The subject directory is an indexable real HTML page")
+if categories.exists():
+    categories_html = categories.read_text(encoding="utf-8")
+    directory_paths = set(re.findall(r'href="(/category/[a-z0-9-]+\.html)"', categories_html))
+    generated_categories = set("/"+str(p.relative_to(DOCS))
+                               for p in (DOCS / "category").glob("*.html"))
+    verify(directory_paths == generated_categories,
+           "Categories directory lists exactly the generated categories")
+    verify('name="robots" content="index, follow' in categories_html,
+           "Category index is indexable and the member excerpts remain navigable")
+    verify(all('name="robots" content="noindex, follow' in
+               (DOCS / p.lstrip("/")).read_text(encoding="utf-8")
+               for p in generated_categories),
+           "Category excerpt archives remain noindex to avoid duplicate pages")
+
+rss = ET.parse(DOCS / "rss.xml").getroot()
+atom = ET.parse(DOCS / "atom.xml").getroot()
+sitemap = ET.parse(DOCS / "sitemap.xml").getroot()
+blogroll = ET.parse(DOCS / "blogroll.opml").getroot()
+subscriptions = ET.parse(DOCS / "feeds.opml").getroot()
+rns = {"atom": "http://www.w3.org/2005/Atom",
+       "site": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+rss_urls = [x.findtext("link") for x in rss.findall("./channel/item")]
+atom_entries = atom.findall("atom:entry", rns)
+atom_urls = [x.findtext("atom:id", namespaces=rns) for x in atom_entries]
+verify(bool(rss_urls) and rss_urls == atom_urls,
+       "Atom and RSS contain identical articles in identical feed order")
+verify(all(x.findtext("atom:updated", namespaces=rns)
+           and x.findtext("atom:published", namespaces=rns)
+           and x.findtext("atom:content", namespaces=rns)
+           for x in atom_entries),
+       "Every Atom entry contains published/updated dates and full content")
+verify(atom.find("atom:link[@rel='self']", rns).attrib.get("href") ==
+       "https://chrisabraham.net/atom.xml",
+       "Atom advertises its canonical self URL")
+verify(blogroll.get("version") == "2.0" and subscriptions.get("version") == "2.0",
+       "Both OPML exports use the OPML 2.0 specification")
+imported = [x.attrib.get("xmlUrl") for x in blogroll.iter("outline") if x.attrib.get("xmlUrl")]
+all_imports = [x.attrib.get("xmlUrl") for x in subscriptions.iter("outline") if x.attrib.get("xmlUrl")]
+verify(set(imported).issubset(set(all_imports))
+       and {"https://chrisabraham.net/atom.xml", "https://chrisabraham.net/rss.xml"}.issubset(set(all_imports)),
+       "Complete OPML adds both own feeds without dropping any subscribed feed")
+sitemap_urls = {x.findtext("site:loc", namespaces=rns)
+                for x in sitemap.findall("site:url", rns)}
+verify("https://chrisabraham.net/categories.html" in sitemap_urls
+       and "https://chrisabraham.net/" in sitemap_urls,
+       "Sitemap includes indexable home and category directory")
+verify(set(rss_urls).issubset(sitemap_urls),
+       "Sitemap includes every article advertised in RSS and Atom")
+verify(not any("/category/" in x for x in sitemap_urls if x),
+       "Sitemap excludes noindex category archives")
+verify(len(sitemap_urls) == len(sitemap.findall("site:url", rns)),
+       "Sitemap contains no duplicate canonical URLs")
+for machine_path in ("llms.txt", "llms-full.txt"):
+    machine = (DOCS / machine_path).read_text(encoding="utf-8")
+    verify(all(x in machine for x in
+               ("/readme.html", "/categories.html", "/rss.xml", "/atom.xml",
+                "/feeds.opml", "/blogroll.opml", "/sitemap.xml")),
+           f"{machine_path} links to every current publishing/reading surface")
+    verify("## Categories" in machine and "mostly Claude" not in machine,
+           f"{machine_path} lists current categories without stale model claims")
+verify("Sitemap: https://chrisabraham.net/sitemap.xml" in
+       (DOCS / "robots.txt").read_text(encoding="utf-8"),
+       "robots.txt points to the current canonical sitemap")
+verify("100/100" not in HOME and "<b>WCAG</b>2.1 AA" not in HOME,
+       "Visual badges do not advertise unverified accessibility certification")
 
 # Internal links need a real on-disk destination, except fragment-only links.
 broken = []
