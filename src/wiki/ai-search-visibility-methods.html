@@ -1,0 +1,34 @@
+title: AI search visibility measurement methods
+seo_title: AI Search Visibility Measurement Methods
+description: Repeatable methodology for tracking named entities, competitor citations, factual errors and differences among AI search and answer services.
+updated: 2026-10-17
+categories: AI, Search, Measurement, Methods
+infobox_title: AI answer measurement
+info.Goal: Reproducible observations, not ranking promises
+info.Unit: Prompt, model, date and cited answer
+info.Comparison: Same questions across repeated runs
+info.Real dataset: [[AI visibility report]]
+---
+<p>This page describes how to measure whether an AI answer service mentions, accurately identifies and appropriately cites a person or organisation. It turns lessons from the <a href="/2026/10/five-live-sites-five-search-labs.html">five search laboratories</a> experiment and the <a href="/2026/10/what-claude-says-about-me.html">two-day Claude comparison</a> into a general method. The published [[AI visibility report]] contains one specific prompt set and its historical results; this reference explains how to design a comparable test for a different subject.</p>
+<h2>Design the fixed prompt set</h2>
+<p>Include several distinct intent types. <strong>Branded</strong> questions name the subject directly and ask about their identity, credentials or products. <strong>Nonbranded discovery</strong> questions ask who can solve the relevant problem without mentioning the subject. <strong>Comparative</strong> questions name a class of providers and ask for reasons to choose among them. <strong>Fact-check</strong> questions ask for specific projects, dates or affiliations whose correct answers are known from records.</p>
+<p>Freeze wording, order and classification during a measurement series. A wording change can alter which people are named, making before-and-after numbers incomparable. Publish the prompt text where permission and confidentiality allow it.</p>
+<h2>Capture each run</h2>
+<table><thead><tr><th>Field</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Date and model</td><td>Run time, provider, model or product surface, region when relevant.</td></tr>
+<tr><td>Prompt ID</td><td>Stable key and exact question used.</td></tr>
+<tr><td>Subject named?</td><td>Explicit name present, absent or unclear.</td></tr>
+<tr><td>Position</td><td>Order among named alternatives, when an ordered list exists.</td></tr>
+<tr><td>Citations</td><td>Exact linked sources and whether they support the specific claim.</td></tr>
+<tr><td>Claims</td><td>Factual statements extracted for verification against reliable evidence.</td></tr>
+<tr><td>Notes</td><td>Refusals, errors, ambiguities, namesake confusion and cost.</td></tr>
+</tbody></table>
+<p>Save the original answer where privacy and terms permit. A second AI model can extract structured names and claims, but spot-check the extraction manually. Extractors can miss names and treat confident speculation as a fact. Compare models and platforms separately. A web-search answer and an ordinary chat completion may rely on different source access.</p>
+<h2>Interpreting the metrics</h2>
+<p>A branded mention rate asks whether an engine can identify a specifically named subject. A nonbranded mention rate asks whether the subject appears when a relevant service or category is requested. A citation count asks which sources were used; it is not a count of endorsements. A higher number of mentions need not mean stronger evidence, and an accurate answer that does not name the subject may be appropriate.</p>
+<p>A single run is a snapshot. Repeated runs with stable wording can reveal changes, but outputs are stochastic and products change their retrieval systems and ranking logic. Test several times if a small difference would otherwise drive a costly decision. Keep error analysis separate from promotional visibility.</p>
+<h2>What to do with false claims</h2>
+<p>Trace the claim to its cited page when possible. Check original records and the official website. Correct an outdated biography or inaccurate public directory at the source. Add a dated correction to the primary website. Document misattribution to namesakes with occupation and organisational context. Do not try to control a model by publishing fabricated testimonials, impersonating sources or asserting facts that cannot be independently checked.</p>
+<h2>Publishing the results responsibly</h2>
+<p>Publish method, prompt count, questions, dates, models, important limitations and checks performed. Aggregate others' names where individual inclusion would disclose unnecessary personal information. Separate facts from interpretation and explain what cannot be inferred from the sample. Record API costs if relevant. Do not claim a causal ranking effect from a change observed in one run.</p>
+<p>Related references: [[AI visibility report]] for an implementation with sixteen questions, [[Connections]] for service access, [[Online perception management field guide]] for ongoing identity maintenance, and <a href="/2026/10/five-live-sites-five-search-labs.html">Five live sites, five search labs</a> for the original context.</p>
