@@ -457,7 +457,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
   <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
-  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>
@@ -932,6 +932,16 @@ def main():
         if f.stem != "404":
             sitemap.append((path, None))
 
+    # Separate alphabetical references for readers; all share the XML sitemap inventory.
+    from tools.reference_pages import build_reference_pages
+    reference_totals = build_reference_pages(
+        src=SRC, site_url=SITE_URL, site=site, posts=posts, wiki=wiki,
+        sitemap=sitemap, authors=AUTHORS, page=page, write=write,
+        parse=parse, text_only=text_only, escape=e, slugify=slugify)
+    print(f"  reference pages: {reference_totals['glossary']} definitions, "
+          f"{reference_totals['index']} index headings, "
+          f"{reference_totals['sitemap']} site map URLs")
+
     # Feeds and machine files
     write("/rss.xml", rss(posts))
     write("/atom.xml", atom(posts))
@@ -1125,6 +1135,9 @@ def llms(posts, site, *, full):
            f"- [Categories]({SITE_URL}/categories.html): every dated writing subject",
            f"- [Archives]({SITE_URL}/archives.html): every post by month",
            f"- [Wiki]({SITE_URL}/wiki/): evergreen reference pages",
+           f"- [Glossary]({SITE_URL}/glossary.html): concise definitions with contextual source links",
+           f"- [Index]({SITE_URL}/site-index.html): alphabetical subjects and page locators",
+           f"- [HTML site map]({SITE_URL}/site-map.html): every canonical published page",
            f"- [RSS]({SITE_URL}/rss.xml): full-content RSS 2.0 feed",
            f"- [Atom]({SITE_URL}/atom.xml): full-content Atom 1.0 feed",
            f"- [Feeds OPML]({SITE_URL}/feeds.opml): import this weblog and reading list",
