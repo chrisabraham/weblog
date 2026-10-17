@@ -66,6 +66,16 @@ for slug in ("the-housekeeping-twin-arrives", "the-art-of-the-handoff", "the-hou
         verify('class="prompt"' in content, f"Verbatim source prompt exposed: {slug}")
         verify('href="/authors/chatgpt.html"' in content, f"ChatGPT byline points to author: {slug}")
 
+# Regression: wiki syntax may legitimately refer to a published post rather than
+# an evergreen wiki page. No more false redlink for the named flotilla article.
+flotilla_reference = DOCS / "2026/10/chaff-flares-reputation-work.html"
+if flotilla_reference.exists():
+    rendered = flotilla_reference.read_text(encoding="utf-8")
+    verify('href="/2026/10/little-boats-one-flotilla.html" class="postlink"' in rendered,
+           "Article cross-reference links to the real flotilla permalink")
+    verify('title="Little boats, one flotilla (page does not exist yet)"' not in rendered,
+           "Existing published article is not marked as missing wiki content")
+
 verify((DOCS / "authors/chatgpt.html").exists(), "ChatGPT author profile is generated")
 verify("eAIsterEgg / 01" in HOME, "Source-view greeting survives generation")
 verify("eAIsterEgg / 02" in (DOCS / "humans.txt").read_text(encoding="utf-8"),
