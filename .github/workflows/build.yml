@@ -10,6 +10,8 @@ on:
       - "tools/**"
       - "fonts/**"
       - ".github/workflows/build.yml"
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
@@ -38,6 +40,7 @@ jobs:
       - name: Validate homepage, images, attribution and links
         run: python tools/test_regressions.py
       - name: Commit generated output and preserve evidence
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "weblog build automation"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
