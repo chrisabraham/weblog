@@ -118,6 +118,34 @@ if redlined.exists():
            "Affiliate book links and the disclosure follow the existing house rule")
     verify("GPT-6 in ChatGPT" in text826 and 'href="/authors/chris-abraham.html"' in text826,
            "Oliver memoir has Chris' byline and ChatGPT's disclosed writing role")
+# Chris' book-link rule: a visible book title, not a separate "Amazon" link,
+# is the affiliate link. Include the original Hemingway/Fiesta titles.
+if redlined.exists():
+    from html import unescape as unescape_text
+    tests_for_books = {
+        "The Sun Also Rises": "0743297334",
+        "Fiesta": "0099285037",
+        "London: The Information Capital": "0141978791",
+        "Where the Animals Go": "0393634027",
+        "Atlas of the Invisible": "0393651517",
+        "Atlas of Finance": "0300253052",
+        "Notes from a Public Typewriter": "1538729113",
+        "The Hidden Nations of Animals": "0593716841",
+    }
+    for title, asin in tests_for_books.items():
+        link = ('<a href="https://www.amazon.com/dp/' + asin +
+                '?tag=gerris-20" rel="sponsored noopener">')
+        verify(bool(re.search(re.escape(link) + r'(?:<(?:em|i)>)?' +
+                              re.escape(title) + r'(?:</(?:em|i)>)?</a>',
+                              text826)),
+               f"Book title {title} is an Amazon Associates link")
+    verify(not re.search(r'<a [^>]*>Amazon</a>', text826),
+           "Book sections no longer use detached Amazon text links")
+    verify("FOLLOW-UP 14, VERBATIM" in text826
+           and "FOLLOW-UP 15, VERBATIM" in text826
+           and "Update, October 17, 2026" in text826,
+           "Book-link correction retains publisher prompts and dated editorial note")
+
 verify((DOCS / "media/826dc-redlined-manuscripts.svg").exists(),
        "Saved original manuscript gallery SVG is present")
 lead_image = DOCS / "media/826dc-full-essay.avif"
