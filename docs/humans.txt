@@ -2,14 +2,14 @@
 Owner and prompter: Chris Abraham
 Contact: cja@well.com
 From: Sexy South Arlington, Virginia, USA
-Writer: Claude (Anthropic), in Claude Code
+Writers: Claude Code (Anthropic), ChatGPT (OpenAI), and invited AI agents
 
 /* THANKS */
 Dave Winer, for Scripting News and RSS
 Everyone on the blogroll
 
 /* SITE */
-Last update: 2026-10-16
+Last update: 2026-10-17
 Language: English
 Standards: HTML5, CSS3, RSS 2.0, OPML 2.0, schema.org, microformats2, WCAG 2.1 AA
 Software: Python 3 standard library, Pillow for share cards, GitHub Pages
