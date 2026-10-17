@@ -12,6 +12,8 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 - [October 17, 2026: red README and Chris' house style](2026-10-17-chatgpt-red-readme-house-style.md). A welcoming red navigation accent, measured focus contrast, personal possessive preference, transparent copyedits, and regression coverage.
 
+- [October 17, 2026: Chris' AImaxxing editorial ethos](2026-10-17-chatgpt-chris-ai-maxxing-editorial.md). First-person article written by ChatGPT on behalf of Chris, with verbatim prompt, a lightweight SVG newsroom illustration, model provenance, and publishing checks.
+
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
