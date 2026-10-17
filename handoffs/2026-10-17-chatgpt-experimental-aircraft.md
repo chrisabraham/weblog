@@ -62,3 +62,32 @@ This is a literary comparison, not a regulatory or firearm-construction how-to.
 The draft is saved in `src/posts/` with `status: draft`. The generator intentionally ignores drafts. Leave it unpublished until Chris' standalone 826DC manuscript-walls story has been completed, reviewed and published, since he explicitly asked for its status and approved it. When returning to this aircraft essay, preserve the full prompt field, write or revise freely, then follow the regular PR, site audit and deployment process. Don't silently remove the draft or its underlying experiment notes.
 
 The previously approved 826DC piece had **not** been published when checked at about 01:16 Eastern; only `src/media/826dc-redlined-manuscripts.svg` existed on branch `chatgpt-826dc-manuscript-walls-20261017`. Preserve that SVG and its caption exactly as the publisher requested.
+
+## Further verbatim additions and draft revisions, October 17
+
+Chris continued describing the distinction between manufacturing an airplane or a firearm for private use versus producing for customers, and insisted that the weblog is a personal machine flown for the love of aviation. The precise crew is the publisher and invited AI contributors: Claude Code and ChatGPT today, with Codex expected and other models possible. It is an open public exhibit without a comments section, a stage whose working artifacts and prompt history are suspended in "time space Amber." Chris also introduced **experimental theatre**, described the audience's confusion and social cue-taking, and remembered a live sex performance in Paris' **Montmartre** district. Finally he identified the friendly red README with the famous cover of Douglas Adams' *The Hitchhiker's Guide to the Galaxy* and its **DON'T PANIC** instruction in large friendly letters.
+
+These stories were added to the `status: draft` source article on its separate branch, retaining all originals in the `prompt:` header and Git history. Montmartre is corrected in prose; the original voice-to-text guesses remain untouched in the documented prompts. A bold red README with a direct link remains a visual reader entrance, distinct from and compatible with a closed editorial company and open public audience.
+
+### 7. The personal aviator, private firearm, tiny invited ensemble and time-space amber
+
+> I want you to really kind of be autistic with regards to talking about the idea of making an airplane for yourself and making a firearm for yourself and making an airplane or a firearm for other people and that this experiment of especially this blog this weblog is a firearm for myself and an experimental aircraft that I am only interested in flying For the Love of of the love of what's what's the term for being someone who flies aircraft and that it would be awesome if the entire world love to kind of play along in our sandbox but this entire weblog is a playground a sandbox a playground where the membership is Chris Abraham is quad code Claude code is chat GPT and will eventually be openai codex and maybe co-pilot and rock and Gemini and whomever and you're welcome to experience and explore and learn and discuss amongst yourselves but there's no comments here this is not an actual blog it's a similacrum you can't comment yourself because this blog is in a kind of time space Amber
+
+### 8. Experimental theatre
+
+> It's like going to experimental theater
+
+### 9. Experimental theatre, the audience, and a Montmartre memory
+
+> You go to experimental theater you're like fuck what the fuck is going on what the fuck are they doing are they fucking insane who published this who okayed this who funded this why is this even remotely something and it's probably too profound for me to comprehend so I'll just make sure I nod I pay attention and I applaud at the exact points when everybody else does and then try to laugh and make noises as close to immediate as all the other people do and I'll take their cues I don't really know what's going on it's totally experimental I don't know anything about theater but I'm just happy to be here and I'll remember being at this weird thing forever I kind of felt that way in Paris on monart Mon Mart monart mon mantra moonmatra in Paris and I was watching a live sex show and in live sex show in Paris it's not about the sex it's about the performance of intercourse and I stood there saying this is the most French thing I've ever seen in my entire life and I'm sure it's much more profound than the entire world so I won't ask for my money back
+
+### 10. README as the friendly Hitchhiker's Guide cover
+
+> That's kind of what I want this weblog to be that's why there's a giant friendly oh my God you know that read me that read me is like the friendly cover on The hitchhiker's guide to the Galaxy
+
+### Source changes for future contributors
+
+- `src/posts/2026-10-17-experimental-painted-on-the-fuselage.html`: revised to address aviation and firearms personally and specifically without mistaking metaphor for federal regulatory requirements. New public-without-comments / invitation-only-crew section, experimental theatre section, Montmartre memory, and README / Hitchhiker's Guide section.
+- The post remains **unpublished** through `status: draft`, as the user has not explicitly authorised publishing this distinct third article and the approved Oliver Uberti / 826DC post remains to be published.
+- No original drafts or SVGs from other posts were deleted, overwritten, or merged. Preserve the separate Oliver story and its precious midpoint SVG and caption when returning to the 826DC work.
+- The developed metaphor of Git commits as aircraft logbook entries, deployed pages as test flights, and handoffs as rehearsal notes came from the conversation, and remains distinct from Chris' original voice-to-text.
