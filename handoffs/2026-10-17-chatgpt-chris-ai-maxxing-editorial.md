@@ -65,3 +65,15 @@ Early branch runs built successfully and passed the content audit and housekeepi
 - **Live custom-domain visual QA:** Not tested in a real browser through this connector; deployment and source-output verification are supported, but neither alone certifies UX or WCAG compliance.
 
 This publication note was appended rather than rewriting earlier handoff claims. Future editors can inspect both the writing and its editorial process.
+
+## Further in-session final copyedit, October 17 at 00:56 local
+
+Chris continued to emphasize his preference for direct, unhedged prose, free of repetitive AI disclaimers and rhetorical "this is not that" formulas. Source inspection of the already published `src/posts/2026-10-17-my-ai-writers-keep-stealing-my-best-material.html` found exactly the offense he named: the paired sentences "Nobody needs to pretend..." in the authorship section, plus an apologetic "This is an affectionate observation, not a complaint" inside the one invited ChatGPT intervention.
+
+- Replaced the paired defensive sentences with direct statements about bylines, model credit, assignment and publication responsibility.
+- Tightened ChatGPT's finite aside; removed the defensive "not a complaint" and recursive self-commentary while retaining explicit `ChatGPT (GPT-6)` attribution.
+- Set `updated: 2026-10-17 00:56` and appended a dated correction note to the article. **Original `prompt:` and all editorial follow-ups remain verbatim.**
+- Preserved the alternative second version created concurrently on branch `chatgpt-ai-maxxing-editorial-ethos-20261017` as an alternate draft; its pull request [#9](https://github.com/chrisabraham/weblog/pull/9) was closed without merging because the primary version had already shipped via PR #8. Duplicate personal essays would confuse authorship, citations, and chronological history.
+- Conducted this fix as a focused branch `chatgpt-final-voice-tightening-20261017`. Check the pull request, release gate, and deployment results before reporting success.
+
+This editorial decision follows the site's transparency practice: the publisher's demand for revision, the precise reasons for editing, and previous versions are all available in public records.
