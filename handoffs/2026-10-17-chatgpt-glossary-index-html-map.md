@@ -46,3 +46,19 @@ After verifying a clean Actions build, merge PR to main, confirm GitHub Pages de
 The wiki is the changing reference shelf. The blog preserves dated editorial articles and human prompts. The glossary defines words in the fewest useful characters; the index is for finding where the subject appears; the HTML map is for seeing the actual page structure. Never allow them to become three redundant copies of the same paragraphs. Add a glossary entry only when it meaningfully helps explain a term found on the site. Page locators must be actual source mentions and the sitemap must always reflect live canonical page inventory. As new posts appear, index and HTML map update automatically. The glossary list remains a curated editorial source. New art remains SVG-first, lightweight and eccentric.
 
 Prior handoffs carry the repo architecture, testing requirements, accessibility rules, generative AI attribution and original 2003-web site design philosophy.
+
+
+## Publication and final verification
+
+Published via PR #23: https://github.com/chrisabraham/weblog/pull/23
+Squash merge: 4b1d9201b20178969d0f0d520c40ec9bf98c4dd5
+Latest source-branch audit: https://github.com/chrisabraham/weblog/actions/runs/39049899374 (success).
+GitHub Pages deployment: https://github.com/chrisabraham/weblog/actions/runs/39049958385 (success).
+Final generator: 83 definitions, 148 distinct index headings after removing misleading/duplicate candidates, 56 HTML/XML sitemap URLs, 22 RSS posts and 22 Atom entries.
+The complete run passed 107 regression assertions across 81 generated HTML pages, reported No issues. from the audit, and found zero broken generated internal links, zero missing image alternatives and zero invalid JSON-LD blocks.
+Canonicals:
+- https://chrisabraham.net/glossary.html
+- https://chrisabraham.net/site-index.html
+- https://chrisabraham.net/site-map.html
+Public external HEAD/GET checks could not run in the current environment because direct DNS/web fetch was inaccessible; deployment success was confirmed by GitHub Pages Actions and generated docs were independently checked in GitHub.
+IndexNow: the existing workflow is configured for diff-only submissions from main docs changes, but no accepted HTTP response or submitted URL count could be confirmed here. Codex should check whether IndexNow actually ran before marking that step complete. Do not claim success from a configuration file or Pages deployment alone.
