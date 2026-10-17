@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330" role="img" aria-labelledby="title desc">
+<title id="title">A tiny web publishing assistant</title><desc id="desc">A smiling beige computer with a green screen and keyboard accepts three friendly speech bubbles, then sends a new little house-shaped website into the world on a branching line. An orange star glows above it.</desc>
+<rect x="168" y="101" width="207" height="156" rx="21" fill="#eadfc9" stroke="#242932" stroke-width="8"/><rect x="189" y="120" width="164" height="113" rx="14" fill="#b1f5cc" stroke="#242932" stroke-width="7"/>
+<path d="M230 158v20m72-20v20" stroke="#242932" stroke-width="10" stroke-linecap="round"/><path d="M246 193q26 21 48 0" fill="none" stroke="#242932" stroke-width="7" stroke-linecap="round"/>
+<circle cx="216" cy="194" r="9" fill="#fbaeb9"/><circle cx="318" cy="194" r="9" fill="#fbaeb9"/><circle cx="342" cy="247" r="6" fill="#37a977"/>
+<rect x="194" y="261" width="155" height="19" rx="6" fill="#e2cfb3" stroke="#242932" stroke-width="6"/><path d="M169 288h207l23 24H148z" fill="#f4e5c8" stroke="#242932" stroke-width="7"/>
+<path d="M201 46C188 73 205 96 218 101M272 27C263 57 277 81 276 102M344 54C362 78 345 88 333 103" stroke-width="9" stroke-linecap="round" fill="none" stroke="#4aa7ca"/>
+<rect x="120" y="12" width="118" height="48" rx="22" fill="#8ee3f4" stroke="#242932" stroke-width="6"/><circle cx="152" cy="36" r="5"/><circle cx="178" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+<rect x="227" y="0" width="119" height="47" rx="22" fill="#d7b1fb" stroke="#242932" stroke-width="6"/><circle cx="259" cy="24" r="5"/><circle cx="285" cy="24" r="5"/><circle cx="311" cy="24" r="5"/>
+<rect x="332" y="22" width="109" height="49" rx="23" fill="#ffc4d6" stroke="#242932" stroke-width="6"/><circle cx="360" cy="46" r="5"/><circle cx="385" cy="46" r="5"/><circle cx="410" cy="46" r="5"/>
+<path d="M370 185h55v-24h33" stroke="#ec8b54" stroke-width="10" fill="none" stroke-linecap="round"/>
+<circle cx="425" cy="185" r="12" fill="#fac74c" stroke="#242932" stroke-width="5"/><circle cx="458" cy="161" r="12" fill="#79d6aa" stroke="#242932" stroke-width="5"/>
+<rect x="418" y="201" width="122" height="100" rx="9" fill="#f4fcff" stroke="#242932" stroke-width="7"/><rect x="418" y="201" width="122" height="19" rx="9" fill="#77c4ef"/>
+<path d="M437 255l42-29 43 29v23h-85z" fill="#f5a868" stroke="#242932" stroke-width="5"/><rect x="470" y="258" width="17" height="20" fill="#fff9d7"/>
+<path d="M55 132l18-30 18 30 30 18-30 17-18 32-18-32-30-17z" fill="#ffd862" stroke="#242932" stroke-width="6"/>
+<path d="M389 36l9-19 11 19 21 8-21 10-11 20-9-20-20-10z" fill="#ffdb65" stroke="#242932" stroke-width="5"/>
+<path d="M77 240h52M95 220v41" stroke="#8fcf9b" stroke-width="8" stroke-linecap="round"/>
+</svg>
