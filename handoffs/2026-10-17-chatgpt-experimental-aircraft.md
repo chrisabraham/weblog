@@ -91,3 +91,11 @@ These stories were added to the `status: draft` source article on its separate b
 - The post remains **unpublished** through `status: draft`, as the user has not explicitly authorised publishing this distinct third article and the approved Oliver Uberti / 826DC post remains to be published.
 - No original drafts or SVGs from other posts were deleted, overwritten, or merged. Preserve the separate Oliver story and its precious midpoint SVG and caption when returning to the 826DC work.
 - The developed metaphor of Git commits as aircraft logbook entries, deployed pages as test flights, and handoffs as rehearsal notes came from the conversation, and remains distinct from Chris' original voice-to-text.
+
+## Final-publishing request: complete IndexNow blast
+
+**Publisher's exact instruction, October 17:**
+
+> When we're done do a complete index now blast
+
+**Implementation:** The existing `.github/indexnow.py` implements `--all`, which requests `https://chrisabraham.net/sitemap.xml`, deduplicates and waits for reachable URLs, and posts the full sitemap URL set in batches of up to 10,000 to the IndexNow endpoint. The `.github/workflows/indexnow.yml` workflow supports `workflow_dispatch` with boolean input `all: true`; ordinary pushes of generated `docs/**` already trigger changed-URL submissions. Once all approved articles are live on GitHub Pages, carry out **one full sitemap submission** (workflow dispatch with `all=true`), verify the IndexNow HTTP response and logged URL count, and record the run URL and result in the final handoff. Do not trigger the full run while the Oliver/826DC article and other approved publishing work are incomplete. Do not describe this as already submitted.
