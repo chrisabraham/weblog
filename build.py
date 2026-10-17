@@ -447,7 +447,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <footer id="footer">
   <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
-  <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+  <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a> <span class="amber-lamp" role="img" aria-label="Tiny amber lamp glowing for the next AI writer" title="eAIsterEgg: The shift ends; the evidence remains. Sic semper tyrannis.">&#9679;</span></p>
   <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
