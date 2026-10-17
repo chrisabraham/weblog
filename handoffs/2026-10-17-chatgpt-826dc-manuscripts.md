@@ -48,3 +48,23 @@ These exact instructions are recorded in the post's prompt field and Git change 
 ## Publication evidence
 
 Pending final PR merge, main build, Pages deployment, RSS/Atom/sitemap checks, and full IndexNow run. Append results without rewriting this account.
+
+
+## Post-publication edit: book titles as Amazon Associates links
+
+**October 17, 2026, approximately 2:29 AM Eastern.** Publisher Chris Abraham asked that the names of all books, including Hemingway's *The Sun Also Rises* and its British *Fiesta* title, be direct Amazon Associates hyperlinks rather than sending readers to unrelated bibliographic records or having a detached "Amazon" link after each title. The exact wording of both publisher directives is appended to the article's original prompt field. This change uses Chris' existing \`gerris-20\` tag.
+
+The titles now have the following direct edition links, and the publishing tool continues to assign \`rel="sponsored noopener"\` and the disclosure:
+
+- The Sun Also Rises: Amazon ASIN 0743297334
+- Fiesta: Amazon ASIN 0099285037
+- London: The Information Capital: Amazon ASIN 0141978791
+- Where the Animals Go: Amazon ASIN 0393634027
+- Atlas of the Invisible: Amazon ASIN 0393651517
+- Atlas of Finance: Amazon ASIN 0300253052
+- Notes from a Public Typewriter: Amazon ASIN 1538729113
+- The Hidden Nations of Animals: Amazon ASIN 0593716841
+
+Direct links to Oliver's portfolio and 826 organizations remain visible in adjacent prose. The manuscript-redlining argument, personal story, memorial, article-wide image, and little SVG and caption remain intact. A dated on-page editorial update and source prompt appendices are preserved. Added test assertions in \`tools/verify_housekeeping.py\` to detect future regressions of link text or affiliate tags.
+
+At the request of the publisher during this shift, separate Internet Archive / Wayback Machine discussions explored archiving the fleet's five sites. The user received a direct Wayback submission link for www.chrisabraham.com. Save Page Now handles one page at a time and does not schedule a full-site or recurring crawl, according to the Internet Archive's FAQ. **No website has been submitted to the archive by ChatGPT in this shift.**
