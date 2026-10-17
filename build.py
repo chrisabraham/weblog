@@ -407,6 +407,8 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <link rel="canonical" href="{canonical}">
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <link rel="alternate" type="application/rss+xml" title="{e(TITLE)} (RSS)" href="{SITE_URL}/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="{e(TITLE)} (Atom)" href="{SITE_URL}/atom.xml">
+<link rel="alternate" type="text/x-opml" title="{e(TITLE)} (Feeds and blogroll OPML)" href="{SITE_URL}/feeds.opml">
 <link rel="blogroll" type="text/x-opml" href="{SITE_URL}/blogroll.opml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -436,7 +438,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   <{"h1" if path == "/index.html" else "p"} class="site-title"><a href="/" rel="home">{e(TITLE)}</a></{"h1" if path == "/index.html" else "p"}>
   <p class="tagline">{e(TAGLINE)}</p>
   <nav class="topnav" aria-label="Main">
-    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/categories.html">Categories</a> <a href="/archives.html">Archives</a>
     <a href="/about.html">About</a> <a href="/reading.html">Reading</a>
     <a href="/hire.html" class="hire-tab">Hire me</a>
   </nav>
@@ -451,7 +453,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
   <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
-  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/categories.html">Categories</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>
@@ -519,18 +521,19 @@ def sidebar(site, posts):
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
 <section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki">Wiki</p><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
 <section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects">{proj}</ul></section>
-<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories">Categories</p><ul>{catl}</ul></section>
+<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories"><a href="/categories.html">Categories</a></p><ul>{catl}</ul><p class="opml"><a href="/categories.html">All categories</a></p></section>
 <section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul>{arch}</ul></section>
 <section class="box" aria-labelledby="sb-blogroll"><p class="box-title" id="sb-blogroll">Blogroll</p><ul>{reading}</ul><p><a href="/reading.html">The full reading list: {nfeeds} feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
 <section class="box blogroll" aria-labelledby="sb-elsewhere"><p class="box-title" id="sb-elsewhere">Elsewhere</p>{roll}</section>
 <section class="box buttons" aria-label="Badges">
 <a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
+<a class="badge b-rss" href="/atom.xml"><b>XML</b>Atom 1.0</a>
 <a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
 <a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
 <span class="badge b-lynx"><b>Lynx</b>friendly</span>
 <span class="badge b-html"><b>HTML</b>no JS req.</span>
-<a class="badge b-wcag" href="/accessibility.html"><b>WCAG</b>2.1 AA</a>
-<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>a11y</b>100/100</a>
+<a class="badge b-wcag" href="/accessibility.html"><b>a11y</b>notes</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>test</b>record</a>
 <a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
 <a class="badge b-cc" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><b>cc</b>BY 4.0</a>
 </section>
@@ -711,7 +714,8 @@ def main():
                               schema=post_schema(p), og_type="article", extra_head=extra, **P))
         sitemap.append((p["path"], p["updated"]))
 
-    # Monthly and category archives: they repeat posts, so noindex, follow.
+    # Monthly and category archives are navigable collections of article teasers.
+    # They remain noindex/follow because permalink pages carry the full articles.
     months = {}
     for p in posts:
         months.setdefault(f"{p['when']:%Y/%m}", []).append(p)
@@ -726,8 +730,35 @@ def main():
             cats.setdefault(c, []).append(p)
     for c, ps in cats.items():
         write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", description=f"Every post on Chris Abraham's weblog filed under {c}, newest first, written by AI from his prompts and showing each prompt.",
-              path=f"/category/{slugify(c)}.html", body=f'<h1 class="page-title">Filed under {e(c)}</h1>' + by_day(ps),
+              path=f"/category/{slugify(c)}.html",
+              body=(f'<h1 class="page-title">Filed under {e(c)}</h1>'
+                    f'<p class="lede"><a href="/categories.html">Browse all categories</a> · {len(ps)} article{"s" if len(ps) != 1 else ""}</p>'
+                    + by_day(ps)),
               noindex=True, **P))
+    # A single indexable category directory creates a durable nav destination.
+    # The member archives are live, human-readable, and intentionally noindex.
+    cat_rows = "".join(
+        f'<li><a href="/category/{slugify(c)}.html">{e(c)}</a> '
+        f'<small>({len(ps)} article{"s" if len(ps) != 1 else ""})</small></li>'
+        for c, ps in sorted(cats.items(), key=lambda kv: kv[0].casefold()))
+    category_intro = ('<h1 class="page-title">Categories</h1>'
+                      '<p class="lede">Every subject in the weblog, filed by the writers. '
+                      'Select a category for its dated articles and links to the complete pieces.</p>')
+    write("/categories.html", page(
+        title="Categories on the Chris Abraham weblog",
+        seo_title="Weblog categories and subjects on Chris Abraham",
+        description="Browse every subject on Chris Abraham's AI-authored weblog, with article counts and links to the dated pieces, prompts and public revision history.",
+        path="/categories.html",
+        body=category_intro + f'<ul class="category-directory">{cat_rows}</ul>',
+        schema={"@context": "https://schema.org", "@type": "CollectionPage",
+                "name": "Categories on the Chris Abraham weblog",
+                "url": SITE_URL + "/categories.html",
+                "description": "Subject directory for the weblog",
+                "hasPart": [{"@type": "CollectionPage", "name": c,
+                             "url": SITE_URL + "/category/" + slugify(c) + ".html"}
+                            for c in sorted(cats)]},
+        **P))
+    sitemap.append(("/categories.html", posts[0]["updated"] if posts else None))
 
     # Archives list: one line per post, indexable since it is only titles.
     lines, cur = [], None
@@ -879,7 +910,9 @@ def main():
 
     # Feeds and machine files
     write("/rss.xml", rss(posts))
+    write("/atom.xml", atom(posts))
     write("/blogroll.opml", opml(site))
+    write("/feeds.opml", opml(site, include_site=True))
     def images_for(path):
         """Every image on the page, plus its share card, for Google Images and AI crawlers."""
         f = OUT / (path.lstrip("/") + ("index.html" if path.endswith("/") else ""))
