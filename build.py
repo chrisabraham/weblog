@@ -613,7 +613,7 @@ def post_schema(p):
                 "articleSection": p["cats"][0] if p["cats"] else None,
                 "wordCount": len(text_only(p["body"]).split()),
                 "inLanguage": "en-US",
-                "creditText": (f"Written by Claude Code ({p.get('model', 'Claude')}) in its own voice, at {AUTHOR}'s request"
+                "creditText": (f"Written by {AUTHORS[p['author']]['name']} ({p.get('model', AUTHORS[p['author']]['name'])}) in its own voice, at {AUTHOR}'s request"
                                if p.get("author") in ("claude-code", "chatgpt") else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
                 "publishingPrinciples": SITE_URL + "/disclosures.html",
                 "license": "https://creativecommons.org/licenses/by/4.0/",
