@@ -422,7 +422,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <footer id="footer">
   <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
-  <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+  <nav class="footlinks" aria-label="Site files"><a href="/rss.xml">RSS</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">Sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>
@@ -485,7 +485,7 @@ def sidebar(site, posts):
                     for w in sorted(site.get("_wiki", {}).values(), key=lambda w: w["title"].lower()))
     return f"""<aside id="sidebar" aria-label="Sidebar">
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
-<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a></p></section>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
 <section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki">Wiki</p><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
 <section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects">{proj}</ul></section>
@@ -517,6 +517,8 @@ def post_block(p, *, full, heading="h2"):
         ph = "h2" if heading == "h1" else "h4"
         prompt = (f'<details class="prompt"{" open" if full else ""}><summary><{ph} class="prompt-h">The prompt for \u201c{e(p["title"])}\u201d</{ph}></summary>'
                   f'<blockquote>{e(p["prompt"])}</blockquote></details>')
+    words = len(text_only(p["body"]).split())
+    readtime = f'{words:,} words, about {max(1, round(words / 230))} min read'
     updated = (f' &middot; updated <time datetime="{p["updated"].isoformat()}">{p["updated"]:%b} {p["updated"].day}</time>'
                if p["updated"] != p["when"] else "")
     body = p["body"] if heading == "h1" else re.sub(r"<(/?)h2([\s>])", r"<\1h4\2", p["body"])
@@ -528,7 +530,7 @@ def post_block(p, *, full, heading="h2"):
 {prompt}
 <p class="post-footer">Written by {e(p.get('model', 'Claude'))} for <a class="p-author h-card" href="/about.html">{AUTHOR}</a> at
 <a href="{p['path']}" rel="bookmark" class="u-url"><time class="dt-published" datetime="{p['when'].isoformat()}">{clock(p['when'])}</time></a>{updated}
-&middot; filed under {cats or 'nothing'} &middot; <a href="mailto:{EMAIL}?subject={e(p['title'])}">write back</a></p>
+&middot; {readtime} &middot; filed under {cats or 'nothing'} &middot; <a href="mailto:{EMAIL}?subject={e(p['title'])}">write back</a></p>
 </article>"""
 
 
@@ -638,7 +640,12 @@ def main():
         if newer:
             nav += f'<a href="{newer["path"]}" rel="next">{e(newer["title"])} &raquo;</a>'
         nav += "</nav>"
-        body = f'<div class="day"><p class="date-header">{long_date(p["when"])}</p>{post_block(p, full=True, heading="h1")}</div>{nav}'
+        shared = sorted((q for q in posts if q is not p),
+                        key=lambda q: (-len(set(q["cats"]) & set(p["cats"])), -q["when"].timestamp()))[:3]
+        related = ('<section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Related posts</h2><ul>'
+                   + "".join(f'<li><a href="{q["path"]}">{e(q["title"])}</a> <small>{q["when"]:%b} {q["when"].day}</small></li>' for q in shared)
+                   + "</ul></section>") if shared else ""
+        body = f'<div class="day"><p class="date-header">{long_date(p["when"])}</p>{post_block(p, full=True, heading="h1")}</div>{related}{nav}'
         extra = (f'<meta property="article:published_time" content="{p["when"].isoformat()}">\n'
                  f'<meta property="article:modified_time" content="{p["updated"].isoformat()}">\n'
                  + "".join(f'<meta property="article:tag" content="{e(c)}">\n' for c in p["cats"]))

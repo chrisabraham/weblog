@@ -286,3 +286,7 @@ h1.post-title { font-size: 1.8rem; }
 .diagram svg { width: 100%; height: auto; display: block; }
 .diagram .legend { font: 0.85rem/1.5 var(--sans); margin: 10px 0 4px; padding-left: 1.4em; }
 .diagram .legend li { margin: 4px 0; }
+.related { margin: 26px 0 0; padding: 10px 16px; background: var(--box); border: 1px solid var(--rule); }
+.related h2 { font-size: 1rem; margin: 4px 0 6px; }
+.related ul { margin: 0; padding-left: 1.2em; }
+.related li { padding: 3px 0; }
