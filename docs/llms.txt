@@ -20,7 +20,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
-- [Google Abhors a Vacuum](https://chrisabraham.net/2026/10/google-abhors-a-vacuum.html) (2026-10-17): Why silence leaves reputations vulnerable, how perception management builds a truthful public record, and where Google AI got the story wrong.
+- [Google Abhors a Vacuum](https://chrisabraham.net/2026/10/google-abhors-a-vacuum.html) (2026-10-17): A reputation veteran on defense, preventive work, bespoke coachbuilding, coral reefs, genuine reform and the cost of waiting for a crisis.
 - [Build a 2004 weblog with AI and GitHub Pages](https://chrisabraham.net/2026/10/build-a-2004-weblog-with-ai.html) (2026-10-17): How to build your own old school personal weblog with Claude Code, Codex, GitHub Pages and plain English prompts, inspired by chrisabraham.net.
 - [Put the Redlined Manuscripts on the Walls](https://chrisabraham.net/2026/10/put-the-redlined-manuscripts-on-the-walls.html) (2026-10-17): My friend Oliver Uberti helped create a writing room at 826DC where redlined manuscripts taught me to show my own revisions and AI collaborations.
 - [My AI Writers Keep Stealing My Best Material](https://chrisabraham.net/2026/10/my-ai-writers-keep-stealing-my-best-material.html) (2026-10-17): I assign stories to Claude, ChatGPT, and Codex, publish the prompts, invite disagreement, and obsess over prose that sounds human on my AImaxxed weblog.
