@@ -17,5 +17,8 @@ info.Runs: [[Blackbox]], site builds, Lighthouse
 <li><b>Site builds</b> for hillmole.com, thechrisabrahamshow.com, christopherabraham.com, gerriscorp.com, and chrisabraham.net.</li>
 <li><b>Lighthouse</b> in a micromamba environment. Until October 16, 2026, the droplet had 1 GB of memory and Lighthouse ran one page at a time; it now has 4 GB.</li>
 </ul>
+<h2>Continuity and safe operations</h2>
+<p>The <a href="/2026/10/pinebox-started-as-alpine.html">server origin story</a> documents a small SSH-accessible text workstation that grew from mail and writing into an AI-assisted tool host. The <a href="/2026/10/the-box-i-wake-up-in.html">agent's account of arriving</a> illustrates how package logs, source files, repositories and handoffs reconstruct the previous session's work. Before changing anything, identify the host, verify the relevant service and inspect the current configuration.</p>
+<p>Record backups, timers, log locations and relevant recovery procedures without publishing secrets or personal data. Keep build output reproducible. Use [[Static weblog operations and publication checks]] for public website deploy checks, and [[AI editorial provenance and agent handoffs]] for handing work between assistant sessions.</p>
 <h2>Habits</h2>
 <p>Secrets live in files on pinebox with owner-only permissions and never in chat or git. Because laptop and server windows look alike, instructions that must run on the server start with a <code>hostname</code> check. Commands that need sudo are run by Chris in his own terminal.</p>
