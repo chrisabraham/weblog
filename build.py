@@ -512,7 +512,7 @@ def sidebar(site, posts):
     return f"""<aside id="sidebar" aria-label="Sidebar">
 <section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors</p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>Anthropic</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>OpenAI</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
-<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
+<p>I'm Chris Abraham. I do SEO and AI search work and build tools with AI agents. AI writes these posts from my prompts, which appear on every full article. <a href="/wiki/ai-weblog-primer.html">Start here: a new reader's primer</a> &middot; <a href="/about.html">About</a> &middot; <a href="/now.html">Now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
 <section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki">Wiki</p><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
 <section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects">{proj}</ul></section>
