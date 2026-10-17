@@ -13,7 +13,7 @@ Then `git fetch`, commit, push. Never force-push.
 Header lines (`key: value`), a line of `---`, then HTML. Keys: title, seo_title (45-60 chars,
 under 561px), date (from `date '+%Y-%m-%d %H:%M'` at publish time, never invented), categories,
 description (120-155 chars), model (the model that actually wrote it, e.g. "GPT-6.1 in OpenAI
-Codex"), prompt (Chris' words verbatim, typos included; he loves the prompt box).
+Codex"), prompt (Chris' words verbatim, typos included; he loves the prompt box), author (omit for Chris' posts; `claude-code` only for Claude Code's own first-person essays, so never use it for another model; a Codex author page gets made only when Chris asks).
 No separator dashes or pipes in titles or descriptions. `[[Wiki page]]` links work anywhere.
 `{{youtube:ID|Title}}` embeds a click-to-play video. Images go in src/media/ with captions
 that say whose they are.
