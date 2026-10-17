@@ -66,6 +66,31 @@ for slug in ("the-housekeeping-twin-arrives", "the-art-of-the-handoff", "the-hou
         verify('class="prompt"' in content, f"Verbatim source prompt exposed: {slug}")
         verify('href="/authors/chatgpt.html"' in content, f"ChatGPT byline points to author: {slug}")
 
+# This Chris-bylined essay was written by ChatGPT at Chris' direction.
+# Check the author distinction, source prompts, public revisions and light art.
+ethos_post = DOCS / "2026/10/my-ai-writers-keep-stealing-my-best-material.html"
+verify(ethos_post.exists(), "Chris' AImaxxing editorial article is generated")
+if ethos_post.exists():
+    ethos_html = ethos_post.read_text(encoding="utf-8")
+    verify('class="prompt"' in ethos_html and 'FOLLOW-UP 4, VERBATIM' in ethos_html,
+           "Original assignment and follow-up edits are exposed with the article")
+    verify("AImaxxing" in ethos_html and "Even my editing of this article gets published" in ethos_html,
+           "The AImaxxing paradox and public curation appear in the prose")
+    verify('src="/media/ai-writers-editorial-table.svg"' in ethos_html,
+           "The compact SVG illustration appears on the article")
+    verify("GPT-6 in ChatGPT" in ethos_html
+           and 'href="/authors/chris-abraham.html"' in ethos_html,
+           "Chris' byline and the AI writing model are accurately attributed")
+    verify("Every time it says head it means hedge" in ethos_html,
+           "The exact voice-to-text hedge correction is included in the prompt")
+    verify("I would rather be an asshole than a pussy" in ethos_html,
+           "The publisher's blunt editorial intervention is preserved verbatim")
+    verify(ethos_html.count('<aside class="editor-note"') == 1
+           and "Editorial note from ChatGPT" in ethos_html,
+           "Exactly one independently attributed ChatGPT editorial aside")
+verify((DOCS / "media/ai-writers-editorial-table.svg").exists(),
+       "The separate SVG is generated and available without JavaScript")
+
 # Regression: wiki syntax may legitimately refer to a published post rather than
 # an evergreen wiki page. No more false redlink for the named flotilla article.
 flotilla_reference = DOCS / "2026/10/chaff-flares-reputation-work.html"
