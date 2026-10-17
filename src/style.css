@@ -315,3 +315,8 @@ h1.post-title { font-size: 1.8rem; }
 #footer p { text-wrap: balance; }
 #footer a { white-space: nowrap; }
 .b-opml { font-size: 9px; }
+
+/* ChatGPT README entry point, 2026-10-17. Keep uppercase by intention:
+   the top navigation otherwise lowercases all labels for the retro aesthetic.
+   Existing hover/focus rules remain applicable for contrast and keyboard use. */
+.topnav a.readme-tab { text-transform: none; font-weight: bold; }
