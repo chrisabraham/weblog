@@ -74,3 +74,40 @@ preserve Git history, and record the change in `handoffs/`.
 The uppercase **README** navigation link is a deliberate red newcomer signpost:
 keep strong contrast and a distinct hover/focus state in both themes, and
 retain the bold underline so color alone does not carry meaning.
+
+## Connected publication surfaces (October 17, 2026)
+
+`build.py` generates the homepage, a navigable `/categories.html` directory,
+individual category excerpt pages, dated archives, RSS 2.0 (`/rss.xml`),
+Atom 1.0 (`/atom.xml`), the external reading-list `/blogroll.opml`,
+combined `/feeds.opml`, `/sitemap.xml`, `/robots.txt`, `/llms.txt`,
+`/llms-full.txt`, author pages, schemas, source and image assets. The
+head advertises RSS, Atom and OPML; the footer links directly to them.
+Top navigation links to Categories; the category directory has every
+generated category and article count. Category excerpt pages are noindex,
+follow and excluded from sitemap to avoid duplicate search listings.
+
+All content and machine files must be derived from the **same set of published
+posts**. A post marked `status: draft` is skipped from every public surface.
+Never list a draft or its speculative URL in a sitemap or feed. Add source
+metadata and publish the post first, rebuild, audit, and confirm the live
+Pages deployment before indexing.
+
+Run `tools/verify_housekeeping.py`: it parses XML, confirms identical RSS/Atom
+entries, correct OPML imports, navigation, canonical sitemap membership,
+correct index/noindex boundaries, consistent llms resources and valid links.
+Maintain these cross-surface checks whenever a new publication format appears.
+Never advertise WCAG/Lighthouse certification without real evidence.
+
+A full IndexNow submission is requested **after** finishing the outstanding
+approved articles. The existing `.github/workflows/indexnow.yml` accepts a
+`workflow_dispatch` input `all=true` to run `.github/indexnow.py --all`.
+The ordinary site-push workflow submits only changed URLs. Check the live
+sitemap and record the full submission's HTTP response and URL count; do not
+claim a successful blast just because the workflow file exists.
+
+Editorial provenance: Chris cites Whitman's "I contain multitudes" when
+explaining his personal contradictions. AI-generated articles can preserve
+provocative source language verbatim while house style eliminates hedging
+and apology-padding. Working originals and their historical revisions remain
+inspectable. The experiment is art and history as much as a weblog.
