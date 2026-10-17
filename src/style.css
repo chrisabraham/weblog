@@ -67,7 +67,9 @@ a:visited { color: var(--visited); }
 a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-decoration: none; }
 
 .skip { position: absolute; left: -9999px; }
-.skip:focus { left: 8px; top: 8px; background: var(--paper); padding: 6px; z-index: 2; }
+/* An actionable skip link must stay legible when keyboard-focused.
+   Previous :focus inherited white-on-white or dark-on-dark from a:focus-visible. */
+.skip:focus { left: 8px; top: 8px; background: var(--paper); color: var(--ink); padding: 6px; z-index: 20; outline: 3px solid var(--link); outline-offset: 2px; }
 
 #wrap {
   max-width: 1000px;
@@ -92,7 +94,12 @@ a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-de
 .tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
 .topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
 .topnav a, .topnav a:visited { display: inline-block; padding: 4px 0; color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
-.topnav a:hover { background: var(--link); color: var(--paper); }
+/* Explicit keyboard focus overrides .topnav a's own color declaration.
+   Otherwise focused navigation rendered text and background in the same blue. */
+.topnav a:hover, .topnav a:focus-visible {
+  background: var(--link); color: var(--paper);
+  text-decoration: underline; outline: 2px solid currentColor; outline-offset: 2px;
+}
 
 .theme-toggle {
   position: absolute; top: 12px; right: 12px;
@@ -128,6 +135,10 @@ h1.post-title { font-size: 1.8rem; }
 .post-title a, .post-title a:visited { color: var(--ink); text-decoration: none; }
 .post-title a:hover { background: none; color: var(--link); text-decoration: underline; }
 .post-body p { margin: 0 0 1em; }
+/* Teasers use plain-text editorial summaries; links have comfortable targets. */
+.post-excerpt { margin-bottom: 0.35em; }
+.read-more { margin: 0.1em 0 0.7em; font-weight: bold; }
+.read-more a { display: inline-block; padding: 4px 0; }
 .post-body h2 { font-size: 1.2rem; margin: 1.4em 0 0.4em; }
 .post-body blockquote, .prompt blockquote {
   margin: 1em 0; padding: 10px 16px;
@@ -194,7 +205,9 @@ h1.post-title { font-size: 1.8rem; }
 .b-opml { background: #fff3a8; } .b-opml b { background: #6b5b00; }
 .b-wcag { background: #e3d7ff; } .b-wcag b { background: #4b2a99; }
 .b-lh { background: #d4f5e9; } .b-lh b { background: #0b6b4a; }
-.badge:hover { outline: 2px solid var(--link); background-color: inherit; }
+.badge:hover, .badge:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.badge:focus-visible { background-color: var(--paper); color: var(--ink); }
+/* Readable text links must not depend on hover alone. */
 
 /* Footer */
 #footer { padding: 14px 24px 24px; border-top: 4px double var(--rule); font: 0.7rem var(--sans); color: var(--muted); }

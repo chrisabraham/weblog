@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Feng shuAI in a small web house</title><desc id="desc">Warm sunlit reading room with a vintage computer, carefully arranged article cards, an open doorway, a plant and an AI editor moving a chair toward the light.</desc>
+<defs><linearGradient id="wall" x2="1" y2="1"><stop stop-color="#f8efd9"/><stop offset="1" stop-color="#dec9a6"/></linearGradient><linearGradient id="sun" x2="0" y2="1"><stop stop-color="#a9d5e0"/><stop offset="1" stop-color="#f8d49d"/></linearGradient><filter id="soft"><feGaussianBlur stdDeviation="14"/></filter></defs>
+<rect width="1200" height="675" fill="url(#wall)"/>
+<path d="M0 499L1200 477V675H0Z" fill="#b28c67"/><path d="M0 525L1200 499" stroke="#d9ba8e" stroke-width="11"/>
+<rect x="72" y="78" width="489" height="380" fill="#765844"/><rect x="86" y="92" width="461" height="351" fill="url(#sun)"/>
+<circle cx="463" cy="161" r="58" fill="#fff2bf"/><path d="M87 372q135-139 259-36t201-39v145H87Z" fill="#8bab9a"/>
+<path d="M324 93V442M87 262H546" stroke="#765844" stroke-width="15"/>
+<path d="M543 262L833 463L714 484Z" fill="#ffebad" opacity=".47" filter="url(#soft)"/>
+<path d="M548 347L1121 529L740 538Z" fill="#ffedbd" opacity=".45"/>
+<g transform="translate(631 95)"><rect width="410" height="324" rx="9" fill="#f4ecd9" stroke="#80654d" stroke-width="9"/><g fill="#d8e4ec" stroke="#b3bac0" stroke-width="2"><rect x="27" y="29" width="94" height="112"/><rect x="149" y="29" width="94" height="112"/><rect x="270" y="29" width="94" height="112"/></g><g stroke="#627f9e" stroke-width="7"><path d="M41 165h132M41 187h285M41 209h252M41 256h262M41 278h292"/></g><rect x="27" y="292" width="118" height="11" fill="#a9c4d6"/></g>
+<rect x="134" y="443" width="632" height="27" rx="8" fill="#77513b"/><rect x="168" y="467" width="31" height="171" fill="#6f4f38"/><rect x="689" y="467" width="31" height="171" fill="#6f4f38"/>
+<rect x="243" y="324" width="207" height="123" rx="18" fill="#d3c1a3"/><rect x="258" y="338" width="176" height="84" rx="9" fill="#193444"/><g stroke="#94cfbb" stroke-width="5"><path d="M280 366h98M280 387h76"/></g><path d="M262 445h173" stroke="#e9dbc6" stroke-width="14"/>
+<g fill="#faf3e3" stroke="#c9b58d" stroke-width="3"><rect x="497" y="401" width="102" height="47" transform="rotate(-8 497 401)"/><rect x="510" y="393" width="102" height="47" transform="rotate(4 510 393)"/></g><path d="M526 417h50M526 430h62" stroke="#9b9f9e" stroke-width="4"/>
+<g transform="translate(906 502)"><rect x="-57" y="32" width="114" height="89" rx="25" fill="#e5d3b1"/><ellipse cx="0" cy="-22" rx="73" ry="64" fill="#f6eed8"/><ellipse cx="0" cy="-22" rx="62" ry="53" fill="#304d5b"/><path d="M-23-30q13-10 23 0M8-30q13-10 23 0" stroke="#a5e9da" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-14-6q15 13 30 0" stroke="#a5e9da" stroke-width="4" fill="none"/><path d="M-44 70l-81-12M44 70l75-31" stroke="#e5d3b1" stroke-width="13" stroke-linecap="round"/></g>
+<path d="M1068 496v111" stroke="#775742" stroke-width="15"/><path d="M1068 510q-111-79-119-163q104-7 119 109q6-133 96-154q40 87-96 181" fill="#5f8b6f"/>
+<path d="M1034 575h69l-9 78h-52Z" fill="#bd754c"/><ellipse cx="1068" cy="575" rx="35" ry="9" fill="#d98d60"/>
+</svg>
