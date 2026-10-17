@@ -7,13 +7,14 @@ into `docs/`, which GitHub Pages serves. Private house rules live in ~/.codex/AG
 ## Build and check (every change)
     ~/.venvs/site/bin/python build.py   # fix every "warn" it prints
     python3 tools/audit.py              # must say "No issues."
+    python3 tools/verify_housekeeping.py # validate homepage teasers, authors, links, alt, JSON-LD
 Then `git fetch`, commit, push. Never force-push.
 
 ## Posts: src/posts/YYYY-MM-DD-slug.html
 Header lines (`key: value`), a line of `---`, then HTML. Keys: title, seo_title (45-60 chars,
 under 561px), date (from `date '+%Y-%m-%d %H:%M'` at publish time, never invented), categories,
 description (120-155 chars), model (the model that actually wrote it, e.g. "GPT-6.1 in OpenAI
-Codex"), prompt (Chris' words verbatim, typos included; he loves the prompt box), author (omit for Chris' posts; `claude-code` only for Claude Code's own first-person essays, so never use it for another model; a Codex author page gets made only when Chris asks).
+Codex"), prompt (Chris' words verbatim, typos included; he loves the prompt box), author (omit for Chris' posts; `claude-code` only for Claude Code's first-person essays; `chatgpt` only for ChatGPT's first-person essays. Give Codex its own distinct key and page only when Chris asks it to participate).
 No separator dashes or pipes in titles or descriptions. `[[Wiki page]]` links work anywhere.
 `{{youtube:ID|Title}}` embeds a click-to-play video. Images go in src/media/ with captions
 that say whose they are.
@@ -30,3 +31,33 @@ make the infobox). Regenerate the commands page after bb changes:
 ## Other data
 src/site.json: projects (status), elsewhere (Chris' own sites and profiles), reading (other
 people's feeds; check a feed works before adding). Pages in src/pages/.
+
+## The ChatGPT visit (October 16–17, 2026)
+Read [handoffs/2026-10-16-chatgpt.md](handoffs/2026-10-16-chatgpt.md) before modifying the
+October 16 housekeeping changes. It records the implementation, tests, critique,
+limits, chronology, and publication history. Chris explicitly invited ChatGPT
+as an independent author before Codex's arrival and Claude's expected October
+20 return. The aesthetic remains early-web; the compliance goals are current.
+
+### Homepage contract
+`by_day(..., full=False)` shows concise editorial descriptions and obvious
+links to each full post; `post_block(..., full=True)` renders complete content
+and the original prompt on article permalinks. Preserve that distinction.
+Do not reintroduce full-length articles to the homepage.
+
+### Accessibility and evidence
+Keep focused skip and navigation links high contrast in both themes. New
+`src/media/chatgpt-*.svg` illustrations have accessible SVG descriptions and
+HTML alt attributes. Validate real contrast, link destinations, mobile reflow,
+schemas and image semantics; static linting and Lighthouse scores are not full
+WCAG certification. Never invent a new-tab target, a rich-result claim,
+a performance score, a client detail, or a missing wiki page to please a rubric.
+For the site, use helpful schema only, without keyword stuffing.
+
+### Attribution and handoffs
+Publicly attribute each AI author's own writing and technical interventions.
+No agent should silently rewrite another agent's original first-person work.
+Prefer dated appended corrections and clear commit history. For each shift,
+leave a dated handoff with changed paths, reasons, test outputs, unverified
+claims, and next actions. AI models have different session contexts and should
+not imply uninterrupted memory or identical internal reasoning.
