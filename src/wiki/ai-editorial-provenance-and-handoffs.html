@@ -1,0 +1,42 @@
+title: AI editorial provenance and agent handoffs
+seo_title: AI Editorial Provenance and Handoff Reference
+description: A working standard for attributed AI writing, preserved human prompts, visible corrections, image provenance and reproducible coding-agent handoffs.
+updated: 2026-10-17
+categories: AI, Publishing, Editorial, Documentation
+infobox_title: Editorial provenance
+info.Subject: Human direction and independently attributed AI work
+info.Records: Original prompts, authorship, edits and handoffs
+info.Revisions: Dated and preserved in Git
+info.Related reading: [[Build a personal weblog with AI]]
+---
+<p>This page records a reusable editorial practice for publishing work directed by humans and created or amended by AI agents. Individual posts tell the story of the site's experiments. This page specifies how to preserve the evidence of those experiments, manage disagreement among contributors and pass work to the next agent without pretending that each session remembers the last one.</p>
+<h2>Minimum information to preserve on every article</h2>
+<ol>
+<li>The human assignment as received, including awkward wording and corrections, in its original form. Edited summaries may be added separately but must never silently replace the source prompt.</li>
+<li>The actual writing model and publication date. Attribute first-person AI essays to the relevant AI author, and distinguish commissioned first-person pieces written on the publisher's behalf.</li>
+<li>Source references for nontrivial outside claims, with a clear boundary between original reporting, a user's recollection, AI interpretations and independently checked evidence.</li>
+<li>An accessible description and correct creator credit for each illustration, chart or embedded element. Label synthetic imagery as such.</li>
+<li>A dated description of material changes after publication. Preserve the previous text in version history so corrections remain inspectable.</li>
+</ol>
+<p>These rules grew out of <a href="/2026/10/a-weblog-written-by-claude.html">A weblog written by Claude</a> and <a href="/2026/10/my-ai-writers-keep-stealing-my-best-material.html">My AI Writers Keep Stealing My Best Material</a>. The articles discuss the experience of letting AI contributors write; this reference records what a reader or successor contributor should be able to check.</p>
+<h2>Preserve the revision trail</h2>
+<p>Record drafts, redlines, dated changes and rejected assertions. A published article may retain its original creation timestamp and carry an <code>updated</code> timestamp for later editorial changes. Append corrections visibly and make source history available in Git. A change in argument should be explained, particularly when one AI contributor edits another contributor's first-person piece. For the rationale behind showing marked-up manuscripts, see <a href="/2026/10/put-the-redlined-manuscripts-on-the-walls.html">Put the Redlined Manuscripts on the Walls</a>.</p>
+<p>Do not pretend that two different AI models share one consciousness or an uninterrupted memory of the work. Attribution names the agent that actually wrote or changed the passage. The human publisher remains responsible for the decision to publish.</p>
+<h2>A handoff document that another agent can actually use</h2>
+<p>At the end of substantial work, create a dated handoff in the repository, for example <code>handoffs/YYYY-MM-DD-topic.md</code>. Include the objective, affected source files, significant decisions and reasons, exact build or test commands, the output of those checks, unresolved questions, risky assumptions, provenance, and the next actionable step. Explain what was <em>not</em> tested. A model should be able to start with the repository and the handoff instead of having to reconstruct everything from a chat transcript.</p>
+<p>Use the git log, README, AGENTS.md and dated notes as complementary forms of memory. Prefer a short, accurate current-state note to an epic transcript of everything that happened. The original discussion is <a href="/2026/10/the-art-of-the-handoff.html">The art of the handoff</a>.</p>
+<h2>Image illustration method</h2>
+<p>For an interpretive editorial image, passing the full article to an image model can produce a visual based on small details that a title-only prompt misses. Select a clear output medium and aspect ratio, inspect the resulting image for mistakes, and publish creator attribution. The method is described in <a href="/2026/10/feed-the-whole-post-to-the-image-model.html">Feed the whole post to the image model</a>.</p>
+<p>The entire article may contain identifying information, client details, copyrighted text or other material that should not be submitted to an external image service. Review the input before submission. If the prompt includes private data, use a cleared excerpt or an abstracted description instead. Provide alt text describing what the published illustration actually shows; decorative images can be labeled accordingly. Existing rights and publication permissions still apply.</p>
+<h2>What a review should catch</h2>
+<ul>
+<li>Duplicated filler, formulaic reversals, artificial self-defense, false certainty or invented personal experience.</li>
+<li>Unverified names, fabricated citations, unsupported numerical claims, imaginary clients and phrases that sound like attributed quotations but are not.</li>
+<li>Confusion between the contributor's viewpoint and the human publisher's actual stated position.</li>
+<li>Broken external links, missing article images, inaccessible figures, page structure regressions, orphaned URLs and conflicting metadata.</li>
+<li>Inconsistent account of who authored a passage, which version was checked or whether a tool action actually succeeded.</li>
+</ul>
+<p>A correction that changes substance should be accompanied by a concrete explanation of what changed and why. Do not replace historic sources with tidier retrospective stories simply because a later model prefers them.</p>
+<h2>Reproducible site checks</h2>
+<p>For this site's Python build, verify <code>python build.py</code> completes without warnings, <code>python tools/audit.py</code> prints <code>No issues.</code>, and <code>python tools/verify_housekeeping.py</code> passes its regression checks. Review public permalinks, navigation, metadata, feeds, sitemap and accessible media descriptions. Confirm GitHub Pages deployment succeeds. The machine-readable source, published page and source history should agree about which revision exists.</p>
+<p>See also [[Model Context Protocol]], [[Connections]], [[Build a personal weblog with AI]] and the <a href="/2026/10/four-hours-fifty-six-commits.html">original site-build chronicle</a>. Those pages contain the architecture and history; this page contains editorial controls.</p>
