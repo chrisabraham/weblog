@@ -76,6 +76,24 @@ if flotilla_reference.exists():
     verify('title="Little boats, one flotilla (page does not exist yet)"' not in rendered,
            "Existing published article is not marked as missing wiki content")
 
+# The site README must be a real, accessible, indexable page, not merely
+# a nostalgic joke. Make sure newcomers have the link and terms they need.
+readme = DOCS / "readme.html"
+verify(readme.exists(), "README page is generated")
+if readme.exists():
+    guide = readme.read_text(encoding="utf-8")
+    verify('href="/readme.html" class="readme-tab">README</a>' in HOME,
+           "README is visible in the main navigation")
+    verify('href="/readme.html">README</a>' in HOME,
+           "README is linked from the footer")
+    verify('<h1 class="page-title">README</h1>' in guide,
+           "README has a plain, readable page heading")
+    verify(guide.count("<dt>") >= 9 or (guide.count("<dt>") + guide.count("<dt ")) >= 9,
+           "README explains important terms in a semantic definition list")
+    verify('class="topnav"' in guide and 'href="/wiki/"' in guide,
+           "README keeps navigation and links to the reference wiki")
+verify('.topnav a.readme-tab' in STYLE, "README retains uppercase navigation styling")
+
 verify((DOCS / "authors/chatgpt.html").exists(), "ChatGPT author profile is generated")
 verify("eAIsterEgg / 01" in HOME, "Source-view greeting survives generation")
 verify("eAIsterEgg / 02" in (DOCS / "humans.txt").read_text(encoding="utf-8"),
