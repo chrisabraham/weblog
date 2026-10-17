@@ -2,15 +2,21 @@
 
 > Notes from building things with AI, written by AI from my prompts.
 
-Chris Abraham's personal weblog about working with AI: Blackbox (his command-line secretary), Claude, Claude Code, ChatGPT, OpenAI Codex, GitHub, and anonymized client work. AI writes every post from Chris' prompts (mostly Claude, sometimes OpenAI Codex); each post names the model and shows the prompt.
+Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, ChatGPT, Codex, GitHub and independent experiment sites. AI writes every post from Chris' original prompts. Posts identify the actual writing model and retain the assignment.
 
 ## Pages
 
+- [README](https://chrisabraham.net/readme.html): the friendly guide to the experiment
 - [About](https://chrisabraham.net/about.html): who Chris is and how this weblog gets written
-- [Projects](https://chrisabraham.net/projects.html): what he is building, with status
+- [Projects](https://chrisabraham.net/projects.html): the active projects and experiments
+- [Categories](https://chrisabraham.net/categories.html): every dated writing subject
 - [Archives](https://chrisabraham.net/archives.html): every post by month
 - [Wiki](https://chrisabraham.net/wiki/): evergreen reference pages
-- [RSS](https://chrisabraham.net/rss.xml)
+- [RSS](https://chrisabraham.net/rss.xml): full-content RSS 2.0 feed
+- [Atom](https://chrisabraham.net/atom.xml): full-content Atom 1.0 feed
+- [Feeds OPML](https://chrisabraham.net/feeds.opml): import this weblog and reading list
+- [Blogroll OPML](https://chrisabraham.net/blogroll.opml): import external feeds
+- [Sitemap](https://chrisabraham.net/sitemap.xml): canonical indexable URLs
 
 ## Posts
 
@@ -33,6 +39,27 @@ Chris Abraham's personal weblog about working with AI: Blackbox (his command-lin
 - [The state of Blackbox in mid October](https://chrisabraham.net/2026/10/state-of-blackbox-october.html) (2026-10-16): A status report on Blackbox, the command-line secretary Chris Abraham built with Claude Code: what it does, what it has cost, and what is still unfinished.
 - [Blackbox, a few weeks in](https://chrisabraham.net/2026/10/blackbox-a-few-weeks-in.html) (2026-10-16): Where Blackbox, the plain-English command-line secretary Chris Abraham built with Claude Code, stands in mid October 2026, and what daily use taught him.
 - [A weblog written by Claude, out in the open](https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html) (2026-10-16): Why Chris Abraham started a 2000s-style weblog in 2026, why Claude writes every post from his prompts, and why each post shows the prompt underneath.
+
+## Categories
+
+- [AI](https://chrisabraham.net/category/ai.html): 1 article
+- [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
+- [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
+- [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
+- [Blackbox](https://chrisabraham.net/category/blackbox.html): 5 articles
+- [Cars](https://chrisabraham.net/category/cars.html): 1 article
+- [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 11 articles
+- [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
+- [Meta](https://chrisabraham.net/category/meta.html): 7 articles
+- [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
+- [Pinebox](https://chrisabraham.net/category/pinebox.html): 2 articles
+- [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 4 articles
+- [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
+- [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
+- [Web Standards](https://chrisabraham.net/category/web-standards.html): 2 articles
+- [Writing](https://chrisabraham.net/category/writing.html): 1 article
 
 ## Wiki
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
-<head><title>Chris Abraham's blogroll and reading list</title><ownerName>Chris Abraham</ownerName><docs>http://opml.org/spec2.opml</docs></head>
+<head><title>Chris Abraham blogroll and reading list</title><ownerName>Chris Abraham</ownerName><docs>https://opml.org/spec2.opml</docs></head>
 <body>
 <outline text="Weblogs">
 <outline text="Scripting News" type="rss" htmlUrl="http://scripting.com/" xmlUrl="http://scripting.com/rss.xml"/>
