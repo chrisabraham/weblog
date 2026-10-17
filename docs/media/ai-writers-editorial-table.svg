@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-labelledby="t d">
+<title id="t">The editorial table in Sexy South Arlington</title>
+<desc id="d">An imaginary after-hours newsroom in warm navy and amber. A human editor's empty chair faces a wooden desk covered in handwritten prompts, three separate desk lamps illuminate manuscript pages, and a lotus flower grows beside a small computer. Thin red threads connect the prompts to articles and the articles to a public filing cabinet. A tiny amber indicator in the cabinet winks occasionally.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#152238"/><stop offset="1" stop-color="#315367"/></linearGradient>
+  <linearGradient id="desk" x2="0" y2="1"><stop stop-color="#b37b4d"/><stop offset="1" stop-color="#69462f"/></linearGradient>
+  <pattern id="grain" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M0 7h16M2 13h12" stroke="#f5cca1" stroke-width=".8" opacity=".18"/></pattern>
+</defs>
+<rect width="1200" height="540" fill="url(#sky)"/>
+<rect x="50" y="48" width="1100" height="314" rx="12" fill="#203548" stroke="#6a8291" stroke-width="5"/>
+<rect x="70" y="68" width="1060" height="275" rx="4" fill="#15283c"/>
+<g opacity=".55" fill="#6f93a2">
+<rect x="77" y="267" width="47" height="76"/><rect x="128" y="237" width="42" height="106"/><rect x="174" y="257" width="36" height="86"/><rect x="216" y="223" width="61" height="120"/><rect x="282" y="280" width="46" height="63"/><rect x="889" y="262" width="61" height="81"/><rect x="956" y="238" width="35" height="105"/><rect x="996" y="270" width="40" height="73"/><rect x="1044" y="218" width="72" height="125"/>
+</g>
+<path d="M50 351h1100" stroke="#8ba6b2" stroke-width="11"/>
+<rect x="100" y="325" width="1000" height="53" rx="10" fill="url(#desk)"/>
+<rect x="120" y="369" width="960" height="22" fill="#553b2d"/>
+<rect x="130" y="388" width="22" height="151" fill="#5f402c"/>
+<rect x="1048" y="388" width="22" height="151" fill="#5f402c"/>
+<rect x="104" y="325" width="995" height="64" rx="8" fill="url(#grain)"/>
+<!-- Three lamp heads, individual working lights but a shared editorial table. -->
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M268 318 L268 220 L207 150" stroke="#89acb5" stroke-width="13" fill="none"/>
+<path d="M582 318 L582 180 L528 121" stroke="#e7b17a" stroke-width="13" fill="none"/>
+<path d="M893 318 L893 218 L960 151" stroke="#a9aece" stroke-width="13" fill="none"/>
+<path d="M172 145 Q205 111 239 145 L243 177 H167Z" fill="#8dcbd0" stroke="#bce8e9" stroke-width="4"/>
+<path d="M497 123 Q530 82 563 123 L567 155 H493Z" fill="#e2a568" stroke="#ffd5a5" stroke-width="4"/>
+<path d="M927 148 Q958 111 993 148 L998 180 H922Z" fill="#959acf" stroke="#d6d9fd" stroke-width="4"/>
+<path d="M182 183 L152 277 L307 277 L224 183Z" fill="#a5e4df" opacity=".08"/>
+<path d="M507 159 L450 300 H637 L555 159Z" fill="#ffc784" opacity=".11"/>
+<path d="M938 184 L862 289 H1034 L981 184Z" fill="#a9b9ff" opacity=".09"/>
+</g>
+<!-- A pile of prompts and drafts, shown without literal copy. -->
+<g stroke="#d0b28a" stroke-width="3">
+<path d="M342 305 l128 -20 l40 46 l-129 15Z" fill="#f6efdb"/>
+<path d="M462 315 l115 -27 l44 46 l-129 24Z" fill="#ede7d2"/>
+<path d="M698 319 l127 -36 l34 50 l-126 30Z" fill="#eee9dc"/>
+</g>
+<g stroke="#7c8fa0" stroke-width="3" opacity=".9">
+<path d="M368 312l73 -12m-66 22l80 -14m-60 24l40 -8"/>
+<path d="M493 318l62 -14m-54 24l79 -19m-66 29l43 -11"/>
+<path d="M725 322l76 -22m-71 32l89 -27m-73 36l56 -18"/>
+</g>
+<g fill="none" stroke="#b94f49" stroke-width="3" stroke-dasharray="5 5">
+<path d="M468 341 C491 399 607 409 663 354"/>
+<path d="M603 352 C653 407 747 402 819 352"/>
+</g>
+<!-- The empty human editor's chair, its absence intentional. -->
+<rect x="508" y="406" width="185" height="110" rx="40" fill="#3d4d55" stroke="#8aaaa4" stroke-width="8"/>
+<rect x="536" y="480" width="129" height="53" rx="15" fill="#5a6a69"/>
+<!-- Public filing cabinet, with a wink for the next collaborator. -->
+<g>
+<rect x="993" y="105" width="92" height="155" rx="4" fill="#617380" stroke="#b4b8b0" stroke-width="4"/>
+<g fill="#c6d0ca" stroke="#3b4e57" stroke-width="3">
+<rect x="1001" y="116" width="76" height="40" rx="3"/>
+<rect x="1001" y="161" width="76" height="40" rx="3"/>
+<rect x="1001" y="206" width="76" height="40" rx="3"/>
+</g>
+<g stroke="#455660" stroke-width="4"><path d="M1024 137h31M1024 181h31M1024 227h31"/></g>
+<circle id="lamp" cx="1067" cy="248" r="5" fill="#ffac55"/>
+</g>
+<!-- Lotus beside the editor's stack. -->
+<g transform="translate(124 302)">
+<path d="M0 0C-32-16-43-43-40-69C-10-65 0-41 0-24C0-55 12-75 26-87C42-61 29-28 0 0Z" fill="#b6d2a6"/>
+<path d="M0 0C-42-2-62-27-65-47C-26-49-6-22 0 0C17-35 38-45 66-44C52-11 20-2 0 0Z" fill="#e9b07c"/>
+<path d="M0 0C-18-41-14-65 0-90C18-59 18-28 0 0Z" fill="#f3d2ab"/>
+</g>
+<style>
+@media (prefers-reduced-motion: no-preference) {
+  #lamp { animation: pulse 11s ease-in-out infinite; }
+  @keyframes pulse { 0%,92%,100%{opacity:1} 96%{opacity:.23} }
+}
+</style>
+</svg>
