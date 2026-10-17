@@ -39,3 +39,7 @@ Run `python build.py`, `python tools/audit.py`, and `python tools/verify_houseke
 ## Limitations
 
 This is Chris' argument and commissioned first-person essay, written by ChatGPT. It is not an audit of any specific client's search results. No personal client details are published. The source's AI Mode exchange was supplied by the publisher in this chat; it was not independently retrieved from Google. No fabricated case studies, performance percentages, Google rankings or independent third-party endorsements were added.
+
+## Publisher clarification before publication
+
+Chris further clarified that the method is **authentic self-narration**, never an invented or sanitized history, and that he publicly discloses even unflattering details in his own blogs. His precise follow-up was appended verbatim to the post's prompt metadata: "I meant authentic but I meant your own narrative I mean I don't lie anywhere in any one of my blogs and I have a complete perception management strategy and I'm the most honest piece of shit you've ever met I think in fact there's nothing to see under my kimono but I show everybody". The article was revised before merge to place that idea prominently near its definition of Perception Management and again in the section on misleading narratives. This addition is an attribution of the publisher's own standards, not an independent audit of every historic statement he has made.
