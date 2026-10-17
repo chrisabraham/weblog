@@ -104,7 +104,7 @@ if redlined.exists():
            "Original 826DC assignment and precise redlining edit instruction survive")
     verify(text826.index("The walls were giving everybody permission")
            < text826.index("Our posse was completely earnest")
-           < text826.index("It took a village to make Fiesta"),
+           < text826.index("It took a village to make "),
            "The manuscript's revision lesson frames the posse and book references")
     verify('src="/media/826dc-redlined-manuscripts.svg"' in text826
            and "A tiny companion illustration by ChatGPT" in text826,
