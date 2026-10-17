@@ -33,7 +33,7 @@ AUTHOR = "Chris Abraham"
 EMAIL = "cja@well.com"
 TZ = ZoneInfo("America/New_York")
 HOME_POSTS = 15
-GA_ID = "G-KWXM1ZX7WQ"          # GA4 measurement ID; empty means no analytics
+GA_ID = "G-RRPFYHHRRY"          # GA4 measurement ID; empty means no analytics
 INDEXNOW_KEY = "cc740d643ba76c19773b15720256af8c"
 
 PERSON = {
