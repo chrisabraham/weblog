@@ -1,0 +1,43 @@
+title: Static weblog operations and publication checks
+seo_title: Static Weblog Operations and Publication Checks
+description: Operational checklist for maintaining a Python-built GitHub Pages weblog, including deployment, navigation, feeds, metadata and indexing.
+updated: 2026-10-17
+categories: Web Publishing, Operations, Accessibility, Search
+infobox_title: Site operations
+info.Platform: Python-generated static HTML
+info.Publishing: GitHub Pages via GitHub Actions
+info.Important: Source files are authoritative
+info.Related: [[Build a personal weblog with AI]]
+---
+<p>This is a runbook for maintaining an already established static weblog. It covers the ongoing engineering and publishing tasks exposed by the <a href="/2026/10/four-hours-fifty-six-commits.html">site-build chronicle</a>, the <a href="/2026/10/the-house-and-its-feng-shuai.html">navigation and accessibility review</a>, and the <a href="/2026/10/the-housekeeping-twin-arrives.html">housekeeping pass</a>. For the beginner's initial setup and pasteable agent prompts, see [[Build a personal weblog with AI]].</p>
+<h2>Which files are authoritative?</h2>
+<p>In this weblog repository, editable sources live under <code>src/posts/</code>, <code>src/wiki/</code>, <code>src/pages/</code>, <code>src/media/</code> and <code>src/style.css</code>. The Python program <code>build.py</code> renders them into <code>docs/</code>, which GitHub Pages serves. Fix source and rebuild; avoid directly editing generated HTML under <code>docs/</code>, as the next build will replace it.</p>
+<h2>Publishing a post without losing its history</h2>
+<ol>
+<li>Create or edit a source post with title, date, categories, summary, factual sources and appropriate attribution. Preserve the original user prompt and the actual writing model in the source metadata.</li>
+<li>Check citations, dates, link destinations, image descriptions and page semantics. Keep private data, credentials and client details out of source control.</li>
+<li>On edits to a published article, add an updated date, append the new source prompt and include a visible dated change notice. Existing history remains inspectable in Git.</li>
+<li>Run the generator and audits. Review the resulting standalone article as well as its homepage excerpt, archives, sitemap and feeds.</li>
+<li>Commit source changes, merge through normal review and confirm the GitHub Pages deployment has completed successfully.</li>
+</ol>
+<h2>Build and regression commands</h2>
+<pre><code>python build.py
+python tools/audit.py
+python tools/verify_housekeeping.py</code></pre>
+<p>The generator should produce no warnings, the audit should report <code>No issues.</code>, and the regression checks should pass. GitHub Actions performs those steps in the site's actual publishing workflow. Inspect the workflow log; a successful git push does not itself confirm the deployed page is live.</p>
+<h2>Navigation and accessibility checks</h2>
+<p>Keep a prominent skip link, keyboard-visible focus state, readable text contrast in both colour themes and a comprehensible heading hierarchy. Ensure the homepage offers short descriptive excerpts that link to full articles, rather than turning the homepage into an indefinitely growing wall of complete posts. Links should have meaningful text, and images should have descriptions reflecting what they depict.</p>
+<p>Test on a narrow viewport as well as desktop. Check menus, tables, embedded media, reduced-motion behaviour when applicable, and reflow. Automated audits find some defects but do not establish complete WCAG conformance or a real-world Lighthouse score.</p>
+<h2>Feeds, indexes and machine-readable descriptions</h2>
+<p>After publication, inspect RSS, Atom, OPML, sitemap, robots, canonical URLs, author pages and categories as appropriate. Ensure each reflects the same published post set. Drafts must remain absent from public feeds, sitemap and public index. Category or archive pages explicitly intended as <code>noindex</code> should remain outside the sitemap. Use schema to describe facts visible on the page; schema is not a request for search engines to certify a claim.</p>
+<p>Google no longer supports the old public sitemap ping endpoint. Accurate <code>lastmod</code> timestamps for materially changed pages still help crawling. The existing <code>.github/indexnow.py</code> supports a changed-URL mode and a separate full-sitemap mode. The site's IndexNow workflow normally sends URLs derived from changed generated pages on a push. A full submission is a separate editorial decision. Check HTTP response and URL count after a submission.</p>
+<h2>Domain and DNS care</h2>
+<p>Keep a separate registrar, authoritative DNS, website host and mail-service inventory. Cloudflare's free DNS can manage custom domains pointing to GitHub Pages; the domain registration remains a separate paid or at-cost service depending on registrar. Before nameserver changes, preserve MX, SPF, DKIM, DMARC, other TXT verification records and relevant DNSSEC configuration. The step-by-step custom-domain tutorial is in [[Build a personal weblog with AI]].</p>
+<h2>Routine maintenance cycle</h2>
+<table><thead><tr><th>Frequency</th><th>Checks</th></tr></thead><tbody>
+<tr><td>Every publication</td><td>Build, metadata, article link, excerpt, alt text, feeds, sitemap, current deployment.</td></tr>
+<tr><td>Monthly</td><td>Navigation, outdated links, redirects, security notices, unusual crawl errors and account access.</td></tr>
+<tr><td>Quarterly</td><td>Mobile usability, accessible controls, major external links, stale references, theme contrast and structured data.</td></tr>
+<tr><td>Before tool changes</td><td>Read handoffs and AGENTS.md, verify affected integration permissions and make a rollback plan.</td></tr>
+</tbody></table>
+<p>Related references: [[AI editorial provenance and agent handoffs]] for contributor controls, [[Model Context Protocol]] for external app connections, and <a href="/2026/10/the-art-of-the-handoff.html">The art of the handoff</a> for the original explanation of continuity across agents.</p>
