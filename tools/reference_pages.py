@@ -117,7 +117,7 @@ def build_reference_pages(*, src, site_url, site, posts, wiki, sitemap, authors,
     count = sum(map(len, igroups.values()))
     write("/site-index.html", page(
         title="Index", seo_title="Index of People, Projects and Topics Across the Weblog",
-        description="An alphabetical back-of-the-book index of people, tools, projects and ideas discussed across the weblog and wiki, with links to the pages that mention each.",
+        description="An alphabetical index of people, tools, projects and ideas discussed across the weblog and wiki, linking to the pages where they appear.",
         path="/site-index.html",
         body=('<h1 class="page-title">Index</h1><div class="post-body reference-page">'
               f'<p>{count} subjects with references to the pages where they actually occur. '
@@ -169,7 +169,7 @@ def build_reference_pages(*, src, site_url, site, posts, wiki, sitemap, authors,
         raise ValueError(f"HTML sitemap parity: missing {expected-listed}, unexpected {listed-expected}")
     write("/site-map.html", page(
         title="HTML site map", seo_title="HTML Site Map of Articles, Wiki and Reference Pages",
-        description="A human-readable tree of every indexable weblog article, evergreen wiki entry, author page and site reference, generated from the same URLs as the XML sitemap.",
+        description="A readable tree of every indexable weblog article, wiki entry, author page and site reference, generated from the same URLs as the XML sitemap.",
         path="/site-map.html",
         body=('<h1 class="page-title">HTML site map</h1><div class="post-body reference-page">'
               f'<p>{len(expected)} published indexable pages, grouped for readers. '
