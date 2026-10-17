@@ -118,13 +118,12 @@ if redlined.exists():
            "Affiliate book links and the disclosure follow the existing house rule")
     verify("GPT-6 in ChatGPT" in text826 and 'href="/authors/chris-abraham.html"' in text826,
            "Oliver memoir has Chris' byline and ChatGPT's disclosed writing role")
-# Chris' book-link rule: a visible book title, not a separate "Amazon" link,
-# is the affiliate link. Include the original Hemingway/Fiesta titles.
+# Chris' book-link rule: visible titles are tagged Amazon Associates links,
+# except the British title Fiesta, which Chris directed to his own original essay.
 if redlined.exists():
     from html import unescape as unescape_text
     tests_for_books = {
         "The Sun Also Rises": "0743297334",
-        "Fiesta": "0099285037",
         "London: The Information Capital": "0141978791",
         "Where the Animals Go": "0393634027",
         "Atlas of the Invisible": "0393651517",
@@ -141,6 +140,15 @@ if redlined.exists():
                f"Book title {title} is an Amazon Associates link")
     verify(not re.search(r'<a [^>]*>Amazon</a>', text826),
            "Book sections no longer use detached Amazon text links")
+    fiesta_url = "https://chrisabraham.com/blog/fiesta-the-sun-also-rises-by-ernest-hemingway/"
+    verify(text826.count('href="' + fiesta_url + '"') >= 4,
+           "All original Fiesta title links lead to Chris' own Hemingway article")
+    verify('https://www.amazon.com/dp/0099285037?tag=gerris-20' not in text826,
+           "No competing Amazon Fiesta link remains in this memoir")
+    verify("FOLLOW-UP 16, VERBATIM" in text826
+           and "Update, October 17, 2026, 2:42 AM EDT" in text826,
+           "User-provided Fiesta link and dated correction are publicly attributed")
+
     verify("FOLLOW-UP 14, VERBATIM" in text826
            and "FOLLOW-UP 15, VERBATIM" in text826
            and "Update, October 17, 2026" in text826,
