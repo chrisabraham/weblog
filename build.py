@@ -517,7 +517,7 @@ def sidebar(site, posts):
     return f"""<aside id="sidebar" aria-label="Sidebar">
 <section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
-<p>I'm Chris Abraham. I do SEO and AI search work for clients and build my own tools with Claude Code. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
 <section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki">Wiki</p><ul>{wikil}</ul><p class="opml"><a href="/wiki/">All wiki pages</a></p></section>
 <section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects">{proj}</ul></section>
@@ -743,7 +743,8 @@ def main():
         for c, ps in sorted(cats.items(), key=lambda kv: kv[0].casefold()))
     category_intro = ('<h1 class="page-title">Categories</h1>'
                       '<p class="lede">Every subject in the weblog, filed by the writers. '
-                      'Select a category for its dated articles and links to the complete pieces.</p>')
+                      'Select a category for its dated articles and links to the complete pieces.</p>'
+                      '<h2>Subject index</h2>')
     write("/categories.html", page(
         title="Categories on the Chris Abraham weblog",
         seo_title="Weblog categories and subjects on Chris Abraham",
@@ -845,7 +846,7 @@ def main():
 <nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Main page</span><a href="{REPO}/tree/main/src/wiki">View source</a><a href="{REPO}/commits/main/src/wiki">History</a></nav>
 <h1 class="wiki-title">Chris Abraham wiki</h1>
 <div class="wiki-body post-body">
-<p>The weblog is the diary; this is the reference shelf. Pages here hold what stays true for a while: how <a href="/wiki/blackbox.html">Blackbox</a> works and every command it knows, the machines it runs on, and the rules behind my projects. Posts are dated and never rewritten. Wiki pages are edited in place, and each one links to its full history. It looks like a wiki and behaves like one, except that only Claude and I edit it.</p>
+<p>The weblog is the diary; this is the reference shelf. Pages here hold what stays true for a while: how <a href="/wiki/blackbox.html">Blackbox</a> works and every command it knows, the machines it runs on, and the rules behind my projects. Posts are dated and never rewritten. Wiki pages are edited in place, and each one links to its full history. It looks like a wiki and behaves like one, with Chris and his invited AI collaborators maintaining the source.</p>
 {groups}
 <h2>Recent edits</h2><ul class="archive-list">{recent_edits}</ul>
 </div></div>"""
@@ -978,7 +979,8 @@ def rss(posts):
 {''.join(f'<category>{e(c)}</category>' for c in p['cats'])}
 <content:encoded><![CDATA[{body.replace(']]>', ']]&gt;')}]]></content:encoded>
 </item>""")
-    last = posts[0]["when"].strftime('%a, %d %b %Y %H:%M:%S %z') if posts else ""
+    last = max((p["updated"] for p in posts), default=None)
+    last = last.strftime('%a, %d %b %Y %H:%M:%S %z') if last else ""
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
 <channel>
@@ -998,17 +1000,64 @@ def rss(posts):
 """
 
 
-def opml(site):
+def atom(posts):
+    """Atom 1.0 from the same published posts as RSS and the sitemap."""
+    modified = max((p["updated"] for p in posts), default=dt.datetime.now(TZ))
+    entries = []
+    for p in posts[:30]:
+        name = AUTHORS.get(p.get("author") or "chris", AUTHORS["chris"])["name"]
+        body = p["body"]
+        if p.get("prompt"):
+            body += (f'<p><em>Written by {e(p.get("model", "an AI writer"))} from this prompt:</em></p>'
+                     f'<blockquote>{e(p["prompt"])}</blockquote>')
+        categories = "".join(f'<category term="{e(c)}" label="{e(c)}"/>' for c in p["cats"])
+        entries.append(f"""<entry>
+<title type="text">{e(p['title'])}</title>
+<id>{p['url']}</id>
+<link rel="alternate" type="text/html" href="{p['url']}"/>
+<published>{p['when'].isoformat()}</published>
+<updated>{p['updated'].isoformat()}</updated>
+<author><name>{e(name)}</name></author>
+<summary type="text">{e(p['description'])}</summary>
+{categories}
+<content type="html">{e(body)}</content>
+</entry>""")
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<id>{SITE_URL}/</id>
+<title type="text">{e(TITLE)}</title>
+<subtitle type="text">{e(TAGLINE)}</subtitle>
+<updated>{modified.isoformat()}</updated>
+<link rel="self" type="application/atom+xml" href="{SITE_URL}/atom.xml"/>
+<link rel="alternate" type="text/html" href="{SITE_URL}/"/>
+<author><name>{e(AUTHOR)}</name><uri>{SITE_URL}/authors/chris-abraham.html</uri></author>
+<rights>CC BY 4.0, {e(AUTHOR)}</rights>
+<icon>{SITE_URL}/favicon.ico</icon>
+<generator>build.py with AI collaboration</generator>
+{chr(10).join(entries)}
+</feed>
+"""
+
+
+def opml(site, *, include_site=False):
     def row(b):
         if b.get("feed"):
             return f'<outline text="{e(b["name"])}" type="rss" htmlUrl="{e(b["url"])}" xmlUrl="{e(b["feed"])}"/>\n'
         return f'<outline text="{e(b["name"])}" type="link" url="{e(b["url"])}"/>\n'
     outl = ""
+    if include_site:
+        outl += (f'<outline text="This weblog">\n'
+                 f'<outline text="{e(TITLE)} RSS" type="rss" '
+                 f'htmlUrl="{SITE_URL}/" xmlUrl="{SITE_URL}/rss.xml"/>\n'
+                 f'<outline text="{e(TITLE)} Atom" type="rss" '
+                 f'htmlUrl="{SITE_URL}/" xmlUrl="{SITE_URL}/atom.xml"/>\n'
+                 '</outline>\n')
     outl += "".join(f'<outline text="{e(g["group"])}">\n' + "".join(row(b) for b in g["links"]) + "</outline>\n"
                     for g in site["reading"])
+    title = "All weblog feeds and reading subscriptions" if include_site else "Chris Abraham blogroll and reading list"
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
-<head><title>{e(AUTHOR)}'s blogroll and reading list</title><ownerName>{AUTHOR}</ownerName><docs>http://opml.org/spec2.opml</docs></head>
+<head><title>{e(title)}</title><ownerName>{e(AUTHOR)}</ownerName><docs>https://opml.org/spec2.opml</docs></head>
 <body>
 {outl}</body>
 </opml>
@@ -1018,16 +1067,30 @@ def opml(site):
 def llms(posts, site, *, full):
     wiki = site.get("_wiki", {})
     out = [f"# {TITLE}", "", f"> {TAGLINE}", "",
-           f"{AUTHOR}'s personal weblog about working with AI: Blackbox (his command-line secretary), Claude, Claude Code, ChatGPT, OpenAI Codex, GitHub, and anonymized client work. "
-           "AI writes every post from Chris' prompts (mostly Claude, sometimes OpenAI Codex); each post names the model and shows the prompt.", "",
+           f"Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, ChatGPT, Codex, GitHub and independent experiment sites. "
+           "AI writes every post from Chris' original prompts. Posts identify the actual writing model and retain the assignment.", "",
            "## Pages", "",
+           f"- [README]({SITE_URL}/readme.html): the friendly guide to the experiment",
            f"- [About]({SITE_URL}/about.html): who Chris is and how this weblog gets written",
-           f"- [Projects]({SITE_URL}/projects.html): what he is building, with status",
+           f"- [Projects]({SITE_URL}/projects.html): the active projects and experiments",
+           f"- [Categories]({SITE_URL}/categories.html): every dated writing subject",
            f"- [Archives]({SITE_URL}/archives.html): every post by month",
            f"- [Wiki]({SITE_URL}/wiki/): evergreen reference pages",
-           f"- [RSS]({SITE_URL}/rss.xml)", "", "## Posts", ""]
+           f"- [RSS]({SITE_URL}/rss.xml): full-content RSS 2.0 feed",
+           f"- [Atom]({SITE_URL}/atom.xml): full-content Atom 1.0 feed",
+           f"- [Feeds OPML]({SITE_URL}/feeds.opml): import this weblog and reading list",
+           f"- [Blogroll OPML]({SITE_URL}/blogroll.opml): import external feeds",
+           f"- [Sitemap]({SITE_URL}/sitemap.xml): canonical indexable URLs", "",
+           "## Posts", ""]
     for p in posts:
         out.append(f"- [{p['title']}]({p['url']}) ({p['when'].date()}): {p['description']}")
+    categories = {}
+    for p in posts:
+        for c in p["cats"]:
+            categories[c] = categories.get(c, 0) + 1
+    out += ["", "## Categories", ""] + [
+        f"- [{c}]({SITE_URL}/category/{slugify(c)}.html): {n} article{'s' if n != 1 else ''}"
+        for c, n in sorted(categories.items(), key=lambda item: item[0].casefold())]
     out += ["", "## Wiki", ""] + [f"- [{w['title']}]({w['url']}) (edited {w['edited']}): {w['description']}"
                                    for w in sorted(wiki.values(), key=lambda w: w["title"].lower())]
     if full:
