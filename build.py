@@ -106,7 +106,11 @@ def parse(path):
         if ":" in line:
             k, v = line.split(":", 1)
             meta[k.strip()] = v.strip()
-    meta["body"] = youtube(dashes(body.strip()))
+    # Keep original source filenames in git, publish modern compressed media.
+    clean = youtube(dashes(body.strip()))
+    meta["body"] = re.sub(
+        r'(/media/[A-Za-z0-9_.-]+)\.(?:jpe?g|png)(?=["\s<>])',
+        r'\1.webp', clean, flags=re.IGNORECASE)
     return meta
 
 
@@ -951,7 +955,33 @@ def main():
     write("/llms.txt", llms(posts, site, full=False))
     write("/llms-full.txt", llms(posts, site, full=True))
     if (SRC / "media").exists():
+        # Keep old JPEG URLs available for historic links while serving WebP to
+        # visitors. Retain untouched master artwork under src/media/.
+        from PIL import Image
         shutil.copytree(SRC / "media", OUT / "media")
+        total_source = total_webp = total_legacy = count = 0
+        for original in sorted((SRC / "media").iterdir()):
+            if original.suffix.lower() not in (".jpg", ".jpeg", ".png"):
+                continue
+            total_source += original.stat().st_size
+            with Image.open(original) as img:
+                if img.mode not in ("RGB", "RGBA"):
+                    img = img.convert("RGBA" if "A" in img.getbands() else "RGB")
+                target = OUT / "media" / (original.stem + ".webp")
+                img.save(target, format="WEBP", quality=67, method=6)
+                total_webp += target.stat().st_size
+                if original.suffix.lower() in (".jpg", ".jpeg"):
+                    if img.mode == "RGBA":
+                        img = img.convert("RGB")
+                    old_url_target = OUT / "media" / original.name
+                    img.save(old_url_target, format="JPEG", quality=66,
+                             optimize=True, progressive=True, subsampling=2)
+                    total_legacy += old_url_target.stat().st_size
+                count += 1
+        if count:
+            print(f"  raster media: {count} source assets "
+                  f"({total_source//1024} KiB), WebP {total_webp//1024} KiB, "
+                  f"legacy JPEG {total_legacy//1024} KiB")
     write("/favicon.svg", FAVICON)
     raster_icons()
     write("/humans.txt", f"""/* TEAM */
