@@ -92,6 +92,41 @@ if ethos_post.exists():
 verify((DOCS / "media/ai-writers-editorial-table.svg").exists(),
        "The separate SVG is generated and available without JavaScript")
 
+# Redlined 826DC memoir: the original voice-to-text, two illustrations,
+# affiliate disclosure, and emphasis on revisions all travel together.
+redlined = DOCS / "2026/10/put-the-redlined-manuscripts-on-the-walls.html"
+verify(redlined.exists(), "Approved standalone Oliver Uberti / 826DC memoir is published")
+if redlined.exists():
+    text826 = redlined.read_text(encoding="utf-8")
+    verify('class="prompt"' in text826
+           and "As an aside and I think that it&#x27;s an amazing kind of article" in text826
+           and "About iterations and revisions and all that other stuff" in text826,
+           "Original 826DC assignment and precise redlining edit instruction survive")
+    verify(text826.index("The walls were giving everybody permission")
+           < text826.index("Our posse was completely earnest")
+           < text826.index("It took a village to make Fiesta"),
+           "The manuscript's revision lesson frames the posse and book references")
+    verify('src="/media/826dc-redlined-manuscripts.svg"' in text826
+           and "A tiny companion illustration by ChatGPT" in text826,
+           "Little hand-built manuscript-wall SVG and its original caption survive")
+    verify('src="/media/826dc-full-essay.avif"' in text826
+           and "Full-text AI illustration by ChatGPT" in text826,
+           "Article-wide generated lead art is present and attributed")
+    verify("rel=\"sponsored noopener\"" in text826
+           and "tag=gerris-20" in text826
+           and "As an Amazon Associate I earn from qualifying purchases" in text826,
+           "Affiliate book links and the disclosure follow the existing house rule")
+    verify("GPT-6 in ChatGPT" in text826 and 'href="/authors/chris-abraham.html"' in text826,
+           "Oliver memoir has Chris' byline and ChatGPT's disclosed writing role")
+verify((DOCS / "media/826dc-redlined-manuscripts.svg").exists(),
+       "Saved original manuscript gallery SVG is present")
+lead_image = DOCS / "media/826dc-full-essay.avif"
+verify(lead_image.exists(), "Generated full-text illustration is present")
+if lead_image.exists():
+    sample = lead_image.read_bytes()
+    verify(len(sample) > 1000 and sample[4:12] == b"ftypavif",
+           "Small lead image is a real AVIF media file")
+
 # Regression: wiki syntax may legitimately refer to a published post rather than
 # an evergreen wiki page. No more false redlink for the named flotilla article.
 flotilla_reference = DOCS / "2026/10/chaff-flares-reputation-work.html"
