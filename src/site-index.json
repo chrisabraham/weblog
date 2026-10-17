@@ -1,0 +1,749 @@
+[
+  {
+    "term": "2003 weblog",
+    "patterns": [
+      "2003 weblog",
+      "2004 weblog",
+      "2000s-style weblog"
+    ]
+  },
+  {
+    "term": "826DC",
+    "patterns": [
+      "826DC",
+      "writing room"
+    ]
+  },
+  {
+    "term": "Ablation",
+    "patterns": [
+      "ablation"
+    ]
+  },
+  {
+    "term": "Affiliate links",
+    "patterns": [
+      "affiliate links",
+      "Amazon Associates"
+    ]
+  },
+  {
+    "term": "AI illustration",
+    "patterns": [
+      "AI illustration",
+      "image model",
+      "AI image generator"
+    ]
+  },
+  {
+    "term": "AI lab",
+    "patterns": [
+      "search labs",
+      "live labs",
+      "websites that double"
+    ]
+  },
+  {
+    "term": "AI output verification",
+    "patterns": [
+      "fact-check",
+      "checked claims",
+      "verification"
+    ]
+  },
+  {
+    "term": "Al-Anon",
+    "patterns": [
+      "Al-Anon"
+    ]
+  },
+  {
+    "term": "Amazon",
+    "patterns": [
+      "Amazon",
+      "Amazon Associates"
+    ]
+  },
+  {
+    "term": "Anthropic",
+    "patterns": [
+      "Anthropic"
+    ]
+  },
+  {
+    "term": "Apache",
+    "patterns": [
+      "Apache"
+    ]
+  },
+  {
+    "term": "Archives",
+    "patterns": [
+      "archives",
+      "archival"
+    ]
+  },
+  {
+    "term": "Arlington, Virginia",
+    "patterns": [
+      "Arlington"
+    ]
+  },
+  {
+    "term": "Artificial coral reef",
+    "patterns": [
+      "coral reef"
+    ]
+  },
+  {
+    "term": "Authors",
+    "patterns": [
+      "authorship",
+      "byline",
+      "author page"
+    ]
+  },
+  {
+    "term": "Automation",
+    "patterns": [
+      "automated",
+      "automation",
+      "timers"
+    ]
+  },
+  {
+    "term": "Basecamp",
+    "patterns": [
+      "Basecamp"
+    ]
+  },
+  {
+    "term": "Bing",
+    "patterns": [
+      "Bing"
+    ]
+  },
+  {
+    "term": "Blackbox commands",
+    "patterns": [
+      "bb help",
+      "commands",
+      "Blackbox"
+    ]
+  },
+  {
+    "term": "Blogging in 2005",
+    "patterns": [
+      "Movable Type",
+      "2005"
+    ]
+  },
+  {
+    "term": "Brookings Institution",
+    "patterns": [
+      "Brookings"
+    ]
+  },
+  {
+    "term": "Canton, Alexandra",
+    "patterns": [
+      "Alexandra Canton"
+    ]
+  },
+  {
+    "term": "Chapman, Colin",
+    "patterns": [
+      "Colin Chapman",
+      "Lotus"
+    ]
+  },
+  {
+    "term": "ChatGPT",
+    "patterns": [
+      "ChatGPT"
+    ]
+  },
+  {
+    "term": "Chrome",
+    "patterns": [
+      "Chrome"
+    ]
+  },
+  {
+    "term": "Claude",
+    "patterns": [
+      "Claude"
+    ]
+  },
+  {
+    "term": "Cloudflare",
+    "patterns": [
+      "Cloudflare"
+    ]
+  },
+  {
+    "term": "Collaborative writing",
+    "patterns": [
+      "AI collaborators",
+      "writers",
+      "editors"
+    ]
+  },
+  {
+    "term": "Community and authorship",
+    "patterns": [
+      "community",
+      "author"
+    ]
+  },
+  {
+    "term": "Continuous integration",
+    "patterns": [
+      "regression checks",
+      "continuous integration",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "term": "Copyright",
+    "patterns": [
+      "copyright",
+      "Creative Commons"
+    ]
+  },
+  {
+    "term": "Corrections",
+    "patterns": [
+      "corrections",
+      "corrected",
+      "redline"
+    ]
+  },
+  {
+    "term": "Creative Commons",
+    "patterns": [
+      "Creative Commons",
+      "CC BY 4.0"
+    ]
+  },
+  {
+    "term": "Crisis management",
+    "patterns": [
+      "crisis",
+      "emergency"
+    ]
+  },
+  {
+    "term": "Data privacy",
+    "patterns": [
+      "privacy",
+      "data brokers"
+    ]
+  },
+  {
+    "term": "Dave Winer",
+    "patterns": [
+      "Dave Winer",
+      "Scripting News"
+    ]
+  },
+  {
+    "term": "DeleteMe",
+    "patterns": [
+      "DeleteMe",
+      "data broker opt-outs"
+    ]
+  },
+  {
+    "term": "Digital preservation",
+    "patterns": [
+      "archives",
+      "preserving",
+      "archival"
+    ]
+  },
+  {
+    "term": "DNSSEC",
+    "patterns": [
+      "DNSSEC"
+    ]
+  },
+  {
+    "term": "Editorial notes",
+    "patterns": [
+      "editor's note",
+      "editorial note"
+    ]
+  },
+  {
+    "term": "E-E-A-T",
+    "patterns": [
+      "E-E-A-T",
+      "experience, expertise"
+    ]
+  },
+  {
+    "term": "Edelman",
+    "patterns": [
+      "Edelman"
+    ]
+  },
+  {
+    "term": "Email",
+    "patterns": [
+      "email",
+      "mail",
+      "inbox"
+    ]
+  },
+  {
+    "term": "Ethics",
+    "patterns": [
+      "ethics",
+      "ethical"
+    ]
+  },
+  {
+    "term": "Fact checking",
+    "patterns": [
+      "fact check",
+      "fact-check",
+      "verification"
+    ]
+  },
+  {
+    "term": "Feed readers",
+    "patterns": [
+      "feed reader",
+      "rss"
+    ]
+  },
+  {
+    "term": "Fire prevention",
+    "patterns": [
+      "fire resistant",
+      "wildfire",
+      "Palisades fire"
+    ]
+  },
+  {
+    "term": "Flotilla",
+    "patterns": [
+      "flotilla",
+      "little boats"
+    ]
+  },
+  {
+    "term": "Ghost towns",
+    "patterns": [
+      "ghost town",
+      "abandoned sites"
+    ]
+  },
+  {
+    "term": "Gmail",
+    "patterns": [
+      "Gmail"
+    ]
+  },
+  {
+    "term": "Google",
+    "patterns": [
+      "Google"
+    ]
+  },
+  {
+    "term": "Google AI Mode",
+    "patterns": [
+      "AI Mode",
+      "AI answers"
+    ]
+  },
+  {
+    "term": "Google Analytics",
+    "patterns": [
+      "GA4",
+      "Google Analytics"
+    ]
+  },
+  {
+    "term": "Google Search",
+    "patterns": [
+      "Google Search",
+      "search results"
+    ]
+  },
+  {
+    "term": "History of the web",
+    "patterns": [
+      "early web",
+      "2003",
+      "2004",
+      "web history"
+    ]
+  },
+  {
+    "term": "Hill Mole",
+    "patterns": [
+      "Hill Mole"
+    ]
+  },
+  {
+    "term": "ICON 4x4",
+    "patterns": [
+      "ICON 4x4",
+      "restomod"
+    ]
+  },
+  {
+    "term": "Image compression",
+    "patterns": [
+      "WebP",
+      "JPEG",
+      "image compression"
+    ]
+  },
+  {
+    "term": "Information vacuum",
+    "patterns": [
+      "vacuum",
+      "searchable identity"
+    ]
+  },
+  {
+    "term": "Intellectual honesty",
+    "patterns": [
+      "authentic",
+      "truthful",
+      "evidence"
+    ]
+  },
+  {
+    "term": "Internet Archive",
+    "patterns": [
+      "Internet Archive",
+      "Wayback"
+    ]
+  },
+  {
+    "term": "JSON",
+    "patterns": [
+      "JSON",
+      "JSON-LD"
+    ]
+  },
+  {
+    "term": "Keywords",
+    "patterns": [
+      "keywords",
+      "SEO"
+    ]
+  },
+  {
+    "term": "Keyboard navigation",
+    "patterns": [
+      "keyboard",
+      "skip link"
+    ]
+  },
+  {
+    "term": "Law and defense",
+    "patterns": [
+      "good defense",
+      "lawyer without a JD"
+    ]
+  },
+  {
+    "term": "Little Shop of Horrors",
+    "patterns": [
+      "Little Shop of Horrors",
+      "Audrey II"
+    ]
+  },
+  {
+    "term": "Lotus",
+    "patterns": [
+      "Lotus",
+      "Colin Chapman"
+    ]
+  },
+  {
+    "term": "Mastodon",
+    "patterns": [
+      "Mastodon"
+    ]
+  },
+  {
+    "term": "Memory and handoffs",
+    "patterns": [
+      "memory",
+      "handoff",
+      "continuity"
+    ]
+  },
+  {
+    "term": "Meritus Media",
+    "patterns": [
+      "Meritus"
+    ]
+  },
+  {
+    "term": "Migration",
+    "patterns": [
+      "migration",
+      "redirects"
+    ]
+  },
+  {
+    "term": "Musk, Elon",
+    "patterns": [
+      "Elon Musk",
+      "Musk"
+    ]
+  },
+  {
+    "term": "Netlify",
+    "patterns": [
+      "Netlify"
+    ]
+  },
+  {
+    "term": "New Media Strategies",
+    "patterns": [
+      "New Media Strategies"
+    ]
+  },
+  {
+    "term": "OpenAI",
+    "patterns": [
+      "OpenAI"
+    ]
+  },
+  {
+    "term": "Online identity",
+    "patterns": [
+      "identity",
+      "biography"
+    ]
+  },
+  {
+    "term": "Open source",
+    "patterns": [
+      "open-source",
+      "source available"
+    ]
+  },
+  {
+    "term": "Page titles",
+    "patterns": [
+      "title",
+      "seo_title"
+    ]
+  },
+  {
+    "term": "Palisades wildfire",
+    "patterns": [
+      "Palisades",
+      "wildfire"
+    ]
+  },
+  {
+    "term": "Personal archives",
+    "patterns": [
+      "diary",
+      "archive",
+      "personal"
+    ]
+  },
+  {
+    "term": "Podcasting",
+    "patterns": [
+      "podcast",
+      "The Chris Abraham Show"
+    ]
+  },
+  {
+    "term": "Publishing workflow",
+    "patterns": [
+      "publish",
+      "publishing",
+      "workflow"
+    ]
+  },
+  {
+    "term": "Redlined manuscripts",
+    "patterns": [
+      "redlined",
+      "redlines",
+      "red ink"
+    ]
+  },
+  {
+    "term": "Reputation.com",
+    "patterns": [
+      "Reputation.com"
+    ]
+  },
+  {
+    "term": "Reputation management",
+    "patterns": [
+      "reputation"
+    ]
+  },
+  {
+    "term": "Search snippets",
+    "patterns": [
+      "snippets",
+      "meta description"
+    ]
+  },
+  {
+    "term": "Scripting News",
+    "patterns": [
+      "Scripting News"
+    ]
+  },
+  {
+    "term": "Search tests",
+    "patterns": [
+      "same sixteen questions",
+      "prompt set",
+      "search labs"
+    ]
+  },
+  {
+    "term": "Social media",
+    "patterns": [
+      "social profiles",
+      "social media"
+    ]
+  },
+  {
+    "term": "Software tests",
+    "patterns": [
+      "test suite",
+      "test cases",
+      "regression"
+    ]
+  },
+  {
+    "term": "SpaceX",
+    "patterns": [
+      "SpaceX"
+    ]
+  },
+  {
+    "term": "Substack",
+    "patterns": [
+      "Substack"
+    ]
+  },
+  {
+    "term": "Tesla",
+    "patterns": [
+      "Tesla",
+      "Roadster"
+    ]
+  },
+  {
+    "term": "The Chris Abraham Show",
+    "patterns": [
+      "The Chris Abraham Show"
+    ]
+  },
+  {
+    "term": "ThinkPad",
+    "patterns": [
+      "ThinkPad",
+      "ThinkPads"
+    ]
+  },
+  {
+    "term": "Tools and integrations",
+    "patterns": [
+      "API",
+      "MCP",
+      "connector"
+    ]
+  },
+  {
+    "term": "Transparency",
+    "patterns": [
+      "transparency",
+      "disclosure",
+      "prompts"
+    ]
+  },
+  {
+    "term": "Trump, Donald",
+    "patterns": [
+      "Donald Trump",
+      "Trump"
+    ]
+  },
+  {
+    "term": "Upwork",
+    "patterns": [
+      "Upwork"
+    ]
+  },
+  {
+    "term": "Usenet",
+    "patterns": [
+      "Usenet"
+    ]
+  },
+  {
+    "term": "User experience",
+    "patterns": [
+      "UX",
+      "navigation",
+      "mobile"
+    ]
+  },
+  {
+    "term": "Web accessibility",
+    "patterns": [
+      "accessibility",
+      "Lighthouse"
+    ]
+  },
+  {
+    "term": "WebP",
+    "patterns": [
+      "WebP"
+    ]
+  },
+  {
+    "term": "Whitman, Walt",
+    "patterns": [
+      "Whitman",
+      "I contain multitudes"
+    ]
+  },
+  {
+    "term": "Wiki cross-references",
+    "patterns": [
+      "wiki",
+      "[["
+    ]
+  },
+  {
+    "term": "Winer, Dave",
+    "patterns": [
+      "Dave Winer"
+    ]
+  },
+  {
+    "term": "WordPress",
+    "patterns": [
+      "WordPress"
+    ]
+  },
+  {
+    "term": "XML",
+    "patterns": [
+      "XML"
+    ]
+  }
+]
