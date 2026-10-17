@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Chris Abraham Weblog into docs/ (GitHub Pages serves main:/docs).
+"""Build the Chris Abraham weblog into docs/ (GitHub Pages serves main:/docs).
 
 Standard library only. Sources:
   src/posts/YYYY-MM-DD-slug.html  key: value header, a line of ---, then HTML
@@ -25,7 +25,7 @@ SRC = ROOT / "src"
 OUT = ROOT / "docs"
 
 SITE_URL = "https://chrisabraham.net"   # the one place the domain lives
-TITLE = "Chris Abraham"
+TITLE = "Chris Abraham weblog"
 HOME_TITLE = "Chris Abraham, a weblog on building with AI and Claude Code"
 HOME_DESCRIPTION = "Chris Abraham's weblog on Blackbox, Claude Code, ChatGPT, Codex, GitHub, and client work, written by AI from his prompts, with every prompt shown."
 TAGLINE = "Notes from building things with AI, written by AI from my prompts."
@@ -710,7 +710,7 @@ def main():
                      f'<a href="{p["path"]}">{e(p["title"])}</a></li>')
     if cur:
         lines.append("</ul>")
-    write("/archives.html", page(title="Archives of the Chris Abraham Weblog", seo_title="Weblog archives: every post by Chris Abraham, by month", description="Every post on Chris Abraham's weblog by month, from Blackbox to Claude Code to anonymized client work, written by AI from his prompts.",
+    write("/archives.html", page(title="Archives of the Chris Abraham weblog", seo_title="Weblog archives: every post by Chris Abraham, by month", description="Every post on Chris Abraham's weblog by month, from Blackbox to Claude Code to anonymized client work, written by AI from his prompts.",
           path="/archives.html", body='<h1 class="page-title">Archives</h1>' + "\n".join(lines), **P))
     sitemap.append(("/archives.html", posts[0]["updated"] if posts else None))
 

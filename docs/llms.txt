@@ -1,4 +1,4 @@
-# Chris Abraham
+# Chris Abraham weblog
 
 > Notes from building things with AI, written by AI from my prompts.
 
