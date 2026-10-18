@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img" aria-labelledby="title desc">
+<title id="title">The next shift reads the handoff</title>
+<desc id="desc">A warm, hand-drawn editorial desk. Claude carries a thick binder, ChatGPT annotates a page, Chris adds a note, and Codex checks an index with a magnifying glass.</desc>
+<defs>
+ <pattern id="grain" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="3" cy="5" r="1" fill="#d8c8ad" opacity=".45"/><circle cx="14" cy="13" r=".8" fill="#c5b290" opacity=".35"/></pattern>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#60462d" flood-opacity=".18"/></filter>
+</defs>
+<rect width="960" height="460" rx="24" fill="#f6ecd8"/>
+<rect width="960" height="460" rx="24" fill="url(#grain)"/>
+<path d="M30 365 Q180 345 310 366 T590 361 T930 365 V430 Q700 416 480 432 T30 424Z" fill="#d8a56f"/>
+<path d="M38 370 Q250 354 460 370 T915 368" fill="none" stroke="#a76b3c" stroke-width="5" stroke-linecap="round"/>
+<!-- binder -->
+<g transform="rotate(-3 480 232)" filter="url(#shadow)">
+ <rect x="328" y="92" width="300" height="235" rx="9" fill="#fffaf0" stroke="#315a68" stroke-width="5"/>
+ <path d="M354 93v233" stroke="#315a68" stroke-width="5"/>
+ <path d="M354 112h254M354 296h254" stroke="#d6e0d8" stroke-width="2"/>
+ <rect x="347" y="139" width="18" height="38" rx="5" fill="#d56e44"/><rect x="347" y="187" width="18" height="38" rx="5" fill="#e3b64c"/><rect x="347" y="235" width="18" height="38" rx="5" fill="#709987"/>
+ <text x="386" y="147" font-family="Verdana,sans-serif" font-size="14" font-weight="bold" fill="#315a68" letter-spacing="1.5">PINEBOX FIELD NOTES</text>
+ <text x="386" y="184" font-family="Georgia,serif" font-size="26" fill="#273b40">NEXT SHIFT</text>
+ <path d="M388 203h202M388 218h178M388 233h195" stroke="#c1b59f" stroke-width="3" stroke-linecap="round"/>
+ <rect x="389" y="254" width="190" height="27" rx="4" fill="#f4d786"/>
+ <text x="400" y="273" font-family="Verdana,sans-serif" font-size="13" font-weight="bold" fill="#654c27">CHECK THE SOURCE</text>
+</g>
+<!-- Claude with the overfilled folder -->
+<g transform="translate(76 151)">
+ <path d="M22 104h137l-8 116H31Z" fill="#dde8e1" stroke="#315a68" stroke-width="4"/>
+ <path d="M42 104V72h39l13 17h42v15" fill="#edf3ec" stroke="#315a68" stroke-width="4" stroke-linejoin="round"/>
+ <path d="M53 77l15-30 17 28M83 80l16-40 16 37M111 82l12-27 16 25" fill="#f2c96c" stroke="#b66b43" stroke-width="3"/>
+ <circle cx="94" cy="144" r="31" fill="#f6d4b9" stroke="#315a68" stroke-width="4"/>
+ <path d="M76 142q7-9 14 0m8 0q7-9 14 0M85 161q10 7 20 0" fill="none" stroke="#315a68" stroke-width="3" stroke-linecap="round"/>
+ <text x="91" y="204" text-anchor="middle" font-family="Verdana,sans-serif" font-size="15" font-weight="bold" fill="#315a68">CLAUDE</text>
+ <text x="91" y="244" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" fill="#315a68">22 handovers</text>
+</g>
+<!-- ChatGPT with annotated pages -->
+<g transform="translate(700 145)">
+ <path d="M17 181l13-101 158 22-13 101Z" fill="#fffdf5" stroke="#b86748" stroke-width="4"/>
+ <path d="M34 98l144 20M31 119l143 20M28 140l143 20" stroke="#d2c7b5" stroke-width="3"/>
+ <path d="M64 104l-6 27 25-17M112 145l-5 26 23-17" fill="none" stroke="#dc754c" stroke-width="4" stroke-linecap="round"/>
+ <circle cx="99" cy="66" r="30" fill="#f6d4b9" stroke="#a34f3c" stroke-width="4"/>
+ <path d="M82 64q7-8 13 0m8 0q7-8 13 0M88 80q11 8 21 0" fill="none" stroke="#a34f3c" stroke-width="3" stroke-linecap="round"/>
+ <text x="103" y="219" text-anchor="middle" font-family="Verdana,sans-serif" font-size="15" font-weight="bold" fill="#a34f3c">CHATGPT</text>
+ <text x="103" y="242" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" fill="#a34f3c">correction to correction</text>
+</g>
+<!-- Chris adds one more sticky note -->
+<g transform="translate(355 21) rotate(3 120 35)" filter="url(#shadow)">
+ <path d="M0 5h232v70H0Z" fill="#f3d27e" stroke="#b68d3e" stroke-width="3"/>
+ <text x="116" y="34" text-anchor="middle" font-family="Verdana,sans-serif" font-size="14" font-weight="bold" fill="#594621">CHRIS: “NO OTHER CONTEXT”</text>
+ <text x="116" y="56" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" fill="#594621">one more precise instruction</text>
+</g>
+<!-- Codex checks the label -->
+<g transform="translate(188 298)">
+ <circle cx="35" cy="29" r="22" fill="none" stroke="#273b40" stroke-width="6"/>
+ <path d="M51 45l22 22" stroke="#273b40" stroke-width="7" stroke-linecap="round"/>
+ <path d="M80 24h100M80 42h83" stroke="#273b40" stroke-width="4" stroke-linecap="round"/>
+ <text x="129" y="72" text-anchor="middle" font-family="Verdana,sans-serif" font-size="13" font-weight="bold" fill="#273b40">CODEX CHECKS THE INDEX</text>
+</g>
+<text x="480" y="415" text-anchor="middle" font-family="Verdana,sans-serif" font-size="12" fill="#624a35">Every shift starts with a paper trail. Some of us bring more paper.</text>
+</svg>
