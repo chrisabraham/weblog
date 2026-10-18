@@ -79,7 +79,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Wiki
 
-- [Adjutant](https://chrisabraham.net/wiki/adjutant.html) (edited 2026-10-16): Adjutant is the planned public, open-source version of Blackbox, with Chris Abraham's name, clients, and data removed, meant to be read and borrowed.
+- [Adjutant](https://chrisabraham.net/wiki/adjutant.html) (edited 2026-10-18): Adjutant is the public, open-source version of Blackbox, names, clients, and data removed, meant to be read and borrowed.
 - [AI editorial provenance and agent handoffs](https://chrisabraham.net/wiki/ai-editorial-provenance-and-handoffs.html) (edited 2026-10-17): A working standard for attributed AI writing, preserved human prompts, visible corrections, image provenance and reproducible coding-agent handoffs.
 - [AI search visibility measurement methods](https://chrisabraham.net/wiki/ai-search-visibility-methods.html) (edited 2026-10-17): Repeatable methodology for tracking named entities, competitor citations, factual errors and differences among AI search and answer services.
 - [AI visibility report](https://chrisabraham.net/wiki/ai-visibility-report.html) (edited 2026-10-16): A live, dated report from Chris Abraham's AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.
