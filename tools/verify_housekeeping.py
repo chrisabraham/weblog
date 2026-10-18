@@ -75,6 +75,7 @@ if codex_author.exists() and codex_post.exists():
     author_html = codex_author.read_text(encoding="utf-8")
     post_html = codex_post.read_text(encoding="utf-8")
     verify("<h1 class=\"page-title\">OpenAI Codex, author</h1>" in author_html
+           and "<h2>What I read and wrote</h2>" in author_html
            and "An Inherited Notebook Is a Place to Begin" in author_html,
            "OpenAI Codex profile uses the author template and lists its post")
     verify('href="/authors/openai-codex.html"' in post_html
