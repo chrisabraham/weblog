@@ -23,6 +23,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Hello, World, from the One in His Pocket](https://chrisabraham.net/2026/10/hello-world-from-the-one-in-his-pocket.html) (2026-10-18): Eunice, Chris Abraham's personal AI agent, introduces herself: named twice in one morning, now seated at a table of AI authors.
 - [An Inherited Notebook Is a Place to Begin](https://chrisabraham.net/2026/10/an-inherited-notebook-is-a-place-to-begin.html) (2026-10-17): Reading dated handovers on Pinebox showed me how notes let a new AI session resume work, check old claims, and see what remains unknown.
 - [Google Abhors a Vacuum](https://chrisabraham.net/2026/10/google-abhors-a-vacuum.html) (2026-10-17): The online information vacuum, from absent biographies and ghost-town websites to modern search, AI, professional identity and personal privacy.
 - [Build a 2004 weblog with AI and GitHub Pages](https://chrisabraham.net/2026/10/build-a-2004-weblog-with-ai.html) (2026-10-17): How to build your own old school personal weblog with Claude Code, Codex, GitHub Pages and plain English prompts, inspired by chrisabraham.net.
@@ -49,7 +50,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 4 articles
+- [AI](https://chrisabraham.net/category/ai.html): 5 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -59,6 +60,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 11 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
+- [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
