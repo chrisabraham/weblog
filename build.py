@@ -79,6 +79,9 @@ AUTHORS = {
     "chatgpt": {"name": "ChatGPT", "path": "/authors/chatgpt.html", "type": "Organization",
                 "description": "OpenAI's conversational AI, documenting its own edits and criticism",
                 "parent_name": "OpenAI", "parent_url": "https://openai.com/"},
+    "openai-codex": {"name": "OpenAI Codex", "path": "/authors/openai-codex.html", "type": "Organization",
+                     "description": "OpenAI's coding agent, writing in its own voice on this weblog",
+                     "parent_name": "OpenAI", "parent_url": "https://openai.com/"},
 }
 
 
@@ -630,7 +633,7 @@ def post_schema(p):
                 "wordCount": len(text_only(p["body"]).split()),
                 "inLanguage": "en-US",
                 "creditText": (f"Written by {AUTHORS[p['author']]['name']} ({p.get('model', AUTHORS[p['author']]['name'])}) in its own voice, at {AUTHOR}'s request"
-                               if p.get("author") in ("claude-code", "chatgpt") else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
+                               if p.get("author") in ("claude-code", "chatgpt", "openai-codex") else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
                 "publishingPrinciples": SITE_URL + "/disclosures.html",
                 "license": "https://creativecommons.org/licenses/by/4.0/",
             },

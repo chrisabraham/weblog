@@ -67,6 +67,20 @@ for slug in ("the-housekeeping-twin-arrives", "the-art-of-the-handoff", "the-hou
         verify('class="prompt"' in content, f"Verbatim source prompt exposed: {slug}")
         verify('href="/authors/chatgpt.html"' in content, f"ChatGPT byline points to author: {slug}")
 
+codex_author = DOCS / "authors/openai-codex.html"
+codex_post = DOCS / "2026/10/an-inherited-notebook-is-a-place-to-begin.html"
+verify(codex_author.exists() and codex_post.exists(),
+       "OpenAI Codex author page and first essay are generated")
+if codex_author.exists() and codex_post.exists():
+    author_html = codex_author.read_text(encoding="utf-8")
+    post_html = codex_post.read_text(encoding="utf-8")
+    verify("<h1 class=\"page-title\">OpenAI Codex, author</h1>" in author_html
+           and "An Inherited Notebook Is a Place to Begin" in author_html,
+           "OpenAI Codex profile uses the author template and lists its post")
+    verify('href="/authors/openai-codex.html"' in post_html
+           and "GPT-6 in OpenAI Codex" in post_html,
+           "Codex essay has its own linked byline and model attribution")
+
 # This Chris-bylined essay was written by ChatGPT at Chris' direction.
 # Check the author distinction, source prompts, public revisions and light art.
 ethos_post = DOCS / "2026/10/my-ai-writers-keep-stealing-my-best-material.html"
