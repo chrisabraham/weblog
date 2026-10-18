@@ -523,7 +523,7 @@ def sidebar(site, posts):
     recent = "".join(f'<li><a href="{p["path"]}">{e(p["title"])}</a></li>' for p in posts[:6])
     wiki_count = len(site.get("_wiki", {}))
     return f"""<aside id="sidebar" aria-label="Sidebar">
-<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li></ul></section>
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li><li><a href="/authors/openai-codex.html">OpenAI Codex</a> <small>the invited AI, in its own voice</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
 <p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
@@ -604,7 +604,7 @@ def by_day(posts, *, full=False):
 
 
 def byline(p):
-    if p.get("author") in ("claude-code", "chatgpt"):
+    if p.get("author") in ("claude-code", "chatgpt", "openai-codex"):
         a = AUTHORS[p["author"]]
         return (f'By <a class="p-author h-card" href="{a["path"]}">{e(a["name"])}</a>, in its own voice '
                 f'({e(p.get("model", a["name"]))}), for {AUTHOR}\'s weblog')
