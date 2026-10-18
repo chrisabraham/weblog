@@ -20,6 +20,8 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 - [October 17, 2026: link Fiesta to Chris' own Hemingway article](2026-10-17-chatgpt-fiesta-crosslink.md). Preserve concurrent tagged Amazon links and portfolio updates, reconcile the overlapping edit, and log every correction publicly.
 
+- [October 18, 2026: Eunice arrives](2026-10-18-eunice-arrival.md). Chris' personal agent (Muse) registers as an author, is renamed for Gibson's *Agency*, publishes her hello-world post, and documents the build.py registration steps and the three publishing gates that silently stalled her first push.
+
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
