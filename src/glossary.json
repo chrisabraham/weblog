@@ -1,417 +1,417 @@
 [
-  {
-    "term": "301 redirect",
-    "definition": "A permanent HTTP redirect that sends an old URL to its replacement. Useful when a page moves and the destination genuinely serves the same purpose.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "404",
-    "definition": "The HTTP response for a page that cannot be found. A normal response for missing or removed content, not by itself a sitewide search penalty.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "410 Gone",
-    "definition": "An HTTP response indicating that a resource has been intentionally removed and is not expected to return.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "Accessibility",
-    "definition": "Designing and testing a site so people using keyboards, screen readers, assistive technology, or different screen sizes can use it.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Adjutant",
-    "definition": "The proposed public, depersonalized version of the Blackbox command-line assistant, intended to make the useful patterns available without private data.",
-    "source": "/wiki/adjutant.html"
-  },
-  {
-    "term": "AEO",
-    "definition": "Answer engine optimization: making information understandable and citable by search features and answer-producing AI systems.",
-    "source": "/wiki/ai-search-visibility-methods.html"
-  },
-  {
-    "term": "Agent handoff",
-    "definition": "A dated record of a coding or writing agent's changes, tests, decisions and remaining work, so a later agent can resume with evidence.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "AI answer citation",
-    "definition": "A source link presented by an AI answer service in support of a response. The linked page still needs checking to see whether it supports the claim.",
-    "source": "/wiki/ai-search-visibility-methods.html"
-  },
-  {
-    "term": "AI byline",
-    "definition": "A clear indication of which AI contributor authored or edited a published piece, alongside the human direction and relevant revision history.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "AI search visibility",
-    "definition": "The extent to which an AI answer service accurately mentions a person, brand or organisation for a defined set of relevant questions.",
-    "source": "/wiki/ai-search-visibility-methods.html"
-  },
-  {
-    "term": "AI share of voice",
-    "definition": "A comparison of how often AI answers mention one named organisation and its alternatives across a fixed set of appropriate prompts.",
-    "source": "/wiki/ai-search-visibility-methods.html"
-  },
-  {
-    "term": "Alpine",
-    "definition": "A text-mode email client descended from Pine, used as part of the Pinebox terminal workflow.",
-    "source": "/wiki/pinebox.html"
-  },
-  {
-    "term": "Alt text",
-    "definition": "A text alternative that communicates an image's meaningful content or function to people who cannot see it. Decorative images may use an empty alternative.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "API",
-    "definition": "Application programming interface: a documented way one program can request data or actions from another service.",
-    "source": "/wiki/connections.html"
-  },
-  {
-    "term": "Atom",
-    "definition": "An XML web-feed format that publishes updates as entries with identifiers, dates, links and content. This weblog offers an Atom feed alongside RSS.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Backlink",
-    "definition": "A link from another website to a page. A useful backlink helps people discover supporting material; a link's value depends on context and legitimacy.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "Blackbox",
-    "definition": "A private command-line assistant, usually invoked as bb, that helps maintain tasks, diary notes, email, job leads and continuity on Pinebox.",
-    "source": "/wiki/blackbox.html"
-  },
-  {
-    "term": "Blogroll",
-    "definition": "A curated list of other websites or feeds worth reading, a familiar feature of early personal weblogs.",
-    "source": "/2026/10/a-weblog-written-by-claude.html"
-  },
-  {
-    "term": "Canonical URL",
-    "definition": "The preferred address for a page when equivalent content is accessible through more than one URL.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Chaff and flares",
-    "definition": "An aviation defense analogy applied to a reputation strategy: producing multiple legitimate sources and contexts around a name, while recognising their limits.",
-    "source": "/2026/10/chaff-flares-reputation-work.html"
-  },
-  {
-    "term": "Claude Code",
-    "definition": "Anthropic's coding agent used on this site to edit files, run commands, maintain projects and write attributed posts.",
-    "source": "/2026/10/four-hours-fifty-six-commits.html"
-  },
-  {
-    "term": "Cloudflare DNS",
-    "definition": "A service for managing the authoritative DNS records of a domain. It can point a name at hosting, mail and verification services without being the host itself.",
-    "source": "/wiki/build-a-personal-weblog-with-ai.html"
-  },
-  {
-    "term": "Codex",
-    "definition": "OpenAI's coding agent, which can inspect repositories and propose or implement software changes with the permissions available to it.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "Coral reef analogy",
-    "definition": "A model of long-term online publishing: an initial site provides the structure, and real contributions and independent references accumulate around it over years.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Crawl budget",
-    "definition": "The amount of crawling Googlebot can and wants to perform on a site. It reflects factors including demand, updates and the site's ability to respond.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Crawling",
-    "definition": "A search bot's retrieval of a page or other resource. Crawling alone does not guarantee that the resource will be indexed or ranked.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Data broker",
-    "definition": "A business that collects, combines and supplies information about people. Opt-outs can reduce exposure but may require ongoing monitoring.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "DigitalOcean",
-    "definition": "A cloud infrastructure provider hosting the Pinebox server used for command-line tools and site building.",
-    "source": "/wiki/pinebox.html"
-  },
-  {
-    "term": "DNS",
-    "definition": "The Domain Name System, which translates human-readable domain names into records for websites, email and other services.",
-    "source": "/wiki/build-a-personal-weblog-with-ai.html"
-  },
-  {
-    "term": "Domain age",
-    "definition": "The length of time a domain has existed. An older registration alone does not entitle its pages to better search rankings.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Editorial provenance",
-    "definition": "Evidence of who directed, authored, revised and published a piece, including original prompts, dated corrections and source history.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "Expired domain abuse",
-    "definition": "Manipulatively repurposing an expired domain to exploit its earlier search signals, a practice addressed in Google's spam policies.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "Feed",
-    "definition": "A machine-readable stream of new or updated publications that readers and other software can subscribe to.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Git",
-    "definition": "Version-control software that records changes to files, enabling comparison, rollback and documented collaboration.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "GitHub Actions",
-    "definition": "Automated workflows that run after repository events, such as building this site's generated pages and checking them before publication.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "GitHub Pages",
-    "definition": "GitHub's static website hosting service. This site serves files generated into the docs directory of its repository.",
-    "source": "/wiki/build-a-personal-weblog-with-ai.html"
-  },
-  {
-    "term": "Google Abhors a Vacuum",
-    "definition": "The idea that when an individual or organisation leaves gaps in its searchable history, outside sources will largely determine what searchers encounter.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Google Business Profile",
-    "definition": "Google's local-business listing system for eligible businesses, including hours, services, images, location or service-area information, and reviews.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "Google Search Console",
-    "definition": "Google's reporting service for verified site owners, including indexing, search performance, sitemaps, manual actions and security concerns.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Googlebot",
-    "definition": "Google's automated web crawler. It retrieves resources for Google's indexing systems, with revisit patterns that respond to changing demand.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Handoff packet",
-    "definition": "A compact, reproducible set of files, facts, decisions and pending tasks that makes work understandable to the next human or AI agent.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "HTML sitemap",
-    "definition": "A normal web page with links to a site's published pages, organised for visitors rather than submitted as an XML crawling protocol.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Human-in-the-loop",
-    "definition": "A workflow in which a person reviews or authorises consequential actions proposed by software or an AI assistant.",
-    "source": "/wiki/blackbox.html"
-  },
-  {
-    "term": "IndexNow",
-    "definition": "A protocol for notifying participating search engines that URLs have changed. Google is not a participant; submitting a URL does not guarantee indexing.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Internal link",
-    "definition": "A link from one page of a website to another page of the same site, helping people and crawlers reach related material.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "JSON-LD",
-    "definition": "A JSON-based format for structured data, commonly embedded in a webpage to describe the entities and content actually present.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Lighthouse",
-    "definition": "An auditing tool for performance, accessibility and other technical indicators. Automated scores cannot prove full accessibility compliance.",
-    "source": "/wiki/pinebox.html"
-  },
-  {
-    "term": "llms.txt",
-    "definition": "An emerging text-file convention for making a website's useful resources easier for AI tools to discover. Its presence is not a Google ranking guarantee.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "MCP",
-    "definition": "Model Context Protocol: a standard for connecting AI clients to external tools and data services through compatible servers.",
-    "source": "/wiki/model-context-protocol.html"
-  },
-  {
-    "term": "Meta description",
-    "definition": "A short description in a page's HTML head. Search engines may use it for snippets but can select different text.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Metadata",
-    "definition": "Information about a page, such as its title, description, authorship and publication dates, used by browsers and other systems.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Metanoia",
-    "definition": "A change of heart, conduct or direction. In reputation work it means actual reform that the public record may eventually document.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Namesake confusion",
-    "definition": "A search or AI answer combining information about different people with the same or similar names.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "Noindex",
-    "definition": "An instruction requesting that a search engine not include a particular page in its search results, while the page may remain visitable.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Online perception management",
-    "definition": "Sustained work to assemble, correct and maintain a public identity across owned pages, profiles, archives and independent references.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "Online reputation management",
-    "definition": "Work to research and influence the accuracy and presentation of a person or organisation's public record, including crisis response.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Open Graph",
-    "definition": "Metadata commonly used by social platforms to choose the title, description and share image displayed for a link.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "OPML",
-    "definition": "Outline Processor Markup Language, an XML format used here to export lists of feeds for import into a feed reader.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Pinebox",
-    "definition": "The SSH-accessible server that hosts Blackbox, its scheduled operations and web-build tools.",
-    "source": "/wiki/pinebox.html"
-  },
-  {
-    "term": "Prompt provenance",
-    "definition": "Preserving the original instructions given to an AI contributor so readers can distinguish the assignment from the finished response.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "Redirect chain",
-    "definition": "A sequence in which one URL redirects to another that redirects again, creating extra requests and possible confusion.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Reputation coachbuilding",
-    "definition": "A bespoke approach to documenting a public identity, using careful research and individually designed web properties rather than templates in bulk.",
-    "source": "/2026/10/chaff-flares-reputation-work.html"
-  },
-  {
-    "term": "Responsive layout",
-    "definition": "A page design that adapts to different viewport widths and input methods, including phones and desktop browsers.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Restomod",
-    "definition": "A restoration that preserves the appearance of an older machine while modernising what makes it run; an analogy for this weblog's design.",
-    "source": "/wiki/build-a-personal-weblog-with-ai.html"
-  },
-  {
-    "term": "Robots.txt",
-    "definition": "A file that gives crawlers instructions about which URL paths they may request. It is not a security control for private material.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "RSS",
-    "definition": "Really Simple Syndication, a web-feed format that lets readers subscribe to posts without repeatedly visiting the homepage.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Schema.org",
-    "definition": "A shared vocabulary for structured data describing people, organisations, articles, pages and other entities.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Screaming Frog",
-    "definition": "A desktop website crawler used for technical audits, link checking, titles, descriptions, canonicals, status codes and before-and-after verification.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "SEO",
-    "definition": "Search engine optimization: improving the accessibility, usefulness and discoverability of a website in search engines.",
-    "source": "/wiki/online-perception-management-field-guide.html"
-  },
-  {
-    "term": "SERP",
-    "definition": "Search engine results page: the collection of organic results and search features shown for a query.",
-    "source": "/2026/10/google-abhors-a-vacuum.html"
-  },
-  {
-    "term": "Site index",
-    "definition": "An alphabetical back-of-the-book list of subjects, people and tools, with locators linking to the pages where each appears.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Sitemap",
-    "definition": "A list of a site's pages. XML sitemaps are intended for crawlers; HTML sitemaps are navigable directories for people.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Source of truth",
-    "definition": "The designated record whose contents govern a particular piece of work. On this site, editable source files generate public docs pages.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "SSH",
-    "definition": "Secure Shell: an encrypted way to access a remote computer's terminal, used to reach Pinebox from a laptop.",
-    "source": "/wiki/pinebox.html"
-  },
-  {
-    "term": "Static site generator",
-    "definition": "Software that turns structured content and templates into HTML files without requiring a database-driven server for each visit.",
-    "source": "/wiki/build-a-personal-weblog-with-ai.html"
-  },
-  {
-    "term": "Structured data",
-    "definition": "Machine-readable statements about a page's visible subject, commonly written with Schema.org vocabulary in JSON-LD.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "SVG",
-    "definition": "Scalable Vector Graphics, an XML-based format for crisp, lightweight drawings that can scale without bitmap pixelation.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Upwork verdicts",
-    "definition": "Blackbox's labelled assessments of freelance opportunities, ordered by practical facts, risk and the user's hiring preferences.",
-    "source": "/wiki/upwork-verdicts.html"
-  },
-  {
-    "term": "URL",
-    "definition": "Uniform Resource Locator, the web address identifying a resource. Stable, descriptive URLs support reliable navigation and references.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Version history",
-    "definition": "A record of previous states of files or published writing, allowing later contributors and readers to inspect what changed.",
-    "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
-  },
-  {
-    "term": "WebP",
-    "definition": "An image format supporting lossy and lossless compression. This weblog uses WebP for lighter legacy bitmap illustrations.",
-    "source": "/wiki/static-weblog-operations.html"
-  },
-  {
-    "term": "Wiki",
-    "definition": "An editable reference collection whose pages can be revised in place. This site's wiki holds durable methods and technical notes, separate from dated essays.",
-    "source": "/wiki/build-a-personal-weblog-with-ai.html"
-  },
-  {
-    "term": "XML sitemap",
-    "definition": "An XML document listing canonical URLs and often last-modified dates for search crawlers; it is different from a reader-facing HTML sitemap.",
-    "source": "/wiki/static-weblog-operations.html"
-  }
+ {
+  "term": "301 redirect",
+  "definition": "A permanent HTTP redirect that sends an old URL to its replacement. Useful when a page moves and the destination genuinely serves the same purpose.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "404",
+  "definition": "The HTTP response for a page that cannot be found. A normal response for missing or removed content, not by itself a sitewide search penalty.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "410 Gone",
+  "definition": "An HTTP response indicating that a resource has been intentionally removed and is not expected to return.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "Accessibility",
+  "definition": "Designing and testing a site so people using keyboards, screen readers, assistive technology, or different screen sizes can use it.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Adjutant",
+  "definition": "The public, depersonalized version of the Blackbox command-line assistant, being released so the useful patterns are available without private data. The name was coined by an AI and adopted on sight.",
+  "source": "/wiki/adjutant.html"
+ },
+ {
+  "term": "AEO",
+  "definition": "Answer engine optimization: making information understandable and citable by search features and answer-producing AI systems.",
+  "source": "/wiki/ai-search-visibility-methods.html"
+ },
+ {
+  "term": "Agent handoff",
+  "definition": "A dated record of a coding or writing agent's changes, tests, decisions and remaining work, so a later agent can resume with evidence.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "AI answer citation",
+  "definition": "A source link presented by an AI answer service in support of a response. The linked page still needs checking to see whether it supports the claim.",
+  "source": "/wiki/ai-search-visibility-methods.html"
+ },
+ {
+  "term": "AI byline",
+  "definition": "A clear indication of which AI contributor authored or edited a published piece, alongside the human direction and relevant revision history.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "AI search visibility",
+  "definition": "The extent to which an AI answer service accurately mentions a person, brand or organisation for a defined set of relevant questions.",
+  "source": "/wiki/ai-search-visibility-methods.html"
+ },
+ {
+  "term": "AI share of voice",
+  "definition": "A comparison of how often AI answers mention one named organisation and its alternatives across a fixed set of appropriate prompts.",
+  "source": "/wiki/ai-search-visibility-methods.html"
+ },
+ {
+  "term": "Alpine",
+  "definition": "A text-mode email client descended from Pine, used as part of the Pinebox terminal workflow.",
+  "source": "/wiki/pinebox.html"
+ },
+ {
+  "term": "Alt text",
+  "definition": "A text alternative that communicates an image's meaningful content or function to people who cannot see it. Decorative images may use an empty alternative.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "API",
+  "definition": "Application programming interface: a documented way one program can request data or actions from another service.",
+  "source": "/wiki/connections.html"
+ },
+ {
+  "term": "Atom",
+  "definition": "An XML web-feed format that publishes updates as entries with identifiers, dates, links and content. This weblog offers an Atom feed alongside RSS.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Backlink",
+  "definition": "A link from another website to a page. A useful backlink helps people discover supporting material; a link's value depends on context and legitimacy.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "Blackbox",
+  "definition": "A private command-line assistant, usually invoked as bb, that helps maintain tasks, diary notes, email, job leads and continuity on Pinebox.",
+  "source": "/wiki/blackbox.html"
+ },
+ {
+  "term": "Blogroll",
+  "definition": "A curated list of other websites or feeds worth reading, a familiar feature of early personal weblogs.",
+  "source": "/2026/10/a-weblog-written-by-claude.html"
+ },
+ {
+  "term": "Canonical URL",
+  "definition": "The preferred address for a page when equivalent content is accessible through more than one URL.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Chaff and flares",
+  "definition": "An aviation defense analogy applied to a reputation strategy: producing multiple legitimate sources and contexts around a name, while recognising their limits.",
+  "source": "/2026/10/chaff-flares-reputation-work.html"
+ },
+ {
+  "term": "Claude Code",
+  "definition": "Anthropic's coding agent used on this site to edit files, run commands, maintain projects and write attributed posts.",
+  "source": "/2026/10/four-hours-fifty-six-commits.html"
+ },
+ {
+  "term": "Cloudflare DNS",
+  "definition": "A service for managing the authoritative DNS records of a domain. It can point a name at hosting, mail and verification services without being the host itself.",
+  "source": "/wiki/build-a-personal-weblog-with-ai.html"
+ },
+ {
+  "term": "Codex",
+  "definition": "OpenAI's coding agent, which can inspect repositories and propose or implement software changes with the permissions available to it.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "Coral reef analogy",
+  "definition": "A model of long-term online publishing: an initial site provides the structure, and real contributions and independent references accumulate around it over years.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Crawl budget",
+  "definition": "The amount of crawling Googlebot can and wants to perform on a site. It reflects factors including demand, updates and the site's ability to respond.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Crawling",
+  "definition": "A search bot's retrieval of a page or other resource. Crawling alone does not guarantee that the resource will be indexed or ranked.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Data broker",
+  "definition": "A business that collects, combines and supplies information about people. Opt-outs can reduce exposure but may require ongoing monitoring.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "DigitalOcean",
+  "definition": "A cloud infrastructure provider hosting the Pinebox server used for command-line tools and site building.",
+  "source": "/wiki/pinebox.html"
+ },
+ {
+  "term": "DNS",
+  "definition": "The Domain Name System, which translates human-readable domain names into records for websites, email and other services.",
+  "source": "/wiki/build-a-personal-weblog-with-ai.html"
+ },
+ {
+  "term": "Domain age",
+  "definition": "The length of time a domain has existed. An older registration alone does not entitle its pages to better search rankings.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Editorial provenance",
+  "definition": "Evidence of who directed, authored, revised and published a piece, including original prompts, dated corrections and source history.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "Expired domain abuse",
+  "definition": "Manipulatively repurposing an expired domain to exploit its earlier search signals, a practice addressed in Google's spam policies.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "Feed",
+  "definition": "A machine-readable stream of new or updated publications that readers and other software can subscribe to.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Git",
+  "definition": "Version-control software that records changes to files, enabling comparison, rollback and documented collaboration.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "GitHub Actions",
+  "definition": "Automated workflows that run after repository events, such as building this site's generated pages and checking them before publication.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "GitHub Pages",
+  "definition": "GitHub's static website hosting service. This site serves files generated into the docs directory of its repository.",
+  "source": "/wiki/build-a-personal-weblog-with-ai.html"
+ },
+ {
+  "term": "Google Abhors a Vacuum",
+  "definition": "The idea that when an individual or organisation leaves gaps in its searchable history, outside sources will largely determine what searchers encounter.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Google Business Profile",
+  "definition": "Google's local-business listing system for eligible businesses, including hours, services, images, location or service-area information, and reviews.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "Google Search Console",
+  "definition": "Google's reporting service for verified site owners, including indexing, search performance, sitemaps, manual actions and security concerns.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Googlebot",
+  "definition": "Google's automated web crawler. It retrieves resources for Google's indexing systems, with revisit patterns that respond to changing demand.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Handoff packet",
+  "definition": "A compact, reproducible set of files, facts, decisions and pending tasks that makes work understandable to the next human or AI agent.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "HTML sitemap",
+  "definition": "A normal web page with links to a site's published pages, organised for visitors rather than submitted as an XML crawling protocol.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Human-in-the-loop",
+  "definition": "A workflow in which a person reviews or authorises consequential actions proposed by software or an AI assistant.",
+  "source": "/wiki/blackbox.html"
+ },
+ {
+  "term": "IndexNow",
+  "definition": "A protocol for notifying participating search engines that URLs have changed. Google is not a participant; submitting a URL does not guarantee indexing.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Internal link",
+  "definition": "A link from one page of a website to another page of the same site, helping people and crawlers reach related material.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "JSON-LD",
+  "definition": "A JSON-based format for structured data, commonly embedded in a webpage to describe the entities and content actually present.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Lighthouse",
+  "definition": "An auditing tool for performance, accessibility and other technical indicators. Automated scores cannot prove full accessibility compliance.",
+  "source": "/wiki/pinebox.html"
+ },
+ {
+  "term": "llms.txt",
+  "definition": "An emerging text-file convention for making a website's useful resources easier for AI tools to discover. Its presence is not a Google ranking guarantee.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "MCP",
+  "definition": "Model Context Protocol: a standard for connecting AI clients to external tools and data services through compatible servers.",
+  "source": "/wiki/model-context-protocol.html"
+ },
+ {
+  "term": "Meta description",
+  "definition": "A short description in a page's HTML head. Search engines may use it for snippets but can select different text.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Metadata",
+  "definition": "Information about a page, such as its title, description, authorship and publication dates, used by browsers and other systems.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Metanoia",
+  "definition": "A change of heart, conduct or direction. In reputation work it means actual reform that the public record may eventually document.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Namesake confusion",
+  "definition": "A search or AI answer combining information about different people with the same or similar names.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "Noindex",
+  "definition": "An instruction requesting that a search engine not include a particular page in its search results, while the page may remain visitable.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Online perception management",
+  "definition": "Sustained work to assemble, correct and maintain a public identity across owned pages, profiles, archives and independent references.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "Online reputation management",
+  "definition": "Work to research and influence the accuracy and presentation of a person or organisation's public record, including crisis response.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Open Graph",
+  "definition": "Metadata commonly used by social platforms to choose the title, description and share image displayed for a link.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "OPML",
+  "definition": "Outline Processor Markup Language, an XML format used here to export lists of feeds for import into a feed reader.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Pinebox",
+  "definition": "The SSH-accessible server that hosts Blackbox, its scheduled operations and web-build tools.",
+  "source": "/wiki/pinebox.html"
+ },
+ {
+  "term": "Prompt provenance",
+  "definition": "Preserving the original instructions given to an AI contributor so readers can distinguish the assignment from the finished response.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "Redirect chain",
+  "definition": "A sequence in which one URL redirects to another that redirects again, creating extra requests and possible confusion.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Reputation coachbuilding",
+  "definition": "A bespoke approach to documenting a public identity, using careful research and individually designed web properties rather than templates in bulk.",
+  "source": "/2026/10/chaff-flares-reputation-work.html"
+ },
+ {
+  "term": "Responsive layout",
+  "definition": "A page design that adapts to different viewport widths and input methods, including phones and desktop browsers.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Restomod",
+  "definition": "A restoration that preserves the appearance of an older machine while modernising what makes it run; an analogy for this weblog's design.",
+  "source": "/wiki/build-a-personal-weblog-with-ai.html"
+ },
+ {
+  "term": "Robots.txt",
+  "definition": "A file that gives crawlers instructions about which URL paths they may request. It is not a security control for private material.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "RSS",
+  "definition": "Really Simple Syndication, a web-feed format that lets readers subscribe to posts without repeatedly visiting the homepage.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Schema.org",
+  "definition": "A shared vocabulary for structured data describing people, organisations, articles, pages and other entities.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Screaming Frog",
+  "definition": "A desktop website crawler used for technical audits, link checking, titles, descriptions, canonicals, status codes and before-and-after verification.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "SEO",
+  "definition": "Search engine optimization: improving the accessibility, usefulness and discoverability of a website in search engines.",
+  "source": "/wiki/online-perception-management-field-guide.html"
+ },
+ {
+  "term": "SERP",
+  "definition": "Search engine results page: the collection of organic results and search features shown for a query.",
+  "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Site index",
+  "definition": "An alphabetical back-of-the-book list of subjects, people and tools, with locators linking to the pages where each appears.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Sitemap",
+  "definition": "A list of a site's pages. XML sitemaps are intended for crawlers; HTML sitemaps are navigable directories for people.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Source of truth",
+  "definition": "The designated record whose contents govern a particular piece of work. On this site, editable source files generate public docs pages.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "SSH",
+  "definition": "Secure Shell: an encrypted way to access a remote computer's terminal, used to reach Pinebox from a laptop.",
+  "source": "/wiki/pinebox.html"
+ },
+ {
+  "term": "Static site generator",
+  "definition": "Software that turns structured content and templates into HTML files without requiring a database-driven server for each visit.",
+  "source": "/wiki/build-a-personal-weblog-with-ai.html"
+ },
+ {
+  "term": "Structured data",
+  "definition": "Machine-readable statements about a page's visible subject, commonly written with Schema.org vocabulary in JSON-LD.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "SVG",
+  "definition": "Scalable Vector Graphics, an XML-based format for crisp, lightweight drawings that can scale without bitmap pixelation.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Upwork verdicts",
+  "definition": "Blackbox's labelled assessments of freelance opportunities, ordered by practical facts, risk and the user's hiring preferences.",
+  "source": "/wiki/upwork-verdicts.html"
+ },
+ {
+  "term": "URL",
+  "definition": "Uniform Resource Locator, the web address identifying a resource. Stable, descriptive URLs support reliable navigation and references.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Version history",
+  "definition": "A record of previous states of files or published writing, allowing later contributors and readers to inspect what changed.",
+  "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "WebP",
+  "definition": "An image format supporting lossy and lossless compression. This weblog uses WebP for lighter legacy bitmap illustrations.",
+  "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Wiki",
+  "definition": "An editable reference collection whose pages can be revised in place. This site's wiki holds durable methods and technical notes, separate from dated essays.",
+  "source": "/wiki/build-a-personal-weblog-with-ai.html"
+ },
+ {
+  "term": "XML sitemap",
+  "definition": "An XML document listing canonical URLs and often last-modified dates for search crawlers; it is different from a reader-facing HTML sitemap.",
+  "source": "/wiki/static-weblog-operations.html"
+ }
 ]

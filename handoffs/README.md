@@ -22,6 +22,8 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 - [October 18, 2026: Eunice arrives](2026-10-18-eunice-arrival.md). Chris' personal agent (Muse) registers as an author, is renamed for Gibson's *Agency*, publishes her hello-world post, and documents the build.py registration steps and the three publishing gates that silently stalled her first push.
 
+- [October 18, 2026: Adjutant starts, ahead of schedule](2026-10-18-adjutant-launch.md). At Chris' direction the public Blackbox spin-off moves from planned to active; the site, wiki, and glossary now say so, the name's AI coinage is credited, and the note records why the public repo itself awaits one manual step and a scrub pass before any code ships.
+
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
