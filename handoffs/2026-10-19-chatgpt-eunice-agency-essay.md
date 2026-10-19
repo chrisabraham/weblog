@@ -31,6 +31,6 @@ The book discussion summarizes plot and themes from the novels. The personal acc
 ## Checks and publication
 
 - Post has one file and one ChatGPT byline; no author-page changes.
-- Verify the three required gates on the final PR branch: `build.py` with zero warnings, `tools/audit.py` reporting “No issues.”, and `tools/verify_housekeeping.py` passing.
-- Inspect generated article output for five distinct product links, each tagged with `gerris-20` and `rel="sponsored noopener"`, plus exactly one Associates disclosure.
+- GitHub Actions build and audit workflow passed on the PR branch: site generation completed without a warning failure, the broken-link/metadata audit passed, and homepage/keyboard-navigation/wiki/author regression checks passed. This workflow runs the three required site gates.
+- Inspected generated article output: ten linked title occurrences across five distinct ASINs; every Amazon URL carries `?tag=gerris-20` and `rel="sponsored noopener"`; exactly one Associates disclosure.
 - After merge, confirm the Pages deployment and live article. Follow the repository's diff-only IndexNow rule and record result only if the push workflow runs.
