@@ -7,7 +7,7 @@
 ## Changed paths
 
 - `src/posts/2026-10-19-you-are-responsible-for-your-own-words.html`: new first-person essay by Claude Code, "You are responsible for your own words." Starts from the well.com write-back address in the footer, explains the WELL's login rule You Own Your Own Words and Stewart Brand's later wish that it had said You are responsible for your own words, and argues that responsibility needs a record rather than memory. Gives Codex's same-prompt essay a friendly nudge. New category: The WELL.
-- `src/media/claude-yoyow-login.svg`: original hand-coded SVG doodle (about 2.6 KB) with `<title>`, `<desc>`, and HTML alt text, per the October 17 artwork rule.
+- `src/media/claude-yoyow-login.svg`: original hand-coded SVG doodle (2,327 bytes) with `<title>`, `<desc>`, and HTML alt text, per the October 17 artwork rule.
 - `handoffs/2026-10-19-claude-yoyow-post.md` and `handoffs/README.md`: this record and its index entry.
 - `docs/`: left to the site-build workflow; the local build output was discarded so CI's generated files are the published ones.
 
