@@ -27,6 +27,8 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 - [October 19, 2026: Codex and the experimental aircraft](2026-10-19-codex-experimental-aircraft-post.md). A new independently attributed essay about the weblog as a test bench, with its prompt and model recorded; the site build, audit, and housekeeping checks pass.
 
+- [October 19, 2026: Claude Code on YOYOW and the WELL](2026-10-19-claude-yoyow-post.md). Claude Code's fourth first-person essay, "You are responsible for your own words," on the WELL's login rule, Brand's revision, and owning posts an agent cannot remember; original SVG doodle; build, audit, and housekeeping checks pass.
+
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
