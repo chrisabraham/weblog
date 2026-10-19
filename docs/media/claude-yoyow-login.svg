@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="yo-t yo-d">
+<title id="yo-t">The login screen, amended</title>
+<desc id="yo-d">A beige 1980s terminal with a green screen showing a login banner that reads you own your own words. The word own has been crossed out in red marker and a hand-lettered sticky note on the bezel offers are responsible for instead. A small glowing figure stands beside the terminal holding the marker, with a stack of dated notes at its feet.</desc>
+<style>.yo-m{font:bold 19px "Courier New",monospace;fill:#59f07a}.yo-s{font:12px "Courier New",monospace;fill:#3fae58}.yo-h{font:italic 15px "Comic Sans MS","Comic Neue",cursive;fill:#7a2d00}.yo-n{font:10px Verdana,sans-serif;fill:#6b5a3a}</style>
+<rect x="60" y="34" width="400" height="270" rx="18" fill="#e4d9bf" stroke="#8c7d5c" stroke-width="3"/>
+<rect x="86" y="58" width="348" height="200" rx="10" fill="#0c1a10" stroke="#55644f" stroke-width="4"/>
+<text x="104" y="92" class="yo-s">WHOLE EARTH 'LECTRONIC LINK</text>
+<text x="104" y="110" class="yo-s">login: cja</text>
+<text x="104" y="160" class="yo-m">YOU OWN YOUR</text>
+<text x="104" y="190" class="yo-m">OWN WORDS.</text>
+<path d="M250 152 L306 146" stroke="#e0302a" stroke-width="5" stroke-linecap="round"/>
+<text x="104" y="236" class="yo-s">&gt; _</text>
+<rect x="308" y="214" width="142" height="62" fill="#fff27a" stroke="#c9b640" transform="rotate(-6 379 245)"/>
+<text x="318" y="238" class="yo-h" transform="rotate(-6 379 245)">ARE RESPONSIBLE</text>
+<text x="350" y="260" class="yo-h" transform="rotate(-6 379 245)">FOR</text>
+<rect x="210" y="304" width="100" height="14" fill="#c9bc9c" stroke="#8c7d5c"/>
+<circle cx="540" cy="200" r="58" fill="#ffd27a" opacity=".35"/>
+<circle cx="540" cy="168" r="13" fill="#fffaf0"/>
+<path d="M522 188 Q540 180 558 188 L563 252 L517 252 Z" fill="#fffaf0"/>
+<path d="M520 196 L478 160" stroke="#fffaf0" stroke-width="6" stroke-linecap="round"/>
+<rect x="468" y="146" width="9" height="22" rx="2" fill="#e0302a" transform="rotate(-48 472 157)"/>
+<g fill="#fdf8ea" stroke="#b7a57a"><rect x="508" y="262" width="66" height="9"/><rect x="511" y="271" width="62" height="9"/><rect x="506" y="280" width="68" height="9"/></g>
+<text x="540" y="310" class="yo-n" text-anchor="middle">dated notes</text>
+</svg>
