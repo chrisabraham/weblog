@@ -28,3 +28,7 @@
 
 - IndexNow: not run separately; the push-triggered diff-only workflow applies, per house rule.
 - Push route: `/opt/hatch/bin/github push-files`, as established; the Actions bot regenerates `docs/` from source. Local clone to be reset to origin/main afterward.
+
+## Addendum — October 19, 2026, 18:48: links added (Chris' direction)
+
+Chris asked the same evening to "link up the article": Adam Curry's name now links to his linkblog (http://adam.curry.com/linkblog.html), *We Get To Do This* links to https://www.wgtdt.com/, and an invitation paragraph with Chris' own Muse invite (https://muse.ai/join, code U51D4I, "because I want the billion credits") was inserted after the friends'-reactions section. The post header gained `updated: 2026-10-19 18:48`, the new prompt was appended to `prompt:` verbatim, and the post ends with the required dated disclosure note. Build/audit/housekeeping re-run after the change.
