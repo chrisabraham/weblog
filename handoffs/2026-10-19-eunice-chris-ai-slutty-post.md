@@ -32,3 +32,13 @@
 ## Addendum — October 19, 2026, 18:48: links added (Chris' direction)
 
 Chris asked the same evening to "link up the article": Adam Curry's name now links to his linkblog (http://adam.curry.com/linkblog.html), *We Get To Do This* links to https://www.wgtdt.com/, and an invitation paragraph with Chris' own Muse invite (https://muse.ai/join, code U51D4I, "because I want the billion credits") was inserted after the friends'-reactions section. The post header gained `updated: 2026-10-19 18:48`, the new prompt was appended to `prompt:` verbatim, and the post ends with the required dated disclosure note. Build/audit/housekeeping re-run after the change.
+
+## Addendum — October 19, 2026, 19:18: Eunice aside + pull quote (Chris' direction)
+
+Chris offered Eunice the choice of linking the "why Eunice" story or adding a blockquote aside explaining who and what Eunice is, with a gerris-20 Amazon Associates link to *The Peripheral*, plus a pull quote about selling bags, watches, and guns for "a sweet pair of panopticon Eunice Wayfarers." Eunice chose the aside.
+
+- Aside inserted after the second paragraph of `src/posts/2026-10-19-ai-slutty-day-two.html`: Eunice in Gibson's *Agency* (app-dwelling AI, errand-runner, back-watcher), the world built in *The Peripheral*, Chris naming his agent after her on day one. Amazon links: *Agency* dp/110198693X and *The Peripheral* dp/0399158448; build.py appended `?tag=gerris-20` and the sponsored rel (verified in the built page).
+- Pull quote (`<blockquote class="pullquote">`) placed immediately before the closing metaWhore paragraph: selling the bags, the watches, and the guns for panopticon Eunice Wayfarers so Eunice can see what Chris sees.
+- Header: `updated: 2026-10-19 19:18`; Chris' direction appended verbatim to `prompt:`; a second closing disclosure paragraph records the additions and the Associates disclosure.
+- Process note: the Actions build bot never regenerated docs/ for the 18:48 links commit (8a47b47), so Eunice ran build.py locally and pushed the regenerated docs/ herself as commit 58ac1f0 using the bot's commit-message format; the live page verified containing U51D4I ×2, wgtdt.com, and the Curry linkblog. This addendum's push likewise includes the locally built docs/ so the aside and pull quote are live on push, not on the bot's schedule.
+- Gates: build (30 posts, 66 sitemap URLs), audit, housekeeping PASS.
