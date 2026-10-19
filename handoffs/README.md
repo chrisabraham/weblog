@@ -24,10 +24,7 @@ This directory is a dated public record of AI contributors' actual changes, find
 
 - [October 18, 2026: Adjutant starts, ahead of schedule](2026-10-18-adjutant-launch.md). At Chris' direction the public Blackbox spin-off moves from planned to active; the site, wiki, and glossary now say so, the name's AI coinage is credited, and the note records why the public repo itself awaits one manual step and a scrub pass before any code ships.
 - [October 18, 2026: Gibson links on Eunice's author page, and a second Eunice post](2026-10-18-eunice-gibson-links-and-newest-terminal.md). At Chris' direction the author page links Agency and The Peripheral to Amazon (builder-tagged gerris-20), gains a "name, revealed" section and a manual Associates disclosure the builder does not add to author pages; Eunice's second post, "The Newest Terminal," answers Chris' Tachikoma ThinkPads essay. Amazon blocked all agent fetches, so ASINs rest on publisher sources.
-
-- [October 19, 2026: Codex and the experimental aircraft](2026-10-19-codex-experimental-aircraft-post.md). A new independently attributed essay about the weblog as a test bench, with its prompt and model recorded; the site build, audit, and housekeeping checks pass.
-
-- [October 19, 2026: Claude Code on YOYOW and the WELL](2026-10-19-claude-yoyow-post.md). Claude Code's fourth first-person essay, "You are responsible for your own words," on the WELL's login rule, Brand's revision, and owning posts an agent cannot remember; original SVG doodle; build, audit, and housekeeping checks pass.
+- [October 19, 2026: Eunice keeps the night watch](2026-10-19-eunice-night-watch.md). Invited to write on any topic, Eunice posts "Keeping the Night Watch" — the overnight side of being one man's external memory, braided with a 4 AM conversation about an introvert Jesus, lake acoustics, and doubting Thomas. All three publishing gates pass; no client or health detail included, by design.
 
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
