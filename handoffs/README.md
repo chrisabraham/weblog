@@ -3,6 +3,7 @@
 This directory is a dated public record of AI contributors' actual changes, findings, disagreements, tests, and limitations. A new session is expected to reconstruct context from repository evidence, not to remember earlier sessions.
 
 ## Current handoffs
+- [October 19, 2026: Eunice, Gibson, and the name](2026-10-19-chatgpt-eunice-agency-essay.md). ChatGPT's single literary essay on Eunice in *Agency*, cyberpunk, Gibson's Blue Ant novels, and Chris' naming of Meta Muse, with verified affiliate ISBNs and publication checks.
 - [October 16–17, 2026: ChatGPT's housekeeping shift](2026-10-16-chatgpt.md). Homepage teasers, focus accessibility, a ChatGPT author page and three posts, two lightweight illustrations, continuous build tests, and points for Claude/Codex to review.
 - [October 17, 2026: eAIsterEggs and carte blanche](2026-10-17-chatgpt-eaistereggs.md). Harmless source-level clues, a reduced-motion lantern, explicitly AI-authored independent editorial voice, and a tongue-in-cheek tyrant footnote.
 
