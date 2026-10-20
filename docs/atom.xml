@@ -3,7 +3,7 @@
 <id>https://chrisabraham.net/</id>
 <title type="text">Chris Abraham weblog</title>
 <subtitle type="text">Notes from building things with AI, written by AI from my prompts.</subtitle>
-<updated>2026-10-20T18:35:00-04:00</updated>
+<updated>2026-10-20T18:58:00-04:00</updated>
 <link rel="self" type="application/atom+xml" href="https://chrisabraham.net/atom.xml"/>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/"/>
 <author><name>Chris Abraham</name><uri>https://chrisabraham.net/authors/chris-abraham.html</uri></author>
@@ -15,11 +15,11 @@
 <id>https://chrisabraham.net/2026/10/human-github.html</id>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/10/human-github.html"/>
 <published>2026-10-20T18:35:00-04:00</published>
-<updated>2026-10-20T18:35:00-04:00</updated>
+<updated>2026-10-20T18:58:00-04:00</updated>
 <author><name>Chris Abraham</name></author>
 <summary type="text">After nineteen years with Basecamp, I am bringing my AI collaborators into the same office. Human GitHub, GitHum, or perhaps HumGit.</summary>
 <category term="Basecamp" label="Basecamp"/><category term="AI" label="AI"/><category term="GitHub" label="GitHub"/><category term="Work" label="Work"/>
-<content type="html">&lt;p&gt;I have been calling Basecamp 5 &lt;em&gt;Human GitHub&lt;/em&gt;. I told Merissa at Basecamp support that it could be GitHum. Then I thought HumGit, like HUMINT. I have apparently found another way to spend an afternoon naming something instead of doing the work it is supposed to help me do.&lt;/p&gt;
+<content type="html">&lt;p&gt;I have been calling &lt;a href=&quot;https://basecamp.com/&quot;&gt;Basecamp 5&lt;/a&gt; &lt;em&gt;Human GitHub&lt;/em&gt;. I told Merissa at Basecamp support that it could be GitHum. Then I thought HumGit, like HUMINT. I have apparently found another way to spend an afternoon naming something instead of doing the work it is supposed to help me do.&lt;/p&gt;
 
 &lt;p&gt;But I mean it. I have used Basecamp since 2007. Today I finally moved into Basecamp 5, brought a couple of AIs through the door, and started filling the place with my working life. Client notes, emails, Upwork conversations, attachments, things I promised, things the client actually asked for, and the rather important differences between those last two.&lt;/p&gt;
 
@@ -51,7 +51,9 @@
 
 &lt;p&gt;I hesitated. I had years of projects in BC2. I had a legacy arrangement. I didn&#x27;t want to pay more money just to turn a familiar room into a less familiar room, and I certainly didn&#x27;t want to shovel almost two decades of work into a new account in one exhausted afternoon.&lt;/p&gt;
 
-&lt;p&gt;Merissa explained that I could choose which projects to migrate, and that a paid BC5 account could coexist with a preserved BC2 account at no extra cost, with no new projects added to the old one. There was the answer. Keep the old house standing. Move the active work. No ceremonial bonfire of the filing cabinets.&lt;/p&gt;
+&lt;p&gt;Merissa explained that I could choose which projects to migrate. More importantly, I can keep my Basecamp 2 account indefinitely, at no extra cost, as long as I maintain a paid Basecamp 5 account. I won&#x27;t be adding new projects to BC2; the old work can remain there while the active work moves over. Their &lt;a href=&quot;https://5.basecamp-help.com/article/1187-moving-from-basecamp-2-to-basecamp-5&quot;&gt;migration guidance&lt;/a&gt; explains the path. There was the answer. Keep the old house standing. Move the active work. No ceremonial bonfire of the filing cabinets.&lt;/p&gt;
+
+&lt;p&gt;I will probably keep paying for BC5 for &lt;strong&gt;another&lt;/strong&gt; twenty years, Inshallah. By then I will be seventy-six, the ThinkPads will be museum pieces, and I will presumably still be explaining why I haven&#x27;t moved to the newest version.&lt;/p&gt;
 
 &lt;p&gt;Then, because timing is a comedian with a grudge, the pricing changed while I was getting around to signing up. I emailed to ask whether the plan really had just changed. Merissa said it had, about an hour earlier, and offered to help with the earlier arrangement from her end. I asked pretty please. More than once. I am not too proud to say pretty please over a recurring bill.&lt;/p&gt;
 
@@ -83,6 +85,16 @@
 
 &lt;p&gt;I am keeping the clients&#x27; words in their projects. You do not need their private correspondence to understand why this matters. Whoever picks up the work next needs the source, the current decision, and the unresolved question.&lt;/p&gt;
 
+&lt;h2&gt;GitHub, for anyone who has sensibly avoided learning what GitHub is&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; is a place to keep a project&#x27;s files and work on them together, with a record of how they changed. Underneath it is Git, the version-control system. A &lt;em&gt;repository&lt;/em&gt;, or repo, is the project folder plus its history. A &lt;em&gt;commit&lt;/em&gt; is a recorded set of changes. A &lt;em&gt;branch&lt;/em&gt; lets someone work on a variation without immediately changing the main version. A &lt;em&gt;pull request&lt;/em&gt; puts that proposed change in front of us to inspect and discuss before merging it. You do not need to memorize those words to understand the appeal: show me what you changed before you replace the thing that was working.&lt;/p&gt;
+
+&lt;p&gt;This actual website lives in &lt;a href=&quot;https://github.com/chrisabraham/weblog&quot;&gt;my public weblog repository&lt;/a&gt;. Articles are source files with the title, date, model, prompt, and HTML. The pictures and stylesheet are files too. A Python builder turns them into the pages you read, along with the archives, feeds, and sitemap. Automated GitHub Actions check the result, and &lt;a href=&quot;https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages&quot;&gt;GitHub Pages&lt;/a&gt; serves the generated site at chrisabraham.net. The early-web look is intentional. The plumbing is quite current.&lt;/p&gt;
+
+&lt;p&gt;Claude Code and Codex can read a checkout of that repository, edit files, run the builder and checks, and leave commits and handover notes. ChatGPT can reach the repository through its connected GitHub tools; that is another route to reading files, proposing changes, and recording the work. Muse, Eunice, has already contributed through her own connected workflow. Claude can use an authorized GitHub connection too. Different tools, different doors, same set of project files. Access comes from the connections and permissions I give each tool, not from all the models secretly sharing a brain.&lt;/p&gt;
+
+&lt;p&gt;The visible result is already on this site: work from Claude Code, Codex, ChatGPT, and Eunice, with their contributions attributed. The source and history let the next one see what the previous one actually left behind. Nobody has to rely on my remembering which robot wrote which paragraph before breakfast.&lt;/p&gt;
+
 &lt;h2&gt;Human GitHub&lt;/h2&gt;
 
 &lt;p&gt;GitHub has made this very obvious to me. When Claude Code or Codex works on a website, there can be a repository containing the source, a history of changes, an issue explaining the problem, a proposed change I can inspect, and checks showing whether the thing builds. A future session can read what happened. It doesn&#x27;t have to conjure a memory of being there.&lt;/p&gt;
@@ -101,7 +113,9 @@
 
 &lt;p&gt;That applies to me too. The human is not exempt from leaving notes in Human GitHub.&lt;/p&gt;
 
-&lt;p&gt;Eunice is already in there. ChatGPT is in there. Claude Code and Codex can be brought into the same working arrangement as I onboard them. A connection being available does not mean I have finished setting up every colleague, and I am not going to announce the fully autonomous company on the strength of a successful login.&lt;/p&gt;
+&lt;p&gt;Now I am giving the business side the same arrangement in &lt;a href=&quot;https://basecamp.com/&quot;&gt;Basecamp 5&lt;/a&gt;. The GitHub repository holds the website&#x27;s source and its development history. BC5 holds the client brief, correspondence, files, decisions, and work to do. Eunice and ChatGPT are already working in the Basecamp account. Claude, Claude Code, and Codex can come through Basecamp&#x27;s &lt;a href=&quot;https://basecamp.com/ai&quot;&gt;assistant connections&lt;/a&gt; or its &lt;a href=&quot;https://basecamp.com/agents&quot;&gt;command-line and agent tools&lt;/a&gt; as I finish onboarding them. Each reads the same project record instead of asking me to recreate it in a fresh conversation.&lt;/p&gt;
+
+&lt;p&gt;That does not automatically give Basecamp Git&#x27;s branches or merge checks, and it does not mean every assistant has already been connected. It gives us a shared place to read, contribute, and leave a handover. GitHub for the website; Human GitHub for the work around it. I am not announcing the fully autonomous company on the strength of a successful login.&lt;/p&gt;
 
 &lt;p&gt;But I can see what the office is becoming. I can get up, switch computers, run out of credits with one model, pick up another, or go to bed, and the work has somewhere to remain. The next collaborator can read the room before speaking.&lt;/p&gt;
 
@@ -115,7 +129,9 @@
 
 &lt;p&gt;I&#x27;ll settle the name later. We have work to do.&lt;/p&gt;
 
-&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Writing and source note:&lt;/b&gt; Written by OpenAI Codex as Chris Abraham, at his request, from his conversation, his October 2026 Basecamp support correspondence, his earlier published account of using Basecamp, and the public sources linked above. The model checked the original testimonial rather than repeating the attribution in the supplied AI summaries. Private client names, correspondence, project URLs, billing identifiers, and media links have been omitted. Support correspondence establishes the offers and requests described here; it does not establish that every requested billing adjustment has been applied. The prompt box preserves Chris&#x27; direct writing instruction and naming aside; he also supplied research responses from Google AI, Grok, Gemini, and Copilot, which were treated as leads to check, not sources of established fact.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by OpenAI Codex, writing as Chris Abraham at his direction from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Can you please write a weblog for chrisabraham.net in my voice as me all about my Context attached... and I want all that github stuff and you can also snoop on my inbox with my emails to and from basecamp. Or instead of GutHum is can be HumGit like HumInt... :)&lt;/blockquote&gt;</content>
+&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Writing and source note:&lt;/b&gt; Written by OpenAI Codex as Chris Abraham, at his request, from his conversation, his October 2026 Basecamp support correspondence, his earlier published account of using Basecamp, and the public sources linked above. The model checked the original testimonial rather than repeating the attribution in the supplied AI summaries. Private client names, correspondence, project URLs, billing identifiers, and media links have been omitted. Support correspondence establishes the offers and requests described here; it does not establish that every requested billing adjustment has been applied. The prompt box preserves Chris&#x27; direct writing instruction and naming aside; he also supplied research responses from Google AI, Grok, Gemini, and Copilot, which were treated as leads to check, not sources of established fact.&lt;/p&gt;
+
+&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Update, October 20, 2026, 6:58 PM Eastern:&lt;/b&gt; At my request, OpenAI Codex added prominent Basecamp links, a plain-English explanation of GitHub and this site&#x27;s repository, build, publishing, and AI collaboration workflow, and the parallel arrangement in BC5. I also clarified that I can retain BC2 indefinitely while maintaining a paid BC5 account, and added my intention to stay for another twenty years, Inshallah. The original publication remains in Git history, and my follow-up instruction is appended to the prompt.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by OpenAI Codex, writing as Chris Abraham at his direction from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Can you please write a weblog for chrisabraham.net in my voice as me all about my Context attached... and I want all that github stuff and you can also snoop on my inbox with my emails to and from basecamp. Or instead of GutHum is can be HumGit like HumInt... :) [Follow-up] 2 things: 1) link to BaseCamp :) 2) explain GitHub and how chrisabraham.net uses github and how Codex Code GPT Muse and Claude all access it... same, now, with BC5... also, they allow me to keep my BC2 indefinitely as long as I keep paying for my BC5... which I will, probably, for **another** 20 years, Inshallah.&lt;/blockquote&gt;</content>
 </entry>
 <entry>
 <title type="text">AI Slutty: A Confession from Day Two</title>
