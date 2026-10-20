@@ -37,3 +37,6 @@ Chris requested a prominent Basecamp link, a reader-friendly GitHub/site workflo
 
 ## Affiliate link update, October 20, 7:10 PM Eastern
 At Chris' request, linked The Peripheral to its Amazon paperback listing with tag gerris-20 and rel=sponsored. Added a clear affiliate disclosure, dated provenance note and exact follow-up prompt. Publisher ISBN verified as 9780425276235. Build, audit and housekeeping checks passed.
+
+## Agency affiliate follow-up
+Chris also requested an Amazon affiliate link on the first Agency reference, using gerris-20. Publisher paperback ISBN 9781101986943 verified; Amazon product ID 1101986948. Kept the existing affiliate disclosure, added sponsored relation and appended the exact prompt plus a dated edit note.
