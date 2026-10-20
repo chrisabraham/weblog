@@ -41,7 +41,13 @@ for url, t in pages.items():
         path = DOCS / target.lstrip("/")
         if target.endswith("/"): path = path / "index.html"
         if not path.exists(): issues[f"Internal link broken"].append(f"{url} -> {href}")
-    if re.search(r'href="http://(?!scripting\.com)', t): issues["Links: plain HTTP (external)"].append(url)
+    # Verified legacy source, 2026-10-20: this exact link serves HTTP 200,
+    # while its HTTPS equivalent returns 503. Preserve the working historical
+    # source link; continue flagging every other unreviewed HTTP destination.
+    allowed_http = {"http://adam.curry.com/linkblog.html"}
+    if any(href not in allowed_http and not href.startswith("http://scripting.com")
+           for href in re.findall(r'href="(http://[^"]*)"', t)):
+        issues["Links: plain HTTP (external)"].append(url)
     levels = [int(x) for x in re.findall(r"<h([1-6])[\s>]", main)]
     for a, b in zip(levels, levels[1:]):
         if b > a + 1: issues["Headings: skipped level"].append(f"{url} h{a}->h{b}"); break
