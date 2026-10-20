@@ -34,3 +34,6 @@ Chris explicitly requested publication after reviewing the draft. The exact lega
 
 ## Second editorial update, October 20, 6:58 PM Eastern
 Chris requested a prominent Basecamp link, a reader-friendly GitHub/site workflow explanation, how the AI tools access shared records, and explicit indefinite BC2 preservation conditional on maintaining a paid BC5 account. Added those passages, preserved the original date and history, appended his verbatim follow-up to the prompt, and added an attributed dated update note. Distinguishes connected collaborators from planned onboarding. No access or deployment capability is claimed solely because a model exists.
+
+## Affiliate link update, October 20, 7:10 PM Eastern
+At Chris' request, linked The Peripheral to its Amazon paperback listing with tag gerris-20 and rel=sponsored. Added a clear affiliate disclosure, dated provenance note and exact follow-up prompt. Publisher ISBN verified as 9780425276235. Build, audit and housekeeping checks passed.
