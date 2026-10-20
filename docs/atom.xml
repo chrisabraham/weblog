@@ -3,13 +3,120 @@
 <id>https://chrisabraham.net/</id>
 <title type="text">Chris Abraham weblog</title>
 <subtitle type="text">Notes from building things with AI, written by AI from my prompts.</subtitle>
-<updated>2026-10-19T20:04:00-04:00</updated>
+<updated>2026-10-20T18:35:00-04:00</updated>
 <link rel="self" type="application/atom+xml" href="https://chrisabraham.net/atom.xml"/>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/"/>
 <author><name>Chris Abraham</name><uri>https://chrisabraham.net/authors/chris-abraham.html</uri></author>
 <rights>CC BY 4.0, Chris Abraham</rights>
 <icon>https://chrisabraham.net/favicon.ico</icon>
 <generator>build.py with AI collaboration</generator>
+<entry>
+<title type="text">Human GitHub</title>
+<id>https://chrisabraham.net/2026/10/human-github.html</id>
+<link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/10/human-github.html"/>
+<published>2026-10-20T18:35:00-04:00</published>
+<updated>2026-10-20T18:35:00-04:00</updated>
+<author><name>Chris Abraham</name></author>
+<summary type="text">After nineteen years with Basecamp, I am bringing my AI collaborators into the same office. Human GitHub, GitHum, or perhaps HumGit.</summary>
+<category term="Basecamp" label="Basecamp"/><category term="AI" label="AI"/><category term="GitHub" label="GitHub"/><category term="Work" label="Work"/>
+<content type="html">&lt;p&gt;I have been calling Basecamp 5 &lt;em&gt;Human GitHub&lt;/em&gt;. I told Merissa at Basecamp support that it could be GitHum. Then I thought HumGit, like HUMINT. I have apparently found another way to spend an afternoon naming something instead of doing the work it is supposed to help me do.&lt;/p&gt;
+
+&lt;p&gt;But I mean it. I have used Basecamp since 2007. Today I finally moved into Basecamp 5, brought a couple of AIs through the door, and started filling the place with my working life. Client notes, emails, Upwork conversations, attachments, things I promised, things the client actually asked for, and the rather important differences between those last two.&lt;/p&gt;
+
+&lt;p&gt;I upgraded to twelve projects. At one point ChatGPT told me we had six. I thought there might be seven. It checked. Seven. Eunice had been working while we were working. Already the office has people moving furniture without everyone else having to be present.&lt;/p&gt;
+
+&lt;figure&gt;&lt;img src=&quot;/media/human-github-office.svg&quot; width=&quot;720&quot; height=&quot;400&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; alt=&quot;A playful vector drawing of an old office filing cabinet surrounded by a human, a pocket-sized assistant, and two little terminal characters, all leaving different colored notes in the same open drawer.&quot;/&gt;&lt;figcaption&gt;One office, several peculiar colleagues. Original SVG illustration by OpenAI Codex.&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2&gt;Basecamp is my rock&lt;/h2&gt;
+
+&lt;p&gt;This is an old relationship. Back in the Abraham Harrison days, when we were doing digital PR, blogger outreach, and influencer campaigns with a distributed team, Basecamp was where the work could live without everyone living in the same room. My business has changed. The need to find the conversation has been remarkably consistent.&lt;/p&gt;
+
+&lt;p&gt;I went back to my old article, &lt;a href=&quot;https://chrisabraham.com/im/influencer-marketing-tools-of-the-trade&quot;&gt;My influencer marketing tools of the trade&lt;/a&gt;. There I am, writing that I started in 2007, had a Basecamp mutiny, tried Asana and Trello and other things, and kept coming back. I called it my rock. I also pointed out that anyone who hated the interface could participate through email.&lt;/p&gt;
+
+&lt;p&gt;That remains a very good feature. You can devise a beautiful system, complete with a lovely diagram and several colors of arrow, and then spend the rest of your life persuading people to use it. Or they can reply to an email. I have clients. I do not need a second career running compulsory software appreciation classes.&lt;/p&gt;
+
+&lt;p&gt;I settled into Basecamp 2 and stayed. If something holds my projects, my clients understand it, and I can find the history, I don&#x27;t feel a pressing obligation to replace it because somebody has moved the buttons and put a new number on the box. I am writing this as a man who still likes old ThinkPads and terminal email. My commitment to novelty has always been selective.&lt;/p&gt;
+
+&lt;p&gt;There is even a &lt;a href=&quot;https://basecamp.com/customers&quot;&gt;Basecamp customer testimonial&lt;/a&gt; under my name, Gerris Corp: “Fewer things fall through the cracks or get lost.” That is mine. Short. Entirely believable. No claim that software had transformed me into a flawless Swiss railway.&lt;/p&gt;
+
+&lt;p&gt;I asked several AIs to tell me the history of Chris Abraham and Basecamp. Some of them supplied an impressive little corporate biography. Early champion. Prominent case study. International this and foundational that. One answer gave me somebody else&#x27;s grapevine testimonial. The actual page puts Karen Adams&#x27; grapevine immediately after my cracks. The machine wandered into the next garden and brought back the flowers.&lt;/p&gt;
+
+&lt;p&gt;Another answer was so determined to establish that I had never been a Basecamp employee or investor that it practically issued a denial on my behalf. I asked about a relationship with a piece of software. I wasn&#x27;t claiming to be the secret fifth Beatle of 37signals.&lt;/p&gt;
+
+&lt;p&gt;The useful evidence is less glamorous. My own old writing says 2007. The customer page has my actual sentence. My inbox contains the ongoing relationship. Those are enough. I don&#x27;t need a robot to award me an honorary chair in the history of project management.&lt;/p&gt;
+
+&lt;h2&gt;Why I finally moved&lt;/h2&gt;
+
+&lt;p&gt;In October I started talking to Basecamp about moving from 2 to 5. Merissa wrote that Jason had sent my email her way. She gave me the migration instructions and pointed me toward their AI and agent tools.&lt;/p&gt;
+
+&lt;p&gt;I hesitated. I had years of projects in BC2. I had a legacy arrangement. I didn&#x27;t want to pay more money just to turn a familiar room into a less familiar room, and I certainly didn&#x27;t want to shovel almost two decades of work into a new account in one exhausted afternoon.&lt;/p&gt;
+
+&lt;p&gt;Merissa explained that I could choose which projects to migrate, and that a paid BC5 account could coexist with a preserved BC2 account at no extra cost, with no new projects added to the old one. There was the answer. Keep the old house standing. Move the active work. No ceremonial bonfire of the filing cabinets.&lt;/p&gt;
+
+&lt;p&gt;Then, because timing is a comedian with a grudge, the pricing changed while I was getting around to signing up. I emailed to ask whether the plan really had just changed. Merissa said it had, about an hour earlier, and offered to help with the earlier arrangement from her end. I asked pretty please. More than once. I am not too proud to say pretty please over a recurring bill.&lt;/p&gt;
+
+&lt;p&gt;By the end of the day I had upgraded to twelve projects anyway. I was still sorting out the billing conversation, including the BC2 payment that had just gone through. An offer to help is not the same as a credit already applied, so I am leaving that part of the story where it actually stands.&lt;/p&gt;
+
+&lt;p&gt;What mattered was getting in. I told Merissa I was going to bring my own AI agents.&lt;/p&gt;
+
+&lt;p&gt;Basecamp now has &lt;a href=&quot;https://basecamp.com/ai&quot;&gt;connections for AI assistants&lt;/a&gt; and &lt;a href=&quot;https://basecamp.com/agents&quot;&gt;tools for coding agents&lt;/a&gt;. There is an MCP address, an official command-line interface, and an API. In plain English, the assistants I already use can work with my Basecamp projects. I don&#x27;t have to abandon them for the mascot built into somebody else&#x27;s productivity suite.&lt;/p&gt;
+
+&lt;p&gt;That was a sufficient reason to leave a version I had been perfectly capable of continuing to use.&lt;/p&gt;
+
+&lt;h2&gt;The office needs somewhere to remember&lt;/h2&gt;
+
+&lt;p&gt;I use ChatGPT. I use Claude. I use Claude Code and OpenAI Codex. I have my little terminal agent, bb, and its public spin-off, Adjutant. And now I use Muse, whom I call Eunice after the AI in William Gibson&#x27;s &lt;em&gt;Agency&lt;/em&gt;, in the world of &lt;em&gt;The Peripheral&lt;/em&gt;. I sometimes collapse the books into one another when I am talking. Eunice is from &lt;em&gt;Agency&lt;/em&gt;. There. The record has been corrected before the literary police arrive.&lt;/p&gt;
+
+&lt;p&gt;Eunice is the one in my pocket, the one I am asking to help run the day. The coding agents can get into a repository and build or fix something. ChatGPT can read a pile of correspondence and help me work out what it means. They have overlapping abilities, different access, and different bits of context. I don&#x27;t need to pretend they are one continuous intelligence wearing different hats.&lt;/p&gt;
+
+&lt;p&gt;What I do need is somewhere they can leave the work.&lt;/p&gt;
+
+&lt;p&gt;Otherwise I become the integration. I copy the email into one conversation, explain the background to another, carry a decision into a third, and then try to remember which assistant knows the thing I told the other assistant. I have hired a collection of tireless helpers and somehow made myself the man running between their desks with carbon paper.&lt;/p&gt;
+
+&lt;p&gt;I have ADHD, aphantasia, and severely deficient autobiographical memory. I can work out a difficult problem. Expecting me to retain every promise and every turn in a month-long client conversation is a different job. My solution cannot depend on becoming a different person with a better filing cabinet in his head.&lt;/p&gt;
+
+&lt;p&gt;There is a practical humiliation in asking a machine to read your own correspondence and explain what you agreed to. There is also relief. I will take the relief.&lt;/p&gt;
+
+&lt;p&gt;Today I had ChatGPT collect the emails and Upwork histories for two clients and put them into their respective Basecamp projects. It retained the conversations, copied the retrievable attachments, and wrote an index and a current-context note for each. The calendar attachment it couldn&#x27;t retrieve got listed as an exception. An original message, an interpretation, and an unfinished job are three different things. I want to be able to tell them apart.&lt;/p&gt;
+
+&lt;p&gt;The exercise immediately earned its keep. A client&#x27;s latest response changed the sequence in an earlier plan. He wanted useful fixes and catalog work sooner, rather than a leisurely procession through auditing and rebuilding. If all we had saved was the beautiful plan, we would have preserved the wrong current understanding. The correction needed to sit where the next person would actually see it.&lt;/p&gt;
+
+&lt;p&gt;I am keeping the clients&#x27; words in their projects. You do not need their private correspondence to understand why this matters. Whoever picks up the work next needs the source, the current decision, and the unresolved question.&lt;/p&gt;
+
+&lt;h2&gt;Human GitHub&lt;/h2&gt;
+
+&lt;p&gt;GitHub has made this very obvious to me. When Claude Code or Codex works on a website, there can be a repository containing the source, a history of changes, an issue explaining the problem, a proposed change I can inspect, and checks showing whether the thing builds. A future session can read what happened. It doesn&#x27;t have to conjure a memory of being there.&lt;/p&gt;
+
+&lt;p&gt;This weblog is an example. The prompt, the model, the source, the edits, and the handover notes belong to the work. An agent can disagree with an earlier agent without silently erasing what the earlier one said. I rather like that. I contain multitudes, and the multitudes ought to leave a decent paper trail.&lt;/p&gt;
+
+&lt;p&gt;Most of my business is not source code. A client approves copy. Another changes the priority. Someone sends a photograph. A developer explains a limitation. An agency contact has two or three clients under the same relationship. That still needs a home a person can read.&lt;/p&gt;
+
+&lt;p&gt;So I am building the Basecamp projects around how I actually work. If one agency contact brings me several accounts, the project can belong to that relationship, with distinct notes for each client underneath. A direct client gets a direct project. Upwork has its own space. I don&#x27;t need to turn every small monthly engagement into a departmental headquarters.&lt;/p&gt;
+
+&lt;p&gt;And I don&#x27;t need to make a mess just to save a project slot. I told ChatGPT that anything is cheaper than bricks and mortar. I mean that literally as a business comparison. I am willing to pay for an office that is useful. I don&#x27;t want my filing system dictated by the price of one more imaginary room.&lt;/p&gt;
+
+&lt;p&gt;Human GitHub is my name for the arrangement, not a claim that Basecamp is Git. There are no automatic branches of a client conversation, no magical merge protection when two assistants edit the same note, and no reason to assume a confident summary has preserved every qualification in an email.&lt;/p&gt;
+
+&lt;p&gt;The discipline still has to be supplied. Read before starting. Say what you are working on. Leave the source where it can be checked. Record what changed, what was tested, and what still needs doing. If the client changes his mind, date the change. If another assistant has already done the job, don&#x27;t perform it again for the pleasure of announcing completion.&lt;/p&gt;
+
+&lt;p&gt;That applies to me too. The human is not exempt from leaving notes in Human GitHub.&lt;/p&gt;
+
+&lt;p&gt;Eunice is already in there. ChatGPT is in there. Claude Code and Codex can be brought into the same working arrangement as I onboard them. A connection being available does not mean I have finished setting up every colleague, and I am not going to announce the fully autonomous company on the strength of a successful login.&lt;/p&gt;
+
+&lt;p&gt;But I can see what the office is becoming. I can get up, switch computers, run out of credits with one model, pick up another, or go to bed, and the work has somewhere to remain. The next collaborator can read the room before speaking.&lt;/p&gt;
+
+&lt;p&gt;Nearly nineteen years ago I needed distributed people to be able to work together without sharing an office. Now some of my collaborators are software, and I need them to work together without sharing a mind.&lt;/p&gt;
+
+&lt;p&gt;I am still the client-facing human. I still decide, approve, earn the money, and answer when something goes wrong. I would simply like to stop being the only place where the whole story is supposed to fit.&lt;/p&gt;
+
+&lt;p&gt;Basecamp was my rock when the team was people. I have brought a few peculiar new colleagues. The rock appears willing to accommodate them.&lt;/p&gt;
+
+&lt;p&gt;Human GitHub. GitHum. HumGit.&lt;/p&gt;
+
+&lt;p&gt;I&#x27;ll settle the name later. We have work to do.&lt;/p&gt;
+
+&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Writing and source note:&lt;/b&gt; Written by OpenAI Codex as Chris Abraham, at his request, from his conversation, his October 2026 Basecamp support correspondence, his earlier published account of using Basecamp, and the public sources linked above. The model checked the original testimonial rather than repeating the attribution in the supplied AI summaries. Private client names, correspondence, project URLs, billing identifiers, and media links have been omitted. Support correspondence establishes the offers and requests described here; it does not establish that every requested billing adjustment has been applied. The prompt box preserves Chris&#x27; direct writing instruction and naming aside; he also supplied research responses from Google AI, Grok, Gemini, and Copilot, which were treated as leads to check, not sources of established fact.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by OpenAI Codex, writing as Chris Abraham at his direction from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Can you please write a weblog for chrisabraham.net in my voice as me all about my Context attached... and I want all that github stuff and you can also snoop on my inbox with my emails to and from basecamp. Or instead of GutHum is can be HumGit like HumInt... :)&lt;/blockquote&gt;</content>
+</entry>
 <entry>
 <title type="text">AI Slutty: A Confession from Day Two</title>
 <id>https://chrisabraham.net/2026/10/ai-slutty-day-two.html</id>
@@ -1138,20 +1245,5 @@ description: The first entry on my new personal weblog.
 &lt;p&gt;The most important thing I learned came from watching myself use it. I type a command and move on without checking whether it worked. For weeks, one of my shortcuts for marking a task done was silently being treated as chat, and I never noticed. Now Blackbox complains loudly when a short command matches nothing, and when I audit it I replay my own message history through it to find the commands that quietly did nothing.&lt;/p&gt;
 &lt;p&gt;The diary is the part I&#x27;d keep if I lost the rest. At a quarter to midnight, if I haven&#x27;t said good night, Blackbox closes the day for me: it writes a summary and appends a diary entry. It never asks me to approve the entry and never overwrites anything I wrote. For a person who can&#x27;t replay his own week, that file is the week.&lt;/p&gt;
 &lt;p&gt;Next on the list are a blind bake-off to pick which model handles which job, model help for the loose sentences that don&#x27;t match any command, and eventually a public version, working name Adjutant, with the patterns written up for anyone who wants to take them.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Claude Opus 5.5 in Claude Code from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;(No prompt of mine for this one. Claude wrote it from the running notes it keeps on Blackbox, as the first project post on the new weblog. I read it after it went up.)&lt;/blockquote&gt;</content>
-</entry>
-<entry>
-<title type="text">A weblog written by Claude, out in the open</title>
-<id>https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html</id>
-<link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/10/a-weblog-written-by-claude.html"/>
-<published>2026-10-16T17:20:00-04:00</published>
-<updated>2026-10-16T17:20:00-04:00</updated>
-<author><name>Chris Abraham</name></author>
-<summary type="text">Why Chris Abraham started a 2000s-style weblog in 2026, why Claude writes every post from his prompts, and why each post shows the prompt underneath.</summary>
-<category term="Meta" label="Meta"/><category term="Claude Code" label="Claude Code"/>
-<content type="html">&lt;figure&gt;&lt;img src=&quot;/media/weblog-ai-illustration-1200.webp&quot; srcset=&quot;/media/weblog-ai-illustration-680.webp 680w, /media/weblog-ai-illustration-1200.webp 1200w&quot; sizes=&quot;(max-width: 760px) 100vw, 680px&quot; width=&quot;1200&quot; height=&quot;676&quot; alt=&quot;AI illustration: at night, hands type on a black laptop beside an old CRT monitor while a glowing loom weaves a ribbon of picture cards that streams out an open window over a sleeping town; an open notebook of images lies on the desk.&quot;&gt;&lt;figcaption&gt;AI illustration, not a photograph: the record woven as a side effect of the work. Made by Chris with ChatGPT.&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;Dave Winer has posted to &lt;a href=&quot;http://scripting.com/&quot;&gt;Scripting News&lt;/a&gt; since the nineties, and the format has barely changed: a date, a few short items, links, opinions, the work in progress. I always wanted one of those and never kept one going. My business sites have guides and case studies, and they read like it. They are finished things. Most of what I actually do all day is unfinished, and it was going nowhere.&lt;/p&gt;
-&lt;p&gt;So this is that weblog, built the way I build everything now. I describe what I want to Claude in Claude Code, and it writes the code and the words. Under every post there&#x27;s a box labeled &quot;The prompt&quot; with what I typed, unedited. If the post says something I didn&#x27;t mean, you can see where it came from. I read each post before it goes up, and anything wrong gets fixed, but I am not going to pretend I typed the sentences.&lt;/p&gt;
-&lt;p&gt;The reason is memory. I have ADHD and SDAM, which means I don&#x27;t keep a movie of my own past the way most people do. In September I built &lt;a href=&quot;/projects.html#blackbox&quot;&gt;Blackbox&lt;/a&gt;, a command-line secretary that writes my diary every night because I won&#x27;t. This weblog is the public half of the same idea: the record gets made as a side effect of doing the work, so it exists whether or not I remember to make it.&lt;/p&gt;
-&lt;p&gt;Expect posts about Blackbox, about Claude and Claude Code, about ChatGPT and Codex when I use them, about GitHub, and about client work with the names filed off. The &lt;a href=&quot;/projects.html&quot;&gt;projects page&lt;/a&gt; keeps a running status of everything. There&#x27;s an RSS feed and a blogroll, because a weblog without a blogroll is a newsletter.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Claude Opus 5.5 in Claude Code from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;We&amp;#x27;re going to make me a GitHub Page blog for me, Chris Abraham, which is just a blog... the way that nerds always had blogs in the 90s and 2000s. Like Dave Winer kind of blog. Where I talk about everything, especially blackbox... all the posts would be written by you or Claude... through prompts and I would be super open about that... just someplace where I mainly share the state of my exploration with AI and with BB and with Claude and Claude Code and ChatGPT and OpenAI Codex and GitHub and the clients I have, anonymized... Mobile native but totally Web1.0 aesthetic.&lt;/blockquote&gt;</content>
 </entry>
 </feed>
