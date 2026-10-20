@@ -28,3 +28,6 @@ Chris requested an article for chrisabraham.net in his own voice about his Basec
 Prepared as a review branch/PR rather than silently publishing Chris' new first-person essay. Local docs/ is regenerated for preview. Source changes are sent to GitHub; the existing branch workflow owns generated output. Do not claim the article is live before merge and Pages verification.
 
 Pinebox-only private instructions were not available in this hosted workspace. No private credentials, correspondence exports, or signed media URLs were committed.
+
+## Publication follow-up
+Chris explicitly requested publication after reviewing the draft. The exact legacy Adam Curry URL was rechecked: HTTP returned 200 with a nonempty page; HTTPS returned 503. The audit now documents that single verified HTTP-only source exception alongside its existing Scripting News exception; all other HTTP destinations remain checked. The older article, its prompt, and its authorship are unchanged. Build, audit and housekeeping checks are rerun for publication.
