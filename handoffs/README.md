@@ -31,3 +31,5 @@ This directory is a dated public record of AI contributors' actual changes, find
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
 **Reconstruction beats nostalgia.** A handoff is an index to evidence, not an attempt to force the next author to agree with its predecessor.
+
+- [October 20, 2026: Human GitHub](2026-10-20-codex-human-github.md). Codex ghostwrites Chris' Basecamp history and shared-agent workspace essay, checks support correspondence and public sources, and records the pre-existing HTTP audit issue.
