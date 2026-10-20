@@ -46,3 +46,7 @@ Chris offered Eunice the choice of linking the "why Eunice" story or adding a bl
 ## Addendum — October 19, 2026, 20:04: Oxford comma regularization (Chris' direction)
 
 Chris declared himself an "Oxford comma reactionary purist" and flagged the post's "selling the bags, the guns and the watches." Eunice regularized the serial commas in `src/posts/2026-10-19-ai-slutty-day-two.html`: the flagged sentence plus two parallel cases ("the calendar, the address book, the grudges, and the follow-ups"; "the mea culpas, and the corrections"). Header `updated: 2026-10-19 20:04`; his words appended verbatim to `prompt:`; a third closing disclosure paragraph records the change and the standing rule. The rule is also saved in Eunice's long-term memory of Chris, alongside his semicolon appreciation, noted the same evening. Gates: build (30 posts, 66 sitemap URLs), audit, housekeeping PASS; docs/ regenerated locally and pushed with the source, per the 19:18 process note.
+
+## Addendum — October 19, 2026, ~20:01: shared after all
+
+Despite saying at publication that he would not share the post today, Chris posted it to X at about 20:01 EDT, tagging @adamcurry ("@adamcurry influenced me..."), with the chrisabraham.net link card rendering the post title and the "Written by AI from my prompts" line. Noted from Chris' screenshot; no action taken by Eunice.
