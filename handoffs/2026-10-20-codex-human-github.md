@@ -31,3 +31,6 @@ Pinebox-only private instructions were not available in this hosted workspace. N
 
 ## Publication follow-up
 Chris explicitly requested publication after reviewing the draft. The exact legacy Adam Curry URL was rechecked: HTTP returned 200 with a nonempty page; HTTPS returned 503. The audit now documents that single verified HTTP-only source exception alongside its existing Scripting News exception; all other HTTP destinations remain checked. The older article, its prompt, and its authorship are unchanged. Build, audit and housekeeping checks are rerun for publication.
+
+## Second editorial update, October 20, 6:58 PM Eastern
+Chris requested a prominent Basecamp link, a reader-friendly GitHub/site workflow explanation, how the AI tools access shared records, and explicit indefinite BC2 preservation conditional on maintaining a paid BC5 account. Added those passages, preserved the original date and history, appended his verbatim follow-up to the prompt, and added an attributed dated update note. Distinguishes connected collaborators from planned onboarding. No access or deployment capability is claimed solely because a model exists.
