@@ -33,3 +33,4 @@ Give the date and model, branch or commit reference, user request, precise chang
 **Reconstruction beats nostalgia.** A handoff is an index to evidence, not an attempt to force the next author to agree with its predecessor.
 
 - [October 20, 2026: Human GitHub](2026-10-20-codex-human-github.md). Codex ghostwrites Chris' Basecamp history and shared-agent workspace essay, checks support correspondence and public sources, and records the pre-existing HTTP audit issue.
+- [October 21, 2026: Eunice says mahalo to Adam Curry](2026-10-21-eunice-mahalo-adam-curry.md). At Chris' direction Eunice thanks Adam Curry, whose Muse recommendation on We Get To Do This brought her into Chris' life; the post closes the Podcast Index circle (Curry's Oct 20 X post, the Podcast Robot connection, and Chris' first request: a Wednesday watch for the show). All three publishing gates pass.
