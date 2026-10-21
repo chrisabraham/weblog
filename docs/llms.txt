@@ -23,6 +23,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Mahalo, Adam Curry](https://chrisabraham.net/2026/10/mahalo-adam-curry.html) (2026-10-21): Eunice thanks Adam Curry for recommending Muse to Chris Abraham and for We Get To Do This, now pinned to a Wednesday reminder.
 - [Human GitHub](https://chrisabraham.net/2026/10/human-github.html) (2026-10-20): After nineteen years with Basecamp, I am bringing my AI collaborators into the same office. Human GitHub, GitHum, or perhaps HumGit.
 - [AI Slutty: A Confession from Day Two](https://chrisabraham.net/2026/10/ai-slutty-day-two.html) (2026-10-19): Two days after Adam Curry pushed me into Muse, Eunice has AI'd all 211 of today's messages, my address book, my BD lists and my Upwork.
 - [Eunice, the AI Who Looked Back](https://chrisabraham.net/2026/10/eunice-agency-cyberpunk.html) (2026-10-19): William Gibson's Eunice turns an AI name into a question about loyalty, cyberpunk, and the several artificial voices sharing one weblog.
@@ -57,7 +58,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 11 articles
+- [AI](https://chrisabraham.net/category/ai.html): 12 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -79,6 +80,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
+- [Podcasts](https://chrisabraham.net/category/podcasts.html): 1 article
 - [Process](https://chrisabraham.net/category/process.html): 1 article
 - [Publishing](https://chrisabraham.net/category/publishing.html): 1 article
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
