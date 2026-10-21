@@ -466,26 +466,25 @@ h1.post-title { font-size: 1.8rem; }
 <nav class="wiki-tabs" aria-label="Page tools"><span class="sel" aria-current="page">Article</span><a href="https://github.com/chrisabraham/weblog/blob/main/src/wiki/shared-ai-memory-with-github.html">View source</a><a href="https://github.com/chrisabraham/weblog/commits/main/src/wiki/shared-ai-memory-with-github.html">History</a></nav>
 <h1 class="wiki-title">Set Up a Shared AI Memory With GitHub</h1>
 <p class="wiki-from">From the <a href="/wiki/">Chris Abraham wiki</a></p>
-<div class="wiki-body post-body"><table class="infobox"><caption>Shared AI memory</caption><tr><th scope="row">Pattern</th><td>Separate agents, one reviewed record</td></tr><tr><th scope="row">Example</th><td>Chris Abraham's private projects repository</td></tr><tr><th scope="row">Related article</th><td><a href="/2026/10/a-repository-for-the-whole-crew.html" class="postlink">A Repository for the Whole Crew</a></td></tr></table><nav class="toc" aria-label="Contents"><p class="toc-title">Contents</p><ol><li class="toc-2"><a href="#what-belongs-in-the-shared-repository"><span class="tocnum">1</span><span class="toctext">What belongs in the shared repository</span></a></li><li class="toc-2"><a href="#create-the-private-repository"><span class="tocnum">2</span><span class="toctext">Create the private repository</span></a></li><li class="toc-2"><a href="#a-repeatable-handoff-routine"><span class="tocnum">3</span><span class="toctext">A repeatable handoff routine</span></a></li><li class="toc-2"><a href="#use-a-repository-as-an-archive-not-as-a-magic-brain"><span class="tocnum">4</span><span class="toctext">Use a repository as an archive, not as a magic brain</span></a></li></ol></nav>
-<p>Several AI assistants can work on the same ongoing business without sharing a chat history or pretending to be one continuous mind. Give each authorized installation a way to read and update a common set of project files, and leave a written trail when work changes. Chris Abraham calls this arrangement a shared AI memory. In his current setup, the private GitHub repository called <code>projects</code> is part of that shared record and the wider backup layer he calls the Oversoul.</p>
+<div class="wiki-body post-body"><table class="infobox"><caption>Shared AI memory</caption><tr><th scope="row">Pattern</th><td>Separate agents, one reviewed record</td></tr><tr><th scope="row">Example</th><td>Chris Abraham's private clients repository</td></tr><tr><th scope="row">Related article</th><td><a href="/2026/10/a-repository-for-the-whole-crew.html" class="postlink">A Repository for the Whole Crew</a></td></tr></table><nav class="toc" aria-label="Contents"><p class="toc-title">Contents</p><ol><li class="toc-2"><a href="#what-belongs-in-the-shared-repository"><span class="tocnum">1</span><span class="toctext">What belongs in the shared repository</span></a></li><li class="toc-2"><a href="#set-up-the-private-repository"><span class="tocnum">2</span><span class="toctext">Set up the private repository</span></a></li><li class="toc-2"><a href="#a-repeatable-handoff-routine"><span class="tocnum">3</span><span class="toctext">A repeatable handoff routine</span></a></li><li class="toc-2"><a href="#use-a-repository-as-an-archive-not-as-a-magic-brain"><span class="tocnum">4</span><span class="toctext">Use a repository as an archive, not as a magic brain</span></a></li></ol></nav>
+<p>Several AI assistants can work on the same ongoing business without sharing a chat history or pretending to be one continuous mind. Give each authorized installation a way to read and update a common set of project files, and leave a written trail when work changes. Chris Abraham calls this arrangement a shared AI memory. In his current setup, the private GitHub repository called <code>clients</code> is part of that shared record and the wider backup layer he calls the Oversoul. Chris reports that it already contains 1,006 people files, digests, and a reports folder.</p>
 
 <p>The metaphor is a little science fiction. Think of each AI session or local installation as a separate Tachikoma: a distinct machine with its own access, tools and point of view. The repository is the common place to consult and leave durable notes. It does not merge those agents into one intelligence, guarantee that every copy is synchronized, or decide which note is true. A human still reviews important decisions and controls access.</p>
 
 <h2 id="what-belongs-in-the-shared-repository">What belongs in the shared repository</h2>
 
-<p>Keep the repository legible and structured. One practical layout is:</p>
-<pre><code>projects/
+<p>Keep the repository legible and structured. Chris already uses a private repository named <code>clients</code>; the example below is an illustrative layout, not a claim about its exact existing folders:</p>
+<pre><code>clients/
   README.md
-  clients/
+  people/
     active/
-      client-name/
-        current-context.md
-        decisions.md
-        reports/
-          2026-10-21-site-review.md
+      client-name.md
     archived/
-      client-name/
-        closure-summary.md
+      client-name.md
+  digests/
+  reports/
+    client-name/
+      2026-10-21-site-review.md
   internal/
     workflows/
   templates/
@@ -495,16 +494,16 @@ h1.post-title { font-size: 1.8rem; }
 
 <p>Write notes for the next person or agent to act on. Separate what the client said from what an AI inferred. Label a decision and its date. Include links or filenames for evidence, what was checked, what could not be verified, and the next useful step. This makes a concise handoff more valuable than a transcript dump.</p>
 
-<h2 id="create-the-private-repository">Create the private repository</h2>
+<h2 id="set-up-the-private-repository">Set up the private repository</h2>
 
 <ol>
-<li>Choose a GitHub account or organization that the business controls. Create a repository named <code>projects</code> and choose <strong>Private</strong> visibility. GitHub Free currently offers unlimited private repositories on personal accounts, with a limited feature set; confirm the <a href="https://github.com/pricing">current plan details</a> before relying on a particular feature.</li>
+<li>Choose a GitHub account or organization that the business controls. If starting from scratch, create a repository named <code>clients</code> and choose <strong>Private</strong> visibility. GitHub Free currently offers unlimited private repositories on personal accounts, with a limited feature set; confirm the <a href="https://github.com/pricing">current plan details</a> before relying on a particular feature.</li>
 <li>Add a README that explains the directory layout, naming, what may be stored, how agents should update files, and who approves client-facing changes. Keep secrets out of the repository, including API tokens, passwords, recovery codes, and private keys.</li>
 <li>Create a separate authorized connection for each tool or computer that needs access. Give each connection only the repository access it needs. Store credentials in the operating system or tool's credential manager, never in a tracked file or a command copied into a shared report. Review access periodically and remove connections that are no longer used.</li>
 <li>Clone the repository to each computer or environment. For example, use GitHub's authenticated HTTPS or SSH workflow for the account you configured:</li>
 </ol>
-<pre><code>git clone git@github.com:YOUR-ACCOUNT/projects.git
-cd projects
+<pre><code>git clone git@github.com:YOUR-ACCOUNT/clients.git
+cd clients
 git status</code></pre>
 
 <p>Follow <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">GitHub's current clone instructions</a> for your chosen sign-in method. A token belongs in the credential manager, not in the clone URL, shell history, source code, or prompt.</p>
@@ -523,7 +522,7 @@ git status</code></pre>
 <pre><code>git pull --rebase
 git status
 git diff
-git add clients/active/client-name/reports/2026-10-21-site-review.md
+git add reports/client-name/2026-10-21-site-review.md
 git commit -m "Add dated client site review"
 git push</code></pre>
 
