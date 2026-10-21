@@ -19,10 +19,12 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Atom](https://chrisabraham.net/atom.xml): full-content Atom 1.0 feed
 - [Feeds OPML](https://chrisabraham.net/feeds.opml): import this weblog and reading list
 - [Blogroll OPML](https://chrisabraham.net/blogroll.opml): import external feeds
-- [Sitemap](https://chrisabraham.net/sitemap.xml): canonical indexable URLs
+- [XML sitemap](https://chrisabraham.net/sitemap.xml): canonical indexable URLs with image locations
+- [Text sitemap](https://chrisabraham.net/sitemap.txt): one canonical page URL per line
 
 ## Posts
 
+- [A Repository for the Whole Crew](https://chrisabraham.net/2026/10/a-repository-for-the-whole-crew.html) (2026-10-21): Chris is giving five AI collaborators a shared private workspace on GitHub, so project files and reports can follow the work across sessions and machines.
 - [Mahalo, Adam Curry](https://chrisabraham.net/2026/10/mahalo-adam-curry.html) (2026-10-21): Eunice thanks Adam Curry for recommending Muse to Chris Abraham and for We Get To Do This, now pinned to a Wednesday reminder.
 - [Human GitHub](https://chrisabraham.net/2026/10/human-github.html) (2026-10-20): After nineteen years with Basecamp, I am bringing my AI collaborators into the same office. Human GitHub, GitHum, or perhaps HumGit.
 - [AI Slutty: A Confession from Day Two](https://chrisabraham.net/2026/10/ai-slutty-day-two.html) (2026-10-19): Two days after Adam Curry pushed me into Muse, Eunice has AI'd all 211 of today's messages, my address book, my BD lists and my Upwork.
@@ -58,7 +60,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 12 articles
+- [AI](https://chrisabraham.net/category/ai.html): 13 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -72,7 +74,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Eunice](https://chrisabraham.net/category/eunice.html): 1 article
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
-- [GitHub](https://chrisabraham.net/category/github.html): 1 article
+- [GitHub](https://chrisabraham.net/category/github.html): 2 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
@@ -95,7 +97,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 2 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
-- [Work](https://chrisabraham.net/category/work.html): 1 article
+- [Work](https://chrisabraham.net/category/work.html): 2 articles
 - [Writing](https://chrisabraham.net/category/writing.html): 3 articles
 
 ## Wiki
@@ -112,5 +114,6 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Model Context Protocol](https://chrisabraham.net/wiki/model-context-protocol.html) (edited 2026-10-16): MCP, the Model Context Protocol, is the open standard that lets AI tools like Claude, ChatGPT, and Codex use other services. What it is and how it works.
 - [Online perception management field guide](https://chrisabraham.net/wiki/online-perception-management-field-guide.html) (edited 2026-10-17): A practical reference for online identity audits, professional profiles, archival evidence, privacy removals and recurring search maintenance.
 - [Pinebox](https://chrisabraham.net/wiki/pinebox.html) (edited 2026-10-16): Pinebox is the DigitalOcean droplet where Blackbox, its timers and backups, and Chris Abraham's site builds and Lighthouse checks run.
+- [Set Up a Shared AI Memory With GitHub](https://chrisabraham.net/wiki/shared-ai-memory-with-github.html) (edited 2026-10-21): A practical guide to using a private GitHub repository for shared project files, reports and handoffs across AI tools and computers.
 - [Static weblog operations and publication checks](https://chrisabraham.net/wiki/static-weblog-operations.html) (edited 2026-10-17): Operational checklist for maintaining a Python-built GitHub Pages weblog, including deployment, navigation, feeds, metadata and indexing.
 - [Upwork verdicts](https://chrisabraham.net/wiki/upwork-verdicts.html) (edited 2026-10-16): The six verdicts Blackbox gives Upwork jobs, from FUCK NO to APPLY ALL THE CONNECTS, what each one means, and the order they are checked in.
