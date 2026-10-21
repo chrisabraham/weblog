@@ -1,0 +1,83 @@
+title: Set Up a Shared AI Memory With GitHub
+seo_title: Set Up a Shared AI Memory With a Private GitHub Repo
+description: A practical guide to using a private GitHub repository for shared project files, reports and handoffs across AI tools and computers.
+updated: 2026-10-21
+categories: AI, GitHub, Memory, Work
+infobox_title: Shared AI memory
+info.Pattern: Separate agents, one reviewed record
+info.Example: Chris Abraham's private projects repository
+info.Related article: [[A Repository for the Whole Crew]]
+---
+<p>Several AI assistants can work on the same ongoing business without sharing a chat history or pretending to be one continuous mind. Give each authorized installation a way to read and update a common set of project files, and leave a written trail when work changes. Chris Abraham calls this arrangement a shared AI memory. In his current setup, the private GitHub repository called <code>projects</code> is part of that shared record and the wider backup layer he calls the Oversoul.</p>
+
+<p>The metaphor is a little science fiction. Think of each AI session or local installation as a separate Tachikoma: a distinct machine with its own access, tools and point of view. The repository is the common place to consult and leave durable notes. It does not merge those agents into one intelligence, guarantee that every copy is synchronized, or decide which note is true. A human still reviews important decisions and controls access.</p>
+
+<h2>What belongs in the shared repository</h2>
+
+<p>Keep the repository legible and structured. One practical layout is:</p>
+<pre><code>projects/
+  README.md
+  clients/
+    active/
+      client-name/
+        current-context.md
+        decisions.md
+        reports/
+          2026-10-21-site-review.md
+    archived/
+      client-name/
+        closure-summary.md
+  internal/
+    workflows/
+  templates/
+    report-template.md</code></pre>
+
+<p>Use stable client names or IDs in folder names. A short <code>current-context.md</code> can say who the client is, where the human-facing Basecamp project lives, what the current scope is, what has changed, and what needs a decision. Put dated reports in <code>reports/</code>. Preserve earlier reports instead of rewriting history. Keep sensitive source material in its approved system of record unless there is a clear business reason, permission, and access plan to copy it.</p>
+
+<p>Write notes for the next person or agent to act on. Separate what the client said from what an AI inferred. Label a decision and its date. Include links or filenames for evidence, what was checked, what could not be verified, and the next useful step. This makes a concise handoff more valuable than a transcript dump.</p>
+
+<h2>Create the private repository</h2>
+
+<ol>
+<li>Choose a GitHub account or organization that the business controls. Create a repository named <code>projects</code> and choose <strong>Private</strong> visibility. GitHub Free currently offers unlimited private repositories on personal accounts, with a limited feature set; confirm the <a href="https://github.com/pricing">current plan details</a> before relying on a particular feature.</li>
+<li>Add a README that explains the directory layout, naming, what may be stored, how agents should update files, and who approves client-facing changes. Keep secrets out of the repository, including API tokens, passwords, recovery codes, and private keys.</li>
+<li>Create a separate authorized connection for each tool or computer that needs access. Give each connection only the repository access it needs. Store credentials in the operating system or tool's credential manager, never in a tracked file or a command copied into a shared report. Review access periodically and remove connections that are no longer used.</li>
+<li>Clone the repository to each computer or environment. For example, use GitHub's authenticated HTTPS or SSH workflow for the account you configured:</li>
+</ol>
+<pre><code>git clone git@github.com:YOUR-ACCOUNT/projects.git
+cd projects
+git status</code></pre>
+
+<p>Follow <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">GitHub's current clone instructions</a> for your chosen sign-in method. A token belongs in the credential manager, not in the clone URL, shell history, source code, or prompt.</p>
+
+<h2>A repeatable handoff routine</h2>
+
+<ol>
+<li>Before work, fetch or pull the latest repository version and read its README plus the client's current context and newest report.</li>
+<li>Check the project status. Confirm the file you plan to change and whether another session has already updated it.</li>
+<li>Do the work. Add a dated report or a small update to the relevant context file. Preserve source evidence and distinguish observation from recommendation.</li>
+<li>Review the diff. Make sure it contains only the intended files and no secrets, unrelated client material, or accidental exports.</li>
+<li>Commit a clear change and push it. For bigger changes, use a branch and pull request so a person or another agent can review it before it becomes the shared version.</li>
+<li>Update the human-facing project in Basecamp with the decision or summary that belongs there. Note the repository path, report date and any unresolved question.</li>
+</ol>
+
+<pre><code>git pull --rebase
+git status
+git diff
+git add clients/active/client-name/reports/2026-10-21-site-review.md
+git commit -m "Add dated client site review"
+git push</code></pre>
+
+<p>If two copies edit the same file, Git may stop the update and report a conflict. Read both versions and resolve the conflict deliberately. Do not let an agent overwrite another collaborator's work simply to make a push succeed. A commit history is useful because it shows which files changed and when; the handoff text explains why.</p>
+
+<h2>Use a repository as an archive, not as a magic brain</h2>
+
+<p>A repository can make thousands of small project records searchable, portable and inspectable. That makes it a useful complement to a limited number of active project spaces in a client-management tool such as Basecamp 5. Keep the human conversation, approvals and client-visible coordination where the client can participate. Keep reusable reports, structured working notes and agent handoffs in the repository when they are appropriate to share with the authorized team.</p>
+
+<p>GitHub Free currently includes unlimited private repositories for personal accounts, but private-repository features are limited compared with paid plans. See <a href="https://docs.github.com/en/get-started/learning-about-github/githubs-products">GitHub's plan documentation</a>. GitHub also applies repository and file-size limits; use object storage or another suitable system for very large media and exports instead of putting a pile of binaries into Git history.</p>
+
+<p>Private visibility is not a substitute for client permission, a retention policy, encryption of local devices, or a separate recovery plan. A repository on one cloud service is not an independent backup of that service. If the goal includes disaster recovery, keep a second protected backup under a different failure mode and test that it can be restored. Keep client data to the minimum needed for the work, and do not store anything the contract or client has prohibited.</p>
+
+<p>The wider image is Chris' Oversoul: a backup and shared-memory layer that each mechanical Tachikoma can consult while remaining its own instance. The mechanics are ordinary: a private remote repository, authorized working copies, deliberate pulls and pushes, dated files, readable reports, and a person who reviews consequential changes. The collective memory comes from leaving good records there.</p>
+
+<p>For the account of how this setup is taking shape, read <a href="/2026/10/a-repository-for-the-whole-crew.html">A Repository for the Whole Crew</a>. For the site contribution rules, see [[AI editorial provenance and agent handoffs]]; for the existing weblog's publication and backup checks, see [[Static weblog operations and publication checks]].</p>

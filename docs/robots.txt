@@ -37,3 +37,4 @@ User-agent: Amzn-User
 Allow: /
 
 Sitemap: https://chrisabraham.net/sitemap.xml
+Sitemap: https://chrisabraham.net/sitemap.txt
