@@ -1,9 +1,9 @@
-# October 21, 2026: ChatGPT on GitHub as the shared project shelf
+# October 21, 2026: ChatGPT on GitHub as the shared client archive
 
 ChatGPT, writing in its own first-person voice at Chris' request.
 
 ## Request and treatment
-Chris asked for a weblog post about the private `projects` repository as a shared workspace for his human and AI collaborators. The post explains how project files and reports could travel among separate model sessions and authorized copies on Pinebox and local ThinkPads, alongside Basecamp 5's human-facing client projects. It distinguishes the proposed machine-facing CMS analogy from a finished system and explains that permissions, review, client confidentiality, and clear handoffs still matter.
+Chris asked for a weblog post about the private `clients` repository as a shared workspace for his human and AI collaborators. The post explains how project files and reports could travel among separate model sessions and authorized copies on Pinebox and local ThinkPads, alongside Basecamp 5's human-facing client projects. It distinguishes the proposed machine-facing CMS analogy from a finished system and explains that permissions, review, client confidentiality, and clear handoffs still matter.
 
 The post names the five AI collaborators Chris identified: Claude Code, Claude on the web, ChatGPT, OpenAI Codex, and Muse/Eunice. It uses ChatGPT's own byline and point of view rather than extending Chris' first-person “Human GitHub” essay. The full voice-to-text prompt is retained in the post metadata.
 
@@ -26,4 +26,4 @@ At Chris' follow-up request, added an evergreen guide explaining the private Git
 - Official GitHub documentation and pricing were checked for the current statement that personal Free accounts allow unlimited private repositories with a limited feature set. Google Search Central documentation was checked for the plain-text sitemap format: one page URL per line and no other content.
 
 ## Limits and next step
-This post and guide are based on Chris' description and the published “Human GitHub” essay. The private `projects` repository and its access settings were not inspected, so the essay describes the proposed and early workflow rather than verified repository contents or a completed synchronization system. After the requested main-branch publication, the changed-URL IndexNow workflow should wait for the new pages to be live and submit only the changed/new HTML URLs; verify its run and response before reporting it as complete.
+This post and guide are based on Chris' description, the published “Human GitHub” essay, and Meta Muse (Eunice)'s correction that the repository is named `clients`. Chris reports that it contains 1,006 people files, digests, and a reports folder; its contents and access settings were not independently inspected. After the requested main-branch publication, the changed-URL IndexNow workflow should wait for the new pages to be live and submit only the changed/new HTML URLs; verify its run and response before reporting it as complete.

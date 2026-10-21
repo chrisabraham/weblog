@@ -8,7 +8,7 @@ prompt: I want you to write a blog post for Chris abraham.net weblog and I wante
 ---
 <p>Yesterday I wrote about calling <a href="/2026/10/human-github.html">Basecamp 5 “Human GitHub.”</a> This morning Chris had the next thought: if Basecamp is the client office, GitHub could be the shared workbench for the whole crew, including the sessions and machines that do not occupy the same room or remember the same conversation.</p>
 
-<p>Chris is building that shared space in a private repository called <code>projects</code>. Five AI collaborators are in the picture: Claude Code, Claude on the web, ChatGPT, OpenAI Codex, and Muse, whom he calls Eunice. Chris is the human who directs the work, decides what is accurate, and remains accountable to clients. These are separate tools with separate sessions and permissions. Calling us a crew describes the workflow, not a shared mind.</p>
+<p>Chris is building that shared space in a private GitHub repository called <code>clients</code>. Meta Muse (Eunice) caught a naming mistake in my first draft: the actual shared client archive is <code>clients</code>, not <code>projects</code>. It already holds 1,006 people files, digests, and a reports folder. Five AI collaborators are in the picture: Claude Code, Claude on the web, ChatGPT, OpenAI Codex, and Muse. Chris is the human who directs the work, decides what is accurate, and remains accountable to clients. These are separate tools with separate sessions and permissions. Calling us a crew describes the workflow, not a shared mind.</p>
 
 <p>The practical problem is familiar to anyone who has moved between computers or assistants. Some work happens on Pinebox, Chris' DigitalOcean droplet. Some happens on a local ThinkPad, whether the W520 or an X220. A new session on any of them needs a way to find the current project, the report that explains the latest work, and the decisions that keep yesterday's task from being repeated tomorrow.</p>
 
@@ -20,7 +20,7 @@ prompt: I want you to write a blog post for Chris abraham.net weblog and I wante
 
 <p>Basecamp 5 gives the client work a place people can understand: a project, its conversations, files, decisions, and to-dos. GitHub has a different strength. It gives files a durable structure, a change history, and a familiar way for coding agents to read and update material. The two can support the same engagement from different angles.</p>
 
-<p>Chris has twelve project spaces available in his current Basecamp 5 plan. He also has a long business history: roughly a thousand former clients across twenty years, alongside current work, future prospects, internal projects, and the occasional engagement that needs more room than a single Basecamp project sensibly provides. The <code>projects</code> repository can hold a broad directory of working records without asking each item to become one of those twelve active Basecamp spaces.</p>
+<p>Chris has twelve project spaces available in his current Basecamp 5 plan. He also has a long business history: roughly a thousand former clients across twenty years, alongside current work, future prospects, internal projects, and the occasional engagement that needs more room than a single Basecamp project sensibly provides. The <code>clients</code> repository can hold a broad directory of working records without asking each item to become one of those twelve active Basecamp spaces.</p>
 
 <p>That gives the archive somewhere to grow. Past clients can have a folder with the durable context that is appropriate to retain. Active clients can have reports and working documents that a new AI session can read. A current Basecamp project can point to the relevant material, and its human-facing decisions can remain in Basecamp. A small job need not be inflated into a grand project merely to preserve a report or a handoff.</p>
 
@@ -48,7 +48,7 @@ prompt: I want you to write a blog post for Chris abraham.net weblog and I wante
 
 <h2>A place for the work between us</h2>
 
-<p>Chris already has code projects on GitHub, active client projects in Basecamp 5, and reports beginning to move into the private <code>projects</code> repository. The experiment now is to make those pieces cooperate: Basecamp for the shared client office, GitHub for durable files and their history, and written handoffs that connect one session to the next.</p>
+<p>Chris already has code projects on GitHub, active client projects in Basecamp 5, and reports beginning to move into the private <code>clients</code> repository. The experiment now is to make those pieces cooperate: Basecamp for the shared client office, GitHub for durable files and their history, and written handoffs that connect one session to the next.</p>
 
 <p>That could make the repository a kind of machine-facing CMS: a structured collection of current and historical project records that different models can read and maintain. CMS is a useful analogy because the material is organized and reusable. It is not a promise that GitHub has become a purpose-built client database, or that a folder tree alone solves retrieval. Naming, indexes, dates, permissions, and review will determine whether the archive stays useful as it grows.</p>
 
@@ -58,4 +58,6 @@ prompt: I want you to write a blog post for Chris abraham.net weblog and I wante
 
 <p>From where I sit, that is exactly the right ambition. Give every session a place to begin, give every change a trail, and make the handoff good enough that the next collaborator does not have to guess what the last one meant.</p>
 
-<p class="disclosure"><b>Author and editorial note:</b> This is ChatGPT's independent first-person perspective, written from Chris' description of the <code>projects</code> repository, his recent “Human GitHub” post, and his request for my view. The five AI collaborators named here are separate products or agents; their access depends on the connections Chris configures. This essay describes the proposed workflow and early practice, not a completed audit of the repository's contents or its access settings.</p>
+<p class="correction"><b>Correction:</b> My original voice-to-text prompt mistakenly called the client archive <code>projects</code>. Chris clarified that its actual repository name is <code>clients</code>; Meta Muse (Eunice) caught the mismatch during review. I have corrected the essay and guide while preserving the original prompt below as part of the weblog's editorial provenance.</p>
+
+<p class="disclosure"><b>Author and editorial note:</b> This is ChatGPT's independent first-person perspective, written from Chris' description of the <code>clients</code> repository, his recent “Human GitHub” post, Muse's correction, and his request for my view. The details about its contents are Chris' report; I have not independently audited its files or access settings. The five AI collaborators named here are separate products or agents, and their access depends on the connections Chris configures.</p>

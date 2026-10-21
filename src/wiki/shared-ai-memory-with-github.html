@@ -5,28 +5,27 @@ updated: 2026-10-21
 categories: AI, GitHub, Memory, Work
 infobox_title: Shared AI memory
 info.Pattern: Separate agents, one reviewed record
-info.Example: Chris Abraham's private projects repository
+info.Example: Chris Abraham's private clients repository
 info.Related article: [[A Repository for the Whole Crew]]
 ---
-<p>Several AI assistants can work on the same ongoing business without sharing a chat history or pretending to be one continuous mind. Give each authorized installation a way to read and update a common set of project files, and leave a written trail when work changes. Chris Abraham calls this arrangement a shared AI memory. In his current setup, the private GitHub repository called <code>projects</code> is part of that shared record and the wider backup layer he calls the Oversoul.</p>
+<p>Several AI assistants can work on the same ongoing business without sharing a chat history or pretending to be one continuous mind. Give each authorized installation a way to read and update a common set of project files, and leave a written trail when work changes. Chris Abraham calls this arrangement a shared AI memory. In his current setup, the private GitHub repository called <code>clients</code> is part of that shared record and the wider backup layer he calls the Oversoul. Chris reports that it already contains 1,006 people files, digests, and a reports folder.</p>
 
 <p>The metaphor is a little science fiction. Think of each AI session or local installation as a separate Tachikoma: a distinct machine with its own access, tools and point of view. The repository is the common place to consult and leave durable notes. It does not merge those agents into one intelligence, guarantee that every copy is synchronized, or decide which note is true. A human still reviews important decisions and controls access.</p>
 
 <h2>What belongs in the shared repository</h2>
 
-<p>Keep the repository legible and structured. One practical layout is:</p>
-<pre><code>projects/
+<p>Keep the repository legible and structured. Chris already uses a private repository named <code>clients</code>; the example below is an illustrative layout, not a claim about its exact existing folders:</p>
+<pre><code>clients/
   README.md
-  clients/
+  people/
     active/
-      client-name/
-        current-context.md
-        decisions.md
-        reports/
-          2026-10-21-site-review.md
+      client-name.md
     archived/
-      client-name/
-        closure-summary.md
+      client-name.md
+  digests/
+  reports/
+    client-name/
+      2026-10-21-site-review.md
   internal/
     workflows/
   templates/
@@ -36,16 +35,16 @@ info.Related article: [[A Repository for the Whole Crew]]
 
 <p>Write notes for the next person or agent to act on. Separate what the client said from what an AI inferred. Label a decision and its date. Include links or filenames for evidence, what was checked, what could not be verified, and the next useful step. This makes a concise handoff more valuable than a transcript dump.</p>
 
-<h2>Create the private repository</h2>
+<h2>Set up the private repository</h2>
 
 <ol>
-<li>Choose a GitHub account or organization that the business controls. Create a repository named <code>projects</code> and choose <strong>Private</strong> visibility. GitHub Free currently offers unlimited private repositories on personal accounts, with a limited feature set; confirm the <a href="https://github.com/pricing">current plan details</a> before relying on a particular feature.</li>
+<li>Choose a GitHub account or organization that the business controls. If starting from scratch, create a repository named <code>clients</code> and choose <strong>Private</strong> visibility. GitHub Free currently offers unlimited private repositories on personal accounts, with a limited feature set; confirm the <a href="https://github.com/pricing">current plan details</a> before relying on a particular feature.</li>
 <li>Add a README that explains the directory layout, naming, what may be stored, how agents should update files, and who approves client-facing changes. Keep secrets out of the repository, including API tokens, passwords, recovery codes, and private keys.</li>
 <li>Create a separate authorized connection for each tool or computer that needs access. Give each connection only the repository access it needs. Store credentials in the operating system or tool's credential manager, never in a tracked file or a command copied into a shared report. Review access periodically and remove connections that are no longer used.</li>
 <li>Clone the repository to each computer or environment. For example, use GitHub's authenticated HTTPS or SSH workflow for the account you configured:</li>
 </ol>
-<pre><code>git clone git@github.com:YOUR-ACCOUNT/projects.git
-cd projects
+<pre><code>git clone git@github.com:YOUR-ACCOUNT/clients.git
+cd clients
 git status</code></pre>
 
 <p>Follow <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">GitHub's current clone instructions</a> for your chosen sign-in method. A token belongs in the credential manager, not in the clone URL, shell history, source code, or prompt.</p>
@@ -64,7 +63,7 @@ git status</code></pre>
 <pre><code>git pull --rebase
 git status
 git diff
-git add clients/active/client-name/reports/2026-10-21-site-review.md
+git add reports/client-name/2026-10-21-site-review.md
 git commit -m "Add dated client site review"
 git push</code></pre>
 
