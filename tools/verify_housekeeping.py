@@ -326,6 +326,18 @@ atom_entries = atom.findall("atom:entry", rns)
 atom_urls = [x.findtext("atom:id", namespaces=rns) for x in atom_entries]
 verify(bool(rss_urls) and rss_urls == atom_urls,
        "Atom and RSS contain identical articles in identical feed order")
+project_article = "https://chrisabraham.net/2026/10/a-repository-for-the-whole-crew.html"
+shared_memory_wiki = "https://chrisabraham.net/wiki/shared-ai-memory-with-github.html"
+verify(project_article in rss_urls and project_article in atom_urls
+       and project_article in {x.findtext("site:loc", namespaces=rns)
+                               for x in sitemap.findall("site:url", rns)}
+       and project_article in (DOCS / "llms.txt").read_text(encoding="utf-8"),
+       "New ChatGPT article appears in feeds, XML sitemap and llms.txt")
+verify(shared_memory_wiki in (DOCS / "llms.txt").read_text(encoding="utf-8")
+       and shared_memory_wiki in (DOCS / "llms-full.txt").read_text(encoding="utf-8")
+       and "/wiki/shared-ai-memory-with-github.html" in
+       (DOCS / "site-map.html").read_text(encoding="utf-8"),
+       "Shared-memory wiki appears in AI indexes and human-readable site map")
 verify(all(x.findtext("atom:updated", namespaces=rns)
            and x.findtext("atom:published", namespaces=rns)
            and x.findtext("atom:content", namespaces=rns)
@@ -352,6 +364,12 @@ verify(not any("/category/" in x for x in sitemap_urls if x),
        "Sitemap excludes noindex category archives")
 verify(len(sitemap_urls) == len(sitemap.findall("site:url", rns)),
        "Sitemap contains no duplicate canonical URLs")
+text_sitemap_path = DOCS / "sitemap.txt"
+text_sitemap_urls = text_sitemap_path.read_text(encoding="utf-8").splitlines() if text_sitemap_path.exists() else []
+verify(set(text_sitemap_urls) == sitemap_urls
+       and len(text_sitemap_urls) == len(sitemap_urls)
+       and all(url.startswith("https://chrisabraham.net/") for url in text_sitemap_urls),
+       "Text sitemap contains exactly the canonical XML sitemap URLs")
 # Three quiet reference destinations: short glossary, subject index, HTML site map.
 # They are generated from source data and the identical canonical XML inventory.
 gpath = DOCS / "glossary.html"
@@ -367,6 +385,9 @@ if all(p.exists() for p in (gpath, ipath, mpath)):
     term_ids = re.findall(r'class="glossary-entry" id="([^"]+)"', glossary_html)
     verify(len(term_ids) == len(glossary_data) and len(term_ids) == len(set(term_ids)),
            "Each glossary entry has one unique addressable definition")
+    required_terms = {x["term"] for x in glossary_data}
+    verify({"Oversoul", "Shared AI memory", "Shared repository", "Tachikoma"}.issubset(required_terms),
+           "Glossary defines the new shared-memory terms")
     verify(all(0 < len(x["definition"]) <= 500 for x in glossary_data),
            "Definitions are accurate-sized reference notes, never over 500 characters")
     verify(all("https://chrisabraham.net" + x["source"] in sitemap_urls
@@ -394,13 +415,14 @@ for machine_path in ("llms.txt", "llms-full.txt"):
     machine = (DOCS / machine_path).read_text(encoding="utf-8")
     verify(all(x in machine for x in
                ("/readme.html", "/categories.html", "/rss.xml", "/atom.xml",
-                "/feeds.opml", "/blogroll.opml", "/sitemap.xml")),
+                "/feeds.opml", "/blogroll.opml", "/sitemap.xml", "/sitemap.txt")),
            f"{machine_path} links to every current publishing/reading surface")
     verify("## Categories" in machine and "mostly Claude" not in machine,
            f"{machine_path} lists current categories without stale model claims")
-verify("Sitemap: https://chrisabraham.net/sitemap.xml" in
-       (DOCS / "robots.txt").read_text(encoding="utf-8"),
-       "robots.txt points to the current canonical sitemap")
+robots = (DOCS / "robots.txt").read_text(encoding="utf-8")
+verify("Sitemap: https://chrisabraham.net/sitemap.xml" in robots
+       and "Sitemap: https://chrisabraham.net/sitemap.txt" in robots,
+       "robots.txt advertises both current canonical sitemaps")
 verify("100/100" not in HOME and "<b>WCAG</b>2.1 AA" not in HOME,
        "Visual badges do not advertise unverified accessibility certification")
 

@@ -290,6 +290,11 @@
   "source": "/wiki/static-weblog-operations.html"
  },
  {
+  "term": "Oversoul",
+  "definition": "Chris' name for the shared memory and backup layer that lets separate AI installations consult the same durable project records.",
+  "source": "/wiki/shared-ai-memory-with-github.html"
+ },
+ {
   "term": "Pinebox",
   "definition": "The SSH-accessible server that hosts Blackbox, its scheduled operations and web-build tools.",
   "source": "/wiki/pinebox.html"
@@ -350,6 +355,16 @@
   "source": "/2026/10/google-abhors-a-vacuum.html"
  },
  {
+  "term": "Shared AI memory",
+  "definition": "A reviewed set of durable project files that separate AI sessions can consult and update through authorized access.",
+  "source": "/wiki/shared-ai-memory-with-github.html"
+ },
+ {
+  "term": "Shared repository",
+  "definition": "A version-controlled project folder that authorized collaborators can read, update and review across sessions or computers.",
+  "source": "/wiki/shared-ai-memory-with-github.html"
+ },
+ {
   "term": "Site index",
   "definition": "An alphabetical back-of-the-book list of subjects, people and tools, with locators linking to the pages where each appears.",
   "source": "/wiki/static-weblog-operations.html"
@@ -383,6 +398,11 @@
   "term": "SVG",
   "definition": "Scalable Vector Graphics, an XML-based format for crisp, lightweight drawings that can scale without bitmap pixelation.",
   "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Tachikoma",
+  "definition": "Chris' metaphor for a separate AI session or installation that keeps its own identity while consulting a shared project record.",
+  "source": "/wiki/shared-ai-memory-with-github.html"
  },
  {
   "term": "Upwork verdicts",

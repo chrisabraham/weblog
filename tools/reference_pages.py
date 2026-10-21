@@ -173,7 +173,8 @@ def build_reference_pages(*, src, site_url, site, posts, wiki, sitemap, authors,
         path="/site-map.html",
         body=('<h1 class="page-title">HTML site map</h1><div class="post-body reference-page">'
               f'<p>{len(expected)} published indexable pages, grouped for readers. '
-              'Generated from the same URLs as the <a href="/sitemap.xml">XML sitemap</a>. '
+              'Generated from the same URLs as the <a href="/sitemap.xml">XML sitemap</a> and '
+              '<a href="/sitemap.txt">plain text sitemap</a>. '
               'Browse topics in the <a href="/site-index.html">index</a> or definitions in the '
               '<a href="/glossary.html">glossary</a>.</p>' + "".join(tree) + '</div>'),
         schema={"@context": "https://schema.org", "@type": "CollectionPage",

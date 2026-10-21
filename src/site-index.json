@@ -46,6 +46,15 @@
     ]
   },
   {
+    "term": "AI shared memory",
+    "patterns": [
+      "shared AI memory",
+      "shared memory",
+      "collective memory",
+      "Oversoul"
+    ]
+  },
+  {
     "term": "Amazon",
     "patterns": [
       "Amazon",
@@ -237,13 +246,6 @@
     ]
   },
   {
-    "term": "Editorial notes",
-    "patterns": [
-      "editor's note",
-      "editorial note"
-    ]
-  },
-  {
     "term": "E-E-A-T",
     "patterns": [
       "E-E-A-T",
@@ -254,6 +256,13 @@
     "term": "Edelman",
     "patterns": [
       "Edelman"
+    ]
+  },
+  {
+    "term": "Editorial notes",
+    "patterns": [
+      "editor's note",
+      "editorial note"
     ]
   },
   {
@@ -309,6 +318,15 @@
     ]
   },
   {
+    "term": "GitHub project repository",
+    "patterns": [
+      "projects repository",
+      "private repository",
+      "shared repository",
+      "repo"
+    ]
+  },
+  {
     "term": "Gmail",
     "patterns": [
       "Gmail"
@@ -342,18 +360,18 @@
     ]
   },
   {
+    "term": "Hill Mole",
+    "patterns": [
+      "Hill Mole"
+    ]
+  },
+  {
     "term": "History of the web",
     "patterns": [
       "early web",
       "2003",
       "2004",
       "web history"
-    ]
-  },
-  {
-    "term": "Hill Mole",
-    "patterns": [
-      "Hill Mole"
     ]
   },
   {
@@ -401,17 +419,17 @@
     ]
   },
   {
-    "term": "Keywords",
-    "patterns": [
-      "keywords",
-      "keyword hunting"
-    ]
-  },
-  {
     "term": "Keyboard navigation",
     "patterns": [
       "keyboard",
       "skip link"
+    ]
+  },
+  {
+    "term": "Keywords",
+    "patterns": [
+      "keywords",
+      "keyword hunting"
     ]
   },
   {
@@ -482,12 +500,6 @@
     ]
   },
   {
-    "term": "OpenAI",
-    "patterns": [
-      "OpenAI"
-    ]
-  },
-  {
     "term": "Online identity",
     "patterns": [
       "identity",
@@ -499,6 +511,12 @@
     "patterns": [
       "open-source",
       "source available"
+    ]
+  },
+  {
+    "term": "OpenAI",
+    "patterns": [
+      "OpenAI"
     ]
   },
   {
@@ -549,15 +567,21 @@
     ]
   },
   {
+    "term": "Reputation management",
+    "patterns": [
+      "reputation"
+    ]
+  },
+  {
     "term": "Reputation.com",
     "patterns": [
       "Reputation.com"
     ]
   },
   {
-    "term": "Reputation management",
+    "term": "Scripting News",
     "patterns": [
-      "reputation"
+      "Scripting News"
     ]
   },
   {
@@ -565,12 +589,6 @@
     "patterns": [
       "snippets",
       "meta description"
-    ]
-  },
-  {
-    "term": "Scripting News",
-    "patterns": [
-      "Scripting News"
     ]
   },
   {
@@ -606,6 +624,13 @@
     "term": "Substack",
     "patterns": [
       "Substack"
+    ]
+  },
+  {
+    "term": "Tachikoma",
+    "patterns": [
+      "Tachikoma",
+      "mechanical Tachikoma"
     ]
   },
   {
