@@ -25,6 +25,16 @@ def key():
     return re.search(r'^INDEXNOW_KEY = "([0-9a-f]+)"', open("build.py").read(), re.M).group(1)
 
 
+def page_url(path):
+    """Map a docs HTML path to its public URL without mangling hyphenated names."""
+    relative = path[len("docs/"):]
+    if relative == "index.html":
+        relative = ""
+    elif relative.endswith("/index.html"):
+        relative = relative[:-len("index.html")]
+    return LIVE + "/" + relative
+
+
 def changed_urls(before, after):
     if not before or set(before) == {"0"}:
         return []
@@ -36,7 +46,7 @@ def changed_urls(before, after):
     pages = added + (edited if len(edited) <= EDITED_LIMIT else [])
     if not pages:
         return []
-    urls = [LIVE + "/" + p[len("docs/"):].replace("index.html", "") for p in pages]
+    urls = [page_url(p) for p in pages]
     return urls + [LIVE + "/", LIVE + "/archives.html"]
 
 
