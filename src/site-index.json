@@ -320,7 +320,7 @@
   {
     "term": "GitHub project repository",
     "patterns": [
-      "projects repository",
+      "clients repository",
       "private repository",
       "shared repository",
       "repo"
