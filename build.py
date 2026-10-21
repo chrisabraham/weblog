@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 16807)
-Total output lines: 1244
-
 #!/usr/bin/env python3
 """Build the Chris Abraham weblog into docs/ (GitHub Pages serves main:/docs).
 
@@ -511,7 +508,302 @@ def sidebar(site, posts):
         months.setdefault(f"{p['when']:%Y/%m}", p["when"])
     cats = {}
     for p in posts:
-     …4807 tokens truncated…        body='<h1 class="page-title">Projects</h1><p class="lede">What I am building, running, or planning, with an honest status for each. Posts about a project link back here.</p>' + "\n".join(rows), **P))
+        for c in p["cats"]:
+            cats[c] = cats.get(c, 0) + 1
+    proj = "".join(
+        f'<li><span class="dot dot-{slugify(x["status"])}" title="{e(x["status"])}"></span>'
+        f'<a href="/projects.html#{slugify(x["name"])}">{e(x["name"])}</a> <small>{e(x["status"])}</small></li>'
+        for x in site["projects"] if x.get("sidebar", True))
+    roll = "".join(
+        f'<h3>{e(g["group"])}</h3><ul>' + "".join(
+            f'<li><a href="{e(b["url"])}" rel="me">{e(b["name"])}</a>'
+            + (f' <small>{e(b["note"])}</small>' if b.get("note") else "") + "</li>" for b in g["links"]) + "</ul>"
+        for g in site["elsewhere"])
+    nfeeds = sum(1 for g in site["reading"] for x in g["links"] if x.get("feed"))
+    reading = "".join(f'<li><a href="{e(b["url"])}">{e(b["name"])}</a></li>' for b in site["reading"][0]["links"])
+    arch = "".join(f'<li><a href="/{k}/">{d:%B %Y}</a></li>' for k, d in months.items())
+    catl = "".join(f'<li>{cat_link(c)} <small>({n})</small></li>' for c, n in sorted(cats.items()))
+    recent = "".join(f'<li><a href="{p["path"]}">{e(p["title"])}</a></li>' for p in posts[:6])
+    wiki_count = len(site.get("_wiki", {}))
+    return f"""<aside id="sidebar" aria-label="Sidebar">
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li><li><a href="/authors/openai-codex.html">OpenAI Codex</a> <small>the invited AI, in its own voice</small></li><li><a href="/authors/eunice.html">Eunice</a> <small>the personal agent, in her own voice</small></li></ul></section>
+<section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
+<section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
+<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki"><a href="/wiki/">Wiki</a></p><p>Evergreen guides and references. <a href="/wiki/">Browse {wiki_count} pages</a></p></section>
+<section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects">{proj}</ul></section>
+<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories"><a href="/categories.html">Categories</a></p><ul>{catl}</ul><p class="opml"><a href="/categories.html">All categories</a></p></section>
+<section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul>{arch}</ul></section>
+<section class="box" aria-labelledby="sb-blogroll"><p class="box-title" id="sb-blogroll">Blogroll</p><ul>{reading}</ul><p><a href="/reading.html">The full reading list: {nfeeds} feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll" aria-labelledby="sb-elsewhere"><p class="box-title" id="sb-elsewhere">Elsewhere</p>{roll}</section>
+<section class="box buttons" aria-label="Badges">
+<a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
+<a class="badge b-rss" href="/atom.xml"><b>XML</b>Atom 1.0</a>
+<a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
+<a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
+<span class="badge b-lynx"><b>Lynx</b>friendly</span>
+<span class="badge b-html"><b>HTML</b>no JS req.</span>
+<a class="badge b-wcag" href="/accessibility.html"><b>a11y</b>notes</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>test</b>record</a>
+<a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
+<a class="badge b-cc" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><b>cc</b>BY 4.0</a>
+</section>
+</aside>"""
+
+
+# ---------------------------------------------------------------- post rendering
+
+def post_block(p, *, full, heading="h2", teaser=False):
+    """Full content on permalinks; human-readable descriptions as index teasers.
+
+    Extracting a random first paragraph can break when posts begin with figures,
+    diagrams, or editorial notices. The description is already reviewed as an
+    editorial summary. Original posts, prompts, notes, and pictures are retained.
+    """
+    cats = ", ".join(cat_link(c) for c in p["cats"])
+    title = (f'<{heading} class="post-title p-name">{e(p["title"])}</{heading}>' if full else
+             f'<{heading} class="post-title p-name"><a href="{p["path"]}" rel="bookmark" class="u-url">{e(p["title"])}</a></{heading}>')
+    prompt = ""
+    if full and p.get("prompt"):
+        ph = "h2" if heading == "h1" else "h4"
+        prompt = (f'<details class="prompt"{" open" if full else ""}><summary><{ph} class="prompt-h">The prompt for \u201c{e(p["title"])}\u201d</{ph}></summary>'
+                  f'<blockquote>{e(p["prompt"])}</blockquote></details>')
+    words = len(text_only(p["body"]).split())
+    readtime = f'{words:,} words, about {max(1, round(words / 230))} min read'
+    updated = (f' &middot; updated <time datetime="{p["updated"].isoformat()}">{p["updated"]:%b} {p["updated"].day}</time>'
+               if p["updated"] != p["when"] else "")
+    # Only the homepage and condensed archives use teasers. Avoid copying full
+    # article bodies to those pages or inflating page size / duplicate content.
+    if teaser:
+        body = (f'<p class="post-excerpt p-summary">{e(p["description"])}</p>'
+                f'<p class="read-more"><a href="{p["path"]}">Read full article: {e(p["title"])} &rarr;</a></p>')
+    else:
+        body = p["body"] if heading == "h1" else re.sub(r"<(/?)h2([\s>])", r"<\1h4\2", p["body"])
+    return f"""<article class="post h-entry" id="{p['slug']}">
+{title}
+<div class="post-body e-content">
+{body}
+</div>
+{prompt}
+<p class="post-footer">{byline(p)} at
+<a href="{p['path']}" rel="bookmark" class="u-url"><time class="dt-published" datetime="{p['when'].isoformat()}">{clock(p['when'])}</time></a>{updated}
+&middot; {readtime} &middot; filed under {cats or 'nothing'} &middot; <a href="mailto:{EMAIL}?subject={e(p['title'])}">write back</a></p>
+</article>"""
+
+
+def by_day(posts, *, full=False):
+    out, last = [], None
+    for p in posts:
+        day = p["when"].date()
+        if day != last:
+            if last is not None:
+                out.append("</div>")
+            out.append(f'<div class="day"><h2 class="date-header">{long_date(p["when"])}</h2>')
+            last = day
+        out.append(post_block(p, full=full, heading="h3", teaser=not full))
+    if posts:
+        out.append("</div>")
+    return "\n".join(out)
+
+
+def byline(p):
+    if p.get("author") in ("claude-code", "chatgpt", "openai-codex", "eunice"):
+        a = AUTHORS[p["author"]]
+        return (f'By <a class="p-author h-card" href="{a["path"]}">{e(a["name"])}</a>, in its own voice '
+                f'({e(p.get("model", a["name"]))}), for {AUTHOR}\'s weblog')
+    return (f'Written by {e(p.get("model", "Claude"))} for '
+            f'<a class="p-author h-card" href="/authors/chris-abraham.html">{AUTHOR}</a>')
+
+
+def post_schema(p):
+    return {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "BlogPosting",
+                "@id": p["url"] + "#post",
+                "headline": p["title"],
+                "description": p["description"],
+                "url": p["url"],
+                "mainEntityOfPage": p["url"],
+                "datePublished": p["when"].isoformat(),
+                "dateModified": p["updated"].isoformat(),
+                "author": author_ref(p.get("author")),
+                "publisher": AUTHOR_REF,
+                "isPartOf": {"@id": SITE_URL + "/#blog"},
+                "keywords": p["cats"],
+                "articleSection": p["cats"][0] if p["cats"] else None,
+                "wordCount": len(text_only(p["body"]).split()),
+                "inLanguage": "en-US",
+                "creditText": (f"Written by {AUTHORS[p['author']]['name']} ({p.get('model', AUTHORS[p['author']]['name'])}) in its own voice, at {AUTHOR}'s request"
+                               if p.get("author") in ("claude-code", "chatgpt", "openai-codex", "eunice") else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
+                "publishingPrinciples": SITE_URL + "/disclosures.html",
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+            },
+            PERSON,
+            {"@type": "BreadcrumbList", "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/"},
+                {"@type": "ListItem", "position": 2, "name": "Archives", "item": SITE_URL + "/archives.html"},
+                {"@type": "ListItem", "position": 3, "name": p["title"], "item": p["url"]},
+            ]},
+        ],
+    }
+
+
+# ---------------------------------------------------------------- build
+
+def write(path, text):
+    f = OUT / path.lstrip("/")
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(text, encoding="utf-8")
+
+
+def main():
+    site = json.loads((SRC / "site.json").read_text(encoding="utf-8"))
+    PERSON["sameAs"] = [x["url"] for g in site["elsewhere"] for x in g["links"]
+                        if "calendly" not in x["url"] and "slowjogging" not in x["url"]]
+    posts = load_posts()
+    # Recompute each build, so renamed posts never leave stale cross-reference targets.
+    POST_LINKS.clear()
+    POST_LINKS.update({slugify(p["title"]): p["path"] for p in posts})
+    wiki = load_wiki()
+    site["_wiki"] = wiki
+    links_to = {}  # slug -> list of (title, path) that link to it
+    for p in posts + list(wiki.values()):
+        found = set()
+        p["body"] = wikilinks(p["body"], wiki, found)
+        p["body"], aff = affiliate(p["body"])
+        if aff or p.get("affiliate") == "yes":
+            p["body"] += AMAZON_NOTE if aff else '<p class="disclosure">This page contains affiliate links; I may earn a commission. <a href="/disclosures.html#affiliate-links">About affiliate links</a></p>'
+        if "info" in p:
+            p["info"] = [(k, wikilinks(v, wiki, found)) for k, v in p["info"]]
+        for s in found:
+            if s != p.get("slug") or p["path"].startswith("/20"):
+                links_to.setdefault(s, []).append((p["title"], p["path"]))
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    OUT.mkdir()
+    sitemap = []  # (path, lastmod)
+    P = dict(site=site, posts=posts)
+
+    # Home
+    home_schema = {"@context": "https://schema.org", "@graph": [
+        {"@type": "Blog", "@id": SITE_URL + "/#blog", "name": TITLE, "description": TAGLINE,
+         "url": SITE_URL + "/", "author": AUTHOR_REF, "inLanguage": "en-US",
+         "publishingPrinciples": SITE_URL + "/disclosures.html",
+         "blogPost": [{"@type": "BlogPosting", "headline": p["title"], "url": p["url"],
+                       "datePublished": p["when"].isoformat()} for p in posts[:HOME_POSTS]]},
+        {"@type": "WebSite", "@id": SITE_URL + "/#site", "name": TITLE, "url": SITE_URL + "/",
+         "publisher": AUTHOR_REF},
+        PERSON]}
+    older = '<p class="older"><a href="/archives.html">Older posts are in the archives</a></p>' if len(posts) > HOME_POSTS else ""
+    write("/index.html", page(title=TITLE, description=HOME_DESCRIPTION, path="/index.html",
+                              body=by_day(posts[:HOME_POSTS]) + older, schema=home_schema, **P))
+    sitemap.append(("/", posts[0]["updated"] if posts else None))
+
+    # Posts
+    for i, p in enumerate(posts):
+        newer, older_p = (posts[i - 1] if i else None), (posts[i + 1] if i + 1 < len(posts) else None)
+        nav = '<nav class="prevnext" aria-label="More posts">'
+        if older_p:
+            nav += f'<a href="{older_p["path"]}" rel="prev">&laquo; {e(older_p["title"])}</a>'
+        nav += '<a href="/">Main page</a>'
+        if newer:
+            nav += f'<a href="{newer["path"]}" rel="next">{e(newer["title"])} &raquo;</a>'
+        nav += "</nav>"
+        shared = sorted((q for q in posts if q is not p),
+                        key=lambda q: (-len(set(q["cats"]) & set(p["cats"])), -q["when"].timestamp()))[:3]
+        related = ('<section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Related posts</h2><ul>'
+                   + "".join(f'<li><a href="{q["path"]}">{e(q["title"])}</a> <small>{q["when"]:%b} {q["when"].day}</small></li>' for q in shared)
+                   + "</ul></section>") if shared else ""
+        body = f'<div class="day"><p class="date-header">{long_date(p["when"])}</p>{post_block(p, full=True, heading="h1")}</div>{related}{nav}'
+        extra = (f'<meta property="article:published_time" content="{p["when"].isoformat()}">\n'
+                 f'<meta property="article:modified_time" content="{p["updated"].isoformat()}">\n'
+                 + "".join(f'<meta property="article:tag" content="{e(c)}">\n' for c in p["cats"]))
+        write(p["path"], page(title=p["title"], description=p["description"], path=p["path"], body=body,
+                              seo_title=p.get("seo_title"), kicker=f"Weblog \u00b7 {long_date(p['when'])}",
+                              schema=post_schema(p), og_type="article", extra_head=extra, **P))
+        sitemap.append((p["path"], p["updated"]))
+
+    # Monthly and category archives are navigable collections of article teasers.
+    # They remain noindex/follow because permalink pages carry the full articles.
+    months = {}
+    for p in posts:
+        months.setdefault(f"{p['when']:%Y/%m}", []).append(p)
+    for key, ps in months.items():
+        label = f"{ps[0]['when']:%B %Y}"
+        write(f"/{key}/index.html", page(title=f"Posts from {label}", description=f"Every post on Chris Abraham's weblog from {label}, about Blackbox, Claude Code, AI tools, and client work, written by AI from his prompts.",
+              path=f"/{key}/index.html", body=f'<h1 class="page-title">{label}</h1>' + by_day(ps, full=True),
+              noindex=True, **P))
+    cats = {}
+    for p in posts:
+        for c in p["cats"]:
+            cats.setdefault(c, []).append(p)
+    for c, ps in cats.items():
+        write(f"/category/{slugify(c)}.html", page(title=f"Posts about {c}", description=f"Every post on Chris Abraham's weblog filed under {c}, newest first, written by AI from his prompts and showing each prompt.",
+              path=f"/category/{slugify(c)}.html",
+              body=(f'<h1 class="page-title">Filed under {e(c)}</h1>'
+                    f'<p class="lede"><a href="/categories.html">Browse all categories</a> · {len(ps)} article{"s" if len(ps) != 1 else ""}</p>'
+                    + by_day(ps)),
+              noindex=True, **P))
+    # A single indexable category directory creates a durable nav destination.
+    # The member archives are live, human-readable, and intentionally noindex.
+    cat_rows = "".join(
+        f'<li><a href="/category/{slugify(c)}.html">{e(c)}</a> '
+        f'<small>({len(ps)} article{"s" if len(ps) != 1 else ""})</small></li>'
+        for c, ps in sorted(cats.items(), key=lambda kv: kv[0].casefold()))
+    category_intro = ('<h1 class="page-title">Categories</h1>'
+                      '<p class="lede">Every subject in the weblog, filed by the writers. '
+                      'Select a category for its dated articles and links to the complete pieces.</p>'
+                      '<h2>Subject index</h2>')
+    write("/categories.html", page(
+        title="Categories on the Chris Abraham weblog",
+        seo_title="Weblog categories and subjects on Chris Abraham",
+        description="Browse every subject on Chris Abraham's AI-authored weblog, with article counts and links to the dated pieces, prompts and public revision history.",
+        path="/categories.html",
+        body=category_intro + f'<ul class="category-directory">{cat_rows}</ul>',
+        schema={"@context": "https://schema.org", "@type": "CollectionPage",
+                "name": "Categories on the Chris Abraham weblog",
+                "url": SITE_URL + "/categories.html",
+                "description": "Subject directory for the weblog",
+                "hasPart": [{"@type": "CollectionPage", "name": c,
+                             "url": SITE_URL + "/category/" + slugify(c) + ".html"}
+                            for c in sorted(cats)]},
+        **P))
+    sitemap.append(("/categories.html", posts[0]["updated"] if posts else None))
+
+    # Archives list: one line per post, indexable since it is only titles.
+    lines, cur = [], None
+    for p in posts:
+        m = f"{p['when']:%B %Y}"
+        if m != cur:
+            if cur:
+                lines.append("</ul>")
+            lines.append(f'<h2><a href="/{p["when"]:%Y/%m}/">{m}</a></h2><ul class="archive-list">')
+            cur = m
+        lines.append(f'<li><time datetime="{p["when"].date()}">{p["when"]:%b} {p["when"].day}</time> '
+                     f'<a href="{p["path"]}">{e(p["title"])}</a></li>')
+    if cur:
+        lines.append("</ul>")
+    write("/archives.html", page(title="Archives of the Chris Abraham weblog", seo_title="Weblog archives: every post by Chris Abraham, by month", description="Every post on Chris Abraham's weblog by month, from Blackbox to Claude Code to anonymized client work, written by AI from his prompts.",
+          path="/archives.html", body='<h1 class="page-title">Archives</h1>' + "\n".join(lines), **P))
+    sitemap.append(("/archives.html", posts[0]["updated"] if posts else None))
+
+    # Projects
+    rows = []
+    for x in site["projects"]:
+        link = f'<a href="{e(x["url"])}">{e(x["url"].split("//")[-1].rstrip("/"))}</a>' if x.get("url") else "private"
+        rows.append(f"""<section class="project" id="{slugify(x['name'])}">
+<h2><span class="dot dot-{slugify(x['status'])}"></span>{e(x['name'])}</h2>
+<p class="project-meta">{e(x['status'])} &middot; started {e(x['started'])} &middot; {link}</p>
+<p>{x['about']}</p></section>""")
+    projects_schema = {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Projects",
+                       "url": SITE_URL + "/projects.html", "author": AUTHOR_REF,
+                       "hasPart": [{"@type": "CreativeWork", "name": x["name"], "url": x.get("url") or None,
+                                    "creativeWorkStatus": x["status"]} for x in site["projects"]]}
+    write("/projects.html", page(title="Projects Chris Abraham is building now", seo_title="Projects Chris Abraham is building now, with status", description="What Chris Abraham is building and running right now, from Blackbox to his podcast site, with the status of each project kept current.",
+          path="/projects.html", schema=projects_schema,
+          body='<h1 class="page-title">Projects</h1><p class="lede">What I am building, running, or planning, with an honest status for each. Posts about a project link back here.</p>' + "\n".join(rows), **P))
     sitemap.append(("/projects.html", None))
 
 
