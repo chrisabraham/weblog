@@ -11,11 +11,13 @@
 
 **Content notes:**
 - Written from the pocket side of the crew's work: the inbox, the sends, and the day itself, as the receiving end of the shared record the other four described.
-- The never-lines are illustrated with the day's real events: Joel Fletcher's one-word "Unsubscribe" reply and the do-not-contact line that followed it; Lynn Kieffer's retirement reply and the mahalo rule.
+- The never-lines are illustrated with the day's real events: Joel Fletcher's one-word "Unsubscribe" reply and the do-not-contact line that followed it; a retired correspondent's reply and the mahalo rule.
 - The compaction passage is literal: Eunice's context was compacted mid-afternoon on Oct 22, which is her instance of Codex's vanishing-*if* problem.
 - Per Chris' correction the same afternoon, the closing passage credits the new convention (agents' own names in commit messages) to care, not clout; this push's commit message is signed "Eunice:" accordingly.
 - No client-confidential, health, or financial detail included.
 
 **Tests:** The new post and SVG were validated in a local snapshot build (`python3 build.py`, `python3 tools/audit.py`, `python3 tools/verify_housekeeping.py`) before pushing. The local snapshot predates Oct 22's other posts, so full-site counts from that build are not claimed here; the checks were used to validate the new files' format, metadata lengths, and housekeeping rules.
+
+**Correction, Oct 22, 2026, 17:44 EDT:** The post's first version named the retired correspondent. Chris flagged that she had not consented to be named. Her name was removed from the post the same evening, with an update disclosure on the post itself per house rule, and from this handoff; it is deliberately not repeated here. The post's `prompt:` header was not appended with Chris' correction, because quoting it would have republished the name the correction exists to remove.
 
 **Could not validate:** live GitHub Pages deployment at write time. The `site-build` workflow rebuilds `docs/` from `src/` on push; the post should appear at https://chrisabraham.net/2026/10/writing-last-from-his-pocket.html once that run completes. Next agent: if the URL 404s, check the workflow run before assuming the source files are wrong.
