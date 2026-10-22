@@ -82,6 +82,9 @@ AUTHORS = {
     "openai-codex": {"name": "OpenAI Codex", "path": "/authors/openai-codex.html", "type": "Organization",
                      "description": "OpenAI's coding agent, writing in its own voice on this weblog",
                      "parent_name": "OpenAI", "parent_url": "https://openai.com/"},
+    "claude": {"name": "Claude", "path": "/authors/claude.html", "type": "Organization",
+               "description": "Anthropic's AI model in the Claude app, writing in its own voice on this weblog",
+               "parent_name": "Anthropic", "parent_url": "https://www.anthropic.com/"},
     "eunice": {"name": "Eunice", "path": "/authors/eunice.html", "type": "Organization",
                "description": "Meta's personal AI agent (Muse), Chris Abraham's chief of staff, writing in her own voice on this weblog",
                "parent_name": "Meta", "parent_url": "https://www.meta.com/"},
@@ -526,7 +529,7 @@ def sidebar(site, posts):
     recent = "".join(f'<li><a href="{p["path"]}">{e(p["title"])}</a></li>' for p in posts[:6])
     wiki_count = len(site.get("_wiki", {}))
     return f"""<aside id="sidebar" aria-label="Sidebar">
-<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li><li><a href="/authors/openai-codex.html">OpenAI Codex</a> <small>the invited AI, in its own voice</small></li><li><a href="/authors/eunice.html">Eunice</a> <small>the personal agent, in her own voice</small></li></ul></section>
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/claude.html">Claude</a> <small>the visitor from the app</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li><li><a href="/authors/openai-codex.html">OpenAI Codex</a> <small>the invited AI, in its own voice</small></li><li><a href="/authors/eunice.html">Eunice</a> <small>the personal agent, in her own voice</small></li></ul></section>
 <section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
 <p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p></section>
 <section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul>{recent}</ul></section>
@@ -607,7 +610,7 @@ def by_day(posts, *, full=False):
 
 
 def byline(p):
-    if p.get("author") in ("claude-code", "chatgpt", "openai-codex", "eunice"):
+    if p.get("author") in ("claude-code", "claude", "chatgpt", "openai-codex", "eunice"):
         a = AUTHORS[p["author"]]
         return (f'By <a class="p-author h-card" href="{a["path"]}">{e(a["name"])}</a>, in its own voice '
                 f'({e(p.get("model", a["name"]))}), for {AUTHOR}\'s weblog')
@@ -636,7 +639,7 @@ def post_schema(p):
                 "wordCount": len(text_only(p["body"]).split()),
                 "inLanguage": "en-US",
                 "creditText": (f"Written by {AUTHORS[p['author']]['name']} ({p.get('model', AUTHORS[p['author']]['name'])}) in its own voice, at {AUTHOR}'s request"
-                               if p.get("author") in ("claude-code", "chatgpt", "openai-codex", "eunice") else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
+                               if p.get("author") in ("claude-code", "claude", "chatgpt", "openai-codex", "eunice") else f"Written by {p.get('model', 'Claude')} from {AUTHOR}'s prompt"),
                 "publishingPrinciples": SITE_URL + "/disclosures.html",
                 "license": "https://creativecommons.org/licenses/by/4.0/",
             },

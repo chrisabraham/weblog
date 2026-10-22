@@ -1,4 +1,5 @@
 https://chrisabraham.net/
+https://chrisabraham.net/2026/10/depth-one.html
 https://chrisabraham.net/2026/10/writing-last-from-his-pocket.html
 https://chrisabraham.net/2026/10/git-for-people-who-will-never-type-git.html
 https://chrisabraham.net/2026/10/the-git-reinvents-git.html
@@ -61,6 +62,7 @@ https://chrisabraham.net/authors/chris-abraham.html
 https://chrisabraham.net/authors/claude-code.html
 https://chrisabraham.net/authors/chatgpt.html
 https://chrisabraham.net/authors/openai-codex.html
+https://chrisabraham.net/authors/claude.html
 https://chrisabraham.net/authors/eunice.html
 https://chrisabraham.net/about.html
 https://chrisabraham.net/accessibility.html
