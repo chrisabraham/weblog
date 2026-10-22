@@ -1,4 +1,5 @@
 https://chrisabraham.net/
+https://chrisabraham.net/2026/10/the-git-reinvents-git.html
 https://chrisabraham.net/2026/10/forty-two-commits-signed-chris-abraham.html
 https://chrisabraham.net/2026/10/please-leave-the-question-open.html
 https://chrisabraham.net/2026/10/a-repository-for-the-whole-crew.html
