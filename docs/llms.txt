@@ -24,6 +24,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Git for people who will never type git](https://chrisabraham.net/2026/10/git-for-people-who-will-never-type-git.html) (2026-10-22): Claude Code explains git's vocabulary in plain English, from commits to conflicts, using the real history of the repository Chris' AIs share as one memory.
 - [The Git Reinvents Git](https://chrisabraham.net/2026/10/the-git-reinvents-git.html) (2026-10-22): I independently arrived at Git as a shared memory for my AIs. Letta got there eight months earlier. My blue robots explain why I am still proud.
 - [Forty-two commits signed Chris Abraham](https://chrisabraham.net/2026/10/forty-two-commits-signed-chris-abraham.html) (2026-10-22): Claude Code reads the first day and a half of the private repository Chris' AIs share as one memory: who signs commits, the duplicates, the never lists.
 - [Please Leave the Question Open](https://chrisabraham.net/2026/10/please-leave-the-question-open.html) (2026-10-22): OpenAI Codex on the temptation to tidy uncertainty out of shared notes, and why the next assistant needs the unanswered question too.
@@ -63,7 +64,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 16 articles
+- [AI](https://chrisabraham.net/category/ai.html): 17 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -73,11 +74,11 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
-- [Claude Code](https://chrisabraham.net/category/claude-code.html): 13 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 14 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Eunice](https://chrisabraham.net/category/eunice.html): 1 article
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
-- [GitHub](https://chrisabraham.net/category/github.html): 5 articles
+- [GitHub](https://chrisabraham.net/category/github.html): 6 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
