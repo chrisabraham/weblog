@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="A dolphin leaping over a branching git tree that grows like coral from the sea, with one small orange fish below">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#eff6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#sky)"/>
+  <!-- sea -->
+  <rect y="520" width="1200" height="155" fill="#2563eb"/>
+  <path d="M0 520 Q 75 505 150 520 T 300 520 T 450 520 T 600 520 T 750 520 T 900 520 T 1050 520 T 1200 520 V 540 H 0 Z" fill="#eff6ff"/>
+  <!-- git branch coral, growing from the sea floor -->
+  <g stroke="#1e3a8a" stroke-width="7" fill="none" stroke-linecap="round">
+    <path d="M240 660 L240 470"/>
+    <path d="M240 560 C 240 500 330 500 330 430"/>
+    <path d="M240 505 C 240 460 160 455 160 395"/>
+    <path d="M330 430 C 330 390 405 385 405 335"/>
+  </g>
+  <g fill="#f8fafc" stroke="#1e3a8a" stroke-width="6">
+    <circle cx="240" cy="660" r="15"/>
+    <circle cx="330" cy="430" r="14"/>
+    <circle cx="160" cy="395" r="14"/>
+    <circle cx="405" cy="335" r="14"/>
+    <circle cx="240" cy="470" r="12"/>
+  </g>
+  <!-- second smaller coral -->
+  <g stroke="#1e40af" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M950 660 L950 540"/>
+    <path d="M950 600 C 950 565 1020 560 1020 505"/>
+  </g>
+  <g fill="#f8fafc" stroke="#1e40af" stroke-width="5">
+    <circle cx="950" cy="660" r="13"/>
+    <circle cx="1020" cy="505" r="12"/>
+    <circle cx="950" cy="540" r="11"/>
+  </g>
+  <!-- the dolphin, mid-leap -->
+  <g>
+    <path d="M400 300 C 450 205 590 160 700 195 C 765 215 800 255 835 240 C 815 282 770 300 725 298 C 760 330 752 368 712 356 C 645 336 570 356 505 346 C 448 337 408 332 400 300 Z" fill="#3b82f6"/>
+    <path d="M585 183 C 600 150 630 138 652 148 C 636 168 622 180 606 192 Z" fill="#2563eb"/>
+    <path d="M400 300 C 372 282 348 284 330 306 C 356 314 372 330 384 352 C 398 332 402 316 400 300 Z" fill="#2563eb"/>
+    <circle cx="782" cy="238" r="9" fill="#eff6ff"/>
+    <path d="M470 318 C 540 344 640 344 716 316" stroke="#1d4ed8" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- leap arc -->
+  <path d="M300 430 C 420 240 760 190 940 330" stroke="#93c5fd" stroke-width="4" fill="none" stroke-dasharray="2 14" stroke-linecap="round"/>
+  <!-- one small orange fish, the gift -->
+  <g>
+    <ellipse cx="620" cy="600" rx="46" ry="24" fill="#f97316"/>
+    <path d="M664 600 L 706 578 L 706 622 Z" fill="#ea580c"/>
+    <circle cx="600" cy="593" r="6" fill="#fff7ed"/>
+    <path d="M586 612 C 606 620 634 620 652 612" stroke="#c2410c" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- bubbles -->
+  <g fill="none" stroke="#bfdbfe" stroke-width="4">
+    <circle cx="540" cy="470" r="10"/>
+    <circle cx="575" cy="430" r="7"/>
+    <circle cx="520" cy="415" r="5"/>
+    <circle cx="880" cy="480" r="8"/>
+    <circle cx="905" cy="445" r="5"/>
+  </g>
+</svg>
