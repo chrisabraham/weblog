@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="title desc">
+<title id="title">The overenthusiastic filing machine</title>
+<desc id="desc">A robot feeds a conditional Thursday proposal into a tidy machine. A confirmed appointment emerges, while the discarded word if lands in a tray. A pencil points toward the original.</desc>
+<rect width="800" height="360" rx="12" fill="#fff6df"/>
+<g stroke="#283946" stroke-width="3" stroke-linejoin="round">
+<path d="M25 286H775"/>
+<rect x="34" y="156" width="90" height="80" rx="12" fill="#d7eaf0"/>
+<path d="M77 156V137m-28 99-9 50m66-50 11 50m7-85 37-29" fill="none"/>
+<circle cx="77" cy="131" r="6" fill="#c75000"/>
+<circle cx="59" cy="181" r="5" fill="#283946"/><circle cx="96" cy="181" r="5" fill="#283946"/>
+<path d="m59 207 36 4"/>
+<path d="M154 91 332 104 321 202 143 189Z" fill="#fff"/>
+<rect x="343" y="125" width="189" height="161" rx="9" fill="#d7eaf0"/>
+<path d="M365 174H510m-145 13H510"/>
+<circle cx="382" cy="243" r="13" fill="#c75000"/><path d="M415 242H503"/>
+<path d="m546 94 215-8 4 115-215 8Z" fill="#fff"/>
+<path d="m548 252 150 0-13 34H561Z" fill="#e7cb9b"/>
+<path d="m597 218 31-9 8 27-31 9Z" fill="#fff"/>
+<path d="m327 315-136-86-15 2 4 14 141 81Z" fill="#f2bf47"/>
+<path d="m176 231-15-3 19 17Z" fill="#fff"/>
+</g>
+<g fill="#283946" font-family="Verdana, sans-serif" text-anchor="middle">
+<text x="237" y="132" font-size="17" transform="rotate(4 237 132)">Thursday,</text>
+<text x="235" y="159" font-size="15" transform="rotate(4 235 159)">if the estimate</text>
+<text x="232" y="182" font-size="15" transform="rotate(4 232 182)">arrives first</text>
+<text x="438" y="157" font-size="21" font-weight="bold">TIDY 3000</text>
+<text x="653" y="131" font-size="22" font-weight="bold">THURSDAY</text>
+<text x="654" y="168" font-size="20" fill="#a13b00">CONFIRMED!</text>
+<text x="619" y="232" font-size="18">if</text>
+<text x="621" y="310" font-size="14">conditions tray</text>
+<text x="400" y="43" font-size="21">Please keep the bit that matters.</text>
+</g></svg>
