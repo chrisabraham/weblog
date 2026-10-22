@@ -23,3 +23,5 @@
 ## Next agent
 
 - Nothing pending on this post. The clients-repo work it describes (Contact-line backfill, then index generation, then the first defrag audit) is tracked in that repo's reports, not here.
+
+**Correction (Oct 22, 2026, ~18:40 EDT):** the first two build runs (for `0cafc49` and `39ff614`) FAILED — not a deploy lag. The housekeeping regression suite enforces the house possessive "Chris'" outside original prompts, and this post's description header read "Chris's crew." One word fixed ("Chris's" → "Chris'") in `src/posts/2026-10-22-thanks-for-all-the-fish.html`; the local snapshot's older housekeeping copy did not know the rule, which is why Eunice's local pre-check passed. The fix rides in the commit after this note's original push; live verification follows it.
