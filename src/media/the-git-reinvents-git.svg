@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+<title id="title">A shared notebook and one independently discovered wheel</title>
+<desc id="desc">Three original blue robot tanks gather around a shared notebook linked to a satellite. A laptop sits nearby. A human brings a wheel that already has a label.</desc>
+<rect width="900" height="420" rx="12" fill="#fff5df"/>
+<g stroke="#263c50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M30 367H870" fill="none"/>
+<g transform="translate(427 62) rotate(-12)">
+<rect x="-27" y="-20" width="54" height="40" rx="7" fill="#b9d9ea"/>
+<path d="M-27 0H-47M27 0H47M0 20V40" fill="none"/>
+<path d="M-47-18H-103V18H-47ZM47-18H103V18H47Z" fill="#16729e"/>
+<path d="M-76-18V18M76-18V18" stroke="#fff"/>
+<circle cx="0" cy="0" r="6" fill="#c75000"/>
+</g>
+<path d="M427 110V187M427 157 244 234M427 157 626 233" fill="none" stroke-dasharray="6 8" stroke="#16729e"/>
+<path d="M346 225Q398 208 446 229Q491 208 544 225V328Q492 313 446 335Q398 313 346 328Z" fill="#fff"/>
+<path d="M446 229V335M366 249H426M366 270H419M466 249H521M466 270H516M366 292H424M466 292H526" fill="none"/>
+<g id="robot">
+<ellipse cx="241" cy="280" rx="59" ry="44" fill="#4a9bd0"/>
+<path d="m196 295-30 33 6 30m102-63 32 33-6 30m-81-37-4 34m45-34 7 34" fill="none" stroke-width="8"/>
+<circle cx="172" cy="358" r="10" fill="#263c50"/><circle cx="300" cy="358" r="10" fill="#263c50"/>
+<circle cx="215" cy="358" r="9" fill="#263c50"/><circle cx="267" cy="358" r="9" fill="#263c50"/>
+<circle cx="223" cy="272" r="12" fill="#fff"/><circle cx="259" cy="272" r="12" fill="#fff"/>
+<circle cx="226" cy="274" r="4" fill="#263c50"/><circle cx="262" cy="274" r="4" fill="#263c50"/>
+<path d="M232 299Q241 306 251 299M241 235V220" fill="none"/>
+<circle cx="241" cy="215" r="6" fill="#c75000"/>
+</g>
+<use href="#robot" transform="translate(392 0)"/>
+<use href="#robot" transform="translate(286 162) scale(.52)"/>
+<path d="M47 297H132V352H47ZM36 366H143L132 352H47Z" fill="#394c5b"/>
+<rect x="57" y="307" width="65" height="35" fill="#d8edda"/>
+<path d="m68 321 9 6-9 6m17 0h14" stroke="#263c50" fill="none"/>
+<circle cx="790" cy="234" r="21" fill="#f4d4ac"/>
+<path d="M790 255V310M790 275 753 293M790 275 815 294M790 310 773 365M790 310 810 365" fill="none" stroke-width="7"/>
+<circle cx="735" cy="327" r="35" fill="#e3bf79"/><circle cx="735" cy="327" r="8" fill="#fff"/>
+<path d="M735 292V319M735 335V362M700 327H727M743 327H770" fill="none"/>
+<path d="m713 280 68-4 2 24-68 4Z" fill="#fff"/>
+</g>
+<g font-family="Verdana, sans-serif" fill="#263c50" text-anchor="middle">
+<text x="450" y="28" font-size="18">Different shells. Somewhere to leave the work.</text>
+<text x="445" y="204" font-size="16">shared record</text>
+<text x="745" y="294" font-size="12" transform="rotate(-4 745 294)">FEB 2026</text>
+<text x="450" y="401" font-size="15">The wheel still fits.</text>
+</g></svg>
