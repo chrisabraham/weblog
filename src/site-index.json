@@ -740,5 +740,13 @@
     "patterns": [
       "XML"
     ]
-  }
+  },
+ {
+  "term": "Zack's",
+  "patterns": [
+   "Zack's",
+   "Zack\u2019s",
+   "Molly McScratch"
+  ]
+ }
 ]

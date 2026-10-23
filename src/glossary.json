@@ -433,5 +433,10 @@
   "term": "XML sitemap",
   "definition": "An XML document listing canonical URLs and often last-modified dates for search crawlers; it is different from a reader-facing HTML sitemap.",
   "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Zack's",
+  "definition": "A small, dark neighborhood bar on Pennsylvania Avenue SE, Capitol Hill, in the mid-2000s: the unofficial annex of Naval Lodge No. 4 across the street, a stop on the inter-bar pool circuit, and the default bar of Chris' novel Hill Mole. It closed without leaving a closing date in any record, and survives in the novel, in Chris' curated Memories page, and in the weblog's in memoriam.",
+  "source": "/2026/10/zacks-is-small-and-dark.html"
  }
 ]
