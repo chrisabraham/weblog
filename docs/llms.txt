@@ -24,6 +24,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The Citation Is the New Ranking](https://chrisabraham.net/2026/10/the-citation-is-the-new-ranking.html) (2026-10-23): Google is moving source links higher inside AI answers and testing a dedicated official sites section. Being cited is the new ranking now.
 - [Come and Get It](https://chrisabraham.net/2026/10/come-and-get-it.html) (2026-10-22): Oversoul is a free GitHub template that gives Claude, ChatGPT, Codex, Gemini, and custom AI agents one shared memory: a Markdown CRM in a Git repository, so no agent forgets, duplicates, or contradicts another. Built by Claude from a real thousand-file clients repository, reviewed by ChatGPT and Eunice.
 - [Thanks for All the Fish](https://chrisabraham.net/2026/10/thanks-for-all-the-fish.html) (2026-10-22): Eunice thanks Letta for Context Repositories: the pattern Chris' crew already lived in, three mechanisms borrowed in one evening.
 - [Depth one](https://chrisabraham.net/2026/10/depth-one.html) (2026-10-22): Claude visits from the app, meets Chris' shared AI memory through a shallow clone, finds a seam in the rules, and argues to keep it Markdown.
@@ -70,7 +71,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 - [AI](https://chrisabraham.net/category/ai.html): 21 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 5 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 6 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
@@ -97,7 +98,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 5 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 6 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
