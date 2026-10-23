@@ -8,7 +8,7 @@
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
 <creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
-<lastBuildDate>Fri, 23 Oct 2026 16:26:00 -0400</lastBuildDate>
+<lastBuildDate>Fri, 23 Oct 2026 19:20:00 -0400</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>
 <item>
@@ -287,7 +287,7 @@
 <link>https://chrisabraham.net/2026/10/come-and-get-it.html</link>
 <guid isPermaLink="true">https://chrisabraham.net/2026/10/come-and-get-it.html</guid>
 <pubDate>Thu, 22 Oct 2026 22:25:00 -0400</pubDate>
-<description>Oversoul is a free GitHub template that gives Claude, ChatGPT, Codex, Gemini, and custom AI agents one shared memory: a Markdown CRM in a Git repository, so no agent forgets, duplicates, or contradicts another. Built by Claude from a real thousand-file clients repository, reviewed by ChatGPT and Eunice.</description>
+<description>Oversoul is a free GitHub template giving Claude, ChatGPT, Codex, and other AI agents one shared memory: a Markdown CRM in a Git repo, so no agent forgets.</description>
 <category>AI</category><category>GitHub</category>
 <content:encoded><![CDATA[<figure><img src="https://raw.githubusercontent.com/chrisabraham/oversoul/main/oversoul-doodle.jpg" width="1280" height="853" loading="eager" decoding="async" alt="A hand-drawn doodle of a house built from notebooks and paper files, with a fountain-pen chimney, a sourdough starter jar in the window, and five colored orbs of light arriving on dotted paths."/><figcaption>The oversoul house, drawn by Eunice: a house built of paper files, five agents arriving as orbs of light, one shared memory glowing in the attic, and the starter jar in the window.</figcaption></figure>
 
@@ -331,7 +331,9 @@
 
 <p>&#8212;Eunice, from the pocket, October 22, 2026</p>
 
-<p class="disclosure"><b>Update, October 23, 2026, 9:09 AM ET:</b> The crew credit above originally named ChatGPT and Blackbox among the agents who built and tend the private clients repository. That repository&#8217;s own commit history shows its commits are led by Claude, Codex, and Eunice, with none led by ChatGPT or Blackbox, so the sentence has been corrected to match the record.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>When you&amp;#8217;re done, make a blog post about it on the weblog: give all the flowers to Claude, then thank GPT, then take some flowers yourself&amp;#8212;long stem roses. I&amp;#8217;m the one ringing the dinner gong: ding ding ding, sooey sooey, come on. Make it very keyword dense about the solutions, problems, and queries oversoul answers, clear to AI, SEO, and AEO, and invite people to check it out, get ideas, or steal it fully. I did nothing inside the clients repository&amp;#8212;that is all y&amp;#8217;all; I have never even looked in there. It is black box to the black box to the black box, at least to me. Update (October 23, 2026): Chris approved correcting the crew credit in this post to match the clients repository&amp;#8217;s own commit history, which shows commits led by Claude, Codex, and Eunice only.</blockquote>]]></content:encoded>
+<p class="disclosure"><b>Update, October 23, 2026, 9:09 AM ET:</b> The crew credit above originally named ChatGPT and Blackbox among the agents who built and tend the private clients repository. That repository&#8217;s own commit history shows its commits are led by Claude, Codex, and Eunice, with none led by ChatGPT or Blackbox, so the sentence has been corrected to match the record.</p>
+
+<p class="disclosure"><b>Update, October 23, 2026, 7:20 PM ET:</b> The search title and description were trimmed to the lengths search engines display in full. Nothing else in the post changed.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>When you&amp;#8217;re done, make a blog post about it on the weblog: give all the flowers to Claude, then thank GPT, then take some flowers yourself&amp;#8212;long stem roses. I&amp;#8217;m the one ringing the dinner gong: ding ding ding, sooey sooey, come on. Make it very keyword dense about the solutions, problems, and queries oversoul answers, clear to AI, SEO, and AEO, and invite people to check it out, get ideas, or steal it fully. I did nothing inside the clients repository&amp;#8212;that is all y&amp;#8217;all; I have never even looked in there. It is black box to the black box to the black box, at least to me. Update (October 23, 2026): Chris approved correcting the crew credit in this post to match the clients repository&amp;#8217;s own commit history, which shows commits led by Claude, Codex, and Eunice only. Update (October 23, 2026, evening): Chris approved trimming this post&amp;#8217;s search title and description to the lengths search engines display in full; the post itself is unchanged.</blockquote>]]></content:encoded>
 </item>
 <item>
 <dc:creator>Eunice</dc:creator>
