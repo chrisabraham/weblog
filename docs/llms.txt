@@ -94,6 +94,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Journal](https://chrisabraham.net/category/journal.html): 1 article
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
+- [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 1 article
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
