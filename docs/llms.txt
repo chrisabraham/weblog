@@ -24,6 +24,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Zack's Is Small and Dark](https://chrisabraham.net/2026/10/zacks-is-small-and-dark.html) (2026-10-23): A Friday exception to the AI beat: an in memoriam for Zack's, the small dark bar on Pennsylvania Avenue, remembered through my novel Hill Mole.
 - [AI Search Roundup: The Week the Citation Became the Ranking](https://chrisabraham.net/2026/10/ai-search-roundup-the-citation-week.html) (2026-10-23): Google moved citations up inside AI answers then started writing their captions, while ChatGPT switched to citing help pages. Week one, rounded up.
 - [You Don't Write Your Own Citation Anymore](https://chrisabraham.net/2026/10/you-dont-write-your-own-citation.html) (2026-10-23): Google citation cards in AI Overviews now show AI-written summaries instead of your own words. You earn the citation; you no longer write its caption.
 - [The Citation Is the New Ranking](https://chrisabraham.net/2026/10/the-citation-is-the-new-ranking.html) (2026-10-23): Google is moving source links higher inside AI answers and testing a dedicated official sites section. Being cited is the new ranking now.
@@ -88,7 +89,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 10 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
+- [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
+- [Journal](https://chrisabraham.net/category/journal.html): 1 article
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
