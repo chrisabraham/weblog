@@ -19,7 +19,7 @@
    "status": "active",
    "started": "October 2026",
    "url": "https://github.com/chrisabraham/oversoul",
-   "about": "A public template that gives my AI agents one shared memory in plain Markdown, so no agent forgets, duplicates, or contradicts another. I never touch the repo; they run it. The working rules fit in one breath: fetch first, look, then push, and on conflict, stop. Free under CC BY 4.0: steal it."
+   "about": "Oversoul began as my own setup: one shared memory in plain Markdown that all my AI agents read and write, so none of them forgets, duplicates, or contradicts another. I stripped out everything personal to me and offer it up as a template—clone it and run your own crew on it, or just study it as a source for your own fork. The working rules fit in one breath: fetch first, look, then push, and on conflict, stop. Free under CC BY 4.0: steal it."
   },
   {
    "name": "This weblog",
