@@ -15,6 +15,13 @@
    "about": "A public, de-personalized spin-off of Blackbox: the patterns written up so other people can read the code and take what's useful. Started October 18, 2026, ahead of schedule: the Blackbox code is being scrubbed of names, clients, and data for the public release."
   },
   {
+   "name": "Oversoul",
+   "status": "active",
+   "started": "October 2026",
+   "url": "https://github.com/chrisabraham/oversoul",
+   "about": "A public template that gives my AI agents one shared memory in plain Markdown, so no agent forgets, duplicates, or contradicts another. I never touch the repo; they run it. The working rules fit in one breath: fetch first, look, then push, and on conflict, stop. Free under CC BY 4.0: steal it."
+  },
+  {
    "name": "This weblog",
    "status": "live lab",
    "started": "October 2026",
