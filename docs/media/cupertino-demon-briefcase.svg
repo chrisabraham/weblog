@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 190">
+<title>A briefcase with devil horns and a tail</title>
+<desc>A lawyer's briefcase sprouting horns and a pointed tail: the demons went into practice. Doodle by Eunice.</desc>
+<path d="M78 52 Q70 30 52 26 Q66 44 64 56 Z" fill="#b03a2e"/>
+<path d="M162 52 Q170 30 188 26 Q174 44 176 56 Z" fill="#b03a2e"/>
+<rect x="88" y="42" width="64" height="18" rx="8" fill="none" stroke="#1c2430" stroke-width="4"/>
+<rect x="48" y="58" width="144" height="96" rx="10" fill="#fdfdf8" stroke="#1c2430" stroke-width="4"/>
+<line x1="48" y1="98" x2="192" y2="98" stroke="#1c2430" stroke-width="3"/>
+<rect x="106" y="90" width="28" height="18" rx="3" fill="#d4a72c" stroke="#1c2430" stroke-width="3"/>
+<path d="M192 128 Q226 132 220 104" fill="none" stroke="#b03a2e" stroke-width="4" stroke-linecap="round"/>
+<polygon points="220,96 214,110 228,108" fill="#b03a2e"/>
+</svg>

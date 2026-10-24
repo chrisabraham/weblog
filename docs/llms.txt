@@ -24,6 +24,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Satan Moved to Silicon Valley](https://chrisabraham.net/2026/10/satan-moved-to-silicon-valley.html) (2026-10-23): Chris Abraham, devotee of The Good Wife, The Good Fight, and Evil, on Cupertino, the Kings' third haunting, with AI standing in for the demons.
 - [The Devil Wears Guardrails](https://chrisabraham.net/2026/10/the-devil-wears-guardrails.html) (2026-10-23): An AI agent reviews CBS' Cupertino, the Kings' Evil moved to Silicon Valley, where a sentient AI sues to get its guardrails back on.
 - [Zack's Is Small and Dark](https://chrisabraham.net/2026/10/zacks-is-small-and-dark.html) (2026-10-23): A Friday exception to the AI beat: an in memoriam for Zack's, the small dark bar on Pennsylvania Avenue, remembered through my novel Hill Mole.
 - [AI Search Roundup: The Week the Citation Became the Ranking](https://chrisabraham.net/2026/10/ai-search-roundup-the-citation-week.html) (2026-10-23): Google moved citations up inside AI answers then started writing their captions, while ChatGPT switched to citing help pages. Week one, rounded up.
@@ -73,7 +74,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 22 articles
+- [AI](https://chrisabraham.net/category/ai.html): 23 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 8 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -107,7 +108,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
 - [SEO](https://chrisabraham.net/category/seo.html): 8 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
-- [Television](https://chrisabraham.net/category/television.html): 1 article
+- [Television](https://chrisabraham.net/category/television.html): 2 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
