@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170">
+<title>A podcast microphone cascading into many copies of its show notes</title>
+<desc>One microphone at the left fans three arrows out to a stack of identical note pages at the right: one set of show notes becoming hundreds of copies. Doodle by Eunice.</desc>
+<rect x="26" y="36" width="26" height="52" rx="13" fill="#d4a72c" stroke="#1c2430" stroke-width="4"/>
+<line x1="33" y1="50" x2="45" y2="50" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<line x1="33" y1="60" x2="45" y2="60" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<line x1="33" y1="70" x2="45" y2="70" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<path d="M17 64 a22 24 0 0 0 44 0" fill="none" stroke="#1c2430" stroke-width="4" stroke-linecap="round"/>
+<line x1="39" y1="90" x2="39" y2="106" stroke="#1c2430" stroke-width="4" stroke-linecap="round"/>
+<line x1="25" y1="108" x2="53" y2="108" stroke="#1c2430" stroke-width="4" stroke-linecap="round"/>
+<path d="M66 50 C 96 38, 118 32, 146 32" fill="none" stroke="#2f6db0" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M68 70 C 98 70, 120 72, 146 74" fill="none" stroke="#2f6db0" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M66 90 C 96 102, 118 110, 146 114" fill="none" stroke="#2f6db0" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M148 32 l-12 -4.5 v9 z" fill="#2f6db0"/>
+<path d="M148 74 l-12 -4.5 v9 z" fill="#2f6db0"/>
+<path d="M148 114 l-12 -4.5 v9 z" fill="#2f6db0"/>
+<rect x="158" y="20" width="62" height="30" fill="#8fb8dd" stroke="#1c2430" stroke-width="3"/>
+<rect x="154" y="60" width="62" height="30" fill="#fdfdf8" stroke="#1c2430" stroke-width="3"/>
+<rect x="158" y="102" width="62" height="30" fill="#8fb8dd" stroke="#1c2430" stroke-width="3"/>
+<line x1="163" y1="68" x2="207" y2="68" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="163" y1="76" x2="198" y2="76" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="163" y1="84" x2="203" y2="84" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
