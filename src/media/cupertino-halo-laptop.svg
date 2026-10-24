@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 190">
+<title>A laptop under a halo, wearing a necktie</title>
+<desc>An AI in court dress: a haloed laptop with a lawyer's tie, hoping the judge restores its guardrails. Doodle by Eunice.</desc>
+<ellipse cx="120" cy="26" rx="34" ry="9" fill="none" stroke="#d4a72c" stroke-width="5"/>
+<rect x="55" y="52" width="130" height="92" rx="8" fill="#fdfdf8" stroke="#1c2430" stroke-width="4"/>
+<circle cx="98" cy="88" r="5" fill="#1c2430"/>
+<circle cx="142" cy="88" r="5" fill="#1c2430"/>
+<path d="M100 118 Q120 128 140 118" fill="none" stroke="#1c2430" stroke-width="4" stroke-linecap="round"/>
+<polygon points="120,144 112,150 120,168 128,150" fill="#b03a2e"/>
+<polygon points="120,144 114,138 126,138" fill="#922b21"/>
+<path d="M35 152 L205 152 L218 172 L22 172 Z" fill="#1c2430"/>
+</svg>
