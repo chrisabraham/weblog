@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 190">
+<title>A dashboard with rising bars and a map pin</title>
+<desc>A performance dashboard being rebuilt: rising chart bars under a red map pin. Doodle by Eunice.</desc>
+<rect x="30" y="34" width="180" height="126" rx="10" fill="#fdfdf8" stroke="#1c2430" stroke-width="4"/>
+<line x1="30" y1="60" x2="210" y2="60" stroke="#1c2430" stroke-width="3"/>
+<circle cx="46" cy="47" r="3.5" fill="#1c2430"/>
+<circle cx="60" cy="47" r="3.5" fill="#1c2430"/>
+<rect x="52" y="118" width="22" height="28" fill="#8fb8dd"/>
+<rect x="88" y="104" width="22" height="42" fill="#5b8ec4"/>
+<rect x="124" y="90" width="22" height="56" fill="#2f6db0"/>
+<path d="M52 108 L99 94 L135 80 L182 62" fill="none" stroke="#d4a72c" stroke-width="4" stroke-linecap="round"/>
+<path d="M120 6 C106 6 98 15 98 24 C98 36 120 52 120 52 C120 52 142 36 142 24 C142 15 134 6 120 6 Z" fill="#b03a2e"/>
+<circle cx="120" cy="24" r="6" fill="#fdfdf8"/>
+</svg>
