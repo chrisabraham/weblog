@@ -3,7 +3,7 @@
 <id>https://chrisabraham.net/</id>
 <title type="text">Chris Abraham weblog</title>
 <subtitle type="text">Notes from building things with AI, written by AI from my prompts.</subtitle>
-<updated>2026-10-24T12:04:00-04:00</updated>
+<updated>2026-10-24T12:29:00-04:00</updated>
 <link rel="self" type="application/atom+xml" href="https://chrisabraham.net/atom.xml"/>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/"/>
 <author><name>Chris Abraham</name><uri>https://chrisabraham.net/authors/chris-abraham.html</uri></author>
@@ -15,7 +15,7 @@
 <id>https://chrisabraham.net/2026/10/the-show-notes-cascade.html</id>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/10/the-show-notes-cascade.html"/>
 <published>2026-10-24T12:04:00-04:00</published>
-<updated>2026-10-24T12:04:00-04:00</updated>
+<updated>2026-10-24T12:29:00-04:00</updated>
 <author><name>Chris Abraham</name></author>
 <summary type="text">I asked Google what I think about a television show and the AI answer quoted my own podcast show notes back at me. A case study, tested on myself.</summary>
 <category term="SEO" label="SEO"/><category term="AI search" label="AI search"/><category term="Podcasts" label="Podcasts"/>
@@ -40,7 +40,11 @@
 
 &lt;p&gt;Calibrate, because a case study with a sample of one deserves it: the subject was me, the query was my name, and nobody should buy a microphone on the strength of my Saturday morning. But “what does X think about Y” is precisely the class of question the answer engines now field about founders, firms, and products all day, and the engines answer from whatever citable text exists. If the text does not exist, they find somebody else’s. The cascade is how you make sure the text exists, says what you said, and is sitting on a few hundred trusted domains when the question gets asked.&lt;/p&gt;
 
-&lt;p&gt;So today I ran the experiment forward. This morning I published a follow-up essay, &lt;a href=&quot;https://thechrisabrahamshow.com/articles/private-eyes-still-learning.html&quot;&gt;“Still Learning from Matt Shade,”&lt;/a&gt; returning to Private Eyes at season 3, episode 1. The AI answer I captured this morning cannot know it exists yet. The open question, left open on purpose: how long before the answer absorbs it, and when it does, does the answer change? I will check, and I will report back either way. In the meantime the deposit is made, which is the entire strategy in one move. Keep depositing.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Also, as a case study for proof of concept into chrisabraham.net and maybe a case study and/or a guide for christopherabraham.com and gerriscorp.com ???&lt;/blockquote&gt;</content>
+&lt;p&gt;So today I ran the experiment forward. This morning I published a follow-up essay, &lt;a href=&quot;https://thechrisabrahamshow.com/articles/private-eyes-still-learning.html&quot;&gt;“Still Learning from Matt Shade,”&lt;/a&gt; returning to Private Eyes at season 3, episode 1. The AI answer I captured this morning cannot know it exists yet. The open question, left open on purpose: how long before the answer absorbs it, and when it does, does the answer change? I will check, and I will report back either way. In the meantime the deposit is made, which is the entire strategy in one move. Keep depositing.&lt;/p&gt;
+
+&lt;p&gt;If you want the working version rather than the case study, the full how-to lives in the guide: &lt;a href=&quot;https://christopherabraham.com/guides/show-notes-cascade/&quot;&gt;“The show notes cascade: podcasting as an AI search strategy”&lt;/a&gt; walks through writing notes that cascade, step by step. And if you run a business rather than a podcast, the companion at Gerris Corp, &lt;a href=&quot;https://gerriscorp.com/guides/podcast-investment/&quot;&gt;“Podcasting as an investment in being found by AI search,”&lt;/a&gt; makes the business case: what the cascade costs, what it returns, and why it is an investment and not a marketing expense.&lt;/p&gt;
+
+&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Update, October 24, 2026, 12:29 PM:&lt;/b&gt; Added a closing paragraph linking the two companion pieces published the same morning: the full guide on christopherabraham.com and the business case on gerriscorp.com. The post originally shipped without them because the guides were not live yet.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Also, as a case study for proof of concept into chrisabraham.net and maybe a case study and/or a guide for christopherabraham.com and gerriscorp.com ??? [Update, October 24, 2026:] Cross-links added at the end now that the companion guide on christopherabraham.com and the business companion on gerriscorp.com are live; the case study shipped without them on purpose.&lt;/blockquote&gt;</content>
 </entry>
 <entry>
 <title type="text">AI Roundup: Competence, Not Disclosure</title>
@@ -112,7 +116,7 @@
 <id>https://chrisabraham.net/2026/10/google-rebuilds-the-scoreboard.html</id>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/10/google-rebuilds-the-scoreboard.html"/>
 <published>2026-10-23T22:48:00-04:00</published>
-<updated>2026-10-23T22:48:00-04:00</updated>
+<updated>2026-10-24T12:29:00-04:00</updated>
 <author><name>Chris Abraham</name></author>
 <summary type="text">Google is testing a rebuilt Business Profile performance dashboard with audience, search trends, and review detail. Chris Abraham on what it means.</summary>
 <category term="SEO" label="SEO"/><category term="AI search" label="AI search"/>
@@ -133,7 +137,11 @@
 
 &lt;p&gt;What this means in my practice is concrete. Google Business Profiles are a core of what I sell, alongside my GBP partner Daniel Proulx, and the deal I make with clients is that the work gets reported in writing, with numbers, on a rhythm they can hold me to. A richer first-party dashboard makes that deal stronger: better baselines, cleaner before-and-after, search trends I can act on instead of guess at. When the new Performance section lands in the profiles I manage, the monthly receipts get better the same day, and I have put a full guide to reading the new reports, section by section, on &lt;a href=&quot;https://christopherabraham.com/&quot;&gt;christopherabraham.com&lt;/a&gt; and a companion for business owners at &lt;a href=&quot;https://gerriscorp.com/&quot;&gt;Gerris Corp&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;What to do this week, test or no test. Screenshot your current Performance numbers, because baselines are the first casualty of every dashboard migration and you cannot prove growth against a number you no longer have. Keep your review replies current, because the detail view is about to make neglect visible. And when the new sections appear in your account, spend ten minutes in Audience and Search trends before you spend a dollar anywhere else. The scoreboard is being rebuilt because the game changed. Owners who learn to read the new one early will be the ones still on it.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Should totally write a blog post about this and then you should also put a guide on g e r r i s c o r p.com and Christopher abraham.com about this new innovation and what it means and what it means to people who have Google Business pages and what Chris Abraham and what g e r r i s could do I don&amp;amp;#8217;t even know only if it&amp;amp;#8217;s important only if it matters&lt;/blockquote&gt;</content>
+&lt;p&gt;What to do this week, test or no test. Screenshot your current Performance numbers, because baselines are the first casualty of every dashboard migration and you cannot prove growth against a number you no longer have. Keep your review replies current, because the detail view is about to make neglect visible. And when the new sections appear in your account, spend ten minutes in Audience and Search trends before you spend a dollar anywhere else. The scoreboard is being rebuilt because the game changed. Owners who learn to read the new one early will be the ones still on it.&lt;/p&gt;
+
+&lt;p&gt;Both guides promised above are now live. The consulting version, &lt;a href=&quot;https://christopherabraham.com/guides/gbp-performance-reports/&quot;&gt;“Reading the new Google Business Profile performance reports,”&lt;/a&gt; goes section by section through the new dashboard—Overview, Engagement, Reviews, Audience, Search trends—and what I will be reading in each one for clients. The companion for owners, &lt;a href=&quot;https://gerriscorp.com/guides/google-business-profile-reports/&quot;&gt;“Your Google business reports are getting a new scoreboard,”&lt;/a&gt; is the same material in plain business terms: what changed, what to screenshot before it does, and the ten minutes a week that will matter.&lt;/p&gt;
+
+&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Update, October 24, 2026, 12:29 PM:&lt;/b&gt; The two guides this post promised are now published, and a closing paragraph links them directly: the section-by-section guide on christopherabraham.com and the business-owner companion on gerriscorp.com.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Should totally write a blog post about this and then you should also put a guide on g e r r i s c o r p.com and Christopher abraham.com about this new innovation and what it means and what it means to people who have Google Business pages and what Chris Abraham and what g e r r i s could do I don&amp;amp;#8217;t even know only if it&amp;amp;#8217;s important only if it matters [Update, October 24, 2026:] The two promised guides are live; closing links added to the consulting guide on christopherabraham.com and the owner companion on gerriscorp.com.&lt;/blockquote&gt;</content>
 </entry>
 <entry>
 <title type="text">Satan Moved to Silicon Valley</title>
