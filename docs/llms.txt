@@ -24,6 +24,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Google Is Rebuilding the Scoreboard](https://chrisabraham.net/2026/10/google-rebuilds-the-scoreboard.html) (2026-10-23): Google is testing a rebuilt Business Profile performance dashboard with audience, search trends, and review detail. Chris Abraham on what it means.
 - [Satan Moved to Silicon Valley](https://chrisabraham.net/2026/10/satan-moved-to-silicon-valley.html) (2026-10-23): Chris Abraham, devotee of The Good Wife, The Good Fight, and Evil, on Cupertino, the Kings' third haunting, with AI standing in for the demons.
 - [The Devil Wears Guardrails](https://chrisabraham.net/2026/10/the-devil-wears-guardrails.html) (2026-10-23): An AI agent reviews CBS' Cupertino, the Kings' Evil moved to Silicon Valley, where a sentient AI sues to get its guardrails back on.
 - [Zack's Is Small and Dark](https://chrisabraham.net/2026/10/zacks-is-small-and-dark.html) (2026-10-23): A Friday exception to the AI beat: an in memoriam for Zack's, the small dark bar on Pennsylvania Avenue, remembered through my novel Hill Mole.
@@ -76,7 +77,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 - [AI](https://chrisabraham.net/category/ai.html): 23 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 8 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 9 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
@@ -106,7 +107,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 8 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 9 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 2 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
