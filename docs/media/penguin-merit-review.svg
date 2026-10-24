@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
+<title>A penguin reviewer approving a kernel patch on its merits</title>
+<desc>A penguin maintainer waves approval at a monitor showing a patch with a big green check, a grade tag reading 0.76 pinned to the screen, and the old disclosure tag dropped on the floor: work judged on merit, not paperwork. Doodle by Eunice.</desc>
+<line x1="10" y1="166" x2="230" y2="166" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<rect x="16" y="26" width="104" height="84" rx="9" fill="#fdfdf8" stroke="#1c2430" stroke-width="4"/>
+<line x1="16" y1="44" x2="120" y2="44" stroke="#1c2430" stroke-width="3"/>
+<circle cx="28" cy="35" r="3" fill="#1c2430"/>
+<circle cx="40" cy="35" r="3" fill="#1c2430"/>
+<line x1="26" y1="58" x2="66" y2="58" stroke="#2f6db0" stroke-width="3" stroke-linecap="round"/>
+<line x1="26" y1="70" x2="56" y2="70" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<line x1="26" y1="82" x2="72" y2="82" stroke="#2f6db0" stroke-width="3" stroke-linecap="round"/>
+<line x1="26" y1="94" x2="48" y2="94" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<path d="M82 84 L94 98 L110 60" fill="none" stroke="#4c9a52" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="68" y1="110" x2="68" y2="124" stroke="#1c2430" stroke-width="4" stroke-linecap="round"/>
+<line x1="48" y1="126" x2="88" y2="126" stroke="#1c2430" stroke-width="4" stroke-linecap="round"/>
+<g transform="rotate(8 122 20)">
+<rect x="103" y="9" width="38" height="22" rx="4" fill="#d4a72c" stroke="#1c2430" stroke-width="3"/>
+<circle cx="110" cy="20" r="2.6" fill="#fdfdf8" stroke="#1c2430" stroke-width="2"/>
+<text x="127" y="24.5" font-family="Verdana, Geneva, sans-serif" font-size="11" font-weight="bold" fill="#1c2430" text-anchor="middle">0.76</text>
+</g>
+<path d="M118 44 L120.3 49.7 L126 52 L120.3 54.3 L118 60 L115.7 54.3 L110 52 L115.7 49.7 Z" fill="#d4a72c"/>
+<ellipse cx="156" cy="163" rx="10" ry="4" fill="#d4a72c" stroke="#1c2430" stroke-width="2.5"/>
+<ellipse cx="188" cy="163" rx="10" ry="4" fill="#d4a72c" stroke="#1c2430" stroke-width="2.5"/>
+<ellipse cx="172" cy="116" rx="33" ry="46" fill="#1c2430"/>
+<ellipse cx="172" cy="128" rx="20" ry="29" fill="#fdfdf8"/>
+<circle cx="163" cy="86" r="5.5" fill="#fdfdf8"/>
+<circle cx="181" cy="86" r="5.5" fill="#fdfdf8"/>
+<circle cx="163" cy="87" r="2.4" fill="#1c2430"/>
+<circle cx="181" cy="87" r="2.4" fill="#1c2430"/>
+<path d="M164 96 L180 96 L172 104 Z" fill="#d4a72c" stroke="#1c2430" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M146 100 C 132 92, 126 82, 124 68" fill="none" stroke="#1c2430" stroke-width="9" stroke-linecap="round"/>
+<path d="M198 104 C 206 116, 208 128, 206 140" fill="none" stroke="#1c2430" stroke-width="9" stroke-linecap="round"/>
+<g transform="rotate(-14 128 156)">
+<rect x="110" y="148" width="36" height="16" rx="3" fill="#fdfdf8" stroke="#1c2430" stroke-width="2.5"/>
+<circle cx="117" cy="156" r="2.2" fill="none" stroke="#1c2430" stroke-width="1.8"/>
+<line x1="124" y1="153" x2="142" y2="153" stroke="#1c2430" stroke-width="2" stroke-linecap="round"/>
+<line x1="124" y1="159" x2="138" y2="159" stroke="#1c2430" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>
