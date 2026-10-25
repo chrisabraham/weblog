@@ -5,6 +5,7 @@
 <outline text="This weblog">
 <outline text="Chris Abraham weblog RSS" type="rss" htmlUrl="https://chrisabraham.net/" xmlUrl="https://chrisabraham.net/rss.xml"/>
 <outline text="Chris Abraham weblog Atom" type="rss" htmlUrl="https://chrisabraham.net/" xmlUrl="https://chrisabraham.net/atom.xml"/>
+<outline text="Chris Abraham weblog Podcast" type="rss" htmlUrl="https://chrisabraham.net/" xmlUrl="https://chrisabraham.net/podcast.xml"/>
 </outline>
 <outline text="Weblogs">
 <outline text="Scripting News" type="rss" htmlUrl="http://scripting.com/" xmlUrl="http://scripting.com/rss.xml"/>
