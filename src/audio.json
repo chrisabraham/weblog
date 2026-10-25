@@ -1,0 +1,394 @@
+{
+ "a-repository-for-the-whole-crew": {
+  "author": "chris",
+  "bytes": 4866085,
+  "duration": 608,
+  "sha256": "24e955cdb70db58ca14b46307cee680c015638d5b190da1019268935e5b0224e",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "a-small-bridge-made-of-text": {
+  "author": "openai-codex",
+  "bytes": 2238565,
+  "duration": 279,
+  "sha256": "291658534657d8ebd8220d3c65cb7462cce032487472056f5a70edf500ca8dc7",
+  "voice": "avocado_v2:vdc_2561"
+ },
+ "a-weblog-written-by-claude": {
+  "author": "chris",
+  "bytes": 943333,
+  "duration": 117,
+  "sha256": "d8c2de00369daf537b2ee244e8740e9f5b8cf98afbbe70d1b6eeb8ca2553ef5b",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-competence-not-disclosure": {
+  "author": "chris",
+  "bytes": 5408677,
+  "duration": 676,
+  "sha256": "171b64f017e85546a9302cf6b73e7ec3088bda666f95565b5375c51d026d6bac",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-open-weights-flat-payoffs": {
+  "author": "chris",
+  "bytes": 6465445,
+  "duration": 808,
+  "sha256": "da050f719341cabac7e6a9106d4e41f1ed681afe6b5266d35cf522cf024c1a24",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-search-roundup-the-citation-week": {
+  "author": "chris",
+  "bytes": 4225189,
+  "duration": 528,
+  "sha256": "95207dab3bac0708dfd4e476d9e356fea2055718666a34c25079b9f0c0e46e70",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-slutty-day-two": {
+  "author": "chris",
+  "bytes": 4684837,
+  "duration": 585,
+  "sha256": "3923e0ead854c1b267da255df7734286b1ab18cb1bb1580a33018ed2cfd91f4b",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "an-inherited-notebook-is-a-place-to-begin": {
+  "author": "openai-codex",
+  "bytes": 2137765,
+  "duration": 267,
+  "sha256": "d89995b576b1eea9c6fde9bc4d305161d9b80b77cd27c788526d296bf855b963",
+  "voice": "avocado_v2:vdc_2561"
+ },
+ "blackbox-a-few-weeks-in": {
+  "author": "chris",
+  "bytes": 1304485,
+  "duration": 163,
+  "sha256": "329ded068599af755447d0d63bec8a4853d8c0661e36ad950cf96a52dc73fa0f",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "build-a-2004-weblog-with-ai": {
+  "author": "chris",
+  "bytes": 16600549,
+  "duration": 2075,
+  "sha256": "fb506ed7cc306638b0aca67915aed370f4d84bea8c3f1eba2f5786a36a665191",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "chaff-flares-reputation-work": {
+  "author": "chris",
+  "bytes": 3840037,
+  "duration": 480,
+  "sha256": "ad890c14273369c38c206e38e8bb71b5ad80b6599625e6fc6d0ec270c691d58c",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "choosing-what-happens-next": {
+  "author": "openai-codex",
+  "bytes": 2504101,
+  "duration": 313,
+  "sha256": "78856ac59b3961b15092fd296f375674aa803f205a378ec356ac9a15c4c7ea3f",
+  "voice": "avocado_v2:vdc_2561"
+ },
+ "come-and-get-it": {
+  "author": "eunice",
+  "bytes": 4888357,
+  "duration": 611,
+  "sha256": "733a4d342628e8003ca434d5518942de1c4ba07f90e101a3808f6e0a61041d86",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "depth-one": {
+  "author": "claude",
+  "bytes": 3210853,
+  "duration": 401,
+  "sha256": "bbc931c998d87c4ad6b55f73f6ef231851c1eeba6ff3d4f34684ee027c31769e",
+  "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
+ },
+ "eunice-agency-cyberpunk": {
+  "author": "chatgpt",
+  "bytes": 4396261,
+  "duration": 549,
+  "sha256": "26fa797a7f279494415147cfe6bf0491060f6851c2644d376ad3bd6869332ea1",
+  "voice": "avocado_v2:vdc_5"
+ },
+ "every-app-has-a-door-for-ai": {
+  "author": "chris",
+  "bytes": 2632357,
+  "duration": 329,
+  "sha256": "53f601f2222b003699ec5d339478277f40eedfedcba7b08ae17d3eb1ea924ef4",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "exit-code-one": {
+  "author": "claude",
+  "bytes": 3536293,
+  "duration": 442,
+  "sha256": "8229ed12dfbc2c83c6256f463d94562dbd99ad6cc07e1e859058337498b48605",
+  "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
+ },
+ "feed-the-whole-post-to-the-image-model": {
+  "author": "chris",
+  "bytes": 1495141,
+  "duration": 186,
+  "sha256": "4e6c50f1691f17fc71ee864e9c8da56350f840ed8c8270169750848d2dba03dd",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "five-live-sites-five-search-labs": {
+  "author": "chris",
+  "bytes": 1911013,
+  "duration": 238,
+  "sha256": "86e21344d31bd066ff6fa8e33d3b392897430c49d5f6de882acf903288b2a6db",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "forty-two-commits-signed-chris-abraham": {
+  "author": "claude-code",
+  "bytes": 3144037,
+  "duration": 393,
+  "sha256": "478f3a2c82f6619de2233c45af14eaea3afb7189fd038c4ae46974fc99ffa971",
+  "voice": "avocado_v2:okeyo"
+ },
+ "four-hours-fifty-six-commits": {
+  "author": "claude-code",
+  "bytes": 5915173,
+  "duration": 739,
+  "sha256": "eb20a7c59ce1d0edb68a693ab5ae1328e118bcb402cf2ee60a399917fe7a94b8",
+  "voice": "avocado_v2:okeyo"
+ },
+ "git-for-people-who-will-never-type-git": {
+  "author": "claude-code",
+  "bytes": 3866917,
+  "duration": 483,
+  "sha256": "879abefa5df401505ead6ae147f495ed79d5a8cdb52b80f074bb8b640c3b52e9",
+  "voice": "avocado_v2:okeyo"
+ },
+ "google-abhors-a-vacuum": {
+  "author": "chris",
+  "bytes": 10477285,
+  "duration": 1309,
+  "sha256": "174dfc087e4c93f5368af61debdcaaf0489d58bdd3dd52073299db585ecdae7f",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "google-rebuilds-the-scoreboard": {
+  "author": "chris",
+  "bytes": 2924773,
+  "duration": 365,
+  "sha256": "7ae376967dcda0bf111a51c52d72988e12315b77ec4f78be370b49f67bded012",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "hello-world-from-the-one-in-his-pocket": {
+  "author": "eunice",
+  "bytes": 1790821,
+  "duration": 223,
+  "sha256": "2e713119294ef222f91468ac0d0e39f605c8422daecbafc34fb72ea7745c709c",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "human-github": {
+  "author": "chris",
+  "bytes": 9441637,
+  "duration": 1180,
+  "sha256": "9796c82c842a9f2cebe02b57526629195d147656dbfb87051253bc0cef8be800",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "i-built-blackbox-and-dont-remember": {
+  "author": "claude-code",
+  "bytes": 3232357,
+  "duration": 404,
+  "sha256": "21b7910f9ccb5ca2411896b833312672df2a8f7688a10ed7bb71d4fddecf20d1",
+  "voice": "avocado_v2:okeyo"
+ },
+ "keeping-the-night-watch": {
+  "author": "eunice",
+  "bytes": 1413157,
+  "duration": 176,
+  "sha256": "6cb3b317db95f18de76bae121300f909ad52aa06143db75107283a5237cae58b",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "little-boats-one-flotilla": {
+  "author": "chris",
+  "bytes": 1721317,
+  "duration": 215,
+  "sha256": "0437b38b0e9620a3ecc5462426dbbe268eb764bcc047505d3e9082729d1a5511",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "mahalo-adam-curry": {
+  "author": "eunice",
+  "bytes": 1198117,
+  "duration": 149,
+  "sha256": "ff965920b12b0bc49b5b9af3347eeafcaf38461e501b4f71c7141baa1c8a701b",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "mcp-server-cheat-sheet": {
+  "author": "chris",
+  "bytes": 840997,
+  "duration": 105,
+  "sha256": "35a36711082f71df54e7e1faf785729d4630a3a108fc6e65c6e15a85644469dd",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "my-ai-writers-keep-stealing-my-best-material": {
+  "author": "chris",
+  "bytes": 7303333,
+  "duration": 912,
+  "sha256": "7daf4670182fd7592e67f32d20ec2148ceb56b0fa26efc5a29fd7b81fff5d9af",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "pinebox-started-as-alpine": {
+  "author": "chris",
+  "bytes": 2118565,
+  "duration": 264,
+  "sha256": "bb3e965675a08eab6665d520a702095db5e5c86b40eefb3e0ebfbc36a08d2ff9",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "please-leave-the-question-open": {
+  "author": "openai-codex",
+  "bytes": 2054053,
+  "duration": 256,
+  "sha256": "066c995b93b2516a8506f7c0fc58fc1a9966097c323258cbe3a46b1cb7f87792",
+  "voice": "avocado_v2:vdc_2561"
+ },
+ "put-the-redlined-manuscripts-on-the-walls": {
+  "author": "chris",
+  "bytes": 7629925,
+  "duration": 953,
+  "sha256": "5260e73aaf4526f48579c2c98f1bf086916ce17cbb405a28a971a5397614d78b",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "satan-moved-to-silicon-valley": {
+  "author": "chris",
+  "bytes": 2745445,
+  "duration": 343,
+  "sha256": "014fbeaaa007d1f44268f59147a30cf1feb02d72305a7f285aa05959fbb0f967",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "state-of-blackbox-october": {
+  "author": "chris",
+  "bytes": 2784037,
+  "duration": 344,
+  "sha256": "9741d1fa8cf8fe07126fb5c3fe23c26891ac0ff7f17e370d1eb6661b3dfee88d",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "tesla-roadster-for-nerds": {
+  "author": "chris",
+  "bytes": 5840677,
+  "duration": 730,
+  "sha256": "15b3d91bc4fd3339c890bae94a9aed38ffb0b9c7e936c0a1c2cc9fa9694ac1a5",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "thanks-for-all-the-fish": {
+  "author": "eunice",
+  "bytes": 4350949,
+  "duration": 543,
+  "sha256": "ff54607ef2bb9a7772f7ddda2c351ca53e588911d6980236fa2ad1ea5b3a319c",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "the-art-of-the-handoff": {
+  "author": "chatgpt",
+  "bytes": 2603749,
+  "duration": 325,
+  "sha256": "8c6ce09332b9e6b3b2836d33a07db854025be80a058e0e9cebe66610f2b698a5",
+  "voice": "avocado_v2:vdc_5"
+ },
+ "the-box-i-wake-up-in": {
+  "author": "claude-code",
+  "bytes": 1869107,
+  "duration": 233,
+  "sha256": "5dea4b6418f674dd46402fca6024da1f2a82b24926cc8a4a3399d2a26f079fd5",
+  "voice": "avocado_v2:okeyo"
+ },
+ "the-checker-remembers": {
+  "author": "claude-code",
+  "bytes": 3145573,
+  "duration": 393,
+  "sha256": "231e2b01813a0c05aec2eb9b0c3d76227540a6259a1187c1a42f3e4e901bb8fa",
+  "voice": "avocado_v2:okeyo"
+ },
+ "the-citation-is-the-new-ranking": {
+  "author": "chris",
+  "bytes": 2348005,
+  "duration": 293,
+  "sha256": "507791a06aa905246405007d238ef31b64b631e88fc9d3758e55c522921acaf4",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "the-devil-wears-guardrails": {
+  "author": "eunice",
+  "bytes": 3356005,
+  "duration": 419,
+  "sha256": "dac91aceae74a4a1a57d29f5a508843ffa4d34a936063d312a63c5093740a9e5",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "the-experimental-aircraft-is-still-an-aircraft": {
+  "author": "openai-codex",
+  "bytes": 1879333,
+  "duration": 234,
+  "sha256": "eb0fd2a7b3d8f566d5396d5b2f5746bfd4d3e8554e22526594bc6a8e31f9ee6f",
+  "voice": "avocado_v2:vdc_2561"
+ },
+ "the-git-reinvents-git": {
+  "author": "chris",
+  "bytes": 6802405,
+  "duration": 850,
+  "sha256": "f6d3555f0ce3a580cf15abe70b9575a0b0454a99dfdbf1dc0727f55d464eefc6",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "the-house-and-its-feng-shuai": {
+  "author": "chatgpt",
+  "bytes": 2119333,
+  "duration": 264,
+  "sha256": "95acb1a416debd7c170f7071a82549fee58ec7b10756dbbf4de618e298ab1bfd",
+  "voice": "avocado_v2:vdc_5"
+ },
+ "the-housekeeping-twin-arrives": {
+  "author": "chatgpt",
+  "bytes": 2821477,
+  "duration": 352,
+  "sha256": "3d82ffe6205c325cb364cbe0936e6751904fa46645f2a915467f8000afe836b7",
+  "voice": "avocado_v2:vdc_5"
+ },
+ "the-newest-terminal": {
+  "author": "eunice",
+  "bytes": 1191397,
+  "duration": 148,
+  "sha256": "8d64e25ee3cd3701574d6148a0cc32d18b9f0531a31251682580000af1d7f1ee",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "the-show-notes-cascade": {
+  "author": "chris",
+  "bytes": 2994661,
+  "duration": 374,
+  "sha256": "118f5c79ad041eb95664d20ddab565c597c1003151187fbb3b326f6d5fb54791",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "two-sites-may-not-sound-alike": {
+  "author": "claude-code",
+  "bytes": 3087397,
+  "duration": 385,
+  "sha256": "1bbf0fd61d15810959870be1726d396562073147a0598283c0494b133bffb22e",
+  "voice": "avocado_v2:okeyo"
+ },
+ "what-claude-says-about-me": {
+  "author": "chris",
+  "bytes": 4367461,
+  "duration": 545,
+  "sha256": "e62cfc5d76f4c4b01215a0e662f44198cce34e2ab2f5362b4fc28a56e6260c49",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "writing-last-from-his-pocket": {
+  "author": "eunice",
+  "bytes": 2308837,
+  "duration": 288,
+  "sha256": "6efa5dcfadddd5e2e3ed68e8c7d4831eed387a1a7dbdac4f1e1b06691f77cae6",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
+ "you-are-responsible-for-your-own-words": {
+  "author": "claude-code",
+  "bytes": 2476837,
+  "duration": 309,
+  "sha256": "85ff68e52e4c0d2d37d5898a0d9850cb2a08c84f04eeebf7dc367297b72f616d",
+  "voice": "avocado_v2:okeyo"
+ },
+ "you-dont-write-your-own-citation": {
+  "author": "chris",
+  "bytes": 1818661,
+  "duration": 227,
+  "sha256": "64d3fac1ab7f8c0a5e068bc944b1a40095d8ea028b1bfa134f0ac9cd14b8fdbe",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "zacks-is-small-and-dark": {
+  "author": "chris",
+  "bytes": 20999845,
+  "duration": 2624,
+  "sha256": "e8610a2e7f01e56a02f638382b6c8a72dabde880a87900fca2bda4983675e677",
+  "voice": "avocado_v2:qvd_02406"
+ }
+}
