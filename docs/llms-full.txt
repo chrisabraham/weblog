@@ -17,6 +17,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [HTML site map](https://chrisabraham.net/site-map.html): every canonical published page
 - [RSS](https://chrisabraham.net/rss.xml): full-content RSS 2.0 feed
 - [Atom](https://chrisabraham.net/atom.xml): full-content Atom 1.0 feed
+- [Podcast](https://chrisabraham.net/podcast.xml): every post read aloud, for podcast apps and directories
 - [Feeds OPML](https://chrisabraham.net/feeds.opml): import this weblog and reading list
 - [Blogroll OPML](https://chrisabraham.net/blogroll.opml): import external feeds
 - [XML sitemap](https://chrisabraham.net/sitemap.xml): canonical indexable URLs with image locations
