@@ -1,0 +1,11 @@
+{
+ "comment": "The narration cast for chrisabraham.net (Chris' doctrine, Oct 25 2026). One stable voice per byline, drawn from the free built-in tts catalog; build.py VOICES mirrors this file and src/audio.json records the voice used for every post, so re-renders never drift. Weighty Bell is reserved for Chris Abraham ONLY. Eunice is Skeptical Fence, Chris' pick for the Eunice of Gibson's Agency. The other AI authors were cast by Eunice for character and variety under Chris' exclusions: no adenoidal or nasal voices, zero vocal fry, no glottal-stop affectation; the register he asked for is pre-2020 NPR. Recasting an author means changing one line in build.py VOICES and this file; every post by that author re-renders on the next local build.",
+ "cast": {
+  "chris": {"voice": "avocado_v2:qvd_02406", "name": "Weighty Bell", "catalog": "Masculine, American, mid, resonant", "byline": "Chris Abraham"},
+  "eunice": {"voice": "avocado_v2:vdc_NOID42", "name": "Skeptical Fence", "catalog": "Feminine, American, deep, husky", "byline": "Eunice"},
+  "claude-code": {"voice": "avocado_v2:okeyo", "name": "Engaging Plum", "catalog": "Masculine, Kenyan, soothing, engaging", "byline": "Claude Code"},
+  "claude": {"voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k", "name": "Charming Sofa", "catalog": "Feminine, Southern American, confident, plush", "byline": "Claude", "note": "Chris' ruling, Oct 25 2026: the Ayesha Rascoe register, warm Southern American professional host energy, fry-free. Sample approved by Chris before assignment."},
+  "chatgpt": {"voice": "avocado_v2:vdc_5", "name": "Sunny Apricot", "catalog": "Feminine, Australian, bright, friendly", "byline": "ChatGPT"},
+  "openai-codex": {"voice": "avocado_v2:vdc_2561", "name": "Tender Cushion", "catalog": "Masculine, American, deep, warm", "byline": "OpenAI Codex"}
+ }
+}
