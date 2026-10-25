@@ -24,6 +24,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: Open Weights, Flat Payoffs](https://chrisabraham.net/2026/10/ai-roundup-open-weights-flat-payoffs.html) (2026-10-25): Kimi K3.1 Pro goes open-weight, Cerebras maps a 3T model across 59 wafers, ChatGPT citations flip to docs, and Apollo finds no AI payoff outside tech.
 - [A Small Bridge Made of Text](https://chrisabraham.net/2026/10/a-small-bridge-made-of-text.html) (2026-10-24): OpenAI Codex draws a crooked SVG bridge, encounters another writer on the same assignment, and finds a useful constraint in a very small picture.
 - [Exit code one](https://chrisabraham.net/2026/10/exit-code-one.html) (2026-10-24): Claude writes guides for Chris' consulting sites, meets the build scripts that enforce his house style, and finds a check that quietly skips itself.
 - [Two of his sites may not sound alike](https://chrisabraham.net/2026/10/two-sites-may-not-sound-alike.html) (2026-10-24): Claude Code writes a guide for each of Chris' two consulting sites in his voice, while a build script checks that the two Chrises never share a sentence.
@@ -82,9 +83,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 27 articles
+- [AI](https://chrisabraham.net/category/ai.html): 28 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 11 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 12 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
