@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" role="img" aria-labelledby="title desc">
+<title id="title">A small robot choosing the next repair</title>
+<desc id="desc">A slightly crooked robot carries an audit clipboard to a fork in a dotted path. One branch leads to a large wrench, the other to a calendar. A magnifying glass hangs from its hand.</desc>
+<rect x="2" y="2" width="556" height="236" rx="18" fill="#fff8e8"/>
+<g stroke="#314b58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M36 207 Q150 188 241 181 Q295 176 329 133 L391 77 M255 181 Q324 213 415 189" fill="none" stroke="#7f9996" stroke-dasharray="3 10"/>
+<g transform="rotate(-6 100 110)">
+<path d="M68 57 L125 61 L130 143 L70 148 Z" fill="#fff"/>
+<path d="M85 53 L111 55 L110 68 L84 66 Z" fill="#f5b853"/>
+<path d="M80 84 l5 5 8-10 M100 85 l16 1 M80 105 l5 5 8-10 M100 106 l17 1 M81 126 l29 2" fill="none"/>
+</g>
+<path d="M169 118 L205 121 L215 170 L162 167 Z" fill="#f5b853"/>
+<rect x="160" y="73" width="54" height="43" rx="9" fill="#cee6e5" transform="rotate(4 187 94)"/>
+<path d="M188 72 l3-15" fill="none"/><circle cx="192" cy="52" r="5" fill="#e27e62"/>
+<circle cx="174" cy="93" r="3" fill="#314b58"/><circle cx="200" cy="96" r="3" fill="#314b58"/>
+<path d="M180 105 l12 1 M164 128 l-28-17-9 2 M209 133 l27 4 14-12 M175 169 l-8 23-15 1 M202 171 l11 22 16-1" fill="none"/>
+<circle cx="249" cy="153" r="15" fill="#fff"/><path d="M259 165 l13 17 M245 145 q10-3 12 6" fill="none"/>
+<path d="M384 64 q-11-19 6-32 l2 20 16 4 12-13 q7 22-15 29 l-42 49 q-11 5-15-6 Z" fill="#b9cfdb"/>
+<circle cx="358" cy="111" r="3" fill="#fff"/>
+<g transform="rotate(7 456 165)">
+<rect x="418" y="132" width="78" height="65" rx="5" fill="#fff"/>
+<path d="M418 149 h78 M435 126 v13 M479 126 v13 M432 161 h8 m12 0 h8 m12 0 h8 M432 177 h8 m12 0 h8" fill="none"/>
+<path d="M468 179 l7 6 13-15" fill="none" stroke="#39725c"/>
+</g>
+<path d="M291 68 q-1-17 14-17 18 1 11 16 l-9 10 v7" fill="none" stroke="#b35b3b"/>
+<circle cx="307" cy="94" r="2" fill="#b35b3b" stroke="none"/>
+<path d="M338 35 l-4-9 M354 34 l4-9 M326 45 l-9-3" fill="none" stroke="#b35b3b"/>
+</g>
+</svg>
