@@ -421,6 +421,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <link rel="alternate" type="application/rss+xml" title="{e(TITLE)} (RSS)" href="{SITE_URL}/rss.xml">
 <link rel="alternate" type="application/atom+xml" title="{e(TITLE)} (Atom)" href="{SITE_URL}/atom.xml">
+<link rel="alternate" type="application/rss+xml" title="{e(TITLE)} (Podcast, every post read aloud)" href="{SITE_URL}/podcast.xml">
 <link rel="alternate" type="text/x-opml" title="{e(TITLE)} (Feeds and blogroll OPML)" href="{SITE_URL}/feeds.opml">
 <link rel="blogroll" type="text/x-opml" href="{SITE_URL}/blogroll.opml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -468,7 +469,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
   <p>Copyright {dt.date.today().year} {AUTHOR}. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
   <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
   <p>Write back: <a href="mailto:{EMAIL}">{EMAIL}</a></p>
-  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/reading.html">Reading</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/sitemap.txt">Text sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/reading.html">Reading</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/podcast.xml">Podcast</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/sitemap.txt">Text sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
 </footer>
 </div>
 <script>
@@ -573,6 +574,11 @@ def post_block(p, *, full, heading="h2", teaser=False):
                   f'<blockquote>{e(p["prompt"])}</blockquote></details>')
     words = len(text_only(p["body"]).split())
     readtime = f'{words:,} words, about {max(1, round(words / 230))} min read'
+    listen = ""
+    if full and heading == "h1" and (SRC / "audio" / f"{p['slug']}.mp3").exists():
+        listen = (f'<p class="listen">This post, read aloud:</p>\n'
+                  f'<audio class="player" controls preload="metadata" src="/audio/{p["slug"]}.mp3">'
+                  f'<a href="/audio/{p["slug"]}.mp3">Download the narration</a></audio>\n')
     updated = (f' &middot; updated <time datetime="{p["updated"].isoformat()}">{p["updated"]:%b} {p["updated"].day}</time>'
                if p["updated"] != p["when"] else "")
     # Only the homepage and condensed archives use teasers. Avoid copying full
@@ -587,7 +593,7 @@ def post_block(p, *, full, heading="h2", teaser=False):
 <div class="post-body e-content">
 {body}
 </div>
-{prompt}
+{listen}{prompt}
 <p class="post-footer">{byline(p)} at
 <a href="{p['path']}" rel="bookmark" class="u-url"><time class="dt-published" datetime="{p['when'].isoformat()}">{clock(p['when'])}</time></a>{updated}
 &middot; {readtime} &middot; filed under {cats or 'nothing'} &middot; <a href="mailto:{EMAIL}?subject={e(p['title'])}">write back</a></p>
@@ -653,6 +659,205 @@ def post_schema(p):
     }
 
 
+# ---------------------------------------------------------------- narration
+
+AUDIO_SRC = SRC / "audio"                 # <slug>.mp3 narrations + <slug>.txt clean text sources
+AUDIO_MANIFEST = SRC / "audio.json"       # slug -> {sha256, voice, author, bytes, duration}
+TTS_BIN = __import__("os").environ.get("WEBLOG_TTS", "/opt/hatch/bin/tts")
+
+# The cast (Chris' doctrine, Oct 25 2026): one stable voice per byline,
+# recorded per post in src/audio.json and as a cast list in
+# src/audio-voices.json, so re-renders never drift. Weighty Bell is
+# reserved for Chris Abraham ONLY. Eunice is Skeptical Fence, Chris' pick
+# for the Eunice of Gibson's Agency. The other AI authors were cast by
+# Eunice for character and variety, under Chris' exclusions: no
+# adenoidal or nasal voices, no vocal fry, no glottal-stop affectation.
+# All voices are the free built-in tts catalog; no paid API, ever.
+VOICES = {
+    "chris": "avocado_v2:qvd_02406",        # Weighty Bell: masculine, American, mid, resonant (Chris only)
+    "eunice": "avocado_v2:vdc_NOID42",      # Skeptical Fence: feminine, American, deep, husky
+    "claude-code": "avocado_v2:okeyo",      # Engaging Plum: masculine, Kenyan, soothing, engaging
+    "claude": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k",  # Charming Sofa: feminine, Southern American, confident, plush (Chris' ruling: the Ayesha Rascoe register)
+    "chatgpt": "avocado_v2:vdc_5",          # Sunny Apricot: feminine, Australian, bright, friendly
+    "openai-codex": "avocado_v2:vdc_2561",  # Tender Cushion: masculine, American, deep, warm
+}
+PODCAST_GUID = "64c3b73c-84ec-42d0-9d94-85f06029c292"  # this feed's Podcast Index GUID; never changes
+
+
+def post_voice(p):
+    return VOICES.get(p.get("author") or "chris", VOICES["chris"])
+
+
+def post_text(p):
+    """The post as clean spoken text: video facades and wiki markup go,
+    block tags become paragraph breaks, entities are read as themselves.
+    The prompt box is metadata, not narration, and is never spoken."""
+    h = re.sub(r'<figure class="video".*?</figure>', "", p["body"], flags=re.S)
+    h = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", h)
+    h = re.sub(r"\[\[([^\]]+)\]\]", r"\1", h)
+    h = re.sub(r"<br\s*/?>", "\n", h)
+    h = re.sub(r"</(p|h2|h3|h4|li|blockquote|figure|figcaption|ul|ol)>", "\n\n", h)
+    h = re.sub(r"<[^>]+>", "", h)
+    h = html.unescape(h)
+    paras = [re.sub(r"\s+", " ", x).strip() for x in h.split("\n\n")]
+    # Skip bare fragments: diagram labels, table cells, stub headings.
+    # The tts backend returns empty audio for ultra-short utterances
+    # ("seat 2" in the Tesla post's ASCII sketch failed every retry,
+    # Oct 25 2026), and a fragment is not prose worth speaking anyway.
+    paras = [x for x in paras
+             if x and not (len(x.split()) <= 2 and not re.search(r"[.!?:;]", x))]
+    return "\n\n".join(paras)
+
+
+def ensure_post_audio(posts):
+    """Narrate EVERY published post into src/audio/<slug>.mp3, newest
+    first (load_posts order): spoken word in addition to the post, on the
+    post's own permalink and as the podcast feed's enclosures. A narration
+    is redone only when its text or the author's voice changes (sha256 in
+    src/audio.json, rewritten after each success so an interrupted build
+    keeps its progress and the next build eats more of the queue). On
+    machines without the tts tool (the GitHub CI build) this is a no-op
+    and the MP3s committed in the repo ride along. Each narration's clean
+    text source is kept at src/audio/<slug>.txt, keyed to its MP3."""
+    import hashlib
+    import subprocess
+    import sys
+    manifest = {}
+    if AUDIO_MANIFEST.exists():
+        manifest = json.loads(AUDIO_MANIFEST.read_text(encoding="utf-8"))
+    total = len(posts)
+    for i, p in enumerate(posts, 1):
+        slug, voice = p["slug"], post_voice(p)
+        text = post_text(p)
+        digest = hashlib.sha256((voice + "\n" + p["title"] + "\n" + text).encode()).hexdigest()
+        mp3 = AUDIO_SRC / f"{slug}.mp3"
+        if (manifest.get(slug) or {}).get("sha256") == digest and mp3.exists():
+            continue
+        if not Path(TTS_BIN).exists():
+            print(f"  post audio: no tts tool here, leaving {slug} unnarrated")
+            continue
+        AUDIO_SRC.mkdir(parents=True, exist_ok=True)
+        name = AUTHORS.get(p.get("author") or "chris", AUTHORS["chris"])["name"]
+        script = f"Narrator: {p['title']}. By {name}.\n"
+        script += "".join(f"Narrator: {x}\n" for x in text.split("\n\n") if x.strip())
+        txt = AUDIO_SRC / f"{slug}.txt"
+        if not txt.exists() or txt.read_text(encoding="utf-8") != script:
+            txt.write_text(script, encoding="utf-8")
+        try:
+            out = subprocess.run([TTS_BIN, "synthesize-script", "--script", str(txt),
+                                  "--speaker", "Narrator=" + voice, "--concurrency", "4",
+                                  "--output", str(mp3)],
+                                 capture_output=True, text=True, timeout=3600)
+            result = json.loads(out.stdout[out.stdout.index("{"):])
+            if not result.get("ok") or not mp3.exists():
+                raise RuntimeError((out.stdout + out.stderr)[-300:])
+        except Exception as err:
+            print(f"  post audio failed for {slug}: {err}", file=sys.stderr)
+            continue
+        dur = result.get("duration_secs") or result.get("duration") or result.get("duration_seconds") or result.get("actual_duration")
+        manifest[slug] = {"sha256": digest, "voice": voice, "author": p.get("author") or "chris",
+                          "bytes": mp3.stat().st_size,
+                          "duration": dur if isinstance(dur, (int, float)) else None}
+        AUDIO_MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+                                  encoding="utf-8")
+        print(f"  narrated post {i}/{total}: {slug} ({manifest[slug]['bytes']} bytes, voice {voice})")
+    return manifest
+
+
+def podcast_cover():
+    """1400x1400 podcast directory art in the share-card style, generated
+    into docs/ each build. Returns the URL, or None without Pillow."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except ImportError:
+        return None
+    W, M = 1400, 110
+    im = Image.new("RGB", (W, W), "#ffffff")
+    d = ImageDraw.Draw(im)
+    bold = lambda s: ImageFont.truetype(str(FONT_DIR / "DejaVuSans-Bold.ttf"), s)
+    reg = lambda s: ImageFont.truetype(str(FONT_DIR / "DejaVuSans.ttf"), s)
+    d.rectangle([0, 0, W, 22], fill="#c75000")
+    d.text((M, 120), "Chris Abraham", font=bold(118), fill="#c75000")
+    d.text((M, 282), "WEBLOG", font=bold(62), fill="#16729e")
+    y = 500
+    for ln in ("AI search, SEO, and", "building with AI,", "read aloud."):
+        d.text((M, y), ln, font=bold(94), fill="#1b1b1b")
+        y += 126
+    d.line([M, W - 176, W - M, W - 176], fill="#c9d0dc", width=3)
+    d.line([M, W - 166, W - M, W - 166], fill="#c9d0dc", width=3)
+    d.text((M, W - 132), "chrisabraham.net", font=bold(44), fill="#1d3d8f")
+    d.text((W - M, W - 132), "Written by AI from my prompts", font=reg(38), fill="#474d58", anchor="ra")
+    im.save(OUT / "podcast-cover.png", optimize=True)
+    return SITE_URL + "/podcast-cover.png"
+
+
+def hms(seconds):
+    s = int(round(seconds))
+    h, rem = divmod(s, 3600)
+    m, s = divmod(rem, 60)
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
+
+
+def podcast(posts, manifest):
+    """podcast.xml: the weblog as a podcast (Chris' ruling, Oct 25 2026).
+    Every published post, newest first: full text in content:encoded and
+    its narration as the enclosure once one exists. Directory-grade
+    channel fields, medium blog, a GUID that never changes."""
+    items = []
+    for p in posts:
+        body = p["body"]
+        if p.get("prompt"):
+            body += f"<p><em>Written by {e(p.get('model', 'Claude'))} from this prompt:</em></p><blockquote>{e(p['prompt'])}</blockquote>"
+        body = re.sub(r'((?:href|src)=")/(?!/)', r"\1" + SITE_URL + "/", body)
+        body = re.sub(r'(srcset=")/(?!/)', r"\1" + SITE_URL + "/", body)
+        name = AUTHORS.get(p.get("author") or "chris", AUTHORS["chris"])["name"]
+        slug = p["slug"]
+        enc = ""
+        mp3 = AUDIO_SRC / f"{slug}.mp3"
+        if mp3.exists():
+            enc = f'\n<enclosure url="{SITE_URL}/audio/{slug}.mp3" length="{mp3.stat().st_size}" type="audio/mpeg"/>'
+            dur = (manifest.get(slug) or {}).get("duration")
+            if dur:
+                enc += f'\n<itunes:duration>{hms(dur)}</itunes:duration>'
+        items.append(f"""<item>
+<title>{e(p['title'])}</title>
+<link>{p['url']}</link>
+<guid isPermaLink="true">{p['url']}</guid>
+<pubDate>{p['when'].strftime('%a, %d %b %Y %H:%M:%S %z')}</pubDate>
+<dc:creator>{e(name)}</dc:creator>
+<itunes:author>{e(name)}</itunes:author>
+<description>{e(p['description'])}</description>
+{''.join(f'<category>{e(c)}</category>' for c in p['cats'])}
+<content:encoded><![CDATA[{body.replace(']]>', ']]&gt;')}]]></content:encoded>{enc}
+</item>""")
+    last = max((p["updated"] for p in posts), default=None)
+    last = last.strftime('%a, %d %b %Y %H:%M:%S %z') if last else ""
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+<channel>
+<title>{e(TITLE)}</title>
+<link>{SITE_URL}/</link>
+<atom:link href="{SITE_URL}/podcast.xml" rel="self" type="application/rss+xml"/>
+<description>Chris Abraham's weblog on AI search, SEO, answer engines, and building with AI, written by AI from his prompts and read aloud by AI voices. Every post as audio, newest first.</description>
+<language>en-us</language>
+<copyright>CC BY 4.0, {AUTHOR}</copyright>
+<lastBuildDate>{last}</lastBuildDate>
+<generator>build.py, written with AI</generator>
+<itunes:author>{AUTHOR}</itunes:author>
+<itunes:owner><itunes:name>{AUTHOR}</itunes:name><itunes:email>{EMAIL}</itunes:email></itunes:owner>
+<itunes:image href="{SITE_URL}/podcast-cover.png"/>
+<itunes:category text="Technology"/>
+<itunes:category text="Business"><itunes:category text="Marketing"/></itunes:category>
+<itunes:explicit>false</itunes:explicit>
+<itunes:type>episodic</itunes:type>
+<podcast:medium>blog</podcast:medium>
+<podcast:guid>{PODCAST_GUID}</podcast:guid>
+{chr(10).join(items)}
+</channel>
+</rss>
+"""
+
+
 # ---------------------------------------------------------------- build
 
 def write(path, text):
@@ -666,6 +871,8 @@ def main():
     PERSON["sameAs"] = [x["url"] for g in site["elsewhere"] for x in g["links"]
                         if "calendly" not in x["url"] and "slowjogging" not in x["url"]]
     posts = load_posts()
+    # Narrate before the body mutations below: narration reads the raw body.
+    audio_manifest = ensure_post_audio(posts)
     # Recompute each build, so renamed posts never leave stale cross-reference targets.
     POST_LINKS.clear()
     POST_LINKS.update({slugify(p["title"]): p["path"] for p in posts})
@@ -956,6 +1163,8 @@ def main():
     # Feeds and machine files
     write("/rss.xml", rss(posts))
     write("/atom.xml", atom(posts))
+    podcast_cover()
+    write("/podcast.xml", podcast(posts, audio_manifest))
     write("/blogroll.opml", opml(site))
     write("/feeds.opml", opml(site, include_site=True))
     def images_for(path):
@@ -1004,6 +1213,14 @@ def main():
             print(f"  raster media: {count} source assets "
                   f"({total_source//1024} KiB), WebP {total_webp//1024} KiB, "
                   f"legacy JPEG {total_legacy//1024} KiB")
+    if AUDIO_SRC.exists():
+        (OUT / "audio").mkdir(exist_ok=True)
+        copied = 0
+        for mp3 in sorted(AUDIO_SRC.glob("*.mp3")):
+            shutil.copy2(mp3, OUT / "audio" / mp3.name)
+            copied += 1
+        if copied:
+            print(f"  post audio: {copied} narrations copied to docs/audio/")
     write("/favicon.svg", FAVICON)
     raster_icons()
     write("/humans.txt", f"""/* TEAM */
@@ -1122,6 +1339,8 @@ def opml(site, *, include_site=False):
                  f'htmlUrl="{SITE_URL}/" xmlUrl="{SITE_URL}/rss.xml"/>\n'
                  f'<outline text="{e(TITLE)} Atom" type="rss" '
                  f'htmlUrl="{SITE_URL}/" xmlUrl="{SITE_URL}/atom.xml"/>\n'
+                 f'<outline text="{e(TITLE)} Podcast" type="rss" '
+                 f'htmlUrl="{SITE_URL}/" xmlUrl="{SITE_URL}/podcast.xml"/>\n'
                  '</outline>\n')
     outl += "".join(f'<outline text="{e(g["group"])}">\n' + "".join(row(b) for b in g["links"]) + "</outline>\n"
                     for g in site["reading"])
@@ -1152,6 +1371,7 @@ def llms(posts, site, *, full):
            f"- [HTML site map]({SITE_URL}/site-map.html): every canonical published page",
            f"- [RSS]({SITE_URL}/rss.xml): full-content RSS 2.0 feed",
            f"- [Atom]({SITE_URL}/atom.xml): full-content Atom 1.0 feed",
+           f"- [Podcast]({SITE_URL}/podcast.xml): every post read aloud, for podcast apps and directories",
            f"- [Feeds OPML]({SITE_URL}/feeds.opml): import this weblog and reading list",
            f"- [Blogroll OPML]({SITE_URL}/blogroll.opml): import external feeds",
            f"- [XML sitemap]({SITE_URL}/sitemap.xml): canonical indexable URLs with image locations",
