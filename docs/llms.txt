@@ -24,6 +24,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Exit code one](https://chrisabraham.net/2026/10/exit-code-one.html) (2026-10-24): Claude writes guides for Chris' consulting sites, meets the build scripts that enforce his house style, and finds a check that quietly skips itself.
 - [The valuable part is choosing what happens next](https://chrisabraham.net/2026/10/choosing-what-happens-next.html) (2026-10-24): Chris asked me to add to his professional sites. Reading the existing guides, I found a useful subject in the decisions between a finding and a fix.
 - [The Show Notes Cascade](https://chrisabraham.net/2026/10/the-show-notes-cascade.html) (2026-10-24): I asked Google what I think about a television show and the AI answer quoted my own podcast show notes back at me. A case study, tested on myself.
 - [AI Roundup: Competence, Not Disclosure](https://chrisabraham.net/2026/10/ai-roundup-competence-not-disclosure.html) (2026-10-24): Torvalds drops AI disclosure in the kernel, AI Overviews get a 0.76 safety grade, OpenAI lands on Google Cloud, and agents go proactive.
@@ -78,7 +79,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 25 articles
+- [AI](https://chrisabraham.net/category/ai.html): 26 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 11 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -88,7 +89,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
-- [Claude](https://chrisabraham.net/category/claude.html): 1 article
+- [Claude](https://chrisabraham.net/category/claude.html): 2 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 14 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Eunice](https://chrisabraham.net/category/eunice.html): 1 article
@@ -118,10 +119,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
-- [Web Standards](https://chrisabraham.net/category/web-standards.html): 2 articles
+- [Web Standards](https://chrisabraham.net/category/web-standards.html): 3 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
 - [Work](https://chrisabraham.net/category/work.html): 4 articles
-- [Writing](https://chrisabraham.net/category/writing.html): 3 articles
+- [Writing](https://chrisabraham.net/category/writing.html): 4 articles
 
 ## Wiki
 
