@@ -798,11 +798,38 @@ def hms(seconds):
     return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
 
 
-def podcast(posts, manifest):
+FEED_STUB = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chris Abraham weblog — Podcast feed</title>
+<meta name="description" content="The weblog's podcast feed lives at chrisabraham.net/podcast.xml; this page simply takes you there.">
+<link rel="canonical" href="{SITE_URL}/podcast.xml">
+<meta http-equiv="refresh" content="0; url={SITE_URL}/podcast.xml">
+<meta name="robots" content="noindex">
+<style>body{font-family:Georgia,serif;background:#fff;color:#222;margin:0;padding:2rem}main{max-width:640px;margin:0 auto}a{color:#0645ad}</style>
+</head>
+<body>
+<main>
+<h1>Chris Abraham weblog — podcast feed</h1>
+<h2>Where the feed lives</h2>
+<p>This address is the door, not the room. The feed lives at <a href="{SITE_URL}/podcast.xml">{SITE_URL}/podcast.xml</a>: every post read aloud, newest first. Your podcast app wants that address; your browser is being taken there now.</p>
+<p>Or start at <a href="{SITE_URL}/">the weblog's home</a>.</p>
+</main>
+</body>
+</html>
+"""
+
+
+def podcast(posts, manifest, self_name="podcast.xml"):
     """podcast.xml: the weblog as a podcast (Chris' ruling, Oct 25 2026).
     Every published post, newest first: full text in content:encoded and
     its narration as the enclosure once one exists. Directory-grade
-    channel fields, medium blog, a GUID that never changes."""
+    channel fields, medium blog, a GUID that never changes. feed.xml is
+    the same feed at its alias door, with its own self-link (Chris'
+    ruling, Oct 25 2026: every feed gets the full set of addresses).
+    rss.xml is NOT an alias here — it has always been the weblog's own
+    text RSS feed, a different feed, and it keeps its meaning."""
     items = []
     for p in posts:
         body = p["body"]
@@ -837,7 +864,7 @@ def podcast(posts, manifest):
 <channel>
 <title>{e(TITLE)}</title>
 <link>{SITE_URL}/</link>
-<atom:link href="{SITE_URL}/podcast.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="{SITE_URL}/{self_name}" rel="self" type="application/rss+xml"/>
 <description>Chris Abraham's weblog on AI search, SEO, answer engines, and building with AI, written by AI from his prompts and read aloud by AI voices. Every post as audio, newest first.</description>
 <language>en-us</language>
 <copyright>CC BY 4.0, {AUTHOR}</copyright>
@@ -1165,6 +1192,8 @@ def main():
     write("/atom.xml", atom(posts))
     podcast_cover()
     write("/podcast.xml", podcast(posts, audio_manifest))
+    write("/feed.xml", podcast(posts, audio_manifest, "feed.xml"))
+    write("/feed/index.html", FEED_STUB)
     write("/blogroll.opml", opml(site))
     write("/feeds.opml", opml(site, include_site=True))
     def images_for(path):
@@ -1176,6 +1205,9 @@ def main():
         srcs = re.findall(r'<img[^>]+src="(/media/[^"]+)"', t) + re.findall(r'<meta property="og:image" content="([^"]+)"', t)
         seen = dict.fromkeys(s if s.startswith("http") else SITE_URL + s for s in srcs)
         return "".join(f"<image:image><image:loc>{u}</image:loc></image:image>" for u in seen)
+    # The feed URLs stay out of the sitemap list on purpose: it is the list
+    # of indexable canonical page URLs, shared verbatim with site-map.html
+    # (the reference-layer parity contract), and no feed has ever been in it.
     write("/sitemap.xml", "".join([
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
         'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n',

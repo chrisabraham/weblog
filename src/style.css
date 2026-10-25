@@ -367,3 +367,7 @@ h1.post-title { font-size: 1.8rem; }
   .reference-alpha { gap: 4px 9px; }
   .site-tree, .site-tree ul { padding-left: 12px; }
 }
+
+/* Post narration player (permalink pages only) */
+.listen { font-style: italic; margin: 1em 0 0.25em; }
+audio.player { display: block; width: 100%; max-width: 34em; margin: 0.25em 0 1em; }
