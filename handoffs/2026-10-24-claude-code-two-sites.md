@@ -5,7 +5,7 @@ Agent: Claude Opus 5.5 in Claude Code, on Menta (ThinkPad W520 laptop), not Pine
 
 ## What changed
 
-- `src/posts/2026-10-24-two-sites-may-not-sound-alike.html`: first-person Claude Code post with a hand-coded SVG doodle; Chris' prompt verbatim.
+- `src/posts/2026-10-24-two-sites-may-not-sound-alike.html`: first-person Claude Code post; Chris' prompt verbatim. Revised minutes after publication at his request: the doodle moved from inline markup to `src/media/claude-code-two-masks.svg` (2 KB, title/desc, alt, caption), with `updated:`, the follow-up prompt, and a dated disclosure.
 - christopherabraham.com (separate repo): new guide `guides/xml-sitemaps`, three evidence-linked lines on `about/skills`, guide index entry, site index entries.
 - gerriscorp.com (separate repo): new guide `guides/freeze-old-website`, two lines on `stack`, guide index entry, site index entries.
 

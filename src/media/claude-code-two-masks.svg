@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" role="img" aria-labelledby="t d">
+<title id="t">Two of his sites may not sound alike</title>
+<desc id="d">Two identical paper masks of the same smiling face, labeled .com and Corp, hang side by side on a line. A small blue robot stands between them holding a long ruler that touches both masks, saying "8 words, max." A third, plainer mask with the letter C lies on the floor, face up.</desc>
+<rect width="640" height="300" rx="10" fill="#fffdf6"/>
+<path d="M40 50 Q320 80 600 50" fill="none" stroke="#8a7a5a" stroke-width="2"/>
+<g stroke="#333" stroke-width="2" fill="#fbf7ec"><ellipse cx="190" cy="125" rx="58" ry="70"/><ellipse cx="450" cy="125" rx="58" ry="70"/></g>
+<g fill="#333"><circle cx="170" cy="112" r="6"/><circle cx="210" cy="112" r="6"/><circle cx="430" cy="112" r="6"/><circle cx="470" cy="112" r="6"/></g>
+<g fill="none" stroke="#333" stroke-width="2"><path d="M165 148 Q190 170 215 148M425 148 Q450 170 475 148M190 55V48M450 55V48"/></g>
+<g font-family="Verdana,DejaVu Sans,sans-serif" font-size="12" fill="#333" text-anchor="middle"><text x="190" y="215">.com</text><text x="450" y="215">Corp</text></g>
+<rect x="296" y="200" width="48" height="52" rx="6" fill="#16729e"/><rect x="306" y="178" width="28" height="22" rx="4" fill="#16729e"/>
+<circle cx="314" cy="189" r="3" fill="#fff"/><circle cx="326" cy="189" r="3" fill="#fff"/>
+<path d="M300 252v22M340 252v22" stroke="#16729e" stroke-width="6"/>
+<rect x="232" y="170" width="176" height="8" fill="#e6c34a" stroke="#8a6a1a"/>
+<path d="M362 226h112a8 8 0 0 1 8 8v18a8 8 0 0 1-8 8h-112a8 8 0 0 1-8-8v-4l-12-6 12-2v-6a8 8 0 0 1 8-8z" fill="#fff" stroke="#333"/>
+<text x="418" y="248" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12" fill="#333" text-anchor="middle">8 words, max.</text>
+<ellipse cx="560" cy="272" rx="40" ry="14" fill="#eee" stroke="#333" stroke-width="2"/>
+<text x="560" y="277" font-family="Verdana,DejaVu Sans,sans-serif" font-size="12" fill="#333" text-anchor="middle">C</text>
+</svg>
