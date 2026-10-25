@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<title>A tape reel beside a card index of one man's life</title>
+<desc>An amber line drawing on near black: a large tape reel on the left, a drawer of index cards on the right, one card pulled up and labelled CHRIS, 1994 to present, retrieval cue dependent.</desc>
+<rect width="1200" height="675" fill="#16110a"/>
+<g fill="none" stroke="#ffb648" stroke-width="4">
+<circle cx="330" cy="330" r="215"/>
+<circle cx="330" cy="330" r="52"/>
+<circle cx="330" cy="215" r="26"/><circle cx="430" cy="395" r="26"/><circle cx="230" cy="395" r="26"/>
+<rect x="640" y="215" width="470" height="300" rx="8"/>
+<line x1="640" y1="290" x2="1110" y2="290"/><line x1="640" y1="365" x2="1110" y2="365"/><line x1="640" y1="440" x2="1110" y2="440"/>
+<rect x="700" y="120" width="290" height="120" fill="#16110a"/>
+</g>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" fill="#ffb648">
+<text x="722" y="168" font-size="30">CHRIS, b. 1970</text>
+<text x="722" y="208" font-size="22" fill="#d99b35">see: tape 40, reel 1994</text>
+<text x="665" y="560" font-size="24" fill="#8a6a2f">storage: excellent. retrieval: by cue only.</text>
+</g>
+</svg>

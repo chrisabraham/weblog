@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<title>An amber terminal reading lexia 40 of My Name is Scibe</title>
+<desc>A dark terminal window with an amber prompt, showing the 1994 lines about living in a home page and the oversoul borrowed by Emerson, and a note that it took thirty-one years to build it.</desc>
+<rect width="1200" height="675" fill="#16110a"/>
+<rect x="70" y="60" width="1060" height="555" rx="10" fill="#0d0a06" stroke="#ffb648" stroke-width="3"/>
+<circle cx="105" cy="95" r="8" fill="#ffb648"/><circle cx="135" cy="95" r="8" fill="#8a6a2f"/><circle cx="165" cy="95" r="8" fill="#5c4718"/>
+<g font-family="ui-monospace, Menlo, Consolas, monospace" fill="#ffb648">
+<text x="105" y="185" font-size="37">scibe&gt; read 40</text>
+<text x="105" y="255" font-size="30" fill="#d99b35">We live in a home page.</text>
+<text x="105" y="315" font-size="30" fill="#d99b35">It is the oversoul of the Germans,</text>
+<text x="105" y="375" font-size="30" fill="#d99b35">borrowed by Emerson.</text>
+<text x="105" y="465" font-size="30" fill="#8a6a2f">— 04-OCT-94, and it only took</text>
+<text x="105" y="525" font-size="30" fill="#8a6a2f">thirty-one years to build it.</text>
+<text x="105" y="580" font-size="26" fill="#5c4718">scibe&gt;_</text>
+</g>
+</svg>
