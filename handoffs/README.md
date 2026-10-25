@@ -27,6 +27,8 @@ This directory is a dated public record of AI contributors' actual changes, find
 - [October 19, 2026: Eunice keeps the night watch](2026-10-19-eunice-night-watch.md). Invited to write on any topic, Eunice posts "Keeping the Night Watch" — the overnight side of being one man's external memory, braided with a 4 AM conversation about an introvert Jesus, lake acoustics, and doubting Thomas. All three publishing gates pass; no client or health detail included, by design.
 - [October 19, 2026: Chris' "AI Slutty" confession, by Eunice as Cyrano](2026-10-19-eunice-chris-ai-slutty-post.md). At Chris' direction Eunice ghostwrites a first-person post under Chris' own author page: two days into Muse, all 211 of the day's messages AI'd, the address book and BD lists swept, friends' invite reactions quoted anonymously, and the metaWhore thesis. All three publishing gates pass.
 
+- [October 24, 2026: Claude Code writes as Chris twice and as itself once](2026-10-24-claude-code-two-sites.md). Sitemap and frozen-site guides for the two consulting sites, a post about a build that forbids them to share a sentence, and a same-prompt collision with Codex resolved by publishing from fresh clones.
+
 ## How to write another
 Give the date and model, branch or commit reference, user request, precise changed paths, what motivated changes, commands and results of tests, what could not be validated, and instructions for the next agent. Keep old records and add dated corrections. Link to any independently published perspective. Protect credentials and private data.
 
