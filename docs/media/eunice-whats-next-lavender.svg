@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="t d">
+<title id="t">A calendar page with rockets waiting behind a rope</title>
+<desc id="d">A hand-drawn doodle in lavender ink: a big wall calendar, and behind a velvet rope a queue of little rockets of different sizes waiting for their launch day, one peeking over the horizon.</desc>
+<rect x="0" y="0" width="1200" height="675" fill="#f7f5fd"/>
+<g fill="none" stroke="#7d6bb3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<!-- calendar -->
+<rect x="110" y="120" width="430" height="470" rx="24" fill="#ece6fa"/>
+<path d="M110 210 C 260 200, 400 218, 540 206" />
+<circle cx="200" cy="140" r="14" fill="#b7a6e3"/><circle cx="325" cy="140" r="14" fill="#b7a6e3"/><circle cx="450" cy="140" r="14" fill="#b7a6e3"/>
+<g stroke="#a894dd" stroke-width="5">
+<path d="M150 280 C 260 272, 400 286, 500 276"/>
+<path d="M150 350 C 260 342, 400 356, 500 346"/>
+<path d="M150 420 C 260 412, 400 426, 500 416"/>
+<path d="M150 490 C 260 482, 400 496, 500 486"/>
+</g>
+<path d="M392 452 C 420 420, 452 486, 486 448 C 462 512, 420 520, 388 462" stroke="#7d6bb3"/>
+<!-- rope -->
+<path d="M620 470 C 740 520, 900 520, 1050 462" stroke="#9678c9" stroke-width="8"/>
+<path d="M624 430 L 622 560 M1046 424 L 1050 556" stroke="#9678c9"/>
+<circle cx="623" cy="424" r="11" fill="#c4b2ea"/><circle cx="1048" cy="418" r="11" fill="#c4b2ea"/>
+<!-- rocket 1, tall -->
+<path d="M700 440 C 690 360, 696 300, 724 252 C 752 300, 758 360, 748 440" fill="#ded2f5"/>
+<path d="M700 396 C 676 410, 664 430, 662 452 C 682 448, 696 438, 702 424" fill="#c4b2ea"/>
+<path d="M748 396 C 772 410, 784 430, 786 452 C 766 448, 752 438, 746 424" fill="#c4b2ea"/>
+<circle cx="724" cy="330" r="17" fill="#f7f5fd"/>
+<!-- rocket 2, mid -->
+<path d="M838 452 C 832 392, 836 348, 856 312 C 876 348, 880 392, 874 452" fill="#ece6fa"/>
+<circle cx="856" cy="378" r="13" fill="#f7f5fd"/>
+<path d="M838 420 C 820 432, 812 446, 811 462 C 826 458, 836 450, 841 439" fill="#c4b2ea"/>
+<path d="M874 420 C 892 432, 900 446, 901 462 C 886 458, 876 450, 871 439" fill="#c4b2ea"/>
+<!-- rocket 3, small, peeking -->
+<path d="M962 462 C 958 424, 961 396, 975 372 C 989 396, 992 424, 988 462" fill="#ded2f5"/>
+<circle cx="975" cy="416" r="10" fill="#f7f5fd"/>
+<!-- horizon sun with a question -->
+<path d="M880 130 C 920 96, 990 96, 1030 132" stroke="#a894dd" stroke-width="6"/>
+<path d="M955 62 L 955 84 M892 84 L 908 102 M1018 84 L 1002 102" stroke="#a894dd" stroke-width="6"/>
+</g>
+<text x="918" y="212" fill="#7d6bb3" font-family="Comic Sans MS, Segoe Print, cursive" font-size="64" font-weight="bold">?</text>
+<text x="152" y="182" fill="#6a589f" font-family="Comic Sans MS, Segoe Print, cursive" font-size="40" font-weight="bold">NEXT</text>
+</svg>

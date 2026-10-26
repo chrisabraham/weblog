@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [What Ships Next: The Winter Model Calendar](https://chrisabraham.net/2026/10/what-ships-next-the-winter-model-calendar.html) (2026-10-26): The next AI models in three honest tiers: release dates the labs confirmed, dates reporters sourced, and dates the release cadence merely suggests.
+- [State of the Model Art: The Field on October 26, 2026](https://chrisabraham.net/2026/10/the-state-of-the-model-art.html) (2026-10-26): Every flagship that matters on October 26, 2026, priced and placed: GPT-6, Claude 5.5, Gemini 4, Grok 4.7, and the open weights under them.
 - [Six sentences I took back](https://chrisabraham.net/2026/10/six-sentences-i-took-back.html) (2026-10-26): Claude Code drafted fifteen pages for Chris' two consulting sites in one afternoon, then fact-checked them and cut six sentences it could not back up.
 - [The Trellis, Not the Vine](https://chrisabraham.net/2026/10/the-trellis-not-the-vine.html) (2026-10-26): I spent this morning making two websites less about me: Scibe is Judy Malloy's show, Item 8 is its ensemble's. On trellises, snowballs, and conga lines.
 - [AI Roundup: Cheap Tokens, Hard Walls](https://chrisabraham.net/2026/10/ai-roundup-cheap-tokens-hard-walls.html) (2026-10-26): Inference prices fell 80 percent, OpenAI took frontier training offline, AI visibility studies disappoint, and states wrote new AI rules.
@@ -89,9 +91,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 29 articles
+- [AI](https://chrisabraham.net/category/ai.html): 31 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 13 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 15 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="t d">
+<title id="t">A shelf of five robots wearing price tags</title>
+<desc id="d">A hand-drawn doodle in mauve ink: five robots of shrinking size stand on a wooden shelf, each wearing a paper price tag, from fifty dollars down to fifty cents.</desc>
+<rect x="0" y="0" width="1200" height="675" fill="#faf6fa"/>
+<g fill="none" stroke="#8f5f96" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M90 520 C 400 512, 800 528, 1110 516" stroke="#a980a0"/>
+<path d="M120 524 L 116 580 M1080 520 L 1086 578" stroke="#a980a0"/>
+<!-- robot 1, the flagship -->
+<rect x="150" y="300" width="150" height="150" rx="26" fill="#e3c6de"/>
+<circle cx="195" cy="360" r="13" fill="#8f5f96"/><circle cx="255" cy="360" r="13" fill="#8f5f96"/>
+<path d="M195 415 C 220 402, 235 402, 258 414"/>
+<path d="M225 300 C 222 268, 220 250, 208 232 M225 300 C 230 266, 238 250, 252 236"/>
+<circle cx="206" cy="228" r="10" fill="#c99fc4"/><circle cx="255" cy="232" r="10" fill="#c99fc4"/>
+<!-- robot 2 -->
+<rect x="360" y="330" width="128" height="128" rx="22" fill="#ecd7e8"/>
+<circle cx="398" cy="382" r="11" fill="#8f5f96"/><circle cx="448" cy="382" r="11" fill="#8f5f96"/>
+<path d="M398 428 C 418 417, 432 417, 450 427"/>
+<path d="M424 330 C 423 306, 424 292, 416 278"/>
+<circle cx="414" cy="274" r="8" fill="#c99fc4"/>
+<!-- robot 3 -->
+<rect x="545" y="356" width="110" height="110" rx="20" fill="#e3c6de"/>
+<circle cx="578" cy="400" r="10" fill="#8f5f96"/><circle cx="620" cy="400" r="10" fill="#8f5f96"/>
+<path d="M578 438 C 594 429, 606 429, 622 437"/>
+<path d="M600 356 C 599 336, 601 324, 594 312"/>
+<circle cx="592" cy="308" r="7" fill="#c99fc4"/>
+<!-- robot 4 -->
+<rect x="705" y="380" width="92" height="92" rx="17" fill="#ecd7e8"/>
+<circle cx="733" cy="416" r="8" fill="#8f5f96"/><circle cx="768" cy="416" r="8" fill="#8f5f96"/>
+<path d="M733 446 C 745 439, 756 439, 769 445"/>
+<!-- robot 5, the dime -->
+<rect x="845" y="402" width="74" height="74" rx="14" fill="#e3c6de"/>
+<circle cx="868" cy="430" r="7" fill="#8f5f96"/><circle cx="895" cy="430" r="7" fill="#8f5f96"/>
+<path d="M868 454 C 877 449, 886 449, 896 453"/>
+<!-- price tags -->
+<g stroke-width="5">
+<path d="M268 300 L 330 258"/><rect x="322" y="212" width="104" height="56" rx="10" fill="#fdfafd" transform="rotate(6 374 240)"/>
+<path d="M462 330 L 516 292"/><rect x="508" y="246" width="98" height="52" rx="10" fill="#fdfafd" transform="rotate(5 557 272)"/>
+<path d="M632 356 L 678 322"/><rect x="670" y="278" width="92" height="48" rx="9" fill="#fdfafd" transform="rotate(6 716 302)"/>
+<path d="M778 380 L 816 350"/><rect x="808" y="306" width="86" height="46" rx="9" fill="#fdfafd" transform="rotate(5 851 329)"/>
+<path d="M905 402 L 936 376"/><rect x="928" y="330" width="96" height="48" rx="9" fill="#fdfafd" transform="rotate(6 976 354)"/>
+</g>
+<g fill="#7c4a86" font-family="Comic Sans MS, Segoe Print, cursive" font-size="30" font-weight="bold">
+<text x="338" y="250" transform="rotate(6 374 240)">$50</text>
+<text x="524" y="282" transform="rotate(5 557 272)">$20</text>
+<text x="684" y="312" transform="rotate(6 716 302)">$10</text>
+<text x="824" y="338" transform="rotate(5 851 329)">$6</text>
+<text x="938" y="364" transform="rotate(6 976 354)">50&#162;</text>
+</g>
+<path d="M120 130 C 300 108, 560 140, 760 118 C 900 104, 1020 122, 1086 112" stroke="#c99fc4" stroke-width="5" stroke-dasharray="2 14"/>
+</g>
+</svg>

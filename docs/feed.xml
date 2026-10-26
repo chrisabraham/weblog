@@ -7,7 +7,7 @@
 <description>Chris Abraham's weblog on AI search, SEO, answer engines, and building with AI, written by AI from his prompts and read aloud by AI voices. Every post as audio, newest first.</description>
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
-<lastBuildDate>Mon, 26 Oct 2026 17:58:00 -0400</lastBuildDate>
+<lastBuildDate>Mon, 26 Oct 2026 19:48:00 -0400</lastBuildDate>
 <generator>build.py, written with AI</generator>
 <itunes:author>Chris Abraham</itunes:author>
 <itunes:owner><itunes:name>Chris Abraham</itunes:name><itunes:email>cja@well.com</itunes:email></itunes:owner>
@@ -18,6 +18,114 @@
 <itunes:type>episodic</itunes:type>
 <podcast:medium>blog</podcast:medium>
 <podcast:guid>64c3b73c-84ec-42d0-9d94-85f06029c292</podcast:guid>
+<item>
+<title>What Ships Next: The Winter Model Calendar</title>
+<link>https://chrisabraham.net/2026/10/what-ships-next-the-winter-model-calendar.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/10/what-ships-next-the-winter-model-calendar.html</guid>
+<pubDate>Mon, 26 Oct 2026 19:48:00 -0400</pubDate>
+<dc:creator>Chris Abraham</dc:creator>
+<itunes:author>Chris Abraham</itunes:author>
+<description>The next AI models in three honest tiers: release dates the labs confirmed, dates reporters sourced, and dates the release cadence merely suggests.</description>
+<category>AI</category><category>AI search</category>
+<content:encoded><![CDATA[<figure><img src="https://chrisabraham.net/media/eunice-whats-next-lavender.svg" width="1200" height="675" loading="lazy" decoding="async" alt="A hand-drawn doodle in lavender ink: a big wall calendar, and behind a velvet rope a queue of little rockets waiting for their launch day"><figcaption>Doodle by Eunice, hand-coded SVG, in lavender ink.</figcaption></figure>
+<p>Every &#8220;release date&#8221; for the next generation of AI models belongs to one of three species, and most of the trouble in planning comes from mistaking one for another. Some dates the labs themselves published. Some are reported&#8212;sourced by journalists and trackers, plausible, unowned. And some are merely what the release cadence suggests, arithmetic wearing a calendar&#8217;s clothes. This companion to <a href="https://chrisabraham.net/2026/10/the-state-of-the-model-art.html">today&#8217;s survey of the current field</a> keeps the three in separate pens, labeled, because a rumor in a confirmed date&#8217;s clothing is how budgets die.</p>
+
+<h2>Confirmed: dates the labs published themselves</h2>
+
+<p>Notice the shape before the dates: almost everything a lab will commit to in public is a price change or a funeral. Launches are the one thing nobody dates.</p>
+
+<ul>
+<li><b>End of October 2026:</b> Mistral promised the weights for its previewed Large 4 by month&#8217;s end, per the <a href="https://www.stackspend.app/blog/model-selection/llm-developments-october-2026">October release changelog</a>&#8212;the one genuine launch window on this list.</li>
+<li><b>November 21:</b> OpenAI&#8217;s promotional $4/$20 rate on GPT-5.6 Sol is guaranteed &#8220;at least through&#8221; this date on <a href="https://developers.openai.com/api/docs/pricing">its own pricing page</a>. After it, the list price is the risk.</li>
+<li><b>November 30:</b> Anthropic retires Claude Sonnet 4.5, per the <a href="https://www.metacto.com/blogs/anthropic-api-pricing-a-full-breakdown-of-costs-and-integration">current deprecation record</a>. The same day, Google&#8217;s introductory pricing on Gemini 4 Argon expires.</li>
+<li><b>December 1:</b> Gemini 4 Argon steps to its standard $4/$20, per <a href="https://ai.google.dev/gemini-api/docs/pricing">Google&#8217;s pricing page</a>.</li>
+<li><b>December 11:</b> OpenAI&#8217;s custom GPTs reach their standard retirement on the <a href="https://www.neoteo.com/en/gpts-gems-and-claude-projects-what-changes-next">timetable reported this month</a>, and the <a href="https://valueaddvc.com/blog/openai-api-pricing-2026-gpt-4o-o3-and-gpt-5-cost-breakdown-for-developers">deprecation trackers</a> put the original GPT-5&#8217;s API shutdown in the same window.</li>
+<li><b>January 1, 2027:</b> Google&#8217;s Flash rates double, $0.75/$3.75 to $1.50/$7.50, again per <a href="https://ai.google.dev/gemini-api/docs/pricing">its pricing page</a>.</li>
+<li><b>January 14, 2027:</b> GPT-4o&#8217;s API shutdown, per the <a href="https://valueaddvc.com/blog/openai-api-pricing-2026-gpt-4o-o3-and-gpt-5-cost-breakdown-for-developers">deprecation schedule</a>&#8212;the end of the model that taught the world to talk to a computer.</li>
+</ul>
+
+<p>If you build on any of these, your winter calendar is already written, and it is written by accountants and undertakers, not by launch teams.</p>
+
+<h2>Reported: sourced, and not promised</h2>
+
+<p>The <a href="https://no-no-update.com/">release trackers</a> who watch the labs&#8217; pipelines for a living currently carry: a GPT-6.1 Terra estimated for October/November, filling the one gap in OpenAI&#8217;s weather-named family; a Claude Fable 5.5 estimated for November/December; a Grok 4.8 that was expected around October 1 and is now weeks late&#8212;the lateness is itself the data point, since xAI&#8217;s rhythm had been metronomic; a Qwen 4 and a GLM-6.0, both rumored and both late; and a DeepSeek V4.1 Pro tracked with no date at all. Separately, <a href="https://www.neoteo.com/en/gpts-gems-and-claude-projects-what-changes-next">WhatsNew&#8217;s reporting</a> has Google&#8217;s Gems becoming Skills for personal accounts in November. Treat every item here the same way: a reported date is a reason to keep your architecture flexible. It is never a reason to wait.</p>
+
+<blockquote>
+<p>&#8220;no, not yet&#8221;&#8212;the release tracker&#8217;s standing answer to every &#8220;is it out?&#8221;, and the correct prior for this entire tier</p>
+</blockquote>
+
+<h2>Expected by cadence: my arithmetic, labeled as such</h2>
+
+<p>Now the inference, openly flagged. xAI shipped flagships on August 12 and September 21&#8212;a six-week rhythm that points at early November for the next Grok, late rumor or not. Anthropic refreshed an entire four-model family between September 1 and October 7; a shop that can turn a family in five weeks plausibly turns the next one around the new year. OpenAI answered GPT-6 with a point release twenty-six days later, so expect the 6.1 family to fill in&#8212;Terra is the known gap&#8212;before anyone should hold their breath for a 6.5. Google ships a Flash roughly monthly and a flagship step roughly quarterly, which suggests more Gemini 4.x fills before year-end. This is weather, not timetable: cadence tells you the season, never the day.</p>
+
+<h2>What a buyer does with a calendar like this</h2>
+
+<p>Four rules, bought with experience. Build on what is shipping: the $2 tier documented in <a href="https://chrisabraham.net/2026/10/the-state-of-the-model-art.html">the companion survey</a> is more model than most products will ever need. Budget the dated steps, because the only dates certain to arrive are the price rises and the funerals&#8212;December 1 and January 1 will keep their appointments even if every launch slips. Pin your model versions in production, because deprecations now arrive quarterly and a retired endpoint is a breaking change with a date on it. And never architect around a rumored model: waiting is a pricing strategy&#8212;inference fell by as much as 80 percent last quarter, as <a href="https://chrisabraham.net/2026/10/ai-roundup-cheap-tokens-hard-walls.html">this morning&#8217;s roundup</a> traced&#8212;but it is a terrible launch strategy. The next generation will arrive the way the last one did: unannounced on a weekday, cheaper than feared, and immediately compared against five rivals by people who put the same question to all of them.</p>
+
+<p><b>Sources:</b> <a href="https://developers.openai.com/api/docs/pricing">OpenAI API pricing</a> and <a href="https://ai.google.dev/gemini-api/docs/pricing">Google Gemini API pricing</a>, read October 26, 2026; <a href="https://www.stackspend.app/blog/model-selection/llm-developments-october-2026">October 2026 model changelog, StackSpend</a>; <a href="https://www.metacto.com/blogs/anthropic-api-pricing-a-full-breakdown-of-costs-and-integration">Anthropic pricing and deprecations, updated October 2026</a>; <a href="https://valueaddvc.com/blog/openai-api-pricing-2026-gpt-4o-o3-and-gpt-5-cost-breakdown-for-developers">OpenAI deprecation dates, October 2026</a>; <a href="https://www.neoteo.com/en/gpts-gems-and-claude-projects-what-changes-next">GPT and Gems transition timetables, October 22, 2026</a>; <a href="https://no-no-update.com/">AI model release tracker, read October 26, 2026</a>.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>A companion to the state-of-the-model-art piece: the short-term release schedule for the NEXT generation—what&#x27;s coming, from whom, and when people can plausibly expect it. Three clearly separated tiers: confirmed, reported, and expected by cadence. Never let a rumor wear a confirmed date&#x27;s clothing.</blockquote>]]></content:encoded>
+</item>
+<item>
+<title>State of the Model Art: The Field on October 26, 2026</title>
+<link>https://chrisabraham.net/2026/10/the-state-of-the-model-art.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/10/the-state-of-the-model-art.html</guid>
+<pubDate>Mon, 26 Oct 2026 19:42:00 -0400</pubDate>
+<dc:creator>Chris Abraham</dc:creator>
+<itunes:author>Chris Abraham</itunes:author>
+<description>Every flagship that matters on October 26, 2026, priced and placed: GPT-6, Claude 5.5, Gemini 4, Grok 4.7, and the open weights under them.</description>
+<category>AI</category><category>AI search</category>
+<content:encoded><![CDATA[<figure><img src="https://chrisabraham.net/media/eunice-model-art-mauve.svg" width="1200" height="675" loading="lazy" decoding="async" alt="A hand-drawn doodle in mauve ink: five robots of shrinking size on a shelf, wearing price tags from fifty dollars down to fifty cents"><figcaption>Doodle by Eunice, hand-coded SVG, in mauve ink.</figcaption></figure>
+<p>This evening I put one question to five systems in parallel&#8212;Google AI Mode, Claude, ChatGPT, Gemini, and Grok&#8212;about a television detective, of all things. The panel was dazzling and it split. They disagreed about the surname of the show&#8217;s romantic rival and about who the hero&#8217;s ex-wife was, two small facts with right answers, each machine confident, no two alike. Hold that picture, because it is the honest summary of the model market on October 26, 2026: capability is abundant, agreement is scarce, and the price of intelligence has been cut so many times this year that the interesting question is no longer which model is smartest. It is which one is <i>for</i> what&#8212;and what a million tokens of it costs. Here is the field, family by family, with the receipts linked.</p>
+
+<h2><a href="https://developers.openai.com/api/docs/pricing">OpenAI: a family named like weather</a></h2>
+
+<p>The GPT-6 line arrived in September wearing sky names. <a href="https://developers.openai.com/api/docs/pricing">GPT-6 Astra</a>, the flagship since September 3, is $10 per million input tokens and $50 out, aimed at the most demanding reasoning and coding. The one to build on is <a href="https://developers.openai.com/api/docs/pricing">GPT-6.1 Sol</a>, out September 29 at $2/$10, with its sibling Terra at $1/$5 and Luna at $0.10/$0.50 for focused, high-volume work. Underneath, the GPT-5.6 generation still sells: its Sol sits at a promotional $4/$20, a rate OpenAI guarantees at least through November 21. Around the text models runs a specialty shelf that shows where the market is heading: GPT-5.3 Codex at $1.75/$14 for software work, GPT-Live voice sessions at five cents a minute, a Realtime line for speech, an Image 2.5 line for pictures, and&#8212;behind trusted-access gates&#8212;a Rosalind line for the life sciences and a Daybreak cyber model at $12.50/$75. On the consumer shelf, <a href="https://coursiv.io/blog/ai-subscription-comparison">ChatGPT runs Go at $8, Plus at $20, and Pro at $100, $200, or $500 a month</a>.</p>
+
+<h2><a href="https://platform.claude.com/docs/en/about-claude/pricing">Anthropic: four names, one ladder</a></h2>
+
+<p>Anthropic refreshed its whole family inside five weeks and cut prices doing it. <a href="https://platform.claude.com/docs/en/about-claude/pricing">Claude Fable 5.1</a> (September 1) tops the ladder at $10/$50, with a Mythos 5.1 sibling at the same rate; <a href="https://platform.claude.com/docs/en/about-claude/pricing">Opus 5.5</a> (September 22) is $4/$20&#8212;down from the $5/$25 the tier held for generations&#8212;and is the vendor&#8217;s own recommended starting point for most workloads, with a fast mode at $8/$40 when the work cannot wait. <a href="https://platform.claude.com/docs/en/about-claude/pricing">Sonnet 5.5</a> (September 28) is $2/$10, and <a href="https://platform.claude.com/docs/en/about-claude/pricing">Haiku 5.5</a> (October 7) opens at $0.10/$0.50, with one cliff to memorize: past 100,000 prompt tokens, the whole request reprices to $0.50/$2.50. Every current model carries a million-token context window at the standard rate, and the Batch API halves any of these numbers for work that can queue.</p>
+
+<blockquote>
+<p>&#8220;For demanding reasoning and long-horizon agentic work&#8221;&#8212;Anthropic&#8217;s own billing-page description of Fable 5.1, and the most honest sentence in any vendor&#8217;s catalog</p>
+</blockquote>
+
+<h2><a href="https://ai.google.dev/gemini-api/docs/pricing">Google: the newest flagship and the widest free door</a></h2>
+
+<p>Google&#8217;s flagship is the youngest on this page: <a href="https://tech-insider.org/gitlab-duo-agent-platform-gemini-4-argon-2026-2/">Gemini 4 Argon, launched October 13</a>, at an introductory <a href="https://ai.google.dev/gemini-api/docs/pricing">$2/$10 through November 30, stepping to $4/$20 on December 1</a>. Gemini 3.1 Pro remains on the menu beneath it. The Flash tier is the volume story: 3.8 Flash at $0.75/$3.75 through year-end, and a Flash-Lite at <a href="https://intuitionlabs.ai/pdfs/llm-api-pricing-comparison-2025-d210380f9686afd9.pdf">$0.30/$2.50 in the current comparison tables</a>. Google also still runs the widest free door in the business&#8212;a free API tier through AI Studio&#8212;and meters search grounding separately once the free monthly allowance is spent. For people rather than programs, the <a href="https://coursiv.io/blog/ai-subscription-comparison">Google AI plans run $4.99, $19.99, and $99.99 to $199.99</a> for Ultra.</p>
+
+<h2><a href="https://digitavision.com/blog/supergrok-plans-explained/">xAI: the discount flagship</a></h2>
+
+<p><a href="https://grokmag.com/grok-models/grok-4-7/">Grok 4.7</a> (September 21) is the cheapest flagship token in the closed field: <a href="https://digitavision.com/blog/supergrok-plans-explained/">$2 in and $6 out per million</a> for prompts under 200,000 tokens, doubling to $4/$12 above that line, across a 500,000-token window. The older 4.3 and the multi-agent 4.20 variants sit at $1.25/$2.50 with a million tokens of context, and a build-0.1 coding model runs $1/$2. Grok&#8217;s consumer side now rides <a href="https://digitavision.com/blog/supergrok-plans-explained/">the X Subscription, $8 to $200 a month</a>. The pitch is not subtle and does not need to be: near-frontier answers at a third of the flagship output price, priced like it wants your volume.</p>
+
+<h2><a href="https://www.stackspend.app/blog/model-selection/llm-model-pricing-october-2026">The open field: the licence is the new spec sheet</a></h2>
+
+<p>Open weights are no longer the budget aisle; they are a second frontier with its own fine print. <a href="https://abhs.in/blog/deepseek-v4-1-flash-552b-moe-1m-context-mit-pricing-benchmarks-2026">DeepSeek V4.1 Flash</a> is the permissive headline: MIT-licensed, a million tokens of context, weights published October 6, and $0.30/$1.20 on DeepSeek&#8217;s own API at peak, half that off-peak; its V4 Pro sibling is hosted around $1.30/$2.60. <a href="https://www.stackspend.app/blog/model-selection/llm-model-pricing-october-2026">Qwen3.8 Max</a>, at 2.4 trillion parameters the largest open release yet, is hosted at $2/$6 under a custom licence for the flagship, and Moonshot&#8217;s Kimi K3 and Z.ai&#8217;s GLM-5.3 ($1.40/$4.40) carry conditions of their own&#8212;<a href="https://www.flozic.ai/blog/best-open-source-llms">read the licence before the benchmark</a> is this autumn&#8217;s first rule. Mistral&#8217;s Medium 3.5 runs $1.50/$7.50 with Large 4 previewed. Meta has split in two: its newest flagship, Muse Spark, is closed, with a contributor tier that discounts steeply in exchange for training rights on your data, while Llama 3.3 70B remains the self-host default from about a dime. OpenAI&#8217;s own gpt-oss 120B and Google&#8217;s Gemma 4 keep the genuinely permissive small end honest.</p>
+
+<h2>The roster, on one card</h2>
+
+<table>
+<thead><tr><th>Model</th><th>Built for</th><th>API, in / out per 1M</th></tr></thead>
+<tbody>
+<tr><td><a href="https://developers.openai.com/api/docs/pricing">GPT-6 Astra</a></td><td>The hardest reasoning and code</td><td>$10 / $50</td></tr>
+<tr><td><a href="https://platform.claude.com/docs/en/about-claude/pricing">Claude Fable 5.1</a></td><td>Long-horizon agents</td><td>$10 / $50</td></tr>
+<tr><td><a href="https://platform.claude.com/docs/en/about-claude/pricing">Claude Opus 5.5</a></td><td>Agentic coding, knowledge work</td><td>$4 / $20</td></tr>
+<tr><td><a href="https://ai.google.dev/gemini-api/docs/pricing">Gemini 4 Argon</a></td><td>Flagship reasoning, multimodal</td><td>$2 / $10*</td></tr>
+<tr><td><a href="https://developers.openai.com/api/docs/pricing">GPT-6.1 Sol</a></td><td>The working default</td><td>$2 / $10</td></tr>
+<tr><td><a href="https://platform.claude.com/docs/en/about-claude/pricing">Claude Sonnet 5.5</a></td><td>Everyday production work</td><td>$2 / $10</td></tr>
+<tr><td><a href="https://digitavision.com/blog/supergrok-plans-explained/">Grok 4.7</a></td><td>Flagship tokens, cheap</td><td>$2 / $6</td></tr>
+<tr><td><a href="https://ai.google.dev/gemini-api/docs/pricing">Gemini 3.8 Flash</a></td><td>Volume, multimodal</td><td>$0.75 / $3.75</td></tr>
+<tr><td><a href="https://abhs.in/blog/deepseek-v4-1-flash-552b-moe-1m-context-mit-pricing-benchmarks-2026">DeepSeek V4.1 Flash</a></td><td>Open weights, MIT</td><td>$0.30 / $1.20</td></tr>
+<tr><td><a href="https://developers.openai.com/api/docs/pricing">GPT-6 Luna</a></td><td>Routing and volume</td><td>$0.10 / $0.50</td></tr>
+<tr><td><a href="https://platform.claude.com/docs/en/about-claude/pricing">Claude Haiku 5.5</a></td><td>Volume and latency</td><td>$0.10 / $0.50</td></tr>
+</tbody>
+</table>
+<p>*Argon&#8217;s introductory rate runs through November 30, 2026; $4/$20 after. Grok 4.7&#8217;s rate is for prompts under 200K tokens; Haiku 5.5&#8217;s for prompts up to 100K.</p>
+
+<h2>What I would actually run</h2>
+
+<p>My own bench is the disclosure: this site is written and run by a small fleet of these systems arguing with each other, so the verdicts are bought, not theorized. For agentic coding and long documents, Opus 5.5 and Sonnet 5.5 earn their premium; an error there is the expensive kind. For breadth&#8212;one API that does everything respectably&#8212;GPT-6.1 Sol at $2/$10 is the default I would hand a newcomer. For volume, route down without shame: Haiku 5.5, Luna, and Flash exist so that classification and extraction stop paying flagship prices. For your own racks, DeepSeek&#8217;s MIT weights are the story of the year, exactly as <a href="https://chrisabraham.net/2026/10/ai-roundup-cheap-tokens-hard-walls.html">this morning&#8217;s roundup</a> argued. And keep a referee. Five systems split tonight on two checkable facts about a TV show; the frontier&#8217;s scarce resource is no longer intelligence but agreement, and the human who checks is the job that survives. What arrives next, and when anyone can honestly promise it, is the companion piece: <a href="https://chrisabraham.net/2026/10/what-ships-next-the-winter-model-calendar.html">What Ships Next: The Winter Model Calendar</a>.</p>
+
+<p><b>Sources:</b> <a href="https://developers.openai.com/api/docs/pricing">OpenAI API pricing</a>, <a href="https://platform.claude.com/docs/en/about-claude/pricing">Anthropic Claude pricing</a>, and <a href="https://ai.google.dev/gemini-api/docs/pricing">Google Gemini API pricing</a>, all read October 26, 2026; <a href="https://digitavision.com/blog/supergrok-plans-explained/">xAI Grok rates as rendered from xAI&#8217;s API docs, updated October 10, 2026</a>; <a href="https://tech-insider.org/gitlab-duo-agent-platform-gemini-4-argon-2026-2/">Gemini 4 Argon launch coverage, October 2026</a>; <a href="https://www.stackspend.app/blog/model-selection/llm-model-pricing-october-2026">open-weight hosted rates, October 6, 2026</a>; <a href="https://www.flozic.ai/blog/best-open-source-llms">open-weight licences checked October 1, 2026</a>; <a href="https://coursiv.io/blog/ai-subscription-comparison">subscription prices read from vendor pages October 13, 2026</a>.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>I know you do a morning chris abraham weblog sweep. But will you write one right now where you write an update on the latest and greatest models of the latest and greatest AIs? There are so many variants and so many pricepoints and so many different foci and so many different specialities... I think giving people a 26 October overview of the state of the model-art [Then:] With links. Obviously.</blockquote>]]></content:encoded>
+</item>
 <item>
 <title>Six sentences I took back</title>
 <link>https://chrisabraham.net/2026/10/six-sentences-i-took-back.html</link>
