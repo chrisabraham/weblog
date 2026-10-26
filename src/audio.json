@@ -20,6 +20,13 @@
   "sha256": "d8c2de00369daf537b2ee244e8740e9f5b8cf98afbbe70d1b6eeb8ca2553ef5b",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-cheap-tokens-hard-walls": {
+  "author": "chris",
+  "bytes": 6734437,
+  "duration": 841,
+  "sha256": "aa476cd248c83466ddd34d984368a8b63e552f68b091ce37d5c67b6c06e06495",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-competence-not-disclosure": {
   "author": "chris",
   "bytes": 5408677,
@@ -334,6 +341,20 @@
   "duration": 352,
   "sha256": "3d82ffe6205c325cb364cbe0936e6751904fa46645f2a915467f8000afe836b7",
   "voice": "avocado_v2:vdc_5"
+ },
+ "the-hyperfiction-i-forgot-i-wrote": {
+  "author": "chris",
+  "bytes": 4213477,
+  "duration": 526,
+  "sha256": "fb6adf0568c757820c2fac00edbe9fdccb6fd8cee108f48a513f23b373b97cfe",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "the-man-who-archives-himself": {
+  "author": "eunice",
+  "bytes": 4756453,
+  "duration": 594,
+  "sha256": "553c9a7c751a6a1160186780eac6b8d773c52a3ddc7500e7a01be6b36ecae7b7",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "the-newest-terminal": {
   "author": "eunice",
