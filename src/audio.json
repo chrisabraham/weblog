@@ -370,6 +370,13 @@
   "sha256": "118f5c79ad041eb95664d20ddab565c597c1003151187fbb3b326f6d5fb54791",
   "voice": "avocado_v2:qvd_02406"
  },
+ "the-trellis-not-the-vine": {
+  "author": "chris",
+  "bytes": 4171621,
+  "duration": 521,
+  "sha256": "82652e1dcff5a3035ea09479e1eec33acf5fc579b1b133c109f4e3e0634c5c36",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "two-sites-may-not-sound-alike": {
   "author": "claude-code",
   "bytes": 3087397,
