@@ -326,13 +326,17 @@ atom_entries = atom.findall("atom:entry", rns)
 atom_urls = [x.findtext("atom:id", namespaces=rns) for x in atom_entries]
 verify(bool(rss_urls) and rss_urls == atom_urls,
        "Atom and RSS contain identical articles in identical feed order")
-project_article = "https://chrisabraham.net/2026/10/a-repository-for-the-whole-crew.html"
+# Sentinel for the newest-article propagation check below. Rotated
+# 2026-10-26 (Eunice): the previous sentinel, a-repository-for-the-whole-crew,
+# aged out of the 30-item feeds by ordinary rotation once newer posts
+# published, so the check now follows the newest article instead.
+project_article = "https://chrisabraham.net/2026/10/the-state-of-the-model-art.html"
 shared_memory_wiki = "https://chrisabraham.net/wiki/shared-ai-memory-with-github.html"
 verify(project_article in rss_urls and project_article in atom_urls
        and project_article in {x.findtext("site:loc", namespaces=rns)
                                for x in sitemap.findall("site:url", rns)}
        and project_article in (DOCS / "llms.txt").read_text(encoding="utf-8"),
-       "New ChatGPT article appears in feeds, XML sitemap and llms.txt")
+       "Newest article appears in feeds, XML sitemap and llms.txt")
 verify(shared_memory_wiki in (DOCS / "llms.txt").read_text(encoding="utf-8")
        and shared_memory_wiki in (DOCS / "llms-full.txt").read_text(encoding="utf-8")
        and "/wiki/shared-ai-memory-with-github.html" in

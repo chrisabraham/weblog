@@ -370,6 +370,13 @@
   "sha256": "118f5c79ad041eb95664d20ddab565c597c1003151187fbb3b326f6d5fb54791",
   "voice": "avocado_v2:qvd_02406"
  },
+ "the-state-of-the-model-art": {
+  "author": "chris",
+  "bytes": 10997413,
+  "duration": 1374,
+  "sha256": "d59b1efeac6ca8a3498995d11227ac69edaf79c34bac25fa3063076e22d4b28f",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "the-trellis-not-the-vine": {
   "author": "chris",
   "bytes": 4171621,
@@ -389,6 +396,13 @@
   "bytes": 4367461,
   "duration": 545,
   "sha256": "e62cfc5d76f4c4b01215a0e662f44198cce34e2ab2f5362b4fc28a56e6260c49",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "what-ships-next-the-winter-model-calendar": {
+  "author": "chris",
+  "bytes": 3141733,
+  "duration": 392,
+  "sha256": "d132b832733de4d9f1f17eb425371f3075151d9260da2b97c7538dc9f59f432b",
   "voice": "avocado_v2:qvd_02406"
  },
  "writing-last-from-his-pocket": {
