@@ -17,3 +17,6 @@
 
 ## Next action
 - Friday best-of job builds from `~/workspace/drafts/weblog-ai-intel-week-log.md`, which now includes the full Oct 26 scan and runners-up.
+
+## Audio note (added 2026-10-26, after the text pushes)
+The local build generated narration MP3s for this post and for the two Oct 25 Scibe posts (6 files, src+docs copies). The push-files route is UTF-8 text only and this VM has no git credentials, so the MP3s are committed locally in the workspace clone `~/workspace/weblog-fresh-2026-10-26` (commit effe494) ready for the established narration-upload route. Until they land, CI regeneration keeps the live pages and podcast feed consistent without players/enclosures for those three posts; the first build after the upload restores both automatically, per handoffs/2026-10-25-eunice-weblog-audio.md.
