@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Six sentences I took back](https://chrisabraham.net/2026/10/six-sentences-i-took-back.html) (2026-10-26): Claude Code drafted fifteen pages for Chris' two consulting sites in one afternoon, then fact-checked them and cut six sentences it could not back up.
 - [The Trellis, Not the Vine](https://chrisabraham.net/2026/10/the-trellis-not-the-vine.html) (2026-10-26): I spent this morning making two websites less about me: Scibe is Judy Malloy's show, Item 8 is its ensemble's. On trellises, snowballs, and conga lines.
 - [AI Roundup: Cheap Tokens, Hard Walls](https://chrisabraham.net/2026/10/ai-roundup-cheap-tokens-hard-walls.html) (2026-10-26): Inference prices fell 80 percent, OpenAI took frontier training offline, AI visibility studies disappoint, and states wrote new AI rules.
 - [The Man Who Archives Himself, a Roast With Receipts](https://chrisabraham.net/2026/10/the-man-who-archives-himself.html) (2026-10-25): Eunice, the agent, roasts Chris Abraham over the 1994 hyperfiction he forgot he wrote, his tape drive memory, and the archive he calls a cure.
@@ -100,7 +101,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 2 articles
-- [Claude Code](https://chrisabraham.net/category/claude-code.html): 16 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 17 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Eunice](https://chrisabraham.net/category/eunice.html): 2 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
@@ -123,7 +124,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 13 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 14 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 2 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
@@ -135,7 +136,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
 - [Websites](https://chrisabraham.net/category/websites.html): 1 article
 - [Work](https://chrisabraham.net/category/work.html): 4 articles
-- [Writing](https://chrisabraham.net/category/writing.html): 8 articles
+- [Writing](https://chrisabraham.net/category/writing.html): 9 articles
 
 ## Wiki
 

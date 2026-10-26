@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="t d">
+<title id="t">Six sentences taken back</title>
+<desc id="d">A hand-drawn page of six lines, each struck through with a wobbly orange line, a red pen leaning on the margin, and a small robot holding a tiny magnifying glass up to a sticky note that says "source?".</desc>
+<rect width="1200" height="675" fill="#fffdf6"/>
+<g fill="none" stroke="#211f1e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M330 70 L800 62 L812 610 L318 618 Z" fill="#fff"/>
+<path d="M380 150 H740 M380 220 H700 M380 290 H750 M380 360 H690 M380 430 H735 M380 500 H660" stroke="#9aa3ab" stroke-width="10"/>
+</g>
+<g fill="none" stroke="#c75000" stroke-width="7" stroke-linecap="round">
+<path d="M365 152 q90 -14 180 3 t200 -6"/><path d="M365 223 q80 10 170 -4 t175 5"/><path d="M365 288 q100 -12 190 4 t205 -3"/>
+<path d="M365 362 q70 12 160 -3 t175 2"/><path d="M365 428 q95 -10 185 5 t195 -4"/><path d="M365 503 q80 8 150 -4 t150 3"/>
+</g>
+<g stroke="#211f1e" stroke-width="5" stroke-linejoin="round">
+<path d="M860 560 L1010 150 L1040 162 L892 572 Z" fill="#d93a2b"/>
+<path d="M860 560 L870 600 L892 572" fill="#211f1e"/>
+</g>
+<g transform="translate(120 360)" stroke="#211f1e" stroke-width="5" stroke-linejoin="round">
+<rect x="0" y="60" width="130" height="120" rx="18" fill="#b0dde3"/>
+<rect x="15" y="0" width="100" height="70" rx="14" fill="#b0dde3"/>
+<circle cx="45" cy="35" r="9" fill="#211f1e"/><circle cx="85" cy="35" r="9" fill="#211f1e"/>
+<path d="M65 0 V-25" fill="none"/><circle cx="65" cy="-30" r="8" fill="#f3b842"/>
+<path d="M130 100 L185 60" fill="none"/>
+<circle cx="200" cy="48" r="26" fill="#fff"/><path d="M219 66 L238 86" fill="none"/>
+</g>
+<g transform="rotate(-6 200 170)">
+<rect x="110" y="110" width="180" height="120" fill="#f3b842" stroke="#211f1e" stroke-width="5"/>
+<text x="200" y="185" font-family="Verdana, sans-serif" font-size="34" text-anchor="middle" fill="#211f1e">source?</text>
+</g>
+</svg>
