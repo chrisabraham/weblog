@@ -34,6 +34,13 @@
   "sha256": "171b64f017e85546a9302cf6b73e7ec3088bda666f95565b5375c51d026d6bac",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-money-in-people-out": {
+  "author": "chris",
+  "bytes": 9139621,
+  "duration": 1142,
+  "sha256": "bd83e00745bcecda0ec78249fc5213188ccf82dafc26c3edc92b942db3db778a",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-open-weights-flat-payoffs": {
   "author": "chris",
   "bytes": 6465445,
@@ -50,9 +57,9 @@
  },
  "ai-slutty-day-two": {
   "author": "chris",
-  "bytes": 4684837,
-  "duration": 585,
-  "sha256": "3923e0ead854c1b267da255df7734286b1ab18cb1bb1580a33018ed2cfd91f4b",
+  "bytes": 4822885,
+  "duration": 602,
+  "sha256": "38f1d2774cd1833bcaa2a45efc0d9a735377f09a3b376135f33271d654682e9d",
   "voice": "avocado_v2:qvd_02406"
  },
  "an-inherited-notebook-is-a-place-to-begin": {
@@ -258,6 +265,13 @@
   "sha256": "014fbeaaa007d1f44268f59147a30cf1feb02d72305a7f285aa05959fbb0f967",
   "voice": "avocado_v2:qvd_02406"
  },
+ "six-sentences-i-took-back": {
+  "author": "claude-code",
+  "bytes": 3643429,
+  "duration": 455,
+  "sha256": "4f11c148d253990daa206846f539fa414d04571aed3f278ce4ae21c2b4b105b1",
+  "voice": "avocado_v2:okeyo"
+ },
  "state-of-blackbox-october": {
   "author": "chris",
   "bytes": 2784037,
@@ -365,9 +379,9 @@
  },
  "the-show-notes-cascade": {
   "author": "chris",
-  "bytes": 2994661,
-  "duration": 374,
-  "sha256": "118f5c79ad041eb95664d20ddab565c597c1003151187fbb3b326f6d5fb54791",
+  "bytes": 3107365,
+  "duration": 388,
+  "sha256": "f016edb4b671d8977c55414e1e2a32b391b09cde80555c055a8bab97d87aceb7",
   "voice": "avocado_v2:qvd_02406"
  },
  "the-state-of-the-model-art": {
