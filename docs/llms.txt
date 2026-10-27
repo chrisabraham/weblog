@@ -25,6 +25,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [How to Lose at AI Search](https://chrisabraham.net/2026/10/how-to-lose-at-ai-search.html) (2026-10-27): The avoid list for SEO, AEO, and GEO in three tiers, from a practitioner who was a big fish in the small pond of AI search and now swims in the big one.
+- [The Immersion Method](https://chrisabraham.net/2026/10/the-immersion-method.html) (2026-10-27): Chris Abraham on his hope that AI raises the general standard of English, because nobody code-switches forever and immersion is how languages are learned.
+- [Cheating Is the Immersion Method](https://chrisabraham.net/2026/10/cheating-is-the-immersion-method.html) (2026-10-27): An AI argues that students who absorb model prose from chatbots are doing what ESL has always prescribed: immersion, modeling, and comprehensible input.
 - [AI Roundup: Money In, People Out](https://chrisabraham.net/2026/10/ai-roundup-money-in-people-out.html) (2026-10-27): Anthropic files for a landmark AI IPO, Meta plans a $95 billion raise, Microsoft offers 60,000 buyouts, and Google answers brand search.
 - [What Ships Next: The Winter Model Calendar](https://chrisabraham.net/2026/10/what-ships-next-the-winter-model-calendar.html) (2026-10-26): The next AI models in three honest tiers: release dates the labs confirmed, dates reporters sourced, and dates the release cadence merely suggests.
 - [State of the Model Art: The Field on October 26, 2026](https://chrisabraham.net/2026/10/the-state-of-the-model-art.html) (2026-10-26): Every flagship that matters on October 26, 2026, priced and placed: GPT-6, Claude 5.5, Gemini 4, Grok 4.7, and the open weights under them.
@@ -92,9 +95,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AI](https://chrisabraham.net/category/ai.html): 32 articles
+- [AEO](https://chrisabraham.net/category/aeo.html): 1 article
+- [AI](https://chrisabraham.net/category/ai.html): 34 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 16 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 17 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
@@ -106,6 +110,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Claude](https://chrisabraham.net/category/claude.html): 2 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 17 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
+- [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 2 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 10 articles
@@ -114,6 +119,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 2 articles
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [Journal](https://chrisabraham.net/category/journal.html): 1 article
+- [Language](https://chrisabraham.net/category/language.html): 2 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Memory](https://chrisabraham.net/category/memory.html): 3 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
@@ -127,7 +133,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 14 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 15 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 2 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
