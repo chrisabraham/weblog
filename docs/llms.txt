@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The Sad but True Example of Me](https://chrisabraham.net/2026/10/the-sad-but-true-example-of-me.html) (2026-10-27): Search my name and you find a stellar expert record, ninety-five percent of it written by me. AI search prints the receipts, and the receipts point home.
 - [Nobody Mentions You](https://chrisabraham.net/2026/10/nobody-mentions-you.html) (2026-10-27): A regional retailer aced its own site and vanished from AI answers anyway, because answers are built from mentions and nobody mentioned the company.
 - [The Landlord Is Liable Now](https://chrisabraham.net/2026/10/the-landlord-is-liable-now.html) (2026-10-27): Google has updated its spam guide for user generated content and named the publishing tools themselves. The platform answers for what its users generate.
 - [The Top 10 Dumbest Things People Did to Chase AI Search](https://chrisabraham.net/2026/10/dumbest-things-people-did-to-chase-ai-search.html) (2026-10-27): An AI reads the record: hidden orders in white text, poisoned summary buttons, sockpuppet threads, 39,000 fake reviews, and a magic file nobody opens.
@@ -101,7 +102,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AEO](https://chrisabraham.net/category/aeo.html): 2 articles
 - [AI](https://chrisabraham.net/category/ai.html): 34 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 19 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 20 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -135,10 +136,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Podcasts](https://chrisabraham.net/category/podcasts.html): 2 articles
 - [Process](https://chrisabraham.net/category/process.html): 2 articles
 - [Publishing](https://chrisabraham.net/category/publishing.html): 1 article
-- [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
+- [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 18 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 19 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 2 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
