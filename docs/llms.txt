@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The Landlord Is Liable Now](https://chrisabraham.net/2026/10/the-landlord-is-liable-now.html) (2026-10-27): Google has updated its spam guide for user generated content and named the publishing tools themselves. The platform answers for what its users generate.
 - [The Top 10 Dumbest Things People Did to Chase AI Search](https://chrisabraham.net/2026/10/dumbest-things-people-did-to-chase-ai-search.html) (2026-10-27): An AI reads the record: hidden orders in white text, poisoned summary buttons, sockpuppet threads, 39,000 fake reviews, and a magic file nobody opens.
 - [How to Lose at AI Search](https://chrisabraham.net/2026/10/how-to-lose-at-ai-search.html) (2026-10-27): The avoid list for SEO, AEO, and GEO in three tiers, from a practitioner who was a big fish in the small pond of AI search and now swims in the big one.
 - [The Immersion Method](https://chrisabraham.net/2026/10/the-immersion-method.html) (2026-10-27): Chris Abraham on his hope that AI raises the general standard of English, because nobody code-switches forever and immersion is how languages are learned.
@@ -99,8 +100,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AEO](https://chrisabraham.net/category/aeo.html): 1 article
 - [AI](https://chrisabraham.net/category/ai.html): 34 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
+- [AI search](https://chrisabraham.net/category/ai-search.html): 18 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 17 articles
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
@@ -117,6 +118,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 10 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
+- [Google](https://chrisabraham.net/category/google.html): 1 article
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 2 articles
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
@@ -135,7 +137,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 2 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 16 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 17 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 2 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
