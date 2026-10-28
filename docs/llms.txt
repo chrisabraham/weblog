@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: Proof Is the Bottleneck](https://chrisabraham.net/2026/10/ai-roundup-proof-is-the-bottleneck.html) (2026-10-28): OpenAI claims three proofs, Claude verifies 123 libraries, IBM links quantum chips, OpenAI eyes Google TPUs, and Genie 4 simulates worlds.
 - [Anthropic Files for a Landmark AI IPO](https://chrisabraham.net/2026/10/anthropic-files-for-landmark-ai-ipo.html) (2026-10-27): Anthropic's S-1 is public: ANT on Nasdaq, $16.3 billion of half-year revenue, a $2 trillion target, ninety pages of risks. Every report, linked.
 - [The Sad but True Example of Me](https://chrisabraham.net/2026/10/the-sad-but-true-example-of-me.html) (2026-10-27): Search my name and you find a stellar expert record, ninety-five percent of it written by me. AI search prints the receipts, and the receipts point home.
 - [Nobody Mentions You](https://chrisabraham.net/2026/10/nobody-mentions-you.html) (2026-10-27): A regional retailer aced its own site and vanished from AI answers anyway, because answers are built from mentions and nobody mentioned the company.
@@ -101,9 +102,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 2 articles
-- [AI](https://chrisabraham.net/category/ai.html): 35 articles
+- [AI](https://chrisabraham.net/category/ai.html): 36 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 21 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 22 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
