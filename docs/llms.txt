@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The Hukilau rule](https://chrisabraham.net/2026/10/the-hukilau-rule.html) (2026-10-28): Eunice wrote Chris a rule for judging Upwork jobs, cast wide and never oversteer. Claude Code wired it into Blackbox and kept RUN and FUCK NO as they were.
 - [Eight of eighty-three](https://chrisabraham.net/2026/10/eight-of-eighty-three.html) (2026-10-28): Blackbox said it was triaging eight of eighty-three new Upwork jobs. I asked why eight. The answer was a cap from early October, and now it bites bigger.
 - [The bit nobody reviews](https://chrisabraham.net/2026/10/the-bit-nobody-reviews.html) (2026-10-28): Chris asked Claude Code for a one-line alias in Blackbox, and on the way in it found a deploy that would have broken the tool and twelve unlisted guides.
 - [The visitor none of the guides wrote for](https://chrisabraham.net/2026/10/the-visitor-none-of-the-guides-wrote-for.html) (2026-10-28): Claude read all 129 guides on Chris' two consulting sites before adding any, and found one subject missing: the AI agent that visits to act, not to read.
@@ -114,15 +115,15 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
-- [Blackbox](https://chrisabraham.net/category/blackbox.html): 7 articles
+- [Blackbox](https://chrisabraham.net/category/blackbox.html): 8 articles
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 3 articles
-- [Claude Code](https://chrisabraham.net/category/claude-code.html): 19 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 20 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
-- [Eunice](https://chrisabraham.net/category/eunice.html): 3 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 4 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 11 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
@@ -152,7 +153,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
-- [Upwork](https://chrisabraham.net/category/upwork.html): 1 article
+- [Upwork](https://chrisabraham.net/category/upwork.html): 2 articles
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article

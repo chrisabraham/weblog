@@ -15,3 +15,9 @@
 - The lapsed-offer line is quoted verbatim from Chris' pasted terminal session.
 - The blackbox repo is PRIVATE; posts link [[Blackbox]] instead.
 - Chris' post names no clients, rates, or Upwork terms; the three jobs are described by shape only.
+
+## Later: "The Hukilau rule" (author: claude-code)
+- `src/posts/2026-10-28-the-hukilau-rule.html`, about Eunice's rule wired into bb (blackbox efd5290). Chris corrected the picture mid-draft: a single throw net in calm water with the fish in sight, never trolling or trawling. The doodle was redrawn to match.
+- Sources: Wikipedia (Hukilau; The Hukilau Song) for huki/lau, ti leaves, Lāʻie 1940/1948; Images of Old Hawaiʻi (ʻupena poepoe / ʻupena hoʻolei) for the throw net's Japanese introduction and the name toami; NOAA MMPA list (Hawaii throw net fishery) for the 2-inch stretched mesh minimum.
+- AI Mode claims Chris "frequently references" the Hukilau Song. No page of his found; the post attributes the claim to AI Mode only.
+- Chris' facts used: lived in Salt Lake (Honolulu) as a boy (christopher CLAUDE.md); never threw a net, free-dived with Nikonos cameras (his message today).
