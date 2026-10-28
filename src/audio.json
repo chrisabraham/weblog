@@ -48,6 +48,13 @@
   "sha256": "da050f719341cabac7e6a9106d4e41f1ed681afe6b5266d35cf522cf024c1a24",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-proof-is-the-bottleneck": {
+  "author": "chris",
+  "bytes": 7904293,
+  "duration": 988,
+  "sha256": "ad6bda7b5dede031af4530052e8d186e67fce461aa3a4a7524b3ba954049bed9",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-search-roundup-the-citation-week": {
   "author": "chris",
   "bytes": 4225189,
@@ -68,6 +75,13 @@
   "duration": 267,
   "sha256": "d89995b576b1eea9c6fde9bc4d305161d9b80b77cd27c788526d296bf855b963",
   "voice": "avocado_v2:vdc_2561"
+ },
+ "anthropic-files-for-landmark-ai-ipo": {
+  "author": "eunice",
+  "bytes": 5970469,
+  "duration": 746,
+  "sha256": "7498257f8955c435b7171b6af2ca15d245426e6b1ae03ec350dae7c2f5dcec82",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "blackbox-a-few-weeks-in": {
   "author": "chris",
@@ -90,6 +104,13 @@
   "sha256": "ad890c14273369c38c206e38e8bb71b5ad80b6599625e6fc6d0ec270c691d58c",
   "voice": "avocado_v2:qvd_02406"
  },
+ "cheating-is-the-immersion-method": {
+  "author": "Eunice",
+  "bytes": 3834661,
+  "duration": 479,
+  "sha256": "6bfb2a55ee1047ed63be2853b6ba44955eb4eeebf3f695174a17b771ea2604e2",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "choosing-what-happens-next": {
   "author": "openai-codex",
   "bytes": 2504101,
@@ -110,6 +131,13 @@
   "duration": 401,
   "sha256": "bbc931c998d87c4ad6b55f73f6ef231851c1eeba6ff3d4f34684ee027c31769e",
   "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
+ },
+ "dumbest-things-people-did-to-chase-ai-search": {
+  "author": "Eunice",
+  "bytes": 5233189,
+  "duration": 654,
+  "sha256": "c89458dd84eac4af0fc2c22e19ab75e28c91e6e6aaf21383e7008e9cb013bd59",
+  "voice": "avocado_v2:qvd_02406"
  },
  "eunice-agency-cyberpunk": {
   "author": "chatgpt",
@@ -188,6 +216,13 @@
   "sha256": "2e713119294ef222f91468ac0d0e39f605c8422daecbafc34fb72ea7745c709c",
   "voice": "avocado_v2:vdc_NOID42"
  },
+ "how-to-lose-at-ai-search": {
+  "author": "Chris Abraham",
+  "bytes": 2223589,
+  "duration": 277,
+  "sha256": "8716a2df9dcef904a31dab2c7e2733d7dd19f9291d418ece29580bb16ac2a598",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "human-github": {
   "author": "chris",
   "bytes": 9441637,
@@ -235,6 +270,13 @@
   "bytes": 7303333,
   "duration": 912,
   "sha256": "7daf4670182fd7592e67f32d20ec2148ceb56b0fa26efc5a29fd7b81fff5d9af",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "nobody-mentions-you": {
+  "author": "chris",
+  "bytes": 1824613,
+  "duration": 228,
+  "sha256": "7a78ba23b4f0a73055739fde018c9c4bbde6dc7769d0269b2da40597dd715518",
   "voice": "avocado_v2:qvd_02406"
  },
  "pinebox-started-as-alpine": {
@@ -363,6 +405,20 @@
   "sha256": "fb6adf0568c757820c2fac00edbe9fdccb6fd8cee108f48a513f23b373b97cfe",
   "voice": "avocado_v2:qvd_02406"
  },
+ "the-immersion-method": {
+  "author": "Chris Abraham",
+  "bytes": 4119781,
+  "duration": 514,
+  "sha256": "33ad454c4422cb8179711ad6c8802423e52b7d73f6e445449495c3acf0f754b8",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "the-landlord-is-liable-now": {
+  "author": "chris",
+  "bytes": 2775973,
+  "duration": 346,
+  "sha256": "a8cd521cee65caf29df00dc6389f429dbb90f4b20c08b991cbb476d54c8505ef",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "the-man-who-archives-himself": {
   "author": "eunice",
   "bytes": 4756453,
@@ -376,6 +432,13 @@
   "duration": 148,
   "sha256": "8d64e25ee3cd3701574d6148a0cc32d18b9f0531a31251682580000af1d7f1ee",
   "voice": "avocado_v2:vdc_NOID42"
+ },
+ "the-sad-but-true-example-of-me": {
+  "author": "chris",
+  "bytes": 3075493,
+  "duration": 384,
+  "sha256": "894a2305c603a69786150ddaeec07a989718093e0eb1383bc17ef14a55ec8c00",
+  "voice": "avocado_v2:qvd_02406"
  },
  "the-show-notes-cascade": {
   "author": "chris",
