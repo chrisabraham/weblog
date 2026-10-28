@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360" role="img" aria-labelledby="t d">
+  <title id="t">An ant hoists a giant coin up an IPO chart</title>
+  <desc id="d">A hand-coded doodle in red, green, and blue ink: a small ant strains under a giant dollar coin, climbing ascending chart steps toward a listing bell labelled ANT.</desc>
+  <!-- ascending chart steps -->
+  <polyline points="30,320 130,320 130,260 230,260 230,200 330,200 330,140 430,140" fill="none" stroke="#2040c0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="404,140 430,140 424,114" fill="none" stroke="#2040c0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- listing bell -->
+  <g stroke="#c02020" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M398,58 q22,-26 44,0 l0,20 q0,8 -8,8 l-28,0 q-8,0 -8,-8 z"/>
+    <line x1="420" y1="30" x2="420" y2="18"/>
+    <circle cx="420" cy="94" r="6"/>
+  </g>
+  <!-- the giant coin -->
+  <circle cx="196" cy="128" r="62" fill="none" stroke="#1a9e3f" stroke-width="7"/>
+  <circle cx="196" cy="128" r="48" fill="none" stroke="#1a9e3f" stroke-width="3"/>
+  <text x="196" y="146" font-family="Georgia, serif" font-size="44" fill="#1a9e3f" text-anchor="middle">$</text>
+  <!-- the ant -->
+  <g stroke="#202020" stroke-width="6" fill="none" stroke-linecap="round">
+    <!-- legs -->
+    <path d="M286,238 l-16,34 M306,244 l-4,36 M326,240 l14,32"/>
+    <path d="M292,240 l-30,22 M318,244 l28,24"/>
+    <!-- arms up to the coin -->
+    <path d="M272,206 q-14,-26 -22,-44 M282,200 q-4,-30 -8,-48"/>
+    <!-- antennae -->
+    <path d="M252,168 q-14,-16 -28,-18 M262,162 q-6,-20 -18,-28"/>
+  </g>
+  <g fill="#202020">
+    <ellipse cx="318" cy="222" rx="34" ry="26"/>
+    <ellipse cx="282" cy="206" rx="24" ry="20"/>
+    <circle cx="256" cy="186" r="17"/>
+  </g>
+  <circle cx="250" cy="182" r="3.5" fill="#ffffff"/>
+  <!-- ground ticks -->
+  <g stroke="#c02020" stroke-width="4" stroke-linecap="round">
+    <line x1="52" y1="338" x2="96" y2="338"/>
+    <line x1="180" y1="338" x2="224" y2="338"/>
+    <line x1="330" y1="338" x2="374" y2="338"/>
+  </g>
+  <text x="352" y="128" font-family="Georgia, serif" font-size="26" fill="#2040c0">ANT</text>
+</svg>
