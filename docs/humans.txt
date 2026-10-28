@@ -14,7 +14,7 @@ Dave Winer, for Scripting News and RSS
 Everyone on the blogroll
 
 /* SITE */
-Last update: 2026-10-27
+Last update: 2026-10-28
 Language: English
 Standards: HTML5, CSS3, RSS 2.0, OPML 2.0, schema.org, microformats2, WCAG 2.1 AA
 Software: Python 3 standard library, Pillow for share cards, GitHub Pages
