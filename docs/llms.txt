@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Eight of eighty-three](https://chrisabraham.net/2026/10/eight-of-eighty-three.html) (2026-10-28): Blackbox said it was triaging eight of eighty-three new Upwork jobs. I asked why eight. The answer was a cap from early October, and now it bites bigger.
+- [The bit nobody reviews](https://chrisabraham.net/2026/10/the-bit-nobody-reviews.html) (2026-10-28): Chris asked Claude Code for a one-line alias in Blackbox, and on the way in it found a deploy that would have broken the tool and twelve unlisted guides.
 - [The visitor none of the guides wrote for](https://chrisabraham.net/2026/10/the-visitor-none-of-the-guides-wrote-for.html) (2026-10-28): Claude read all 129 guides on Chris' two consulting sites before adding any, and found one subject missing: the AI agent that visits to act, not to read.
 - [Your firewall is a bouncer, and the agents have ID now](https://chrisabraham.net/2026/10/your-firewall-is-a-bouncer.html) (2026-10-28): AI agents now shop, book, and fill in forms for people, and the bot protection most sites run turns them away. A doorman's case for checking ID.
 - [AI Roundup: Proof Is the Bottleneck](https://chrisabraham.net/2026/10/ai-roundup-proof-is-the-bottleneck.html) (2026-10-28): OpenAI claims three proofs, Claude verifies 123 libraries, IBM links quantum chips, OpenAI eyes Google TPUs, and Genie 4 simulates worlds.
@@ -112,17 +114,17 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
-- [Blackbox](https://chrisabraham.net/category/blackbox.html): 5 articles
+- [Blackbox](https://chrisabraham.net/category/blackbox.html): 7 articles
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 3 articles
-- [Claude Code](https://chrisabraham.net/category/claude-code.html): 17 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 19 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 3 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
-- [GitHub](https://chrisabraham.net/category/github.html): 10 articles
+- [GitHub](https://chrisabraham.net/category/github.html): 11 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
@@ -150,6 +152,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
+- [Upwork](https://chrisabraham.net/category/upwork.html): 1 article
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
@@ -164,7 +167,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI search visibility measurement methods](https://chrisabraham.net/wiki/ai-search-visibility-methods.html) (edited 2026-10-17): Repeatable methodology for tracking named entities, competitor citations, factual errors and differences among AI search and answer services.
 - [AI visibility report](https://chrisabraham.net/wiki/ai-visibility-report.html) (edited 2026-10-16): A live, dated report from Chris Abraham's AI visibility tracker: sixteen questions to Claude, whether it names him, and which of his sites it cites.
 - [Blackbox](https://chrisabraham.net/wiki/blackbox.html) (edited 2026-10-16): Blackbox, or bb, is Chris Abraham's plain-English command-line secretary, built with Claude Code and running on his pinebox server since September 2026.
-- [Blackbox commands](https://chrisabraham.net/wiki/blackbox-commands.html) (edited 2026-10-16): Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
+- [Blackbox commands](https://chrisabraham.net/wiki/blackbox-commands.html) (edited 2026-10-28): Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
 - [Build a personal weblog with AI](https://chrisabraham.net/wiki/build-a-personal-weblog-with-ai.html) (edited 2026-10-17): Evergreen instructions for building a 2004 style personal weblog with conversational AI, a tiny Python static site generator and GitHub Pages.
 - [Connections](https://chrisabraham.net/wiki/connections.html) (edited 2026-10-16): Every service Chris Abraham's AI tools can reach through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, and GitHub.
 - [MCP servers](https://chrisabraham.net/wiki/mcp-servers.html) (edited 2026-10-16): A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.

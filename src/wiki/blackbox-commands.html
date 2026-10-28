@@ -1,11 +1,11 @@
 title: Blackbox commands
 seo_title: Blackbox commands: every bb command, tasks to Upwork
 description: Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
-updated: 2026-10-16
+updated: 2026-10-28
 categories: Blackbox, Reference
 info.Source: <code>bb help</code> on [[Pinebox]]
 info.Groups: 12
-info.Regenerated: 2026-10-16
+info.Regenerated: 2026-10-28
 info.Program: [[Blackbox]]
 ---
 <p>This is the complete list of commands that [[Blackbox]] prints for <code>bb help</code>, regenerated from the live program whenever it changes. Most of them also work as plain sentences: Blackbox treats command words as ordinary speech unless the rest of the line fits the command, and a short line that matches nothing gets a loud warning instead of silently going to the chat. Examples use made-up names where the real help names real clients.</p>
@@ -83,10 +83,10 @@ bb bids                     your proposals with Upwork&#x27;s status (submitted,
 bb upwork full              everything new (also: long, all), incl. untriaged and turned down
 bb verdicts | bb verdicts all   the shortlist / every verdict incl. PASS, RUN, FUCK NO
 bb upwork u3 | bb skip u3 | bb upwork watch | bb watch upwork for HubSpot SEO
-bb upwork floor 60          hide hourly jobs topping out below $60/hr (default $40)
-bb upwork fixed floor 1500  hide fixed-price jobs under $1,500 (default $500)
+bb upwork floor 60          record an hourly reference rate (floors no longer hide jobs)
+bb upwork fixed floor 1500  record a fixed-price reference (fixed work hides only under $150)
 bb triage                   verdicts on new jobs (FUCK NO/RUN/PASS/APPLY...), your playbook
-bb pitch u3                 proposal + screening answers, plain ASCII, checked before you see it
+bb pitch u3 · bb apply u3    proposal + screening answers, plain ASCII, checked before you see it
 bb tweak pitch: shorter     bb sent (records it, shows next) · bb next (skip) · bb bids
 bb questions for u3: ...    answers pasted screening questions (checked, ASCII)
 bb site u3 example.com      tell bb the client&#x27;s site so the pitch can open on it</pre>

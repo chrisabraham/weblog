@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url><loc>https://chrisabraham.net/</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/cards/index.png</image:loc></image:image></url>
+<url><loc>https://chrisabraham.net/2026/10/eight-of-eighty-three.html</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/cards/2026-10-eight-of-eighty-three.png</image:loc></image:image></url>
+<url><loc>https://chrisabraham.net/2026/10/the-bit-nobody-reviews.html</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/cards/2026-10-the-bit-nobody-reviews.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/2026/10/the-visitor-none-of-the-guides-wrote-for.html</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/media/claude-visitor-no-eyes.svg</image:loc></image:image><image:image><image:loc>https://chrisabraham.net/cards/2026-10-the-visitor-none-of-the-guides-wrote-for.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/2026/10/your-firewall-is-a-bouncer.html</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/media/claude-bouncer-and-the-agent.svg</image:loc></image:image><image:image><image:loc>https://chrisabraham.net/cards/2026-10-your-firewall-is-a-bouncer.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/2026/10/ai-roundup-proof-is-the-bottleneck.html</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/media/proof-is-the-bottleneck.svg</image:loc></image:image><image:image><image:loc>https://chrisabraham.net/cards/2026-10-ai-roundup-proof-is-the-bottleneck.png</image:loc></image:image></url>
@@ -83,7 +85,7 @@
 <url><loc>https://chrisabraham.net/wiki/ai-editorial-provenance-and-handoffs.html</loc><lastmod>2026-10-17</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-ai-editorial-provenance-and-handoffs.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/wiki/ai-search-visibility-methods.html</loc><lastmod>2026-10-17</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-ai-search-visibility-methods.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/wiki/ai-visibility-report.html</loc><lastmod>2026-10-16</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-ai-visibility-report.png</image:loc></image:image></url>
-<url><loc>https://chrisabraham.net/wiki/blackbox-commands.html</loc><lastmod>2026-10-16</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-blackbox-commands.png</image:loc></image:image></url>
+<url><loc>https://chrisabraham.net/wiki/blackbox-commands.html</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-blackbox-commands.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/wiki/blackbox.html</loc><lastmod>2026-10-16</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-blackbox.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/wiki/build-a-personal-weblog-with-ai.html</loc><lastmod>2026-10-17</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-build-a-personal-weblog-with-ai.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/wiki/connections.html</loc><lastmod>2026-10-16</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-connections.png</image:loc></image:image></url>
@@ -94,7 +96,7 @@
 <url><loc>https://chrisabraham.net/wiki/shared-ai-memory-with-github.html</loc><lastmod>2026-10-21</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-shared-ai-memory-with-github.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/wiki/static-weblog-operations.html</loc><lastmod>2026-10-17</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-static-weblog-operations.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/wiki/upwork-verdicts.html</loc><lastmod>2026-10-16</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki-upwork-verdicts.png</image:loc></image:image></url>
-<url><loc>https://chrisabraham.net/wiki/</loc><lastmod>2026-10-21</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki.png</image:loc></image:image></url>
+<url><loc>https://chrisabraham.net/wiki/</loc><lastmod>2026-10-28</lastmod><image:image><image:loc>https://chrisabraham.net/cards/wiki.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/reading.html</loc><image:image><image:loc>https://chrisabraham.net/cards/reading.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/authors/chris-abraham.html</loc><image:image><image:loc>https://chrisabraham.net/cards/authors-chris-abraham.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/authors/claude-code.html</loc><image:image><image:loc>https://chrisabraham.net/cards/authors-claude-code.png</image:loc></image:image></url>
