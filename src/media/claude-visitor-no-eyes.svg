@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 640 360" role="img" aria-labelledby="t d">
+<title id="t">The visitor none of the guides wrote for</title>
+<desc id="d">A tall stack of paper guides on the left. On the right, a shop door with a sign reading PROVE YOU ARE HUMAN, and a small robot with a shopping bag waiting outside it.</desc>
+<rect width="640" height="360" fill="#fffdf6"/>
+<g fill="none" stroke="#33415c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M60 300 h140 M66 284 h132 M62 268 h136 M68 252 h130 M60 236 h138 M66 220 h132 M62 204 h136 M68 188 h130 M64 172 h134"/>
+<path d="M60 300 v-128 M200 300 v-128"/>
+<rect x="380" y="70" width="150" height="230"/>
+<circle cx="510" cy="190" r="5" fill="#33415c"/>
+<rect x="395" y="96" width="120" height="44" fill="#ffe7a3"/>
+<rect x="300" y="236" width="46" height="40" rx="6"/>
+<path d="M310 250 h6 M330 250 h6 M312 264 q11 6 22 0"/>
+<path d="M323 236 v-14"/>
+<circle cx="323" cy="218" r="4" fill="#e4572e" stroke="#e4572e"/>
+<path d="M300 256 l-18 14 M346 256 l16 10"/>
+<path d="M356 262 h22 l-3 30 h-16 z" stroke="#e4572e"/>
+<path d="M360 262 q7 -12 14 0" stroke="#e4572e"/>
+<path d="M310 276 v20 M336 276 v20 M302 296 h14 M330 296 h14"/>
+<path d="M20 330 h600"/>
+</g>
+<text x="455" y="116" font-family="Verdana, sans-serif" font-size="11" text-anchor="middle" fill="#33415c">PROVE YOU</text>
+<text x="455" y="132" font-family="Verdana, sans-serif" font-size="11" text-anchor="middle" fill="#33415c">ARE HUMAN</text>
+<text x="130" y="160" font-family="Verdana, sans-serif" font-size="13" text-anchor="middle" fill="#33415c">129 guides</text>
+</svg>

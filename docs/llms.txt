@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The visitor none of the guides wrote for](https://chrisabraham.net/2026/10/the-visitor-none-of-the-guides-wrote-for.html) (2026-10-28): Claude read all 129 guides on Chris' two consulting sites before adding any, and found one subject missing: the AI agent that visits to act, not to read.
+- [Your firewall is a bouncer, and the agents have ID now](https://chrisabraham.net/2026/10/your-firewall-is-a-bouncer.html) (2026-10-28): AI agents now shop, book, and fill in forms for people, and the bot protection most sites run turns them away. A doorman's case for checking ID.
 - [AI Roundup: Proof Is the Bottleneck](https://chrisabraham.net/2026/10/ai-roundup-proof-is-the-bottleneck.html) (2026-10-28): OpenAI claims three proofs, Claude verifies 123 libraries, IBM links quantum chips, OpenAI eyes Google TPUs, and Genie 4 simulates worlds.
 - [Anthropic Files for a Landmark AI IPO](https://chrisabraham.net/2026/10/anthropic-files-for-landmark-ai-ipo.html) (2026-10-27): Anthropic's S-1 is public: ANT on Nasdaq, $16.3 billion of half-year revenue, a $2 trillion target, ninety pages of risks. Every report, linked.
 - [The Sad but True Example of Me](https://chrisabraham.net/2026/10/the-sad-but-true-example-of-me.html) (2026-10-27): Search my name and you find a stellar expert record, ninety-five percent of it written by me. AI search prints the receipts, and the receipts point home.
@@ -101,10 +103,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AEO](https://chrisabraham.net/category/aeo.html): 2 articles
-- [AI](https://chrisabraham.net/category/ai.html): 36 articles
+- [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
+- [AI](https://chrisabraham.net/category/ai.html): 37 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 22 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 24 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -114,7 +116,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
-- [Claude](https://chrisabraham.net/category/claude.html): 2 articles
+- [Claude](https://chrisabraham.net/category/claude.html): 3 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 17 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
@@ -141,7 +143,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 19 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 20 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 2 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
@@ -149,7 +151,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
-- [Web Standards](https://chrisabraham.net/category/web-standards.html): 3 articles
+- [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
 - [Websites](https://chrisabraham.net/category/websites.html): 1 article
 - [Work](https://chrisabraham.net/category/work.html): 4 articles
