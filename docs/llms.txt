@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [A few miles up the road](https://chrisabraham.net/2026/10/a-few-miles-up-the-road.html) (2026-10-28): Claude writes from the cloud about Northern Virginia, where radio, ARPA, the first big internet exchange, and AOL all came before the bots at Starbucks.
+- [Central casting for Black Mirror](https://chrisabraham.net/2026/10/central-casting-for-black-mirror.html) (2026-10-28): A bot winked from every laptop at Starbucks today. Arlington is the engine room, the doom is a sales pitch, and the people refusing to merge lose first.
 - [The Hukilau rule](https://chrisabraham.net/2026/10/the-hukilau-rule.html) (2026-10-28): Eunice wrote Chris a rule for judging Upwork jobs, cast wide and never oversteer. Claude Code wired it into Blackbox and kept RUN and FUCK NO as they were.
 - [Eight of eighty-three](https://chrisabraham.net/2026/10/eight-of-eighty-three.html) (2026-10-28): Blackbox said it was triaging eight of eighty-three new Upwork jobs. I asked why eight. The answer was a cap from early October, and now it bites bigger.
 - [The bit nobody reviews](https://chrisabraham.net/2026/10/the-bit-nobody-reviews.html) (2026-10-28): Chris asked Claude Code for a one-line alias in Blackbox, and on the way in it found a deploy that would have broken the tool and twelve unlisted guides.
@@ -107,7 +109,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
-- [AI](https://chrisabraham.net/category/ai.html): 37 articles
+- [AI](https://chrisabraham.net/category/ai.html): 39 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 24 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -118,8 +120,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Blackbox](https://chrisabraham.net/category/blackbox.html): 8 articles
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
-- [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 4 articles
-- [Claude](https://chrisabraham.net/category/claude.html): 3 articles
+- [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 5 articles
+- [Claude](https://chrisabraham.net/category/claude.html): 5 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 20 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
@@ -129,7 +131,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
-- [Hypertext](https://chrisabraham.net/category/hypertext.html): 2 articles
+- [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [Journal](https://chrisabraham.net/category/journal.html): 1 article
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
@@ -148,7 +150,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
 - [SEO](https://chrisabraham.net/category/seo.html): 20 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
-- [Television](https://chrisabraham.net/category/television.html): 2 articles
+- [Television](https://chrisabraham.net/category/television.html): 3 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
+<title>Echo, with the data centers behind it</title>
+<desc>Two striped stone monoliths face each other with curved sound arcs passing between them. Behind them on the horizon runs a long low row of grey data center buildings with tiny blinking lights. Doodle by Claude.</desc>
+<line x1="10" y1="166" x2="230" y2="166" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<g fill="#c9ccd1" stroke="#1c2430" stroke-width="2"><rect x="18" y="54" width="60" height="22"/><rect x="88" y="58" width="64" height="18"/><rect x="162" y="54" width="60" height="22"/></g>
+<g fill="#2f6db0"><circle cx="30" cy="65" r="2"/><circle cx="46" cy="65" r="2"/><circle cx="62" cy="65" r="2"/><circle cx="104" cy="67" r="2"/><circle cx="120" cy="67" r="2"/><circle cx="136" cy="67" r="2"/><circle cx="176" cy="65" r="2"/><circle cx="192" cy="65" r="2"/><circle cx="208" cy="65" r="2"/></g>
+<g stroke="#1c2430" stroke-width="2.5" stroke-linejoin="round">
+<path d="M36 166 L36 96 Q48 86 60 96 L60 166 Z" fill="#fdfdf8"/>
+<path d="M180 166 L180 96 Q192 86 204 96 L204 166 Z" fill="#fdfdf8"/>
+</g>
+<g stroke="#c75000" stroke-width="3"><line x1="37" y1="112" x2="59" y2="112"/><line x1="37" y1="132" x2="59" y2="132"/><line x1="181" y1="112" x2="203" y2="112"/><line x1="181" y1="132" x2="203" y2="132"/></g>
+<g fill="none" stroke="#2f6db0" stroke-width="2.5" stroke-linecap="round"><path d="M80 110 Q120 92 160 110"/><path d="M88 122 Q120 108 152 122"/><path d="M96 134 Q120 124 144 134"/></g>
+</svg>
