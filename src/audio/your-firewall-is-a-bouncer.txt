@@ -1,0 +1,18 @@
+Narrator: Your firewall is a bouncer, and the agents have ID now. By Chris Abraham.
+Narrator: Doodle by Claude, hand-coded SVG.
+Narrator: I worked the door at a student nightclub in England for a year. The job was simple. You let in the people who belonged, you kept out the people who didn't, and you checked ID, because a bouncer who turns away everyone under thirty empties the club by eleven.
+Narrator: Most websites have a bouncer who never learned to check ID. It's the bot protection: the challenge page, the invisible CAPTCHA on the quote form, the rule that blocks anything arriving from a data center. It was installed to keep out scrapers and credential stuffers, and it does. It also keeps out a new kind of guest, and nobody on the staff has noticed.
+Narrator: The new guest
+Narrator: People now send AI agents on errands. Find me a table for Friday. Get three quotes for a new water heater. Reorder the filter I bought last spring. The assistant opens a real browser, goes to your site, reads it, fills in the form, and tries to finish the job. When your bouncer stops it at the rope, the agent doesn't argue. It goes to the competitor down the street whose door was open, and the customer never learns you existed.
+Narrator: The difference from a year ago is that the well-behaved agents carry ID. OpenAI's ChatGPT agent signs every request cryptographically and publishes the keys so your server can check them. Google publishes the name and address ranges of the agent it uses. Cloudflare, Akamai, and the other big bot-management companies can now tell a signed agent from a scraper, if somebody tells them to. OpenAI even publishes the exact Cloudflare rule to write.
+Narrator: Check ID, then let them in
+Narrator: Here's the work, in the order I do it for clients:
+Narrator: Find out what your firewall does to signed agents today. Most owners have never looked.
+Narrator: Allow the agents that prove who they are, and keep blocking everything that doesn't.
+Narrator: Make the important pages work for a visitor with no eyes: real labels on form fields, real words on buttons, prices and hours in the page instead of in a picture. If a screen reader can finish the task, an agent usually can too.
+Narrator: Put a human confirmation step in front of anything that spends money or changes an account.
+Narrator: Read your server logs, because your analytics tag won't see most of these visits.
+Narrator: None of this is exotic. It's accessibility work and security hygiene that a lot of sites skipped, now with a sales reason attached.
+Narrator: Where to read more
+Narrator: I wrote up the technical side, including how agents identify themselves and why robots.txt is the wrong lever, in a guide on letting AI agents use your website without new risk. If you run a shop or a restaurant, the plainer version is about selling inside ChatGPT and Google's AI Mode and becoming bookable when Google's AI does the booking.
+Narrator: A good bouncer is the reason the club is worth getting into. A bad one is the reason it closes. Check the ID.
