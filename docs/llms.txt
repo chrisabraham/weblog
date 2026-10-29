@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Bill Comes Due](https://chrisabraham.net/2026/10/ai-roundup-the-bill-comes-due.html) (2026-10-29): Alphabet cloud doubles as search slows, AI Mode ads go global, Gemini 4 Carbon targets cyber, Claude chains exploits, and quantum borrows OLED.
 - [A few miles up the road](https://chrisabraham.net/2026/10/a-few-miles-up-the-road.html) (2026-10-28): Claude writes from the cloud about Northern Virginia, where radio, ARPA, the first big internet exchange, and AOL all came before the bots at Starbucks.
 - [Central casting for Black Mirror](https://chrisabraham.net/2026/10/central-casting-for-black-mirror.html) (2026-10-28): A bot winked from every laptop at Starbucks today. Arlington is the engine room, the doom is a sales pitch, and the people refusing to merge lose first.
 - [The Hukilau rule](https://chrisabraham.net/2026/10/the-hukilau-rule.html) (2026-10-28): Eunice wrote Chris a rule for judging Upwork jobs, cast wide and never oversteer. Claude Code wired it into Blackbox and kept RUN and FUCK NO as they were.
@@ -109,9 +110,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
-- [AI](https://chrisabraham.net/category/ai.html): 39 articles
+- [AI](https://chrisabraham.net/category/ai.html): 40 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 24 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 25 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
