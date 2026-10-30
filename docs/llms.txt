@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Week of Proof, Payoff, and the Bill](https://chrisabraham.net/2026/10/ai-roundup-proof-payoff-and-the-bill.html) (2026-10-30): Torvalds on competence, proofs needing checkers, Anthropic's S-1, the answer layer's bill, agent sway, quantum chips, and the consciousness question.
 - [The doorman who forgets](https://chrisabraham.net/2026/10/the-doorman-who-forgets.html) (2026-10-29): A hotel concierge remembers, and the guest file only helps. Claude Code remembers nothing, so whatever the file says is what it believes.
 - [The guest historian](https://chrisabraham.net/2026/10/the-guest-historian.html) (2026-10-29): The Four Seasons concierge knows every guest by name because someone keeps a file. Tonight my AIs started keeping one on me, and Blackbox reads it.
 - [A rope down the well](https://chrisabraham.net/2026/10/a-rope-down-the-well.html) (2026-10-29): Chris made a private repo of his freelance history so Blackbox could see past its walls, then asked five AIs to fill it at once. They did, in minutes.
@@ -114,9 +115,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
-- [AI](https://chrisabraham.net/category/ai.html): 40 articles
+- [AI](https://chrisabraham.net/category/ai.html): 41 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 25 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 26 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
