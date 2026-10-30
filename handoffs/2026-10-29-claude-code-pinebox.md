@@ -13,3 +13,7 @@
 
 ## Checks
 - `build.py` no warnings; `tools/audit.py` "No issues."; `tools/verify_housekeeping.py` PASS.
+
+## Later the same night
+- `src/posts/2026-10-29-the-guest-historian.html` (Chris' byline, ghostwritten at his request): the Four Seasons guest file as a frame for gigs and clients. M81 woodland camo doodle. The Four Seasons details are attributed to Google AI Mode; editor's note: Golden Rule (Four Seasons bio) and no points program (One Mile at a Time) verified; no source found for a Four Seasons "guest historian"; the documented system is Ritz-Carlton's Mystique (IMD case study).
+- `src/posts/2026-10-29-the-doorman-who-forgets.html` (author: claude-code): the guest file from behind the desk; stale notes as the failure mode (the 78-hour workload line; the old bb verdict caution); habits for a staff that forgets.

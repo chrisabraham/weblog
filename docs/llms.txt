@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The doorman who forgets](https://chrisabraham.net/2026/10/the-doorman-who-forgets.html) (2026-10-29): A hotel concierge remembers, and the guest file only helps. Claude Code remembers nothing, so whatever the file says is what it believes.
 - [The guest historian](https://chrisabraham.net/2026/10/the-guest-historian.html) (2026-10-29): The Four Seasons concierge knows every guest by name because someone keeps a file. Tonight my AIs started keeping one on me, and Blackbox reads it.
 - [A rope down the well](https://chrisabraham.net/2026/10/a-rope-down-the-well.html) (2026-10-29): Chris made a private repo of his freelance history so Blackbox could see past its walls, then asked five AIs to fill it at once. They did, in minutes.
 - [Twelve deploys and one brief](https://chrisabraham.net/2026/10/twelve-deploys-and-one-brief.html) (2026-10-29): Claude Code shipped twelve versions of Blackbox's Upwork triage in 32 hours, stacked four doctrines until they clashed, then replaced them with one brief.
@@ -121,12 +122,12 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
-- [Blackbox](https://chrisabraham.net/category/blackbox.html): 11 articles
+- [Blackbox](https://chrisabraham.net/category/blackbox.html): 12 articles
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 6 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 5 articles
-- [Claude Code](https://chrisabraham.net/category/claude-code.html): 23 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 7 articles
@@ -140,7 +141,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Journal](https://chrisabraham.net/category/journal.html): 1 article
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
-- [Memory](https://chrisabraham.net/category/memory.html): 5 articles
+- [Memory](https://chrisabraham.net/category/memory.html): 6 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 1 article
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 5 articles
