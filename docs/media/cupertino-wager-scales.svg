@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 170">
+<title>Scales of justice weighing a smartphone against a betting slip</title>
+<desc>Amber ink doodle: a balance scale with a phone on one pan and a wager ticket on the other, the ticket side sinking lower.</desc>
+<g fill="none" stroke="#b45a12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="120" cy="22" r="5"/>
+<path d="M52 38 L188 30"/>
+<path d="M120 22 L120 138"/>
+<path d="M100 146 L140 146"/>
+<path d="M88 156 L152 156"/>
+<path d="M56 37 L42 84"/>
+<path d="M56 37 L72 84"/>
+<path d="M28 84 Q56 104 84 84"/>
+<rect x="48" y="56" width="16" height="27" rx="3"/>
+<path d="M53 77 L59 77"/>
+<path d="M184 31 L168 92"/>
+<path d="M184 31 L198 92"/>
+<path d="M152 92 Q182 112 212 92"/>
+<path d="M168 66 L198 60 L202 76 L172 82 Z"/>
+<path d="M184 63 L187 79" stroke-dasharray="2 4"/>
+</g>
+</svg>

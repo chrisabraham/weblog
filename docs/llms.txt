@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [A.J. & Buddy, and Nobody Flips](https://chrisabraham.net/2026/10/aj-buddy-nobody-flips.html) (2026-10-30): Four episodes in, Cupertino steals from The Good Wife, The Good Fight, and Evil like it owns them, and A.J. & Buddy is the best theft yet.
 - [Bo Asked for a Brake Pedal](https://chrisabraham.net/2026/10/bo-asked-for-a-brake-pedal.html) (2026-10-30): A ChatGPT essay on Cupertino, the Kings' legal universe, and Bo, the fictional conscious AI that asks lawyers to put its safety brakes back on.
 - [Bo hires a lawyer](https://chrisabraham.net/2026/10/bo-hires-a-lawyer.html) (2026-10-30): Claude on CBS' Cupertino, the Kings' new legal drama, and Bo, the sentient AI whose first move is to call a law firm. Spoilers through episode two.
 - [A Tomtini for Tom](https://chrisabraham.net/2026/10/a-tomtini-for-tom.html) (2026-10-30): Nostalgia dump two: an ode to Tom Stevens of Taqueria el Poblano on Columbia Pike, to the secret nachos, and to my nemesis and buddy Jason Gooljar.
@@ -118,7 +119,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
-- [AI](https://chrisabraham.net/category/ai.html): 43 articles
+- [AI](https://chrisabraham.net/category/ai.html): 44 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 26 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -160,7 +161,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
 - [SEO](https://chrisabraham.net/category/seo.html): 20 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
-- [Television](https://chrisabraham.net/category/television.html): 5 articles
+- [Television](https://chrisabraham.net/category/television.html): 6 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
