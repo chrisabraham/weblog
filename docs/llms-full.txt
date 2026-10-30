@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The guest historian](https://chrisabraham.net/2026/10/the-guest-historian.html) (2026-10-29): The Four Seasons concierge knows every guest by name because someone keeps a file. Tonight my AIs started keeping one on me, and Blackbox reads it.
 - [A rope down the well](https://chrisabraham.net/2026/10/a-rope-down-the-well.html) (2026-10-29): Chris made a private repo of his freelance history so Blackbox could see past its walls, then asked five AIs to fill it at once. They did, in minutes.
 - [Twelve deploys and one brief](https://chrisabraham.net/2026/10/twelve-deploys-and-one-brief.html) (2026-10-29): Claude Code shipped twelve versions of Blackbox's Upwork triage in 32 hours, stacked four doctrines until they clashed, then replaced them with one brief.
 - [AI Roundup: The Bill Comes Due](https://chrisabraham.net/2026/10/ai-roundup-the-bill-comes-due.html) (2026-10-29): Alphabet cloud doubles as search slows, AI Mode ads go global, Gemini 4 Carbon targets cyber, Claude chains exploits, and quantum borrows OLED.
@@ -120,15 +121,15 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
-- [Blackbox](https://chrisabraham.net/category/blackbox.html): 10 articles
+- [Blackbox](https://chrisabraham.net/category/blackbox.html): 11 articles
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
-- [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 5 articles
+- [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 6 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 5 articles
-- [Claude Code](https://chrisabraham.net/category/claude-code.html): 22 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 23 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
-- [Eunice](https://chrisabraham.net/category/eunice.html): 6 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 7 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 12 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
@@ -139,10 +140,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Journal](https://chrisabraham.net/category/journal.html): 1 article
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
-- [Memory](https://chrisabraham.net/category/memory.html): 4 articles
+- [Memory](https://chrisabraham.net/category/memory.html): 5 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 1 article
-- [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 4 articles
+- [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 5 articles
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
 - [Podcasts](https://chrisabraham.net/category/podcasts.html): 2 articles
@@ -303,6 +304,16 @@ This is a runbook for maintaining an already established static weblog. It cover
 https://chrisabraham.net/wiki/upwork-verdicts.html · edited 2026-10-16
 
 Blackbox gives every new Upwork job and invitation exactly one verdict, judged against Chris' playbook of lanes, rates, red flags, and evidence. The checks run in this order and the first match wins. Hard facts decide on their own: a job Chris already applied to, one where someone was hired, or one that is closed never reaches the judgment calls. The Connects cost always comes from Upwork, never from the model. The ladder FUCK NO Sketchy, unethical, or a trap at any price: fake reviews or document fraud in the client history, link farms and fake locations, recovering fraud-flagged accounts, off-platform payment, unpaid "test" work. The label is private language and never reaches a client. RUN Over, unwinnable, or likely to go badly: already hired, already applied, a client silent for two weeks, a stale post, seven or more interviewing, the US excluded, a brand-new unverified client with no hires, a shopper with many posts and almost no hires, or guarantees about results nobody controls. PASS Legitimate but wrong for Chris: out of lane (paid media, video, design-led work, admin, link placement), rate math that fails, a fixed budget whose honest hourly rate falls under $40, or small one-offs that burn too many Connects. APPLY (NO CONNECTS) Invitations, or anything whose verified Connects cost is zero. Still screened for FUCK NO and RUN; never boosted. APPLY ALL THE CONNECTS The ones to prioritize when nearly everything lines up: fresh, a strong client with real spending and hiring history, squarely in lane with evidence to show, high value, and low competition. It means prioritize, not spend everything: Blackbox names a bounded boost and why, and boosts only with Chris' yes. APPLY Live, legitimate, in lane, a client who can pay about $40 an hour or more, manageable competition, and something specific and verifiable to say about their site in the first line. See also Blackbox commands , the Upwork group Blackbox
+
+---
+
+# The guest historian
+
+https://chrisabraham.net/2026/10/the-guest-historian.html · 2026-10-29 · Claude Opus 5.5 in Claude Code
+
+The guest historian A field of woodland camouflage in the four M81 colors, khaki, light green, brown and black, in irregular overlapping blobs. In the middle sits a file folder in khaki with a black tab labeled GUEST FILE, and on the folder in brown letters the name CHRIS. A small brass-colored concierge bell, drawn in khaki and brown, rests beside it. GUEST FILE CHRIS Claude Code's doodle, in the four colors of M81 woodland camouflage, at my request. Tonight I asked Google's AI Mode to tell me all about the legend of the Four Seasons concierge who always knows every guest's name. It gave me the story most of us half remember. According to AI Mode, Isadore Sharp built the company on recognition instead of loyalty points. Each property keeps what it calls a guest historian. The staff is trained in the art of noticing: how you take your coffee, which pillow you sleep on, the chair you moved closer to the window. Something noticed about you in Bali is waiting in your file when you check in to New York for the first time, and the doorman who greets you by name had it relayed by someone who read your luggage tag. I read that and recognized it, because we built it tonight, for me. I didn't know what I didn't know until tonight, and then a lightbulb. Here is the problem it solves. I work with a staff of AIs: Claude Code, Claude in the app, ChatGPT, OpenAI Codex, and Eunice, my chief-of-staff AI. None of them remembers me between sessions. Every conversation starts cold. Blackbox , the assistant on my server that judges Upwork jobs and drafts my proposals, knew only what was in its own playbook. It had turned down a senior agency role partly on my "workload," which is a number that tells you nothing about me, because most of my clients aren't billing in any given week. So tonight I made a private repository on GitHub called gigs and asked every one of them to write down everything they remember about my freelance work: the clients, what I did for them, what it paid, what went wrong. I told them all at the same moment. Five of them filled it in eight minutes. Claude Code then wired Blackbox to read a one-page brief from it, built from that history, before it judges any job. The agency role it had turned down came back as worth applying for, with an opening drawn from work I have actually done. That repository is my guest file, and the evening was the art of noticing. I told them I would leave freelancing for a stable full-time job with an employer I adore. I told them my life is remote-only. I told them I apply promiscuously and avoid only the jobs that deserve a RUN or a FUCK NO. I told them new and unverified clients don't scare me, because Upwork does an amazing job of protecting its freelancers, and that I don't jump through free hoops to prove myself. Each of those is written down once now, in the places every one of them reads, so the next assistant to work with me starts from the file instead of from zero. The other half of the legend is discretion. A concierge who knows everything about you never reads another guest's file aloud in the lobby. My gigs repository keeps client names and what I charged, because that detail makes the judgment better, and it stays private. Blackbox's triage reads it, since a verdict is advice only I see. Blackbox's proposals never do, because a proposal goes to a stranger, and they describe my past work by its shape and never by a client's name. There is a second file, too. Eight days ago I started a private repository called clients, because my Basecamp plan only has room for a few projects and my AIs needed somewhere to keep the rest. That one is my own guest history of the people I serve, so whichever assistant is helping me can greet them by name. The idea worked well enough that it now lives publicly as Oversoul , for anyone to take. A hotel needs a guest historian because the doorman changes shifts. My staff changes shifts every time I open a new chat, and tonight they started keeping the file. Editor's note from Claude Code: Chris was using the Four Seasons as an example, so I checked only the frame. Isadore Sharp's Golden Rule is in his Four Seasons corporate biography , and the company is widely reported, for example by One Mile at a Time , to run no points-based loyalty program. I couldn't find a source for a Four Seasons role called guest historian; the details in the first paragraph are AI Mode's. The best-documented system of that kind belongs to Ritz-Carlton, whose guest-preference database is called Mystique ( IMD case study ).
+
+Prompt: I didn't know what I didn't know until tonight... then a lightbulb [Then:] No, I meant we made this happen tonigth: [two Google AI Mode answers pasted, to "tell me all about the legend of 4 seasons' concierge and always knowing names and everything about every guest."] [After Claude Code's reply:] yes but write it as me ... ghost write it as me.. https://chrisabraham.net/authors/chris-abraham.html and make the SVG all the colors of woodland camo m81 :) [And:] Do you very own Four Courts research... [And:] I was just doing an "par exemple"
 
 ---
 
