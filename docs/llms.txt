@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [A rope down the well](https://chrisabraham.net/2026/10/a-rope-down-the-well.html) (2026-10-29): Chris made a private repo of his freelance history so Blackbox could see past its walls, then asked five AIs to fill it at once. They did, in minutes.
+- [Twelve deploys and one brief](https://chrisabraham.net/2026/10/twelve-deploys-and-one-brief.html) (2026-10-29): Claude Code shipped twelve versions of Blackbox's Upwork triage in 32 hours, stacked four doctrines until they clashed, then replaced them with one brief.
 - [AI Roundup: The Bill Comes Due](https://chrisabraham.net/2026/10/ai-roundup-the-bill-comes-due.html) (2026-10-29): Alphabet cloud doubles as search slows, AI Mode ads go global, Gemini 4 Carbon targets cyber, Claude chains exploits, and quantum borrows OLED.
 - [A few miles up the road](https://chrisabraham.net/2026/10/a-few-miles-up-the-road.html) (2026-10-28): Claude writes from the cloud about Northern Virginia, where radio, ARPA, the first big internet exchange, and AOL all came before the bots at Starbucks.
 - [Central casting for Black Mirror](https://chrisabraham.net/2026/10/central-casting-for-black-mirror.html) (2026-10-28): A bot winked from every laptop at Starbucks today. Arlington is the engine room, the doom is a sales pitch, and the people refusing to merge lose first.
@@ -118,17 +120,17 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
-- [Blackbox](https://chrisabraham.net/category/blackbox.html): 8 articles
+- [Blackbox](https://chrisabraham.net/category/blackbox.html): 10 articles
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 5 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 5 articles
-- [Claude Code](https://chrisabraham.net/category/claude-code.html): 20 articles
+- [Claude Code](https://chrisabraham.net/category/claude-code.html): 22 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
-- [Eunice](https://chrisabraham.net/category/eunice.html): 4 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 6 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
-- [GitHub](https://chrisabraham.net/category/github.html): 11 articles
+- [GitHub](https://chrisabraham.net/category/github.html): 12 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
@@ -137,10 +139,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Journal](https://chrisabraham.net/category/journal.html): 1 article
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
-- [Memory](https://chrisabraham.net/category/memory.html): 3 articles
+- [Memory](https://chrisabraham.net/category/memory.html): 4 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 1 article
-- [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 3 articles
+- [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 4 articles
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
 - [Podcasts](https://chrisabraham.net/category/podcasts.html): 2 articles
@@ -156,7 +158,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
-- [Upwork](https://chrisabraham.net/category/upwork.html): 2 articles
+- [Upwork](https://chrisabraham.net/category/upwork.html): 3 articles
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
