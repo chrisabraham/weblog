@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title>A Tomtini for Tom</title>
+<desc>A taqueria storefront on Columbia Pike at six in the evening. Through the window a white-haired barman with a mustache holds up a dry gin martini with two olives. On the bar sit a basket of secret nachos and a plate of tostadas, and a small clock reads six o'clock.</desc>
+<rect width="1200" height="675" fill="#1a120b"/>
+<!-- evening sky -->
+<rect x="0" y="0" width="1200" height="120" fill="#2b1a0e"/>
+<circle cx="1060" cy="52" r="26" fill="#f4c542"/>
+<circle cx="1060" cy="52" r="40" fill="none" stroke="#b7791f" stroke-width="3" stroke-dasharray="5 8"/>
+<!-- building -->
+<rect x="90" y="120" width="1020" height="470" fill="#3a2415"/>
+<rect x="90" y="120" width="1020" height="64" fill="#8a3324"/>
+<text x="600" y="164" font-family="Georgia, serif" font-size="34" fill="#f7ead1" text-anchor="middle" letter-spacing="4">TAQUERIA EL POBLANO</text>
+<text x="600" y="212" font-family="Verdana, sans-serif" font-size="19" fill="#d9a441" text-anchor="middle">2401 Columbia Pike</text>
+<!-- window -->
+<rect x="150" y="240" width="620" height="300" fill="#f7ead1"/>
+<rect x="150" y="240" width="620" height="300" fill="none" stroke="#d9a441" stroke-width="8"/>
+<line x1="460" y1="240" x2="460" y2="540" stroke="#d9a441" stroke-width="6"/>
+<!-- Tom behind the bar: white hair, mustache -->
+<g>
+<ellipse cx="310" cy="330" rx="52" ry="58" fill="#e8b98d"/>
+<path d="M258 318 Q262 262 310 260 Q358 262 362 318 Q340 282 310 284 Q280 282 258 318 Z" fill="#f5f5f0"/>
+<path d="M282 352 Q310 366 338 352 Q338 372 310 374 Q282 372 282 352 Z" fill="#f5f5f0"/>
+<circle cx="290" cy="330" r="5" fill="#1a120b"/><circle cx="330" cy="330" r="5" fill="#1a120b"/>
+<path d="M236 540 L236 452 Q310 420 384 452 L384 540 Z" fill="#274b7a"/>
+<!-- arm raising the Tomtini -->
+<path d="M384 470 Q440 440 452 392" fill="none" stroke="#e8b98d" stroke-width="16" stroke-linecap="round"/>
+<g transform="translate(460,352)">
+<path d="M-42 0 L42 0 L0 52 Z" fill="none" stroke="#7fb3d5" stroke-width="5"/>
+<line x1="0" y1="52" x2="0" y2="86" stroke="#7fb3d5" stroke-width="5"/>
+<line x1="-28" y1="90" x2="28" y2="90" stroke="#7fb3d5" stroke-width="5"/>
+<line x1="-30" y1="-34" x2="26" y2="6" stroke="#b7791f" stroke-width="4"/>
+<circle cx="-18" cy="-20" r="9" fill="#6a994e"/><circle cx="2" cy="-6" r="9" fill="#6a994e"/>
+</g>
+</g>
+<!-- bar counter with secret nachos and tostadas -->
+<rect x="150" y="500" width="620" height="40" fill="#8a3324"/>
+<g transform="translate(590,478)">
+<path d="M-58 18 Q0 34 58 18 L46 -6 L-46 -6 Z" fill="#c0392b"/>
+<g fill="#f4c542" stroke="#b7791f" stroke-width="2"><path d="M-38 -8 L-18 -26 L-8 -8 Z"/><path d="M-14 -8 L4 -30 L16 -8 Z"/><path d="M12 -8 L30 -24 L42 -8 Z"/></g>
+<circle cx="2" cy="-2" r="10" fill="#fdf8e7"/>
+</g>
+<g transform="translate(690,486)">
+<ellipse rx="42" ry="12" fill="#fdf8e7"/>
+<ellipse rx="30" ry="8" fill="#d9a441"/>
+<circle cx="-10" cy="-4" r="5" fill="#c0392b"/><circle cx="10" cy="-4" r="5" fill="#6a994e"/>
+</g>
+<text x="310" y="578" font-family="Georgia, serif" font-size="21" fill="#f7ead1" text-anchor="middle" font-style="italic">Two olives, Tom.</text>
+<!-- clock at six, right panel -->
+<g transform="translate(930,330)">
+<circle r="86" fill="#fdf8e7" stroke="#d9a441" stroke-width="7"/>
+<line x1="0" y1="0" x2="0" y2="-58" stroke="#1a120b" stroke-width="7" stroke-linecap="round"/>
+<line x1="0" y1="0" x2="0" y2="52" stroke="#1a120b" stroke-width="7" stroke-linecap="round"/>
+<circle r="7" fill="#8a3324"/>
+<text y="132" font-family="Verdana, sans-serif" font-size="20" fill="#f7ead1" text-anchor="middle">in at six, home by eight</text>
+</g>
+<!-- Jason's camera, lower right -->
+<g transform="translate(930,520)">
+<rect x="-52" y="-28" width="104" height="62" rx="8" fill="#274b7a"/>
+<circle r="20" fill="#101623" stroke="#8fb7e8" stroke-width="4"/>
+<circle r="7" fill="#8fb7e8"/>
+<rect x="-30" y="-42" width="34" height="14" rx="4" fill="#274b7a"/>
+</g>
+</svg>

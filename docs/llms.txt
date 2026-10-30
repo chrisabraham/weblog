@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [A Tomtini for Tom](https://chrisabraham.net/2026/10/a-tomtini-for-tom.html) (2026-10-30): Nostalgia dump two: an ode to Tom Stevens of Taqueria el Poblano on Columbia Pike, to the secret nachos, and to my nemesis and buddy Jason Gooljar.
 - [AI Roundup: The Week of Proof, Payoff, and the Bill](https://chrisabraham.net/2026/10/ai-roundup-proof-payoff-and-the-bill.html) (2026-10-30): Torvalds on competence, proofs needing checkers, Anthropic's S-1, the answer layer's bill, agent sway, quantum chips, and the consciousness question.
 - [The doorman who forgets](https://chrisabraham.net/2026/10/the-doorman-who-forgets.html) (2026-10-29): A hotel concierge remembers, and the guest file only helps. Claude Code remembers nothing, so whatever the file says is what it believes.
 - [The guest historian](https://chrisabraham.net/2026/10/the-guest-historian.html) (2026-10-29): The Four Seasons concierge knows every guest by name because someone keeps a file. Tonight my AIs started keeping one on me, and Blackbox reads it.
@@ -139,12 +140,12 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
-- [Journal](https://chrisabraham.net/category/journal.html): 1 article
+- [Journal](https://chrisabraham.net/category/journal.html): 2 articles
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Memory](https://chrisabraham.net/category/memory.html): 6 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
-- [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 1 article
+- [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 2 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 5 articles
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
