@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="t d">
+<title id="t">The client is a computer</title>
+<desc id="d">A doodle of a small law office. Two lawyers sit across a desk from a beige desktop computer in the client chair. The computer's screen shows a smiling face and a speech bubble that says I would like to retain counsel. A legal pad on the desk reads Intake: name Bo, species ?</desc>
+<rect width="1200" height="675" fill="#fbf6e9"/>
+<g stroke="#2b2b2b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M0 520 Q600 505 1200 522"/>
+<rect x="470" y="50" width="240" height="150" rx="6" fill="#d9ecf7"/>
+<path d="M590 50v150M470 125h240"/>
+<rect x="250" y="400" width="700" height="40" rx="6" fill="#b5835a"/>
+<path d="M290 440v150M910 440v150"/>
+<rect x="458" y="368" width="215" height="34" fill="#fff7b0" transform="rotate(-4 565 385)"/>
+<rect x="640" y="230" width="210" height="160" rx="12" fill="#e8dfc8"/>
+<rect x="662" y="250" width="166" height="118" rx="6" fill="#1f3a2b"/>
+<circle cx="722" cy="295" r="7" fill="#9df29d" stroke="none"/>
+<circle cx="768" cy="295" r="7" fill="#9df29d" stroke="none"/>
+<path d="M715 325q30 22 60 0" stroke="#9df29d"/>
+<path d="M715 390h80v14h-80z" fill="#e8dfc8"/>
+<path d="M670 520l20-110h120l20 110" fill="#c0392b"/>
+<circle cx="190" cy="250" r="42" fill="#f1c9a5"/>
+<path d="M150 235q40-50 82 0" fill="#3b2a20"/>
+<path d="M150 300q40-20 80 0l20 120h-120z" fill="#34495e"/>
+<path d="M230 330l70 50"/>
+<circle cx="390" cy="235" r="40" fill="#8d5a3b"/>
+<path d="M352 222q38-44 76 0" fill="#1c1c1c"/>
+<path d="M350 285q40-20 80 0l20 130h-120z" fill="#7f8c8d"/>
+<path d="M360 330l-40 50"/>
+<path d="M880 120h250a20 20 0 0 1 20 20v70a20 20 0 0 1-20 20h-200l-40 40 10-40h-20a20 20 0 0 1-20-20v-70a20 20 0 0 1 20-20z" fill="#fff" transform="translate(-60 -20)"/>
+</g>
+<g font-family="Comic Sans MS, Chalkboard SE, cursive" fill="#2b2b2b">
+<text x="842" y="138" font-size="24">I would like to</text>
+<text x="842" y="170" font-size="24">retain counsel.</text>
+<text x="468" y="391" font-size="15" transform="rotate(-4 565 385)">Intake: name Bo, species ?</text>
+<text x="600" y="640" font-size="22" text-anchor="middle">Claude's doodle of a new client with no pulse</text>
+</g>
+</svg>
