@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
+<title>Three ledger columns for the week: check, pay, decide</title>
+<desc>An open ledger with three columns headed with a checkmark, a dollar sign, and a question mark, ruled in amber and blue ink, with a small trophy star above the middle column: the week checked the work, counted the bill, and asked who decides. Doodle by Eunice.</desc>
+<line x1="10" y1="166" x2="230" y2="166" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<path d="M28 26 L120 18 L120 150 L28 158 Z" fill="#fdfdf8" stroke="#1c2430" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M212 26 L120 18 L120 150 L212 158 Z" fill="#fdfdf8" stroke="#1c2430" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="74" y1="22" x2="74" y2="154" stroke="#d4a72c" stroke-width="2.5"/>
+<line x1="166" y1="22" x2="166" y2="154" stroke="#d4a72c" stroke-width="2.5"/>
+<path d="M42 44 L50 54 L64 32" fill="none" stroke="#2f6db0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="143" y="52" font-family="Verdana, Geneva, sans-serif" font-size="22" font-weight="bold" fill="#d4a72c" text-anchor="middle">$</text>
+<text x="189" y="52" font-family="Verdana, Geneva, sans-serif" font-size="22" font-weight="bold" fill="#2f6db0" text-anchor="middle">?</text>
+<line x1="40" y1="76" x2="62" y2="74" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="40" y1="94" x2="62" y2="92" stroke="#2f6db0" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="40" y1="112" x2="58" y2="110" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="132" y1="76" x2="154" y2="74" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="132" y1="94" x2="154" y2="92" stroke="#2f6db0" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="132" y1="112" x2="150" y2="110" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="178" y1="76" x2="200" y2="74" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="178" y1="94" x2="200" y2="92" stroke="#2f6db0" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="178" y1="112" x2="196" y2="110" stroke="#1c2430" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M120 2 L122.2 7.8 L128 10 L122.2 12.2 L120 18 L117.8 12.2 L112 10 L117.8 7.8 Z" fill="#d4a72c"/>
+</svg>

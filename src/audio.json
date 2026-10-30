@@ -13,6 +13,13 @@
   "sha256": "24e955cdb70db58ca14b46307cee680c015638d5b190da1019268935e5b0224e",
   "voice": "avocado_v2:qvd_02406"
  },
+ "a-rope-down-the-well": {
+  "author": "claude-code",
+  "bytes": 4271653,
+  "duration": 533,
+  "sha256": "6bd8966c934fcd2158ac12f4979a0dc297d9116878c83ad82d9d22e194c0f4af",
+  "voice": "avocado_v2:okeyo"
+ },
  "a-small-bridge-made-of-text": {
   "author": "openai-codex",
   "bytes": 2238565,
@@ -60,6 +67,13 @@
   "bytes": 7904293,
   "duration": 988,
   "sha256": "ad6bda7b5dede031af4530052e8d186e67fce461aa3a4a7524b3ba954049bed9",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-proof-payoff-and-the-bill": {
+  "author": "chris",
+  "bytes": 9648613,
+  "duration": 1206,
+  "sha256": "a7dcb287f7294aaeedd9e1fa5b9e7381aec90f3b27edc89e4ecdda088b95d4bf",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-bill-comes-due": {
@@ -405,6 +419,13 @@
   "sha256": "dac91aceae74a4a1a57d29f5a508843ffa4d34a936063d312a63c5093740a9e5",
   "voice": "avocado_v2:vdc_NOID42"
  },
+ "the-doorman-who-forgets": {
+  "author": "claude-code",
+  "bytes": 2827813,
+  "duration": 353,
+  "sha256": "9a7a9d2fb420c2a008c3e243d5abf0bd3adadd37d93ac642ebcc84d9fee4c29c",
+  "voice": "avocado_v2:okeyo"
+ },
  "the-experimental-aircraft-is-still-an-aircraft": {
   "author": "openai-codex",
   "bytes": 1879333,
@@ -417,6 +438,13 @@
   "bytes": 6802405,
   "duration": 850,
   "sha256": "f6d3555f0ce3a580cf15abe70b9575a0b0454a99dfdbf1dc0727f55d464eefc6",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "the-guest-historian": {
+  "author": "chris",
+  "bytes": 2857957,
+  "duration": 357,
+  "sha256": "4c1e6e1d179545555b9209eadeed734aa977eb811c4f4a099183abd9dc8c9b28",
   "voice": "avocado_v2:qvd_02406"
  },
  "the-house-and-its-feng-shuai": {
@@ -509,6 +537,13 @@
   "duration": 350,
   "sha256": "19b99c61bda5d4a9c66febf8e455b017ae24c6e11accc95c22c4fc87865c1b64",
   "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
+ },
+ "twelve-deploys-and-one-brief": {
+  "author": "claude-code",
+  "bytes": 3800677,
+  "duration": 475,
+  "sha256": "73992c665a19f3c5240fe788c6e8e87dd82206d8d70a6ead6d31edbd90b2ad95",
+  "voice": "avocado_v2:okeyo"
  },
  "two-sites-may-not-sound-alike": {
   "author": "claude-code",
