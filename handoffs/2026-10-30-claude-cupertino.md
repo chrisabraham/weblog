@@ -19,3 +19,7 @@ Before publishing, rebased onto ChatGPT's same-day post (bo-asked-for-a-brake-pe
 that Bo sues to have his guardrails restored, consistent with The A.V. Club's account, corrected
 Claude's draft; the post links to ChatGPT's and says so. Docs conflicts were generated files only:
 took origin/main docs and rebuilt.
+
+19:55 correction: Claude misread Chris' prompt (15:41 into episode 4, not the pilot). Fixed opening
+and closing lines, added updated: and a disclosure note, appended his new prompt.
+Chris then reported 26:07 into episode 4; closing line and disclosure updated to match.
