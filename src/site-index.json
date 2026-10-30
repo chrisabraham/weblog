@@ -634,6 +634,15 @@
     ]
   },
   {
+    "term": "Taqueria el Poblano",
+    "patterns": [
+      "Taqueria el Poblano",
+      "El Poblano",
+      "Tom Stevens",
+      "Thomas Stevens"
+    ]
+  },
+  {
     "term": "Tesla",
     "patterns": [
       "Tesla",
@@ -651,6 +660,13 @@
     "patterns": [
       "ThinkPad",
       "ThinkPads"
+    ]
+  },
+  {
+    "term": "Tomtini",
+    "patterns": [
+      "Tomtini",
+      "Tomtinis"
     ]
   },
   {
