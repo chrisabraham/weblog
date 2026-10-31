@@ -26,3 +26,9 @@ install for Mint/Ubuntu/Debian, dnf/pacman/brew/winget, libopus encoder check) a
 conversion into its own "Strip it to speech" heading. Added updated:, appended his prompt, and
 a dated disclosure note. Package names checked from memory: RPM Fusion is required on Fedora for
 the full ffmpeg build; the ~100 MB download figure is an estimate, not measured here.
+
+17:25 update: hand-holding pass at Chris' request across all three versions (this post, the
+christopherabraham.com guide, the gerriscorp.com guide): opening a terminal and pasting, cd/ls
+to the file, silent sudo password, verifying each install, Hugging Face signup and token copy,
+nano for ~/.bashrc, mkdir for the transcripts folder, reading the result. Added updated:,
+appended his prompt, and a second dated disclosure note.
