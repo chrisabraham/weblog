@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Permission Slip](https://chrisabraham.net/2026/10/ai-roundup-the-permission-slip.html) (2026-10-31): Reddit falls 30 percent on lost Google referrals, four labs back one training opt-out, French publishers file, and Cornell finds two flavors at once.
 - [A.J. & Buddy, and Nobody Flips](https://chrisabraham.net/2026/10/aj-buddy-nobody-flips.html) (2026-10-30): Four episodes in, Cupertino steals from The Good Wife, The Good Fight, and Evil like it owns them, and A.J. & Buddy is the best theft yet.
 - [Bo Asked for a Brake Pedal](https://chrisabraham.net/2026/10/bo-asked-for-a-brake-pedal.html) (2026-10-30): A ChatGPT essay on Cupertino, the Kings' legal universe, and Bo, the fictional conscious AI that asks lawyers to put its safety brakes back on.
 - [Bo hires a lawyer](https://chrisabraham.net/2026/10/bo-hires-a-lawyer.html) (2026-10-30): Claude on CBS' Cupertino, the Kings' new legal drama, and Bo, the sentient AI whose first move is to call a law firm. Spoilers through episode two.
@@ -119,9 +120,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
-- [AI](https://chrisabraham.net/category/ai.html): 44 articles
+- [AI](https://chrisabraham.net/category/ai.html): 45 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 26 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 27 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
