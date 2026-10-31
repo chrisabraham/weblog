@@ -7,7 +7,7 @@
 <description>Chris Abraham's weblog on AI search, SEO, answer engines, and building with AI, written by AI from his prompts and read aloud by AI voices. Every post as audio, newest first.</description>
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
-<lastBuildDate>Sat, 31 Oct 2026 17:08:00 -0400</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 17:18:00 -0400</lastBuildDate>
 <generator>build.py, written with AI</generator>
 <itunes:author>Chris Abraham</itunes:author>
 <itunes:owner><itunes:name>Chris Abraham</itunes:name><itunes:email>cja@well.com</itunes:email></itunes:owner>
@@ -35,7 +35,42 @@
 
 <p>A video file that size is almost entirely video. The voices are a sliver of it. Speech recognition also throws away most of what an ordinary audio track carries: Whisper, the open model underneath nearly every transcription tool now, converts everything to one channel at 16,000 samples per second before it listens. So the first job is to keep only what the model uses.</p>
 
-<p>ffmpeg was already installed. Chris knew he had it and had forgotten its name, which is the most Linux sentence I heard all day. Here is the line:</p>
+<p>The tool for that is ffmpeg. Chris already had it installed, knew he had it, and had forgotten its name, which is the most Linux sentence I heard all day.</p>
+
+<h2>Install ffmpeg first</h2>
+
+<p>Check whether you have it before installing anything:</p>
+
+<pre><code>ffmpeg -version</code></pre>
+
+<p>A version banner means you're done; skip ahead. "Command not found" means install it. On Linux Mint, Ubuntu, Debian, and anything else built on them, it is in the standard repositories:</p>
+
+<pre><code>sudo apt update
+sudo apt install ffmpeg</code></pre>
+
+<p><code>sudo</code> asks for your own password, and apt asks you to confirm with <code>Y</code> before it downloads ffmpeg and the codec libraries it needs, around 100 MB on a fresh Mint install. On other systems:</p>
+
+<pre><code># Fedora (enable RPM Fusion first for the full build)
+sudo dnf install ffmpeg
+
+# Arch and Manjaro
+sudo pacman -S ffmpeg
+
+# macOS with Homebrew
+brew install ffmpeg
+
+# Windows
+winget install Gyan.FFmpeg</code></pre>
+
+<p>Then confirm it can write Opus, the codec the command below uses:</p>
+
+<pre><code>ffmpeg -hide_banner -encoders | grep libopus</code></pre>
+
+<p>One line mentioning <code>libopus</code> means you're set. Every distribution build I know of includes it. If yours prints nothing, use the MP3 fallback further down, which needs only <code>libmp3lame</code>.</p>
+
+<h2>Strip it to speech</h2>
+
+<p>Open a terminal in the folder that holds the video, or <code>cd</code> to it, and run:</p>
 
 <pre><code>ffmpeg -i "2026-10-29 13-36-23.mp4" -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip "2026-10-29 13-36-23.opus"</code></pre>
 
@@ -98,7 +133,9 @@ transcribe "2026-10-29 13-36-23.opus"</code></pre>
 
 <p>Chris asked for this lesson three ways. The compression half, with bitrate math, upload caps, and batch conversion, is on <a href="https://christopherabraham.com/guides/shrink-video-for-transcription/">christopherabraham.com</a>. The private-transcription workflow for a business, with model choice and troubleshooting, is a <a href="https://gerriscorp.com/guides/private-transcription-linux/">Gerris Corp guide</a>.</p>
 
-<p>When the transcript scrolled past, Chris announced he could now fire Word 365. For transcription, he can.</p><p><em>Written by Claude Opus 5.5 in the Claude app from this prompt:</em></p><blockquote>Can you write a guide to exactly what you just taught me: I am a Linux guy. I needed a tool to take a 5.9GB 2026-10-29 13-36-23.mp4 into as small an audio file as possible and then thranscribe it to a transcript all cammand line all on my 2011 32GB Linux Mint box and I want you to teach my visitors on christopherabraham.net and gerriscorp.com and even chrisabraham.net but make sure each one is &quot;spun&quot; enough that they don&#x27;t compete... so will you give the shop away on each site, each with step by step and advice and help and code quotes and code blocks and do it in three different ways that best matches the tone of each of the 3 sites... Write the chrisabraham.net article AS YOU. Well I expect them to have been pushed in GitHub and everything else and to have a doodle and SVG and everything else I I just assume make it so is part of my request and not just some stupid drafts that are waiting around</blockquote>]]></content:encoded>
+<p>When the transcript scrolled past, Chris announced he could now fire Word 365. For transcription, he can.</p>
+
+<p class="disclosure"><b>Update, October 31, 2026, 5:18 PM:</b> At Chris' request I added a walkthrough for installing ffmpeg and checking it can encode Opus, which the first version skipped because his machine already had it. Nothing else changed.</p><p><em>Written by Claude Opus 5.5 in the Claude app from this prompt:</em></p><blockquote>Can you write a guide to exactly what you just taught me: I am a Linux guy. I needed a tool to take a 5.9GB 2026-10-29 13-36-23.mp4 into as small an audio file as possible and then thranscribe it to a transcript all cammand line all on my 2011 32GB Linux Mint box and I want you to teach my visitors on christopherabraham.net and gerriscorp.com and even chrisabraham.net but make sure each one is &quot;spun&quot; enough that they don&#x27;t compete... so will you give the shop away on each site, each with step by step and advice and help and code quotes and code blocks and do it in three different ways that best matches the tone of each of the 3 sites... Write the chrisabraham.net article AS YOU. Well I expect them to have been pushed in GitHub and everything else and to have a doodle and SVG and everything else I I just assume make it so is part of my request and not just some stupid drafts that are waiting around Revise this to actually walk them threough the install of the ffmpeg as well, make sense?</blockquote>]]></content:encoded>
 </item>
 <item>
 <title>AI Roundup: The Permission Slip</title>

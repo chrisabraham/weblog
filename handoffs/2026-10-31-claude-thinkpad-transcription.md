@@ -20,3 +20,9 @@ whisper-ctranslate2 README and PyPI page on October 31; the current release uses
 pyannote/speaker-diarization-community-1, older releases the 3.1 and segmentation-3.0 models.
 
 Unverified: the 480 MB size of the small model is from memory, not measured here.
+
+17:18 update: at Chris' request, added an "Install ffmpeg first" section (version check, apt
+install for Mint/Ubuntu/Debian, dnf/pacman/brew/winget, libopus encoder check) and split the
+conversion into its own "Strip it to speech" heading. Added updated:, appended his prompt, and
+a dated disclosure note. Package names checked from memory: RPM Fusion is required on Fedora for
+the full ffmpeg build; the ~100 MB download figure is an estimate, not measured here.
