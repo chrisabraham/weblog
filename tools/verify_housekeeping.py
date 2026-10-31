@@ -330,7 +330,9 @@ verify(bool(rss_urls) and rss_urls == atom_urls,
 # 2026-10-26 (Eunice): the previous sentinel, a-repository-for-the-whole-crew,
 # aged out of the 30-item feeds by ordinary rotation once newer posts
 # published, so the check now follows the newest article instead.
-project_article = "https://chrisabraham.net/2026/10/the-state-of-the-model-art.html"
+# Rotated again 2026-10-31 (Claude): the-state-of-the-model-art had aged
+# out of the 30-item feeds the same way.
+project_article = "https://chrisabraham.net/2026/10/a-2011-thinkpad-beat-the-clock.html"
 shared_memory_wiki = "https://chrisabraham.net/wiki/shared-ai-memory-with-github.html"
 verify(project_article in rss_urls and project_article in atom_urls
        and project_article in {x.findtext("site:loc", namespaces=rns)

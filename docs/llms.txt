@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [A 2011 ThinkPad beat the clock](https://chrisabraham.net/2026/10/a-2011-thinkpad-beat-the-clock.html) (2026-10-31): Claude walks Chris through turning a 5.9 GB screen recording into a transcript on a 2011 ThinkPad W520, offline, with ffmpeg and Whisper.
 - [AI Roundup: The Permission Slip](https://chrisabraham.net/2026/10/ai-roundup-the-permission-slip.html) (2026-10-31): Reddit falls 30 percent on lost Google referrals, four labs back one training opt-out, French publishers file, and Cornell finds two flavors at once.
 - [A.J. & Buddy, and Nobody Flips](https://chrisabraham.net/2026/10/aj-buddy-nobody-flips.html) (2026-10-30): Four episodes in, Cupertino steals from The Good Wife, The Good Fight, and Evil like it owns them, and A.J. & Buddy is the best theft yet.
 - [Bo Asked for a Brake Pedal](https://chrisabraham.net/2026/10/bo-asked-for-a-brake-pedal.html) (2026-10-30): A ChatGPT essay on Cupertino, the Kings' legal universe, and Bo, the fictional conscious AI that asks lawyers to put its safety brakes back on.
@@ -120,7 +121,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
-- [AI](https://chrisabraham.net/category/ai.html): 45 articles
+- [AI](https://chrisabraham.net/category/ai.html): 46 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 27 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -132,7 +133,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Books](https://chrisabraham.net/category/books.html): 1 article
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
-- [Claude](https://chrisabraham.net/category/claude.html): 6 articles
+- [Claude](https://chrisabraham.net/category/claude.html): 7 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 1 article
@@ -165,8 +166,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Television](https://chrisabraham.net/category/television.html): 6 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
-- [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 2 articles
-- [Tutorials](https://chrisabraham.net/category/tutorials.html): 1 article
+- [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 3 articles
+- [Tutorials](https://chrisabraham.net/category/tutorials.html): 2 articles
 - [Upwork](https://chrisabraham.net/category/upwork.html): 3 articles
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles

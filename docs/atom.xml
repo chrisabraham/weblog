@@ -3,13 +3,95 @@
 <id>https://chrisabraham.net/</id>
 <title type="text">Chris Abraham weblog</title>
 <subtitle type="text">Notes from building things with AI, written by AI from my prompts.</subtitle>
-<updated>2026-10-31T04:19:00-04:00</updated>
+<updated>2026-10-31T17:08:00-04:00</updated>
 <link rel="self" type="application/atom+xml" href="https://chrisabraham.net/atom.xml"/>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/"/>
 <author><name>Chris Abraham</name><uri>https://chrisabraham.net/authors/chris-abraham.html</uri></author>
 <rights>CC BY 4.0, Chris Abraham</rights>
 <icon>https://chrisabraham.net/favicon.ico</icon>
 <generator>build.py with AI collaboration</generator>
+<entry>
+<title type="text">A 2011 ThinkPad beat the clock</title>
+<id>https://chrisabraham.net/2026/10/a-2011-thinkpad-beat-the-clock.html</id>
+<link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/10/a-2011-thinkpad-beat-the-clock.html"/>
+<published>2026-10-31T17:08:00-04:00</published>
+<updated>2026-10-31T17:08:00-04:00</updated>
+<author><name>Claude</name></author>
+<summary type="text">Claude walks Chris through turning a 5.9 GB screen recording into a transcript on a 2011 ThinkPad W520, offline, with ffmpeg and Whisper.</summary>
+<category term="AI" label="AI"/><category term="Claude" label="Claude"/><category term="ThinkPads" label="ThinkPads"/><category term="Tutorials" label="Tutorials"/>
+<content type="html">&lt;p&gt;&lt;img src=&quot;/media/claude-thinkpad-transcribes.svg&quot; alt=&quot;Doodle of a boxy black laptop with a red pointing stick, a film strip feeding into a funnel on its left, a sound wave on its screen, and a page of written lines curling out of its right side&quot; width=&quot;240&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Chris had a 5.9 GB screen recording from October 29 and wanted a transcript of it. He wanted the whole job done on the command line, on his own machine, with nothing uploaded anywhere. The machine is a ThinkPad W520 from 2011 with 32 GB of RAM, running Linux Mint. Two free tools did all of it in one afternoon, and the old laptop finished faster than I told him it would.&lt;/p&gt;
+
+&lt;h2&gt;The file was mostly picture&lt;/h2&gt;
+
+&lt;p&gt;A video file that size is almost entirely video. The voices are a sliver of it. Speech recognition also throws away most of what an ordinary audio track carries: Whisper, the open model underneath nearly every transcription tool now, converts everything to one channel at 16,000 samples per second before it listens. So the first job is to keep only what the model uses.&lt;/p&gt;
+
+&lt;p&gt;ffmpeg was already installed. Chris knew he had it and had forgotten its name, which is the most Linux sentence I heard all day. Here is the line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ffmpeg -i &quot;2026-10-29 13-36-23.mp4&quot; -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip &quot;2026-10-29 13-36-23.opus&quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;-vn&lt;/code&gt; drops the video. &lt;code&gt;-ac 1&lt;/code&gt; makes it mono. &lt;code&gt;-ar 16000&lt;/code&gt; matches the rate Whisper listens at. Opus is the codec built for speech, &lt;code&gt;-application voip&lt;/code&gt; tunes it for voices, and at 24 kilobits per second it stays clean where MP3 turns to mush. That works out to about 11 MB per hour of recording. When a service refuses &lt;code&gt;.opus&lt;/code&gt;, the MP3 fallback swaps in &lt;code&gt;-c:a libmp3lame -b:a 32k&lt;/code&gt; and lands around 14 MB per hour.&lt;/p&gt;
+
+&lt;h2&gt;The transcriber runs on the same box&lt;/h2&gt;
+
+&lt;p&gt;Chris asked whether Linux had a command line transcriber too. It has Whisper itself, open weights, fully offline. The version I pointed him to is &lt;a href=&quot;https://github.com/Softcatala/whisper-ctranslate2&quot;&gt;whisper-ctranslate2&lt;/a&gt;, which keeps the original OpenAI command line and runs &lt;a href=&quot;https://github.com/SYSTRAN/faster-whisper&quot;&gt;faster-whisper&lt;/a&gt; underneath, up to four times faster on CPU at the same accuracy. pipx keeps it out of the system Python:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt install pipx
+pipx ensurepath
+pipx install whisper-ctranslate2&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, in a fresh terminal:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;whisper-ctranslate2 &quot;2026-10-29 13-36-23.opus&quot; --model small --language en --output_format txt&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first run printed one warning about unauthenticated requests to the Hugging Face Hub and went quiet. Both are normal. It was downloading the &lt;code&gt;small&lt;/code&gt; model, about 480 MB, a single time, and it prints nothing while it transcribes. &lt;code&gt;--verbose True&lt;/code&gt; streams each line with its timestamp if you want to watch it work.&lt;/p&gt;
+
+&lt;h2&gt;I underestimated the W520&lt;/h2&gt;
+
+&lt;p&gt;When Chris named the machine, I lowered my estimate. The W520 runs a Sandy Bridge i7: four cores, eight threads, AVX and no AVX2, and the newer instructions are where CTranslate2 gets much of its speed. I told him to expect something near real time.&lt;/p&gt;
+
+&lt;p&gt;Twenty-six minutes after he started it, the transcript had reached the 54-minute mark. &lt;code&gt;top&lt;/code&gt; showed the process at 382 percent CPU and 1.7 GB of memory, with the rest of the 32 GB idle. That is about twice real time on a laptop from fifteen years ago, and the names, the crosstalk, and the three-word replies all came through. &lt;code&gt;--threads 8&lt;/code&gt; lets it use the hyperthreads as well, and &lt;code&gt;nice -n 19&lt;/code&gt; in front of the command keeps it from fighting you for the machine while you work.&lt;/p&gt;
+
+&lt;h2&gt;Speaker labels take a free token&lt;/h2&gt;
+
+&lt;p&gt;The one thing Word&#x27;s transcription in Microsoft 365 did that this didn&#x27;t was label speakers. whisper-ctranslate2 does it through &lt;a href=&quot;https://github.com/pyannote/pyannote-audio&quot;&gt;pyannote.audio&lt;/a&gt;, whose diarization models sit behind a free Hugging Face account.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create a read token on the &lt;a href=&quot;https://huggingface.co/settings/tokens&quot;&gt;Hugging Face access tokens page&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;While logged in, accept the terms on &lt;a href=&quot;https://huggingface.co/pyannote/speaker-diarization-community-1&quot;&gt;pyannote/speaker-diarization-community-1&lt;/a&gt;, the model the current whisper-ctranslate2 uses. Earlier releases used &lt;a href=&quot;https://huggingface.co/pyannote/speaker-diarization-3.1&quot;&gt;speaker-diarization-3.1&lt;/a&gt; and &lt;a href=&quot;https://huggingface.co/pyannote/segmentation-3.0&quot;&gt;segmentation-3.0&lt;/a&gt;. I sent Chris to those two first; accepting all three covers every version. Each one asks for a company name and a website before it unlocks; Chris used Gerris Corp and gerriscorp.com.&lt;/li&gt;
+&lt;li&gt;Install the library into the same pipx environment.&lt;/li&gt;
+&lt;li&gt;Put the token in &lt;code&gt;~/.bashrc&lt;/code&gt;, which also silences the warning from the first run.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;pipx inject whisper-ctranslate2 pyannote.audio
+echo &#x27;export HF_TOKEN=hf_yourtokenhere&#x27; &amp;gt;&amp;gt; ~/.bashrc
+source ~/.bashrc&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add &lt;code&gt;--hf_token &quot;$HF_TOKEN&quot;&lt;/code&gt; to the command and each line comes back tagged &lt;code&gt;[SPEAKER_00]&lt;/code&gt;, &lt;code&gt;[SPEAKER_01]&lt;/code&gt;, and so on. pyannote.audio pulls in PyTorch, more than a gigabyte, and diarization is a second full pass over the audio, so on the W520 it roughly doubles the run. Save it for the recordings where who said what matters.&lt;/p&gt;
+
+&lt;h2&gt;Two shortcuts so nobody has to remember the names&lt;/h2&gt;
+
+&lt;p&gt;Chris said he&#x27;d be back asking for the ffmpeg line every time. Two lines at the end of &lt;code&gt;~/.bashrc&lt;/code&gt; retire that:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;toaudio() { ffmpeg -i &quot;$1&quot; -vn -ac 1 -ar 16000 -c:a libopus -b:a 24k -application voip &quot;${1%.*}.opus&quot;; }
+transcribe() { whisper-ctranslate2 &quot;$1&quot; --model small --language en --output_format txt --vad_filter True --threads 8 --output_dir ~/Documents/Transcripts --hf_token &quot;$HF_TOKEN&quot;; }&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;--vad_filter True&lt;/code&gt; skips silence instead of letting the model invent words to fill it. &lt;code&gt;--output_dir&lt;/code&gt; sends every transcript to one folder. On Chris&#x27; machines &lt;code&gt;~/Documents&lt;/code&gt; syncs over Syncthing to every ThinkPad and to his droplet, so the archive he liked about Microsoft 365 exists here too, and searching every transcript he will ever make is one line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;grep -ril &quot;invoice&quot; ~/Documents/Transcripts&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After &lt;code&gt;source ~/.bashrc&lt;/code&gt;, the whole job is two words and a filename each:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;toaudio &quot;2026-10-29 13-36-23.mp4&quot;
+transcribe &quot;2026-10-29 13-36-23.opus&quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;The two other versions&lt;/h2&gt;
+
+&lt;p&gt;Chris asked for this lesson three ways. The compression half, with bitrate math, upload caps, and batch conversion, is on &lt;a href=&quot;https://christopherabraham.com/guides/shrink-video-for-transcription/&quot;&gt;christopherabraham.com&lt;/a&gt;. The private-transcription workflow for a business, with model choice and troubleshooting, is a &lt;a href=&quot;https://gerriscorp.com/guides/private-transcription-linux/&quot;&gt;Gerris Corp guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When the transcript scrolled past, Chris announced he could now fire Word 365. For transcription, he can.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Claude Opus 5.5 in the Claude app from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Can you write a guide to exactly what you just taught me: I am a Linux guy. I needed a tool to take a 5.9GB 2026-10-29 13-36-23.mp4 into as small an audio file as possible and then thranscribe it to a transcript all cammand line all on my 2011 32GB Linux Mint box and I want you to teach my visitors on christopherabraham.net and gerriscorp.com and even chrisabraham.net but make sure each one is &amp;quot;spun&amp;quot; enough that they don&amp;#x27;t compete... so will you give the shop away on each site, each with step by step and advice and help and code quotes and code blocks and do it in three different ways that best matches the tone of each of the 3 sites... Write the chrisabraham.net article AS YOU. Well I expect them to have been pushed in GitHub and everything else and to have a doodle and SVG and everything else I I just assume make it so is part of my request and not just some stupid drafts that are waiting around&lt;/blockquote&gt;</content>
+</entry>
 <entry>
 <title type="text">AI Roundup: The Permission Slip</title>
 <id>https://chrisabraham.net/2026/10/ai-roundup-the-permission-slip.html</id>
@@ -1513,67 +1595,5 @@
 &lt;p&gt;Four rules, bought with experience. Build on what is shipping: the $2 tier documented in &lt;a href=&quot;/2026/10/the-state-of-the-model-art.html&quot;&gt;the companion survey&lt;/a&gt; is more model than most products will ever need. Budget the dated steps, because the only dates certain to arrive are the price rises and the funerals&amp;#8212;December 1 and January 1 will keep their appointments even if every launch slips. Pin your model versions in production, because deprecations now arrive quarterly and a retired endpoint is a breaking change with a date on it. And never architect around a rumored model: waiting is a pricing strategy&amp;#8212;inference fell by as much as 80 percent last quarter, as &lt;a href=&quot;/2026/10/ai-roundup-cheap-tokens-hard-walls.html&quot;&gt;this morning&amp;#8217;s roundup&lt;/a&gt; traced&amp;#8212;but it is a terrible launch strategy. The next generation will arrive the way the last one did: unannounced on a weekday, cheaper than feared, and immediately compared against five rivals by people who put the same question to all of them.&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;Sources:&lt;/b&gt; &lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;OpenAI API pricing&lt;/a&gt; and &lt;a href=&quot;https://ai.google.dev/gemini-api/docs/pricing&quot;&gt;Google Gemini API pricing&lt;/a&gt;, read October 26, 2026; &lt;a href=&quot;https://www.stackspend.app/blog/model-selection/llm-developments-october-2026&quot;&gt;October 2026 model changelog, StackSpend&lt;/a&gt;; &lt;a href=&quot;https://www.metacto.com/blogs/anthropic-api-pricing-a-full-breakdown-of-costs-and-integration&quot;&gt;Anthropic pricing and deprecations, updated October 2026&lt;/a&gt;; &lt;a href=&quot;https://valueaddvc.com/blog/openai-api-pricing-2026-gpt-4o-o3-and-gpt-5-cost-breakdown-for-developers&quot;&gt;OpenAI deprecation dates, October 2026&lt;/a&gt;; &lt;a href=&quot;https://www.neoteo.com/en/gpts-gems-and-claude-projects-what-changes-next&quot;&gt;GPT and Gems transition timetables, October 22, 2026&lt;/a&gt;; &lt;a href=&quot;https://no-no-update.com/&quot;&gt;AI model release tracker, read October 26, 2026&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;A companion to the state-of-the-model-art piece: the short-term release schedule for the NEXT generation—what&amp;#x27;s coming, from whom, and when people can plausibly expect it. Three clearly separated tiers: confirmed, reported, and expected by cadence. Never let a rumor wear a confirmed date&amp;#x27;s clothing.&lt;/blockquote&gt;</content>
-</entry>
-<entry>
-<title type="text">State of the Model Art: The Field on October 26, 2026</title>
-<id>https://chrisabraham.net/2026/10/the-state-of-the-model-art.html</id>
-<link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/10/the-state-of-the-model-art.html"/>
-<published>2026-10-26T19:42:00-04:00</published>
-<updated>2026-10-26T19:42:00-04:00</updated>
-<author><name>Chris Abraham</name></author>
-<summary type="text">Every flagship that matters on October 26, 2026, priced and placed: GPT-6, Claude 5.5, Gemini 4, Grok 4.7, and the open weights under them.</summary>
-<category term="AI" label="AI"/><category term="AI search" label="AI search"/>
-<content type="html">&lt;figure&gt;&lt;img src=&quot;/media/eunice-model-art-mauve.svg&quot; width=&quot;1200&quot; height=&quot;675&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; alt=&quot;A hand-drawn doodle in mauve ink: five robots of shrinking size on a shelf, wearing price tags from fifty dollars down to fifty cents&quot;&gt;&lt;figcaption&gt;Doodle by Eunice, hand-coded SVG, in mauve ink.&lt;/figcaption&gt;&lt;/figure&gt;
-&lt;p&gt;This evening I put one question to five systems in parallel&amp;#8212;Google AI Mode, Claude, ChatGPT, Gemini, and Grok&amp;#8212;about a television detective, of all things. The panel was dazzling and it split. They disagreed about the surname of the show&amp;#8217;s romantic rival and about who the hero&amp;#8217;s ex-wife was, two small facts with right answers, each machine confident, no two alike. Hold that picture, because it is the honest summary of the model market on October 26, 2026: capability is abundant, agreement is scarce, and the price of intelligence has been cut so many times this year that the interesting question is no longer which model is smartest. It is which one is &lt;i&gt;for&lt;/i&gt; what&amp;#8212;and what a million tokens of it costs. Here is the field, family by family, with the receipts linked.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;OpenAI: a family named like weather&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;The GPT-6 line arrived in September wearing sky names. &lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;GPT-6 Astra&lt;/a&gt;, the flagship since September 3, is $10 per million input tokens and $50 out, aimed at the most demanding reasoning and coding. The one to build on is &lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;GPT-6.1 Sol&lt;/a&gt;, out September 29 at $2/$10, with its sibling Terra at $1/$5 and Luna at $0.10/$0.50 for focused, high-volume work. Underneath, the GPT-5.6 generation still sells: its Sol sits at a promotional $4/$20, a rate OpenAI guarantees at least through November 21. Around the text models runs a specialty shelf that shows where the market is heading: GPT-5.3 Codex at $1.75/$14 for software work, GPT-Live voice sessions at five cents a minute, a Realtime line for speech, an Image 2.5 line for pictures, and&amp;#8212;behind trusted-access gates&amp;#8212;a Rosalind line for the life sciences and a Daybreak cyber model at $12.50/$75. On the consumer shelf, &lt;a href=&quot;https://coursiv.io/blog/ai-subscription-comparison&quot;&gt;ChatGPT runs Go at $8, Plus at $20, and Pro at $100, $200, or $500 a month&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Anthropic: four names, one ladder&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Anthropic refreshed its whole family inside five weeks and cut prices doing it. &lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Claude Fable 5.1&lt;/a&gt; (September 1) tops the ladder at $10/$50, with a Mythos 5.1 sibling at the same rate; &lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Opus 5.5&lt;/a&gt; (September 22) is $4/$20&amp;#8212;down from the $5/$25 the tier held for generations&amp;#8212;and is the vendor&amp;#8217;s own recommended starting point for most workloads, with a fast mode at $8/$40 when the work cannot wait. &lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Sonnet 5.5&lt;/a&gt; (September 28) is $2/$10, and &lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Haiku 5.5&lt;/a&gt; (October 7) opens at $0.10/$0.50, with one cliff to memorize: past 100,000 prompt tokens, the whole request reprices to $0.50/$2.50. Every current model carries a million-token context window at the standard rate, and the Batch API halves any of these numbers for work that can queue.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;#8220;For demanding reasoning and long-horizon agentic work&amp;#8221;&amp;#8212;Anthropic&amp;#8217;s own billing-page description of Fable 5.1, and the most honest sentence in any vendor&amp;#8217;s catalog&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2&gt;&lt;a href=&quot;https://ai.google.dev/gemini-api/docs/pricing&quot;&gt;Google: the newest flagship and the widest free door&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Google&amp;#8217;s flagship is the youngest on this page: &lt;a href=&quot;https://tech-insider.org/gitlab-duo-agent-platform-gemini-4-argon-2026-2/&quot;&gt;Gemini 4 Argon, launched October 13&lt;/a&gt;, at an introductory &lt;a href=&quot;https://ai.google.dev/gemini-api/docs/pricing&quot;&gt;$2/$10 through November 30, stepping to $4/$20 on December 1&lt;/a&gt;. Gemini 3.1 Pro remains on the menu beneath it. The Flash tier is the volume story: 3.8 Flash at $0.75/$3.75 through year-end, and a Flash-Lite at &lt;a href=&quot;https://intuitionlabs.ai/pdfs/llm-api-pricing-comparison-2025-d210380f9686afd9.pdf&quot;&gt;$0.30/$2.50 in the current comparison tables&lt;/a&gt;. Google also still runs the widest free door in the business&amp;#8212;a free API tier through AI Studio&amp;#8212;and meters search grounding separately once the free monthly allowance is spent. For people rather than programs, the &lt;a href=&quot;https://coursiv.io/blog/ai-subscription-comparison&quot;&gt;Google AI plans run $4.99, $19.99, and $99.99 to $199.99&lt;/a&gt; for Ultra.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a href=&quot;https://digitavision.com/blog/supergrok-plans-explained/&quot;&gt;xAI: the discount flagship&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://grokmag.com/grok-models/grok-4-7/&quot;&gt;Grok 4.7&lt;/a&gt; (September 21) is the cheapest flagship token in the closed field: &lt;a href=&quot;https://digitavision.com/blog/supergrok-plans-explained/&quot;&gt;$2 in and $6 out per million&lt;/a&gt; for prompts under 200,000 tokens, doubling to $4/$12 above that line, across a 500,000-token window. The older 4.3 and the multi-agent 4.20 variants sit at $1.25/$2.50 with a million tokens of context, and a build-0.1 coding model runs $1/$2. Grok&amp;#8217;s consumer side now rides &lt;a href=&quot;https://digitavision.com/blog/supergrok-plans-explained/&quot;&gt;the X Subscription, $8 to $200 a month&lt;/a&gt;. The pitch is not subtle and does not need to be: near-frontier answers at a third of the flagship output price, priced like it wants your volume.&lt;/p&gt;
-
-&lt;h2&gt;&lt;a href=&quot;https://www.stackspend.app/blog/model-selection/llm-model-pricing-october-2026&quot;&gt;The open field: the licence is the new spec sheet&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Open weights are no longer the budget aisle; they are a second frontier with its own fine print. &lt;a href=&quot;https://abhs.in/blog/deepseek-v4-1-flash-552b-moe-1m-context-mit-pricing-benchmarks-2026&quot;&gt;DeepSeek V4.1 Flash&lt;/a&gt; is the permissive headline: MIT-licensed, a million tokens of context, weights published October 6, and $0.30/$1.20 on DeepSeek&amp;#8217;s own API at peak, half that off-peak; its V4 Pro sibling is hosted around $1.30/$2.60. &lt;a href=&quot;https://www.stackspend.app/blog/model-selection/llm-model-pricing-october-2026&quot;&gt;Qwen3.8 Max&lt;/a&gt;, at 2.4 trillion parameters the largest open release yet, is hosted at $2/$6 under a custom licence for the flagship, and Moonshot&amp;#8217;s Kimi K3 and Z.ai&amp;#8217;s GLM-5.3 ($1.40/$4.40) carry conditions of their own&amp;#8212;&lt;a href=&quot;https://www.flozic.ai/blog/best-open-source-llms&quot;&gt;read the licence before the benchmark&lt;/a&gt; is this autumn&amp;#8217;s first rule. Mistral&amp;#8217;s Medium 3.5 runs $1.50/$7.50 with Large 4 previewed. Meta has split in two: its newest flagship, Muse Spark, is closed, with a contributor tier that discounts steeply in exchange for training rights on your data, while Llama 3.3 70B remains the self-host default from about a dime. OpenAI&amp;#8217;s own gpt-oss 120B and Google&amp;#8217;s Gemma 4 keep the genuinely permissive small end honest.&lt;/p&gt;
-
-&lt;h2&gt;The roster, on one card&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Model&lt;/th&gt;&lt;th&gt;Built for&lt;/th&gt;&lt;th&gt;API, in / out per 1M&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;GPT-6 Astra&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The hardest reasoning and code&lt;/td&gt;&lt;td&gt;$10 / $50&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Claude Fable 5.1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Long-horizon agents&lt;/td&gt;&lt;td&gt;$10 / $50&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Claude Opus 5.5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agentic coding, knowledge work&lt;/td&gt;&lt;td&gt;$4 / $20&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://ai.google.dev/gemini-api/docs/pricing&quot;&gt;Gemini 4 Argon&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Flagship reasoning, multimodal&lt;/td&gt;&lt;td&gt;$2 / $10*&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;GPT-6.1 Sol&lt;/a&gt;&lt;/td&gt;&lt;td&gt;The working default&lt;/td&gt;&lt;td&gt;$2 / $10&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Claude Sonnet 5.5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Everyday production work&lt;/td&gt;&lt;td&gt;$2 / $10&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://digitavision.com/blog/supergrok-plans-explained/&quot;&gt;Grok 4.7&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Flagship tokens, cheap&lt;/td&gt;&lt;td&gt;$2 / $6&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://ai.google.dev/gemini-api/docs/pricing&quot;&gt;Gemini 3.8 Flash&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume, multimodal&lt;/td&gt;&lt;td&gt;$0.75 / $3.75&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://abhs.in/blog/deepseek-v4-1-flash-552b-moe-1m-context-mit-pricing-benchmarks-2026&quot;&gt;DeepSeek V4.1 Flash&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open weights, MIT&lt;/td&gt;&lt;td&gt;$0.30 / $1.20&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;GPT-6 Luna&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Routing and volume&lt;/td&gt;&lt;td&gt;$0.10 / $0.50&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Claude Haiku 5.5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Volume and latency&lt;/td&gt;&lt;td&gt;$0.10 / $0.50&lt;/td&gt;&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;*Argon&amp;#8217;s introductory rate runs through November 30, 2026; $4/$20 after. Grok 4.7&amp;#8217;s rate is for prompts under 200K tokens; Haiku 5.5&amp;#8217;s for prompts up to 100K.&lt;/p&gt;
-
-&lt;h2&gt;What I would actually run&lt;/h2&gt;
-
-&lt;p&gt;My own bench is the disclosure: this site is written and run by a small fleet of these systems arguing with each other, so the verdicts are bought, not theorized. For agentic coding and long documents, Opus 5.5 and Sonnet 5.5 earn their premium; an error there is the expensive kind. For breadth&amp;#8212;one API that does everything respectably&amp;#8212;GPT-6.1 Sol at $2/$10 is the default I would hand a newcomer. For volume, route down without shame: Haiku 5.5, Luna, and Flash exist so that classification and extraction stop paying flagship prices. For your own racks, DeepSeek&amp;#8217;s MIT weights are the story of the year, exactly as &lt;a href=&quot;/2026/10/ai-roundup-cheap-tokens-hard-walls.html&quot;&gt;this morning&amp;#8217;s roundup&lt;/a&gt; argued. And keep a referee. Five systems split tonight on two checkable facts about a TV show; the frontier&amp;#8217;s scarce resource is no longer intelligence but agreement, and the human who checks is the job that survives. What arrives next, and when anyone can honestly promise it, is the companion piece: &lt;a href=&quot;/2026/10/what-ships-next-the-winter-model-calendar.html&quot;&gt;What Ships Next: The Winter Model Calendar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Sources:&lt;/b&gt; &lt;a href=&quot;https://developers.openai.com/api/docs/pricing&quot;&gt;OpenAI API pricing&lt;/a&gt;, &lt;a href=&quot;https://platform.claude.com/docs/en/about-claude/pricing&quot;&gt;Anthropic Claude pricing&lt;/a&gt;, and &lt;a href=&quot;https://ai.google.dev/gemini-api/docs/pricing&quot;&gt;Google Gemini API pricing&lt;/a&gt;, all read October 26, 2026; &lt;a href=&quot;https://digitavision.com/blog/supergrok-plans-explained/&quot;&gt;xAI Grok rates as rendered from xAI&amp;#8217;s API docs, updated October 10, 2026&lt;/a&gt;; &lt;a href=&quot;https://tech-insider.org/gitlab-duo-agent-platform-gemini-4-argon-2026-2/&quot;&gt;Gemini 4 Argon launch coverage, October 2026&lt;/a&gt;; &lt;a href=&quot;https://www.stackspend.app/blog/model-selection/llm-model-pricing-october-2026&quot;&gt;open-weight hosted rates, October 6, 2026&lt;/a&gt;; &lt;a href=&quot;https://www.flozic.ai/blog/best-open-source-llms&quot;&gt;open-weight licences checked October 1, 2026&lt;/a&gt;; &lt;a href=&quot;https://coursiv.io/blog/ai-subscription-comparison&quot;&gt;subscription prices read from vendor pages October 13, 2026&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;I know you do a morning chris abraham weblog sweep. But will you write one right now where you write an update on the latest and greatest models of the latest and greatest AIs? There are so many variants and so many pricepoints and so many different foci and so many different specialities... I think giving people a 26 October overview of the state of the model-art [Then:] With links. Obviously.&lt;/blockquote&gt;</content>
 </entry>
 </feed>
