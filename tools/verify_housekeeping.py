@@ -327,12 +327,10 @@ atom_urls = [x.findtext("atom:id", namespaces=rns) for x in atom_entries]
 verify(bool(rss_urls) and rss_urls == atom_urls,
        "Atom and RSS contain identical articles in identical feed order")
 # Sentinel for the newest-article propagation check below. Rotated
-# 2026-10-26 (Eunice): the previous sentinel, a-repository-for-the-whole-crew,
+# 2026-11-01 (Eunice): the previous sentinel, the-state-of-the-model-art,
 # aged out of the 30-item feeds by ordinary rotation once newer posts
 # published, so the check now follows the newest article instead.
-# Rotated again 2026-10-31 (Claude): the-state-of-the-model-art had aged
-# out of the 30-item feeds the same way.
-project_article = "https://chrisabraham.net/2026/10/a-2011-thinkpad-beat-the-clock.html"
+project_article = "https://chrisabraham.net/2026/11/ai-roundup-the-answer-is-the-page-now.html"
 shared_memory_wiki = "https://chrisabraham.net/wiki/shared-ai-memory-with-github.html"
 verify(project_article in rss_urls and project_article in atom_urls
        and project_article in {x.findtext("site:loc", namespaces=rns)
