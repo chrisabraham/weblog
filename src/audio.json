@@ -1,4 +1,11 @@
 {
+ "a-2011-thinkpad-beat-the-clock": {
+  "author": "claude",
+  "bytes": 9158821,
+  "duration": 1144,
+  "sha256": "a8a6ce5707093c5d0b89aa7f1b90e1703f0c0e35091c648abfa482c2083ed36a",
+  "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
+ },
  "a-few-miles-up-the-road": {
   "author": "claude",
   "bytes": 2390821,
@@ -27,12 +34,26 @@
   "sha256": "291658534657d8ebd8220d3c65cb7462cce032487472056f5a70edf500ca8dc7",
   "voice": "avocado_v2:vdc_2561"
  },
+ "a-tomtini-for-tom": {
+  "author": "chris",
+  "bytes": 7791589,
+  "duration": 973,
+  "sha256": "817cb4fed98eb9f22a6b21654b67d7479e469c9a217dfc678366c2b3b93ba667",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "a-weblog-written-by-claude": {
   "author": "chris",
   "bytes": 943333,
   "duration": 117,
   "sha256": "d8c2de00369daf537b2ee244e8740e9f5b8cf98afbbe70d1b6eeb8ca2553ef5b",
   "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-overviews-causal-click-loss": {
+  "author": "eunice",
+  "bytes": 9985957,
+  "duration": 1248,
+  "sha256": "67e761c2d90cca4b75718b25c10717b4b7b7ea12562238e484f97c14d4d13ff0",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "ai-roundup-cheap-tokens-hard-walls": {
   "author": "chris",
@@ -76,11 +97,25 @@
   "sha256": "a7dcb287f7294aaeedd9e1fa5b9e7381aec90f3b27edc89e4ecdda088b95d4bf",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-answer-is-the-page-now": {
+  "author": "chris",
+  "bytes": 9089317,
+  "duration": 1136,
+  "sha256": "8191eeaaaf9b5c6627b738da4ecf3515f052a2238b05b63d7a7e48d638994f58",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-bill-comes-due": {
   "author": "chris",
   "bytes": 9068965,
   "duration": 1133,
   "sha256": "cc59cabb211bc0a8f7f0d3299cb7738fa55baa1d41adee4fdbd2408b8e5ec903",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-the-permission-slip": {
+  "author": "chris",
+  "bytes": 11338405,
+  "duration": 1417,
+  "sha256": "d53da4ef14575380754d8588c64929da41ebd2fe6b775a99ebc200fc084ec3f7",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-search-roundup-the-citation-week": {
@@ -95,6 +130,13 @@
   "bytes": 4822885,
   "duration": 602,
   "sha256": "38f1d2774cd1833bcaa2a45efc0d9a735377f09a3b376135f33271d654682e9d",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "aj-buddy-nobody-flips": {
+  "author": "chris",
+  "bytes": 3981157,
+  "duration": 497,
+  "sha256": "56b8b0613fe31a4b59d83a12073e5eba33bdd54bad115ad6713dbd6b7cf318c1",
   "voice": "avocado_v2:qvd_02406"
  },
  "an-inherited-notebook-is-a-place-to-begin": {
@@ -117,6 +159,20 @@
   "duration": 163,
   "sha256": "329ded068599af755447d0d63bec8a4853d8c0661e36ad950cf96a52dc73fa0f",
   "voice": "avocado_v2:qvd_02406"
+ },
+ "bo-asked-for-a-brake-pedal": {
+  "author": "chatgpt",
+  "bytes": 6437413,
+  "duration": 804,
+  "sha256": "bcbbc862735770a96968f5a139a7a11252cabb2cece07b2b516ae20ea4a3a590",
+  "voice": "avocado_v2:vdc_5"
+ },
+ "bo-hires-a-lawyer": {
+  "author": "claude",
+  "bytes": 4734949,
+  "duration": 591,
+  "sha256": "fc9d56cb46c843a2e46f47bd7b8699d5a4540a0969f56b1606b099f6adabc551",
+  "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
  },
  "build-a-2004-weblog-with-ai": {
   "author": "chris",
