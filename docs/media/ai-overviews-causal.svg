@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 190" role="img" aria-labelledby="t d">
+<title id="t">The answer box and the links below it</title>
+<desc id="d">A search results page drawn in ink: one large answer box at the top holding lines of text, with three blue links below it fading from solid to faint, and a small scale at the side weighing the answer heavier than the clicks.</desc>
+<rect x="18" y="10" width="150" height="170" rx="6" fill="#fffdf6" stroke="#7a4a12" stroke-width="2"/>
+<circle cx="30" cy="22" r="3" fill="#c8a165"/><circle cx="42" cy="22" r="3" fill="#c8a165"/><circle cx="54" cy="22" r="3" fill="#c8a165"/>
+<rect x="28" y="34" width="130" height="58" rx="5" fill="#fdf3dd" stroke="#b07d2b" stroke-width="2"/>
+<path d="M38 48 h90 M38 60 h110 M38 72 h74" stroke="#8a6d3b" stroke-width="4" stroke-linecap="round"/>
+<path d="M140 40 l2.2 4.6 4.6 2.2 -4.6 2.2 -2.2 4.6 -2.2 -4.6 -4.6 -2.2 4.6 -2.2 z" fill="#b07d2b"/>
+<g stroke="#2b50aa" stroke-width="5" stroke-linecap="round">
+<path d="M30 108 h96" opacity="0.85"/>
+<path d="M30 128 h96" opacity="0.5"/>
+<path d="M30 148 h96" opacity="0.22"/>
+</g>
+<g stroke="#999" stroke-width="3" stroke-linecap="round">
+<path d="M30 117 h64" opacity="0.7"/><path d="M30 137 h64" opacity="0.45"/><path d="M30 157 h64" opacity="0.2"/>
+</g>
+<g stroke="#7a4a12" stroke-width="2" fill="none">
+<path d="M205 42 v78 M186 60 h38 M205 120 l-14 26 M205 120 l14 26 M184 146 h42"/>
+<path d="M186 60 l-11 18 h22 z" fill="#fdf3dd"/>
+<path d="M224 60 l-11 18 h22 z" fill="#fdf3dd"/>
+</g>
+<rect x="169" y="66" width="14" height="9" fill="#2b50aa" opacity="0.8"/>
+<rect x="213" y="60" width="22" height="16" rx="2" fill="#fdf3dd" stroke="#b07d2b"/>
+</svg>
