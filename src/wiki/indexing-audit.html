@@ -1,0 +1,24 @@
+title: Indexing audit
+seo_title: Indexing Audit: Why Pages Stay Out of the Index
+description: What an indexing audit examines in Search Console, robots files, sitemaps, internal links and backlinks, and the verdict and fix list it produces.
+updated: 2026-11-02
+categories: Search, SEO, Indexing
+infobox_title: Indexing audit
+info.Question: Why published pages are missing from the index
+info.Evidence: Search Console coverage, crawl data and the live site
+info.Output: A verdict with evidence and a prioritized fix list
+info.Common setting: [[Programmatic SEO]]
+---
+<p>An indexing audit is a focused investigation into why pages that are published, crawlable and meant to be found are absent from a search engine's index. It starts from a measured gap: the count of pages a site has published against the count a search engine has actually indexed. The audit's job is to explain that gap with evidence, assign each cause its share of the missing pages, and hand back repairs in the order they should be done.</p>
+<h2>What it examines</h2>
+<p><strong>Search Console coverage.</strong> The <a href="https://support.google.com/webmasters/answer/7440203">Page indexing report</a> sorts every known URL into indexed and not indexed, with a stated reason for each exclusion. The reason groups are the audit's map: crawled and currently not indexed, discovered and currently not indexed, excluded by a noindex tag, blocked by robots.txt, duplicate pages where Google chose a different canonical, and soft 404s. A handful of sample URLs from each large group, checked with the URL Inspection tool, shows whether the stated reason matches the live page.</p>
+<p><strong>Robots and directives.</strong> The robots.txt file, meta robots tags and X-Robots-Tag headers are checked against intent. A single broad rule or a staging directive carried into production can exclude a whole section while the pages look healthy to a visitor.</p>
+<p><strong>Sitemaps.</strong> Submitted sitemaps are compared with the site's real inventory. Stale sitemaps full of redirected or deleted URLs waste crawl attention, and pages missing from every sitemap and every internal link are hard for a crawler to find at all.</p>
+<p><strong>Internal linking.</strong> The audit traces how a crawler travels from the homepage to the missing pages: link depth, orphaned pages with no inbound internal links, and sections reachable only through search forms or scripts. Pages nobody links to send a weak signal about their own importance.</p>
+<p><strong>Duplicate and thin content.</strong> Groups of pages that differ only in a swapped name, city or product attribute are compared side by side. When Google judges pages near-identical, it indexes one representative and folds the rest away, and the coverage report shows the result as duplicates. This is the commonest cause when [[Programmatic SEO]] output fails to index.</p>
+<p><strong>Backlink profile.</strong> A sudden mass of spam links aimed at a site raises a separate question, handled on the evidence: Google advises that a <a href="https://support.google.com/webmasters/answer/2648487">disavow file</a> suits sites with considerable numbers of spammy or artificial links that have caused, or are likely to cause, a manual action, and that most sites never need one. The audit states which side of that line a profile falls on and why.</p>
+<h2>What it produces</h2>
+<p>The deliverable is a verdict, not a tour of the tools. It names the causes found, ties each one to the coverage data and live-page checks that prove it, and estimates how much of the indexing gap each cause explains. Behind the verdict sits a prioritized fix list: repairs in order, each one specific enough to apply directly, with example titles, descriptions or code where the fix has a standard shape. Implementation of the fixes is separate work, and the audit says so.</p>
+<h2>How it differs from a general SEO audit</h2>
+<p>A general SEO audit ranges across a whole site: rankings, content quality, link profile, page experience, structured data and technical health all at once. An indexing audit is narrower and deeper. It pursues one question, why pages are out of the index, through crawl and coverage evidence until the gap is explained. Sites often run the indexing audit first, because pages outside the index cannot rank at all, and the wider audit's findings about titles and content only matter for pages an engine has admitted.</p>
+<p>Google's own documentation covers the underlying machinery: the <a href="https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget">crawl budget guide</a> explains how crawl capacity and crawl demand decide how much of a site gets crawled. A step-by-step treatment of running this diagnosis on a real site is the <a href="https://christopherabraham.com/guides/why-google-wont-index-your-site/">guide to why Google won't index your site</a> at christopherabraham.com.</p>
