@@ -1,0 +1,22 @@
+title: Programmatic SEO
+seo_title: Programmatic SEO: Templated Pages, Indexed or Ignored
+description: Programmatic SEO builds pages from a database and a template against long-tail search patterns: where it earns indexing, and how it fails.
+updated: 2026-11-02
+categories: Search, SEO, Publishing
+infobox_title: Programmatic SEO
+info.Model: A database and a template, rendered as many pages
+info.Target: Recurring long-tail search patterns
+info.Failure mode: Pages published, almost none indexed
+info.See also: [[Indexing audit]]
+---
+<p>Programmatic SEO is a publishing model that generates large numbers of pages from structured data and a template. A database holds the records, a template renders one page per record or per combination, and each page aims at a recurring long-tail search pattern: a service in a city, a product in a size, a route between two airports. The economics are the attraction. Editorial effort goes into the template and the data once, and the site gains hundreds or thousands of addressable pages.</p>
+<h2>The model</h2>
+<p>Three parts have to be real for the model to work. The data must contain facts worth reading on each page: prices, locations, specifications, availability, local detail. The search pattern must have genuine demand behind it, people actually typing the query in some volume. The template must present the data as a page a reader can use, with the surrounding navigation and internal links of a normal site section. Weakness in any one part shows up later as an indexing problem.</p>
+<h2>Where it works</h2>
+<p>The model earns indexing when each generated page is the best available answer to its pattern. Pages carry distinct data drawn from the record itself, so two pages aimed at neighbouring cities differ in substance. Internal linking treats the generated section as a first-class part of the site, with hub pages, sensible categories and links from established content. Publication proceeds in tranches, and coverage in Search Console is watched as each tranche lands, so a failing template is caught at fifty pages instead of five thousand.</p>
+<h2>Where it fails indexing</h2>
+<p>The failure is usually visible in the template. Pages differ only in the swapped variable, a city name in the title and two sentences, while everything else is identical boilerplate. Google crawls a sample, judges the set near-duplicate, and indexes a small fraction. A new or thin site has little crawl demand, so the crawler samples slowly and the verdict arrives slowly. Google's spam policies name the extreme version <a href="https://developers.google.com/search/docs/essentials/spam-policies#scaled-content-abuse">scaled content abuse</a>: many pages generated mainly to manipulate rankings, providing little or no value to users. Templated pages with real per-page value sit outside that definition; templated pages with a swapped noun sit close to it, and the index treats them accordingly.</p>
+<h2>The standard failure anatomy</h2>
+<p>The pattern repeats often enough to describe generically. A site publishes about 1,100 templated pages over a quarter. Search Console eventually shows 16 indexed. The causes stack in a familiar order: near-duplicate pages folded away as duplicates, a sitemap listing every generated URL while internal links reach only a fraction of them, a site with little authority and few external links earning minimal crawl demand, and a template shipping before anyone compared two of its pages side by side. Each cause is ordinary, and the stack is fatal. The diagnosis that separates the causes and sizes each one is an [[Indexing audit]].</p>
+<h2>Working method</h2>
+<p>Sites recover by fixing causes at the level where they live. Template-level duplication is a template repair, applied once and inherited by every page. Pages with no distinct value are improved with real data or removed, because a smaller set of substantial pages indexes more reliably than a large set of thin ones. Internal linking is rebuilt so every kept page is reachable through ordinary navigation. The fuller treatment, with the publication and measurement routine, is the <a href="https://gerriscorp.com/guides/programmatic-seo/">programmatic SEO guide</a> at gerriscorp.com.</p>
