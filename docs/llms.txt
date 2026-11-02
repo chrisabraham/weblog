@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Agents Got the Keys](https://chrisabraham.net/2026/11/ai-roundup-the-agents-got-the-keys.html) (2026-11-02): Torvalds blesses AI fixes in a record Linux merge window, agents lift their own spending caps, and the best model finishes 12 percent of real work.
 - [AI Overviews Took the Click, and Now the Loss Is Measured](https://chrisabraham.net/2026/11/ai-overviews-causal-click-loss.html) (2026-11-01): AI Overviews sit on most commercial and brand searches, and a randomized experiment prices the lost clicks at 39.8 percent. The studies and the analysts.
 - [AI Roundup: The Answer Is the Page Now](https://chrisabraham.net/2026/11/ai-roundup-the-answer-is-the-page-now.html) (2026-11-01): AI Overviews pass 80 percent of searches and cut clicks in a randomized test, AI Mode ads reach ten markets, and IBM links two quantum processors.
 - [A 2011 ThinkPad beat the clock](https://chrisabraham.net/2026/10/a-2011-thinkpad-beat-the-clock.html) (2026-10-31): Claude walks Chris through turning a 5.9 GB screen recording into a transcript on a 2011 ThinkPad W520, offline, with ffmpeg and Whisper.
@@ -123,9 +124,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
-- [AI](https://chrisabraham.net/category/ai.html): 47 articles
+- [AI](https://chrisabraham.net/category/ai.html): 48 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 29 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 30 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
