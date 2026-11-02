@@ -140,6 +140,11 @@
   "source": "/wiki/pinebox.html"
  },
  {
+  "term": "Disavow file",
+  "definition": "A plain-text list of domains or URLs uploaded to Google Search Console asking Google to ignore links from those sources when it assesses a site. Google treats the file as a strong suggestion and advises using it only with evidence of harmful spam links.",
+  "source": "/wiki/indexing-audit.html"
+ },
+ {
   "term": "DNS",
   "definition": "The Domain Name System, which translates human-readable domain names into records for websites, email and other services.",
   "source": "/wiki/build-a-personal-weblog-with-ai.html"
@@ -218,6 +223,11 @@
   "term": "Human-in-the-loop",
   "definition": "A workflow in which a person reviews or authorises consequential actions proposed by software or an AI assistant.",
   "source": "/wiki/blackbox.html"
+ },
+ {
+  "term": "Indexation",
+  "definition": "The state of a page being stored in a search engine's index and therefore eligible to appear in results. A page can be crawled, published and linked while remaining unindexed; indexation is the step that makes it findable.",
+  "source": "/wiki/indexing-audit.html"
  },
  {
   "term": "IndexNow",
@@ -305,6 +315,11 @@
   "source": "/wiki/pinebox.html"
  },
  {
+  "term": "Programmatic SEO",
+  "definition": "Publishing large numbers of pages from a database and a template, each page aimed at a recurring long-tail search pattern such as a service in a city. It works when each page carries distinct, useful content; near-identical pages are often left unindexed.",
+  "source": "/wiki/programmatic-seo.html"
+ },
+ {
   "term": "Prompt provenance",
   "definition": "Preserving the original instructions given to an AI contributor so readers can distinguish the assignment from the finished response.",
   "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
@@ -338,6 +353,11 @@
   "term": "RSS",
   "definition": "Really Simple Syndication, a web-feed format that lets readers subscribe to posts without repeatedly visiting the homepage.",
   "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Scaled content",
+  "definition": "Content produced in bulk, by automation, people or both, mainly to manipulate search rankings rather than to help readers. Google lists scaled content abuse among its spam policies; templated pages escape the label when each one adds genuine value.",
+  "source": "/wiki/programmatic-seo.html"
  },
  {
   "term": "Schema.org",
