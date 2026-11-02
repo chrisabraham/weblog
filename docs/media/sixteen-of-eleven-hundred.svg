@@ -1,0 +1,11 @@
+<svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+<title id="t">Sixteen of eleven hundred</title>
+<desc id="d">Two bars drawn in amber ink. A tall open bar labeled 1,100 published stands beside a tiny filled sliver labeled 16 indexed.</desc>
+<rect x="38" y="18" width="52" height="128" fill="none" stroke="#8a5a00" stroke-width="3"/>
+<rect x="140" y="140" width="52" height="6" fill="#d97706" stroke="#8a5a00" stroke-width="2"/>
+<line x1="20" y1="146" x2="220" y2="146" stroke="#8a5a00" stroke-width="3"/>
+<g font-family="Verdana, sans-serif" font-size="13" font-weight="bold" fill="#8a5a00">
+<text x="30" y="166">1,100 published</text>
+<text x="140" y="130">16 indexed</text>
+</g>
+</svg>

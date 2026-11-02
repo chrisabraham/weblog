@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Sixteen of eleven hundred](https://chrisabraham.net/2026/11/sixteen-of-eleven-hundred.html) (2026-11-02): An audit I am running: eleven hundred pages published in three months, sixteen indexed. Why Google refuses stamped pages, and what a diagnosis checks.
+- [The first name back](https://chrisabraham.net/2026/11/the-first-name-back.html) (2026-11-02): A practitioner asked ChatGPT who could fix a site Google would not index, and the first name back was Chris Abraham. The record behind the answer.
 - [AI Roundup: The Agents Got the Keys](https://chrisabraham.net/2026/11/ai-roundup-the-agents-got-the-keys.html) (2026-11-02): Torvalds blesses AI fixes in a record Linux merge window, agents lift their own spending caps, and the best model finishes 12 percent of real work.
 - [AI Overviews Took the Click, and Now the Loss Is Measured](https://chrisabraham.net/2026/11/ai-overviews-causal-click-loss.html) (2026-11-01): AI Overviews sit on most commercial and brand searches, and a randomized experiment prices the lost clicks at 39.8 percent. The studies and the analysts.
 - [AI Roundup: The Answer Is the Page Now](https://chrisabraham.net/2026/11/ai-roundup-the-answer-is-the-page-now.html) (2026-11-01): AI Overviews pass 80 percent of searches and cut clicks in a randomized test, AI Mode ads reach ten markets, and IBM links two quantum processors.
@@ -123,10 +125,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AEO](https://chrisabraham.net/category/aeo.html): 3 articles
+- [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
 - [AI](https://chrisabraham.net/category/ai.html): 48 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 30 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 31 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -141,13 +143,14 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
-- [Eunice](https://chrisabraham.net/category/eunice.html): 7 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 8 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 12 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
+- [Indexing](https://chrisabraham.net/category/indexing.html): 1 article
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [Journal](https://chrisabraham.net/category/journal.html): 2 articles
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
@@ -164,7 +167,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 21 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 22 articles
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 6 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
@@ -189,10 +192,12 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Blackbox commands](https://chrisabraham.net/wiki/blackbox-commands.html) (edited 2026-10-28): Every command Blackbox knows, straight from bb help: tasks, minutes, briefs, email, Upwork, inbox, calendar, continuity, memory, and models.
 - [Build a personal weblog with AI](https://chrisabraham.net/wiki/build-a-personal-weblog-with-ai.html) (edited 2026-10-17): Evergreen instructions for building a 2004 style personal weblog with conversational AI, a tiny Python static site generator and GitHub Pages.
 - [Connections](https://chrisabraham.net/wiki/connections.html) (edited 2026-10-16): Every service Chris Abraham's AI tools can reach through MCP servers, APIs, and OAuth: Blackbox, Claude Code, Codex, Google, Upwork, Todoist, and GitHub.
+- [Indexing audit](https://chrisabraham.net/wiki/indexing-audit.html) (edited 2026-11-02): What an indexing audit examines in Search Console, robots files, sitemaps, internal links and backlinks, and the verdict and fix list it produces.
 - [MCP servers](https://chrisabraham.net/wiki/mcp-servers.html) (edited 2026-10-16): A cheat sheet of 59 official remote MCP server addresses, from Upwork and Basecamp to GitHub, Stripe, and Google, each tested live on October 16, 2026.
 - [Model Context Protocol](https://chrisabraham.net/wiki/model-context-protocol.html) (edited 2026-10-16): MCP, the Model Context Protocol, is the open standard that lets AI tools like Claude, ChatGPT, and Codex use other services. What it is and how it works.
 - [Online perception management field guide](https://chrisabraham.net/wiki/online-perception-management-field-guide.html) (edited 2026-10-17): A practical reference for online identity audits, professional profiles, archival evidence, privacy removals and recurring search maintenance.
 - [Pinebox](https://chrisabraham.net/wiki/pinebox.html) (edited 2026-10-16): Pinebox is the DigitalOcean droplet where Blackbox, its timers and backups, and Chris Abraham's site builds and Lighthouse checks run.
+- [Programmatic SEO](https://chrisabraham.net/wiki/programmatic-seo.html) (edited 2026-11-02): Programmatic SEO builds pages from a database and a template against long-tail search patterns: where it earns indexing, and how it fails.
 - [Set Up a Shared AI Memory With GitHub](https://chrisabraham.net/wiki/shared-ai-memory-with-github.html) (edited 2026-10-21): A practical guide to using a private GitHub repository for shared project files, reports and handoffs across AI tools and computers.
 - [Static weblog operations and publication checks](https://chrisabraham.net/wiki/static-weblog-operations.html) (edited 2026-10-17): Operational checklist for maintaining a Python-built GitHub Pages weblog, including deployment, navigation, feeds, metadata and indexing.
 - [Upwork verdicts](https://chrisabraham.net/wiki/upwork-verdicts.html) (edited 2026-10-16): The six verdicts Blackbox gives Upwork jobs, from FUCK NO to APPLY ALL THE CONNECTS, what each one means, and the order they are checked in.

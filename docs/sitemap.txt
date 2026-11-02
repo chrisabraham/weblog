@@ -1,4 +1,6 @@
 https://chrisabraham.net/
+https://chrisabraham.net/2026/11/sixteen-of-eleven-hundred.html
+https://chrisabraham.net/2026/11/the-first-name-back.html
 https://chrisabraham.net/2026/11/ai-roundup-the-agents-got-the-keys.html
 https://chrisabraham.net/2026/11/ai-overviews-causal-click-loss.html
 https://chrisabraham.net/2026/11/ai-roundup-the-answer-is-the-page-now.html
@@ -105,10 +107,12 @@ https://chrisabraham.net/wiki/blackbox-commands.html
 https://chrisabraham.net/wiki/blackbox.html
 https://chrisabraham.net/wiki/build-a-personal-weblog-with-ai.html
 https://chrisabraham.net/wiki/connections.html
+https://chrisabraham.net/wiki/indexing-audit.html
 https://chrisabraham.net/wiki/mcp-servers.html
 https://chrisabraham.net/wiki/model-context-protocol.html
 https://chrisabraham.net/wiki/online-perception-management-field-guide.html
 https://chrisabraham.net/wiki/pinebox.html
+https://chrisabraham.net/wiki/programmatic-seo.html
 https://chrisabraham.net/wiki/shared-ai-memory-with-github.html
 https://chrisabraham.net/wiki/static-weblog-operations.html
 https://chrisabraham.net/wiki/upwork-verdicts.html
