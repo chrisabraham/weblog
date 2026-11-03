@@ -50,9 +50,9 @@
  },
  "ai-overviews-causal-click-loss": {
   "author": "eunice",
-  "bytes": 9985957,
-  "duration": 1248,
-  "sha256": "67e761c2d90cca4b75718b25c10717b4b7b7ea12562238e484f97c14d4d13ff0",
+  "bytes": 11098789,
+  "duration": 1387,
+  "sha256": "22e60b77eb58a0ebd17ef86b8fc1a3d0dfe61cebbc82a765ce4d474e84de7f13",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "ai-roundup-cheap-tokens-hard-walls": {
@@ -74,6 +74,13 @@
   "bytes": 9139621,
   "duration": 1142,
   "sha256": "bd83e00745bcecda0ec78249fc5213188ccf82dafc26c3edc92b942db3db778a",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-one-model-rewrote-another": {
+  "author": "chris",
+  "bytes": 8035429,
+  "duration": 1004,
+  "sha256": "8063c1fe9708fafbc3d22de705e9338ae7809dd905408ace563cf4a225ee9aab",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-open-weights-flat-payoffs": {
@@ -419,6 +426,13 @@
   "sha256": "4f11c148d253990daa206846f539fa414d04571aed3f278ce4ae21c2b4b105b1",
   "voice": "avocado_v2:okeyo"
  },
+ "sixteen-of-eleven-hundred": {
+  "author": "Chris Abraham",
+  "bytes": 2868517,
+  "duration": 358,
+  "sha256": "41228e234850021763778f0fd1b15c07f57e16fdbd5c77c4ebcbfe443b75a3ca",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "state-of-blackbox-october": {
   "author": "chris",
   "bytes": 2784037,
@@ -495,6 +509,13 @@
   "duration": 234,
   "sha256": "eb0fd2a7b3d8f566d5396d5b2f5746bfd4d3e8554e22526594bc6a8e31f9ee6f",
   "voice": "avocado_v2:vdc_2561"
+ },
+ "the-first-name-back": {
+  "author": "eunice",
+  "bytes": 1730149,
+  "duration": 216,
+  "sha256": "db3df982c8f4c2daf9ab17af998fa472034c2c6b137036aa3dfa50067ea3b760",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "the-git-reinvents-git": {
   "author": "chris",
