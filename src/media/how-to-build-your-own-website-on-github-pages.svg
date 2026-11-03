@@ -1,0 +1,21 @@
+<svg viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+<title id="t">Build your own website on GitHub Pages</title>
+<desc id="d">A small house drawn in amber ink, its walls and roof made of ruled paper pages, with a globe circled by a dashed orbit line floating above it.</desc>
+<path d="M58 96 L104 62 L150 96" fill="none" stroke="#8a5a00" stroke-width="3"/>
+<path d="M66 92 L104 66 L142 92" fill="none" stroke="#d97706" stroke-width="2"/>
+<rect x="70" y="96" width="68" height="52" fill="none" stroke="#8a5a00" stroke-width="3"/>
+<line x1="78" y1="108" x2="130" y2="108" stroke="#d97706" stroke-width="2"/>
+<line x1="78" y1="118" x2="130" y2="118" stroke="#d97706" stroke-width="2"/>
+<line x1="78" y1="128" x2="112" y2="128" stroke="#d97706" stroke-width="2"/>
+<rect x="116" y="124" width="14" height="24" fill="#d97706" stroke="#8a5a00" stroke-width="2"/>
+<path d="M52 148 L60 100 L68 100 L64 148 Z" fill="none" stroke="#8a5a00" stroke-width="2"/>
+<line x1="20" y1="148" x2="220" y2="148" stroke="#8a5a00" stroke-width="3"/>
+<circle cx="186" cy="46" r="24" fill="none" stroke="#8a5a00" stroke-width="3"/>
+<ellipse cx="186" cy="46" rx="10" ry="24" fill="none" stroke="#d97706" stroke-width="2"/>
+<line x1="162" y1="46" x2="210" y2="46" stroke="#d97706" stroke-width="2"/>
+<path d="M152 30 A 40 40 0 0 1 220 62" fill="none" stroke="#8a5a00" stroke-width="2" stroke-dasharray="5 4"/>
+<path d="M220 62 l-9 -1 l4 8 z" fill="#8a5a00"/>
+<g font-family="Verdana, sans-serif" font-size="12" font-weight="bold" fill="#8a5a00">
+<text x="34" y="168">a house built of pages</text>
+</g>
+</svg>
