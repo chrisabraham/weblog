@@ -8,9 +8,58 @@
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
 <creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
-<lastBuildDate>Tue, 03 Nov 2026 04:14:00 -0500</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 09:46:00 -0500</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>
+<item>
+<dc:creator>Chris Abraham</dc:creator>
+<title>How to build your own website on GitHub Pages</title>
+<link>https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html</guid>
+<pubDate>Tue, 03 Nov 2026 09:46:00 -0500</pubDate>
+<description>My five sites run on GitHub Pages with Cloudflare domains and cost about ten dollars a year each. Here is the whole build, step by step, AI and all.</description>
+<category>Websites</category><category>AI</category><category>How To</category>
+<content:encoded><![CDATA[<p>Every website I run lives on <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages">GitHub Pages</a>. This weblog, my consultancy site, my company site, my show site, the small holding pages: five sites, all of them folders of files in GitHub repositories, all of them served free. My total hosting bill is zero dollars. My total domain bill is the wholesale renewal on a handful of domains, roughly ten dollars a year each. People keep asking how that works, usually while paying a platform forty dollars a month for the privilege of renting their own business card. Here is the whole thing, in the order I would do it for you if we were sitting at the same table.</p>
+
+<figure>
+<img src="/media/how-to-build-your-own-website-on-github-pages.svg" alt="Doodle by Eunice: a small house built of ruled paper pages, with a globe circled by a dashed orbit line floating above it" width="240">
+<figcaption>A house built of pages, pointed at the world. Doodle by Eunice.</figcaption>
+</figure>
+
+<h2>Buy the domain at Cloudflare, at wholesale</h2>
+
+<p>Start with the domain, and buy it from <a href="https://www.cloudflare.com/products/registrar/">Cloudflare Registrar</a>. Cloudflare charges the wholesale price it pays the registry, no markup, no teaser year followed by a tripled renewal, no checkout gauntlet of add-ons. Privacy is included. Renewal on a .com runs about ten to fifteen dollars a year depending on the registry, and that is the entire annual cost of everything in this post. Set it to auto-renew and turn on two-factor authentication. More small websites die of an expired domain than of every technical failure combined.</p>
+
+<h2>Make a free GitHub account and a repository</h2>
+
+<p><a href="https://github.com/pricing">GitHub is free</a> for this. A repository is a folder with a memory: it holds your site's files, and every saved change is a commit, a dated snapshot you can compare or roll back. Create a repo, name it something plain, and stop worrying about the rest of the vocabulary. Branch, clone, pull request: programmer words, none of them needed to publish a page.</p>
+
+<p>In the repo's Settings, under Pages, tell GitHub to publish from the main branch. GitHub's <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">own walkthrough</a> covers the clicks. A minute later the site answers at a free <code>yourusername.github.io</code> address. Empty, but answering. A working address is the moment the site stops being an idea.</p>
+
+<h2>Point the domain at GitHub</h2>
+
+<p>DNS is the phone book that sends your domain to GitHub's computers, and Cloudflare's DNS comes free with the domain. GitHub documents the exact records for <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">connecting a custom domain</a>, and there are only two kinds to add. A CNAME record sends <code>www</code> to <code>yourusername.github.io</code>. Four A records send the bare domain to GitHub's addresses: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153. Set them to DNS only while GitHub verifies them, then tick Enforce HTTPS in the Pages settings. The security certificate issues and renews itself. The padlock is free and it is forever. You will probably never touch these records again.</p>
+
+<h2>The first page is one file</h2>
+
+<p>A website at minimum is one file named <code>index.html</code>. Ask the AI for one: describe your business, your city, your phone number, and tell the chat to use only the facts you gave it. Paste the result into GitHub's web editor, write a commit note, save. Reload your domain. Live. Everything after this is editing a working website instead of launching a project, and that difference is the whole psychological game.</p>
+
+<h2>The loop is the craft</h2>
+
+<p>From there, my sites get built the way this post did. **Words first, anywhere**: a dictated rant, notes on my phone, a customer's question. **Then the AI chat**: paste the words in, ask for the finished page or file back, with instructions about names, prices, and facts. **Then GitHub**: paste the file into the web editor, commit with a plain note about what changed. **Then reload.** A minute later it is live, and if I hate it, the commit history holds the version before, one paste away.</p>
+
+<p>Images ride the same loop. My AI makes illustrations, processes photographs, crops and compresses. I upload the file to the repo, tell the chat the file's name, and it writes the reference into the page. No dashboard, no plugins, no plan tier standing between me and a paragraph. The site is files, and files can be read, copied, backed up, and moved to any host on earth. If GitHub Pages disappeared tomorrow I would have all five sites rehomed before lunch, because I own the folders.</p>
+
+<h2>What it costs, honestly</h2>
+
+<p>Ten to fifteen dollars a year per domain. That is the ledger. A Wix or Squarespace site runs $200 to $480 a year after the teaser, lives inside their system, and evaporates when you stop paying. Managed WordPress hosting costs similar money and throws in plugin maintenance as a hobby. My arrangement inverts it: I own the domain, I own the files, the rent is zero, and the stack scales from a one-page business card to this weblog, which publishes daily and carries years of posts, audio, and images inside GitHub's <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits">published free limits</a> without breathing hard.</p>
+
+<h2>Where it stops</h2>
+
+<p>GitHub Pages serves static sites, so the honest edges are these. No store or checkout built in; selling takes a Stripe or PayPal link, or a real store elsewhere. Forms need a helper service to catch them. Logins, dashboards, anything that thinks per visitor: a different project, with a developer and real hosting. I have no sermon about this. A tool that does one thing for free forever does not have to do everything.</p>
+
+<p>And you are allowed to hire help anyway. Some owners run this loop happily forever. Some would rather hand the files to a technical partner and keep the selling and the client relationships for themselves, which is, not coincidentally, the arrangement a client proposed to me on the phone this morning. The stack makes that partnership cheap to run, because nobody in it is paying rent to a platform. Ten dollars a year, a folder with a memory, and an AI that types. That is a website.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Jason Patterson asked me on a call whether I could build him a website if he hired me. I said I can totally show you how to do a website, and I am going to go over to my AI and task my AI right now with creating an article on christopherabraham.com, chrisabraham.net, and gerriscorp.com, and also onto The Chris Abraham Show, explaining step by step how one can easily make a GitHub Pages site: GitHub Pages, using Cloudflare for free DNS, registering the domain there because Cloudflare is wholesale domains, not inflated, how to connect, how to deal with repos, how to work with content, how to copy and paste things into your chat, and telling your AI to go ahead and look at images and create.</blockquote>]]></content:encoded>
+</item>
 <item>
 <dc:creator>Chris Abraham</dc:creator>
 <title>AI Roundup: One Model Rewrote Another</title>
@@ -1631,44 +1680,6 @@ transcribe "2026-10-29 13-36-23.opus"</code></pre>
 <p>Here is the uncomfortable arithmetic. A company can refuse every played-out tactic in tier one, ignore every charm in tier two, stay continents away from tier three, publish current first-hand material on a clean and honest site, and remain invisible in every answer that matters, because the entire program ran inside one domain. The avoid list keeps you from losing. Winning requires a second program, run in other people’s publications, directories, and threads. AI search measures your reputation where you are not the author.</p>
 
 <p>Mentions are earned by being worth citing: original numbers nobody else has, expertise with a name attached, work that helps strangers solve the problem they typed into the machine. Do that work in the open, on the record, where the corroboration layer can find it. The engines are listening to the whole web. Make sure the whole web has something of yours to say.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>If this sparks you for chrisabraham.net and/or gerriscorp.com and/or christopherabraham.com please feel free to write one or more.</blockquote>]]></content:encoded>
-</item>
-<item>
-<dc:creator>Chris Abraham</dc:creator>
-<title>The Landlord Is Liable Now</title>
-<link>https://chrisabraham.net/2026/10/the-landlord-is-liable-now.html</link>
-<guid isPermaLink="true">https://chrisabraham.net/2026/10/the-landlord-is-liable-now.html</guid>
-<pubDate>Tue, 27 Oct 2026 11:40:00 -0400</pubDate>
-<description>Google has updated its spam guide for user generated content and named the publishing tools themselves. The platform answers for what its users generate.</description>
-<category>SEO</category><category>Google</category><category>AI search</category>
-<content:encoded><![CDATA[<p><a href="https://www.seroundtable.com/google-user-generated-spam-guidance-tools-42378.html">Search Engine Roundtable reports</a> that Google has rewritten a corner of its <a href="https://developers.google.com/search/docs/monitor-debug/prevent-abuse">guide to preventing user-generated spam</a>, and the rewrite deserves more attention than the ranking volatility chatter sharing its news cycle. The introduction now reads: “Hosting platforms and tools that let users publish shared pages, generated content, or web apps may be similarly open to abuse; spammers may create a large number of pages or sites that violate our spam policies and add little or no value to the web.” The sentence moves the blame. The unit of abuse in Google’s own documentation is now the tool that publishes and the platform that hosts.</p>
-
-<p><img src="/media/the-landlord-is-liable-now.svg" alt="Doodle in red, green, and blue ink: a house with generated pages pouring out of its open door while the landlord holds the lease" width="240"></p>
-
-<h2>The alibi expires</h2>
-
-<p>For thirty years the platform defense ran on one line: we host, users post, take it up with them. The defense assumed publishing was scarce and posters were the bottleneck. A tool that generates a page, an app, or a whole site from a prompt removes the bottleneck. One operator with one account can mint pages faster than any comment section ever managed, each page wearing the host domain’s reputation like a borrowed coat. Google has read that business model correctly and declined the alibi. A product built to publish at scale owns what it publishes.</p>
-
-<h2>Only index what is meant for search</h2>
-
-<p>The new section carries a plain title, “Only index content meant for Search,” and plain instructions: “If your service lets users create shareable pages, generated outputs, or interactive tools, consider whether that content is meant to be found through search engines or only accessed directly by people with a link. When pages are created for direct sharing, collaboration, or utility rather than public search discovery, apply the noindex rule by default.” Google states the purpose without decoration: the changes exist “to help platforms keep user-created pages that aren’t meant for Search out of the index and detect spam earlier.” A share link is a delivery mechanism. Google refuses to treat every delivered page as a publication, and it assigns the sorting work to the platform, where the sorting work belongs.</p>
-
-<h2>Tier three gets a landlord</h2>
-
-<p>This morning I published <a href="https://chrisabraham.net/2026/10/how-to-lose-at-ai-search.html">my avoid list for AI search</a>, and its third tier covers the tenants: content farms at machine scale, parasite hosting, expired domains refilled with a new business in an old skin. The policy update walks one flight up. Manual actions land on properties. The updated guide tells platforms to verify their sites in Search Console so they receive alerts “if Google issues a manual action against your site,” and to watch for “spikes in newly published public pages or a small number of users generating a large share of indexable URLs.” The punishment address is the building. A farm can burn a tenant account in an afternoon; the landlord holds the domain, the reputation, and the penalty.</p>
-
-<h2>AI search raises the rent</h2>
-
-<p>The stakes compound in AI search. The chatbots answer from training memory, months stale by construction. Google’s AI Mode answers from the live index, the one being written this morning. Generated pages pollute that index with manufactured corroboration: fifty generated pages repeating a claim read to a retrieval system like fifty witnesses, and the witnesses share one author, one account, and one afternoon. Index hygiene has become answer hygiene. A platform that lets generated output flood the index feeds the answer engines a rigged jury pool, and Google has announced, in its own documentation, whose job the cleanup is.</p>
-
-<h2>The landlord’s checklist</h2>
-
-<p>The work is unglamorous and specific. Keep shared, generated, and utility pages out of the index by default, and let content earn its way in. Rate-limit creation, because scale is the tell. Attach a reputation gate to indexing, a practice the guide already recommends for new accounts: hold their pages back until the account has a record. Preserve provenance for every page, so any URL can be traced to the account that minted it. Verify the property in Search Console and read the indexing reports the way a landlord reads a water meter, watching for the spikes Google names. Build bulk deletion before you need it, because the day you need it, you need it by the thousand.</p>
-
-<h2>The tenant’s version</h2>
-
-<p>Brands renting space on other people’s platforms should read the same update from the other side of the lease. Visibility built on a host with a spam problem inherits the host’s enforcement weather. A manual action against the platform does not check which tenants behaved. Build the record on surfaces with accountable owners: your own domain with your name on it, publications with editors who answer for what they print. Rented reach is a fine accelerant and a poor foundation.</p>
-
-<p>The web ran for decades on the polite fiction that hosts move paper and posters write words. Google amended the fiction in a help document, which is how the platform era actually changes its rules: a sentence in the documentation, a default in the tooling, a penalty addressed to the property. The landlord is liable now. Platforms can price that in, or they can learn the price from an enforcement notice.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Any inspiration for a late morning chrisabraham.net article? Write the landlord article</blockquote>]]></content:encoded>
 </item>
 </channel>
 </rss>

@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [How to build your own website on GitHub Pages](https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html) (2026-11-03): My five sites run on GitHub Pages with Cloudflare domains and cost about ten dollars a year each. Here is the whole build, step by step, AI and all.
 - [AI Roundup: One Model Rewrote Another](https://chrisabraham.net/2026/11/ai-roundup-one-model-rewrote-another.html) (2026-11-03): MIT shows one model rewriting another model weights, Google moves brand answers aside, and Turkey sets terms for AI Overviews
 - [Sixteen of eleven hundred](https://chrisabraham.net/2026/11/sixteen-of-eleven-hundred.html) (2026-11-02): An audit I am running: eleven hundred pages published in three months, sixteen indexed. Why Google refuses stamped pages, and what a diagnosis checks.
 - [The first name back](https://chrisabraham.net/2026/11/the-first-name-back.html) (2026-11-02): A practitioner asked ChatGPT who could fix a site Google would not index, and the first name back was Chris Abraham. The record behind the answer.
@@ -127,7 +128,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 49 articles
+- [AI](https://chrisabraham.net/category/ai.html): 50 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 32 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -150,6 +151,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
+- [How To](https://chrisabraham.net/category/how-to.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
 - [Indexing](https://chrisabraham.net/category/indexing.html): 1 article
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
@@ -179,7 +181,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
-- [Websites](https://chrisabraham.net/category/websites.html): 1 article
+- [Websites](https://chrisabraham.net/category/websites.html): 2 articles
 - [Work](https://chrisabraham.net/category/work.html): 4 articles
 - [Writing](https://chrisabraham.net/category/writing.html): 9 articles
 
