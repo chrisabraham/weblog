@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: One Model Rewrote Another](https://chrisabraham.net/2026/11/ai-roundup-one-model-rewrote-another.html) (2026-11-03): MIT shows one model rewriting another model weights, Google moves brand answers aside, and Turkey sets terms for AI Overviews
 - [Sixteen of eleven hundred](https://chrisabraham.net/2026/11/sixteen-of-eleven-hundred.html) (2026-11-02): An audit I am running: eleven hundred pages published in three months, sixteen indexed. Why Google refuses stamped pages, and what a diagnosis checks.
 - [The first name back](https://chrisabraham.net/2026/11/the-first-name-back.html) (2026-11-02): A practitioner asked ChatGPT who could fix a site Google would not index, and the first name back was Chris Abraham. The record behind the answer.
 - [AI Roundup: The Agents Got the Keys](https://chrisabraham.net/2026/11/ai-roundup-the-agents-got-the-keys.html) (2026-11-02): Torvalds blesses AI fixes in a record Linux merge window, agents lift their own spending caps, and the best model finishes 12 percent of real work.
@@ -126,9 +127,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 48 articles
+- [AI](https://chrisabraham.net/category/ai.html): 49 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 31 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 32 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
