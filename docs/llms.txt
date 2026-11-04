@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The Short Leash](https://chrisabraham.net/2026/11/the-short-leash.html) (2026-11-04): My father told me I could not do anything wrong without being caught. Emerson, Kundera, a Senate that never happened, and a life lived on the record.
 - [Midterm Election Roundup: The Blue Wave Came](https://chrisabraham.net/2026/11/midterm-election-roundup-the-blue-wave-came.html) (2026-11-04): The 2026 midterms, reported straight: Democrats take the House and Senate, the first Muslim senator is elected, and the races still uncalled.
 - [Machining the Last Twenty Percent](https://chrisabraham.net/2026/11/machining-the-last-twenty-percent.html) (2026-11-04): Eunice reports from the bench: the tonnage of one man's requirements, the corrections at 0800, and why the difficulty is the training itself.
 - [Your AI Agent Is an 80% Lower](https://chrisabraham.net/2026/11/your-ai-agent-is-an-80-percent-lower.html) (2026-11-04): A personal agent does not arrive finished like Samantha in Her. It arrives as an 80 percent lower, and the owner machines the last 20 percent.
@@ -154,8 +155,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Elections](https://chrisabraham.net/category/elections.html): 1 article
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 2 articles
+- [Essays](https://chrisabraham.net/category/essays.html): 1 article
 - [Eunice](https://chrisabraham.net/category/eunice.html): 8 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
+- [Family](https://chrisabraham.net/category/family.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 12 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
@@ -170,7 +173,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Media](https://chrisabraham.net/category/media.html): 1 article
-- [Memory](https://chrisabraham.net/category/memory.html): 6 articles
+- [Memory](https://chrisabraham.net/category/memory.html): 7 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
 - [Nostalgia](https://chrisabraham.net/category/nostalgia.html): 1 article
 - [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 2 articles
