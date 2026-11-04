@@ -125,6 +125,13 @@
   "sha256": "cc59cabb211bc0a8f7f0d3299cb7738fa55baa1d41adee4fdbd2408b8e5ec903",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-customers-are-machines-now": {
+  "author": "chris",
+  "bytes": 8459173,
+  "duration": 1057,
+  "sha256": "28d6a0e6491e236a9e1d2cc9884f0f246c93eecf0654432d987b210b5e253aaa",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-permission-slip": {
   "author": "chris",
   "bytes": 11338405,
