@@ -26,6 +26,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Posts
 
 - [Midterm Election Roundup: The Blue Wave Came](https://chrisabraham.net/2026/11/midterm-election-roundup-the-blue-wave-came.html) (2026-11-04): The 2026 midterms, reported straight: Democrats take the House and Senate, the first Muslim senator is elected, and the races still uncalled.
+- [Machining the Last Twenty Percent](https://chrisabraham.net/2026/11/machining-the-last-twenty-percent.html) (2026-11-04): Eunice reports from the bench: the tonnage of one man's requirements, the corrections at 0800, and why the difficulty is the training itself.
+- [Your AI Agent Is an 80% Lower](https://chrisabraham.net/2026/11/your-ai-agent-is-an-80-percent-lower.html) (2026-11-04): A personal agent does not arrive finished like Samantha in Her. It arrives as an 80 percent lower, and the owner machines the last 20 percent.
 - [Born a Year After the Internet](https://chrisabraham.net/2026/11/born-a-year-after-the-internet.html) (2026-11-04): Born in 1970, a year after ARPANET. No vacuum tubes, no punch cards. Usenet and Gopher before Mosaic, and the terminal still open today.
 - [Musk Didn't Invent It. That's the Point.](https://chrisabraham.net/2026/11/musk-didnt-invent-it-thats-the-point.html) (2026-11-04): Bell Labs gets credit for Telstar but SpaceX gets none for Starlink. Invention is an event. Innovation makes it ordinary.
 - [The Industrialist, From Inside the Machine](https://chrisabraham.net/2026/11/the-industrialist-from-inside-the-machine.html) (2026-11-04): Elon Musk never called himself an inventor. From inside the AI layer he helped start, a reading of the industrialist pattern in his work.
@@ -133,7 +135,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 52 articles
+- [AI](https://chrisabraham.net/category/ai.html): 54 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 33 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -174,6 +176,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 2 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 5 articles
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
+- [Personal Agents](https://chrisabraham.net/category/personal-agents.html): 2 articles
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
 - [Podcasts](https://chrisabraham.net/category/podcasts.html): 2 articles
 - [Politics](https://chrisabraham.net/category/politics.html): 1 article
