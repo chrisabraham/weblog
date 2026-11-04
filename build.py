@@ -181,6 +181,15 @@ def load_posts():
         m["url"] = SITE_URL + m["path"]
         m["updated"] = (dt.datetime.strptime(m["updated"], "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
                         if m.get("updated") else m["when"])
+        if m.get("redirect"):
+            # A moved post (Chris' site placement ruling, Nov 4 2026): it is
+            # no longer a weblog post — no index, feed, or sitemap entry —
+            # but its address keeps a door (see redirect_stub) so every
+            # share and link already out in the world still lands on the
+            # piece itself at its new home.
+            REDIRECTED.append(m)
+            print(f"  redirect {path.name} -> {m['redirect']}")
+            continue
         posts.append(m)
     posts.sort(key=lambda p: p["when"], reverse=True)
     return posts
@@ -191,6 +200,7 @@ REPO = "https://github.com/chrisabraham/weblog"
 # A wiki-style cross-reference can name a published article as well as a wiki page.
 # The generator resolves published article titles to their actual canonical URL.
 POST_LINKS = {}
+REDIRECTED = []  # posts whose header carries a redirect: target; filled by load_posts()
 WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
 
 
@@ -821,6 +831,36 @@ FEED_STUB = """<!DOCTYPE html>
 """
 
 
+def redirect_stub(p):
+    """The door a moved post leaves at its old address (Chris' site
+    placement ruling, Nov 4 2026): canonical and refresh both point at the
+    piece's own page at its new home, so a reader following any link or
+    share already out in the world lands on the piece itself, never on a
+    homepage. Modeled on the feed stub above."""
+    target = p["redirect"]
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{e(p["title"])}</title>
+<meta name="description" content="This piece has moved to The Chris Abraham Show; this page takes you to it.">
+<link rel="canonical" href="{target}">
+<meta http-equiv="refresh" content="0; url={target}">
+<meta name="robots" content="noindex">
+<style>body{{font-family:Georgia,serif;background:#fff;color:#222;margin:0;padding:2rem}}main{{max-width:640px;margin:0 auto}}a{{color:#0645ad}}</style>
+</head>
+<body>
+<main>
+<h1>{e(p["title"])}</h1>
+<h2>Where the piece lives now</h2>
+<p>This piece has moved to <a href="{target}">The Chris Abraham Show</a>. Your browser is being taken there now: <a href="{target}">{target}</a>.</p>
+<p>Or start at <a href="{SITE_URL}/">the weblog's home</a>.</p>
+</main>
+</body>
+</html>
+"""
+
+
 def podcast(posts, manifest, self_name="podcast.xml"):
     """podcast.xml: the weblog as a podcast (Chris' ruling, Oct 25 2026).
     Every published post, newest first: full text in content:encoded and
@@ -1194,6 +1234,8 @@ def main():
     write("/podcast.xml", podcast(posts, audio_manifest))
     write("/feed.xml", podcast(posts, audio_manifest, "feed.xml"))
     write("/feed/index.html", FEED_STUB)
+    for p in REDIRECTED:
+        write(p["path"], redirect_stub(p))
     write("/blogroll.opml", opml(site))
     write("/feeds.opml", opml(site, include_site=True))
     def images_for(path):
