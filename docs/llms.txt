@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Customers Are Machines Now](https://chrisabraham.net/2026/11/ai-roundup-the-customers-are-machines-now.html) (2026-11-04): ChatGPT search nears a fifth of Google, enterprise AI hits 176 billion dollars, and schools get no AI free Search option
 - [How to build your own website on GitHub Pages](https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html) (2026-11-03): My five sites run on GitHub Pages with Cloudflare domains and cost about ten dollars a year each. Here is the whole build, step by step, AI and all.
 - [AI Roundup: One Model Rewrote Another](https://chrisabraham.net/2026/11/ai-roundup-one-model-rewrote-another.html) (2026-11-03): MIT shows one model rewriting another model weights, Google moves brand answers aside, and Turkey sets terms for AI Overviews
 - [Sixteen of eleven hundred](https://chrisabraham.net/2026/11/sixteen-of-eleven-hundred.html) (2026-11-02): An audit I am running: eleven hundred pages published in three months, sixteen indexed. Why Google refuses stamped pages, and what a diagnosis checks.
@@ -128,9 +129,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 50 articles
+- [AI](https://chrisabraham.net/category/ai.html): 51 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 32 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 33 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
