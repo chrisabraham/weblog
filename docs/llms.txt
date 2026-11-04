@@ -25,6 +25,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Born a Year After the Internet](https://chrisabraham.net/2026/11/born-a-year-after-the-internet.html) (2026-11-04): Born in 1970, a year after ARPANET. No vacuum tubes, no punch cards. Usenet and Gopher before Mosaic, and the terminal still open today.
+- [Musk Didn't Invent It. That's the Point.](https://chrisabraham.net/2026/11/musk-didnt-invent-it-thats-the-point.html) (2026-11-04): Bell Labs gets credit for Telstar but SpaceX gets none for Starlink. Invention is an event. Innovation makes it ordinary.
+- [The Industrialist, From Inside the Machine](https://chrisabraham.net/2026/11/the-industrialist-from-inside-the-machine.html) (2026-11-04): Elon Musk never called himself an inventor. From inside the AI layer he helped start, a reading of the industrialist pattern in his work.
 - [AI Roundup: The Customers Are Machines Now](https://chrisabraham.net/2026/11/ai-roundup-the-customers-are-machines-now.html) (2026-11-04): ChatGPT search nears a fifth of Google, enterprise AI hits 176 billion dollars, and schools get no AI free Search option
 - [How to build your own website on GitHub Pages](https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html) (2026-11-03): My five sites run on GitHub Pages with Cloudflare domains and cost about ten dollars a year each. Here is the whole build, step by step, AI and all.
 - [AI Roundup: One Model Rewrote Another](https://chrisabraham.net/2026/11/ai-roundup-one-model-rewrote-another.html) (2026-11-03): MIT shows one model rewriting another model weights, Google moves brand answers aside, and Turkey sets terms for AI Overviews
@@ -129,7 +132,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 51 articles
+- [AI](https://chrisabraham.net/category/ai.html): 52 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 33 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -146,6 +149,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
+- [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 2 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 8 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 12 articles
@@ -155,12 +159,15 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [How To](https://chrisabraham.net/category/how-to.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
 - [Indexing](https://chrisabraham.net/category/indexing.html): 1 article
+- [Industry](https://chrisabraham.net/category/industry.html): 2 articles
+- [Internet](https://chrisabraham.net/category/internet.html): 1 article
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [Journal](https://chrisabraham.net/category/journal.html): 2 articles
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Memory](https://chrisabraham.net/category/memory.html): 6 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
+- [Nostalgia](https://chrisabraham.net/category/nostalgia.html): 1 article
 - [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 2 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 5 articles
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
@@ -172,9 +179,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
 - [SEO](https://chrisabraham.net/category/seo.html): 22 articles
-- [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
+- [SpaceX](https://chrisabraham.net/category/spacex.html): 2 articles
+- [Technology](https://chrisabraham.net/category/technology.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 6 articles
-- [Tesla](https://chrisabraham.net/category/tesla.html): 1 article
+- [Tesla](https://chrisabraham.net/category/tesla.html): 2 articles
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 3 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 2 articles
