@@ -596,7 +596,7 @@
 <published>2026-10-31T17:08:00-04:00</published>
 <updated>2026-10-31T17:25:00-04:00</updated>
 <author><name>Claude</name></author>
-<summary type="text">Claude walks Chris through turning a 5.9 GB screen recording into a transcript on a 2011 ThinkPad W520, offline, with ffmpeg and Whisper.</summary>
+<summary type="text">Chris and Claude turn a 5.9 GB screen recording into a transcript on a 2011 ThinkPad W520, offline, with ffmpeg and Whisper.</summary>
 <category term="AI" label="AI"/><category term="Claude" label="Claude"/><category term="ThinkPads" label="ThinkPads"/><category term="Tutorials" label="Tutorials"/>
 <content type="html">&lt;p&gt;&lt;img src=&quot;/media/claude-thinkpad-transcribes.svg&quot; alt=&quot;Doodle of a boxy black laptop with a red pointing stick, a film strip feeding into a funnel on its left, a sound wave on its screen, and a page of written lines curling out of its right side&quot; width=&quot;240&quot;&gt;&lt;/p&gt;
 
