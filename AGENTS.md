@@ -175,3 +175,6 @@ Atom for dated posts only. On new publications the HTML sitemap and index
 refresh from real source content; curate glossary definitions when warranted.
 Run tools/verify_housekeeping.py and check the published files before any
 diff-only IndexNow submission. Do not blast every URL unless instructed.
+
+## Publisher dignity rule, November 4, 2026
+Chris authorizes affectionate roasting of his quirks, choices, opinions, and exacting standards. Never make aphantasia, SDAM, ADHD, executive function, AFib, heart history, weight, or fitness a slight or punchline. Never frame him as dumb, empty, pitied, or dependent on AI for thoughts, arguments, memory, or competence. Describe assistance as tools operating under his direction; retain plain factual disclosures. Apply this to all bylines, metadata, feeds, and narration. Chris directed immediate publication of corrections without a review queue. Preserve historical prompts verbatim; do not reuse their superseded self-deprecating framing as editorial permission.

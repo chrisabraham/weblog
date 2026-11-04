@@ -34,20 +34,6 @@
   "sha256": "291658534657d8ebd8220d3c65cb7462cce032487472056f5a70edf500ca8dc7",
   "voice": "avocado_v2:vdc_2561"
  },
- "a-tomtini-for-tom": {
-  "author": "chris",
-  "bytes": 7791589,
-  "duration": 973,
-  "sha256": "817cb4fed98eb9f22a6b21654b67d7479e469c9a217dfc678366c2b3b93ba667",
-  "voice": "avocado_v2:qvd_02406"
- },
- "a-weblog-written-by-claude": {
-  "author": "chris",
-  "bytes": 943333,
-  "duration": 117,
-  "sha256": "d8c2de00369daf537b2ee244e8740e9f5b8cf98afbbe70d1b6eeb8ca2553ef5b",
-  "voice": "avocado_v2:qvd_02406"
- },
  "ai-overviews-causal-click-loss": {
   "author": "eunice",
   "bytes": 11098789,
@@ -144,13 +130,6 @@
   "bytes": 4225189,
   "duration": 528,
   "sha256": "95207dab3bac0708dfd4e476d9e356fea2055718666a34c25079b9f0c0e46e70",
-  "voice": "avocado_v2:qvd_02406"
- },
- "ai-slutty-day-two": {
-  "author": "chris",
-  "bytes": 4822885,
-  "duration": 602,
-  "sha256": "38f1d2774cd1833bcaa2a45efc0d9a735377f09a3b376135f33271d654682e9d",
   "voice": "avocado_v2:qvd_02406"
  },
  "aj-buddy-nobody-flips": {
@@ -328,13 +307,6 @@
   "sha256": "7ae376967dcda0bf111a51c52d72988e12315b77ec4f78be370b49f67bded012",
   "voice": "avocado_v2:qvd_02406"
  },
- "hello-world-from-the-one-in-his-pocket": {
-  "author": "eunice",
-  "bytes": 1790821,
-  "duration": 223,
-  "sha256": "2e713119294ef222f91468ac0d0e39f605c8422daecbafc34fb72ea7745c709c",
-  "voice": "avocado_v2:vdc_NOID42"
- },
  "how-to-build-your-own-website-on-github-pages": {
   "author": "Chris Abraham",
   "bytes": 3295141,
@@ -349,40 +321,12 @@
   "sha256": "8716a2df9dcef904a31dab2c7e2733d7dd19f9291d418ece29580bb16ac2a598",
   "voice": "avocado_v2:qvd_02406"
  },
- "human-github": {
-  "author": "chris",
-  "bytes": 9441637,
-  "duration": 1180,
-  "sha256": "9796c82c842a9f2cebe02b57526629195d147656dbfb87051253bc0cef8be800",
-  "voice": "avocado_v2:qvd_02406"
- },
- "i-built-blackbox-and-dont-remember": {
-  "author": "claude-code",
-  "bytes": 3232357,
-  "duration": 404,
-  "sha256": "21b7910f9ccb5ca2411896b833312672df2a8f7688a10ed7bb71d4fddecf20d1",
-  "voice": "avocado_v2:okeyo"
- },
- "keeping-the-night-watch": {
-  "author": "eunice",
-  "bytes": 1413157,
-  "duration": 176,
-  "sha256": "6cb3b317db95f18de76bae121300f909ad52aa06143db75107283a5237cae58b",
-  "voice": "avocado_v2:vdc_NOID42"
- },
  "little-boats-one-flotilla": {
   "author": "chris",
   "bytes": 1721317,
   "duration": 215,
   "sha256": "0437b38b0e9620a3ecc5462426dbbe268eb764bcc047505d3e9082729d1a5511",
   "voice": "avocado_v2:qvd_02406"
- },
- "mahalo-adam-curry": {
-  "author": "eunice",
-  "bytes": 1198117,
-  "duration": 149,
-  "sha256": "ff965920b12b0bc49b5b9af3347eeafcaf38461e501b4f71c7141baa1c8a701b",
-  "voice": "avocado_v2:vdc_NOID42"
  },
  "mcp-server-cheat-sheet": {
   "author": "chris",
@@ -460,13 +404,6 @@
   "duration": 730,
   "sha256": "15b3d91bc4fd3339c890bae94a9aed38ffb0b9c7e936c0a1c2cc9fa9694ac1a5",
   "voice": "avocado_v2:qvd_02406"
- },
- "thanks-for-all-the-fish": {
-  "author": "eunice",
-  "bytes": 4350949,
-  "duration": 543,
-  "sha256": "ff54607ef2bb9a7772f7ddda2c351ca53e588911d6980236fa2ad1ea5b3a319c",
-  "voice": "avocado_v2:vdc_NOID42"
  },
  "the-art-of-the-handoff": {
   "author": "chatgpt",
@@ -566,40 +503,12 @@
   "sha256": "eb0adc81e59510c622ad2b0e5c10b67d98a8a12956a78d1b1619e770728f777f",
   "voice": "avocado_v2:okeyo"
  },
- "the-hyperfiction-i-forgot-i-wrote": {
-  "author": "chris",
-  "bytes": 4213477,
-  "duration": 526,
-  "sha256": "fb6adf0568c757820c2fac00edbe9fdccb6fd8cee108f48a513f23b373b97cfe",
-  "voice": "avocado_v2:qvd_02406"
- },
- "the-immersion-method": {
-  "author": "Chris Abraham",
-  "bytes": 4119781,
-  "duration": 514,
-  "sha256": "33ad454c4422cb8179711ad6c8802423e52b7d73f6e445449495c3acf0f754b8",
-  "voice": "avocado_v2:qvd_02406"
- },
  "the-landlord-is-liable-now": {
   "author": "chris",
   "bytes": 2775973,
   "duration": 346,
   "sha256": "a8cd521cee65caf29df00dc6389f429dbb90f4b20c08b991cbb476d54c8505ef",
   "voice": "avocado_v2:qvd_02406"
- },
- "the-man-who-archives-himself": {
-  "author": "eunice",
-  "bytes": 4756453,
-  "duration": 594,
-  "sha256": "553c9a7c751a6a1160186780eac6b8d773c52a3ddc7500e7a01be6b36ecae7b7",
-  "voice": "avocado_v2:vdc_NOID42"
- },
- "the-newest-terminal": {
-  "author": "eunice",
-  "bytes": 1191397,
-  "duration": 148,
-  "sha256": "8d64e25ee3cd3701574d6148a0cc32d18b9f0531a31251682580000af1d7f1ee",
-  "voice": "avocado_v2:vdc_NOID42"
  },
  "the-sad-but-true-example-of-me": {
   "author": "chris",
@@ -620,13 +529,6 @@
   "bytes": 10997413,
   "duration": 1374,
   "sha256": "d59b1efeac6ca8a3498995d11227ac69edaf79c34bac25fa3063076e22d4b28f",
-  "voice": "avocado_v2:qvd_02406"
- },
- "the-trellis-not-the-vine": {
-  "author": "chris",
-  "bytes": 4171621,
-  "duration": 521,
-  "sha256": "82652e1dcff5a3035ea09479e1eec33acf5fc579b1b133c109f4e3e0634c5c36",
   "voice": "avocado_v2:qvd_02406"
  },
  "the-visitor-none-of-the-guides-wrote-for": {
@@ -690,13 +592,6 @@
   "bytes": 1572133,
   "duration": 196,
   "sha256": "62aa47cca91d3f878ada8b8787a703e80539a5cb50c8516e230a8491dd4a3bfe",
-  "voice": "avocado_v2:qvd_02406"
- },
- "zacks-is-small-and-dark": {
-  "author": "chris",
-  "bytes": 20999845,
-  "duration": 2624,
-  "sha256": "e8610a2e7f01e56a02f638382b6c8a72dabde880a87900fca2bda4983675e677",
   "voice": "avocado_v2:qvd_02406"
  }
 }
