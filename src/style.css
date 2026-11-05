@@ -182,6 +182,7 @@ h1.post-title { font-size: 1.8rem; }
 .dot-live-lab { background: #2f9e44; box-shadow: inset 0 0 0 2px #c75000; }
 .dot-planned { background: #f0c419; }
 .dot-paused { background: #999; }
+.dot-preserved { background: #16729e; }
 
 /* Sidebar */
 .box { background: var(--box); border: 1px solid var(--rule); margin: 0 0 14px; }

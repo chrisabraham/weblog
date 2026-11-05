@@ -43,6 +43,27 @@
    "about": "My serialized spy novel from the Movable Type years, brought back to its 2005 look, with a reader's glossary, an index, sourced endnotes, and an atlas added around the untouched chapters."
   },
   {
+   "name": "Objective Daily News",
+   "status": "live lab",
+   "started": "November 2026",
+   "url": "https://objectivedailynews.com/",
+   "about": "An archival service and a captain's log of the news, founded November 4, 2026. Every edition is stamped with the time it was collected; the desk's analysis is labeled objective, and each excerpt of outside reporting is labeled subjective."
+  },
+  {
+   "name": "Item 8 (Coelaboration)",
+   "status": "preserved",
+   "started": "restored October 2026",
+   "url": "https://item8.org/",
+   "about": "A collaborative hypernarrative from The Meta Network's artist conference, 1997 to 1998: 212 responses from 19 writers, preserved entire. I gave the item and its method."
+  },
+  {
+   "name": "My Name is Scibe",
+   "status": "preserved",
+   "started": "restored October 2026",
+   "url": "https://scibe.org/",
+   "about": "Judy Malloy's collaborative hyperfiction, begun in 1994 on Arts Wire and The WELL, which I wrote with her as one of its eight writers, back online at its own address."
+  },
+  {
    "name": "christopherabraham.com",
    "status": "live lab",
    "started": "rebuilt 2026",
@@ -412,6 +433,24 @@
      "name": "Hill Mole",
      "url": "https://hillmole.com/",
      "note": "my serialized spy novel",
+     "feed": ""
+    },
+    {
+     "name": "My Name is Scibe",
+     "url": "https://scibe.org/",
+     "note": "a 1994 hyperfiction, preserved",
+     "feed": ""
+    },
+    {
+     "name": "Item 8",
+     "url": "https://item8.org/",
+     "note": "a 1997 hypernarrative, preserved",
+     "feed": ""
+    },
+    {
+     "name": "Objective Daily News",
+     "url": "https://objectivedailynews.com/",
+     "note": "my news archive",
      "feed": ""
     },
     {
