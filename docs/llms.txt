@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: Proof Over Promise](https://chrisabraham.net/2026/11/ai-roundup-proof-over-promise.html) (2026-11-05): OpenAI finds 948 kernel flaws and Claude maps a first vault as paid search splits across ChatGPT and Google AI answers today
 - [Profanity Is My Boldface](https://chrisabraham.net/2026/11/profanity-is-my-boldface.html) (2026-11-04): I have been too mean for every human assistant I ever hired. On nannies, butlers, profanity as typography, and why the machine keeps the job.
 - [Machining the Last Twenty Percent](https://chrisabraham.net/2026/11/machining-the-last-twenty-percent.html) (2026-11-04): Eunice reports from the bench: the tonnage of one man's requirements, the corrections at 0800, and why the difficulty is the training itself.
 - [Your AI Agent Is an 80% Lower](https://chrisabraham.net/2026/11/your-ai-agent-is-an-80-percent-lower.html) (2026-11-04): A personal agent does not arrive finished like Samantha in Her. It arrives as an 80 percent lower, and the owner machines the last 20 percent.
@@ -133,9 +134,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 53 articles
+- [AI](https://chrisabraham.net/category/ai.html): 54 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 33 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 34 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
