@@ -15,6 +15,9 @@ Chris asked Claude Code (Opus 5.5) to go through his GitHub Pages sites and edit
 ## Sources and checks
 Every client quote, figure, and project fact came from Chris' pasted Upwork pages (November 5, 2026), his CV, the repositories' own descriptions, or the live sites (item8.org, scibe.org, objectivedailynews.com). Client names were left out. Build, `tools/audit.py` ("No issues."), and `tools/verify_housekeeping.py` (PASS) ran on pinebox before pushing.
 
+## Update, November 5, 2026
+Chris, after reading: "Fuck the low ratings..." The lower-ratings section of /about/reviews/ and every mention of lower ratings on the three sites were removed; the 4.5 quote on gerriscorp.com About was replaced with a 5.0 review. Chris also confirmed he is not a military veteran; the Upwork badge is wrong.
+
 ## Left for Chris
 - Upwork lists him as a verified military veteran, and as FameRep's CTO; his CV shows only JROTC and calls the FameRep role Founder and CEO. Neither fact was published anywhere until he confirms.
 - His live Upwork overview ends with a pasted paragraph of advice ("Two more changes on that page would help…"), and his Upwork skills still list Yoast SEO and Search Engine Marketing. Upwork was not touched.
