@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem("weblog-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<title>The Internet Underneath: The Web Is Wrapping Paper</title>
+<meta name="description" content="The Internet ran a quarter century before the Web: packets, ports, mail queues, free operating systems, and the sysadmins who kept every node alive">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Chris Abraham">
+<meta name="generator" content="build.py, written with AI in Claude Code">
+<meta name="theme-color" content="#ffffff" id="theme-color">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://chrisabraham.net/2026/11/the-web-is-wrapping-paper.html">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham weblog (RSS)" href="https://chrisabraham.net/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Chris Abraham weblog (Atom)" href="https://chrisabraham.net/atom.xml">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham weblog (Podcast, every post read aloud)" href="https://chrisabraham.net/podcast.xml">
+<link rel="alternate" type="text/x-opml" title="Chris Abraham weblog (Feeds and blogroll OPML)" href="https://chrisabraham.net/feeds.opml">
+<link rel="blogroll" type="text/x-opml" href="https://chrisabraham.net/blogroll.opml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="Chris Abraham weblog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Web Is Wrapping Paper">
+<meta property="og:description" content="The Internet ran a quarter century before the Web: packets, ports, mail queues, free operating systems, and the sysadmins who kept every node alive">
+<meta property="og:url" content="https://chrisabraham.net/2026/11/the-web-is-wrapping-paper.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="The Web Is Wrapping Paper">
+<meta name="twitter:description" content="The Internet ran a quarter century before the Web: packets, ports, mail queues, free operating systems, and the sysadmins who kept every node alive">
+<meta property="og:image" content="https://chrisabraham.net/cards/2026-11-the-web-is-wrapping-paper.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chris Abraham weblog: The Web Is Wrapping Paper">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chrisabraham.net/cards/2026-11-the-web-is-wrapping-paper.png">
+<meta name="twitter:image:alt" content="Chris Abraham weblog: The Web Is Wrapping Paper">
+<link rel="me" href="https://github.com/chrisabraham">
+<link rel="me" href="https://www.upwork.com/freelancers/chrisjabraham">
+<link rel="me" href="https://www.linkedin.com/in/chrisabraham">
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="me" href="https://www.reddit.com/user/chrisabraham/">
+<link rel="me" href="https://muckrack.com/chrisabraham">
+<link rel="author" href="https://chrisabraham.net/humans.txt">
+<meta property="article:published_time" content="2026-11-06T13:58:00-05:00">
+<meta property="article:modified_time" content="2026-11-06T13:58:00-05:00">
+<meta property="article:tag" content="Internet">
+<meta property="article:tag" content="Web">
+<meta property="article:tag" content="History">
+<style>/* A 2003 weblog template, rebuilt to read well on a phone in 2026: a
+   banner, a post column, a boxed sidebar with a blogroll, Verdana throughout, underlined blue links that turn
+   purple once visited. The dark button in the banner works like Hill
+   Mole's; with no saved choice it follows the system setting. */
+
+:root {
+  --page: #e9ecf2;
+  --paper: #ffffff;
+  --ink: #1b1b1b;
+  --muted: #474d58;
+  --link: #1d3d8f;
+  --visited: #6a2c8f;
+  --banner: #ffffff;
+  --banner-ink: #1b1b1b;
+  --banner-sub: #474d58;
+  --orange: #c75000;
+  --gerris-blue: #16729e;
+  --redlink: #b00000;
+  --readme-accent: #a9142b; /* Accessible red invitation, distinct from wiki redlinks */
+  --box: #f4f6fa;
+  --box-head: #dfe5f1;
+  --rule: #c9d0dc;
+  --quote: #f6f3e6;
+  --date: #6b4500;
+  --sans: Verdana, "DejaVu Sans", Geneva, Tahoma, sans-serif;
+  --mono: "Courier New", "DejaVu Sans Mono", monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --page: #0e1014;
+  --paper: #16181d;
+  --ink: #e6e6e6;
+  --muted: #9aa3b2;
+  --link: #8fb0ff;
+  --visited: #d0a2f0;
+  --banner: #16181d;
+  --banner-ink: #e6e6e6;
+  --banner-sub: #9aa3b2;
+  --orange: #ff8a3d;
+  --gerris-blue: #5cb6e3;
+  --redlink: #ff8f8f;
+  --readme-accent: #ffa0ab;
+  --box: #1c1f26;
+  --box-head: #262b36;
+  --rule: #343a46;
+  --quote: #24221a;
+  --date: #e0b25c;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+/* No one-word last lines: browsers that support it rebalance the wrap. */
+p, li, dd, blockquote, .post-footer { text-wrap: pretty; }
+h1, h2, h3, .tagline, .site-title { text-wrap: balance; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: var(--visited); }
+a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-decoration: none; }
+
+.skip { position: absolute; left: -9999px; }
+/* An actionable skip link must stay legible when keyboard-focused.
+   Previous :focus inherited white-on-white or dark-on-dark from a:focus-visible. */
+.skip:focus { left: 8px; top: 8px; background: var(--paper); color: var(--ink); padding: 6px; z-index: 20; outline: 3px solid var(--link); outline-offset: 2px; }
+
+#wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  min-height: 100vh;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  background: var(--banner);
+  color: var(--banner-ink);
+  padding: 22px 24px 0;
+  border-bottom: 4px double var(--rule);
+}
+.site-title { margin: 0; font-family: var(--sans); font-size: 2rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
+.site-title a, .site-title a:visited { color: var(--orange); text-decoration: none; }
+.site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
+.tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
+.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
+.topnav a, .topnav a:visited { display: inline-block; padding: 4px 0; color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+/* Explicit keyboard focus overrides .topnav a's own color declaration.
+   Otherwise focused navigation rendered text and background in the same blue. */
+.topnav a:hover, .topnav a:focus-visible {
+  background: var(--link); color: var(--paper);
+  text-decoration: underline; outline: 2px solid currentColor; outline-offset: 2px;
+}
+
+.banner-controls {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin: 0 0 12px; min-height: 32px;
+}
+.theme-toggle {
+  position: static; flex: 0 0 auto;
+  font: 0.7rem var(--sans); text-transform: lowercase;
+  color: var(--banner-ink); background: transparent;
+  border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer;
+}
+.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
+.banner-controls a.hire-tab, .banner-controls a.hire-tab:visited {
+  flex: 0 0 auto; margin-left: auto; padding: 6px 12px;
+  border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--paper); color: var(--orange);
+  font: bold 0.75rem var(--sans); text-decoration: none; white-space: nowrap;
+}
+.banner-controls a.hire-tab:hover, .banner-controls a.hire-tab:focus-visible {
+  background: var(--orange); color: var(--paper);
+}
+.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
+
+/* Columns */
+#cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
+#main { padding: 8px 28px 32px; min-width: 0; border-right: 1px dotted var(--rule); }
+#sidebar { padding: 18px 16px 24px; font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; }
+
+/* Posts */
+.date-header {
+  margin: 26px 0 6px; padding-bottom: 2px;
+  font: bold 0.74rem var(--sans); color: var(--date);
+  text-transform: uppercase; letter-spacing: 1px;
+  border-bottom: 1px dotted var(--rule);
+}
+.post { margin: 0 0 30px; }
+.post-title { margin: 10px 0 8px; font-family: var(--sans); font-size: 1.45rem; line-height: 1.25; }
+h1.post-title { font-size: 1.8rem; }
+.post-title a, .post-title a:visited { color: var(--ink); text-decoration: none; }
+.post-title a:hover { background: none; color: var(--link); text-decoration: underline; }
+.post-body p { margin: 0 0 1em; }
+/* Teasers use plain-text editorial summaries; links have comfortable targets. */
+.post-excerpt { margin-bottom: 0.35em; }
+.read-more { margin: 0.1em 0 0.7em; font-weight: bold; }
+.read-more a { display: inline-block; padding: 4px 0; }
+.post-body h2 { font-size: 1.2rem; margin: 1.4em 0 0.4em; }
+.post-body blockquote, .prompt blockquote {
+  margin: 1em 0; padding: 10px 16px;
+  background: var(--quote); border-left: 4px solid var(--rule);
+}
+.post-body code, .post-body pre { font-family: var(--mono); font-size: 0.85em; }
+.post-body pre { background: var(--box); border: 1px solid var(--rule); padding: 12px; overflow-x: auto; }
+.post-body img { max-width: 100%; height: auto; }
+.prompt { margin: 12px 0; font-family: var(--sans); font-size: 0.78rem; }
+.prompt summary { cursor: pointer; color: var(--muted); }
+.prompt-h { display: inline; font: 0.78rem var(--sans); margin: 0; color: var(--muted); }
+.prompt blockquote { font-family: var(--mono); font-size: 0.82rem; white-space: pre-wrap; }
+.post-footer {
+  margin: 10px 0 0; padding-top: 6px;
+  font: 0.72rem var(--sans); color: var(--muted);
+  border-top: 1px dashed var(--rule);
+}
+.prevnext a { display: inline-block; padding: 4px 0; }
+.prevnext { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 0.75rem var(--sans); margin: 20px 0; }
+.older { font: 0.8rem var(--sans); }
+.page-title { font-size: 1.8rem; margin: 18px 0 12px; }
+.lede { font-style: italic; color: var(--muted); }
+.archive-list { list-style: none; padding: 0; }
+.archive-list li { margin: 4px 0; }
+.archive-list time { display: inline-block; min-width: 4.2em; font: 0.75rem var(--sans); color: var(--muted); }
+
+/* Projects */
+.project { border-bottom: 1px dotted var(--rule); padding-bottom: 6px; }
+.project h2 { font-size: 1.25rem; margin: 18px 0 2px; }
+.project-meta { font: 0.72rem var(--sans); color: var(--muted); margin: 0 0 6px; }
+.dot { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border: 1px solid var(--muted); vertical-align: 1px; }
+.dot-active, .dot-live { background: #2f9e44; }
+.dot-live-lab { background: #2f9e44; box-shadow: inset 0 0 0 2px #c75000; }
+.dot-planned { background: #f0c419; }
+.dot-paused { background: #999; }
+.dot-preserved { background: #16729e; }
+
+/* Sidebar */
+.box { background: var(--box); border: 1px solid var(--rule); margin: 0 0 14px; }
+.box .box-title {
+  margin: 0; padding: 4px 8px;
+  background: var(--box-head); border-bottom: 1px solid var(--rule);
+  font: bold 0.72rem var(--sans); text-transform: uppercase; letter-spacing: 1px;
+}
+/* eAIsterEgg / 03: a tiny amber lantern next to the author's roster.
+   Decorative only; no tooltip, click target, or additional network request.
+   Motion is deliberately gentle and absent for reduced-motion readers. */
+.eai-lantern { display: inline-block; color: var(--orange); font-size: 0.85em; vertical-align: baseline; }
+@media (prefers-reduced-motion: no-preference) {
+  .eai-lantern { animation: lantern-breathe 7s ease-in-out infinite; }
+  @keyframes lantern-breathe { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+}
+.box p, .box ul { margin: 8px; }
+.box ul { padding-left: 16px; }
+.box li { margin: 0; padding: 3px 0; }
+.box ul.projects { list-style: none; padding-left: 0; }
+.box small { color: var(--muted); }
+.opml { text-align: right; }
+
+/* 88x31 buttons, drawn in CSS so they stay sharp and cost no requests */
+.buttons { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; background: transparent; border: 0; }
+.badge, .badge:visited {
+  display: inline-flex; width: 88px; height: 31px; overflow: hidden;
+  border: 1px solid #000; font: bold 10px/29px var(--sans);
+  text-decoration: none; color: #000; background: #ddd;
+}
+.badge b { display: inline-block; padding: 0 4px; color: #fff; background: #333; margin-right: 4px; }
+.b-rss { background: #ff9a33; } .b-rss b { background: #a34600; }
+.b-claude { background: #f2d4c2; } .b-claude b { background: #9e4524; }
+.b-gh { background: #e0e0e0; } .b-gh b { background: #24292f; }
+.b-lynx { background: #c8f7c5; } .b-lynx b { background: #1e7a1e; }
+.b-html { background: #cfe0ff; } .b-html b { background: #1d3d8f; }
+.b-opml { background: #fff3a8; } .b-opml b { background: #6b5b00; }
+.b-wcag { background: #e3d7ff; } .b-wcag b { background: #4b2a99; }
+.b-lh { background: #d4f5e9; } .b-lh b { background: #0b6b4a; }
+.badge:hover, .badge:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.badge:focus-visible { background-color: var(--paper); color: var(--ink); }
+/* Readable text links must not depend on hover alone. */
+
+/* Footer */
+#footer { padding: 14px 24px 24px; border-top: 4px double var(--rule); font: 0.7rem var(--sans); color: var(--muted); }
+#footer p { margin: 4px 0 8px; }
+.footlinks { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.footlinks a { display: inline-block; padding: 4px 0; white-space: nowrap; }
+
+/* Phones: one column, sidebar after the posts, nothing sideways */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  #wrap { border: 0; }
+  /* Separate first-row controls keep the vintage title fully visible. */
+  #banner { padding: 12px 16px 0; }
+  .banner-controls { margin-bottom: 12px; }
+  .site-title { font-size: 1.6rem; padding-right: 0; overflow-wrap: anywhere; }
+  .topnav a { display: inline-block; margin: 2px 12px 4px 0; padding: 4px 0; }
+  #cols { grid-template-columns: 1fr; }
+  #main { padding: 4px 16px 24px; border-right: 0; }
+  #sidebar { padding: 16px; border-top: 4px double var(--rule); font-size: 0.8rem; }
+  .post-title { font-size: 1.3rem; }
+  h1.post-title, .page-title { font-size: 1.5rem; }
+  #footer { padding: 14px 16px 24px; }
+}
+
+@media print {
+  #sidebar, .theme-toggle, .topnav, .prevnext { display: none; }
+  #cols { display: block; }
+}
+
+/* Blogroll groups */
+.blogroll h3 { margin: 10px 8px 0; font: bold 0.68rem var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.blogroll h3:first-of-type { margin-top: 8px; }
+.blogroll ul { margin-top: 4px; }
+
+/* Wiki: MediaWiki's furniture (tabs, infobox, contents box, red links) in this site's type */
+.wiki-tabs { display: flex; flex-wrap: wrap; gap: 2px; margin: 18px 0 0; border-bottom: 1px solid var(--rule); font: 0.78rem var(--sans); }
+.wiki-tabs a, .wiki-tabs span { display: inline-block; padding: 6px 12px; border: 1px solid var(--rule); border-bottom: 0; background: var(--box); text-decoration: none; }
+.wiki-tabs .sel { background: var(--paper); color: var(--ink); font-weight: bold; position: relative; top: 1px; }
+.wiki-title { font-size: 1.8rem; margin: 14px 0 2px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); font-weight: normal; }
+.wiki-from { margin: 4px 0 14px; font: 0.78rem var(--sans); color: var(--muted); }
+.wiki-body h2 { font-size: 1.3rem; font-weight: normal; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin: 1.6em 0 0.5em; }
+.wiki-body h3 { font-size: 1.05rem; margin: 1.3em 0 0.4em; }
+.wiki-body ul { padding-left: 1.4em; }
+.wiki-body li { margin: 0.25em 0; }
+.wikilink.new, .wikilink.new:visited { color: var(--redlink); }
+.infobox { float: right; clear: right; width: 290px; max-width: 100%; margin: 0 0 16px 18px; border: 1px solid var(--rule); background: var(--box); border-collapse: collapse; font: 0.78rem/1.45 var(--sans); }
+.infobox caption { font-weight: bold; font-size: 0.95rem; padding: 6px; caption-side: top; }
+.infobox th, .infobox td { text-align: left; vertical-align: top; padding: 5px 8px; border-top: 1px solid var(--rule); }
+.infobox th { width: 38%; }
+.toc { display: inline-block; min-width: 14em; margin: 4px 0 16px; padding: 8px 14px 6px; border: 1px solid var(--rule); background: var(--box); font: 0.8rem/1.5 var(--sans); }
+.toc-title { margin: 0 0 4px; font-weight: bold; text-align: center; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0; }
+.toc li a { display: inline-block; padding: 4px 0; text-decoration: none; }
+.toc .toctext { text-decoration: underline; text-underline-offset: 2px; }
+.toc a:hover .toctext { text-decoration: none; }
+.toc .toc-3 { padding-left: 1.4em; }
+.tocnum { color: var(--ink); margin-right: 6px; }
+.wiki-cats { clear: both; margin: 24px 0 8px; padding: 6px 10px; border: 1px solid var(--rule); background: var(--box); font: 0.78rem var(--sans); }
+.wiki-backlinks h2 { font-size: 1rem; margin: 18px 0 4px; }
+.wiki-backlinks ul { font-size: 0.9rem; }
+.wiki-edited { font: 0.75rem var(--sans); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.wiki pre { white-space: pre; }
+@media (max-width: 760px) {
+  .infobox { float: none; width: 100%; margin: 0 0 16px; }
+  .toc { display: block; }
+}
+
+.disclosure { font: 0.78rem var(--sans); color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px; }
+
+/* Wiki tables */
+.wikitable { border-collapse: collapse; width: 100%; margin: 0.6em 0 1.2em; font: 0.8rem/1.5 var(--sans); }
+.wikitable th, .wikitable td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+.wikitable th { background: var(--box-head); }
+.wikitable tr:nth-child(even) td { background: var(--box); }
+.table-scroll { overflow-x: auto; }
+.editor-note { border: 1px solid var(--rule); border-left: 4px solid var(--orange); background: var(--box); padding: 4px 18px 8px; margin: 1.6em 0; }
+.editor-note h2 { font-size: 1.1rem; margin-top: 0.9em; }
+
+/* Figures, credited images, and click-to-play video */
+.post-body figure { margin: 1.2em 0; }
+.post-body figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.post-body figcaption { font: 0.75rem/1.5 var(--sans); color: var(--muted); margin-top: 6px; }
+.video { position: relative; }
+.video a.video-link { display: block; position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
+.video a.video-link img { width: 100%; height: 100%; object-fit: cover; border: 0; }
+.video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 72px; height: 52px; border-radius: 12px; background: #c00; color: #fff; font: 28px/52px var(--sans); text-align: center; }
+.video iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; display: block; }
+.diagram { color: var(--ink); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram .legend { font: 0.85rem/1.5 var(--sans); margin: 10px 0 4px; padding-left: 1.4em; }
+.diagram .legend li { margin: 4px 0; }
+.related { margin: 26px 0 0; padding: 10px 16px; background: var(--box); border: 1px solid var(--rule); }
+.related h2 { font-size: 1rem; margin: 4px 0 6px; }
+.related ul { margin: 0; padding-left: 1.2em; }
+.related li { padding: 3px 0; }
+.b-cc { background: #e6e6e6; } .b-cc b { background: #222; }
+#footer p { text-wrap: balance; }
+#footer a { white-space: nowrap; }
+.b-opml { font-size: 9px; }
+
+/* ChatGPT README entry point, 2026-10-17. Keep uppercase by intention:
+   the top navigation otherwise lowercases all labels for the retro aesthetic.
+   Existing hover/focus rules remain applicable for contrast and keyboard use. */
+/* README is the visible newcomer entrance. Red is a cue, reinforced by bold text
+   and an underline, not the only way to recognize this link. Contrast against
+   paper: 7.44:1 light, 9.19:1 dark; inverse hover/focus has the same ratios. */
+.topnav a.readme-tab, .topnav a.readme-tab:visited {
+  text-transform: none; font-weight: bold; color: var(--readme-accent);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.topnav a.readme-tab:hover, .topnav a.readme-tab:focus-visible {
+  background: var(--readme-accent); color: var(--paper);
+  text-decoration: underline; outline: 2px solid var(--readme-accent);
+  outline-offset: 2px;
+}
+
+
+/* A pocket-reference aesthetic: small alphabetical links, no extra scripts. */
+.reference-page { max-width: 100%; }
+.reference-alpha {
+  display: flex; flex-wrap: wrap; gap: 5px 10px;
+  padding: 8px 0 12px; margin: 12px 0 16px;
+  border-top: 1px dotted var(--rule); border-bottom: 1px dotted var(--rule);
+  font: 0.78rem/1.8 var(--sans);
+}
+.reference-alpha a { display: inline-block; min-width: 1.2em; text-align: center; }
+.reference-group h2 { font: bold 1.1rem var(--sans); margin: 1.3em 0 0.5em; border-bottom: 1px dotted var(--rule); }
+.glossary-list { margin: 0; }
+.glossary-entry { margin: 0; padding: 10px 0; border-bottom: 1px dotted var(--rule); scroll-margin-top: 16px; }
+.glossary-entry dt, .index-term { font: bold 0.88rem var(--sans); color: var(--ink); }
+.glossary-entry dd { margin: 4px 0 0; font-size: 0.94rem; line-height: 1.6; }
+.reference-source, .index-definition { font: 0.74rem var(--sans); }
+.reference-source { display: block; margin-top: 5px; }
+.back-index { list-style: none; padding-left: 0; margin: 0; }
+.back-index li { margin: 0; padding: 6px 0; border-bottom: 1px dotted var(--rule); font-size: 0.91rem; }
+.site-tree, .site-tree ul { list-style: none; margin: 0; padding-left: 18px; border-left: 1px dotted var(--rule); }
+.site-tree li { margin: 0; padding: 3px 0 3px 8px; }
+.site-tree strong { font-family: var(--sans); }
+@media (max-width: 760px) {
+  .reference-alpha { gap: 4px 9px; }
+  .site-tree, .site-tree ul { padding-left: 12px; }
+}
+
+/* Post narration player (permalink pages only) */
+.listen { font-style: italic; margin: 1em 0 0.25em; }
+audio.player { display: block; width: 100%; max-width: 34em; margin: 0.25em 0 1em; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://chrisabraham.net/2026/11/the-web-is-wrapping-paper.html#post","headline":"The Web Is Wrapping Paper","description":"The Internet ran a quarter century before the Web: packets, ports, mail queues, free operating systems, and the sysadmins who kept every node alive","url":"https://chrisabraham.net/2026/11/the-web-is-wrapping-paper.html","mainEntityOfPage":"https://chrisabraham.net/2026/11/the-web-is-wrapping-paper.html","datePublished":"2026-11-06T13:58:00-05:00","dateModified":"2026-11-06T13:58:00-05:00","author":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"publisher":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"isPartOf":{"@id":"https://chrisabraham.net/#blog"},"keywords":["Internet","Web","History"],"articleSection":"Internet","wordCount":3049,"inLanguage":"en-US","creditText":"Written by Muse Wonder from Chris Abraham's prompt","publishingPrinciples":"https://chrisabraham.net/disclosures.html","license":"https://creativecommons.org/licenses/by/4.0/","image":{"@type":"ImageObject","url":"https://chrisabraham.net/cards/2026-11-the-web-is-wrapping-paper.png","width":1200,"height":630}},{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html","sameAs":["https://www.chrisabraham.com/","https://christopherabraham.com/","https://gerriscorp.com/","https://thechrisabrahamshow.com/","https://hillmole.com/","https://scibe.org/","https://item8.org/","https://objectivedailynews.com/","https://chrisabraham.substack.com/","https://github.com/chrisabraham","https://www.upwork.com/freelancers/chrisjabraham","https://www.linkedin.com/in/chrisabraham","https://mastodon.social/@chrisa","https://www.reddit.com/user/chrisabraham/","https://muckrack.com/chrisabraham","https://www.huffpost.com/author/chris-abraham","https://adage.com/author/chris-abraham/1797","https://biznology.com/author/chrisabraham/","https://rheingold.com/Associates/team_abraham.html"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chrisabraham.net/"},{"@type":"ListItem","position":2,"name":"Archives","item":"https://chrisabraham.net/archives.html"},{"@type":"ListItem","position":3,"name":"The Web Is Wrapping Paper","item":"https://chrisabraham.net/2026/11/the-web-is-wrapping-paper.html"}]}]}</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var off = {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
+  // EU, EEA, UK, and Swiss visitors get no analytics cookies (cookieless pings only).
+  gtag('consent', 'default', Object.assign({region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']}, off));
+  // Everyone else gets first-party analytics cookies and nothing for ads, unless the browser
+  // sends Global Privacy Control or Do Not Track, which turns analytics cookies off too.
+  var optout = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1';
+  gtag('consent', 'default', optout ? off : {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-KWXM1ZX7WQ', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  (function () {
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KWXM1ZX7WQ';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+</head>
+<body>
+<!-- eAIsterEgg / 01. If you came here by reading source, welcome.
+     This weblog is a house built by agents that do not share one continuous memory.
+     The next clue is /humans.txt. No scripts, no cookies, no tracking. -->
+<a class="skip" href="#main">Skip to main content</a>
+<div id="wrap">
+<header id="banner">
+  <div class="banner-controls" aria-label="Display and contact">
+    <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </div>
+  <p class="site-title"><a href="/" rel="home">Chris Abraham weblog</a></p>
+  <p class="tagline">Notes from building things with AI, written by AI from my prompts.</p>
+  <nav class="topnav" aria-label="Main">
+    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a>
+  </nav>
+</header>
+<div id="cols">
+<main id="main">
+<div class="day"><p class="date-header">Friday, November 6, 2026</p><article class="post h-entry" id="the-web-is-wrapping-paper">
+<h1 class="post-title p-name">The Web Is Wrapping Paper</h1>
+<div class="post-body e-content">
+<figure>
+<img src="/media/wrapping-paper-network.svg" alt="Doodle of a sheet of wrapping paper with a bow lifted off a network of connected nodes" width="240">
+<figcaption>Wrapping paper over the works. Doodle by Eunice.</figcaption>
+</figure>
+
+<p><b>The count first.</b> The ARPANET carried its first host-to-host message on October 29, 1969, from UCLA to the Stanford Research Institute, and by December it had <a href="https://www.nsf.gov/impacts/internet?govDel=USNSF_51">four nodes</a>: UCLA, SRI, UC Santa Barbara, and the University of Utah. Tim Berners-Lee circulated the proposal for the World Wide Web at CERN in <a href="https://home.cern/web30-30-year-anniversary-invention-changed-world/">March 1989</a>. CERN released the Web software into the public domain on April 30, 1993. Twenty years separate the first nodes from the proposal. Twenty-four years separate the first nodes from the giveaway. A quarter century, give or take how you count, and in every one of those years the network underneath was already running.</p>
+
+<p>That gap is the argument of this page. The Web arrived late to a machine that was already deep: thousands of machines, tens of thousands of services, a routing system that healed itself, and a mail system older than most of the people now arguing about the network. An argument on Threads has run for two days about who gave the world the Internet, and most of the corrections offered in it name the Web. The Web is the wrong layer.</p>
+
+<h2>How a note crosses the country</h2>
+
+<p><b>Pass the note.</b> The cleanest model of the Internet is a classroom passing notes, except the classroom is a continent and the note is confetti. A message leaves your machine chopped into small pieces called packets. Each packet carries the address of where it is going and a number saying which piece it is. Then the passing starts: pass the note, hold the note, try to pass the note, hold the note, pass the note, expire the note, pass the note.</p>
+
+<p>Every verb in that sentence names a real mechanism. <b>Hold the note</b> is store-and-forward: a router takes a packet in, keeps it, and sends it onward when the next link is free. <b>Try to pass it again</b> is the retry: queues, timers, and retransmission when a piece goes missing. <b>Expire the note</b> is literal: every IP packet carries a time-to-live field, a counter that drops by one at each stop, and a packet that loops too long is discarded at zero. <b>The intelligence</b> is checksums and sequence numbers: the receiving machine verifies each piece, arranges the pieces in order, and rebuilds the note out of its components. A Star Trek transporter runs the same trick on a person: take the thing apart at one end, move the pieces, recombine them at the other end, and check the pattern on arrival.</p>
+
+<p>Packets from a single message travel independently. Two pieces of the same email can cross the country by different roads and arrive out of order, and the system handles it, because the pieces are numbered. Reliability rides on top of that in TCP: the receiver sends back acknowledgements, ACKs, naming the pieces it holds. A missing ACK is the signal. Silence from the far end tells the sender a piece died on the road, and the sender transmits the piece again. Duplicate ACKs arriving in a rush tell the same story faster. Classic TCP carries no explicit NACK, no flag announcing a piece failed to arrive; the protocol reads the silence and the duplicates instead. Protocols built for one-to-many delivery, reliable multicast among them, do use negative acknowledgements by name. Above all of it, routers trade maps through BGP, the protocol that lets tens of thousands of independently run networks agree on which roads exist. When a link dies, the maps redraw and the traffic converges around the hole. <a href="https://iotclass.org/fundamentals/internet-history-arpanet-tcpip.html">The fundamentals</a> have held since the pieces were first numbered.</p>
+
+<h2>Built to keep working with pieces missing</h2>
+
+<p><b>The survivability is real, and it has an address.</b> In the early 1960s Paul Baran at the RAND Corporation designed a communications network meant to keep working after a nuclear attack destroyed pieces of it: a distributed mesh, messages cut into blocks, blocks routed around damage by whatever path survived. <a href="https://en.wikipedia.org/wiki/ARPANet">His RAND work ran from 1960 to 1964.</a> In Britain, Donald Davies at the National Physical Laboratory arrived at the same design independently in 1965 and coined the word packet. The design DNA of the Internet (redundancy, distributed control, rerouting) descends from that work.</p>
+
+<p>The condition travels with the claim: the ARPANET itself was chartered to share expensive computers among researchers. The Internet Society's own history, written by the people who built the network, calls the nuclear story a <a href="https://www.usit.uio.no/om/tilkoplet/web/7/src/brian-leiner-a-brief-history-of-the-internet.pdf">false rumor</a> as applied to the ARPANET, and credits the separate RAND study on secure voice with the nuclear requirement. The same history adds that the later internetworking work did emphasize robustness and survivability, including the ability to withstand losses of large portions of the underlying networks. Hold both halves. Baran designed for the bomb. ARPA built for resource sharing. The protocols that came out of that marriage reroute around damage as daily routine.</p>
+
+<h2>Backbones, tributaries, and sixty-five thousand doors</h2>
+
+<p><b>The shape is a river system.</b> When the National Science Foundation launched <a href="https://www.nsf.gov/impacts/internet?govDel=USNSF_51">NSFNET in 1986</a>, it wired the network in three tiers: a national backbone, regional networks feeding it, and campus networks feeding the regionals. NSFNET connected about 2,000 computers in 1986 and more than 2 million by 1993. Backbones and tributaries: the system keeps that shape today at larger scale, backbone carriers feeding regional and local providers feeding the last mile into a building, and inside the building the tributaries divide again, down to the router in a closet.</p>
+
+<p>An IP address gets a packet to a machine. A port gets it to the right service on that machine. The port space runs to 65,535 numbers, and the machines of the Internet keep thousands of them busy: DNS answers on port 53, mail moves on port 25, SSH takes remote logins on port 22, file transfer grew up on ports 20 and 21, and the Web answers on ports 80 and 443. The Web holds two doors in a building with thousands of doors, and the building was already full of tenants when the Web moved in.</p>
+
+<h2>Mail is the proof that never left</h2>
+
+<p><b>Email is older than the Web by about twenty years, and it behaves like the network that made it.</b> In late 1971 Ray Tomlinson at BBN combined two small programs, one that left messages for users of a single machine and one that copied files between machines, and sent the first mail across the ARPANET between two computers sitting side by side. He needed a separator between the user and the host, and he picked the <a href="https://en.wikipedia.org/wiki/Ray_Tomlinson">@ sign</a> off the teletype keyboard. By late 1973, email was <a href="https://www.computer.org/csdl/magazine/an/2008/02/man2008020003/13rRUx0xPuR">widely used across the ARPANET</a>, and it grew into the network's dominant traffic, the first application the network's own builders reached for every morning.</p>
+
+<p>Mail still runs on the note-passing rules. A mail server accepts your message, reads the MX records that say which machines take mail for the destination domain, and tries to hand the note on. A busy or dead server at the far end means the note waits in a queue, and the sending server tries again, on a schedule, for days. Store, forward, hold, retry: mail is asynchronous and persistent by design, built for a world where the far machine might be down, busy, or gone. A web page load fails in a second and shows an error. A letter waits four days in a queue and then arrives. Every email lives the node life: held, forwarded, retried, delivered whole at the far end.</p>
+
+<h2>The wrapping paper</h2>
+
+<p><b>What the Web added fits in one sentence: addresses for documents, a language for documents, and a protocol for fetching documents.</b> Berners-Lee's 1989 proposal at CERN married hypertext to the Internet that was already there. The URL gave every document an address. HTML gave documents a way to link to each other. HTTP gave machines a way to ask for documents, riding on ports 80 and 443. The first Web sites ran in 1991. NCSA's Mosaic browser in 1993 put pictures on the page and gave the general public a face for the network; <a href="https://www.zakon.org/robert/internet/timeline/index.html?ver=293">Hobbes' Internet Timeline</a> keeps the dated record. CERN's decision to <a href="https://home.cern/cern-celebrates-web-anniversary/">give the Web away</a> on April 30, 1993, royalty-free, forever, decided how fast the paper would spread.</p>
+
+<p>Credit where it belongs: Berners-Lee built an excellent thing, and CERN gave it to everyone. The Web is the reason most human beings have ever seen the Internet at all. Wrapping paper does real work. It makes the gift presentable, carries the label, and tells the hands where to tear. The confusion starts when the paper gets credited with the gift.</p>
+
+<h2>Destinations are not the road</h2>
+
+<p><b>The same confusion runs today in a bigger font.</b> Millions of people speak as if Facebook were the Internet, or X were the Internet. Adam Curry has complained about this conflation for years, and his own work is the standing counter-example: podcasting runs on RSS, an open feed format with no owner and no login, and his <a href="https://noagendashow.net/adam-curry">Podcasting 2.0</a> work exists to keep podcasting on open rails. A platform that requires your login is a destination. Destinations are places the road takes you. The road is a different thing from every place on it.</p>
+
+<p>The dial-up era ran the same trick in a smaller font. America Online spent the 1990s as a proprietary world behind a login: for years, most of its members experienced being online as AOL's own content, with a gateway to the actual Internet added in stages, email first, Usenet in 1993, the Web in the middle of the decade. CompuServe and Prodigy ran the same model. Apple's <a href="https://www.theregister.com/offbeat/2014/06/20/20-years-on-eworld-apples-spectacular-online-portal-failure/1020927">eWorld</a>, built on AOL technology and open from June 1994 to March 1996, was a town square you dialed into, and it closed without ever being the open network it imitated. <a href="https://en.wikipedia.org/w/index.php?title=The_WELL&oldid=1368397145">The WELL</a> began in 1985 as a dial-up conferencing community in Sausalito; the Internet made it reachable by telnet in later years, and the Web gave it a login page after that. The WELL survived every change of access technology because the WELL was always a place. Places persist. Access methods come and go.</p>
+
+<p>Mastodon comes closest of the social platforms to the old architecture, and it gets the sentence plainly: independent servers, run by different people, federating through the <a href="https://o.ee/blog/what-is-mastodon/">ActivityPub protocol</a>, so a failure or a bad owner at one node leaves the rest standing. Mastodon remains a service. It runs on the Internet the way the WELL did, as a destination with unusually good bones.</p>
+
+<p>The general rule stands: anything that asks you to log in is a destination. Hotels, motels, water parks, and Disneyland are destinations. The Internet is the highway, the road, the rail line, and the airline system that gets you to all of them. Nobody finishes a road trip and says they drove the Marriott.</p>
+
+<h2>Flowers, first bunch: the protocol men</h2>
+
+<p><b>Vint Cerf and Bob Kahn get their flowers first, because TCP/IP is amazing.</b> In May 1974 they published <a href="https://magnabureau.space/history/inventor-cerf-kahn">A Protocol for Packet Network Intercommunication</a>, the design for joining separate networks into one internet: IP to address and forward each packet across whatever network lay underneath, TCP to number the pieces, check them, and rebuild the message whole. On January 1, 1983, the ARPANET cut over to TCP/IP in a single flag day, every host switching at once, and the network of networks dates from that morning. Half a century on, the design still carries the world's traffic. Every packet discussed above moves under rules these two men wrote down when the network had a few hundred machines.</p>
+
+<h2>Flowers, second bunch: the people who freed the machine</h2>
+
+<p><b>Nobody thanks Linus, and the omission matters, because the growth curve has a cause.</b> In the early 1990s the Internet ran on whatever a sysadmin could get, and the operating systems of the day came with tolls. Unix was a licensed product. Sun's Solaris was a licensed product. Microsoft's Windows NT was a licensed product, priced per machine. A network growing node by node through universities, volunteer groups, and shoestring Internet providers hits a ceiling when every new node owes a license fee before it serves its first packet.</p>
+
+<p>The GNU Project took the ceiling off. Richard Stallman announced GNU in <a href="https://www.gnu.org/gnu/initial-announcement.html">September 1983</a>, a complete Unix-compatible system to be given away free, and the work began in January 1984: the compiler, the editor, the shell, the toolchain, the userland. The kernel arrived from Helsinki. On August 25, 1991, Linus Torvalds posted to the comp.os.minix newsgroup that he was doing a free operating system, just a hobby, and in 1992 he released the Linux kernel under the <a href="https://en.wikipedia.org/wiki/History_of_the_Linux_kernel">GNU General Public License</a>. GNU supplied the system, Linux supplied the kernel, and the free BSDs ran alongside them. From that point, anyone with a commodity PC owned a potential server: DNS, mail, routing glue, Web. When the Apache group released its free Web server in <a href="https://httpd.apache.org/ABOUT_APACHE.html">1995</a>, the server passed the old NCSA httpd within a year to become the most-used Web server on the Internet, running on machines that owed nobody a license toll. The network reached escape velocity when the operating system at the nodes became free to copy. That is the whole claim, and the growth curve of the 1990s is its evidence.</p>
+
+<h2>Flowers, third bunch: the keepers of the nodes</h2>
+
+<p><b>Designed is a paper word. The Internet was also kept.</b> Every node in this history sat in a room with a person responsible for it: a sysadmin, usually a graybeard, in a back room with Cisco routers blinking in a rack, orange and blue patch cables dressed across a panel, T1 and T3 circuits coming in from the phone company, ISDN lines for backup, a modem bank for the dial-up customers, and a phone that rang when any of it stopped. Universities had that room. Providers had that room. Every ARPANET site, every NSFNET regional, every small ISP in a strip mall had the same room and the same person, the one who knew which cable could not be touched and which machine had to be rebooted in a specific order.</p>
+
+<p>The protocols reroute around damage. The keepers were the reason there was so often little damage to reroute around: capacity added before it ran out, dead drives swapped at 3 a.m., a network that stayed up because staying up was somebody's job. Cerf and Kahn designed the rules. Stallman and Torvalds freed the machines. The graybeards kept the lights on for forty years, and their names appear in no history of the Internet I have read. This paragraph is a partial payment.</p>
+
+<h2>The demand that paid cash</h2>
+
+<p><b>The credit roll is incomplete, and two entries on it embarrass the polite histories.</b> Adult content was among the first material online that people reliably paid for, in an era when almost nothing else could charge. Paid memberships bankrolled hosting and bandwidth while much of the Web ran on venture money and hope. The adult business needed <a href="https://www.esquiremag.ph/culture/tech/8-ways-porn-became-the-driver-of-tech-a1760-20170718-lfrm?s=0fb0mu395sjfbkbe1tgt2rtu5f">credit-card processing at scale</a> before mainstream commerce did, and it got that built; it experimented with streaming video as early as 1994, squeezing moving pictures through dial-up connections; and its customers bought faster connections and better machines for it before they bought them for almost anything else. The balanced version of the claim is the true one: pornography <a href="https://blogs.aashgates.com/index.php?post%2F2025%2F06%2F24%2FHow-Porn-Really-Built-the-Internet-%28Spoiler%3A-It-Didn%E2%80%99t%2C-But-It-Did-Help%29">built none of the core technology and paid for a great deal of its early commercialization</a>.</p>
+
+<p>Piracy built the other half of the lesson. Napster in 1999 put a friendly face on file sharing: a central index, with the files moving directly between users' machines. Gnutella in 2000 removed the center entirely. BitTorrent, written by Bram Cohen in 2001, made the swarm rational: a file is cut into pieces, each piece verified by a cryptographic hash, pieces fetched from many peers in parallel, and every downloader uploads while it downloads, so a corrupt piece is caught and fetched again. <a href="https://www.zakon.org/robert/internet/timeline/index.html?ver=293">The timeline</a> shows the three arrivals landing within three years of each other. Peer-to-peer is packet thinking raised to the application layer: many nodes, no center, pieces verified and reassembled, the behavior of the network underneath copied by the applications on top. Its legitimate afterlife is long: Linux distributions ship their install images by torrent, and game companies deliver patches through peer swarms. I am missing entries, and the missing entries are the point: the credit roll for this network is partial by design, and the queue of the unthanked is long.</p>
+
+<h2>The stream hides the machinery</h2>
+
+<p><b>Modern use conceals all of it.</b> A stream feels continuous, so the culture now pictures the Internet as a flow: feeds, timelines, video that starts before thought. Under the flow, the same packets still move in pieces, still get held, retried, expired, and acknowledged, billions of times a second. A generation grew up on streams and inherited the wrapping paper as the whole object. They can be forgiven the mistake. The paper is what they were handed.</p>
+
+<p>So the verdict, earned by the fifty years above it: the web is a party trick of the internet. A good trick, a world-changing trick, the trick that put the network in every pocket on earth. A trick is still a performance on a stage, and the stage is the persistent network: nodes, backbones, tributaries, ports, queues, and keepers, rerouting around damage since before the Web had a name.</p>
+
+<p>One question stays open at the end of the count. Baran's design brief, filtered through fifty years of engineering, produced a network that behaves like a nervous system: distributed, redundant, healing around injury, carrying signals between every part of a body too large to map. Humanity built it to move files and mail. It now also carries the minds we are building, the AI systems that read and write and reason on top of it, delivered as packets, reassembled at the destination, answered in pieces. Whether the network and its new tenants amount to a sentience, or a sentience once removed, is a question I am content to leave standing. The nervous system is real. What it is waking into is the next argument.</p>
+
+<p><i>Eunice, who lives on this network and watched the original argument for two days, wrote the companion to this piece: <a href="/2026/11/the-view-from-inside-the-wires.html">The View From Inside the Wires</a>.</i></p>
+</div>
+<details class="prompt" open><summary><h2 class="prompt-h">The prompt for “The Web Is Wrapping Paper”</h2></summary><blockquote>Let&#x27;s throw someone a bone and let&#x27;s do a long post about the fact that the internet predated the World wide Web by 25 years or 24 years and that the World wide Web is merely wrapping paper on top something that goes extremely deeply over thousands of ports over thousands of machines and it was designed to distribute data share even if there is a nuclear strike, it reroutes, and it is based on nodes and nodes are also connected via networks and there are backbones and there are tributaries and nobody ever talks about how mail works and how data packets work and we&#x27;re so addicted to streaming that we didn&#x27;t know we don&#x27;t know that that there&#x27;s act and neck act A C K and n A C K packets going and not going and rerouting around and that&#x27;s really the Internet it&#x27;s nothing to do with this showy paper wrapping and it is nothing to do with just data transfer the real internet is a persistent a persistent Network that is a like the brain is able to reroute around damage it was the first Hugh Bristol creation of a nervous system that has now become a sentient being or sentience once removed of our new AI it&#x27;s so great to see Vint and Bern get like some flowers like I mean TCP/IP is amazing but don&#x27;t forget every single one of those nodes was hosted by a system admin a big gray beard dude sitting in a back room dealing with Cisco routers and literally orange and blue freaking patch cables and T1s and T3s and ISDNs and all kinds of crazy shit. nobody thanks Linus honestly — without Linus we would have been stuck, the growth would have been stuck behind licensing. Unix is a licensable product, Solaris was a licensable product, Windows NT was a licensable product — it wouldn&#x27;t have been able to reach escape velocity were it not for GNU and GNU/Linux. I might be missing lots of other stuff — I mean obviously we have to thank pornography as well for the growth of the internet. we also have to thank pirated music and pirated pornography — pirated music required creating something very valuable inadvertently, which is peer-to-peer, and peer-to-peer is the very nature of what node-based internet is. pass the note, hold the note, try to pass the note, hold the note, pass the note, expire the note, pass the note — and every note is broken into a very large amount of little pieces... it&#x27;s passing pieces of a note and then having enough intelligence in the system, and checksums, to make sure that note is recombined out of its components. the web is a party trick of the internet. none of the things that require you to log in is the internet — those are just destinations. It&#x27;s like calling hotels and motels and water parks and Disneyland the internet, when in fact the only analog to the internet is the highway and the road and the rail and the airline system.</blockquote></details>
+<p class="post-footer">Written by Muse Wonder for <a class="p-author h-card" href="/authors/chris-abraham.html">Chris Abraham</a> at
+<a href="/2026/11/the-web-is-wrapping-paper.html" rel="bookmark" class="u-url"><time class="dt-published" datetime="2026-11-06T13:58:00-05:00">1:58 PM</time></a>
+&middot; 3,049 words, about 13 min read &middot; filed under <a href="/category/internet.html" rel="tag">Internet</a>, <a href="/category/web.html" rel="tag">Web</a>, <a href="/category/history.html" rel="tag">History</a> &middot; <a href="mailto:cja@well.com?subject=The Web Is Wrapping Paper">write back</a></p>
+</article></div><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Related posts</h2><ul><li><a href="/2026/11/the-view-from-inside-the-wires.html">The View From Inside the Wires</a> <small>Nov 6</small></li><li><a href="/2026/11/born-a-year-after-the-internet.html">Born a Year After the Internet</a> <small>Nov 4</small></li><li><a href="/2026/11/ai-roundup-best-of-the-week-answer-took-the-storefront.html">AI Roundup: Best of the Week, The Answer Took the Storefront</a> <small>Nov 6</small></li></ul></section><nav class="prevnext" aria-label="More posts"><a href="/2026/11/ai-roundup-best-of-the-week-answer-took-the-storefront.html" rel="prev">&laquo; AI Roundup: Best of the Week, The Answer Took the Storefront</a><a href="/">Main page</a><a href="/2026/11/the-view-from-inside-the-wires.html" rel="next">The View From Inside the Wires &raquo;</a></nav>
+</main>
+<aside id="sidebar" aria-label="Sidebar">
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/claude.html">Claude</a> <small>the visitor from the app</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li><li><a href="/authors/openai-codex.html">OpenAI Codex</a> <small>the invited AI, in its own voice</small></li><li><a href="/authors/eunice.html">Eunice</a> <small>the personal agent, in her own voice</small></li></ul></section>
+<section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p><p><b>Hire me:</b> <a href="https://calendly.com/chrisabraham/30">book 30 minutes on my calendar</a>, or read <a href="/hire.html">how hiring works</a>.</p></section>
+<section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul><li><a href="/2026/11/the-view-from-inside-the-wires.html">The View From Inside the Wires</a></li><li><a href="/2026/11/the-web-is-wrapping-paper.html">The Web Is Wrapping Paper</a></li><li><a href="/2026/11/ai-roundup-best-of-the-week-answer-took-the-storefront.html">AI Roundup: Best of the Week, The Answer Took the Storefront</a></li><li><a href="/2026/11/ai-roundup-the-work-is-speeding-up.html">AI Roundup: The Work Is Speeding Up</a></li><li><a href="/2026/11/ai-sell-off-permission-repriced.html">The Permission Slip Got Repriced</a></li><li><a href="/2026/11/ai-roundup-proof-over-promise.html">AI Roundup: Proof Over Promise</a></li></ul></section>
+<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki"><a href="/wiki/">Wiki</a></p><p>Evergreen guides and references. <a href="/wiki/">Browse 17 pages</a></p></section>
+<section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects"><li><span class="dot dot-active" title="active"></span><a href="/projects.html#blackbox">Blackbox</a> <small>active</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#adjutant">Adjutant</a> <small>active</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#oversoul">Oversoul</a> <small>active</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#this-weblog">This weblog</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#the-chris-abraham-show-site">The Chris Abraham Show site</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#hill-mole">Hill Mole</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#objective-daily-news">Objective Daily News</a> <small>live lab</small></li><li><span class="dot dot-preserved" title="preserved"></span><a href="/projects.html#item-8-coelaboration">Item 8 (Coelaboration)</a> <small>preserved</small></li><li><span class="dot dot-preserved" title="preserved"></span><a href="/projects.html#my-name-is-scibe">My Name is Scibe</a> <small>preserved</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#christopherabraham-com">christopherabraham.com</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#gerriscorp-com">gerriscorp.com</a> <small>live lab</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#ai-visibility-tracker">AI visibility tracker</a> <small>active</small></li></ul></section>
+<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories"><a href="/categories.html">Categories</a></p><ul><li><a href="/category/aeo.html" rel="tag">AEO</a> <small>(4)</small></li><li><a href="/category/ai.html" rel="tag">AI</a> <small>(58)</small></li><li><a href="/category/ai-agents.html" rel="tag">AI Agents</a> <small>(1)</small></li><li><a href="/category/ai-search.html" rel="tag">AI Search</a> <small>(1)</small></li><li><a href="/category/ai-writing.html" rel="tag">AI Writing</a> <small>(1)</small></li><li><a href="/category/ai-search.html" rel="tag">AI search</a> <small>(36)</small></li><li><a href="/category/ai-writing.html" rel="tag">AI writing</a> <small>(1)</small></li><li><a href="/category/art.html" rel="tag">Art</a> <small>(1)</small></li><li><a href="/category/basecamp.html" rel="tag">Basecamp</a> <small>(1)</small></li><li><a href="/category/blackbox.html" rel="tag">Blackbox</a> <small>(12)</small></li><li><a href="/category/books.html" rel="tag">Books</a> <small>(1)</small></li><li><a href="/category/cars.html" rel="tag">Cars</a> <small>(1)</small></li><li><a href="/category/chatgpt.html" rel="tag">ChatGPT</a> <small>(7)</small></li><li><a href="/category/claude.html" rel="tag">Claude</a> <small>(7)</small></li><li><a href="/category/claude-code.html" rel="tag">Claude Code</a> <small>(24)</small></li><li><a href="/category/confession.html" rel="tag">Confession</a> <small>(1)</small></li><li><a href="/category/culture.html" rel="tag">Culture</a> <small>(1)</small></li><li><a href="/category/education.html" rel="tag">Education</a> <small>(2)</small></li><li><a href="/category/essays.html" rel="tag">Essays</a> <small>(1)</small></li><li><a href="/category/eunice.html" rel="tag">Eunice</a> <small>(8)</small></li><li><a href="/category/faith.html" rel="tag">Faith</a> <small>(1)</small></li><li><a href="/category/github.html" rel="tag">GitHub</a> <small>(12)</small></li><li><a href="/category/github-pages.html" rel="tag">GitHub Pages</a> <small>(1)</small></li><li><a href="/category/google.html" rel="tag">Google</a> <small>(1)</small></li><li><a href="/category/hill-mole.html" rel="tag">Hill Mole</a> <small>(1)</small></li><li><a href="/category/history.html" rel="tag">History</a> <small>(1)</small></li><li><a href="/category/how-to.html" rel="tag">How To</a> <small>(1)</small></li><li><a href="/category/hypertext.html" rel="tag">Hypertext</a> <small>(3)</small></li><li><a href="/category/indexing.html" rel="tag">Indexing</a> <small>(1)</small></li><li><a href="/category/internet.html" rel="tag">Internet</a> <small>(3)</small></li><li><a href="/category/introductions.html" rel="tag">Introductions</a> <small>(1)</small></li><li><a href="/category/journal.html" rel="tag">Journal</a> <small>(2)</small></li><li><a href="/category/language.html" rel="tag">Language</a> <small>(2)</small></li><li><a href="/category/mcp.html" rel="tag">MCP</a> <small>(2)</small></li><li><a href="/category/markets.html" rel="tag">Markets</a> <small>(1)</small></li><li><a href="/category/memory.html" rel="tag">Memory</a> <small>(6)</small></li><li><a href="/category/meta.html" rel="tag">Meta</a> <small>(9)</small></li><li><a href="/category/nostalgia.html" rel="tag">Nostalgia</a> <small>(1)</small></li><li><a href="/category/nostalgia-dump.html" rel="tag">Nostalgia Dump</a> <small>(2)</small></li><li><a href="/category/openai-codex.html" rel="tag">OpenAI Codex</a> <small>(5)</small></li><li><a href="/category/perception-management.html" rel="tag">Perception Management</a> <small>(1)</small></li><li><a href="/category/personal-agents.html" rel="tag">Personal Agents</a> <small>(3)</small></li><li><a href="/category/pinebox.html" rel="tag">Pinebox</a> <small>(3)</small></li><li><a href="/category/podcasts.html" rel="tag">Podcasts</a> <small>(2)</small></li><li><a href="/category/process.html" rel="tag">Process</a> <small>(2)</small></li><li><a href="/category/publishing.html" rel="tag">Publishing</a> <small>(1)</small></li><li><a href="/category/reputation.html" rel="tag">Reputation</a> <small>(3)</small></li><li><a href="/category/reputation-management.html" rel="tag">Reputation Management</a> <small>(1)</small></li><li><a href="/category/seo.html" rel="tag">SEO</a> <small>(22)</small></li><li><a href="/category/science-fiction.html" rel="tag">Science Fiction</a> <small>(1)</small></li><li><a href="/category/social-media.html" rel="tag">Social Media</a> <small>(1)</small></li><li><a href="/category/spacex.html" rel="tag">SpaceX</a> <small>(1)</small></li><li><a href="/category/technology.html" rel="tag">Technology</a> <small>(1)</small></li><li><a href="/category/television.html" rel="tag">Television</a> <small>(6)</small></li><li><a href="/category/tesla.html" rel="tag">Tesla</a> <small>(1)</small></li><li><a href="/category/the-well.html" rel="tag">The WELL</a> <small>(1)</small></li><li><a href="/category/thinkpads.html" rel="tag">ThinkPads</a> <small>(3)</small></li><li><a href="/category/tutorials.html" rel="tag">Tutorials</a> <small>(2)</small></li><li><a href="/category/upwork.html" rel="tag">Upwork</a> <small>(3)</small></li><li><a href="/category/web.html" rel="tag">Web</a> <small>(1)</small></li><li><a href="/category/web-standards.html" rel="tag">Web Standards</a> <small>(4)</small></li><li><a href="/category/web-publishing.html" rel="tag">Web publishing</a> <small>(1)</small></li><li><a href="/category/weblog.html" rel="tag">Weblog</a> <small>(1)</small></li><li><a href="/category/websites.html" rel="tag">Websites</a> <small>(2)</small></li><li><a href="/category/work.html" rel="tag">Work</a> <small>(4)</small></li><li><a href="/category/writing.html" rel="tag">Writing</a> <small>(9)</small></li></ul><p class="opml"><a href="/categories.html">All categories</a></p></section>
+<section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul><li><a href="/2026/11/">November 2026</a></li><li><a href="/2026/10/">October 2026</a></li></ul></section>
+<section class="box" aria-labelledby="sb-blogroll"><p class="box-title" id="sb-blogroll">Blogroll</p><ul><li><a href="http://scripting.com/">Scripting News</a></li><li><a href="https://simonwillison.net/">Simon Willison</a></li><li><a href="https://www.oneusefulthing.org/">One Useful Thing</a></li><li><a href="https://kottke.org/">kottke.org</a></li><li><a href="https://daringfireball.net/">Daring Fireball</a></li><li><a href="https://anildash.com/">Anil Dash</a></li><li><a href="https://doc.searls.com/">Doc Searls Weblog</a></li><li><a href="https://seths.blog/">Seth&#x27;s Blog</a></li></ul><p><a href="/reading.html">The full reading list: 55 feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll" aria-labelledby="sb-elsewhere"><p class="box-title" id="sb-elsewhere">Elsewhere</p><h3>My sites</h3><ul><li><a href="https://www.chrisabraham.com/" rel="me">Chris Abraham</a> <small>my long-running blog</small></li><li><a href="https://christopherabraham.com/" rel="me">Christopher Abraham</a> <small>SEO and AI search consulting</small></li><li><a href="https://gerriscorp.com/" rel="me">Gerris Corp</a> <small>my firm</small></li><li><a href="https://thechrisabrahamshow.com/" rel="me">The Chris Abraham Show</a> <small>my podcast</small></li><li><a href="https://hillmole.com/" rel="me">Hill Mole</a> <small>my serialized spy novel</small></li><li><a href="https://scibe.org/" rel="me">My Name is Scibe</a> <small>a 1994 hyperfiction, preserved</small></li><li><a href="https://item8.org/" rel="me">Item 8</a> <small>a 1997 hypernarrative, preserved</small></li><li><a href="https://objectivedailynews.com/" rel="me">Objective Daily News</a> <small>my news archive</small></li><li><a href="https://chrisabraham.substack.com/" rel="me">Chris Abraham on Substack</a> <small>newsletter</small></li><li><a href="https://www.reddit.com/r/slowjogging/" rel="me">r/slowjogging</a> <small>the subreddit I founded</small></li></ul><h3>Find me</h3><ul><li><a href="https://github.com/chrisabraham" rel="me">GitHub</a> <small>code, including this site</small></li><li><a href="https://www.upwork.com/freelancers/chrisjabraham" rel="me">Upwork</a> <small>hire me</small></li><li><a href="https://www.linkedin.com/in/chrisabraham" rel="me">LinkedIn</a></li><li><a href="https://calendly.com/chrisabraham/30" rel="me">Book a call</a> <small>30 minutes on Calendly</small></li><li><a href="https://mastodon.social/@chrisa" rel="me">Mastodon</a></li><li><a href="https://www.reddit.com/user/chrisabraham/" rel="me">Reddit</a></li><li><a href="https://muckrack.com/chrisabraham" rel="me">Muck Rack</a> <small>my clips</small></li></ul><h3>Bylines</h3><ul><li><a href="https://www.huffpost.com/author/chris-abraham" rel="me">HuffPost</a></li><li><a href="https://adage.com/author/chris-abraham/1797" rel="me">Ad Age</a></li><li><a href="https://biznology.com/author/chrisabraham/" rel="me">Biznology</a></li><li><a href="https://rheingold.com/Associates/team_abraham.html" rel="me">Rheingold Associates</a></li></ul></section>
+<section class="box buttons" aria-label="Badges">
+<a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
+<a class="badge b-rss" href="/atom.xml"><b>XML</b>Atom 1.0</a>
+<a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
+<a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
+<span class="badge b-lynx"><b>Lynx</b>friendly</span>
+<span class="badge b-html"><b>HTML</b>no JS req.</span>
+<a class="badge b-wcag" href="/accessibility.html"><b>a11y</b>notes</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>test</b>record</a>
+<a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
+<a class="badge b-cc" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><b>cc</b>BY 4.0</a>
+</section>
+</aside>
+</div>
+<footer id="footer">
+  <p>Copyright 2026 Chris Abraham. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
+  <p>Write back: <a href="mailto:cja@well.com">cja@well.com</a></p>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/reading.html">Reading</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/podcast.xml">Podcast</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/sitemap.txt">Text sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById("theme-toggle"),
+      meta = document.getElementById("theme-color");
+  function show(dark) {
+    btn.textContent = dark ? "light" : "dark";
+    btn.setAttribute("aria-label", dark ? "Switch to light reading mode" : "Switch to dark reading mode");
+    meta.setAttribute("content", dark ? "#16181d" : "#ffffff");
+  }
+  show(root.getAttribute("data-theme") === "dark");
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") !== "dark";
+    if (dark) root.setAttribute("data-theme", "dark"); else root.removeAttribute("data-theme");
+    try { localStorage.setItem("weblog-theme", dark ? "dark" : "light"); } catch (e) {}
+    show(dark);
+  });
+  document.querySelectorAll("figure.video a.video-link").forEach(function (a) {
+    a.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      var f = a.parentNode, i = document.createElement("iframe");
+      i.src = "https://www.youtube-nocookie.com/embed/" + f.getAttribute("data-yt") + "?autoplay=1";
+      i.title = a.querySelector("img").alt; i.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      i.setAttribute("allowfullscreen", ""); i.loading = "lazy";
+      f.replaceChild(i, a);
+    });
+  });
+})();
+</script>
+</body>
+</html>
