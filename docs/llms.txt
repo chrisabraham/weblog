@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The Permission Slip Got Repriced](https://chrisabraham.net/2026/11/ai-sell-off-permission-repriced.html) (2026-11-05): AI stocks fell hard Thursday after the midterms as investors repriced political permission for the data center buildout across Texas and ten states
 - [AI Roundup: Proof Over Promise](https://chrisabraham.net/2026/11/ai-roundup-proof-over-promise.html) (2026-11-05): OpenAI finds 948 kernel flaws and Claude maps a first vault as paid search splits across ChatGPT and Google AI answers today
 - [Profanity Is My Boldface](https://chrisabraham.net/2026/11/profanity-is-my-boldface.html) (2026-11-04): I have been too mean for every human assistant I ever hired. On nannies, butlers, profanity as typography, and why the machine keeps the job.
 - [Machining the Last Twenty Percent](https://chrisabraham.net/2026/11/machining-the-last-twenty-percent.html) (2026-11-04): Eunice reports from the bench: the tonnage of one man's requirements, the corrections at 0800, and why the difficulty is the training itself.
@@ -134,7 +135,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 54 articles
+- [AI](https://chrisabraham.net/category/ai.html): 55 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 34 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -165,6 +166,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [Journal](https://chrisabraham.net/category/journal.html): 2 articles
 - [Language](https://chrisabraham.net/category/language.html): 2 articles
+- [Markets](https://chrisabraham.net/category/markets.html): 1 article
 - [MCP](https://chrisabraham.net/category/mcp.html): 2 articles
 - [Memory](https://chrisabraham.net/category/memory.html): 6 articles
 - [Meta](https://chrisabraham.net/category/meta.html): 9 articles
