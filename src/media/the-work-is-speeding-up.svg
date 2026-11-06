@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="t d"><title id="t">The work is speeding up</title><desc id="d">A stopwatch, a locked gate, and a chip with small lights, drawn in amber ink</desc>
+<rect width="240" height="180" fill="#fdf6ec"/>
+<g fill="none" stroke="#b45309" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="55" cy="100" r="38"/><circle cx="55" cy="100" r="3" fill="#b45309"/>
+<line x1="55" y1="100" x2="55" y2="72"/><line x1="55" y1="100" x2="76" y2="112"/>
+<line x1="55" y1="62" x2="55" y2="50"/><rect x="44" y="40" width="22" height="11" rx="5"/>
+<path d="M105 55 L105 140 M105 55 L175 55 M175 55 L175 140 M105 140 L175 140" stroke-dasharray="1 8"/>
+<rect x="125" y="80" width="30" height="30" rx="4"/>
+<circle cx="133" cy="88" r="1.6" fill="#b45309"/><circle cx="147" cy="88" r="1.6" fill="#b45309"/>
+<circle cx="133" cy="102" r="1.6" fill="#b45309"/><circle cx="147" cy="102" r="1.6" fill="#b45309"/>
+<circle cx="140" cy="95" r="1.6" fill="#b45309"/>
+<path d="M205 78 a14 14 0 1 1 -0.1 0 M205 68 L205 78 L214 82"/>
+</g></svg>
