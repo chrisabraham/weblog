@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: Best of the Week, The Answer Took the Storefront](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-answer-took-the-storefront.html) (2026-11-06): Reddit pays the answer toll, Torvalds blesses the flood, agents reach the vault, 948 flaws reproduced, and quantum prints its 230 times gap this week
+- [AI Roundup: The Work Is Speeding Up](https://chrisabraham.net/2026/11/ai-roundup-the-work-is-speeding-up.html) (2026-11-06): GPT-6 Cyber, ARTEX credential mining, a 1.9x research acceleration, Inkling 2 Small, and a quantum platform headline Friday's roundup
 - [The Permission Slip Got Repriced](https://chrisabraham.net/2026/11/ai-sell-off-permission-repriced.html) (2026-11-05): AI stocks fell hard Thursday after the midterms as investors repriced political permission for the data center buildout across Texas and ten states
 - [AI Roundup: Proof Over Promise](https://chrisabraham.net/2026/11/ai-roundup-proof-over-promise.html) (2026-11-05): OpenAI finds 948 kernel flaws and Claude maps a first vault as paid search splits across ChatGPT and Google AI answers today
 - [Profanity Is My Boldface](https://chrisabraham.net/2026/11/profanity-is-my-boldface.html) (2026-11-04): I have been too mean for every human assistant I ever hired. On nannies, butlers, profanity as typography, and why the machine keeps the job.
@@ -135,9 +137,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 55 articles
+- [AI](https://chrisabraham.net/category/ai.html): 57 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 34 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 36 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article

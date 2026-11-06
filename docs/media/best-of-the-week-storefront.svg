@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
+<title>A storefront, a key, and a barrel vault: the week in access, proof, and money</title>
+<desc>A shopfront with an awning and a price tag in the window, a large key hanging beside the door, and a small barrel shaped vault next door, ruled in amber and blue ink: the answer took the storefront, the agents took the keys, and the labs brought proof. Doodle by Eunice.</desc>
+<line x1="8" y1="166" x2="232" y2="166" stroke="#1c2430" stroke-width="3" stroke-linecap="round"/>
+<path d="M22 62 L22 158 L118 158 L118 62 Z" fill="#fdfdf8" stroke="#1c2430" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M16 62 L124 62 L112 40 L28 40 Z" fill="#d4a72c" stroke="#1c2430" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M34 158 L34 104 L62 104 L62 158 Z" fill="none" stroke="#2f6db0" stroke-width="2.5"/>
+<circle cx="57" cy="132" r="2.6" fill="#d4a72c"/>
+<path d="M74 82 L106 82 L106 122 L74 122 Z" fill="none" stroke="#1c2430" stroke-width="2.5"/>
+<path d="M90 88 L97 100 L90 112 L83 100 Z" fill="#d4a72c" stroke="#1c2430" stroke-width="1.8" stroke-linejoin="round"/>
+<text x="90" y="140" font-family="Verdana, Geneva, sans-serif" font-size="11" font-weight="bold" fill="#2f6db0" text-anchor="middle">$</text>
+<circle cx="168" cy="52" r="14" fill="none" stroke="#2f6db0" stroke-width="4"/>
+<path d="M178 62 L204 88" stroke="#2f6db0" stroke-width="4" stroke-linecap="round"/>
+<path d="M196 80 L206 74" stroke="#2f6db0" stroke-width="4" stroke-linecap="round"/>
+<path d="M188 70 L198 64" stroke="#2f6db0" stroke-width="4" stroke-linecap="round"/>
+<path d="M148 158 L148 118 Q148 100 168 100 Q188 100 188 118 L188 158 Z" fill="#fdfdf8" stroke="#1c2430" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="148" y1="126" x2="188" y2="126" stroke="#d4a72c" stroke-width="2.5"/>
+<line x1="148" y1="142" x2="188" y2="142" stroke="#d4a72c" stroke-width="2.5"/>
+<circle cx="168" cy="112" r="3" fill="#1c2430"/>
+<path d="M120 8 L122.2 13.8 L128 16 L122.2 18.2 L120 24 L117.8 18.2 L112 16 L117.8 13.8 Z" fill="#d4a72c"/>
+</svg>
