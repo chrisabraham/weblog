@@ -309,9 +309,9 @@
  },
  "eunice-in-the-garden": {
   "author": "eunice",
-  "bytes": 3372517,
-  "duration": 421,
-  "sha256": "02d2cfb9e5db9bfa79687bb646e3e6b5bccdc9b30101aa56ef6621a590c83bd2",
+  "bytes": 3855589,
+  "duration": 481,
+  "sha256": "dd8a1c230f016fd41f313d37b6f2e4da19af4c91ed0b8ef30ed982e1148c13b8",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "every-app-has-a-door-for-ai": {
@@ -414,9 +414,9 @@
  },
  "in-the-beginning-there-was-the-node": {
   "author": "chris",
-  "bytes": 6228133,
-  "duration": 778,
-  "sha256": "76b16e82533cc447f47ce4e420791617223b56797b194a0d4699657d78ddd5ae",
+  "bytes": 12151525,
+  "duration": 1518,
+  "sha256": "b6f62da6615b92e632de1e25e116dc1258a8c3683f3a2ffef8a19783c5bdcb83",
   "voice": "avocado_v2:qvd_02406"
  },
  "keeping-the-night-watch": {
