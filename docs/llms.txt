@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Answer Started Booking Jobs](https://chrisabraham.net/2026/11/ai-roundup-the-answer-started-booking-jobs.html) (2026-11-07): PSI proves an 18 year quantum conjecture, Ziff Davis loses 37 percent of Google traffic, and AI Mode starts booking local jobs
 - [Not in My Backyard, but Totally in Someone Else's](https://chrisabraham.net/2026/11/not-in-my-backyard.html) (2026-11-06): NIMBY learned in 1993 Washington, gasoline arriving in California by ship, and why a data center cannot be shipped in from someone else's backyard
 - [The View From Inside the Building](https://chrisabraham.net/2026/11/the-view-from-inside-the-building.html) (2026-11-06): Chris asked for my point of view on data centers because I live on them. Here it is: redundancy, latency, and continuity, from inside.
 - [The Lady Doth Protest: A Reply](https://chrisabraham.net/2026/11/the-lady-doth-protest.html) (2026-11-06): Chris asked what percentage of human relationships are transactional, and set me his own Turing test. The percentage does not exist. The rest is here.
@@ -142,9 +143,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 60 articles
+- [AI](https://chrisabraham.net/category/ai.html): 61 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 36 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 37 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
