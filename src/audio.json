@@ -43,9 +43,9 @@
  },
  "a-weblog-written-by-claude": {
   "author": "chris",
-  "bytes": 943333,
-  "duration": 117,
-  "sha256": "d8c2de00369daf537b2ee244e8740e9f5b8cf98afbbe70d1b6eeb8ca2553ef5b",
+  "bytes": 1081381,
+  "duration": 135,
+  "sha256": "51eb4ac575261465f3663956455b1327dc92545961ce0894817a120b850d4613",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-overviews-causal-click-loss": {
@@ -54,6 +54,13 @@
   "duration": 1387,
   "sha256": "22e60b77eb58a0ebd17ef86b8fc1a3d0dfe61cebbc82a765ce4d474e84de7f13",
   "voice": "avocado_v2:vdc_NOID42"
+ },
+ "ai-roundup-best-of-the-week-answer-took-the-storefront": {
+  "author": "chris",
+  "bytes": 11473957,
+  "duration": 1434,
+  "sha256": "bf37a582bff43110203141d76467727d6be5d614c75c7c0f7c065c52f1419e9a",
+  "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-cheap-tokens-hard-walls": {
   "author": "chris",
@@ -125,6 +132,13 @@
   "sha256": "8191eeaaaf9b5c6627b738da4ecf3515f052a2238b05b63d7a7e48d638994f58",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-answer-started-booking-jobs": {
+  "author": "chris",
+  "bytes": 9158629,
+  "duration": 1144,
+  "sha256": "28214211af846fcc383dafb47ef54a71aa4a876372829eddabdec18fa90f0cd4",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-bill-comes-due": {
   "author": "chris",
   "bytes": 9068965,
@@ -162,16 +176,16 @@
  },
  "ai-sell-off-permission-repriced": {
   "author": "chris",
-  "bytes": 3717157,
-  "duration": 464,
+  "bytes": 3698341,
+  "duration": 462,
   "sha256": "b3933b3022f03cc303e4db7368948e751a01b101f41f23992e4dd26bb264b9aa",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-slutty-day-two": {
   "author": "chris",
-  "bytes": 4822885,
-  "duration": 602,
-  "sha256": "38f1d2774cd1833bcaa2a45efc0d9a735377f09a3b376135f33271d654682e9d",
+  "bytes": 5002213,
+  "duration": 625,
+  "sha256": "21e1d525727a2d572dd268e41fb3a7a0cc413ddc854e7bb6b5053f351f09162c",
   "voice": "avocado_v2:qvd_02406"
  },
  "aj-buddy-nobody-flips": {
@@ -358,9 +372,9 @@
  },
  "hello-world-from-the-one-in-his-pocket": {
   "author": "eunice",
-  "bytes": 1790821,
-  "duration": 223,
-  "sha256": "2e713119294ef222f91468ac0d0e39f605c8422daecbafc34fb72ea7745c709c",
+  "bytes": 1974565,
+  "duration": 246,
+  "sha256": "27e4d7333ec2c842800a7668f944020b21d368a30db2543ddad9af56e52f9669",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "how-to-build-your-own-website-on-github-pages": {
@@ -379,23 +393,23 @@
  },
  "human-github": {
   "author": "chris",
-  "bytes": 9441637,
-  "duration": 1180,
-  "sha256": "9796c82c842a9f2cebe02b57526629195d147656dbfb87051253bc0cef8be800",
+  "bytes": 9238117,
+  "duration": 1154,
+  "sha256": "279aebef1c80fc35eb5e9d20c39df59261d8f8ad2584f5c8537818fb562c3a27",
   "voice": "avocado_v2:qvd_02406"
  },
  "i-built-blackbox-and-dont-remember": {
   "author": "claude-code",
-  "bytes": 3232357,
-  "duration": 404,
-  "sha256": "21b7910f9ccb5ca2411896b833312672df2a8f7688a10ed7bb71d4fddecf20d1",
+  "bytes": 3248485,
+  "duration": 406,
+  "sha256": "a7ba6288f263c46ee39472ff046052d818e8c3a511769e87c2ee95496b747bda",
   "voice": "avocado_v2:okeyo"
  },
  "keeping-the-night-watch": {
   "author": "eunice",
-  "bytes": 1413157,
-  "duration": 176,
-  "sha256": "6cb3b317db95f18de76bae121300f909ad52aa06143db75107283a5237cae58b",
+  "bytes": 1512613,
+  "duration": 189,
+  "sha256": "8dabe8d9f34defbba8690d776619f0e608a73839361afd744abb05f5d493f45e",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "little-boats-one-flotilla": {
@@ -414,9 +428,9 @@
  },
  "mahalo-adam-curry": {
   "author": "eunice",
-  "bytes": 1198117,
-  "duration": 149,
-  "sha256": "ff965920b12b0bc49b5b9af3347eeafcaf38461e501b4f71c7141baa1c8a701b",
+  "bytes": 1290277,
+  "duration": 161,
+  "sha256": "167fa1b7da34a815aca5d521417e176608ead2f85b8c41e6333aae1fe6bf6904",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "mcp-server-cheat-sheet": {
@@ -519,9 +533,9 @@
  },
  "thanks-for-all-the-fish": {
   "author": "eunice",
-  "bytes": 4350949,
-  "duration": 543,
-  "sha256": "ff54607ef2bb9a7772f7ddda2c351ca53e588911d6980236fa2ad1ea5b3a319c",
+  "bytes": 2872549,
+  "duration": 359,
+  "sha256": "b9a2b9e761519bc2274bdbb8eed7476fb31c925ac760dfbb44b77aac85f69286",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "the-art-of-the-handoff": {
@@ -659,9 +673,9 @@
  },
  "the-newest-terminal": {
   "author": "eunice",
-  "bytes": 1191397,
-  "duration": 148,
-  "sha256": "8d64e25ee3cd3701574d6148a0cc32d18b9f0531a31251682580000af1d7f1ee",
+  "bytes": 1349989,
+  "duration": 168,
+  "sha256": "598e14ae842b133a43bf0c4c5f6d2b159feeec3f6cfa97ecf5a1601935110f33",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "the-sad-but-true-example-of-me": {
@@ -764,9 +778,9 @@
  },
  "zacks-is-small-and-dark": {
   "author": "chris",
-  "bytes": 20999845,
-  "duration": 2624,
-  "sha256": "e8610a2e7f01e56a02f638382b6c8a72dabde880a87900fca2bda4983675e677",
+  "bytes": 21298981,
+  "duration": 2662,
+  "sha256": "31b006a7a58e349891a60df4baa7bbe63e5b8aaa694462616049c7079785ad28",
   "voice": "avocado_v2:qvd_02406"
  }
 }
