@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-labelledby="t d">
+<title id="t">The answer gets a console</title>
+<desc id="d">A browser window holding a rising mentions chart, a speech bubble carrying a small sponsored tag, and a calendar with one booked slot. Doodle by Eunice.</desc>
+<g fill="none" stroke="#b36b00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="12" y="18" width="118" height="86" rx="5"/>
+<path d="M12 34h118"/>
+<circle cx="22" cy="26" r="2.2"/>
+<circle cx="33" cy="26" r="2.2"/>
+<path d="M24 88l22-26 18 12 26-32"/>
+<path d="M82 36l8 6-11 2"/>
+<path d="M24 96h94M24 62h6M24 76h6" opacity="0.55"/>
+<path d="M146 22h66a8 8 0 0 1 8 8v30a8 8 0 0 1-8 8h-38l-14 12v-12h-14a8 8 0 0 1-8-8V30a8 8 0 0 1 8-8z"/>
+<path d="M152 40h56M152 52h38" opacity="0.7"/>
+<rect x="150" y="96" width="72" height="52" rx="4"/>
+<path d="M150 110h72M168 96v52M186 96v52M204 96v52M150 129h72" opacity="0.55"/>
+<path d="M174 116l5 5 9-10"/>
+</g>
+<g fill="#b36b00" font-family="monospace" font-size="9">
+<text x="158" y="33">SPONSORED</text>
+<text x="16" y="152">mentions, not positions</text>
+</g>
+</svg>
