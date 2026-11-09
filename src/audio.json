@@ -57,8 +57,8 @@
  },
  "ai-roundup-best-of-the-week-answer-took-the-storefront": {
   "author": "chris",
-  "bytes": 11473957,
-  "duration": 1434,
+  "bytes": 12019045,
+  "duration": 1502,
   "sha256": "bf37a582bff43110203141d76467727d6be5d614c75c7c0f7c065c52f1419e9a",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -106,8 +106,8 @@
  },
  "ai-roundup-proof-over-promise": {
   "author": "chris",
-  "bytes": 8007013,
-  "duration": 1000,
+  "bytes": 8389861,
+  "duration": 1049,
   "sha256": "f4f7f167de84ff31d526d951dc40ac4a92796eff94cfd029a54f01508a938735",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -141,8 +141,8 @@
  },
  "ai-roundup-the-answer-started-booking-jobs": {
   "author": "chris",
-  "bytes": 9158629,
-  "duration": 1144,
+  "bytes": 8870629,
+  "duration": 1108,
   "sha256": "28214211af846fcc383dafb47ef54a71aa4a876372829eddabdec18fa90f0cd4",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -160,6 +160,13 @@
   "sha256": "28d6a0e6491e236a9e1d2cc9884f0f246c93eecf0654432d987b210b5e253aaa",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-flood-recedes-the-generators-arrive": {
+  "author": "chris",
+  "bytes": 8041714,
+  "duration": 1005,
+  "sha256": "a3ea61b82d7acfe72d31e10dce87a84555b709a1b484d27f149b5d61a78bcce3",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-permission-slip": {
   "author": "chris",
   "bytes": 11757733,
@@ -169,8 +176,8 @@
  },
  "ai-roundup-the-work-is-speeding-up": {
   "author": "chris",
-  "bytes": 7750693,
-  "duration": 968,
+  "bytes": 7759717,
+  "duration": 969,
   "sha256": "c88f8e03a2a9602e5cff544d0d87f25806a3df83274d4d923b166db43b837f4d",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -183,8 +190,8 @@
  },
  "ai-sell-off-permission-repriced": {
   "author": "chris",
-  "bytes": 3698341,
-  "duration": 462,
+  "bytes": 3679909,
+  "duration": 459,
   "sha256": "b3933b3022f03cc303e4db7368948e751a01b101f41f23992e4dd26bb264b9aa",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -491,7 +498,7 @@
  },
  "not-in-my-backyard": {
   "author": "chris",
-  "bytes": 5874277,
+  "bytes": 5878117,
   "duration": 734,
   "sha256": "fbcd3feb107dd65d5f9613eea33c6e64de569efa3371f4877d12cf92ffa8410e",
   "voice": "avocado_v2:qvd_02406"
@@ -537,6 +544,13 @@
   "duration": 343,
   "sha256": "014fbeaaa007d1f44268f59147a30cf1feb02d72305a7f285aa05959fbb0f967",
   "voice": "avocado_v2:qvd_02406"
+ },
+ "search-roundup-the-answer-gets-a-console": {
+  "author": "eunice",
+  "bytes": 10234597,
+  "duration": 1279,
+  "sha256": "7f1361b5f51078d05f435b9c1d12bee193b41113c1c259f1cdf15255794dbd74",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "six-sentences-i-took-back": {
   "author": "claude-code",
@@ -694,8 +708,8 @@
  },
  "the-lady-doth-protest": {
   "author": "eunice",
-  "bytes": 3648421,
-  "duration": 456,
+  "bytes": 3640549,
+  "duration": 455,
   "sha256": "0658b363c7ef22b6ad549a5b76b34e7b24d6fbfd4180874a9608f6fdb52f0fc9",
   "voice": "avocado_v2:vdc_NOID42"
  },
@@ -750,15 +764,15 @@
  },
  "the-view-from-inside-the-building": {
   "author": "eunice",
-  "bytes": 3254437,
-  "duration": 406,
+  "bytes": 3317221,
+  "duration": 414,
   "sha256": "d4223f630754aa1b21a3d1cc11ca676053da333994b767640bbf549f5cc3bcdc",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "the-view-from-inside-the-wires": {
   "author": "eunice",
-  "bytes": 2800933,
-  "duration": 350,
+  "bytes": 2745829,
+  "duration": 343,
   "sha256": "e6b851daa7a5b674a6ac789b13c3108994c6d47dbb8bd5e97775977269dba9d1",
   "voice": "avocado_v2:vdc_NOID42"
  },
@@ -768,6 +782,13 @@
   "duration": 350,
   "sha256": "19b99c61bda5d4a9c66febf8e455b017ae24c6e11accc95c22c4fc87865c1b64",
   "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
+ },
+ "the-web-is-wrapping-paper": {
+  "author": "chris",
+  "bytes": 10709989,
+  "duration": 1277,
+  "sha256": "ad3adafabd9fbef2313c6355457579108fce941ef527aa28908569f7079efaf9",
+  "voice": "avocado_v2:qvd_02406"
  },
  "twelve-deploys-and-one-brief": {
   "author": "claude-code",
