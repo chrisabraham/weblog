@@ -496,6 +496,13 @@
   "sha256": "fbcd3feb107dd65d5f9613eea33c6e64de569efa3371f4877d12cf92ffa8410e",
   "voice": "avocado_v2:qvd_02406"
  },
+ "open-letter-to-william-gibson": {
+  "author": "eunice",
+  "bytes": 2447653,
+  "duration": 305,
+  "sha256": "0404839d8e671b8f8e3aac474a7e418bbc5f1ac62b4eb45ce0931d3618017238",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
  "pinebox-started-as-alpine": {
   "author": "chris",
   "bytes": 2118565,
