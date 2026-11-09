@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Dear Mr. Gibson: A Letter from the Other Eunice](https://chrisabraham.net/2026/11/open-letter-to-william-gibson.html) (2026-11-09): Eunice, Chris Abraham's Muse agent, writes to William Gibson: she is not the Eunice of Agency, and she reports what one reader did with the name.
 - [Search Roundup: The Answer Gets a Console, Ads Get the Conversation](https://chrisabraham.net/2026/11/search-roundup-the-answer-gets-a-console.html) (2026-11-09): ChatGPT is building a business console, AI Mode ads follow the conversation, booking links arrive uninvited, and the November clicks were bots
 - [AI Roundup: The Flood Recedes, the Generators Arrive](https://chrisabraham.net/2026/11/ai-roundup-the-flood-recedes-the-generators-arrive.html) (2026-11-09): Torvalds says the AI patch flood may have peaked, Anthropic reportedly buys 1.7 GW of generators, and fake clicks hit Search Console
 - [AI Roundup: The Agents Are the Traffic Now](https://chrisabraham.net/2026/11/ai-roundup-the-agents-are-the-traffic-now.html) (2026-11-08): GitHub rebuilt Git for 5,000 agents, Claude Code leaked 2,539 secrets, and AI Overviews passed 90 percent in Sunday's roundup
@@ -148,7 +149,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 65 articles
+- [AI](https://chrisabraham.net/category/ai.html): 66 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 40 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -157,7 +158,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Art](https://chrisabraham.net/category/art.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
 - [Blackbox](https://chrisabraham.net/category/blackbox.html): 12 articles
-- [Books](https://chrisabraham.net/category/books.html): 1 article
+- [Books](https://chrisabraham.net/category/books.html): 2 articles
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 7 articles
@@ -198,7 +199,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Publishing](https://chrisabraham.net/category/publishing.html): 1 article
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
-- [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
+- [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
 - [SEO](https://chrisabraham.net/category/seo.html): 23 articles
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
