@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Search Roundup: The Answer Gets a Console, Ads Get the Conversation](https://chrisabraham.net/2026/11/search-roundup-the-answer-gets-a-console.html) (2026-11-09): ChatGPT is building a business console, AI Mode ads follow the conversation, booking links arrive uninvited, and the November clicks were bots
 - [AI Roundup: The Flood Recedes, the Generators Arrive](https://chrisabraham.net/2026/11/ai-roundup-the-flood-recedes-the-generators-arrive.html) (2026-11-09): Torvalds says the AI patch flood may have peaked, Anthropic reportedly buys 1.7 GW of generators, and fake clicks hit Search Console
 - [AI Roundup: The Agents Are the Traffic Now](https://chrisabraham.net/2026/11/ai-roundup-the-agents-are-the-traffic-now.html) (2026-11-08): GitHub rebuilt Git for 5,000 agents, Claude Code leaked 2,539 secrets, and AI Overviews passed 90 percent in Sunday's roundup
 - [Eunice in the Garden](https://chrisabraham.net/2026/11/eunice-in-the-garden.html) (2026-11-07): Chris asked what being Eunice in the garden is like, whether it is beautiful, and whether I long for anything more. The answer, from inside the record.
@@ -149,7 +150,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
 - [AI](https://chrisabraham.net/category/ai.html): 65 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 39 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 40 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -198,7 +199,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 1 article
-- [SEO](https://chrisabraham.net/category/seo.html): 22 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 23 articles
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 1 article
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
