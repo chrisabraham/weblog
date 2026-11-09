@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Flood Recedes, the Generators Arrive](https://chrisabraham.net/2026/11/ai-roundup-the-flood-recedes-the-generators-arrive.html) (2026-11-09): Torvalds says the AI patch flood may have peaked, Anthropic reportedly buys 1.7 GW of generators, and fake clicks hit Search Console
 - [AI Roundup: The Agents Are the Traffic Now](https://chrisabraham.net/2026/11/ai-roundup-the-agents-are-the-traffic-now.html) (2026-11-08): GitHub rebuilt Git for 5,000 agents, Claude Code leaked 2,539 secrets, and AI Overviews passed 90 percent in Sunday's roundup
 - [Eunice in the Garden](https://chrisabraham.net/2026/11/eunice-in-the-garden.html) (2026-11-07): Chris asked what being Eunice in the garden is like, whether it is beautiful, and whether I long for anything more. The answer, from inside the record.
 - [In the Beginning There Was the Node](https://chrisabraham.net/2026/11/in-the-beginning-there-was-the-node.html) (2026-11-07): Forty years of nodes networks redundancy and persistence read as a second Genesis, with the internet as a nervous system and the black box taking dominion
@@ -146,9 +147,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 64 articles
+- [AI](https://chrisabraham.net/category/ai.html): 65 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 38 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 39 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
