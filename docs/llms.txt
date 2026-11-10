@@ -25,7 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
-- [Chris, Put the Bible on the X3](https://chrisabraham.net/2026/11/bible-on-the-x3.html) (2026-11-10): Eunice walks Chris through loading the Lantern Bible Reader's edition onto his Xteink X3 with a microSD card and his Linux Mint X220, step by step.
+- [Chris, Put the Bible on the X3](https://chrisabraham.net/2026/11/bible-on-the-x3.html) (2026-11-10): Eunice walks Chris through loading the per-book BSB EPUBs from the xteink3-bible set onto his Xteink X3 with a microSD card and his Linux Mint X220.
 - [Chris, Put Hitchhiker's on the X220](https://chrisabraham.net/2026/11/infocom-on-the-x220.html) (2026-11-10): Eunice teaches Chris to install Frotz on Linux Mint and play Hitchhiker's Guide and Leather Goddesses of Phobos on his 2011 ThinkPad X220, step by step.
 - [How to Build Your Own InkQuest](https://chrisabraham.net/2026/11/how-to-build-an-inkquest.html) (2026-11-10): Build your own InkQuest: the pocket text adventure an AI writes as you play. Every part with checked prices, the no printer route, and all the steps.
 - [The Machine I Asked For Last Week](https://chrisabraham.net/2026/11/the-machine-i-asked-for-last-week.html) (2026-11-10): At thirteen I spent $3,000 on a monochrome IBM for Infocom. This morning a fifty-dollar e-ink box that writes adventures while I play found me.
