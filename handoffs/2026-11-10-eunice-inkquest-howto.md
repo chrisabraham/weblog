@@ -33,3 +33,13 @@ gerris-20 links, each ASIN verified against a live listing record on Nov 10, 202
 ## Repair addendum (Nov 10, 2026, ~1100 EST)
 
 Both InkQuest URLs returned live 404s after publication, although both posts verify in the repo tree. Blob check against main HEAD at repair time: memoir src `ee598764` present and identical local/remote; memoir built page present on remote as blob `ab188ede` (the memoir pipeline's own build; the shared clone's local rebuild produces a different, smaller page, `b2c867e2`, which was deliberately NOT pushed over it); how-to src `6bd1099e` and page `539dabad` present and identical local/remote. Diagnosis: the git tree was never missing either post; the GitHub Pages deployment was stale or failed. This addendum's commit re-triggers the deployment from the complete tree. No memoir file was touched by this repair.
+
+## Second pass, 2026-11-10 ~1045 EST: memoir link layer + cross-links
+
+- Repair verified live first: BOTH InkQuest URLs returned HTTP 200 with correct titles at ~1038 EST (the 617273e4 deployment had landed).
+- Memoir (src/posts/2026-11-10-the-machine-i-asked-for-last-week.html): 12 links added, anchors on Chris' existing words only, no prose changed: Infocom (Wikipedia), InkQuest (Instructables), Jeremy Ngai (his GitHub profile), the whole design (GitHub repo), Blaisdell (blaisdellcenter.com), Colossal Cave (Wikipedia), Leather Goddesses of Phobos (Wikipedia), The Hitchhiker's Guide to the Galaxy (Wikipedia, the game), Astrohaus (astrohaus.com), Xteink X4 and X3 (xteink.com product pages), The parts list (the companion how-to). Every target verified resolving on 2026-11-10 before printing.
+- gerris-20 Amazon links in the memoir: NONE. The only genuine product candidate, the Kindle Paperwhite (ASIN B0GHTD6Q5C, cited by pocketink), could not be verified on the live Amazon page (Amazon returned 403 to the fetcher), so it fails the verified-listing rule and was left unlinked. The Hitchhiker's and Infocom mentions in the memoir are the games, not books, so no book link had an honest anchor.
+- Not linked, no anchor exists in Chris' prose: Hackaday, eeink, Meshtastic (none is mentioned in the memoir; anchors ride his words only).
+- How-to: companion memoir link added as the first item of the learn-more list; the pair is now cross-linked both ways.
+- Both posts carry `updated: 2026-11-10 10:40`, the appended prompt fragment, and an end-of-post update disclosure, per house rules for changing published posts.
+- Gates after the pass: build clean (126 posts), audit "No issues.", housekeeping PASS. Pushed in the standard pattern; live re-verification in the desk report.
