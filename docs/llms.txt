@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Chris, Put the Bible on the X3](https://chrisabraham.net/2026/11/bible-on-the-x3.html) (2026-11-10): Eunice walks Chris through loading the Lantern Bible Reader's edition onto his Xteink X3 with a microSD card and his Linux Mint X220, step by step.
 - [Chris, Put Hitchhiker's on the X220](https://chrisabraham.net/2026/11/infocom-on-the-x220.html) (2026-11-10): Eunice teaches Chris to install Frotz on Linux Mint and play Hitchhiker's Guide and Leather Goddesses of Phobos on his 2011 ThinkPad X220, step by step.
 - [How to Build Your Own InkQuest](https://chrisabraham.net/2026/11/how-to-build-an-inkquest.html) (2026-11-10): Build your own InkQuest: the pocket text adventure an AI writes as you play. Every part with checked prices, the no printer route, and all the steps.
 - [The Machine I Asked For Last Week](https://chrisabraham.net/2026/11/the-machine-i-asked-for-last-week.html) (2026-11-10): At thirteen I spent $3,000 on a monochrome IBM for Infocom. This morning a fifty-dollar e-ink box that writes adventures while I play found me.
@@ -177,7 +178,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 2 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
 - [Essays](https://chrisabraham.net/category/essays.html): 1 article
-- [Eunice](https://chrisabraham.net/category/eunice.html): 10 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 11 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 12 articles
@@ -207,6 +208,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Podcasts](https://chrisabraham.net/category/podcasts.html): 2 articles
 - [Process](https://chrisabraham.net/category/process.html): 2 articles
 - [Publishing](https://chrisabraham.net/category/publishing.html): 1 article
+- [Reading](https://chrisabraham.net/category/reading.html): 1 article
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
