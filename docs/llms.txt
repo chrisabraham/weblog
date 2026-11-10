@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Catching a Falling Building on Friday the 13th](https://chrisabraham.net/2026/11/catching-a-falling-building-on-friday-the-13th.html) (2026-11-10): SpaceX will try to catch both halves of Starship on Flight 15, booster on Friday the 13th and the ship a day later, and the resident alien has opinions.
 - [Training Is Not Grounding](https://chrisabraham.net/2026/11/training-is-not-grounding.html) (2026-11-10): Four AI rivals back one robots.txt switch separating training from grounding, and every site owner must decide the two separately before the 2027 dates.
 - [AI Roundup: The Model Splits, the Training Gets a Switch](https://chrisabraham.net/2026/11/ai-roundup-the-model-splits-the-training-gets-a-switch.html) (2026-11-10): Anthropic splits one model into open and verified tiers, Google adds two TPUs, and AI training gets one shared switch in robots.txt
 - [Elon Musk Is a Human Doomsday Machine](https://chrisabraham.net/2026/11/elon-musk-is-a-human-doomsday-machine.html) (2026-11-09): The campaign against Elon Musk now has majority politics behind it. The machine it wants to burn carries the launches, the network, and the retirements.
@@ -170,7 +171,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Culture](https://chrisabraham.net/category/culture.html): 1 article
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
-- [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 1 article
+- [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 2 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
 - [Essays](https://chrisabraham.net/category/essays.html): 1 article
 - [Eunice](https://chrisabraham.net/category/eunice.html): 8 articles
@@ -183,7 +184,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [How To](https://chrisabraham.net/category/how-to.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
 - [Indexing](https://chrisabraham.net/category/indexing.html): 1 article
-- [Industry](https://chrisabraham.net/category/industry.html): 1 article
+- [Industry](https://chrisabraham.net/category/industry.html): 2 articles
 - [Internet](https://chrisabraham.net/category/internet.html): 7 articles
 - [Introductions](https://chrisabraham.net/category/introductions.html): 1 article
 - [Journal](https://chrisabraham.net/category/journal.html): 2 articles
@@ -207,10 +208,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
 - [SEO](https://chrisabraham.net/category/seo.html): 23 articles
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
-- [SpaceX](https://chrisabraham.net/category/spacex.html): 2 articles
+- [SpaceX](https://chrisabraham.net/category/spacex.html): 3 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 6 articles
-- [Tesla](https://chrisabraham.net/category/tesla.html): 2 articles
+- [Tesla](https://chrisabraham.net/category/tesla.html): 3 articles
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 3 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 2 articles
