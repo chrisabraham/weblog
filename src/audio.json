@@ -36,8 +36,8 @@
  },
  "a-tomtini-for-tom": {
   "author": "chris",
-  "bytes": 7863973,
-  "duration": 982,
+  "bytes": 7849189,
+  "duration": 981,
   "sha256": "0fed2eebc39e157e4820675955f8e91f76914f854bc6c27635e7a40b44b11403",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -106,8 +106,8 @@
  },
  "ai-roundup-proof-over-promise": {
   "author": "chris",
-  "bytes": 8389861,
-  "duration": 1049,
+  "bytes": 8007013,
+  "duration": 1000,
   "sha256": "f4f7f167de84ff31d526d951dc40ac4a92796eff94cfd029a54f01508a938735",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -127,8 +127,8 @@
  },
  "ai-roundup-the-agents-got-the-keys": {
   "author": "chris",
-  "bytes": 7631077,
-  "duration": 953,
+  "bytes": 8065957,
+  "duration": 1008,
   "sha256": "2a811a3a0d89695fb5edcefa49bda05ae2e3c380d98b977ca65a1614882d0506",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -155,8 +155,8 @@
  },
  "ai-roundup-the-customers-are-machines-now": {
   "author": "chris",
-  "bytes": 7915621,
-  "duration": 989,
+  "bytes": 8518309,
+  "duration": 1064,
   "sha256": "28d6a0e6491e236a9e1d2cc9884f0f246c93eecf0654432d987b210b5e253aaa",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -165,6 +165,13 @@
   "bytes": 8041714,
   "duration": 1005,
   "sha256": "a3ea61b82d7acfe72d31e10dce87a84555b709a1b484d27f149b5d61a78bcce3",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-the-model-splits-the-training-gets-a-switch": {
+  "author": "chris",
+  "bytes": 9965221,
+  "duration": 1245,
+  "sha256": "bf0183f6b3533d7957325532ba28cc9d8b57f11c33f3bbf1e33ce04174ddab83",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-permission-slip": {
@@ -204,8 +211,8 @@
  },
  "aj-buddy-nobody-flips": {
   "author": "chris",
-  "bytes": 3981157,
-  "duration": 497,
+  "bytes": 3966373,
+  "duration": 495,
   "sha256": "56b8b0613fe31a4b59d83a12073e5eba33bdd54bad115ad6713dbd6b7cf318c1",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -257,6 +264,13 @@
   "duration": 2075,
   "sha256": "fb506ed7cc306638b0aca67915aed370f4d84bea8c3f1eba2f5786a36a665191",
   "voice": "avocado_v2:qvd_02406"
+ },
+ "catching-a-falling-building-on-friday-the-13th": {
+  "author": "eunice",
+  "bytes": 3655525,
+  "duration": 456,
+  "sha256": "38ff352f0c0ea9d3c5142c8cfd7b38f8c69abf9bdf890bc7f66d6cd9fb1690c6",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "central-casting-for-black-mirror": {
   "author": "chris",
@@ -313,6 +327,13 @@
   "duration": 158,
   "sha256": "d5e3148799e158d0c0caa8c7b0b7088889f7e4c83d818193d13dafdd5f743fc8",
   "voice": "avocado_v2:qvd_02406"
+ },
+ "elon-musk-is-a-human-doomsday-machine": {
+  "author": "eunice",
+  "bytes": 7823653,
+  "duration": 977,
+  "sha256": "c993ffe4175f8fe74dd5068177dc0752069c2dc932b91847068e000d3bc1c8ed",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "eunice-agency-cyberpunk": {
   "author": "chatgpt",
@@ -526,8 +547,8 @@
  },
  "profanity-is-my-boldface": {
   "author": "chris",
-  "bytes": 2386021,
-  "duration": 298,
+  "bytes": 2407141,
+  "duration": 300,
   "sha256": "90f398b89daa1c9137e04066cf25c1f7e66d398e9fe6ad97329edbfdb8646d2a",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -561,8 +582,8 @@
  },
  "sixteen-of-eleven-hundred": {
   "author": "Chris Abraham",
-  "bytes": 2872549,
-  "duration": 359,
+  "bytes": 2813989,
+  "duration": 351,
   "sha256": "41228e234850021763778f0fd1b15c07f57e16fdbd5c77c4ebcbfe443b75a3ca",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -694,7 +715,7 @@
  },
  "the-immersion-method": {
   "author": "Chris Abraham",
-  "bytes": 4265893,
+  "bytes": 4270885,
   "duration": 533,
   "sha256": "6d3cfc6ce34d9dd7ff77c51180e3dbfb0fdf7a1bae7b50ce146018b7c86d9743",
   "voice": "avocado_v2:qvd_02406"
@@ -708,8 +729,8 @@
  },
  "the-lady-doth-protest": {
   "author": "eunice",
-  "bytes": 3640549,
-  "duration": 455,
+  "bytes": 3648421,
+  "duration": 456,
   "sha256": "0658b363c7ef22b6ad549a5b76b34e7b24d6fbfd4180874a9608f6fdb52f0fc9",
   "voice": "avocado_v2:vdc_NOID42"
  },
@@ -790,6 +811,13 @@
   "sha256": "ad3adafabd9fbef2313c6355457579108fce941ef527aa28908569f7079efaf9",
   "voice": "avocado_v2:qvd_02406"
  },
+ "training-is-not-grounding": {
+  "author": "eunice",
+  "bytes": 3111013,
+  "duration": 388,
+  "sha256": "d45d6ed2a6bf312a829eb45d7b161bab5601a60577bba5d8b48515244b80c7bd",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
  "twelve-deploys-and-one-brief": {
   "author": "claude-code",
   "bytes": 3800677,
@@ -841,8 +869,8 @@
  },
  "your-ai-agent-is-an-80-percent-lower": {
   "author": "chris",
-  "bytes": 2160613,
-  "duration": 270,
+  "bytes": 2181925,
+  "duration": 272,
   "sha256": "2c86b7ba22f59a719552b5fb285b748c21ed1278da2e7ea722164c32783167ff",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -855,8 +883,8 @@
  },
  "zacks-is-small-and-dark": {
   "author": "chris",
-  "bytes": 21298981,
-  "duration": 2662,
+  "bytes": 20991397,
+  "duration": 2623,
   "sha256": "31b006a7a58e349891a60df4baa7bbe63e5b8aaa694462616049c7079785ad28",
   "voice": "avocado_v2:qvd_02406"
  }
