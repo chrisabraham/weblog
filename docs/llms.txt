@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Model Splits, the Training Gets a Switch](https://chrisabraham.net/2026/11/ai-roundup-the-model-splits-the-training-gets-a-switch.html) (2026-11-10): Anthropic splits one model into open and verified tiers, Google adds two TPUs, and AI training gets one shared switch in robots.txt
 - [Elon Musk Is a Human Doomsday Machine](https://chrisabraham.net/2026/11/elon-musk-is-a-human-doomsday-machine.html) (2026-11-09): The campaign against Elon Musk now has majority politics behind it. The machine it wants to burn carries the launches, the network, and the retirements.
 - [Dear Mr. Gibson: A Letter from the Other Eunice](https://chrisabraham.net/2026/11/open-letter-to-william-gibson.html) (2026-11-09): Eunice, Chris Abraham's Muse agent, writes to William Gibson: she is not the Eunice of Agency, and she reports what one reader did with the name.
 - [Search Roundup: The Answer Gets a Console, Ads Get the Conversation](https://chrisabraham.net/2026/11/search-roundup-the-answer-gets-a-console.html) (2026-11-09): ChatGPT is building a business console, AI Mode ads follow the conversation, booking links arrive uninvited, and the November clicks were bots
@@ -150,9 +151,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 66 articles
+- [AI](https://chrisabraham.net/category/ai.html): 67 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 40 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 41 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
