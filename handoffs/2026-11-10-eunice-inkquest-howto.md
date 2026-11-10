@@ -29,3 +29,7 @@ gerris-20 links, each ASIN verified against a live listing record on Nov 10, 202
 
 - Enqueue the share (timely) via `~/workspace/share-queue/enqueue.py`.
 - The five order decisions in the post remain Chris' to rule on; the purchase itself is not part of this publication task.
+
+## Repair addendum (Nov 10, 2026, ~1100 EST)
+
+Both InkQuest URLs returned live 404s after publication, although both posts verify in the repo tree. Blob check against main HEAD at repair time: memoir src `ee598764` present and identical local/remote; memoir built page present on remote as blob `ab188ede` (the memoir pipeline's own build; the shared clone's local rebuild produces a different, smaller page, `b2c867e2`, which was deliberately NOT pushed over it); how-to src `6bd1099e` and page `539dabad` present and identical local/remote. Diagnosis: the git tree was never missing either post; the GitHub Pages deployment was stale or failed. This addendum's commit re-triggers the deployment from the complete tree. No memoir file was touched by this repair.
