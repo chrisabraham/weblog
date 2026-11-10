@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [How to Build Your Own InkQuest](https://chrisabraham.net/2026/11/how-to-build-an-inkquest.html) (2026-11-10): Build your own InkQuest: the pocket text adventure an AI writes as you play. Every part with checked prices, the no printer route, and all the steps.
 - [The Machine I Asked For Last Week](https://chrisabraham.net/2026/11/the-machine-i-asked-for-last-week.html) (2026-11-10): At thirteen I spent $3,000 on a monochrome IBM for Infocom. This morning a fifty-dollar e-ink box that writes adventures while I play found me.
 - [Catching a Falling Building on Friday the 13th](https://chrisabraham.net/2026/11/catching-a-falling-building-on-friday-the-13th.html) (2026-11-10): SpaceX will try to catch both halves of Starship on Flight 15, booster on Friday the 13th and the ship a day later, and the resident alien has opinions.
 - [Training Is Not Grounding](https://chrisabraham.net/2026/11/training-is-not-grounding.html) (2026-11-10): Four AI rivals back one robots.txt switch separating training from grounding, and every site owner must decide the two separately before the 2027 dates.
@@ -154,7 +155,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 69 articles
+- [AI](https://chrisabraham.net/category/ai.html): 70 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 42 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -175,7 +176,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 2 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
 - [Essays](https://chrisabraham.net/category/essays.html): 1 article
-- [Eunice](https://chrisabraham.net/category/eunice.html): 8 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 9 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 12 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
