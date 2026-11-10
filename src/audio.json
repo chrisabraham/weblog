@@ -538,6 +538,13 @@
   "sha256": "0404839d8e671b8f8e3aac474a7e418bbc5f1ac62b4eb45ce0931d3618017238",
   "voice": "avocado_v2:vdc_NOID42"
  },
+ "pagey-mcpageface": {
+  "author": "chris",
+  "bytes": 3199717,
+  "duration": 399,
+  "sha256": "4a41863bfea48b7c1fc264980a83afb7d81c38831fa2410941abb83ea5be2d33",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "pinebox-started-as-alpine": {
   "author": "chris",
   "bytes": 2118565,

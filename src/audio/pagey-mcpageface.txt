@@ -1,0 +1,30 @@
+Narrator: Pagey McPageface Is Ready to Audit Your Website. By Chris Abraham.
+Narrator: Pagey McPageface. A ridiculous name for a serious inspector. Doodle by Eunice.
+Narrator: Pagey McPageface is public, and it is the newest removable part of the system behind my websites. I build sites from files, publish them with GitHub Pages, and let a generator enforce the page rules before anything ships. Pagey takes those rules out of my generator and packages them as an agent skill anyone can point at a static site. It checks titles, descriptions, headings, internal links, orphaned pages, and repeated copy. It will not write your site or rescue a bad offer. It will tell you, page by page and with evidence, whether the pages you already have are tripping over each other. Start with the GitHub Pages foundation. Then give the finished site an inspector.
+Narrator: Why turn build rules into a separate tool?
+Narrator: A generator only sees the pages it makes. Real websites collect exceptions. Somebody adds a page by hand. A migration imports old files. A developer fixes one template and misses another. A useful page sits outside the menu because nobody remembered to link it. My own generator can be strict and still have a blind spot at the edge of its authority.
+Narrator: Pagey judges the finished HTML instead. It does not care whether the site came from Hugo, Jekyll, Astro, Eleventy, exported WordPress, a hand-rolled generator, or a folder somebody has maintained since the Bush administration. The output is the evidence. Use it before a launch, after a redesign, and whenever traffic slips for no obvious reason.
+Narrator: What does Pagey McPageface check?
+Narrator: The default rulebook is plain, and every threshold can be changed:
+Narrator: Titles: 50 to 60 characters, long enough to name the subject and short enough to survive a results page.
+Narrator: Meta descriptions: 140 to 160 characters, written for the page instead of pasted across the site.
+Narrator: No separator filler: no pipes or dashes doing the work that words should do in titles and descriptions. A hyphen inside a word is fine.
+Narrator: No duplicates: no two pages share a title, a description, or an H1.
+Narrator: One H1: every page gets exactly one. Zero leaves the subject unstated. Three splits it.
+Narrator: No dead internal links: a link to a missing page wastes the reader and the crawl.
+Narrator: No orphaned pages: apart from the home page, every page needs at least one inbound link from another page.
+Narrator: No repeated phrasing: pages that share too much language get flagged, and a sentence of ten words or more cannot live on two pages.
+Narrator: Optional forbidden terms: give Pagey an old brand, a partner mark, or any phrase your site has ruled off its pages.
+Narrator: None of this requires genius. It requires repetition without boredom. Humans are bad at checking page 83 against pages 1 through 82. A script is not. The agent supplies judgment around the report. The script supplies memory and arithmetic.
+Narrator: How do you use it?
+Narrator: Take the folder from the public repository and put it where your coding agent reads skills. Ask the agent for a whole-site audit. It reads SKILL.md, follows the six-step workflow, and runs scripts/page_audit.py. You can also run the script yourself. It needs Python 3.9 or newer and nothing else from the Python package shelf.
+Narrator: python3 scripts/page_audit.py path/to/site/
+Narrator: Point it at the built output when you have one. Built output is complete, fast, and exactly what will ship. The script can also judge named HTML files or a list of live URLs. Read the report worst first: missing pages and orphans before duplicate language, duplicate language before title polish. Fix the template or source file, never the generated HTML. Then run Pagey again. A clean exit means no problems under the selected rules. A nonzero exit means the build has homework. That exit code is why it belongs in a release pipeline, not just in a consultant’s report.
+Narrator: Why make the method easy to emulate?
+Narrator: Because the method is the asset, and methods improve when people can inspect them. My advantage was never a secret checklist locked in a drawer. It is the daily discipline around the checklist: own the domain, keep the site in files, state the rules, make the machine repeat them, and fix problems at the source. The GitHub Pages article covers the cheap foundation. Pagey adds the quality gate.
+Narrator: Copy the shape even if you reject my thresholds. Set the flags once and enforce your own house style. The point is not to become me. The point is to stop depending on memory, taste, and a heroic final read-through. A small site can use the same discipline as a large one when the inspector never gets tired.
+Narrator: What can Pagey not tell you?
+Narrator: Plenty. Pagey reads HTML; it does not render JavaScript. Audit the built or post-render output of a script-heavy site. In URL mode it does not crawl, so an incomplete list produces incomplete findings. It fetches no search data and cannot tell you which page deserves to rank or whether the writing deserves a reader. It catches pages colliding with each other and with the rulebook. Strategy still belongs to the owner.
+Narrator: What is with the name?
+Narrator: The name is a deliberate Boaty McBoatface homage. Then I learned that Pagey McPageface already appears as placeholder and test-page language in CMS material, which makes it better. The world’s filler page now has a second career hunting filler pages. I am keeping it.
+Narrator: That is the whole offer. Build the site as files you own. Publish it without renting a platform. Write the page rules down. Let an agent and a small Python script enforce them every time. Pagey McPageface is the inspector, the GitHub Pages guide is the foundation, and neither piece asks you to trust my memory. The work is sitting in public, ready to be copied, changed, and used harder than I use it myself.
