@@ -419,6 +419,13 @@
   "sha256": "27e4d7333ec2c842800a7668f944020b21d368a30db2543ddad9af56e52f9669",
   "voice": "avocado_v2:vdc_NOID42"
  },
+ "how-to-build-an-inkquest": {
+  "author": "eunice",
+  "bytes": 13051621,
+  "duration": 1631,
+  "sha256": "48edcf4d4304c6a4159515522bf889945dc6f43521fbdacd8beb5e590f64a5c0",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
  "how-to-build-your-own-website-on-github-pages": {
   "author": "Chris Abraham",
   "bytes": 3295141,
