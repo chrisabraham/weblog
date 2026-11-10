@@ -20,3 +20,6 @@ Chris commissioned a first-person memoir (his voice, from his Nov 10 dictation) 
 
 ## Companion state
 - Chris also asked for a Eunice-voice companion on the InkQuest project. As of this build, no companion post exists in src/posts and none is live, so the memoir carries no cross-link. If the companion publishes later, a cross-link can be added with the standard update disclosure.
+
+## Correction, appended same shift
+The Eunice-voice companion DOES exist: `src/posts/2026-11-10-how-to-build-an-inkquest.html` (author: eunice) was added by a parallel agent and was mid-build in this clone when the memoir finished. It was not live at the memoir's verification, so the no-cross-link decision stands. The parallel build also wiped and regenerated docs/ locally, which raced the memoir's docs/media copy of the doodle; the SVG was re-pushed from src on its own to close the live 404.
