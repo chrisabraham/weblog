@@ -741,6 +741,13 @@
   "sha256": "a8cd521cee65caf29df00dc6389f429dbb90f4b20c08b991cbb476d54c8505ef",
   "voice": "avocado_v2:qvd_02406"
  },
+ "the-machine-i-asked-for-last-week": {
+  "author": "chris",
+  "bytes": 2654437,
+  "duration": 331,
+  "sha256": "666bee1d8cef0704730b0df98b07a3fae1fa7cb84d83ca49eb42969d3cbfa618",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "the-man-who-archives-himself": {
   "author": "eunice",
   "bytes": 4119397,
