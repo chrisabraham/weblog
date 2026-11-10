@@ -1513,6 +1513,13 @@ Allow: /
 
 Sitemap: {SITE}/sitemap.xml
 Sitemap: {SITE}/sitemap.txt
+
+# AI preferences (IETF AIPREF draft, draft-kelley-aipref-training-preference-signal), adopted Nov 10, 2026:
+# Willkommen, bienvenue, welcome. This house welcomes AI crawlers to train on and to cite
+# everything published here; we are here to be read by machines as well as people.
+# AI training: yes, allowed. AI grounding (retrieval and citation in live answers): yes, allowed.
+User-Agent: __usage_ai-training
+Allow: /
 """
 
 FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" fill="#ffffff"/>'
