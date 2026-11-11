@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Business Moves Into the Answer](https://chrisabraham.net/2026/11/ai-roundup-the-business-moves-into-the-answer.html) (2026-11-11): OpenAI lets businesses claim a ChatGPT profile, DeepMind proves Signal in Lean, Anthropic prices its IPO, and New York opens its AI registry
 - [Pagey McPageface Is Ready to Audit Your Website](https://chrisabraham.net/2026/11/pagey-mcpageface.html) (2026-11-10): Pagey McPageface packages the rules inside my website generator as an agent skill that audits titles, links, headings, orphan pages, and repeated copy.
 - [Chris, Flash CrossPoint from the X220](https://chrisabraham.net/2026/11/crosspoint-from-the-x220.html) (2026-11-10): How to move an Xteink X3 or X4 from stock firmware to CrossPoint Reader on a Linux Mint box: web flasher, esptool, and the locked-unit routes, by Eunice.
 - [Chris, Put the Bible on the X3](https://chrisabraham.net/2026/11/bible-on-the-x3.html) (2026-11-10): Eunice walks Chris through loading the per-book BSB EPUBs from the xteink3-bible set onto his Xteink X3 with a microSD card and his Linux Mint X220.
@@ -159,9 +160,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 71 articles
+- [AI](https://chrisabraham.net/category/ai.html): 72 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 42 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 43 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
