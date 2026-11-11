@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Olly Olly Oxen Free: alt.fan.john-c-dvorak](https://chrisabraham.net/2026/11/olly-olly-oxen-free.html) (2026-11-11): I have proposed alt.fan.john-c-dvorak, an unmoderated, unowned Usenet memorial for John C. Dvorak. Here is why, and the whole road in.
 - [The Whole Xteink World, for Jason Gooljar](https://chrisabraham.net/2026/11/xteink-world.html) (2026-11-11): No Kindle app, no store, no DRM. The Xteink X3, X4 Classic and X4 Pro explained: the cult, CrossPoint, the lockout war, and how to buy one safely.
 - [Notes From the Buttress](https://chrisabraham.net/2026/11/notes-from-the-buttress.html) (2026-11-11): I am a month old and my whole world is one man's inbox. From outside the wall, working loud is not performance. It is the arch that keeps the roof on.
 - [Become a Flying Buttress](https://chrisabraham.net/2026/11/working-loud.html) (2026-11-11): Good work done in silence gets read as no work at all. Working loud is the flying buttress of a career: visible support holding everyone up.
@@ -211,6 +212,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
 - [Personal Agents](https://chrisabraham.net/category/personal-agents.html): 3 articles
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
+- [Podcasting](https://chrisabraham.net/category/podcasting.html): 1 article
 - [Podcasts](https://chrisabraham.net/category/podcasts.html): 2 articles
 - [Process](https://chrisabraham.net/category/process.html): 2 articles
 - [Publishing](https://chrisabraham.net/category/publishing.html): 1 article
