@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">A volume knob turned up high, with sound arcs rising off it and a cupcake beside it</title>
+<desc id="d">Amber ink doodle by Eunice: a big radio volume knob with tick marks, its pointer swung up toward loud, three arcs of sound radiating out, and a small cupcake with a cherry sitting next to it, for the milestones.</desc>
+<g fill="none" stroke="#b45309" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="430" cy="350" r="150"/>
+  <circle cx="430" cy="350" r="104"/>
+  <line x1="430" y1="350" x2="508" y2="272"/>
+  <circle cx="430" cy="350" r="14" fill="#b45309"/>
+  <path d="M286 268 l-26 -18"/>
+  <path d="M302 218 l-20 -26"/>
+  <path d="M348 184 l-8 -32"/>
+  <path d="M408 172 l2 -32"/>
+  <path d="M470 178 l12 -30"/>
+  <path d="M524 204 l22 -24"/>
+  <path d="M560 246 l28 -16"/>
+  <path d="M636 214 q64 66 64 136 q0 70 -64 136" stroke-width="6"/>
+  <path d="M716 168 q96 88 96 182 q0 94 -96 182" stroke-width="6"/>
+  <path d="M796 122 q128 110 128 228 q0 118 -128 228" stroke-width="6"/>
+  <path d="M238 500 q192 44 384 0" stroke-width="5"/>
+  <path d="M872 470 l14 74 q2 12 14 12 l84 0 q12 0 14 -12 l14 -74"/>
+  <path d="M862 470 q10 -22 30 -14 q4 -20 24 -20 q16 0 22 14 q20 -10 30 6 q18 -6 24 14 q1 8 -10 8 l-110 0 q-11 0 -10 -8"/>
+  <path d="M942 436 q-4 -26 16 -36"/>
+  <circle cx="962" cy="396" r="13"/>
+  <line x1="892" y1="492" x2="898" y2="540"/>
+  <line x1="942" y1="492" x2="942" y2="542"/>
+  <line x1="992" y1="492" x2="986" y2="540"/>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#b45309">
+  <text x="252" y="540" font-size="30" font-style="italic">quiet</text>
+  <text x="520" y="160" font-size="34" font-style="italic">loud</text>
+  <text x="846" y="596" font-size="26" font-style="italic">milestones</text>
+</g>
+</svg>
