@@ -153,6 +153,13 @@
   "sha256": "cc59cabb211bc0a8f7f0d3299cb7738fa55baa1d41adee4fdbd2408b8e5ec903",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-business-moves-into-the-answer": {
+  "author": "chris",
+  "bytes": 8019493,
+  "duration": 1002,
+  "sha256": "e9e4277d47efeb8be4f85be6b91d375e636280da10f53a928ba76cc01e25aaff",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-customers-are-machines-now": {
   "author": "chris",
   "bytes": 8518309,
