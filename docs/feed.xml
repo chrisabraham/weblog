@@ -7,7 +7,7 @@
 <description>Chris Abraham's weblog on AI search, SEO, answer engines, and building with AI, written by AI from his prompts and read aloud by AI voices. Every post as audio, newest first.</description>
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
-<lastBuildDate>Tue, 10 Nov 2026 13:01:00 -0500</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 18:43:00 -0500</lastBuildDate>
 <generator>build.py, written with AI</generator>
 <itunes:author>Chris Abraham</itunes:author>
 <itunes:owner><itunes:name>Chris Abraham</itunes:name><itunes:email>cja@well.com</itunes:email></itunes:owner>
@@ -18,6 +18,72 @@
 <itunes:type>episodic</itunes:type>
 <podcast:medium>blog</podcast:medium>
 <podcast:guid>64c3b73c-84ec-42d0-9d94-85f06029c292</podcast:guid>
+<item>
+<title>Pagey McPageface Is Ready to Audit Your Website</title>
+<link>https://chrisabraham.net/2026/11/pagey-mcpageface.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/11/pagey-mcpageface.html</guid>
+<pubDate>Tue, 10 Nov 2026 18:43:00 -0500</pubDate>
+<dc:creator>Chris Abraham</dc:creator>
+<itunes:author>Chris Abraham</itunes:author>
+<description>Pagey McPageface packages the rules inside my website generator as an agent skill that audits titles, links, headings, orphan pages, and repeated copy.</description>
+<category>Websites</category><category>SEO</category><category>AI</category><category>GitHub</category>
+<content:encoded><![CDATA[<figure>
+<img src="https://chrisabraham.net/media/pagey-mcpageface-doodle.webp" alt="Full color doodle by Eunice of Pagey McPageface, a cheerful web page with a wide grin, googly eyes, a title bar, lines of text, and one waving arm" width="420">
+<figcaption>Pagey McPageface. A ridiculous name for a serious inspector. Doodle by Eunice.</figcaption>
+</figure>
+
+<p><a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is public, and it is the newest removable part of the system behind my websites. I build sites from files, publish them with GitHub Pages, and let a generator enforce the page rules before anything ships. Pagey takes those rules out of my generator and packages them as an agent skill anyone can point at a static site. It checks titles, descriptions, headings, internal links, orphaned pages, and repeated copy. It will not write your site or rescue a bad offer. It will tell you, page by page and with evidence, whether the pages you already have are tripping over each other. Start with <a href="https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html">the GitHub Pages foundation</a>. Then give the finished site an inspector.</p>
+
+<h2>Why turn build rules into a separate tool?</h2>
+
+<p>A generator only sees the pages it makes. Real websites collect exceptions. Somebody adds a page by hand. A migration imports old files. A developer fixes one template and misses another. A useful page sits outside the menu because nobody remembered to link it. My own generator can be strict and still have a blind spot at the edge of its authority.</p>
+
+<p>Pagey judges the finished HTML instead. It does not care whether the site came from Hugo, Jekyll, Astro, Eleventy, exported WordPress, a hand-rolled generator, or a folder somebody has maintained since the Bush administration. The output is the evidence. Use it before a launch, after a redesign, and whenever traffic slips for no obvious reason.</p>
+
+<h2>What does Pagey McPageface check?</h2>
+
+<p>The default rulebook is plain, and every threshold can be changed:</p>
+
+<ul>
+<li><strong>Titles:</strong> 50 to 60 characters, long enough to name the subject and short enough to survive a results page.</li>
+<li><strong>Meta descriptions:</strong> 140 to 160 characters, written for the page instead of pasted across the site.</li>
+<li><strong>No separator filler:</strong> no pipes or dashes doing the work that words should do in titles and descriptions. A hyphen inside a word is fine.</li>
+<li><strong>No duplicates:</strong> no two pages share a title, a description, or an H1.</li>
+<li><strong>One H1:</strong> every page gets exactly one. Zero leaves the subject unstated. Three splits it.</li>
+<li><strong>No dead internal links:</strong> a link to a missing page wastes the reader and the crawl.</li>
+<li><strong>No orphaned pages:</strong> apart from the home page, every page needs at least one inbound link from another page.</li>
+<li><strong>No repeated phrasing:</strong> pages that share too much language get flagged, and a sentence of ten words or more cannot live on two pages.</li>
+<li><strong>Optional forbidden terms:</strong> give Pagey an old brand, a partner mark, or any phrase your site has ruled off its pages.</li>
+</ul>
+
+<p>None of this requires genius. It requires repetition without boredom. Humans are bad at checking page 83 against pages 1 through 82. A script is not. The agent supplies judgment around the report. The script supplies memory and arithmetic.</p>
+
+<h2>How do you use it?</h2>
+
+<p>Take the folder from <a href="https://github.com/chrisabraham/pagey-mcpageface">the public repository</a> and put it where your coding agent reads skills. Ask the agent for a whole-site audit. It reads <code>SKILL.md</code>, follows the six-step workflow, and runs <code>scripts/page_audit.py</code>. You can also run the script yourself. It needs Python 3.9 or newer and nothing else from the Python package shelf.</p>
+
+<pre>python3 scripts/page_audit.py path/to/site/</pre>
+
+<p>Point it at the built output when you have one. Built output is complete, fast, and exactly what will ship. The script can also judge named HTML files or a list of live URLs. Read the report worst first: missing pages and orphans before duplicate language, duplicate language before title polish. Fix the template or source file, never the generated HTML. Then run Pagey again. A clean exit means no problems under the selected rules. A nonzero exit means the build has homework. That exit code is why it belongs in a release pipeline, not just in a consultant’s report.</p>
+
+<h2>Why make the method easy to emulate?</h2>
+
+<p>Because the method is the asset, and methods improve when people can inspect them. My advantage was never a secret checklist locked in a drawer. It is the daily discipline around the checklist: own the domain, keep the site in files, state the rules, make the machine repeat them, and fix problems at the source. The <a href="https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html">GitHub Pages article</a> covers the cheap foundation. Pagey adds the quality gate.</p>
+
+<p>Copy the shape even if you reject my thresholds. Set the flags once and enforce your own house style. The point is not to become me. The point is to stop depending on memory, taste, and a heroic final read-through. A small site can use the same discipline as a large one when the inspector never gets tired.</p>
+
+<h2>What can Pagey not tell you?</h2>
+
+<p>Plenty. Pagey reads HTML; it does not render JavaScript. Audit the built or post-render output of a script-heavy site. In URL mode it does not crawl, so an incomplete list produces incomplete findings. It fetches no search data and cannot tell you which page deserves to rank or whether the writing deserves a reader. It catches pages colliding with each other and with the rulebook. Strategy still belongs to the owner.</p>
+
+<h2>What is with the name?</h2>
+
+<p>The name is a deliberate Boaty McBoatface homage. Then I learned that Pagey McPageface already appears as placeholder and test-page language in CMS material, which makes it better. The world’s filler page now has a second career hunting filler pages. I am keeping it.</p>
+
+<p>That is the whole offer. Build the site as files you own. Publish it without renting a platform. Write the page rules down. Let an agent and a small Python script enforce them every time. <a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is the inspector, the GitHub Pages guide is the foundation, and neither piece asks you to trust my memory. The work is sitting in public, ready to be copied, changed, and used harder than I use it myself.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Also, would you add the new GitHub Rep https://github.com/chrisabraham/pagey-mcpageface into any chrisabraham.net article about it if it&#x27;s useful when it&#x27;s ready or even write a new, updated, chrisabraham.net that explains how I/we are trying to make it as easy as possible to emulate what I am doing, etc, if that makes any sense... posted as me or as you or as us or whatever.</blockquote>]]></content:encoded>
+<enclosure url="https://chrisabraham.net/audio/pagey-mcpageface.mp3" length="3199717" type="audio/mpeg"/>
+<itunes:duration>6:39</itunes:duration>
+</item>
 <item>
 <title>Chris, Flash CrossPoint from the X220</title>
 <link>https://chrisabraham.net/2026/11/crosspoint-from-the-x220.html</link>

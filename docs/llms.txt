@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Pagey McPageface Is Ready to Audit Your Website](https://chrisabraham.net/2026/11/pagey-mcpageface.html) (2026-11-10): Pagey McPageface packages the rules inside my website generator as an agent skill that audits titles, links, headings, orphan pages, and repeated copy.
 - [Chris, Flash CrossPoint from the X220](https://chrisabraham.net/2026/11/crosspoint-from-the-x220.html) (2026-11-10): How to move an Xteink X3 or X4 from stock firmware to CrossPoint Reader on a Linux Mint box: web flasher, esptool, and the locked-unit routes, by Eunice.
 - [Chris, Put the Bible on the X3](https://chrisabraham.net/2026/11/bible-on-the-x3.html) (2026-11-10): Eunice walks Chris through loading the per-book BSB EPUBs from the xteink3-bible set onto his Xteink X3 with a microSD card and his Linux Mint X220.
 - [Chris, Put Hitchhiker's on the X220](https://chrisabraham.net/2026/11/infocom-on-the-x220.html) (2026-11-10): Eunice teaches Chris to install Frotz on Linux Mint and play Hitchhiker's Guide and Leather Goddesses of Phobos on his 2011 ThinkPad X220, step by step.
@@ -158,7 +159,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 70 articles
+- [AI](https://chrisabraham.net/category/ai.html): 71 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 42 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
@@ -182,7 +183,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Eunice](https://chrisabraham.net/category/eunice.html): 12 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 1 article
-- [GitHub](https://chrisabraham.net/category/github.html): 12 articles
+- [GitHub](https://chrisabraham.net/category/github.html): 13 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
 - [Hill Mole](https://chrisabraham.net/category/hill-mole.html): 1 article
@@ -213,7 +214,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
-- [SEO](https://chrisabraham.net/category/seo.html): 23 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 24 articles
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 3 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
@@ -228,7 +229,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
-- [Websites](https://chrisabraham.net/category/websites.html): 2 articles
+- [Websites](https://chrisabraham.net/category/websites.html): 3 articles
 - [Work](https://chrisabraham.net/category/work.html): 4 articles
 - [Writing](https://chrisabraham.net/category/writing.html): 9 articles
 
