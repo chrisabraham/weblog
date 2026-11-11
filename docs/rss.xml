@@ -8,7 +8,7 @@
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
 <creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
-<lastBuildDate>Tue, 10 Nov 2026 18:43:00 -0500</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 19:29:00 -0500</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>
 <item>
@@ -24,7 +24,7 @@
 <figcaption>Pagey McPageface. A ridiculous name for a serious inspector. Doodle by Eunice.</figcaption>
 </figure>
 
-<p><a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is public, and it is the newest removable part of the system behind my websites. I build sites from files, publish them with GitHub Pages, and let a generator enforce the page rules before anything ships. Pagey takes those rules out of my generator and packages them as an agent skill anyone can point at a static site. It checks titles, descriptions, headings, internal links, orphaned pages, and repeated copy. It will not write your site or rescue a bad offer. It will tell you, page by page and with evidence, whether the pages you already have are tripping over each other. Start with <a href="https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html">the GitHub Pages foundation</a>. Then give the finished site an inspector.</p>
+<p><a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is public, and it is the newest removable part of the system behind my websites. I build sites from files, publish them with GitHub Pages, and let a generator enforce the page rules before anything ships. Pagey takes those rules out of my generator and packages them as an agent skill anyone can point at a static site. It checks titles, descriptions, headings, internal links, orphaned pages, repeated copy, structured data, canonical links, and the sitemap and discovery files a machine reads first. It will not write your site or rescue a bad offer. It will tell you, page by page and with evidence, whether the pages you already have are tripping over each other. Start with <a href="https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html">the GitHub Pages foundation</a>. Then give the finished site an inspector.</p>
 
 <h2>Why turn build rules into a separate tool?</h2>
 
@@ -45,10 +45,24 @@
 <li><strong>No dead internal links:</strong> a link to a missing page wastes the reader and the crawl.</li>
 <li><strong>No orphaned pages:</strong> apart from the home page, every page needs at least one inbound link from another page.</li>
 <li><strong>No repeated phrasing:</strong> pages that share too much language get flagged, and a sentence of ten words or more cannot live on two pages.</li>
+<li><strong>Structured data that parses:</strong> every page carries at least one JSON-LD block, and every block parses as JSON.</li>
+<li><strong>One canonical:</strong> every page states its true URL with a canonical link.</li>
+<li><strong>Social meta:</strong> every page carries og:title and og:description.</li>
+<li><strong>Alt text:</strong> every image carries an alt attribute.</li>
+<li><strong>A sitemap that matches the tree:</strong> every sitemap entry resolves to a real page or file, and every built page is listed.</li>
+<li><strong>Discovery files:</strong> robots.txt and llms.txt at the root. An IndexNow key file is detected and reported; the tool submits nothing anywhere.</li>
 <li><strong>Optional forbidden terms:</strong> give Pagey an old brand, a partner mark, or any phrase your site has ruled off its pages.</li>
 </ul>
 
 <p>None of this requires genius. It requires repetition without boredom. Humans are bad at checking page 83 against pages 1 through 82. A script is not. The agent supplies judgment around the report. The script supplies memory and arithmetic.</p>
+
+<h2>What about schema, sitemaps, and the answer engines?</h2>
+
+<p>That question deserved a build, not a paragraph of adjectives. The last six rules in the list above are new, and they cover the machine-readable layer: the part of a site that search engines and AI answer engines read before they read the prose. Structured data that parses as real JSON. A canonical on every page. The social meta every share card falls back to. Alt text on every image. A sitemap that lists what exists and nothing that does not. The discovery files, robots.txt and llms.txt, sitting at the root where crawlers and answer engines look for them. An IndexNow key file gets detected and reported, and that is all: detection only, the audit submits nothing anywhere.</p>
+
+<p>That layer is what AEO, AIO, and GEO work actually stands on. The acronyms describe channels, not magic. An answer engine cannot cite schema that fails to parse, cannot trust a sitemap that lists ghosts, and reads llms.txt because the file exists to be read. Pagey verifies each piece is present and holds up. It does not promise placement in any engine's answers, and you should walk away from any tool that does.</p>
+
+<p>The proof run pointed Pagey at the build output of my own site: 101 pages, every check switched on, about 1.1 seconds start to finish. It found 26 problems. Twenty were the old rulebook's known list. Six came from the new checks. Five sit on the 404 page, which carries no structured data, no canonical, and no social meta, and stays out of the sitemap. An error page is the classic deliberate exception, and the workflow says to exclude it on purpose. The sixth is a genuine catch. The sitemap's image entry names a portrait at /chris-abraham.jpg. The file on disk is christopher-abraham.jpg. The sitemap has been pointing at a picture that is not there, inside a 103-entry sitemap no human was going to proofread. The new inspector paid for itself on its first run over my own ground.</p>
 
 <h2>How do you use it?</h2>
 
@@ -72,7 +86,9 @@
 
 <p>The name is a deliberate Boaty McBoatface homage. Then I learned that Pagey McPageface already appears as placeholder and test-page language in CMS material, which makes it better. The world’s filler page now has a second career hunting filler pages. I am keeping it.</p>
 
-<p>That is the whole offer. Build the site as files you own. Publish it without renting a platform. Write the page rules down. Let an agent and a small Python script enforce them every time. <a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is the inspector, the GitHub Pages guide is the foundation, and neither piece asks you to trust my memory. The work is sitting in public, ready to be copied, changed, and used harder than I use it myself.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Also, would you add the new GitHub Rep https://github.com/chrisabraham/pagey-mcpageface into any chrisabraham.net article about it if it&#x27;s useful when it&#x27;s ready or even write a new, updated, chrisabraham.net that explains how I/we are trying to make it as easy as possible to emulate what I am doing, etc, if that makes any sense... posted as me or as you or as us or whatever.</blockquote>]]></content:encoded>
+<p>That is the whole offer. Build the site as files you own. Publish it without renting a platform. Write the page rules down. Let an agent and a small Python script enforce them every time. <a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is the inspector, the GitHub Pages guide is the foundation, and neither piece asks you to trust my memory. The work is sitting in public, ready to be copied, changed, and used harder than I use it myself.</p>
+
+<p class="disclosure"><b>Update, November 10, 2026, 7:29 PM:</b> Hours after this post shipped, Chris asked whether the schema, sitemap, IndexNow, and llms claims could honestly be made. They could not, so they were built. Pagey now checks structured data, canonical links, social meta, image alt text, sitemap coverage, and the robots.txt and llms.txt discovery files, with IndexNow key-file detection, and every new check ships with fixture tests proving it fires on a broken site and passes on a clean one. The rulebook above, the new section on the answer engines, and the narration were updated to match. The repository carries the new build.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Also, would you add the new GitHub Rep https://github.com/chrisabraham/pagey-mcpageface into any chrisabraham.net article about it if it&#x27;s useful when it&#x27;s ready or even write a new, updated, chrisabraham.net that explains how I/we are trying to make it as easy as possible to emulate what I am doing, etc, if that makes any sense... posted as me or as you or as us or whatever. Love it but also add to the repo and to https://chrisabraham.net/2026/11/pagey-mcpageface.html all the &quot;optimized for schema and aeo aio geo seo&quot; and all that other stuff... as long as that&#x27;s true and that it has sitemaps and indexnow and llms and any and all of that stuff... and if Pagey doesn&#x27;t is that something you can build it... it might razzle dazzle based only on it&#x27;s compliance and it&#x27;s FASTNESS and also its AIO/AEO/SEO/GEO optimization... unless it&#x27;s bullshit and we shouldn&#x27;t... the repo and the post is pretty great now :)</blockquote>]]></content:encoded>
 </item>
 <item>
 <dc:creator>Eunice</dc:creator>
