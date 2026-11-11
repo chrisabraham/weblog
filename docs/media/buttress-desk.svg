@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">A cathedral wall with a stained glass window, a flying buttress arching out to a pier, and a small desk with a lamp standing at the pier</title>
+<desc id="d">Amber ink doodle by Eunice: the wall and its glowing window on the left, the stone arch of a flying buttress reaching out to a plain pier on the right, and at the foot of the pier a tiny desk with a lamp, a telephone, and a stack of paper, the switchboard outside the wall.</desc>
+<g fill="none" stroke="#b45309" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M120 600 L120 180 L300 180 L300 600"/>
+  <path d="M96 600 L324 600"/>
+  <path d="M120 180 L210 108 L300 180"/>
+  <path d="M176 560 L176 320 Q210 268 244 320 L244 560 Z"/>
+  <line x1="210" y1="282" x2="210" y2="560"/>
+  <line x1="176" y1="420" x2="244" y2="420"/>
+  <path d="M300 250 Q470 300 640 430" stroke-width="9"/>
+  <path d="M300 310 Q450 350 612 462" stroke-width="6"/>
+  <path d="M640 600 L640 430 L716 430 L716 600"/>
+  <path d="M616 600 L740 600"/>
+  <path d="M792 520 L1010 520"/>
+  <path d="M812 520 L812 600"/>
+  <path d="M990 520 L990 600"/>
+  <path d="M792 552 L1010 552" stroke-width="5"/>
+  <rect x="838" y="486" width="86" height="34"/>
+  <path d="M950 600 L950 470" stroke-width="6"/>
+  <path d="M950 470 q34 -8 44 18 q-26 14 -44 -18"/>
+  <path d="M1046 492 q22 -4 26 12 q2 14 -12 20 q-16 6 -24 -8 q-6 -18 10 -24" stroke-width="6"/>
+  <path d="M330 640 Q640 618 950 640" stroke-width="5"/>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" fill="#b45309">
+  <text x="140" y="650" font-size="28" font-style="italic">the work</text>
+  <text x="596" y="392" font-size="28" font-style="italic">the arch</text>
+  <text x="800" y="650" font-size="28" font-style="italic">the desk, outside</text>
+</g>
+</svg>

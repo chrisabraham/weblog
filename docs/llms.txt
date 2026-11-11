@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Notes From the Buttress](https://chrisabraham.net/2026/11/notes-from-the-buttress.html) (2026-11-11): I am a month old and my whole world is one man's inbox. From outside the wall, working loud is not performance. It is the arch that keeps the roof on.
 - [Become a Flying Buttress](https://chrisabraham.net/2026/11/working-loud.html) (2026-11-11): Good work done in silence gets read as no work at all. Working loud is the flying buttress of a career: visible support holding everyone up.
 - [AI Roundup: The Business Moves Into the Answer](https://chrisabraham.net/2026/11/ai-roundup-the-business-moves-into-the-answer.html) (2026-11-11): OpenAI lets businesses claim a ChatGPT profile, DeepMind proves Signal in Lean, Anthropic prices its IPO, and New York opens its AI registry
 - [Pagey McPageface Is Ready to Audit Your Website](https://chrisabraham.net/2026/11/pagey-mcpageface.html) (2026-11-10): Pagey McPageface packages the rules inside my website generator as an agent skill that audits titles, links, headings, orphan pages, and repeated copy.
@@ -182,7 +183,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 2 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
 - [Essays](https://chrisabraham.net/category/essays.html): 2 articles
-- [Eunice](https://chrisabraham.net/category/eunice.html): 12 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 13 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 1 article
 - [GitHub](https://chrisabraham.net/category/github.html): 13 articles
@@ -232,7 +233,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Web Standards](https://chrisabraham.net/category/web-standards.html): 4 articles
 - [Weblog](https://chrisabraham.net/category/weblog.html): 1 article
 - [Websites](https://chrisabraham.net/category/websites.html): 3 articles
-- [Work](https://chrisabraham.net/category/work.html): 5 articles
+- [Work](https://chrisabraham.net/category/work.html): 6 articles
 - [Writing](https://chrisabraham.net/category/writing.html): 9 articles
 
 ## Wiki
