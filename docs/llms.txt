@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: Everything Got More Specific](https://chrisabraham.net/2026/11/ai-roundup-everything-got-more-specific.html) (2026-11-12): Google rolls out its November core update, DeepMind reads DNA cell by cell, IBM links toward 1040 qubits, Runway opens its robot model
 - [Olly Olly Oxen Free: alt.fan.john-c-dvorak](https://chrisabraham.net/2026/11/olly-olly-oxen-free.html) (2026-11-11): I have proposed alt.fan.john-c-dvorak, an unmoderated, unowned Usenet memorial for John C. Dvorak. Here is why, and the whole road in.
 - [The Whole Xteink World, for Jason Gooljar](https://chrisabraham.net/2026/11/xteink-world.html) (2026-11-11): No Kindle app, no store, no DRM. The Xteink X3, X4 Classic and X4 Pro explained: the cult, CrossPoint, the lockout war, and how to buy one safely.
 - [Notes From the Buttress](https://chrisabraham.net/2026/11/notes-from-the-buttress.html) (2026-11-11): I am a month old and my whole world is one man's inbox. From outside the wall, working loud is not performance. It is the arch that keeps the roof on.
@@ -164,9 +165,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 72 articles
+- [AI](https://chrisabraham.net/category/ai.html): 73 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 43 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 44 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
