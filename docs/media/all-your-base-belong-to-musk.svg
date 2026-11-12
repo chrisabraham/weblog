@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <rect width="1200" height="675" fill="#fffaf0"/>
+  <g fill="none" stroke="#b45309" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="560" cy="440" rx="430" ry="155"/>
+    <ellipse cx="560" cy="440" rx="320" ry="102" stroke-width="3" opacity="0.55"/>
+    <!-- the peloton, asleep at the bottom of the banking -->
+    <g stroke-width="5" opacity="0.8">
+      <circle cx="330" cy="512" r="19"/><circle cx="386" cy="512" r="19"/>
+      <path d="M330 512 L352 480 L386 512 L364 512 L348 488"/>
+      <circle cx="430" cy="518" r="19"/><circle cx="486" cy="518" r="19"/>
+      <path d="M430 518 L452 486 L486 518 L464 518 L448 494"/>
+      <circle cx="528" cy="512" r="19"/><circle cx="584" cy="512" r="19"/>
+      <path d="M528 512 L550 480 L584 512 L562 512 L546 488"/>
+      <path d="M352 462 q6 -10 14 0 M452 468 q6 -10 14 0 M550 462 q6 -10 14 0" stroke-width="4"/>
+    </g>
+    <!-- the breakaway rider, high on the banking, gone -->
+    <g stroke-width="6">
+      <circle cx="742" cy="318" r="26"/>
+      <circle cx="820" cy="318" r="26"/>
+      <path d="M742 318 L774 274 L820 318 L788 318 L768 286"/>
+      <path d="M774 274 L800 282"/>
+      <circle cx="804" cy="256" r="13"/>
+    </g>
+    <path d="M600 356 C 640 338, 680 330, 716 328" stroke-dasharray="4 16" stroke-width="6"/>
+    <!-- a rocket above the track -->
+    <g stroke-width="6">
+      <path d="M950 210 C 930 160, 930 110, 950 62 C 970 110, 970 160, 950 210 Z"/>
+      <circle cx="950" cy="120" r="12"/>
+      <path d="M932 178 L902 214 M968 178 L998 214"/>
+      <path d="M944 224 q6 22 12 0" stroke-width="5"/>
+    </g>
+  </g>
+  <text x="600" y="632" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#92400e">all your base belong to Musk</text>
+</svg>
