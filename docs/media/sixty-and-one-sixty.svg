@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">The 60 and 160 ruler</title>
+<desc id="d">A hand drawn amber ruler with marks at 60 for titles and 160 for descriptions, a pair of reading glasses, and a speech bubble.</desc>
+<g fill="none" stroke="#b45309" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M80 330 L1120 318"/>
+<path d="M80 330 L82 400 L1118 392 L1120 318"/>
+<path d="M180 328 L180 366 M280 326 L280 358 M380 325 L380 366 M480 323 L480 358 M580 322 L580 366 M680 321 L680 358 M780 320 L780 366 M880 319 L880 358 M980 318 L980 366"/>
+<path d="M398 322 L398 268" stroke-width="7"/>
+<path d="M1018 319 L1018 250" stroke-width="7"/>
+<path d="M700 470 q10 -34 52 -34 q44 0 46 36 q2 34 -44 36 q-48 2 -54 -38 Z"/>
+<path d="M856 468 q8 -34 50 -34 q44 0 47 36 q2 34 -45 36 q-48 2 -52 -38 Z"/>
+<path d="M798 462 q29 -12 58 2"/>
+<path d="M700 472 L640 448 M954 466 L1030 430"/>
+</g>
+<g font-family="Georgia, serif" fill="#92400e">
+<text x="352" y="240" font-size="44" font-weight="bold">60</text>
+<text x="330" y="196" font-size="27">a title lives here</text>
+<text x="952" y="222" font-size="44" font-weight="bold">160</text>
+<text x="876" y="178" font-size="27">a description ends here</text>
+<text x="120" y="560" font-size="30" font-style="italic">A title is a sentence, not a breadcrumb.</text>
+</g>
+</svg>
