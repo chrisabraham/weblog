@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d">
+<title id="t">A toolbox of AI SEO tools</title>
+<desc id="d">An open amber toolbox with three labeled tags, ALT, TITLE, and META, and a small robot hand.</desc>
+<g fill="none" stroke="#b45309" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M300 420 L900 420 L860 580 L340 580 Z"/>
+<path d="M300 420 L240 330 L960 330 L900 420"/>
+<path d="M470 330 q130 -70 260 0"/>
+<path d="M380 380 L520 380 L520 470 L380 470 Z"/>
+<path d="M545 380 L685 380 L685 470 L545 470 Z"/>
+<path d="M710 380 L850 380 L850 470 L710 470 Z"/>
+<path d="M930 250 q40 -6 44 30 q3 30 -30 40 M944 280 l-6 44 M930 292 l-26 30"/>
+</g>
+<g font-family="Georgia, serif" fill="#92400e" text-anchor="middle">
+<text x="450" y="438" font-size="34" font-weight="bold">ALT</text>
+<text x="615" y="438" font-size="34" font-weight="bold">TITLE</text>
+<text x="780" y="438" font-size="34" font-weight="bold">META</text>
+<text x="600" y="160" font-size="34" font-style="italic">Describe, do not stuff.</text>
+</g>
+</svg>

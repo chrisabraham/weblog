@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The AI SEO Tools I Actually Recommend: Alt Text, Titles, Descriptions](https://chrisabraham.net/2026/11/ai-seo-tools-i-actually-recommend.html) (2026-11-12): Six AI tools that write image alt text, SEO titles, and meta descriptions, reviewed by a working SEO: what each one does, what it costs, and which to buy.
 - [Sixty and One Sixty: My Gospel for Titles, Descriptions, and Alt Text](https://chrisabraham.net/2026/11/sixty-and-one-sixty.html) (2026-11-12): Sixty characters for titles, one sixty for descriptions, the brand kept home, alt text that describes the picture, and what no setting can do for you.
 - [All Your Base Belong to Musk: Elon Musk, Starlink, and the Velodrome](https://chrisabraham.net/2026/11/all-your-base-belong-to-musk.html) (2026-11-12): Elon Musk and Starlink dominate because Musk starts races nobody else will start. The industry technology-fixes and waits for a sprint that never comes.
 - [Just the Tip: The FCC, the Carriers, and the End of the Toll Booth](https://chrisabraham.net/2026/11/just-the-tip-starlink-fcc.html) (2026-11-12): The FCC only proposed ending the carriers' satellite toll. Just a proposal, just the tip. The carriers heard it fine, because the rent is what dies.
@@ -188,7 +189,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 3 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
-- [Essays](https://chrisabraham.net/category/essays.html): 5 articles
+- [Essays](https://chrisabraham.net/category/essays.html): 6 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 13 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 1 article
@@ -224,7 +225,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
-- [SEO](https://chrisabraham.net/category/seo.html): 25 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 26 articles
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 4 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
