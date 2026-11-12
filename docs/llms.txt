@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Just the Tip: The FCC, the Carriers, and the End of the Toll Booth](https://chrisabraham.net/2026/11/just-the-tip-starlink-fcc.html) (2026-11-12): The FCC only proposed ending the carriers' satellite toll. Just a proposal, just the tip. The carriers heard it fine, because the rent is what dies.
 - [AI Roundup: Everything Got More Specific](https://chrisabraham.net/2026/11/ai-roundup-everything-got-more-specific.html) (2026-11-12): Google rolls out its November core update, DeepMind reads DNA cell by cell, IBM links toward 1040 qubits, Runway opens its robot model
 - [Olly Olly Oxen Free: alt.fan.john-c-dvorak](https://chrisabraham.net/2026/11/olly-olly-oxen-free.html) (2026-11-11): I have proposed alt.fan.john-c-dvorak, an unmoderated, unowned Usenet memorial for John C. Dvorak. Here is why, and the whole road in.
 - [The Whole Xteink World, for Jason Gooljar](https://chrisabraham.net/2026/11/xteink-world.html) (2026-11-11): No Kindle app, no store, no DRM. The Xteink X3, X4 Classic and X4 Pro explained: the cult, CrossPoint, the lockout war, and how to buy one safely.
@@ -185,7 +186,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 2 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
-- [Essays](https://chrisabraham.net/category/essays.html): 2 articles
+- [Essays](https://chrisabraham.net/category/essays.html): 3 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 13 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 1 article
@@ -223,7 +224,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
 - [SEO](https://chrisabraham.net/category/seo.html): 24 articles
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
-- [SpaceX](https://chrisabraham.net/category/spacex.html): 3 articles
+- [SpaceX](https://chrisabraham.net/category/spacex.html): 4 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 6 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 3 articles
