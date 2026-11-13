@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A gate swung inward, a robot with its own keys, a protein under a magnifying glass, and sources at the bottom of an answer</title>
+<desc>Doodle of a garden gate swung inward with a robot carrying its own keys inside the fence, a protein molecule under a magnifying glass, and a search answer whose source icons have slipped to the bottom</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="3" fill="none" stroke-linecap="round">
+<line x1="24" y1="96" x2="96" y2="96"/>
+<line x1="24" y1="96" x2="24" y2="176"/>
+<line x1="96" y1="96" x2="96" y2="176"/>
+<path d="M96 96 L150 118 L150 190 L96 176" fill="#eee8d5"/>
+<circle cx="142" cy="152" r="4" fill="#268bd2"/>
+<rect x="40" y="128" width="26" height="24" rx="5" fill="#eee8d5"/>
+<circle cx="53" cy="118" r="8"/>
+<path d="M44 152 L38 168 M62 152 L68 168"/>
+<circle cx="70" cy="140" r="3" fill="#b58900" stroke="#b58900"/>
+<path d="M70 143 L74 152" stroke="#b58900"/>
+<circle cx="76" cy="154" r="2.5" fill="none" stroke="#b58900"/>
+<circle cx="182" cy="52" r="7" fill="#eee8d5"/>
+<circle cx="202" cy="38" r="5"/>
+<circle cx="206" cy="60" r="6" fill="#eee8d5"/>
+<circle cx="186" cy="74" r="4"/>
+<path d="M188 57 L197 44 M189 68 L200 62 M176 58 L186 70"/>
+<circle cx="192" cy="56" r="30"/>
+<line x1="213" y1="77" x2="226" y2="90"/>
+<rect x="150" y="118" width="66" height="86" rx="6" fill="#ffffff"/>
+<line x1="160" y1="134" x2="206" y2="134"/>
+<line x1="160" y1="148" x2="206" y2="148"/>
+<line x1="160" y1="162" x2="192" y2="162"/>
+<circle cx="162" cy="190" r="3" fill="#b58900" stroke="#b58900"/>
+<circle cx="174" cy="190" r="3" fill="#b58900" stroke="#b58900"/>
+<circle cx="186" cy="190" r="3" fill="#b58900" stroke="#b58900"/>
+</g>
+</svg>
