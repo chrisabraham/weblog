@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A proof with a checkmark, a finished job card, a protein, and a generator</title>
+<desc>Doodle of a stamped proof page with a large checkmark, a robot handing in a finished job card, a folded protein on a workbench, and a gas generator plugged into a small data center</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<rect x="24" y="28" width="62" height="80" rx="6" fill="#ffffff"/>
+<line x1="36" y1="48" x2="74" y2="48"/><line x1="36" y1="62" x2="74" y2="62"/><line x1="36" y1="76" x2="60" y2="76"/>
+<path d="M36 94 L50 104 L78 84" stroke="#859900"/>
+<rect x="104" y="128" width="26" height="24" rx="5" fill="#eee8d5"/>
+<circle cx="117" cy="118" r="8"/>
+<path d="M108 152 L102 168 M126 152 L132 168"/>
+<rect x="140" y="122" width="52" height="36" rx="4" fill="#ffffff"/>
+<line x1="148" y1="134" x2="184" y2="134"/><line x1="148" y1="146" x2="172" y2="146"/>
+<circle cx="166" cy="52" r="7" fill="#eee8d5"/><circle cx="186" cy="38" r="5"/><circle cx="190" cy="60" r="6" fill="#eee8d5"/><circle cx="170" cy="74" r="4"/>
+<path d="M172 57 L181 44 M173 68 L184 62 M160 58 L170 70"/>
+<rect x="28" y="182" width="76" height="34" rx="6" fill="#eee8d5"/>
+<circle cx="44" cy="199" r="7"/><circle cx="82" cy="199" r="7"/>
+<path d="M104 199 L136 199" stroke="#b58900"/>
+<rect x="136" y="182" width="66" height="34" rx="6" fill="#ffffff"/>
+<line x1="148" y1="194" x2="190" y2="194"/><line x1="148" y1="205" x2="178" y2="205"/>
+</g>
+</svg>
