@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Metanoia Is the Whole Job](https://chrisabraham.net/2026/11/metanoia-is-the-whole-job.html) (2026-11-14): The philosophy dates to 2013: big checks fail, returns diminish, and the client must turn around. The word is metanoia, and it was in my notes all along.
 - [AI Roundup: Best of the Week, Proof Work and Power](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-proof-work-and-power.html) (2026-11-13): Torvalds blesses the fix flood, Lean checked proofs land, Fable does 41 percent of freelance jobs, and quantum simulates a real protein
 - [AI Roundup: The Perimeter Moved](https://chrisabraham.net/2026/11/ai-roundup-the-perimeter-moved.html) (2026-11-13): Gemini 4 Hydrogen takes over AI Mode, Anthropic agents move in-house, a 12635 atom quantum simulation, and California feed law in court
 - [AI SEO Tools for WordPress: A Field Guide for My Future Self](https://chrisabraham.net/2026/11/ai-seo-tools-i-actually-recommend.html) (2026-11-12): The AI tools that write image alt text, SEO titles, and meta descriptions, listed for my own future reference: what each claims, what it costs, what I used.
@@ -216,7 +217,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Nostalgia](https://chrisabraham.net/category/nostalgia.html): 1 article
 - [Nostalgia Dump](https://chrisabraham.net/category/nostalgia-dump.html): 2 articles
 - [OpenAI Codex](https://chrisabraham.net/category/openai-codex.html): 5 articles
-- [Perception Management](https://chrisabraham.net/category/perception-management.html): 1 article
+- [Perception Management](https://chrisabraham.net/category/perception-management.html): 2 articles
 - [Personal Agents](https://chrisabraham.net/category/personal-agents.html): 3 articles
 - [Pinebox](https://chrisabraham.net/category/pinebox.html): 3 articles
 - [Podcasting](https://chrisabraham.net/category/podcasting.html): 1 article
@@ -225,9 +226,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Publishing](https://chrisabraham.net/category/publishing.html): 1 article
 - [Reading](https://chrisabraham.net/category/reading.html): 3 articles
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
-- [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 1 article
+- [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 2 articles
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
-- [SEO](https://chrisabraham.net/category/seo.html): 26 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 27 articles
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 4 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
