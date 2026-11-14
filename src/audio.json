@@ -181,6 +181,13 @@
   "sha256": "28d6a0e6491e236a9e1d2cc9884f0f246c93eecf0654432d987b210b5e253aaa",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-defaults-broke": {
+  "author": "chris",
+  "bytes": 9971749,
+  "duration": 1246,
+  "sha256": "a1d41ead8a063cbcd9dbf1436f288ad02e1d54dc5b1ec53ccdb2a6cc47302d94",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-flood-recedes-the-generators-arrive": {
   "author": "chris",
   "bytes": 8342387,

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A crown slipped off a computer chip, a robot holding a wallet with a fingerprint lock, rain stitched from five satellites, and a dark mail slot</title>
+<desc>Doodle of a crown slipping off a computer chip, a robot holding a wallet secured by a fingerprint, a rain cloud stitched together from five satellites, and an office mail slot gone dark</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="3" fill="none" stroke-linecap="round">
+<rect x="28" y="118" width="52" height="52" rx="6" fill="#eee8d5"/>
+<line x1="40" y1="118" x2="40" y2="104"/><line x1="54" y1="118" x2="54" y2="104"/><line x1="68" y1="118" x2="68" y2="104"/>
+<line x1="40" y1="184" x2="40" y2="170"/><line x1="54" y1="184" x2="54" y2="170"/><line x1="68" y1="184" x2="68" y2="170"/>
+<path d="M30 104 L38 84 L50 98 L60 78 L70 98 L80 86 L78 106 Z" fill="#eee8d5" stroke="#b58900" transform="rotate(-14 54 94)"/>
+<circle cx="54" cy="144" r="10"/>
+<rect x="104" y="118" width="34" height="26" rx="5" fill="#eee8d5"/>
+<circle cx="121" cy="106" r="9"/>
+<path d="M110 144 L104 162 M132 144 L138 162"/>
+<rect x="146" y="124" width="52" height="38" rx="7" fill="#ffffff"/>
+<circle cx="172" cy="143" r="9" stroke="#b58900"/>
+<path d="M166 143 a6 6 0 0 1 12 0 M169 143 a3 3 0 0 1 6 0" stroke="#b58900"/>
+<circle cx="60" cy="42" r="4" fill="#eee8d5"/><circle cx="104" cy="30" r="4" fill="#eee8d5"/><circle cx="148" cy="42" r="4" fill="#eee8d5"/><circle cx="82" cy="58" r="4" fill="#eee8d5"/><circle cx="126" cy="58" r="4" fill="#eee8d5"/>
+<path d="M60 46 L82 54 M104 34 L104 50 M148 46 L126 54 M82 62 L96 72 M126 62 L112 72" stroke-dasharray="3 4"/>
+<path d="M78 84 a14 10 0 0 1 6-19 a16 12 0 0 1 30-4 a13 10 0 0 1 14 12 a12 9 0 0 1-4 11 Z" fill="#eee8d5"/>
+<line x1="88" y1="94" x2="86" y2="102"/><line x1="104" y1="96" x2="102" y2="104"/><line x1="120" y1="94" x2="118" y2="102"/>
+<rect x="156" y="182" width="58" height="34" rx="5" fill="#eee8d5"/>
+<rect x="166" y="194" width="38" height="6" rx="3" fill="#586e75" stroke="#586e75"/>
+<circle cx="206" cy="190" r="2.5" fill="#cb4b16" stroke="#cb4b16"/>
+</g>
+</svg>
