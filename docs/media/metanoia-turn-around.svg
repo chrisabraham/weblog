@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A leaking pipe, a peeling paper patch, a bucket of drips, and one big U-turn arrow</title>
+<desc>Doodle of a leaking pipe above a wall stain covered by a peeling paper patch, drips falling into a bucket, and a large U-turn arrow showing the only real fix</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="5" fill="none" stroke-linecap="round">
+<line x1="24" y1="44" x2="150" y2="44"/>
+<line x1="52" y1="44" x2="52" y2="64"/>
+</g>
+<rect x="40" y="34" width="24" height="20" rx="4" fill="#eee8d5" stroke="#268bd2" stroke-width="3"/>
+<path d="M52 66 q6 10 0 16 q-6 -6 0 -16" fill="#268bd2"/>
+<path d="M118 96 q10 26 4 52 q-16 8 -30 -2 q-4 -26 6 -50 q10 -6 20 0" fill="#d9c9a3" stroke="#b58900" stroke-width="3"/>
+<path d="M118 96 q4 14 -2 24 l-14 -4 q4 -12 2 -22 q8 -2 14 2" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="3" fill="#268bd2" stroke-linecap="round">
+<path d="M52 118 q4 7 0 11 q-4 -4 0 -11" fill="#268bd2" stroke="none"/>
+<path d="M76 138 q4 7 0 11 q-4 -4 0 -11" fill="#268bd2" stroke="none"/>
+</g>
+<path d="M38 196 L86 196 L80 164 L44 164 Z" fill="#eee8d5" stroke="#586e75" stroke-width="3"/>
+<path d="M44 178 q9 5 18 0 q9 -5 18 0" fill="none" stroke="#268bd2" stroke-width="3"/>
+<g stroke="#dc322f" stroke-width="7" fill="none" stroke-linecap="round">
+<path d="M196 190 L196 96 Q196 62 162 62 L138 62"/>
+</g>
+<path d="M138 62 l22 -11 l-3 22 z" fill="#dc322f"/>
+<text x="176" y="216" font-family="monospace" font-size="13" fill="#586e75" text-anchor="middle">turn</text>
+</svg>
