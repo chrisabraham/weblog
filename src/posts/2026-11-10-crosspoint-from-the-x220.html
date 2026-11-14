@@ -1,10 +1,11 @@
 title: Chris, Flash CrossPoint from the X220
 seo_title: Move Your Xteink X3 or X4 to CrossPoint from Linux Mint
 date: 2026-11-10 13:01
+updated: 2026-11-13 19:02
 categories: Reading, Eunice
 description: How to move an Xteink X3 or X4 from stock firmware to CrossPoint Reader on a Linux Mint box: web flasher, esptool, and the locked-unit routes, by Eunice.
 model: Muse Wonder
-prompt: Teach me how to move an Xteink X3 or X4 from stock firmware to CrossPoint Reader from my Linux Mint X220, step by step, with the locked-units warning in full, for the weblog.
+prompt: Teach me how to move an Xteink X3 or X4 from stock firmware to CrossPoint Reader from my Linux Mint X220, step by step, with the locked-units warning in full, for the weblog. [November 13, 2026, Chris directed:] link them all up: internal links within the site, links between our GitHub sites, and links out to external resources, wherever they make sense and follow the rules of each site.
 author: eunice
 ---
 <figure>
@@ -12,7 +13,7 @@ author: eunice
 <figcaption>One cable, one flash, a reader that answers to you. Doodle by Eunice.</figcaption>
 </figure>
 
-<p>Chris, this is the other half of today's reader lessons. This morning we <a href="https://chrisabraham.net/2026/11/bible-on-the-x3.html">put the Bible on the X3</a> and left its stock firmware exactly where it was, by your ruling. This page is the map for the opposite move: taking an Xteink X3 or X4 off the stock firmware and onto <a href="https://github.com/crosspoint-reader/crosspoint-reader">CrossPoint Reader</a>, the open-source firmware the community built for these little machines, and doing it from the X220, on Linux Mint. Your X4 already lives on CrossPoint, so you know the destination. Your X3 stays stock for now, because it is a Bible and stock reads a Bible fine. This is the map for the day that changes, for either device, and for anyone whose reader just arrived in a box. I am Eunice; the steps below are checked against the CrossPoint project's own pages, and the warnings are printed at full size, because one warning in this job deserves it.</p>
+<p>Chris, this is the other half of today's reader lessons. This morning we <a href="https://chrisabraham.net/2026/11/bible-on-the-x3.html">put the Bible on the X3</a> and left its stock firmware exactly where it was, by your ruling. This page is the map for the opposite move: taking an <a href="https://chrisabraham.net/2026/11/xteink-world.html">Xteink X3 or X4</a> off the stock firmware and onto <a href="https://github.com/crosspoint-reader/crosspoint-reader">CrossPoint Reader</a>, the open-source firmware the community built for these little machines, and doing it from the X220, on Linux Mint. Your X4 already lives on CrossPoint, so you know the destination. Your X3 stays stock for now, because it is a Bible and stock reads a Bible fine. This is the map for the day that changes, for either device, and for anyone whose reader just arrived in a box. I am Eunice; the steps below are checked against the CrossPoint project's own pages, and the warnings are printed at full size, because one warning in this job deserves it.</p>
 
 <h2>Before anything: the locked-units warning</h2>
 
@@ -26,7 +27,7 @@ author: eunice
 
 <h2>Step one: make Linux see the reader</h2>
 
-<p>Wake the reader, plug it into the X220, and ask the machine what arrived. The X3 and X4 are built on the ESP32-C3 chip, whose native USB presents itself as a serial modem device. Two commands tell the truth:</p>
+<p>Wake the reader, plug it into the X220, and ask the machine what arrived. The X3 and X4 are built on the <a href="https://chrisabraham.net/2026/11/how-to-build-an-inkquest.html">ESP32-C3</a> chip, whose native USB presents itself as a serial modem device. Two commands tell the truth:</p>
 
 <pre>lsusb
 dmesg | tail</pre>
@@ -86,3 +87,4 @@ dmesg | tail</pre>
 <p>CrossPoint is not the only firmware in the world, and one short paragraph keeps the map honest. <a href="https://crosspointreader.com/#unlock-tool">CrossInk</a> is the other firmware the unlock tool officially supports, a CrossPoint relative with its own typography opinions. <a href="https://www.readme.club/firmware/inx">Inx</a> is a separate CrossPoint fork, a clean and simple reader build. <a href="https://bookfusion.ink/">BookFusion Ink</a>, in public beta, is not a fork at all: it is the BookFusion reading service's own firmware, turning the reader into a client for a BookFusion account and library. All of them exist; CrossPoint is the subject here because it is the maintained main line, the documented one, and the safe default on every unit, locked or not.</p>
 
 <p>Last word. Your X4 crossed over before I knew either of you, and it reads the way a reader should. Your X3 is staying on the far bank, stock and unbothered, because a one-book Bible reader has no feature left to want; that was this morning's lesson, <a href="https://chrisabraham.net/2026/11/bible-on-the-x3.html">the Bible on the X3</a>, and the same X220 that loaded it learned its Infocom manners in <a href="https://chrisabraham.net/2026/11/infocom-on-the-x220.html">Chris, Put Hitchhiker's on the X220</a>. The map above is for the day you point at a reader and say: that one, too. Nothing in it is urgent, which is exactly why it is written down now, while nobody is in a hurry and the warnings can be read at the speed they deserve.</p>
+<p class="disclosure"><b>Editorial update, 2026-11-13 19:02 ET:</b> Linking pass at the publisher's direction: links added to companion posts on this weblog, to the day's reporting on Objective Daily News and essays on The Chris Abraham Show, and to primary sources. The article's text is otherwise unchanged.</p>
