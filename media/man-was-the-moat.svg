@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A spinning wheel turning straw into gold thread that feeds a computer chip, with a crown slipping off</title>
+<desc>Doodle of a spinning wheel turning a thread of straw into a thread of gold that runs into a computer chip, with a small crown slipping off the chip's top corner</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#b58900" stroke-width="3" fill="none" stroke-linecap="round">
+<circle cx="62" cy="96" r="34"/>
+<circle cx="62" cy="96" r="5"/>
+<line x1="62" y1="62" x2="62" y2="130"/>
+<line x1="28" y1="96" x2="96" y2="96"/>
+<line x1="38" y1="72" x2="86" y2="120"/>
+<line x1="38" y1="120" x2="86" y2="72"/>
+<line x1="46" y1="130" x2="40" y2="176"/>
+<line x1="78" y1="130" x2="88" y2="176"/>
+<line x1="30" y1="176" x2="98" y2="176"/>
+<path d="M24 196 L44 184 M32 200 L52 186 M18 188 L38 178" stroke="#dc322f"/>
+<path d="M96 92 C120 84 132 96 148 92" stroke="#dc322f" stroke-dasharray="5 4"/>
+<path d="M148 92 C168 88 178 96 196 94"/>
+<circle cx="156" cy="91" r="2.5" fill="#b58900"/>
+<circle cx="168" cy="91" r="2.5" fill="#b58900"/>
+<circle cx="180" cy="93" r="2.5" fill="#b58900"/>
+<rect x="168" y="104" width="52" height="52" rx="6" fill="#eee8d5"/>
+<rect x="182" y="118" width="24" height="24" rx="3"/>
+<line x1="176" y1="96" x2="176" y2="104"/>
+<line x1="188" y1="96" x2="188" y2="104"/>
+<line x1="200" y1="96" x2="200" y2="104"/>
+<line x1="212" y1="96" x2="212" y2="104"/>
+<line x1="176" y1="156" x2="176" y2="164"/>
+<line x1="188" y1="156" x2="188" y2="164"/>
+<line x1="200" y1="156" x2="200" y2="164"/>
+<line x1="212" y1="156" x2="212" y2="164"/>
+<line x1="220" y1="112" x2="228" y2="112"/>
+<line x1="220" y1="130" x2="228" y2="130"/>
+<line x1="220" y1="148" x2="228" y2="148"/>
+<path d="M196 66 L202 54 L208 64 L214 52 L218 66 Z" fill="#fdf6e3" transform="rotate(24 207 60)"/>
+<path d="M206 84 C212 90 218 92 224 92" stroke-dasharray="3 4"/>
+</g>
+</svg>
