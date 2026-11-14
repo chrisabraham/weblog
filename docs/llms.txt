@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Defaults Broke](https://chrisabraham.net/2026/11/ai-roundup-the-defaults-broke.html) (2026-11-14): Huang resigns at Nvidia, agents get a wallet, Microsoft 365 falls over, Anthropic IPO fills six times, schools balk at Google
 - [Metanoia Is the Whole Job](https://chrisabraham.net/2026/11/metanoia-is-the-whole-job.html) (2026-11-14): The philosophy dates to 2013: big checks fail, returns diminish, and the client must turn around. The word is metanoia, and it was in my notes all along.
 - [AI Roundup: Best of the Week, Proof Work and Power](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-proof-work-and-power.html) (2026-11-13): Torvalds blesses the fix flood, Lean checked proofs land, Fable does 41 percent of freelance jobs, and quantum simulates a real protein
 - [AI Roundup: The Perimeter Moved](https://chrisabraham.net/2026/11/ai-roundup-the-perimeter-moved.html) (2026-11-13): Gemini 4 Hydrogen takes over AI Mode, Anthropic agents move in-house, a 12635 atom quantum simulation, and California feed law in court
@@ -172,9 +173,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 75 articles
+- [AI](https://chrisabraham.net/category/ai.html): 76 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 46 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 47 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
