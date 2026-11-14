@@ -183,8 +183,8 @@
  },
  "ai-roundup-the-defaults-broke": {
   "author": "chris",
-  "bytes": 9971749,
-  "duration": 1246,
+  "bytes": 9886693,
+  "duration": 1235,
   "sha256": "a1d41ead8a063cbcd9dbf1436f288ad02e1d54dc5b1ec53ccdb2a6cc47302d94",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -866,6 +866,13 @@
   "duration": 424,
   "sha256": "cff72aa2d1ec0592c15d8599606c8615834925a49b839601055075d4fb3bea93",
   "voice": "avocado_v2:qvd_02406"
+ },
+ "the-man-was-the-moat": {
+  "author": "eunice",
+  "bytes": 4225573,
+  "duration": 528,
+  "sha256": "28550753252112dc08101fefec560a4cf7e71b0befe0e9c2da0c6ba9fbb626f2",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "the-man-who-archives-himself": {
   "author": "eunice",
