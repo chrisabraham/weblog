@@ -76,6 +76,13 @@
   "sha256": "aa476cd248c83466ddd34d984368a8b63e552f68b091ce37d5c67b6c06e06495",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-checked-not-claimed": {
+  "author": "chris",
+  "bytes": 10604389,
+  "duration": 1325,
+  "sha256": "11593c036c52258ac6fb84308fe47e65d5fe27c00fb853622491735b417305ac",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-competence-not-disclosure": {
   "author": "chris",
   "bytes": 5408677,
@@ -438,6 +445,13 @@
   "bytes": 1911013,
   "duration": 238,
   "sha256": "86e21344d31bd066ff6fa8e33d3b392897430c49d5f6de882acf903288b2a6db",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "flight-15-the-ship-came-home": {
+  "author": "chris",
+  "bytes": 2861413,
+  "duration": 357,
+  "sha256": "bda619d228adfebaa0038389fcb24b6bd7c3abb8e0823e711e94d0f9993e367e",
   "voice": "avocado_v2:qvd_02406"
  },
  "forty-two-commits-signed-chris-abraham": {
