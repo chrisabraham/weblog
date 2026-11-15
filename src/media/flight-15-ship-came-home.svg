@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<title>The Mechazilla tower catching Ship 42 while the Super Heavy booster splashes down in the Gulf</title>
+<desc>Amber line doodle of the Starbase launch tower catching the Starship upper stage in its chopstick arms, a dashed orbit arc with Starlink satellites overhead, and the booster tipped into Gulf waves with a small fireball burst</desc>
+<rect x="10" y="10" width="1180" height="655" rx="24" fill="#fdf6e3" stroke="#b58900" stroke-width="4"/>
+<g stroke="#b58900" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <!-- stars -->
+  <path d="M120 150 v18 M111 159 h18"/>
+  <path d="M250 90 v14 M243 97 h14"/>
+  <path d="M430 150 v16 M422 158 h16"/>
+  <path d="M640 60 v14 M633 67 h14"/>
+  <path d="M820 130 v16 M812 138 h16"/>
+  <circle cx="180" cy="230" r="3" fill="#b58900"/>
+  <circle cx="540" cy="120" r="3" fill="#b58900"/>
+  <circle cx="720" cy="170" r="3" fill="#b58900"/>
+  <circle cx="90" cy="300" r="3" fill="#b58900"/>
+  <!-- crescent moon -->
+  <path d="M1085 60 a34 34 0 1 0 18 62 a26 26 0 1 1 -18 -62"/>
+  <!-- orbit arc with Starlink train -->
+  <path d="M55 235 C 330 70, 760 35, 1060 130" stroke-dasharray="10 9"/>
+  <g>
+    <rect x="300" y="98" width="34" height="16" rx="4" transform="rotate(-9 317 106)"/>
+    <path d="M282 100 l-22 6 M336 108 l22 -4" transform="rotate(-9 317 106)"/>
+    <rect x="520" y="66" width="34" height="16" rx="4" transform="rotate(-3 537 74)"/>
+    <path d="M502 70 l-22 4 M556 76 l22 -2" transform="rotate(-3 537 74)"/>
+    <rect x="742" y="58" width="34" height="16" rx="4" transform="rotate(3 759 66)"/>
+    <path d="M724 66 l-22 -2 M778 62 l22 4" transform="rotate(3 759 66)"/>
+  </g>
+  <!-- booster return trajectory, dashed, ending at the water -->
+  <path d="M470 300 C 430 360, 400 400, 368 442" stroke-dasharray="8 9"/>
+  <!-- the booster in the Gulf -->
+  <g transform="rotate(24 330 480)">
+    <path d="M306 398 L354 398 L354 520 Q330 534 306 520 Z"/>
+    <path d="M306 440 L354 440"/>
+    <path d="M306 520 q-14 26 -26 34 M354 520 q14 26 26 34"/>
+  </g>
+  <!-- splash marks -->
+  <path d="M238 512 q-16 -22 -34 -26 M262 500 q-8 -26 -22 -36 M420 512 q16 -22 34 -26 M398 500 q8 -26 22 -36"/>
+  <!-- fireball burst, red accent -->
+  <g stroke="#dc322f">
+    <path d="M330 356 v-26 M306 366 l-18 -20 M354 366 l18 -20 M292 386 l-26 -8 M368 386 l26 -8"/>
+    <circle cx="330" cy="382" r="10"/>
+  </g>
+  <!-- sea waves -->
+  <path d="M40 560 q30 -16 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/>
+  <path d="M60 600 q30 -16 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/>
+  <path d="M40 640 q30 -14 60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0 t60 0"/>
+  <!-- ground at Starbase -->
+  <path d="M700 565 L1165 565"/>
+  <path d="M730 565 l-12 16 M800 565 l-12 16 M870 565 l-12 16 M1080 565 l-12 16 M1140 565 l-12 16"/>
+  <!-- launch mount -->
+  <path d="M962 565 L962 520 L1072 520 L1072 565"/>
+  <path d="M962 542 L1072 542"/>
+  <!-- Mechazilla tower -->
+  <path d="M992 565 L992 175 M1052 565 L1052 175"/>
+  <path d="M992 175 L1052 175"/>
+  <path d="M992 240 L1052 200 L992 290 L1052 250 L992 340 L1052 300 L992 390 L1052 350 L992 440 L1052 400 L992 490 L1052 450 L992 540 L1052 500"/>
+  <path d="M975 175 L1069 175 M1022 175 L1022 148"/>
+  <!-- chopstick arms holding the ship -->
+  <path d="M992 302 L906 302"/>
+  <path d="M992 398 L906 398"/>
+  <path d="M906 302 l-14 10 M906 398 l-14 -10"/>
+  <!-- Ship 42, caught -->
+  <path d="M880 218 C 862 244, 852 268, 852 300 L852 402 Q880 414 908 402 L908 300 C 908 268, 898 244, 880 218 Z"/>
+  <path d="M852 340 L908 340"/>
+  <path d="M852 300 l-20 26 M908 300 l20 26"/>
+  <path d="M852 388 l-24 30 M908 388 l24 30"/>
+  <path d="M866 402 l0 14 M880 406 l0 14 M894 402 l0 14"/>
+  <path d="M862 436 q6 10 2 20 M880 442 q6 10 2 20 M898 436 q6 10 2 20" stroke-dasharray="6 7"/>
+  <text x="880" y="330" text-anchor="middle" font-family="Verdana, sans-serif" font-size="30" fill="#b58900" stroke="none">15</text>
+</g>
+</svg>
