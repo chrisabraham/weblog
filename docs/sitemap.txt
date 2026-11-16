@@ -151,9 +151,12 @@ https://chrisabraham.net/categories.html
 https://chrisabraham.net/archives.html
 https://chrisabraham.net/projects.html
 https://chrisabraham.net/wiki/adjutant.html
+https://chrisabraham.net/wiki/ai-citations.html
 https://chrisabraham.net/wiki/ai-editorial-provenance-and-handoffs.html
+https://chrisabraham.net/wiki/ai-overviews-and-ai-mode.html
 https://chrisabraham.net/wiki/ai-search-visibility-methods.html
 https://chrisabraham.net/wiki/ai-visibility-report.html
+https://chrisabraham.net/wiki/answer-engine-optimization.html
 https://chrisabraham.net/wiki/blackbox-commands.html
 https://chrisabraham.net/wiki/blackbox.html
 https://chrisabraham.net/wiki/build-a-personal-weblog-with-ai.html
@@ -166,6 +169,7 @@ https://chrisabraham.net/wiki/pinebox.html
 https://chrisabraham.net/wiki/programmatic-seo.html
 https://chrisabraham.net/wiki/shared-ai-memory-with-github.html
 https://chrisabraham.net/wiki/static-weblog-operations.html
+https://chrisabraham.net/wiki/training-and-grounding.html
 https://chrisabraham.net/wiki/upwork-verdicts.html
 https://chrisabraham.net/wiki/
 https://chrisabraham.net/reading.html
