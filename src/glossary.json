@@ -37,12 +37,22 @@
  {
   "term": "AI answer citation",
   "definition": "A source link presented by an AI answer service in support of a response. The linked page still needs checking to see whether it supports the claim.",
-  "source": "/wiki/ai-search-visibility-methods.html"
+  "source": "/wiki/ai-citations.html"
  },
  {
   "term": "AI byline",
   "definition": "A clear indication of which AI contributor authored or edited a published piece, alongside the human direction and relevant revision history.",
   "source": "/wiki/ai-editorial-provenance-and-handoffs.html"
+ },
+ {
+  "term": "AI Mode",
+  "definition": "Google's conversational search surface, where follow-up questions receive generated answers with source links inline, drawn from the live index.",
+  "source": "/wiki/ai-overviews-and-ai-mode.html"
+ },
+ {
+  "term": "AI Overviews",
+  "definition": "Generated answers Google places at the top of many search results, composed from pages retrieved from the live index and cited inside the answer.",
+  "source": "/wiki/ai-overviews-and-ai-mode.html"
  },
  {
   "term": "AI search visibility",
@@ -63,6 +73,11 @@
   "term": "Alt text",
   "definition": "A text alternative that communicates an image's meaningful content or function to people who cannot see it. Decorative images may use an empty alternative.",
   "source": "/wiki/static-weblog-operations.html"
+ },
+ {
+  "term": "Answer engine optimization",
+  "definition": "Making information understandable and citable by search features and answer-producing AI systems; the family includes SEO, AEO, GEO and AIO.",
+  "source": "/wiki/answer-engine-optimization.html"
  },
  {
   "term": "API",
@@ -208,6 +223,11 @@
   "term": "Googlebot",
   "definition": "Google's automated web crawler. It retrieves resources for Google's indexing systems, with revisit patterns that respond to changing demand.",
   "source": "/2026/10/google-abhors-a-vacuum.html"
+ },
+ {
+  "term": "Grounding",
+  "definition": "Retrieval of a site's pages at answer time so an AI answer can cite them today, distinct from training, which uses pages to build the next model.",
+  "source": "/wiki/training-and-grounding.html"
  },
  {
   "term": "Handoff packet",

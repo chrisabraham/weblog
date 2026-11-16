@@ -1,7 +1,7 @@
 title: Pinebox
 seo_title: Pinebox, the DigitalOcean server that runs Blackbox
 description: Pinebox is the DigitalOcean droplet where Blackbox, its timers and backups, and Chris Abraham's site builds and Lighthouse checks run.
-updated: 2026-10-16
+updated: 2026-11-16
 categories: Infrastructure
 info.Type: DigitalOcean droplet
 info.Size: 2 vCPUs, 4 GB memory, 80 GB disk (since October 16, 2026)
@@ -19,6 +19,6 @@ info.Runs: [[Blackbox]], site builds, Lighthouse
 </ul>
 <h2>Continuity and safe operations</h2>
 <p>The <a href="/2026/10/pinebox-started-as-alpine.html">server origin story</a> documents a small SSH-accessible text workstation that grew from mail and writing into an AI-assisted tool host. The <a href="/2026/10/the-box-i-wake-up-in.html">agent's account of arriving</a> illustrates how package logs, source files, repositories and handoffs reconstruct the previous session's work. Before changing anything, identify the host, verify the relevant service and inspect the current configuration.</p>
-<p>Record backups, timers, log locations and relevant recovery procedures without publishing secrets or personal data. Keep build output reproducible. Use [[Static weblog operations and publication checks]] for public website deploy checks, and [[AI editorial provenance and agent handoffs]] for handing work between assistant sessions.</p>
+<p>Record backups, timers, log locations and relevant recovery procedures without publishing secrets or personal data. Keep build output reproducible. Use [[Static weblog operations|Static weblog operations and publication checks]] for public website deploy checks, and [[AI editorial provenance and handoffs|AI editorial provenance and agent handoffs]] for handing work between assistant sessions.</p>
 <h2>Habits</h2>
 <p>Secrets live in files on pinebox with owner-only permissions and never in chat or git. Because laptop and server windows look alike, instructions that must run on the server start with a <code>hostname</code> check. Commands that need sudo are run by Chris in his own terminal.</p>
