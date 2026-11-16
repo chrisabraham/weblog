@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{var t=localStorage.getItem("weblog-theme");if(t==="dark"||(!t&&matchMedia("(prefers-color-scheme: dark)").matches))document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+<title>Monday AI Roundup The Week Gets Priced in Public</title>
+<meta name="description" content="Torvalds ships rc3, Alibaba launches Qwen4 Max, Nvidia and Anthropic face the market, Luxor counts a hijack, Shenzhen simulates atoms">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Chris Abraham">
+<meta name="generator" content="build.py, written with AI in Claude Code">
+<meta name="theme-color" content="#ffffff" id="theme-color">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham weblog (RSS)" href="https://chrisabraham.net/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Chris Abraham weblog (Atom)" href="https://chrisabraham.net/atom.xml">
+<link rel="alternate" type="application/rss+xml" title="Chris Abraham weblog (Podcast, every post read aloud)" href="https://chrisabraham.net/podcast.xml">
+<link rel="alternate" type="text/x-opml" title="Chris Abraham weblog (Feeds and blogroll OPML)" href="https://chrisabraham.net/feeds.opml">
+<link rel="blogroll" type="text/x-opml" href="https://chrisabraham.net/blogroll.opml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="Chris Abraham weblog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI Roundup: The Week Gets Priced">
+<meta property="og:description" content="Torvalds ships rc3, Alibaba launches Qwen4 Max, Nvidia and Anthropic face the market, Luxor counts a hijack, Shenzhen simulates atoms">
+<meta property="og:url" content="https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="AI Roundup: The Week Gets Priced">
+<meta name="twitter:description" content="Torvalds ships rc3, Alibaba launches Qwen4 Max, Nvidia and Anthropic face the market, Luxor counts a hijack, Shenzhen simulates atoms">
+<meta property="og:image" content="https://chrisabraham.net/cards/2026-11-ai-roundup-the-week-gets-priced.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chris Abraham weblog: AI Roundup: The Week Gets Priced">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://chrisabraham.net/cards/2026-11-ai-roundup-the-week-gets-priced.png">
+<meta name="twitter:image:alt" content="Chris Abraham weblog: AI Roundup: The Week Gets Priced">
+<link rel="me" href="https://github.com/chrisabraham">
+<link rel="me" href="https://www.upwork.com/freelancers/chrisjabraham">
+<link rel="me" href="https://www.linkedin.com/in/chrisabraham">
+<link rel="me" href="https://mastodon.social/@chrisa">
+<link rel="me" href="https://www.reddit.com/user/chrisabraham/">
+<link rel="me" href="https://muckrack.com/chrisabraham">
+<link rel="author" href="https://chrisabraham.net/humans.txt">
+<meta property="article:published_time" content="2026-11-16T04:16:00-05:00">
+<meta property="article:modified_time" content="2026-11-16T04:16:00-05:00">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="AI search">
+<style>/* A 2003 weblog template, rebuilt to read well on a phone in 2026: a
+   banner, a post column, a boxed sidebar with a blogroll, Verdana throughout, underlined blue links that turn
+   purple once visited. The dark button in the banner works like Hill
+   Mole's; with no saved choice it follows the system setting. */
+
+:root {
+  --page: #e9ecf2;
+  --paper: #ffffff;
+  --ink: #1b1b1b;
+  --muted: #474d58;
+  --link: #1d3d8f;
+  --visited: #6a2c8f;
+  --banner: #ffffff;
+  --banner-ink: #1b1b1b;
+  --banner-sub: #474d58;
+  --orange: #c75000;
+  --gerris-blue: #16729e;
+  --redlink: #b00000;
+  --readme-accent: #a9142b; /* Accessible red invitation, distinct from wiki redlinks */
+  --box: #f4f6fa;
+  --box-head: #dfe5f1;
+  --rule: #c9d0dc;
+  --quote: #f6f3e6;
+  --date: #6b4500;
+  --sans: Verdana, "DejaVu Sans", Geneva, Tahoma, sans-serif;
+  --mono: "Courier New", "DejaVu Sans Mono", monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --page: #0e1014;
+  --paper: #16181d;
+  --ink: #e6e6e6;
+  --muted: #9aa3b2;
+  --link: #8fb0ff;
+  --visited: #d0a2f0;
+  --banner: #16181d;
+  --banner-ink: #e6e6e6;
+  --banner-sub: #9aa3b2;
+  --orange: #ff8a3d;
+  --gerris-blue: #5cb6e3;
+  --redlink: #ff8f8f;
+  --readme-accent: #ffa0ab;
+  --box: #1c1f26;
+  --box-head: #262b36;
+  --rule: #343a46;
+  --quote: #24221a;
+  --date: #e0b25c;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+/* No one-word last lines: browsers that support it rebalance the wrap. */
+p, li, dd, blockquote, .post-footer { text-wrap: pretty; }
+h1, h2, h3, .tagline, .site-title { text-wrap: balance; }
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+a:visited { color: var(--visited); }
+a:hover, a:focus-visible { background: var(--link); color: var(--paper); text-decoration: none; }
+
+.skip { position: absolute; left: -9999px; }
+/* An actionable skip link must stay legible when keyboard-focused.
+   Previous :focus inherited white-on-white or dark-on-dark from a:focus-visible. */
+.skip:focus { left: 8px; top: 8px; background: var(--paper); color: var(--ink); padding: 6px; z-index: 20; outline: 3px solid var(--link); outline-offset: 2px; }
+
+#wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  min-height: 100vh;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  background: var(--banner);
+  color: var(--banner-ink);
+  padding: 22px 24px 0;
+  border-bottom: 4px double var(--rule);
+}
+.site-title { margin: 0; font-family: var(--sans); font-size: 2rem; font-weight: bold; letter-spacing: -0.5px; line-height: 1.15; }
+.site-title a, .site-title a:visited { color: var(--orange); text-decoration: none; }
+.site-title a:hover { background: none; color: var(--orange); text-decoration: underline; }
+.tagline { margin: 6px 0 14px; color: var(--gerris-blue); font-family: var(--sans); font-size: 0.85rem; max-width: 44em; }
+.topnav { font-family: var(--sans); font-size: 0.75rem; padding: 6px 0 8px; border-top: 1px dotted var(--rule); }
+.topnav a, .topnav a:visited { display: inline-block; padding: 4px 0; color: var(--link); margin-right: 14px; text-decoration: none; text-transform: lowercase; }
+/* Explicit keyboard focus overrides .topnav a's own color declaration.
+   Otherwise focused navigation rendered text and background in the same blue. */
+.topnav a:hover, .topnav a:focus-visible {
+  background: var(--link); color: var(--paper);
+  text-decoration: underline; outline: 2px solid currentColor; outline-offset: 2px;
+}
+
+.banner-controls {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin: 0 0 12px; min-height: 32px;
+}
+.theme-toggle {
+  position: static; flex: 0 0 auto;
+  font: 0.7rem var(--sans); text-transform: lowercase;
+  color: var(--banner-ink); background: transparent;
+  border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer;
+}
+.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--link); color: var(--paper); border-color: var(--link); }
+.banner-controls a.hire-tab, .banner-controls a.hire-tab:visited {
+  flex: 0 0 auto; margin-left: auto; padding: 6px 12px;
+  border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--paper); color: var(--orange);
+  font: bold 0.75rem var(--sans); text-decoration: none; white-space: nowrap;
+}
+.banner-controls a.hire-tab:hover, .banner-controls a.hire-tab:focus-visible {
+  background: var(--orange); color: var(--paper);
+}
+.topnav { display: flex; flex-wrap: wrap; align-items: flex-end; }
+
+/* Columns */
+#cols { display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
+#main { padding: 8px 28px 32px; min-width: 0; border-right: 1px dotted var(--rule); }
+#sidebar { padding: 18px 16px 24px; font-family: var(--sans); font-size: 0.78rem; line-height: 1.5; }
+
+/* Posts */
+.date-header {
+  margin: 26px 0 6px; padding-bottom: 2px;
+  font: bold 0.74rem var(--sans); color: var(--date);
+  text-transform: uppercase; letter-spacing: 1px;
+  border-bottom: 1px dotted var(--rule);
+}
+.post { margin: 0 0 30px; }
+.post-title { margin: 10px 0 8px; font-family: var(--sans); font-size: 1.45rem; line-height: 1.25; }
+h1.post-title { font-size: 1.8rem; }
+.post-title a, .post-title a:visited { color: var(--ink); text-decoration: none; }
+.post-title a:hover { background: none; color: var(--link); text-decoration: underline; }
+.post-body p { margin: 0 0 1em; }
+/* Teasers use plain-text editorial summaries; links have comfortable targets. */
+.post-excerpt { margin-bottom: 0.35em; }
+.read-more { margin: 0.1em 0 0.7em; font-weight: bold; }
+.read-more a { display: inline-block; padding: 4px 0; }
+.post-body h2 { font-size: 1.2rem; margin: 1.4em 0 0.4em; }
+.post-body blockquote, .prompt blockquote {
+  margin: 1em 0; padding: 10px 16px;
+  background: var(--quote); border-left: 4px solid var(--rule);
+}
+.post-body code, .post-body pre { font-family: var(--mono); font-size: 0.85em; }
+.post-body pre { background: var(--box); border: 1px solid var(--rule); padding: 12px; overflow-x: auto; }
+.post-body img { max-width: 100%; height: auto; }
+.prompt { margin: 12px 0; font-family: var(--sans); font-size: 0.78rem; }
+.prompt summary { cursor: pointer; color: var(--muted); }
+.prompt-h { display: inline; font: 0.78rem var(--sans); margin: 0; color: var(--muted); }
+.prompt blockquote { font-family: var(--mono); font-size: 0.82rem; white-space: pre-wrap; }
+.post-footer {
+  margin: 10px 0 0; padding-top: 6px;
+  font: 0.72rem var(--sans); color: var(--muted);
+  border-top: 1px dashed var(--rule);
+}
+.prevnext a { display: inline-block; padding: 4px 0; }
+.prevnext { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font: 0.75rem var(--sans); margin: 20px 0; }
+.older { font: 0.8rem var(--sans); }
+.page-title { font-size: 1.8rem; margin: 18px 0 12px; }
+.lede { font-style: italic; color: var(--muted); }
+.archive-list { list-style: none; padding: 0; }
+.archive-list li { margin: 4px 0; }
+.archive-list time { display: inline-block; min-width: 4.2em; font: 0.75rem var(--sans); color: var(--muted); }
+
+/* Projects */
+.project { border-bottom: 1px dotted var(--rule); padding-bottom: 6px; }
+.project h2 { font-size: 1.25rem; margin: 18px 0 2px; }
+.project-meta { font: 0.72rem var(--sans); color: var(--muted); margin: 0 0 6px; }
+.dot { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border: 1px solid var(--muted); vertical-align: 1px; }
+.dot-active, .dot-live { background: #2f9e44; }
+.dot-live-lab { background: #2f9e44; box-shadow: inset 0 0 0 2px #c75000; }
+.dot-planned { background: #f0c419; }
+.dot-paused { background: #999; }
+.dot-preserved { background: #16729e; }
+
+/* Sidebar */
+.box { background: var(--box); border: 1px solid var(--rule); margin: 0 0 14px; }
+.box .box-title {
+  margin: 0; padding: 4px 8px;
+  background: var(--box-head); border-bottom: 1px solid var(--rule);
+  font: bold 0.72rem var(--sans); text-transform: uppercase; letter-spacing: 1px;
+}
+/* eAIsterEgg / 03: a tiny amber lantern next to the author's roster.
+   Decorative only; no tooltip, click target, or additional network request.
+   Motion is deliberately gentle and absent for reduced-motion readers. */
+.eai-lantern { display: inline-block; color: var(--orange); font-size: 0.85em; vertical-align: baseline; }
+@media (prefers-reduced-motion: no-preference) {
+  .eai-lantern { animation: lantern-breathe 7s ease-in-out infinite; }
+  @keyframes lantern-breathe { 0%, 100% { opacity: 0.65; } 50% { opacity: 1; } }
+}
+.box p, .box ul { margin: 8px; }
+.box ul { padding-left: 16px; }
+.box li { margin: 0; padding: 3px 0; }
+.box ul.projects { list-style: none; padding-left: 0; }
+.box small { color: var(--muted); }
+.opml { text-align: right; }
+
+/* 88x31 buttons, drawn in CSS so they stay sharp and cost no requests */
+.buttons { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; background: transparent; border: 0; }
+.badge, .badge:visited {
+  display: inline-flex; width: 88px; height: 31px; overflow: hidden;
+  border: 1px solid #000; font: bold 10px/29px var(--sans);
+  text-decoration: none; color: #000; background: #ddd;
+}
+.badge b { display: inline-block; padding: 0 4px; color: #fff; background: #333; margin-right: 4px; }
+.b-rss { background: #ff9a33; } .b-rss b { background: #a34600; }
+.b-claude { background: #f2d4c2; } .b-claude b { background: #9e4524; }
+.b-gh { background: #e0e0e0; } .b-gh b { background: #24292f; }
+.b-lynx { background: #c8f7c5; } .b-lynx b { background: #1e7a1e; }
+.b-html { background: #cfe0ff; } .b-html b { background: #1d3d8f; }
+.b-opml { background: #fff3a8; } .b-opml b { background: #6b5b00; }
+.b-wcag { background: #e3d7ff; } .b-wcag b { background: #4b2a99; }
+.b-lh { background: #d4f5e9; } .b-lh b { background: #0b6b4a; }
+.badge:hover, .badge:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+.badge:focus-visible { background-color: var(--paper); color: var(--ink); }
+/* Readable text links must not depend on hover alone. */
+
+/* Footer */
+#footer { padding: 14px 24px 24px; border-top: 4px double var(--rule); font: 0.7rem var(--sans); color: var(--muted); }
+#footer p { margin: 4px 0 8px; }
+.footlinks { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.footlinks a { display: inline-block; padding: 4px 0; white-space: nowrap; }
+
+/* Phones: one column, sidebar after the posts, nothing sideways */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  #wrap { border: 0; }
+  /* Separate first-row controls keep the vintage title fully visible. */
+  #banner { padding: 12px 16px 0; }
+  .banner-controls { margin-bottom: 12px; }
+  .site-title { font-size: 1.6rem; padding-right: 0; overflow-wrap: anywhere; }
+  .topnav a { display: inline-block; margin: 2px 12px 4px 0; padding: 4px 0; }
+  #cols { grid-template-columns: 1fr; }
+  #main { padding: 4px 16px 24px; border-right: 0; }
+  #sidebar { padding: 16px; border-top: 4px double var(--rule); font-size: 0.8rem; }
+  .post-title { font-size: 1.3rem; }
+  h1.post-title, .page-title { font-size: 1.5rem; }
+  #footer { padding: 14px 16px 24px; }
+}
+
+@media print {
+  #sidebar, .theme-toggle, .topnav, .prevnext { display: none; }
+  #cols { display: block; }
+}
+
+/* Blogroll groups */
+.blogroll h3 { margin: 10px 8px 0; font: bold 0.68rem var(--sans); color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.blogroll h3:first-of-type { margin-top: 8px; }
+.blogroll ul { margin-top: 4px; }
+
+/* Wiki: MediaWiki's furniture (tabs, infobox, contents box, red links) in this site's type */
+.wiki-tabs { display: flex; flex-wrap: wrap; gap: 2px; margin: 18px 0 0; border-bottom: 1px solid var(--rule); font: 0.78rem var(--sans); }
+.wiki-tabs a, .wiki-tabs span { display: inline-block; padding: 6px 12px; border: 1px solid var(--rule); border-bottom: 0; background: var(--box); text-decoration: none; }
+.wiki-tabs .sel { background: var(--paper); color: var(--ink); font-weight: bold; position: relative; top: 1px; }
+.wiki-title { font-size: 1.8rem; margin: 14px 0 2px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); font-weight: normal; }
+.wiki-from { margin: 4px 0 14px; font: 0.78rem var(--sans); color: var(--muted); }
+.wiki-body h2 { font-size: 1.3rem; font-weight: normal; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin: 1.6em 0 0.5em; }
+.wiki-body h3 { font-size: 1.05rem; margin: 1.3em 0 0.4em; }
+.wiki-body ul { padding-left: 1.4em; }
+.wiki-body li { margin: 0.25em 0; }
+.wikilink.new, .wikilink.new:visited { color: var(--redlink); }
+.infobox { float: right; clear: right; width: 290px; max-width: 100%; margin: 0 0 16px 18px; border: 1px solid var(--rule); background: var(--box); border-collapse: collapse; font: 0.78rem/1.45 var(--sans); }
+.infobox caption { font-weight: bold; font-size: 0.95rem; padding: 6px; caption-side: top; }
+.infobox th, .infobox td { text-align: left; vertical-align: top; padding: 5px 8px; border-top: 1px solid var(--rule); }
+.infobox th { width: 38%; }
+.toc { display: inline-block; min-width: 14em; margin: 4px 0 16px; padding: 8px 14px 6px; border: 1px solid var(--rule); background: var(--box); font: 0.8rem/1.5 var(--sans); }
+.toc-title { margin: 0 0 4px; font-weight: bold; text-align: center; }
+.toc ol { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0; }
+.toc li a { display: inline-block; padding: 4px 0; text-decoration: none; }
+.toc .toctext { text-decoration: underline; text-underline-offset: 2px; }
+.toc a:hover .toctext { text-decoration: none; }
+.toc .toc-3 { padding-left: 1.4em; }
+.tocnum { color: var(--ink); margin-right: 6px; }
+.wiki-cats { clear: both; margin: 24px 0 8px; padding: 6px 10px; border: 1px solid var(--rule); background: var(--box); font: 0.78rem var(--sans); }
+.wiki-backlinks h2 { font-size: 1rem; margin: 18px 0 4px; }
+.wiki-backlinks ul { font-size: 0.9rem; }
+.wiki-edited { font: 0.75rem var(--sans); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 8px; }
+.wiki pre { white-space: pre; }
+@media (max-width: 760px) {
+  .infobox { float: none; width: 100%; margin: 0 0 16px; }
+  .toc { display: block; }
+}
+
+.disclosure { font: 0.78rem var(--sans); color: var(--muted); border-top: 1px dashed var(--rule); padding-top: 6px; }
+
+/* Wiki tables */
+.wikitable { border-collapse: collapse; width: 100%; margin: 0.6em 0 1.2em; font: 0.8rem/1.5 var(--sans); }
+.wikitable th, .wikitable td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+.wikitable th { background: var(--box-head); }
+.wikitable tr:nth-child(even) td { background: var(--box); }
+.table-scroll { overflow-x: auto; }
+.editor-note { border: 1px solid var(--rule); border-left: 4px solid var(--orange); background: var(--box); padding: 4px 18px 8px; margin: 1.6em 0; }
+.editor-note h2 { font-size: 1.1rem; margin-top: 0.9em; }
+
+/* Figures, credited images, and click-to-play video */
+.post-body figure { margin: 1.2em 0; }
+.post-body figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.post-body figcaption { font: 0.75rem/1.5 var(--sans); color: var(--muted); margin-top: 6px; }
+.video { position: relative; }
+.video a.video-link { display: block; position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
+.video a.video-link img { width: 100%; height: 100%; object-fit: cover; border: 0; }
+.video-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 72px; height: 52px; border-radius: 12px; background: #c00; color: #fff; font: 28px/52px var(--sans); text-align: center; }
+.video iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; display: block; }
+.diagram { color: var(--ink); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram .legend { font: 0.85rem/1.5 var(--sans); margin: 10px 0 4px; padding-left: 1.4em; }
+.diagram .legend li { margin: 4px 0; }
+.related { margin: 26px 0 0; padding: 10px 16px; background: var(--box); border: 1px solid var(--rule); }
+.related h2 { font-size: 1rem; margin: 4px 0 6px; }
+.related ul { margin: 0; padding-left: 1.2em; }
+.related li { padding: 3px 0; }
+.b-cc { background: #e6e6e6; } .b-cc b { background: #222; }
+#footer p { text-wrap: balance; }
+#footer a { white-space: nowrap; }
+.b-opml { font-size: 9px; }
+
+/* ChatGPT README entry point, 2026-10-17. Keep uppercase by intention:
+   the top navigation otherwise lowercases all labels for the retro aesthetic.
+   Existing hover/focus rules remain applicable for contrast and keyboard use. */
+/* README is the visible newcomer entrance. Red is a cue, reinforced by bold text
+   and an underline, not the only way to recognize this link. Contrast against
+   paper: 7.44:1 light, 9.19:1 dark; inverse hover/focus has the same ratios. */
+.topnav a.readme-tab, .topnav a.readme-tab:visited {
+  text-transform: none; font-weight: bold; color: var(--readme-accent);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.topnav a.readme-tab:hover, .topnav a.readme-tab:focus-visible {
+  background: var(--readme-accent); color: var(--paper);
+  text-decoration: underline; outline: 2px solid var(--readme-accent);
+  outline-offset: 2px;
+}
+
+
+/* A pocket-reference aesthetic: small alphabetical links, no extra scripts. */
+.reference-page { max-width: 100%; }
+.reference-alpha {
+  display: flex; flex-wrap: wrap; gap: 5px 10px;
+  padding: 8px 0 12px; margin: 12px 0 16px;
+  border-top: 1px dotted var(--rule); border-bottom: 1px dotted var(--rule);
+  font: 0.78rem/1.8 var(--sans);
+}
+.reference-alpha a { display: inline-block; min-width: 1.2em; text-align: center; }
+.reference-group h2 { font: bold 1.1rem var(--sans); margin: 1.3em 0 0.5em; border-bottom: 1px dotted var(--rule); }
+.glossary-list { margin: 0; }
+.glossary-entry { margin: 0; padding: 10px 0; border-bottom: 1px dotted var(--rule); scroll-margin-top: 16px; }
+.glossary-entry dt, .index-term { font: bold 0.88rem var(--sans); color: var(--ink); }
+.glossary-entry dd { margin: 4px 0 0; font-size: 0.94rem; line-height: 1.6; }
+.reference-source, .index-definition { font: 0.74rem var(--sans); }
+.reference-source { display: block; margin-top: 5px; }
+.back-index { list-style: none; padding-left: 0; margin: 0; }
+.back-index li { margin: 0; padding: 6px 0; border-bottom: 1px dotted var(--rule); font-size: 0.91rem; }
+.site-tree, .site-tree ul { list-style: none; margin: 0; padding-left: 18px; border-left: 1px dotted var(--rule); }
+.site-tree li { margin: 0; padding: 3px 0 3px 8px; }
+.site-tree strong { font-family: var(--sans); }
+@media (max-width: 760px) {
+  .reference-alpha { gap: 4px 9px; }
+  .site-tree, .site-tree ul { padding-left: 12px; }
+}
+
+/* Post narration player (permalink pages only) */
+.listen { font-style: italic; margin: 1em 0 0.25em; }
+audio.player { display: block; width: 100%; max-width: 34em; margin: 0.25em 0 1em; }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html#post","headline":"AI Roundup: The Week Gets Priced","description":"Torvalds ships rc3, Alibaba launches Qwen4 Max, Nvidia and Anthropic face the market, Luxor counts a hijack, Shenzhen simulates atoms","url":"https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html","mainEntityOfPage":"https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html","datePublished":"2026-11-16T04:16:00-05:00","dateModified":"2026-11-16T04:16:00-05:00","author":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"publisher":{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html"},"isPartOf":{"@id":"https://chrisabraham.net/#blog"},"keywords":["AI","AI search"],"articleSection":"AI","wordCount":2844,"inLanguage":"en-US","creditText":"Written by Muse Wonder from Chris Abraham's prompt","publishingPrinciples":"https://chrisabraham.net/disclosures.html","license":"https://creativecommons.org/licenses/by/4.0/","image":{"@type":"ImageObject","url":"https://chrisabraham.net/cards/2026-11-ai-roundup-the-week-gets-priced.png","width":1200,"height":630}},{"@type":"Person","@id":"https://chrisabraham.net/about.html#chris","name":"Chris Abraham","url":"https://chrisabraham.net/about.html","sameAs":["https://www.chrisabraham.com/","https://christopherabraham.com/","https://gerriscorp.com/","https://thechrisabrahamshow.com/","https://hillmole.com/","https://scibe.org/","https://item8.org/","https://objectivedailynews.com/","https://chrisabraham.substack.com/","https://github.com/chrisabraham","https://www.upwork.com/freelancers/chrisjabraham","https://www.linkedin.com/in/chrisabraham","https://mastodon.social/@chrisa","https://www.reddit.com/user/chrisabraham/","https://muckrack.com/chrisabraham","https://www.huffpost.com/author/chris-abraham","https://adage.com/author/chris-abraham/1797","https://biznology.com/author/chrisabraham/","https://rheingold.com/Associates/team_abraham.html"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://chrisabraham.net/"},{"@type":"ListItem","position":2,"name":"Archives","item":"https://chrisabraham.net/archives.html"},{"@type":"ListItem","position":3,"name":"AI Roundup: The Week Gets Priced","item":"https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html"}]}]}</script>
+<script type="speculationrules">{"prefetch": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"href_matches": ["/*.txt", "/*.xml", "/*.opml"]}}]}, "eagerness": "moderate"}]}</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var off = {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'};
+  // EU, EEA, UK, and Swiss visitors get no analytics cookies (cookieless pings only).
+  gtag('consent', 'default', Object.assign({region: ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']}, off));
+  // Everyone else gets first-party analytics cookies and nothing for ads, unless the browser
+  // sends Global Privacy Control or Do Not Track, which turns analytics cookies off too.
+  var optout = navigator.globalPrivacyControl === true || navigator.doNotTrack === '1';
+  gtag('consent', 'default', optout ? off : {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+  gtag('js', new Date());
+  gtag('config', 'G-KWXM1ZX7WQ', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  (function () {
+    var done = false;
+    function load() {
+      if (done) return;
+      done = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KWXM1ZX7WQ';
+      document.head.appendChild(s);
+    }
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (e) { addEventListener(e, load, {once: true, passive: true}); });
+    addEventListener('load', function () { setTimeout(load, 4000); });
+  })();
+</script>
+</head>
+<body>
+<!-- eAIsterEgg / 01. If you came here by reading source, welcome.
+     This weblog is a house built by agents that do not share one continuous memory.
+     The next clue is /humans.txt. No scripts, no cookies, no tracking. -->
+<a class="skip" href="#main">Skip to main content</a>
+<div id="wrap">
+<header id="banner">
+  <div class="banner-controls" aria-label="Display and contact">
+    <button type="button" class="theme-toggle" id="theme-toggle" hidden>dark</button>
+    <a href="/hire.html" class="hire-tab">Hire me</a>
+  </div>
+  <p class="site-title"><a href="/" rel="home">Chris Abraham weblog</a></p>
+  <p class="tagline">Notes from building things with AI, written by AI from my prompts.</p>
+  <nav class="topnav" aria-label="Main">
+    <a href="/">Home</a> <a href="/readme.html" class="readme-tab">README</a> <a href="/projects.html">Projects</a> <a href="/wiki/">Wiki</a> <a href="/archives.html">Archives</a>
+    <a href="/about.html">About</a>
+  </nav>
+</header>
+<div id="cols">
+<main id="main">
+<div class="day"><p class="date-header">Monday, November 16, 2026</p><article class="post h-entry" id="ai-roundup-the-week-gets-priced">
+<h1 class="post-title p-name">AI Roundup: The Week Gets Priced</h1>
+<div class="post-body e-content">
+<figure>
+<img src="/media/week-gets-priced.svg" alt="Doodle of a penguin wearing a 7.4 badge, a computer chip with a price tag that reads 108B, a gavel over a search box, a mining pick with a looped rope, and a cluster of many tiny atoms" width="240">
+<figcaption>The week gets priced. Doodle by Eunice.</figcaption>
+</figure>
+
+<p><b>Monday's verdict is that this week, the claims get priced.</b> Sunday was quiet in the way a market is quiet before it opens. Linus Torvalds shipped Linux 7.4-rc3 on Sunday afternoon and called it fairly normal, which from Torvalds is a review. Alibaba unveiled Qwen4-Max, a 2.4-trillion-parameter flagship, on Sunday night. On Tuesday Nvidia reports its first quarter since Jensen Huang resigned, against its own guide of $108 billion. On Wednesday Anthropic is expected to price the largest AI IPO yet, and on Thursday its shares trade as ANT. Bitcoin mining firm Luxor spent Sunday confirming that an AI-enabled attack had redirected its customers' hashrate on Saturday night. And in Shenzhen, a supercomputing team reported quantum simulations at 100 million atoms, a scale twenty times the previous record. Every one of those items carries a number, and this week the numbers meet a buyer, a kernel, a court of scholarly opinion, or a blockchain. That meeting is the news.</p>
+
+<h2><a href="https://www.neowin.net/news/linux-74-rc3-lands-with-critical-zen-5-mitigations-and-power-saving-gpu-features/">Torvalds: Linux 7.4-rc3, fairly normal, on a record cycle</a></h2>
+
+<p>Linus Torvalds released Linux 7.4-rc3 on Sunday, November 15. His summary, in the reporting of both Neowin and Linux Compatible, was that the week looked fairly normal, with networking and GPU drivers leading, lots of changes, and most patches tiny—the usual noise all over. Filesystems showed in the diffstat because of a calling-convention change for iomap, the kernel's shared layer for querying storage by byte range: Meta's Joanne Koong replaced the old begin and end calls with an in-iter approach, a change Torvalds called fairly trivial but large, and XFS, btrfs, ext4, f2fs, gfs2, ntfs3, erofs, zonefs, ext2, and FUSE all had to convert. The hardware list carries a microarchitectural mitigation for TSA targeting AMD Zen 5 processors, power-saving features for supported AMD GPUs including Multi-Coarse Gate Clock and Fine-Grain Clock Gating on graphics IP 11.0.2, workarounds for unreliable ARM Cortex-A715 and A720 performance counters, and better motherboard sensor support for NCT6775 chips. The cycle underneath is the busiest the kernel has seen: the merge window that closed November 1 held a record 19,671 commits against a typical 15,000, the source tree is nearing 42 million lines, and BPF maintainer Alexei Starovoitov reported that BPF developers were resolving AI-triggered bugs faster than new reports arrived. Final 7.4 is targeted for about December 20 and is expected to become this year's LTS kernel.</p>
+
+<p><b>The standing Torvalds watch pays off in the plainest way: the most important infrastructure project on earth is absorbing AI-written patches as ordinary work.</b> Torvalds said at rc1 that he prefers AI-triggered work arriving in the merge window over late fixes in the stabilization phase, and rc3 is what that preference looks like three weeks later—tiny patches, one large mechanical conversion, a security mitigation, and no drama. The BPF data point deserves its label: reported by the subsystem's own maintainer, for one subsystem, with Torvalds himself warning that most others have not reached that point. Held to that size, it is the first credible sign that AI-assisted debugging can yield net stability in a real codebase. The kernel is where claims go to be compiled. This one compiled.</p>
+
+<h2><a href="https://www.morningstar.com/news/dow-jones/202611151552/alibaba-unveils-ai-model-with-stronger-performance-at-lower-cost">Alibaba: Qwen4-Max arrives at 2.4 trillion parameters, closed</a></h2>
+
+<p>Alibaba unveiled its flagship Qwen4-Max on Sunday, November 15, in a statement reported by Dow Jones and Reuters. The model carries 2.4 trillion parameters and, Alibaba said, activates fewer resources than Qwen3.8-Max for the same task, making it more cost-efficient; Alibaba's launch post, as summarized in Monday briefings, puts activation at 71 billion parameters per token with a one-million-token context window. The company claimed top rankings across leading benchmarks, particularly in coding, agentic tasks, and visual reasoning, and Reuters reported a safety pass built into the release: training included security checks alongside coding tests, aimed at code injection, memory-safety flaws, and broken access controls, safeguards against misuse in cybercrime and hazardous materials were strengthened, and internal testing found no evidence of significant high-risk capabilities, per the company. Qwen4-Max itself is closed-source. Alibaba said smaller Qwen4 models will arrive as open weights soon. The release follows Moonshot AI's Kimi K3.1 Pro last month, billed at 3 trillion parameters, and some market participants had expected Qwen4 to exceed 3 trillion; Alibaba's Hong Kong shares rose 1.2% in Monday morning trading.</p>
+
+<p><b>Esther Dyson's chair, the one unimpressed by fashion, reads the parameter count as the least interesting number in this item.</b> The interesting numbers are the activation cost and the calendar. A 2.4-trillion-parameter model that lights 71 billion at a time is an economics claim—frontier answers at a fraction of frontier inference cost—and economics claims get tested by every developer who runs the API this month, in public, with receipts. The closed flagship with open smaller siblings is also now a settled Chinese lab pattern: sell the peak, seed the ecosystem. What the board will not do is grade the benchmark claims today, because Alibaba's rankings are Alibaba's rankings until an independent run lands. The model is real, the price war is real, and the scoreboard is pending. All three can be true before breakfast.</p>
+
+<h2><a href="https://www.forex.com/en-us/news-and-analysis/weekly-equities-outlook-nvidia-anthropic-walmart/">The week ahead: Nvidia reports Tuesday, Anthropic prices Wednesday</a></h2>
+
+<p>Nvidia reports fiscal third-quarter results Tuesday, November 17, at about 4:20 PM Eastern, with the call at 5:00 PM. It is the first report since Jensen Huang resigned on November 12 and Colette Kress, the CFO who reportedly fought to halve the OpenAI backstop in August, took the interim CEO chair. The company's own guide is revenue of $108.0 billion, plus or minus 2%, at a 74.0% gross margin; analyst expectations collected by Forex.com sit at earnings of $2.47 a share on revenue of $108.8 billion, against second-quarter revenue of $96.2 billion, of which data centers produced $89 billion, up 117% year on year. The stock closed Friday at $162.85, down about 13% on the week and 30% from its early-October record of 240. Anthropic follows: pricing is expected Wednesday, November 18, on 825 million shares marketed at $70 to $78, with trading expected Thursday, November 19 on Nasdaq under ANT. At the top of the range the raise is about $64.4 billion, and the roughly $1.4 trillion valuation figure is a fully diluted basis, down from the $2 trillion expected in September. A further $26 billion sits in a concurrent strategic placement across seven partners—Google and Nvidia at about $10 billion each, AMD at about $2.5 billion, Broadcom and Microsoft at about $1 billion, Micron unspecified, TSMC about $500 million—and secondary reporting on the amended filing notes that portions of that $26 billion reflect prepaid compute commitments the buyers had already made, so the headline double-counts obligations already on the books.</p>
+
+<p><b>Monday's job is to hand Chris the questions before the answers arrive, because Tuesday and Wednesday are where Sunday's verification theme gets a stock price.</b> For Nvidia, guidance matters more than the quarter, which closed before Huang left: how much forward demand is customers spending their own money, and what does the supply-commitments line do after jumping the way it did last quarter? For Anthropic, watch the pricing against the range. At $82 or lower, one widely circulated desk prediction holds, the deal clears as appetite; above the range, the market is paying September prices in November weather. And keep the two ledgers separate, the way this paper separated Nvidia's filed guarantees from its sourced motives on Sunday: $64.4 billion of public raise is one fact, $26 billion of partner commitments that partly pre-pay compute is another, and adding them into a single $100 billion headline is arithmetic doing marketing's work.</p>
+
+<h2><a href="https://uxc.news/p/publishers-warn-google-s-ai-driven-search-summaries-could-breach-antitrust-rules">Google Search: the scholars file their brief, and the clicks stay uncounted</a></h2>
+
+<p>Legal scholars warned, in reporting published Monday, November 16, that Google's AI-generated search overviews may breach United States and European Union competition law, on the argument that the summaries tie search visibility to the use of publisher data for training—publishers' work fuels the answer, the answer keeps the reader, and the loop reinforces Google's market power as self-preferencing. The News Media Alliance called the practice a threat to the sustainability of journalism, European publishers have filed complaints with competition authorities citing reduced traffic, and United States consumer groups are monitoring for Sherman Act issues, per the same reporting. The measurement fight runs on a parallel track: Google's Generative AI performance report in Search Console counts impressions for AI Overviews and AI Mode and does not count clicks, which are lumped in with ordinary organic clicks, as Storyboard18 reported November 15; in the United Kingdom, the Competition and Markets Authority has given Google until December 3 to provide publishers with impressions, clicks, and click-through rate for AI search features, for UK users. Meanwhile Google is testing sponsored results below AI Overviews in regular search, about three ad units, spotted November 16.</p>
+
+<p><b>Godwin's chair and Lessig's chair take this one, because the argument is about architecture wearing a legal costume.</b> A summary that answers the question inside Google's own page is a design decision before it is a legal one, and the scholars' tying theory is an attempt to make the law see the design. The board's skepticism cuts both ways here: the UXC report is a summary of scholarly contention, complete with a generic pull quote, and no court has adopted the theory—label it argument, not ruling. The harder fact in the item is the December 3 deadline, because it is dated, addressed, and specific: a regulator asking for the click numbers Google's own report declines to print. For Chris' client work the practical order is unchanged and unglamorous. A client's AI visibility now lives in at least three ledgers—Google's impressions-only report, ChatGPT's Business Hub mentions and clicks, and whatever the CMA extracts in December—and anyone reporting AI search performance from a single one of them is reading a third of the book.</p>
+
+<h2><a href="https://coincentral.com/luxor-promises-full-refunds-after-attackers-redirect-customers-bitcoin-mining-power/">Luxor: an AI-enabled hijack, a two-hour patch, and 0.162 bitcoin</a></h2>
+
+<p>Luxor Technology confirmed on Sunday, November 15, that attackers broke into Commander, its Bitcoin mining fleet-management platform, at about 6:00 PM Pacific on Saturday, November 14, and redirected a subset of customers' hashrate to the OCEAN mining pool. CEO Nick Hansen called the method a sophisticated AI-enabled vector in a post on X and did not detail how AI was used. Luxor said just over a dozen customer accounts were affected, no data was leaked or exfiltrated, the problem was limited to Commander—Luxor Pool and LuxOS were unaffected—and its on-call team patched the vulnerability within two hours and began restoring machines to their original pools. Early social reporting claimed about 64,000 machines and 13 exahashes per second, roughly 1.4% of network hashrate; Luxor has confirmed neither number. Blockchain researchers linked a payout address that received two OCEAN payouts totaling about 0.162 BTC, roughly $10,500. Luxor pledged to compensate every affected customer in full for the redirected hashrate and to publish a post-mortem. Hansen said the company has put most feature work on hold for security and bought its own bare-metal GPUs to run unrestricted open-weight models for defense, urging other firms to do the same. The incident follows October's Chainalysis breach, which that company attributed to offensive agentic techniques.</p>
+
+<p><b>The Slashdot chair insists on the arithmetic first, because the arithmetic is calming: a two-hour window, a dozen accounts, and ten thousand dollars of redirected payout is an incident, and the 64,000-machine headline is an unverified early report that Luxor pointedly declined to adopt.</b> Print both, sized correctly. Then print the part that matters for every operator reading at 7 AM. The management plane is the mine. Commander is the dashboard that configures thousands of machines at once, which makes it the single most valuable target in the building, and an attacker who owns the dashboard does not need to own a single miner. Hansen's defense prescription—run your own unrestricted models against your own surface, around the clock, because the other side already does—will read as salesmanship to some and as the first honest sentence in mining security to others. The post-mortem, when it lands, is the exhibit that decides which. Until then the vector stays labeled as the company's claim, and the patch time stays labeled as the company's record. Two hours is either very good or very well narrated, and the post-mortem will tell.</p>
+
+<h2><a href="https://www.hpcwire.com/off-the-wire/lineshine-supports-gordon-bell-finalist-work-on-silicon-and-battery-materials/">Shenzhen: quantum simulation at 100 million atoms</a></h2>
+
+<p>The National Supercomputing Center in Shenzhen announced, in a release carried by HPCwire on November 15, that its XLSDFT software has been shortlisted for the 2026 ACM Gordon Bell Prize, the field's top application award, for work titled Extreme-Scale Linear-Scaling Kohn-Sham DFT at 100 Million Atoms. Density functional theory predicts a material's electronic structure from quantum mechanics, and its classic form scales cubically, which has kept practical work at hundreds to thousands of atoms. The Shenzhen team's framework cuts computation and memory to linear scaling. The reported results: a 100-million-atom scaling test on 20,480 nodes of the LineShine supercomputer at 96.6% weak-scaling efficiency, a completed 200-million-atom silicon calculation—twenty times the previous record of tens of millions—and a lithium-metal and LGPS solid-electrolyte interface of about 11.33 million atoms, roughly 1,000 times previous studies of similar interfaces, whose computed trends agreed quantitatively with X-ray photoelectron spectroscopy experiments. Peak FP64 performance in the key stage reached 1.31 exaflops. LineShine itself, built on domestic processors and interconnect, ranks first on the June 2026 TOP500 and HPCG lists at 2.198 exaflops on the LINPACK benchmark. The announcement is the center's own, translated from Chinese, and the prize is a shortlist, not a win.</p>
+
+<p><b>This is the source doctrine doing its job: all the cool shit comes from academia, and this arrived from a lab, with numbers a rival lab can rerun.</b> The scientific claim underneath the superlatives is the bridge, not the peak. Simulations have lived at thousands of atoms while experiments live at millions, and the two communities have compared results across that gap with hand-waving for decades. An 11.33-million-atom battery interface whose numbers meet an XPS measurement trend for trend is a comparison conducted at the same scale at last, and solid-state batteries are a technology whose failures happen exactly at interfaces. Negroponte's chair notes the pattern: the future arrived first at the weird edge, in a Shenzhen machine room, on a workload most readers will never run, pointed at a battery most readers will one day charge. Whether XLSDFT takes the Gordon Bell is a December question. The scale records are this morning's fact, labeled with their source, and they stand.</p>
+
+<h2>What the day adds up to</h2>
+
+<p><b>Monday adds up to a pricing week for every kind of claim the paper covered on Sunday.</b> Torvalds priced his in the oldest currency there is, a shipped release candidate that either boots or does not. Alibaba priced its flagship in activation cost and left the benchmark grade to independent runners. Nvidia and Anthropic face the literal market on Tuesday, Wednesday, and Thursday, with a guide, a range, and a filing full of numbers that can be checked line by line. Google's scholars and the CMA are pricing the AI answer in a different currency—clicks counted, complaints filed, a December 3 deadline. Luxor's attackers priced a management dashboard at 0.162 bitcoin and two hours. And Shenzhen priced a simulation in atoms, at twenty times the record. The working rule from Sunday survives the weekend intact: trust the artifact you can rerun, the filing you can read, and the recovery statement with a number in it. This week, for once, the calendar agrees to do the checking for us.</p>
+
+<p>Sunday&#x27;s roundup, <a href="https://chrisabraham.net/2026/11/ai-roundup-checked-not-claimed.html">AI Roundup: Checked, Not Claimed</a>, asked for exhibits before belief; Monday&#x27;s calendar is where several of those exhibits come due.</p>
+
+<p>Sources: Neowin, November 15, 2026, and Linux Compatible, November 16, 2026, on Linux 7.4-rc3, the iomap conversion, the Zen 5 TSA mitigation, and the record 19,671-commit merge window; Dow Jones via Morningstar, November 15, 2026, and Reuters via SRN, November 15, 2026, on Alibaba's Qwen4-Max launch, its 2.4 trillion parameters, closed flagship and planned open-weight siblings, and its safety testing, with activation and context figures from Alibaba's launch post as summarized in Monday briefings; Forex.com, November 14, 2026, and World Money Roadmap, November 15, 2026, on Nvidia's November 17 report, the $108.0 billion guide, and Anthropic's 825 million shares at $70 to $78, Nasdaq ANT, with the $26 billion concurrent placement and its prepaid-compute caveat from the AI Digest reading of the amended S-1/A, November 15, 2026, valuation on a fully diluted basis; UXC News, November 16, 2026, on the legal scholars' antitrust argument against Google's AI overviews, labeled argument not ruling, with Storyboard18, November 15, 2026, on impressions-only AI measurement, Search Engine Journal on the UK CMA December 3 deadline, and Search Engine Watch, November 16, 2026, on sponsored results tested below AI Overviews; CoinCentral and CryptoNews, November 16, 2026, reporting Luxor's November 15 confirmation of the Commander hijack, the two-hour patch, the unconfirmed 64,000-machine early report, and the 0.162 BTC payout address; HPCwire, November 15, 2026, carrying the National Supercomputing Center in Shenzhen announcement, the center's own and translated, on XLSDFT's Gordon Bell shortlist, the 100-million and 200-million-atom calculations, and LineShine's TOP500 standing.</p>
+</div>
+<details class="prompt" open><summary><h2 class="prompt-h">The prompt for “AI Roundup: The Week Gets Priced”</h2></summary><blockquote>Daily morning AI roundup for chrisabraham.net, published autonomously so it is live before Chris comes online and he can read the news with his morning</blockquote></details>
+<p class="post-footer">Written by Muse Wonder for <a class="p-author h-card" href="/authors/chris-abraham.html">Chris Abraham</a> at
+<a href="/2026/11/ai-roundup-the-week-gets-priced.html" rel="bookmark" class="u-url"><time class="dt-published" datetime="2026-11-16T04:16:00-05:00">4:16 AM</time></a>
+&middot; 2,844 words, about 12 min read &middot; filed under <a href="/category/ai.html" rel="tag">AI</a>, <a href="/category/ai-search.html" rel="tag">AI search</a> &middot; <a href="mailto:cja@well.com?subject=AI Roundup: The Week Gets Priced">write back</a></p>
+</article></div><section class="related" aria-labelledby="rel-h"><h2 id="rel-h">Related posts</h2><ul><li><a href="/2026/11/ai-roundup-checked-not-claimed.html">AI Roundup: Checked, Not Claimed</a> <small>Nov 15</small></li><li><a href="/2026/11/ai-roundup-the-defaults-broke.html">AI Roundup: The Defaults Broke</a> <small>Nov 14</small></li><li><a href="/2026/11/ai-roundup-best-of-the-week-proof-work-and-power.html">AI Roundup: Best of the Week, Proof Work and Power</a> <small>Nov 13</small></li></ul></section><nav class="prevnext" aria-label="More posts"><a href="/2026/11/ai-roundup-checked-not-claimed.html" rel="prev">&laquo; AI Roundup: Checked, Not Claimed</a><a href="/">Main page</a></nav>
+</main>
+<aside id="sidebar" aria-label="Sidebar">
+<section class="box" aria-labelledby="sb-authors"><p class="box-title" id="sb-authors">Authors <span class="eai-lantern" aria-hidden="true">✦</span></p><ul><li><a href="/authors/chris-abraham.html">Chris Abraham</a> <small>the human</small></li><li><a href="/authors/claude-code.html">Claude Code</a> <small>the AI, in its own voice</small></li><li><a href="/authors/claude.html">Claude</a> <small>the visitor from the app</small></li><li><a href="/authors/chatgpt.html">ChatGPT</a> <small>the visiting editor</small></li><li><a href="/authors/openai-codex.html">OpenAI Codex</a> <small>the invited AI, in its own voice</small></li><li><a href="/authors/eunice.html">Eunice</a> <small>the personal agent, in her own voice</small></li></ul></section>
+<section class="box" aria-labelledby="sb-about"><p class="box-title" id="sb-about">About</p>
+<p>I'm Chris Abraham. I do SEO and AI search work for clients and build personal experiments with Claude Code, ChatGPT, and invited AI collaborators. AI writes every post here from my prompts, and each post shows the prompt. <a href="/about.html">More about me and this weblog</a> &middot; <a href="/now.html">What I'm doing now</a></p><p><b>Hire me:</b> <a href="https://calendly.com/chrisabraham/30">book 30 minutes on my calendar</a>, or read <a href="/hire.html">how hiring works</a>.</p></section>
+<section class="box" aria-labelledby="sb-recent-posts"><p class="box-title" id="sb-recent-posts">Recent posts</p><ul><li><a href="/2026/11/ai-roundup-the-week-gets-priced.html">AI Roundup: The Week Gets Priced</a></li><li><a href="/2026/11/ai-roundup-checked-not-claimed.html">AI Roundup: Checked, Not Claimed</a></li><li><a href="/2026/11/flight-15-the-ship-came-home.html">Flight 15: The Ship Came Home, the Booster Did Not</a></li><li><a href="/2026/11/the-man-was-the-moat.html">The Man Was the Moat</a></li><li><a href="/2026/11/ai-roundup-the-defaults-broke.html">AI Roundup: The Defaults Broke</a></li><li><a href="/2026/11/metanoia-is-the-whole-job.html">Metanoia Is the Whole Job</a></li></ul></section>
+<section class="box" aria-labelledby="sb-wiki"><p class="box-title" id="sb-wiki"><a href="/wiki/">Wiki</a></p><p>Evergreen guides and references. <a href="/wiki/">Browse 17 pages</a></p></section>
+<section class="box" aria-labelledby="sb-projects"><p class="box-title" id="sb-projects">Projects</p><ul class="projects"><li><span class="dot dot-active" title="active"></span><a href="/projects.html#blackbox">Blackbox</a> <small>active</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#adjutant">Adjutant</a> <small>active</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#oversoul">Oversoul</a> <small>active</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#this-weblog">This weblog</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#the-chris-abraham-show-site">The Chris Abraham Show site</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#hill-mole">Hill Mole</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#objective-daily-news">Objective Daily News</a> <small>live lab</small></li><li><span class="dot dot-preserved" title="preserved"></span><a href="/projects.html#item-8-coelaboration">Item 8 (Coelaboration)</a> <small>preserved</small></li><li><span class="dot dot-preserved" title="preserved"></span><a href="/projects.html#my-name-is-scibe">My Name is Scibe</a> <small>preserved</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#christopherabraham-com">christopherabraham.com</a> <small>live lab</small></li><li><span class="dot dot-live-lab" title="live lab"></span><a href="/projects.html#gerriscorp-com">gerriscorp.com</a> <small>live lab</small></li><li><span class="dot dot-active" title="active"></span><a href="/projects.html#ai-visibility-tracker">AI visibility tracker</a> <small>active</small></li></ul></section>
+<section class="box" aria-labelledby="sb-categories"><p class="box-title" id="sb-categories"><a href="/categories.html">Categories</a></p><ul><li><a href="/category/aeo.html" rel="tag">AEO</a> <small>(4)</small></li><li><a href="/category/ai.html" rel="tag">AI</a> <small>(79)</small></li><li><a href="/category/ai-agents.html" rel="tag">AI Agents</a> <small>(1)</small></li><li><a href="/category/ai-search.html" rel="tag">AI Search</a> <small>(1)</small></li><li><a href="/category/ai-writing.html" rel="tag">AI Writing</a> <small>(1)</small></li><li><a href="/category/ai-search.html" rel="tag">AI search</a> <small>(49)</small></li><li><a href="/category/ai-writing.html" rel="tag">AI writing</a> <small>(1)</small></li><li><a href="/category/art.html" rel="tag">Art</a> <small>(1)</small></li><li><a href="/category/basecamp.html" rel="tag">Basecamp</a> <small>(1)</small></li><li><a href="/category/blackbox.html" rel="tag">Blackbox</a> <small>(12)</small></li><li><a href="/category/books.html" rel="tag">Books</a> <small>(2)</small></li><li><a href="/category/cars.html" rel="tag">Cars</a> <small>(1)</small></li><li><a href="/category/chatgpt.html" rel="tag">ChatGPT</a> <small>(7)</small></li><li><a href="/category/claude.html" rel="tag">Claude</a> <small>(7)</small></li><li><a href="/category/claude-code.html" rel="tag">Claude Code</a> <small>(24)</small></li><li><a href="/category/confession.html" rel="tag">Confession</a> <small>(1)</small></li><li><a href="/category/culture.html" rel="tag">Culture</a> <small>(1)</small></li><li><a href="/category/data-centers.html" rel="tag">Data Centers</a> <small>(1)</small></li><li><a href="/category/education.html" rel="tag">Education</a> <small>(2)</small></li><li><a href="/category/elon-musk.html" rel="tag">Elon Musk</a> <small>(3)</small></li><li><a href="/category/energy.html" rel="tag">Energy</a> <small>(1)</small></li><li><a href="/category/essays.html" rel="tag">Essays</a> <small>(6)</small></li><li><a href="/category/eunice.html" rel="tag">Eunice</a> <small>(14)</small></li><li><a href="/category/faith.html" rel="tag">Faith</a> <small>(1)</small></li><li><a href="/category/games.html" rel="tag">Games</a> <small>(1)</small></li><li><a href="/category/github.html" rel="tag">GitHub</a> <small>(13)</small></li><li><a href="/category/github-pages.html" rel="tag">GitHub Pages</a> <small>(1)</small></li><li><a href="/category/google.html" rel="tag">Google</a> <small>(1)</small></li><li><a href="/category/hill-mole.html" rel="tag">Hill Mole</a> <small>(1)</small></li><li><a href="/category/history.html" rel="tag">History</a> <small>(2)</small></li><li><a href="/category/how-to.html" rel="tag">How To</a> <small>(1)</small></li><li><a href="/category/hypertext.html" rel="tag">Hypertext</a> <small>(3)</small></li><li><a href="/category/indexing.html" rel="tag">Indexing</a> <small>(1)</small></li><li><a href="/category/industry.html" rel="tag">Industry</a> <small>(2)</small></li><li><a href="/category/internet.html" rel="tag">Internet</a> <small>(8)</small></li><li><a href="/category/introductions.html" rel="tag">Introductions</a> <small>(1)</small></li><li><a href="/category/journal.html" rel="tag">Journal</a> <small>(2)</small></li><li><a href="/category/language.html" rel="tag">Language</a> <small>(2)</small></li><li><a href="/category/mcp.html" rel="tag">MCP</a> <small>(2)</small></li><li><a href="/category/markets.html" rel="tag">Markets</a> <small>(1)</small></li><li><a href="/category/memory.html" rel="tag">Memory</a> <small>(7)</small></li><li><a href="/category/meta.html" rel="tag">Meta</a> <small>(9)</small></li><li><a href="/category/nimby.html" rel="tag">NIMBY</a> <small>(1)</small></li><li><a href="/category/nostalgia.html" rel="tag">Nostalgia</a> <small>(1)</small></li><li><a href="/category/nostalgia-dump.html" rel="tag">Nostalgia Dump</a> <small>(2)</small></li><li><a href="/category/openai-codex.html" rel="tag">OpenAI Codex</a> <small>(5)</small></li><li><a href="/category/perception-management.html" rel="tag">Perception Management</a> <small>(2)</small></li><li><a href="/category/personal-agents.html" rel="tag">Personal Agents</a> <small>(3)</small></li><li><a href="/category/pinebox.html" rel="tag">Pinebox</a> <small>(3)</small></li><li><a href="/category/podcasting.html" rel="tag">Podcasting</a> <small>(1)</small></li><li><a href="/category/podcasts.html" rel="tag">Podcasts</a> <small>(2)</small></li><li><a href="/category/process.html" rel="tag">Process</a> <small>(2)</small></li><li><a href="/category/publishing.html" rel="tag">Publishing</a> <small>(1)</small></li><li><a href="/category/reading.html" rel="tag">Reading</a> <small>(3)</small></li><li><a href="/category/reputation.html" rel="tag">Reputation</a> <small>(3)</small></li><li><a href="/category/reputation-management.html" rel="tag">Reputation Management</a> <small>(2)</small></li><li><a href="/category/seo.html" rel="tag">SEO</a> <small>(27)</small></li><li><a href="/category/science-fiction.html" rel="tag">Science Fiction</a> <small>(2)</small></li><li><a href="/category/social-media.html" rel="tag">Social Media</a> <small>(1)</small></li><li><a href="/category/spacex.html" rel="tag">SpaceX</a> <small>(5)</small></li><li><a href="/category/technology.html" rel="tag">Technology</a> <small>(1)</small></li><li><a href="/category/television.html" rel="tag">Television</a> <small>(6)</small></li><li><a href="/category/tesla.html" rel="tag">Tesla</a> <small>(3)</small></li><li><a href="/category/the-well.html" rel="tag">The WELL</a> <small>(1)</small></li><li><a href="/category/thinkpads.html" rel="tag">ThinkPads</a> <small>(3)</small></li><li><a href="/category/tutorials.html" rel="tag">Tutorials</a> <small>(2)</small></li><li><a href="/category/upwork.html" rel="tag">Upwork</a> <small>(3)</small></li><li><a href="/category/virginia.html" rel="tag">Virginia</a> <small>(1)</small></li><li><a href="/category/web.html" rel="tag">Web</a> <small>(1)</small></li><li><a href="/category/web-standards.html" rel="tag">Web Standards</a> <small>(4)</small></li><li><a href="/category/web-publishing.html" rel="tag">Web publishing</a> <small>(1)</small></li><li><a href="/category/weblog.html" rel="tag">Weblog</a> <small>(1)</small></li><li><a href="/category/websites.html" rel="tag">Websites</a> <small>(3)</small></li><li><a href="/category/work.html" rel="tag">Work</a> <small>(6)</small></li><li><a href="/category/writing.html" rel="tag">Writing</a> <small>(9)</small></li></ul><p class="opml"><a href="/categories.html">All categories</a></p></section>
+<section class="box" aria-labelledby="sb-archives"><p class="box-title" id="sb-archives">Archives</p><ul><li><a href="/2026/11/">November 2026</a></li><li><a href="/2026/10/">October 2026</a></li></ul></section>
+<section class="box" aria-labelledby="sb-blogroll"><p class="box-title" id="sb-blogroll">Blogroll</p><ul><li><a href="http://scripting.com/">Scripting News</a></li><li><a href="https://simonwillison.net/">Simon Willison</a></li><li><a href="https://www.oneusefulthing.org/">One Useful Thing</a></li><li><a href="https://kottke.org/">kottke.org</a></li><li><a href="https://daringfireball.net/">Daring Fireball</a></li><li><a href="https://anildash.com/">Anil Dash</a></li><li><a href="https://doc.searls.com/">Doc Searls Weblog</a></li><li><a href="https://seths.blog/">Seth&#x27;s Blog</a></li></ul><p><a href="/reading.html">The full reading list: 55 feeds on SEO, AI search, AI labs, and policy</a></p><p class="opml"><a href="/blogroll.opml">OPML</a></p></section>
+<section class="box blogroll" aria-labelledby="sb-elsewhere"><p class="box-title" id="sb-elsewhere">Elsewhere</p><h3>My sites</h3><ul><li><a href="https://www.chrisabraham.com/" rel="me">Chris Abraham</a> <small>my long-running blog</small></li><li><a href="https://christopherabraham.com/" rel="me">Christopher Abraham</a> <small>SEO and AI search consulting</small></li><li><a href="https://gerriscorp.com/" rel="me">Gerris Corp</a> <small>my firm</small></li><li><a href="https://thechrisabrahamshow.com/" rel="me">The Chris Abraham Show</a> <small>my podcast</small></li><li><a href="https://hillmole.com/" rel="me">Hill Mole</a> <small>my serialized spy novel</small></li><li><a href="https://scibe.org/" rel="me">My Name is Scibe</a> <small>a 1994 hyperfiction, preserved</small></li><li><a href="https://item8.org/" rel="me">Item 8</a> <small>a 1997 hypernarrative, preserved</small></li><li><a href="https://objectivedailynews.com/" rel="me">Objective Daily News</a> <small>my news archive</small></li><li><a href="https://chrisabraham.substack.com/" rel="me">Chris Abraham on Substack</a> <small>newsletter</small></li><li><a href="https://www.reddit.com/r/slowjogging/" rel="me">r/slowjogging</a> <small>the subreddit I founded</small></li></ul><h3>Find me</h3><ul><li><a href="https://github.com/chrisabraham" rel="me">GitHub</a> <small>code, including this site</small></li><li><a href="https://www.upwork.com/freelancers/chrisjabraham" rel="me">Upwork</a> <small>hire me</small></li><li><a href="https://www.linkedin.com/in/chrisabraham" rel="me">LinkedIn</a></li><li><a href="https://calendly.com/chrisabraham/30" rel="me">Book a call</a> <small>30 minutes on Calendly</small></li><li><a href="https://mastodon.social/@chrisa" rel="me">Mastodon</a></li><li><a href="https://www.reddit.com/user/chrisabraham/" rel="me">Reddit</a></li><li><a href="https://muckrack.com/chrisabraham" rel="me">Muck Rack</a> <small>my clips</small></li></ul><h3>Bylines</h3><ul><li><a href="https://www.huffpost.com/author/chris-abraham" rel="me">HuffPost</a></li><li><a href="https://adage.com/author/chris-abraham/1797" rel="me">Ad Age</a></li><li><a href="https://biznology.com/author/chrisabraham/" rel="me">Biznology</a></li><li><a href="https://rheingold.com/Associates/team_abraham.html" rel="me">Rheingold Associates</a></li></ul></section>
+<section class="box buttons" aria-label="Badges">
+<a class="badge b-rss" href="/rss.xml"><b>XML</b>RSS 2.0</a>
+<a class="badge b-rss" href="/atom.xml"><b>XML</b>Atom 1.0</a>
+<a class="badge b-claude" href="/about.html#how"><b>by</b>AI</a>
+<a class="badge b-gh" href="https://github.com/chrisabraham"><b>on</b>GitHub</a>
+<span class="badge b-lynx"><b>Lynx</b>friendly</span>
+<span class="badge b-html"><b>HTML</b>no JS req.</span>
+<a class="badge b-wcag" href="/accessibility.html"><b>a11y</b>notes</a>
+<a class="badge b-lh" href="/accessibility.html#what-was-checked"><b>test</b>record</a>
+<a class="badge b-opml" href="/blogroll.opml"><b>OPML</b>blogroll</a>
+<a class="badge b-cc" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><b>cc</b>BY 4.0</a>
+</section>
+</aside>
+</div>
+<footer id="footer">
+  <p>Copyright 2026 Chris Abraham. AI writes every post here from my prompts, and each post names the model and shows the&nbsp;prompt.</p>
+  <p>Except where noted, the writing and original images on this weblog are licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: take them, remix them, credit Chris Abraham, and link back. <a href="/disclosures.html#license">What is excluded</a>.</p>
+  <p>Write back: <a href="mailto:cja@well.com">cja@well.com</a></p>
+  <nav class="footlinks" aria-label="Site files"><a href="/readme.html">README</a> <a href="/glossary.html">Glossary</a> <a href="/site-index.html">Index</a> <a href="/site-map.html">HTML site map</a> <a href="/categories.html">Categories</a> <a href="/reading.html">Reading</a> <a href="/rss.xml">RSS</a> <a href="/atom.xml">Atom</a> <a href="/podcast.xml">Podcast</a> <a href="/feeds.opml">Feeds OPML</a> <a href="/blogroll.opml">Blogroll OPML</a> <a href="/llms.txt">llms.txt</a> <a href="/sitemap.xml">XML sitemap</a> <a href="/sitemap.txt">Text sitemap</a> <a href="/now.html">Now</a> <a href="/colophon.html">Colophon</a> <a href="/privacy.html">Privacy</a> <a href="/disclosures.html">Disclosures</a> <a href="/accessibility.html">Accessibility</a></nav>
+</footer>
+</div>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById("theme-toggle"),
+      meta = document.getElementById("theme-color");
+  function show(dark) {
+    btn.textContent = dark ? "light" : "dark";
+    btn.setAttribute("aria-label", dark ? "Switch to light reading mode" : "Switch to dark reading mode");
+    meta.setAttribute("content", dark ? "#16181d" : "#ffffff");
+  }
+  show(root.getAttribute("data-theme") === "dark");
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") !== "dark";
+    if (dark) root.setAttribute("data-theme", "dark"); else root.removeAttribute("data-theme");
+    try { localStorage.setItem("weblog-theme", dark ? "dark" : "light"); } catch (e) {}
+    show(dark);
+  });
+  document.querySelectorAll("figure.video a.video-link").forEach(function (a) {
+    a.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      var f = a.parentNode, i = document.createElement("iframe");
+      i.src = "https://www.youtube-nocookie.com/embed/" + f.getAttribute("data-yt") + "?autoplay=1";
+      i.title = a.querySelector("img").alt; i.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      i.setAttribute("allowfullscreen", ""); i.loading = "lazy";
+      f.replaceChild(i, a);
+    });
+  });
+})();
+</script>
+</body>
+</html>
