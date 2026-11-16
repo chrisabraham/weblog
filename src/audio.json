@@ -1,8 +1,8 @@
 {
  "a-2011-thinkpad-beat-the-clock": {
   "author": "claude",
-  "bytes": 8351269,
-  "duration": 1043,
+  "bytes": 9142501,
+  "duration": 1142,
   "sha256": "a8a6ce5707093c5d0b89aa7f1b90e1703f0c0e35091c648abfa482c2083ed36a",
   "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
  },
@@ -92,8 +92,8 @@
  },
  "ai-roundup-everything-got-more-specific": {
   "author": "chris",
-  "bytes": 12028069,
-  "duration": 1503,
+  "bytes": 9771109,
+  "duration": 1221,
   "sha256": "93f83005303606c51cc725a77d817a20a9a494e2de9c9fd9a3b0d1c3fa2774d0",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -106,8 +106,8 @@
  },
  "ai-roundup-one-model-rewrote-another": {
   "author": "chris",
-  "bytes": 8195173,
-  "duration": 1024,
+  "bytes": 8693989,
+  "duration": 1086,
   "sha256": "8063c1fe9708fafbc3d22de705e9338ae7809dd905408ace563cf4a225ee9aab",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -148,15 +148,15 @@
  },
  "ai-roundup-the-agents-got-the-keys": {
   "author": "chris",
-  "bytes": 7713637,
-  "duration": 964,
+  "bytes": 9288805,
+  "duration": 1161,
   "sha256": "56e00be3ea9ffbd3a7b3b020f3bde7831b64a35743184a1f2ee1113d11b3a35d",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-answer-is-the-page-now": {
   "author": "chris",
-  "bytes": 9454693,
-  "duration": 1181,
+  "bytes": 9490213,
+  "duration": 1186,
   "sha256": "8191eeaaaf9b5c6627b738da4ecf3515f052a2238b05b63d7a7e48d638994f58",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -183,15 +183,15 @@
  },
  "ai-roundup-the-customers-are-machines-now": {
   "author": "chris",
-  "bytes": 8518309,
-  "duration": 1064,
+  "bytes": 8012005,
+  "duration": 1001,
   "sha256": "28d6a0e6491e236a9e1d2cc9884f0f246c93eecf0654432d987b210b5e253aaa",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-defaults-broke": {
   "author": "chris",
-  "bytes": 9886693,
-  "duration": 1235,
+  "bytes": 9997285,
+  "duration": 1249,
   "sha256": "a1d41ead8a063cbcd9dbf1436f288ad02e1d54dc5b1ec53ccdb2a6cc47302d94",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -204,23 +204,30 @@
  },
  "ai-roundup-the-model-splits-the-training-gets-a-switch": {
   "author": "chris",
-  "bytes": 10777381,
-  "duration": 1347,
+  "bytes": 10697893,
+  "duration": 1337,
   "sha256": "3f3b0be72737aff18cfb68abc011e87222483675fb61f31661690604f22e7940",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-perimeter-moved": {
   "author": "chris",
-  "bytes": 8876773,
-  "duration": 1109,
+  "bytes": 9561061,
+  "duration": 1195,
   "sha256": "588c5e5086f79f952476503a9877b8af40c767eeb364af4cfe065d4954529410",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-permission-slip": {
   "author": "chris",
-  "bytes": 10221400,
-  "duration": 1277,
+  "bytes": 10718821,
+  "duration": 1339,
   "sha256": "46d1b34316bf7fcef3df8b271a3408575e0e396e3153549f42f5e183dc42190a",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-the-week-gets-priced": {
+  "author": "chris",
+  "bytes": 13882213,
+  "duration": 1735,
+  "sha256": "4bfe60c4702e054dc911b50ae63c086e295ffda5782ab12c8305ef09c04eed8e",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-work-is-speeding-up": {
@@ -246,8 +253,8 @@
  },
  "ai-seo-tools-i-actually-recommend": {
   "author": "chris",
-  "bytes": 4107301,
-  "duration": 513,
+  "bytes": 4094437,
+  "duration": 511,
   "sha256": "bac58b10549e8813c53cd603b46eda9e638f0bd932779bdec9c15a0d8476076b",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -267,8 +274,8 @@
  },
  "all-your-base-belong-to-musk": {
   "author": "chris",
-  "bytes": 8166373,
-  "duration": 1020,
+  "bytes": 8790181,
+  "duration": 1098,
   "sha256": "6bdc2b22347c0afa75c1b29a91bca882d61b1e9b1254499a577e133e18371b9d",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -316,8 +323,8 @@
  },
  "born-a-year-after-the-internet": {
   "author": "chris",
-  "bytes": 2001061,
-  "duration": 250,
+  "bytes": 1987237,
+  "duration": 248,
   "sha256": "413a679262ed74787567a8753433cb9265b1e5d38a6f4632bd253775b75f9d60",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -400,8 +407,8 @@
  },
  "elon-musk-is-a-human-doomsday-machine": {
   "author": "eunice",
-  "bytes": 7728805,
-  "duration": 966,
+  "bytes": 7857829,
+  "duration": 982,
   "sha256": "b4267e9a441aad65275571dbfee630acad889eec3a3ab0685317f18a9540e20a",
   "voice": "avocado_v2:vdc_NOID42"
  },
@@ -449,8 +456,8 @@
  },
  "flight-15-the-ship-came-home": {
   "author": "chris",
-  "bytes": 2861413,
-  "duration": 357,
+  "bytes": 2760421,
+  "duration": 345,
   "sha256": "bda619d228adfebaa0038389fcb24b6bd7c3abb8e0823e711e94d0f9993e367e",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -547,8 +554,8 @@
  },
  "just-the-tip-starlink-fcc": {
   "author": "chris",
-  "bytes": 6025189,
-  "duration": 753,
+  "bytes": 6479653,
+  "duration": 809,
   "sha256": "1a9d27bb3a81eba4eacf2a67c57ed7a311223fcf8b6d4784e5b4fc29b25ff2f0",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -568,8 +575,8 @@
  },
  "machining-the-last-twenty-percent": {
   "author": "eunice",
-  "bytes": 2518693,
-  "duration": 314,
+  "bytes": 2545189,
+  "duration": 318,
   "sha256": "8dfc688ef34c955bbde16629c20b0d29d435f751556f3a8f089b250e369cfdbe",
   "voice": "avocado_v2:vdc_NOID42"
  },
@@ -589,8 +596,8 @@
  },
  "metanoia-is-the-whole-job": {
   "author": "chris",
-  "bytes": 2897317,
-  "duration": 362,
+  "bytes": 2917861,
+  "duration": 364,
   "sha256": "7f390e93b46c7b8a7da4f7cbcd7577d7b93b1d89df1d16447f3bbe06573abdac",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -631,15 +638,15 @@
  },
  "notes-from-the-buttress": {
   "author": "eunice",
-  "bytes": 4850533,
-  "duration": 606,
+  "bytes": 5827429,
+  "duration": 728,
   "sha256": "988cbcef67ac455179a8d81c66c17c45ba92e7255d5abbf16c82ad8b482ba7cd",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "olly-olly-oxen-free": {
   "author": "chris",
-  "bytes": 4738981,
-  "duration": 592,
+  "bytes": 4723429,
+  "duration": 590,
   "sha256": "84c3b65093a578eaba271e6435f2d879970191ab701da7c80d98229b8c5a065d",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -673,8 +680,8 @@
  },
  "profanity-is-my-boldface": {
   "author": "chris",
-  "bytes": 2407141,
-  "duration": 300,
+  "bytes": 2391781,
+  "duration": 298,
   "sha256": "90f398b89daa1c9137e04066cf25c1f7e66d398e9fe6ad97329edbfdb8646d2a",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -708,15 +715,15 @@
  },
  "sixteen-of-eleven-hundred": {
   "author": "Chris Abraham",
-  "bytes": 2813989,
-  "duration": 351,
+  "bytes": 2851621,
+  "duration": 356,
   "sha256": "41228e234850021763778f0fd1b15c07f57e16fdbd5c77c4ebcbfe443b75a3ca",
   "voice": "avocado_v2:qvd_02406"
  },
  "sixty-and-one-sixty": {
   "author": "chris",
-  "bytes": 6781669,
-  "duration": 847,
+  "bytes": 6885733,
+  "duration": 860,
   "sha256": "29972da981a3321510db53726929de51f334e5c647bc87a947932f8a3fdca438",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -799,8 +806,8 @@
  },
  "the-first-name-back": {
   "author": "eunice",
-  "bytes": 1704037,
-  "duration": 213,
+  "bytes": 1776037,
+  "duration": 222,
   "sha256": "db3df982c8f4c2daf9ab17af998fa472034c2c6b137036aa3dfa50067ea3b760",
   "voice": "avocado_v2:vdc_NOID42"
  },
@@ -995,8 +1002,8 @@
  },
  "working-loud": {
   "author": "chris",
-  "bytes": 10469605,
-  "duration": 1308,
+  "bytes": 10603813,
+  "duration": 1325,
   "sha256": "4c2750711082e1ceda937f5d12595cf9e38a5c59901ac5944d6ec22b43428789",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -1009,8 +1016,8 @@
  },
  "xteink-world": {
   "author": "chris",
-  "bytes": 10754149,
-  "duration": 1344,
+  "bytes": 10871653,
+  "duration": 1358,
   "sha256": "17a1b2dd1e4c7cab8fd71238b5f4d9b17edec5e06bfa9526a8700329185a0176",
   "voice": "avocado_v2:qvd_02406"
  },
@@ -1030,8 +1037,8 @@
  },
  "your-ai-agent-is-an-80-percent-lower": {
   "author": "chris",
-  "bytes": 2181925,
-  "duration": 272,
+  "bytes": 2127973,
+  "duration": 265,
   "sha256": "2c86b7ba22f59a719552b5fb285b748c21ed1278da2e7ea722164c32783167ff",
   "voice": "avocado_v2:qvd_02406"
  },

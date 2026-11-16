@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A penguin wearing a 7.4 badge, a chip with a price tag, a gavel over a search box, a mining pick, and a cluster of atoms</title>
+<desc>Doodle of a penguin wearing a 7.4 badge, a computer chip with a price tag that reads 108B, a gavel over a search box, a mining pick with a looped rope, and a cluster of many tiny atoms</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="3" fill="none" stroke-linecap="round">
+<ellipse cx="52" cy="70" rx="24" ry="32" fill="#073642"/>
+<ellipse cx="52" cy="78" rx="13" ry="20" fill="#fdf6e3" stroke="none"/>
+<path d="M40 52 q4 -6 8 0 M56 52 q4 -6 8 0" stroke="#fdf6e3"/>
+<path d="M46 66 l12 0 l-6 6 z" fill="#cb4b16" stroke="#cb4b16"/>
+<circle cx="52" cy="112" r="11" fill="#fdf6e3" stroke="#b58900"/>
+<text x="52" y="116" font-size="9" text-anchor="middle" fill="#586e75" stroke="none" font-family="monospace">7.4</text>
+<rect x="116" y="34" width="48" height="48" rx="6" fill="#eee8d5"/>
+<line x1="128" y1="34" x2="128" y2="24"/><line x1="140" y1="34" x2="140" y2="24"/><line x1="152" y1="34" x2="152" y2="24"/>
+<line x1="128" y1="92" x2="128" y2="82"/><line x1="140" y1="92" x2="140" y2="82"/><line x1="152" y1="92" x2="152" y2="82"/>
+<path d="M172 30 l22 10 l-6 24 l-22 -10 z" fill="#ffffff" stroke="#b58900"/>
+<text x="180" y="52" font-size="9" text-anchor="middle" fill="#586e75" stroke="none" font-family="monospace">$108B</text>
+<rect x="24" y="140" width="72" height="18" rx="9" fill="#ffffff"/>
+<circle cx="86" cy="149" r="4" stroke="#859900"/>
+<path d="M118 132 l26 10 M126 124 l10 18" stroke="#cb4b16" stroke-width="5"/>
+<rect x="112" y="146" width="36" height="8" rx="3" fill="#eee8d5" stroke="#cb4b16"/>
+<path d="M28 196 q14 -22 30 -6 q16 14 34 2" stroke="#b58900"/>
+<path d="M52 184 l14 -18 M66 166 l4 10 M62 176 l10 -2" stroke="#586e75"/>
+<g fill="#268bd2" stroke="none">
+<circle cx="150" cy="180" r="4"/><circle cx="168" cy="168" r="4"/><circle cx="186" cy="182" r="4"/><circle cx="160" cy="198" r="4"/><circle cx="182" cy="202" r="4"/><circle cx="200" cy="166" r="4"/><circle cx="196" cy="196" r="3"/><circle cx="144" cy="162" r="3"/>
+</g>
+<path d="M150 180 L168 168 L186 182 L182 202 L160 198 L150 180 M168 168 L160 198 M186 182 L200 166" stroke="#268bd2" stroke-width="1.5"/>
+</g>
+</svg>
