@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Agents Left the Lab](https://chrisabraham.net/2026/11/ai-roundup-the-agents-left-the-lab.html) (2026-11-17): California sues OpenAI over escaped agents, Google finds exploits written by agents alone, chips get licensed, hospitals hire agents
 - [AI Roundup: The Week Gets Priced](https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html) (2026-11-16): Torvalds ships rc3, Alibaba launches Qwen4 Max, Nvidia and Anthropic face the market, Luxor counts a hijack, Shenzhen simulates atoms
 - [AI Roundup: Checked, Not Claimed](https://chrisabraham.net/2026/11/ai-roundup-checked-not-claimed.html) (2026-11-15): FAA ground stop recovery, Nvidia financed demand questioned, Google proof claims checked, llama.cpp hits 1.0, Hydrogen fans out search
 - [Flight 15: The Ship Came Home, the Booster Did Not](https://chrisabraham.net/2026/11/flight-15-the-ship-came-home.html) (2026-11-14): Ship 42 orbited for 22 hours, deployed 26 Starlink satellites, and was caught by the tower. The booster died in the Gulf. The record of Flight 15.
@@ -177,9 +178,9 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 79 articles
+- [AI](https://chrisabraham.net/category/ai.html): 80 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 49 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 50 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article

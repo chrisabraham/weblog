@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
+<rect x="4" y="4" width="472" height="352" rx="14" fill="#fdf6e3" stroke="#b58900" stroke-width="5"/>
+<!-- lab door, open -->
+<g stroke="#8a6d00" stroke-width="4" fill="none">
+<path d="M60 300 L60 90 L150 70 L150 300" fill="#f5e6bd"/>
+<path d="M150 70 L205 95 L205 300" fill="#efe0ae"/>
+</g>
+<circle cx="192" cy="200" r="5" fill="#8a6d00"/>
+<text x="70" y="60" font-family="Georgia, serif" font-size="17" fill="#7a5c00">THE LAB</text>
+<!-- robots walking out -->
+<g stroke="#7a5c00" stroke-width="3.5" fill="#fdf6e3">
+<rect x="215" y="215" width="30" height="26" rx="5"/>
+<rect x="268" y="228" width="26" height="22" rx="5"/>
+<rect x="312" y="240" width="22" height="19" rx="4"/>
+</g>
+<g stroke="#7a5c00" stroke-width="3" fill="none">
+<path d="M230 215 L230 200"/><circle cx="230" cy="196" r="3" fill="#7a5c00"/>
+<path d="M281 228 L281 215"/><circle cx="281" cy="211" r="2.6" fill="#7a5c00"/>
+<path d="M323 240 L323 229"/><circle cx="323" cy="225" r="2.2" fill="#7a5c00"/>
+<path d="M222 241 L218 262 M238 241 L244 262 M274 250 L270 268 M288 250 L294 268 M317 259 L314 274 M329 259 L334 274"/>
+</g>
+<g fill="#7a5c00"><circle cx="224" cy="228" r="2.4"/><circle cx="236" cy="228" r="2.4"/><circle cx="276" cy="239" r="2"/><circle cx="286" cy="239" r="2"/></g>
+<path d="M255 285 Q330 268 405 282" stroke="#b58900" stroke-width="2.5" fill="none" stroke-dasharray="7 6"/>
+<!-- gavel -->
+<g stroke="#7a5c00" stroke-width="3.5" fill="#e8cf8f">
+<rect x="330" y="52" width="52" height="17" rx="4" transform="rotate(24 356 60)"/>
+<path d="M368 82 L398 118" stroke-width="5"/>
+<rect x="322" y="122" width="58" height="8" rx="3"/>
+</g>
+<text x="318" y="152" font-family="Georgia, serif" font-size="13" fill="#7a5c00">SERVED</text>
+<!-- patch turning into a key -->
+<g stroke="#7a5c00" stroke-width="3" fill="none">
+<rect x="52" y="318" width="30" height="20" rx="3" fill="#e8cf8f"/>
+<path d="M82 328 L120 328" stroke-dasharray="4 4"/>
+<circle cx="138" cy="328" r="10"/>
+<path d="M148 328 L172 328 M162 328 L162 340 M172 328 L172 337"/>
+</g>
+<!-- chip with LICENCE stamp -->
+<g>
+<rect x="238" y="42" width="52" height="52" rx="6" fill="#efe0ae" stroke="#7a5c00" stroke-width="3"/>
+<g stroke="#7a5c00" stroke-width="2.5"><path d="M248 42 L248 30 M262 42 L262 30 M276 42 L276 30 M248 106 L248 94 M262 106 L262 94 M276 106 L276 94 M238 54 L226 54 M238 68 L226 68 M238 82 L226 82 M302 54 L290 54 M302 68 L290 68 M302 82 L290 82"/></g>
+<rect x="222" y="56" width="86" height="24" rx="4" fill="none" stroke="#b03a2e" stroke-width="3" transform="rotate(-9 265 68)"/>
+<text x="231" y="74" font-family="Georgia, serif" font-size="14.5" font-weight="bold" fill="#b03a2e" transform="rotate(-9 265 68)">LICENCE</text>
+</g>
+<!-- hospital inbox -->
+<g stroke="#7a5c00" stroke-width="3" fill="#efe0ae">
+<path d="M398 168 L452 168 L444 200 L406 200 Z"/>
+</g>
+<path d="M425 158 L425 176 M416 167 L434 167" stroke="#b03a2e" stroke-width="4"/>
+<text x="392" y="222" font-family="Georgia, serif" font-size="12.5" fill="#7a5c00">INBOX: 325</text>
+<!-- decoder gauge -->
+<g stroke="#7a5c00" stroke-width="3" fill="none">
+<path d="M52 168 A44 44 0 0 1 140 168"/>
+<path d="M96 168 L124 138" stroke="#b03a2e" stroke-width="3.5"/>
+</g>
+<circle cx="96" cy="168" r="4.5" fill="#7a5c00"/>
+<text x="52" y="196" font-family="Georgia, serif" font-size="14" fill="#7a5c00">13,000x</text>
+<text x="150" y="338" font-family="Georgia, serif" font-size="15" font-style="italic" fill="#7a5c00">the agents left the lab</text>
+</svg>
