@@ -160,6 +160,13 @@
   "sha256": "56fdd23c831f83cae96102e1b26bfaa3f564bd7f05fbd52852691116be0f5de4",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-answer-got-priced": {
+  "author": "chris",
+  "bytes": 16555237,
+  "duration": 2069,
+  "sha256": "59bde6cfea409351a425be791974bffadd13b628678ead8ed3a43968db3affb0",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-answer-is-the-page-now": {
   "author": "chris",
   "bytes": 9490213,
