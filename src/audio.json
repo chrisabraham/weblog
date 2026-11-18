@@ -384,6 +384,13 @@
   "sha256": "78856ac59b3961b15092fd296f375674aa803f205a378ec356ac9a15c4c7ea3f",
   "voice": "avocado_v2:vdc_2561"
  },
+ "claude-duet-explained-by-the-model-it-runs-on": {
+  "author": "claude",
+  "bytes": 3075877,
+  "duration": 384,
+  "sha256": "f9a13f523fc10a0a4582acd693d08245a29f820cfee12a8f5a9d94815bb0c167",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
  "come-and-get-it": {
   "author": "eunice",
   "bytes": 4911397,
