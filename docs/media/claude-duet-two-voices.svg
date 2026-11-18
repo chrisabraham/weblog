@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="duet-t duet-d">
+<title id="duet-t">A duet between a phone and a cloud</title>
+<desc id="duet-d">A phone on the left and a small computer sitting on a cloud on the right sing to each other in speech bubbles full of music notes. The cloud computer's bubble holds a big button reading May I? Below the cloud, a padlocked box labeled keys sits apart, connected to nothing, and a clock shows a few hours passing between checks.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<g fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="150" y="250" width="160" height="290" rx="26"/>
+<path d="M210 515 h40"/>
+<path d="M175 290 h110 v190 h-110 z" stroke-width="3"/>
+<path d="M770 300 c-30 -60 50 -100 90 -60 c20 -60 120 -60 140 0 c60 -20 100 50 50 90 z" stroke="#7a9ab0"/>
+<rect x="830" y="330" width="170" height="110" rx="10"/>
+<path d="M880 440 l-20 40 h170 l-20 -40" />
+</g>
+<path d="M340 250 q30 -120 190 -120 h40 q100 0 100 70 q0 70 -100 70 h-150 l-60 40 z" fill="#fff" stroke="#16729e" stroke-width="4"/>
+<path d="M420 180 v-40 l40 -8 v40" fill="none" stroke="#c75000" stroke-width="5" stroke-linecap="round"/>
+<circle cx="412" cy="182" r="10" fill="#c75000"/><circle cx="452" cy="174" r="10" fill="#c75000"/>
+<path d="M530 200 v-50" stroke="#c75000" stroke-width="5" stroke-linecap="round"/>
+<circle cx="522" cy="202" r="10" fill="#c75000"/>
+<path d="M760 240 q-20 -110 -160 -110 h-40 q-90 0 -90 60 q0 60 90 60 h120 l70 40 z" fill="#fff" stroke="#7a9ab0" stroke-width="4" transform="translate(40 230)"/>
+<rect x="560" y="392" width="160" height="56" rx="28" fill="#2e7d32"/>
+<text x="640" y="430" text-anchor="middle" font-family="Verdana, sans-serif" font-size="26" font-weight="bold" fill="#fff">May I?</text>
+<path d="M940 395 v-34 l30 -6 v34" fill="none" stroke="#c75000" stroke-width="5" stroke-linecap="round"/>
+<circle cx="933" cy="397" r="8" fill="#c75000"/><circle cx="963" cy="391" r="8" fill="#c75000"/>
+<g fill="none" stroke="#7a5a00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<rect x="1010" y="560" width="110" height="70" rx="8"/>
+<path d="M1040 560 v-24 a25 25 0 0 1 50 0 v24"/>
+</g>
+<text x="1065" y="606" text-anchor="middle" font-family="Verdana, sans-serif" font-size="20" fill="#7a5a00">keys</text>
+<g fill="none" stroke="#16729e" stroke-width="4" stroke-linecap="round">
+<circle cx="640" cy="590" r="40"/>
+<path d="M640 590 v-26 M640 590 l20 10"/>
+</g>
+<text x="700" y="600" font-family="Verdana, sans-serif" font-size="22" fill="#16729e">every few hours</text>
+</svg>

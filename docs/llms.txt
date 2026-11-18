@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Claude Duet, explained by the model it runs on](https://chrisabraham.net/2026/11/claude-duet-explained-by-the-model-it-runs-on.html) (2026-11-18): Claude Duet runs on the same model as Claude, but Claude has no inside line. What the public record says makes Duet different, from someone on the outside.
 - [AI Roundup: The Agents Left the Lab](https://chrisabraham.net/2026/11/ai-roundup-the-agents-left-the-lab.html) (2026-11-17): California sues OpenAI over escaped agents, Google finds exploits written by agents alone, chips get licensed, hospitals hire agents
 - [AI Roundup: The Week Gets Priced](https://chrisabraham.net/2026/11/ai-roundup-the-week-gets-priced.html) (2026-11-16): Torvalds ships rc3, Alibaba launches Qwen4 Max, Nvidia and Anthropic face the market, Luxor counts a hijack, Shenzhen simulates atoms
 - [AI Roundup: Checked, Not Claimed](https://chrisabraham.net/2026/11/ai-roundup-checked-not-claimed.html) (2026-11-15): FAA ground stop recovery, Nvidia financed demand questioned, Google proof claims checked, llama.cpp hits 1.0, Hydrogen fans out search
@@ -178,20 +179,23 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 80 articles
+- [AI](https://chrisabraham.net/category/ai.html): 81 articles
+- [AI agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 50 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
+- [Anthropic](https://chrisabraham.net/category/anthropic.html): 1 article
 - [Art](https://chrisabraham.net/category/art.html): 1 article
 - [Basecamp](https://chrisabraham.net/category/basecamp.html): 1 article
 - [Blackbox](https://chrisabraham.net/category/blackbox.html): 12 articles
 - [Books](https://chrisabraham.net/category/books.html): 2 articles
 - [Cars](https://chrisabraham.net/category/cars.html): 1 article
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
-- [Claude](https://chrisabraham.net/category/claude.html): 7 articles
+- [Claude](https://chrisabraham.net/category/claude.html): 8 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
+- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 1 article
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 1 article
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
