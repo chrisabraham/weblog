@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
+<title>The answer got priced</title>
+<desc>A hand-drawn price tag tied by a string to a speech bubble answer, with citation cards underneath and a small rising bar chart.</desc>
+<rect x="4" y="4" width="472" height="352" rx="14" fill="#fdf6e3" stroke="#b58900" stroke-width="5"/>
+<!-- price tag -->
+<g transform="rotate(-14 130 130)">
+<path d="M55 70 L175 70 L215 130 L175 190 L55 190 Z" fill="#f5e6bd" stroke="#8a6d00" stroke-width="4"/>
+<circle cx="80" cy="130" r="9" fill="#fdf6e3" stroke="#8a6d00" stroke-width="3.5"/>
+</g>
+<text x="98" y="122" font-family="Georgia, serif" font-size="21" fill="#7a5c00" transform="rotate(-14 130 130)">THE</text>
+<text x="86" y="152" font-family="Georgia, serif" font-size="21" fill="#7a5c00" transform="rotate(-14 130 130)">ANSWER</text>
+<text x="112" y="182" font-family="Georgia, serif" font-size="26" fill="#7a5c00" transform="rotate(-14 130 130)">$ ?</text>
+<!-- string from tag to bubble -->
+<path d="M205 105 Q265 60 305 88" stroke="#b58900" stroke-width="2.5" fill="none" stroke-dasharray="6 5"/>
+<!-- answer bubble -->
+<g stroke="#8a6d00" stroke-width="4" fill="#f5e6bd">
+<path d="M300 55 L445 55 L445 140 L345 140 L322 168 L326 140 L300 140 Z"/>
+</g>
+<g stroke="#7a5c00" stroke-width="3.5" fill="none">
+<path d="M318 82 L428 82"/>
+<path d="M318 102 L428 102"/>
+<path d="M318 122 L392 122"/>
+</g>
+<!-- citation cards under the bubble -->
+<g stroke="#7a5c00" stroke-width="3" fill="#fdf6e3">
+<rect x="298" y="196" width="42" height="54" rx="4"/>
+<rect x="352" y="196" width="42" height="54" rx="4"/>
+<rect x="406" y="196" width="42" height="54" rx="4"/>
+</g>
+<g stroke="#7a5c00" stroke-width="2.5" fill="none">
+<path d="M306 212 L332 212 M306 226 L332 226 M306 240 L324 240"/>
+<path d="M360 212 L386 212 M360 226 L386 226 M360 240 L378 240"/>
+<path d="M414 212 L440 212 M414 226 L440 226 M414 240 L432 240"/>
+</g>
+<text x="300" y="278" font-family="Georgia, serif" font-size="14" fill="#7a5c00">CITATIONS, FULLY VISIBLE</text>
+<!-- rising chart, bottom left -->
+<g stroke="#7a5c00" stroke-width="3.5" fill="none">
+<path d="M55 320 L250 320"/>
+<path d="M55 320 L55 238"/>
+</g>
+<g fill="#e9d189" stroke="#8a6d00" stroke-width="3">
+<rect x="78" y="282" width="30" height="38"/>
+<rect x="122" y="264" width="30" height="56"/>
+<rect x="166" y="240" width="30" height="80"/>
+</g>
+<path d="M70 268 L137 240 L205 208" stroke="#b58900" stroke-width="3.5" fill="none"/>
+<path d="M205 208 l-14 2 M205 208 l-3 13" stroke="#b58900" stroke-width="3.5" fill="none"/>
+<text x="58" y="222" font-family="Georgia, serif" font-size="15" fill="#7a5c00">$115.8B</text>
+</svg>
