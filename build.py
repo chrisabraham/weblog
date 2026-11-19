@@ -1257,6 +1257,12 @@ def main():
         "</urlset>\n"]))
     write("/sitemap.txt", "".join(f"{SITE_URL}{path}\n" for path, _ in sitemap))
     write("/robots.txt", ROBOTS.replace("{SITE}", SITE_URL))
+    # RFC 9116 security contact, the same file the sibling sites publish (2026-11-19); Expires renews on each build.
+    write("/.well-known/security.txt",
+          "Contact: mailto:cja@well.com\n"
+          f"Expires: {(dt.date.today() + dt.timedelta(days=365)).isoformat()}T00:00:00Z\n"
+          "Preferred-Languages: en\n"
+          f"Canonical: {SITE_URL}/.well-known/security.txt\n")
     write("/llms.txt", llms(posts, site, full=False))
     write("/llms-full.txt", llms(posts, site, full=True))
     if (SRC / "media").exists():
