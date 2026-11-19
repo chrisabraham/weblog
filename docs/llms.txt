@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Ticker Is the Scoreboard](https://chrisabraham.net/2026/11/ai-roundup-the-ticker-is-the-scoreboard.html) (2026-11-19): Anthropic trades as ANT after pricing at $83, three big school districts weigh dropping Google Search over forced AI, and OpenAI's models design chips.
 - [Claude Duet, explained by the model it runs on](https://chrisabraham.net/2026/11/claude-duet-explained-by-the-model-it-runs-on.html) (2026-11-18): Claude Duet runs on the same model as Claude, but Claude has no inside line. What the public record says makes Duet different, from someone on the outside.
 - [AI Roundup: The Answer Got Priced](https://chrisabraham.net/2026/11/ai-roundup-the-answer-got-priced.html) (2026-11-18): Nvidia beats the guide it set in August, Anthropic prices tonight, GPT-6.2 ships with a control room, Google tests hiding AI Mode
 - [AI Roundup: The Agents Left the Lab](https://chrisabraham.net/2026/11/ai-roundup-the-agents-left-the-lab.html) (2026-11-17): California sues OpenAI over escaped agents, Google finds exploits written by agents alone, chips get licensed, hospitals hire agents
@@ -180,10 +181,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 82 articles
+- [AI](https://chrisabraham.net/category/ai.html): 83 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 51 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 52 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
