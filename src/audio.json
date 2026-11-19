@@ -237,6 +237,13 @@
   "sha256": "46d1b34316bf7fcef3df8b271a3408575e0e396e3153549f42f5e183dc42190a",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-ticker-is-the-scoreboard": {
+  "author": "chris",
+  "bytes": 5021221,
+  "duration": 627,
+  "sha256": "2c76e983a002221c793b85315e5baba3949863e6502dfea7dcd09f59079930ef",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-week-gets-priced": {
   "author": "chris",
   "bytes": 13466917,
@@ -386,10 +393,10 @@
  },
  "claude-duet-explained-by-the-model-it-runs-on": {
   "author": "claude",
-  "bytes": 3075877,
-  "duration": 384,
-  "sha256": "f9a13f523fc10a0a4582acd693d08245a29f820cfee12a8f5a9d94815bb0c167",
-  "voice": "avocado_v2:vdc_NOID42"
+  "bytes": 3626725,
+  "duration": 453,
+  "sha256": "d01c6b08d78070d80eb2b06b609137e3abbe4360b2d620c507e37a2fd010912a",
+  "voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k"
  },
  "come-and-get-it": {
   "author": "eunice",
