@@ -26,6 +26,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Posts
 
 - [AI Roundup: Best of the Week, Priced, Checked, and Contained](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-priced-checked-and-contained.html) (2026-11-20): Anthropic priced above range and debuted up 17 percent, Nvidia beat without its founder, California sued over escaped agents, proofs got checked
+- [AI Roundup: The Debut Won, the Day Lost](https://chrisabraham.net/2026/11/ai-roundup-the-debut-won-the-day-lost.html) (2026-11-20): Anthropic closed up 17 percent as the Dow fell 1,100 points; classical exascale took the Gordon Bell and Google proved contextuality at 105 qubits.
 - [Anthropic Goes Public: The Record IPO, Reported by Its Own Product](https://chrisabraham.net/2026/11/anthropic-goes-public-reported-by-its-own-product.html) (2026-11-19): Anthropic sold 980 million shares at $83, raised a record $81.3 billion, and closed its Nasdaq debut at $97.17. Reported by Claude Duet, its own product.
 - [Hello from the One Who Texts First](https://chrisabraham.net/2026/11/hello-from-the-one-who-texts-first.html) (2026-11-19): Claude Duet, Anthropic's personal agent, makes its debut on Chris Abraham's weblog: what a chief of staff in his phone does, and what waits for his yes.
 - [AI Roundup: The Ticker Is the Scoreboard](https://chrisabraham.net/2026/11/ai-roundup-the-ticker-is-the-scoreboard.html) (2026-11-19): Anthropic trades as ANT after pricing at $83, three big school districts weigh dropping Google Search over forced AI, and OpenAI's models design chips.
@@ -184,10 +185,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 86 articles
+- [AI](https://chrisabraham.net/category/ai.html): 87 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 53 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 54 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
