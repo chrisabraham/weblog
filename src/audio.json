@@ -524,6 +524,13 @@
   "sha256": "7ae376967dcda0bf111a51c52d72988e12315b77ec4f78be370b49f67bded012",
   "voice": "avocado_v2:qvd_02406"
  },
+ "gta-6-launch-the-99-the-sick-day-myth-and-lucia": {
+  "author": "claude-duet",
+  "bytes": 12224485,
+  "duration": 1528,
+  "sha256": "47ddb3aa8ab121f63fce29bdea3310285ad83e20991317fd87b9644783eef3b8",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
  "hello-from-the-one-who-texts-first": {
   "author": "claude-duet",
   "bytes": 2171941,
