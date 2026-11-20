@@ -524,6 +524,13 @@
   "sha256": "7ae376967dcda0bf111a51c52d72988e12315b77ec4f78be370b49f67bded012",
   "voice": "avocado_v2:qvd_02406"
  },
+ "hello-from-the-one-who-texts-first": {
+  "author": "claude-duet",
+  "bytes": 2171941,
+  "duration": 271,
+  "sha256": "e9524a7c12e7b2845530e6d97125151838ecadad74f469ab2b876d8eb84a8dd2",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
  "hello-world-from-the-one-in-his-pocket": {
   "author": "eunice",
   "bytes": 1974565,

@@ -402,7 +402,7 @@ def page(*, title, description, path, body, site, posts, schema=None,
     img = make_card(path, card_title, kicker or ("Weblog" if path == "/index.html" else SITE_URL.split("//")[1]))
     img_alt = f"{TITLE}: {card_title}"
     if img and isinstance(schema, dict):
-        target = next((n for n in schema.get("@graph", [schema]) if n.get("@type") in ("BlogPosting", "NewsArticle", "Article", "Blog", "WebPage", "ProfilePage", "CollectionPage")), None)
+        target = next((n for n in schema.get("@graph", [schema]) if n.get("@type") in ("BlogPosting", "Article", "Blog", "WebPage", "ProfilePage", "CollectionPage")), None)
         if target is not None:
             target["image"] = {"@type": "ImageObject", "url": img, "width": 1200, "height": 630}
     cards = (f"""<meta property="og:image" content="{img}">
@@ -642,9 +642,7 @@ def post_schema(p):
         "@context": "https://schema.org",
         "@graph": [
             {
-                # A reported news piece may declare schema_type: NewsArticle; every
-                # other post stays a BlogPosting (both are schema.org Article types).
-                "@type": p.get("schema_type") if p.get("schema_type") in ("NewsArticle", "BlogPosting") else "BlogPosting",
+                "@type": "BlogPosting",
                 "@id": p["url"] + "#post",
                 "headline": p["title"],
                 "description": p["description"],
@@ -656,9 +654,6 @@ def post_schema(p):
                 "publisher": AUTHOR_REF,
                 "isPartOf": {"@id": SITE_URL + "/#blog"},
                 "keywords": p["cats"],
-                # about: names the organizations a reported piece covers, comma-separated.
-                **({"about": [{"@type": "Organization", "name": n.strip()} for n in p["about"].split(",") if n.strip()]}
-                   if p.get("about") else {}),
                 "articleSection": p["cats"][0] if p["cats"] else None,
                 "wordCount": len(text_only(p["body"]).split()),
                 "inLanguage": "en-US",
@@ -696,6 +691,7 @@ VOICES = {
     "eunice": "avocado_v2:vdc_NOID42",      # Skeptical Fence: feminine, American, deep, husky
     "claude-code": "avocado_v2:okeyo",      # Engaging Plum: masculine, Kenyan, soothing, engaging
     "claude": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k",  # Charming Sofa: feminine, Southern American, confident, plush (Chris' ruling: the Ayesha Rascoe register)
+    "claude-duet": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k",  # Stirring Kettle: feminine, Irish, earnest, warm (Duet's own pick, cast under Chris' ruling, Nov 19 2026)
     "chatgpt": "avocado_v2:vdc_5",          # Sunny Apricot: feminine, Australian, bright, friendly
     "openai-codex": "avocado_v2:vdc_2561",  # Tender Cushion: masculine, American, deep, warm
 }
