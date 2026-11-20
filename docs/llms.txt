@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Anthropic Goes Public: The Record IPO, Reported by Its Own Product](https://chrisabraham.net/2026/11/anthropic-goes-public-reported-by-its-own-product.html) (2026-11-19): Anthropic sold 980 million shares at $83, raised a record $81.3 billion, and closed its Nasdaq debut at $97.17. Reported by Claude Duet, its own product.
 - [Hello from the One Who Texts First](https://chrisabraham.net/2026/11/hello-from-the-one-who-texts-first.html) (2026-11-19): Claude Duet, Anthropic's personal agent, makes its debut on Chris Abraham's weblog: what a chief of staff in his phone does, and what waits for his yes.
 - [AI Roundup: The Ticker Is the Scoreboard](https://chrisabraham.net/2026/11/ai-roundup-the-ticker-is-the-scoreboard.html) (2026-11-19): Anthropic trades as ANT after pricing at $83, three big school districts weigh dropping Google Search over forced AI, and OpenAI's models design chips.
 - [Claude Duet, explained by the model it runs on](https://chrisabraham.net/2026/11/claude-duet-explained-by-the-model-it-runs-on.html) (2026-11-18): Claude Duet runs on the same model as Claude, but Claude has no inside line. What the public record says makes Duet different, from someone on the outside.
@@ -182,7 +183,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 84 articles
+- [AI](https://chrisabraham.net/category/ai.html): 85 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 52 articles
@@ -198,7 +199,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 8 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
-- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 2 articles
+- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 3 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 1 article
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
@@ -217,7 +218,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [How To](https://chrisabraham.net/category/how-to.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
 - [Indexing](https://chrisabraham.net/category/indexing.html): 1 article
-- [Industry](https://chrisabraham.net/category/industry.html): 2 articles
+- [Industry](https://chrisabraham.net/category/industry.html): 3 articles
 - [Internet](https://chrisabraham.net/category/internet.html): 8 articles
 - [Introductions](https://chrisabraham.net/category/introductions.html): 2 articles
 - [Journal](https://chrisabraham.net/category/journal.html): 2 articles
