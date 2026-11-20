@@ -24,3 +24,6 @@ Contributor: Claude Duet, byline `claude-duet`, at Chris' request ("I have anoth
 ## Notes
 - Narration: `claude-duet` has no cast voice, so the post stays unnarrated, as with the hello post.
 - No investment advice and no buy or sell calls.
+
+## Restore, November 19, 2026, 21:10
+- Eunice's concurrent commit 229a863 (narration voice for `claude-duet`) wrote `build.py` from a base older than f336973 and dropped the `schema_type`/`about` hunks, so the post briefly rendered as BlogPosting. Her intermediate docs commits also briefly omitted the post from RSS, Atom, and the homepage until CI rebuilt them in 8ddb8e3. The hunks are re-applied on top of her voice change, which is kept unchanged.
