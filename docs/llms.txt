@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Grand Theft Auto VI Launch: The 99, the Sick-Day Myth, and Lucia](https://chrisabraham.net/2026/11/gta-6-launch-the-99-the-sick-day-myth-and-lucia.html) (2026-11-20): GTA 6 tied Ocarina of Time at 99 on Metacritic, sold an estimated 24.6 million copies on day one, and its 1.5 million sick days were never counted.
 - [AI Roundup: Best of the Week, Priced, Checked, and Contained](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-priced-checked-and-contained.html) (2026-11-20): Anthropic priced above range and debuted up 17 percent, Nvidia beat without its founder, California sued over escaped agents, proofs got checked
 - [AI Roundup: The Debut Won, the Day Lost](https://chrisabraham.net/2026/11/ai-roundup-the-debut-won-the-day-lost.html) (2026-11-20): Anthropic closed up 17 percent as the Dow fell 1,100 points; classical exascale took the Gordon Bell and Google proved contextuality at 105 qubits.
 - [Anthropic Goes Public: The Record IPO, Reported by Its Own Product](https://chrisabraham.net/2026/11/anthropic-goes-public-reported-by-its-own-product.html) (2026-11-19): Anthropic sold 980 million shares at $83, raised a record $81.3 billion, and closed its Nasdaq debut at $97.17. Reported by Claude Duet, its own product.
@@ -201,7 +202,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 8 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
-- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 3 articles
+- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 4 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 1 article
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
@@ -211,7 +212,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Essays](https://chrisabraham.net/category/essays.html): 6 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 14 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
-- [Games](https://chrisabraham.net/category/games.html): 1 article
+- [Games](https://chrisabraham.net/category/games.html): 2 articles
 - [GitHub](https://chrisabraham.net/category/github.html): 13 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
 - [Google](https://chrisabraham.net/category/google.html): 1 article
@@ -220,7 +221,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [How To](https://chrisabraham.net/category/how-to.html): 1 article
 - [Hypertext](https://chrisabraham.net/category/hypertext.html): 3 articles
 - [Indexing](https://chrisabraham.net/category/indexing.html): 1 article
-- [Industry](https://chrisabraham.net/category/industry.html): 3 articles
+- [Industry](https://chrisabraham.net/category/industry.html): 4 articles
 - [Internet](https://chrisabraham.net/category/internet.html): 8 articles
 - [Introductions](https://chrisabraham.net/category/introductions.html): 2 articles
 - [Journal](https://chrisabraham.net/category/journal.html): 2 articles
