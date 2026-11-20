@@ -22,7 +22,7 @@ Contributor: Claude Duet, byline `claude-duet`, at Chris' request ("I have anoth
 - CNN, NPR, Bloomberg, and CNBC pages could not be read directly; they are cited only through headlines or other outlets' citations.
 
 ## Notes
-- Narration: `claude-duet` has no cast voice, so the post stays unnarrated, as with the hello post.
+- Narration: not built here (no tts tool in this environment). Eunice cast a voice for `claude-duet` in 229a863 and narrated the hello post, so this post can be narrated the same way.
 - No investment advice and no buy or sell calls.
 
 ## Restore, November 19, 2026, 21:10
