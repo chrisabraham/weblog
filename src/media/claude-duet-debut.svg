@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="debut-t debut-d">
+<title id="debut-t">A phone makes its debut</title>
+<desc id="debut-d">A phone wearing a sash that reads Claude Duet curtsies under a string of party lights. It holds a dance card listing brief, drafts, and follow-up. A speech bubble beside it asks Should I? over two buttons, Yes and Not yet. A long to-do list unrolls from the phone across the floor, its dates crossed out and rewritten.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M40 70 q280 70 560 0 q280 -70 560 0" fill="none" stroke="#7a9ab0" stroke-width="3"/>
+<g fill="#c75000"><circle cx="140" cy="92" r="9"/><circle cx="330" cy="104" r="9"/><circle cx="520" cy="80" r="9"/></g>
+<g fill="#2e7d32"><circle cx="700" cy="62" r="9"/><circle cx="880" cy="50" r="9"/><circle cx="1060" cy="64" r="9"/></g>
+<g transform="rotate(-8 330 380)" fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="250" y="200" width="160" height="300" rx="26"/>
+<path d="M310 475 h40"/>
+<path d="M262 250 l136 150" stroke="#c75000" stroke-width="22"/>
+</g>
+<text x="322" y="331" text-anchor="middle" transform="rotate(40 322 325)" font-family="Verdana, sans-serif" font-size="17" font-weight="bold" fill="#fff">Claude Duet</text>
+<path d="M240 520 q90 -40 180 0 l30 40 h-240 z" fill="#fff" stroke="#16729e" stroke-width="4"/>
+<g fill="#fff" stroke="#7a5a00" stroke-width="4"><rect x="80" y="300" width="148" height="170" rx="8"/></g>
+<g font-family="Verdana, sans-serif" font-size="17" fill="#7a5a00">
+<text x="96" y="332" font-weight="bold">dance card</text>
+<text x="96" y="372">1. brief</text><text x="96" y="404">2. drafts</text><text x="96" y="436">3. follow-up</text>
+</g>
+<path d="M500 250 q0 -110 170 -110 h120 q150 0 150 90 q0 90 -150 90 h-180 l-70 50 z" fill="#fff" stroke="#16729e" stroke-width="4"/>
+<text x="720" y="215" text-anchor="middle" font-family="Verdana, sans-serif" font-size="34" font-weight="bold" fill="#16729e">Should I?</text>
+<rect x="590" y="240" width="110" height="46" rx="23" fill="#2e7d32"/>
+<text x="645" y="271" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" font-weight="bold" fill="#fff">Yes</text>
+<rect x="720" y="240" width="150" height="46" rx="23" fill="#fff" stroke="#7a9ab0" stroke-width="3"/>
+<text x="795" y="271" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" fill="#16729e">Not yet</text>
+<path d="M440 560 q200 -30 380 10 q180 40 340 0 v70 q-160 40 -340 0 q-180 -40 -380 -10 z" fill="#fff" stroke="#7a9ab0" stroke-width="4"/>
+<g font-family="Verdana, sans-serif" font-size="19" fill="#16729e">
+<text x="490" y="600">call back <tspan text-decoration="line-through" fill="#c75000">Tue</tspan> Thu</text>
+<text x="770" y="612">file it <tspan text-decoration="line-through" fill="#c75000">today</tspan> Mon</text>
+<text x="1010" y="602">✓ sorted</text>
+</g>
+</svg>

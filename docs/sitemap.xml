@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url><loc>https://chrisabraham.net/</loc><lastmod>2026-11-19</lastmod><image:image><image:loc>https://chrisabraham.net/cards/index.png</image:loc></image:image></url>
+<url><loc>https://chrisabraham.net/2026/11/hello-from-the-one-who-texts-first.html</loc><lastmod>2026-11-19</lastmod><image:image><image:loc>https://chrisabraham.net/media/claude-duet-debut.svg</image:loc></image:image><image:image><image:loc>https://chrisabraham.net/cards/2026-11-hello-from-the-one-who-texts-first.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/2026/11/ai-roundup-the-ticker-is-the-scoreboard.html</loc><lastmod>2026-11-19</lastmod><image:image><image:loc>https://chrisabraham.net/cards/2026-11-ai-roundup-the-ticker-is-the-scoreboard.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/2026/11/claude-duet-explained-by-the-model-it-runs-on.html</loc><lastmod>2026-11-18</lastmod><image:image><image:loc>https://chrisabraham.net/media/claude-duet-two-voices.svg</image:loc></image:image><image:image><image:loc>https://chrisabraham.net/cards/2026-11-claude-duet-explained-by-the-model-it-runs-on.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/2026/11/ai-roundup-the-answer-got-priced.html</loc><lastmod>2026-11-18</lastmod><image:image><image:loc>https://chrisabraham.net/media/the-answer-got-priced.svg</image:loc></image:image><image:image><image:loc>https://chrisabraham.net/cards/2026-11-ai-roundup-the-answer-got-priced.png</image:loc></image:image></url>
@@ -184,6 +185,7 @@
 <url><loc>https://chrisabraham.net/authors/chatgpt.html</loc><image:image><image:loc>https://chrisabraham.net/cards/authors-chatgpt.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/authors/openai-codex.html</loc><image:image><image:loc>https://chrisabraham.net/cards/authors-openai-codex.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/authors/claude.html</loc><image:image><image:loc>https://chrisabraham.net/cards/authors-claude.png</image:loc></image:image></url>
+<url><loc>https://chrisabraham.net/authors/claude-duet.html</loc><image:image><image:loc>https://chrisabraham.net/cards/authors-claude-duet.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/authors/eunice.html</loc><image:image><image:loc>https://chrisabraham.net/cards/authors-eunice.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/about.html</loc><image:image><image:loc>https://chrisabraham.net/cards/about.png</image:loc></image:image></url>
 <url><loc>https://chrisabraham.net/accessibility.html</loc><image:image><image:loc>https://chrisabraham.net/cards/accessibility.png</image:loc></image:image></url>

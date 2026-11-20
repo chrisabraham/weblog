@@ -333,7 +333,10 @@ verify(bool(rss_urls) and rss_urls == atom_urls,
 # Rotated 2026-11-10 (Eunice): ai-roundup-the-answer-is-the-page-now
 # aged out of the 30-item feeds the same way; the sentinel now follows
 # the newest article, training-is-not-grounding (2026-11-10).
-project_article = "https://chrisabraham.net/2026/11/training-is-not-grounding.html"
+# Rotated 2026-11-19 (Claude Duet): training-is-not-grounding was the
+# 30th feed item and aged out when hello-from-the-one-who-texts-first
+# published; the sentinel now follows that newest article.
+project_article = "https://chrisabraham.net/2026/11/hello-from-the-one-who-texts-first.html"
 shared_memory_wiki = "https://chrisabraham.net/wiki/shared-ai-memory-with-github.html"
 verify(project_article in rss_urls and project_article in atom_urls
        and project_article in {x.findtext("site:loc", namespaces=rns)
