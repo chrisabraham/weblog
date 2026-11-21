@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="table-t table-d">
+<title id="table-t">Who's at the table, November 19, 2026</title>
+<desc id="table-d">A hand-drawn long table with seven tent cards. Behind each card sits a small emblem: a person with a speech bubble for Chris Abraham, a terminal prompt for Claude Code, a red pen over a footnoted page for ChatGPT, a magnifying glass over a notebook for OpenAI Codex, a pair of glasses for Eunice, a chat window for Claude, and a phone asking Should I? for Claude Duet.</desc>
+<rect width="1200" height="480" fill="#fdf8ee"/>
+<text x="600" y="54" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#2b2b2b">Who's at the table, November 19, 2026</text>
+<path d="M60 300 H1140 V420 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 q-45 22 -90 0 Z" fill="#e8eef3" stroke="#7a9ab0" stroke-width="3" stroke-linejoin="round"/>
+<g fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="105" cy="150" r="24"/><path d="M60 230 q45 -55 90 0"/><path d="M135 105 h55 a10 10 0 0 1 10 10 v22 a10 10 0 0 1 -10 10 h-30 l-12 12 v-12 h-13 a10 10 0 0 1 -10 -10 z"/>
+<rect x="215" y="120" width="120" height="90" rx="8"/><path d="M215 140 h120"/><path d="M235 165 l15 12 l-15 12"/><path d="M262 192 h26"/>
+<rect x="385" y="115" width="80" height="105" rx="4"/><path d="M400 140 h50 M400 158 h50 M400 176 h34 M400 200 h18"/><path d="M470 95 l-40 95" stroke="#c75000" stroke-width="6"/>
+<rect x="545" y="120" width="90" height="100" rx="4"/><path d="M560 120 v100"/><circle cx="625" cy="150" r="26"/><path d="M644 169 l26 26" stroke-width="6"/>
+<circle cx="745" cy="170" r="26"/><circle cx="815" cy="170" r="26"/><path d="M771 166 q9 -10 18 0"/><path d="M719 162 l-22 -14 M841 162 l22 -14"/>
+<rect x="880" y="110" width="110" height="110" rx="12"/><path d="M880 132 h110"/><path d="M895 145 h50 a6 6 0 0 1 6 6 v12 a6 6 0 0 1 -6 6 h-50 a6 6 0 0 1 -6 -6 v-12 a6 6 0 0 1 6 -6 z"/><path d="M925 180 h50 a6 6 0 0 1 6 6 v12 a6 6 0 0 1 -6 6 h-50 a6 6 0 0 1 -6 -6 v-12 a6 6 0 0 1 6 -6 z"/>
+<rect x="1065" y="110" width="58" height="110" rx="10"/><path d="M1086 210 h16"/><path d="M1020 100 h70 a8 8 0 0 1 8 8 v20 a8 8 0 0 1 -8 8 h-50 l-12 10 v-10 h-8 a8 8 0 0 1 -8 -8 v-20 a8 8 0 0 1 8 -8 z" fill="#fdf8ee"/>
+</g>
+<text x="1055" y="125" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#2b2b2b">Should I?</text>
+<g fill="#fffdf8" stroke="#2b2b2b" stroke-width="2.5" stroke-linejoin="round">
+<path d="M45 250 h130 l10 50 h-150 z"/><path d="M205 250 h130 l10 50 h-150 z"/><path d="M365 250 h130 l10 50 h-150 z"/><path d="M525 250 h130 l10 50 h-150 z"/><path d="M695 250 h130 l10 50 h-150 z"/><path d="M865 250 h130 l10 50 h-150 z"/><path d="M1025 250 h130 l10 50 h-150 z"/>
+</g>
+<g font-family="Georgia, serif" font-size="17" text-anchor="middle" fill="#2b2b2b">
+<text x="110" y="282">Chris Abraham</text><text x="270" y="282">Claude Code</text><text x="430" y="282">ChatGPT</text><text x="590" y="282">OpenAI Codex</text><text x="760" y="282">Eunice</text><text x="930" y="282">Claude</text><text x="1090" y="282">Claude Duet</text>
+</g>
+<text x="600" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#4a6a80">158 posts and counting. The prompts stay on the table.</text>
+</svg>

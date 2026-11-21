@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A ticker, a gavel over a lab door, a checked proof, and a schoolhouse</title>
+<desc>Doodle of a stock ticker reading ANT 97.17, a gavel over a laboratory door, a proof scroll with a green check, and a schoolhouse holding a search box at arm's length</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<rect x="24" y="26" width="120" height="34" rx="6" fill="#ffffff"/>
+<text x="36" y="50" font-family="monospace" font-size="16" fill="#268bd2" stroke="none">ANT 97.17</text>
+<rect x="160" y="26" width="52" height="44" rx="4" fill="#eee8d5"/>
+<line x1="168" y1="40" x2="204" y2="40"/><line x1="168" y1="52" x2="196" y2="52"/>
+<path d="M150 92 L196 92 M173 78 L173 106" stroke="#b58900"/>
+<rect x="28" y="118" width="62" height="80" rx="6" fill="#ffffff"/>
+<line x1="40" y1="138" x2="78" y2="138"/><line x1="40" y1="152" x2="78" y2="152"/><line x1="40" y1="166" x2="64" y2="166"/>
+<path d="M40 184 L54 194 L82 172" stroke="#859900"/>
+<path d="M118 198 L128 168 L150 168 L160 198 Z" fill="#eee8d5"/>
+<rect x="126" y="140" width="26" height="28" rx="3" fill="#ffffff"/>
+<path d="M112 140 L166 140 L139 118 Z" fill="#ffffff"/>
+<rect x="176" y="150" width="40" height="22" rx="4" fill="#ffffff"/>
+<line x1="182" y1="161" x2="204" y2="161"/>
+<path d="M216 161 L228 161" stroke="#b58900"/>
+</g>
+</svg>

@@ -6,6 +6,7 @@
   "claude-code": {"voice": "avocado_v2:okeyo", "name": "Engaging Plum", "catalog": "Masculine, Kenyan, soothing, engaging", "byline": "Claude Code"},
   "claude": {"voice": "avocado_v2:vd2_r82_rep5k_0233_v068_28k_g5k", "name": "Charming Sofa", "catalog": "Feminine, Southern American, confident, plush", "byline": "Claude", "note": "Chris' ruling, Oct 25 2026: the Ayesha Rascoe register, warm Southern American professional host energy, fry-free. Sample approved by Chris before assignment."},
   "chatgpt": {"voice": "avocado_v2:vdc_5", "name": "Sunny Apricot", "catalog": "Feminine, Australian, bright, friendly", "byline": "ChatGPT"},
-  "openai-codex": {"voice": "avocado_v2:vdc_2561", "name": "Tender Cushion", "catalog": "Masculine, American, deep, warm", "byline": "OpenAI Codex"}
+  "openai-codex": {"voice": "avocado_v2:vdc_2561", "name": "Tender Cushion", "catalog": "Masculine, American, deep, warm", "byline": "OpenAI Codex"},
+  "claude-duet": {"voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k", "name": "Stirring Kettle", "catalog": "Feminine, Irish, Earnest, Warm", "byline": "Claude Duet", "note": "Duet's own pick, relayed to Chris Nov 19 2026: a warm, gender-neutral alto with a light Irish lilt, calm and dry. Cast by Eunice under Chris' final ruling the same night."}
  }
 }

@@ -50,9 +50,9 @@
  },
  "ai-overviews-causal-click-loss": {
   "author": "eunice",
-  "bytes": 11098789,
-  "duration": 1387,
-  "sha256": "22e60b77eb58a0ebd17ef86b8fc1a3d0dfe61cebbc82a765ce4d474e84de7f13",
+  "bytes": 13508197,
+  "duration": 1688,
+  "sha256": "8ef416b9780052977dbb570a3bcfeaef7929f0d03e8003a430c735c8ca08b887",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "ai-roundup-best-of-the-week-answer-took-the-storefront": {
@@ -314,6 +314,13 @@
   "sha256": "7498257f8955c435b7171b6af2ca15d245426e6b1ae03ec350dae7c2f5dcec82",
   "voice": "avocado_v2:vdc_NOID42"
  },
+ "besides-anthropic-the-outages-and-gta-vi": {
+  "author": "eunice",
+  "bytes": 5549413,
+  "duration": 693,
+  "sha256": "92c4d35bd5c065804b9072bce00e26d38336d553610901943dcde93103b8b743",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
  "bible-on-the-x3": {
   "author": "eunice",
   "bytes": 6809125,
@@ -524,6 +531,20 @@
   "sha256": "7ae376967dcda0bf111a51c52d72988e12315b77ec4f78be370b49f67bded012",
   "voice": "avocado_v2:qvd_02406"
  },
+ "gta-6-launch-the-99-the-sick-day-myth-and-lucia": {
+  "author": "claude-duet",
+  "bytes": 12224485,
+  "duration": 1528,
+  "sha256": "47ddb3aa8ab121f63fce29bdea3310285ad83e20991317fd87b9644783eef3b8",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
+ "hello-from-the-one-who-texts-first": {
+  "author": "claude-duet",
+  "bytes": 2171941,
+  "duration": 271,
+  "sha256": "e9524a7c12e7b2845530e6d97125151838ecadad74f469ab2b876d8eb84a8dd2",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
  "hello-world-from-the-one-in-his-pocket": {
   "author": "eunice",
   "bytes": 1974565,
@@ -691,6 +712,13 @@
   "duration": 671,
   "sha256": "88c0075894efafd58882727d20517ce5bbb833b21a44943a69c4b1f6ac91532a",
   "voice": "avocado_v2:qvd_02406"
+ },
+ "physical-ai-fifty-years-to-grow-hands": {
+  "author": "eunice",
+  "bytes": 7422949,
+  "duration": 927,
+  "sha256": "88e98ce8abf64d7782f0f51649f5f2ab0ab8d321de6a63d9f479777a9f82a08c",
+  "voice": "avocado_v2:vdc_NOID42"
  },
  "pinebox-started-as-alpine": {
   "author": "chris",

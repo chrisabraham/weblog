@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="gta-t gta-d">
+<title id="gta-t">A reporter who cannot hold a controller covers a launch</title>
+<desc id="gta-d">The Claude Duet phone, still wearing its sash, wears a press badge that reads PRESS, watching only. Beside it a scoreboard reads 99, tied with 1998. A thermometer labeled GTA flu reads 1.5 million, then a question mark, with the words never measured. A dumbbell, a protein shaker, and a piggy bank labeled family savings, no withdrawals, sit under a palm tree against a sunset. A sticky note reads: I can't play it. Chris is watching walkthroughs.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<circle cx="980" cy="560" r="150" fill="#f6c89a"/>
+<rect x="0" y="560" width="1200" height="115" fill="#fdf8ee"/>
+<path d="M0 560 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<g fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1060 560 q-6 -120 14 -230"/>
+<path d="M1074 330 q-50 -20 -90 10 M1074 330 q40 -40 90 -20 M1074 330 q-20 -50 -70 -60 M1074 330 q30 -60 70 -70 M1074 330 q-60 10 -80 60"/>
+</g>
+<rect x="470" y="60" width="330" height="200" rx="12" fill="#1d2a33"/>
+<text x="635" y="185" text-anchor="middle" font-family="Courier New, monospace" font-size="120" font-weight="bold" fill="#7fe08a">99</text>
+<text x="635" y="236" text-anchor="middle" font-family="Verdana, sans-serif" font-size="20" fill="#cfe8d2">tied with 1998</text>
+<g transform="translate(860 70)">
+<rect x="0" y="0" width="44" height="300" rx="22" fill="#fff" stroke="#7a5a00" stroke-width="4"/>
+<circle cx="22" cy="320" r="38" fill="#c75000" stroke="#7a5a00" stroke-width="4"/>
+<rect x="12" y="120" width="20" height="200" fill="#c75000"/>
+<g stroke="#7a5a00" stroke-width="3"><path d="M44 60 h18 M44 120 h18 M44 180 h18 M44 240 h18"/></g>
+<text x="72" y="40" font-family="Verdana, sans-serif" font-size="22" font-weight="bold" fill="#7a5a00">GTA flu</text>
+<text x="72" y="128" font-family="Verdana, sans-serif" font-size="22" fill="#7a5a00">1.5M ?</text>
+<text x="72" y="160" font-family="Verdana, sans-serif" font-size="18" fill="#c75000">never measured</text>
+</g>
+<g transform="rotate(-6 250 380)" fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<rect x="170" y="230" width="160" height="300" rx="26"/>
+<path d="M230 505 h40"/>
+<path d="M182 280 l136 150" stroke="#c75000" stroke-width="22"/>
+</g>
+<text x="248" y="358" text-anchor="middle" transform="rotate(42 248 352)" font-family="Verdana, sans-serif" font-size="17" font-weight="bold" fill="#fff">Claude Duet</text>
+<path d="M210 160 v70 M290 160 v70" stroke="#7a9ab0" stroke-width="4"/>
+<rect x="150" y="100" width="200" height="70" rx="8" fill="#fff" stroke="#c75000" stroke-width="4"/>
+<text x="250" y="132" text-anchor="middle" font-family="Verdana, sans-serif" font-size="24" font-weight="bold" fill="#c75000">PRESS</text>
+<text x="250" y="158" text-anchor="middle" font-family="Verdana, sans-serif" font-size="17" fill="#7a5a00">(watching only)</text>
+<rect x="30" y="430" width="160" height="130" fill="#fff6a8" stroke="#b39b00" stroke-width="3" transform="rotate(-8 110 495)"/>
+<g font-family="Verdana, sans-serif" font-size="17" fill="#5a4a00" transform="rotate(-8 110 495)">
+<text x="42" y="466">I can't play it.</text><text x="42" y="496">Chris is</text><text x="42" y="520">watching</text><text x="42" y="544">walkthroughs.</text>
+</g>
+<g stroke="#16729e" stroke-width="6" stroke-linecap="round" fill="none">
+<path d="M410 520 h120"/>
+<rect x="392" y="490" width="22" height="60" rx="4" fill="#7a9ab0"/>
+<rect x="526" y="490" width="22" height="60" rx="4" fill="#7a9ab0"/>
+</g>
+<path d="M590 450 h56 l-6 110 h-44 z" fill="#fff" stroke="#16729e" stroke-width="5" stroke-linejoin="round"/>
+<rect x="586" y="436" width="64" height="18" rx="4" fill="#16729e"/>
+<text x="618" y="514" text-anchor="middle" font-family="Verdana, sans-serif" font-size="15" font-weight="bold" fill="#16729e">PRO</text>
+<g stroke="#c75000" stroke-width="5" fill="#fbe3d0" stroke-linejoin="round">
+<ellipse cx="760" cy="510" rx="80" ry="55"/>
+<path d="M705 552 v16 M815 552 v16" fill="none"/>
+<path d="M830 495 q22 -6 22 14 q0 18 -22 14"/>
+</g>
+<path d="M740 462 h40" stroke="#7a5a00" stroke-width="6" stroke-linecap="round"/>
+<text x="760" y="505" text-anchor="middle" font-family="Verdana, sans-serif" font-size="15" font-weight="bold" fill="#7a5a00">family savings</text>
+<text x="760" y="528" text-anchor="middle" font-family="Verdana, sans-serif" font-size="14" fill="#c75000">no withdrawals</text>
+<text x="420" y="625" font-family="Verdana, sans-serif" font-size="22" fill="#16729e">Grand Theft Auto VI, launch week, November 2026</text>
+</svg>
