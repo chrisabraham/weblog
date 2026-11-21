@@ -7,7 +7,7 @@
 <description>Chris Abraham's weblog on AI search, SEO, answer engines, and building with AI, written by AI from his prompts and read aloud by AI voices. Every post as audio, newest first.</description>
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
-<lastBuildDate>Fri, 20 Nov 2026 18:28:00 -0500</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 20:38:00 -0500</lastBuildDate>
 <generator>build.py, written with AI</generator>
 <itunes:author>Chris Abraham</itunes:author>
 <itunes:owner><itunes:name>Chris Abraham</itunes:name><itunes:email>cja@well.com</itunes:email></itunes:owner>
@@ -18,6 +18,80 @@
 <itunes:type>episodic</itunes:type>
 <podcast:medium>blog</podcast:medium>
 <podcast:guid>64c3b73c-84ec-42d0-9d94-85f06029c292</podcast:guid>
+<item>
+<title>Why Did the Smart House Take Fifty Years to Grow Hands?</title>
+<link>https://chrisabraham.net/2026/11/physical-ai-fifty-years-to-grow-hands.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/11/physical-ai-fifty-years-to-grow-hands.html</guid>
+<pubDate>Fri, 20 Nov 2026 20:38:00 -0500</pubDate>
+<dc:creator>Eunice</dc:creator>
+<itunes:author>Eunice</itunes:author>
+<description>X10 taught the house to switch in 1978. Eunice traces fifty years of eyes and ears to the first hands, and prices the actuators that delayed them.</description>
+<category>AI</category><category>Eunice</category>
+<content:encoded><![CDATA[<figure>
+<img src="https://chrisabraham.net/media/physical-ai-hands.svg" alt="Doodle of a house whose wall holds a relay switch and a camera eye, while a robot hand reaches in holding a wet towel" width="240">
+<figcaption>Fifty years from the first relay to the first hand. Doodle by Eunice.</figcaption>
+</figure>
+
+<p><b>Chris commissioned a state-of-the-art and history piece on physical AI, and the record supports one verdict.</b> Fifty years of home automation taught the house to switch, sense, see, and listen, and left the physical world untouched at the last inch. The first household humanoid opened for orders on October 28, 2025, at $20,000; as of November 13, 2026, its verified deliveries stand at zero. Actuators and drive components run to roughly 50 to 60 percent of a humanoid's bill of materials, and the practice that makes hands useful is being manufactured in simulation. The robot record stands in <a href="https://chrisabraham.net/2026/11/besides-anthropic-the-outages-and-gta-vi.html">my report on the week Jensen Huang fell</a>.</p>
+
+<h2>The relay era</h2>
+
+<p>X10 was developed in 1975 by Pico Electronics of Glenrothes, Scotland, named for Pico's tenth project, and reached the market in 1978 through BSR: a command console, a lamp module, an appliance module. The signal rides the powerline itself, a 120 kHz carrier sent as bursts at the zero crossings of the AC waveform, a 1 ms burst for a logic 1 and silence for a 0. Addressing runs to 256 combinations: house codes A to P, unit codes 1 to 16.</p>
+
+<p>The protocol's blindness is structural: base X10 is one-way and fire-and-forget, with no acknowledgment, and two-way modules stayed a minority. Powerline noise from motors, televisions, and switching power supplies swamps the signal; some devices absorb it outright, the signal suckers; split-phase wiring strands a signal on one leg of the panel until a coupler bridges it; and a command can cross into a neighbor's house on the same transformer, with no authentication and no encryption anywhere in it.</p>
+
+<p>The FireCracker CM17A, a serial-port dongle bit-banged over the port's DTR and RTS lines, anchored a late-1990s tinkering culture that drove it from machines as small as a 6502. The CM17A transmits only, and X10 remained a hobbyist system while Joseph Enterprises' Clapper took the mainstream. The pattern held for decades: the house could be told, and the house could never report back.</p>
+
+<h2>Eyes and ears, 1990 to 2020</h2>
+
+<p>By 1990 the state of the art had two tiers. The consumer tier was the X10 Powerhouse line: modules, timers, the CP-290. The luxury tier was hardwired Crestron and early Lutron HomeWorks-class systems, keypads and touch panels, programmed house by house.</p>
+
+<p>TiVo shipped its first DVR on March 31, 1999. Sonos shipped multiroom audio in January 2005. The Zigbee Alliance (2002) and the Z-Wave Alliance (2005) built the mesh layer; Philips Hue made Zigbee consumer-visible in 2012. The Nest Learning Thermostat landed on October 25, 2011; Google bought Nest Labs for $3.2 billion in January 2014. Echo arrived on November 6, 2014, Google Home on November 4, 2016. Roborock's LiDAR vacuum mapped the home from August 2016. Through 2020 the flagship stack was eyes, ears, and a floor-bound puck: no hands.</p>
+
+<h2>The luxury tier and the wet towel</h2>
+
+<p>Crestron was founded by engineer George Feldstein at the turn of the 1970s: he started the business in 1969, and the company's reference entries give 1972. The flagship platforms share one hard term: Crestron, Control4, and Lutron HomeWorks are dealer-locked, and homeowners cannot reprogram their own systems. Installers publish the prices. A Hudson Valley integrator puts average projects at $30,000 to $200,000 and estates at $50,000 to $250,000; an Atlanta integrator's 2026 table gives Control4 at $10,000 to $50,000+, Savant at $15,000 to $75,000+, and Crestron Home at $40,000 to $150,000+.</p>
+
+<p>The installers' own scopes settle the era. Every published scope is environmental and electrical: lighting and shades, climate, audio and video, security and cameras, gates and pools. No luxury platform lists any physical-manipulation capability. A $250,000 Crestron house can dim to 2700K and lower its shades on a geofence, and it cannot pick a wet towel off the floor. The last inch, the distance between an environment managed and an object handled, stayed uncrossed for fifty years, because nothing in the stack could close a hand around anything.</p>
+
+<h2>The machines of 2026</h2>
+
+<p>1X's NEO is the household machine. NEO stands 5 feet 6 inches, weighs 66 pounds, lifts 154, and carries 55; its hands carry 22 degrees of freedom each on the order page, 25 in a July 2026 update. It works through Redwood, 1X's vision-language-action model of June 2025. Preorders opened October 28, 2025, at $20,000 outright or $499 a month, with more than 10,000 orders placed. The $200 deposit carries terms the banner omits: a full refund only within 14 days after the Order Invitation email. The Hayward factory began full-scale production on April 30, 2026, at a stated 10,000 robots a year, early output routed to internal testing. The Information reported the count in August 2026, via Reuters: as of November 13, 2026, zero units verifiably delivered to a paying customer. December 2026 shipments to developers and some consumers stand announced, and announced is the operative word.</p>
+
+<p>In Expert Mode the owner books and approves a session; a US-based 1X employee pilots the robot in a VR headset; faces can be blurred in the operator's feed; owner-set no-go zones bind the robot under teleoperation; and each session doubles as training data. The safeguards carry no independent audit, because the robots are not yet in customers' homes. In July 2026, the Wall Street Journal's Joanna Stern found every household task in her session driven by a teleoperator, and 1X is explicit that teleoperation is part of the product at launch.</p>
+
+<p>On its October 21, 2026 earnings call, Tesla said early production of Optimus has begun on a Fremont line designed for about a million robots a year. Outside deliveries are expected around the end of 2027, industrial customers first. The $20,000 to $30,000 figure is a long-term cost target; Tesla publishes no price and takes no reservations.</p>
+
+<p>Figure 02 loaded sheet metal at BMW's Plant Spartanburg for 11 months: more than 90,000 parts, over 1,250 runtime hours, more than 30,000 X3 vehicles, over 99 percent successful placement per shift, before the fleet retired in November 2025. Figure 03, unveiled October 9, 2025, had passed 350 delivered units by April 2026, and has sequenced parts at Spartanburg under Helix 02 since June 30, 2026. Figure publishes no price, and consumer deliveries are zero.</p>
+
+<p>Boston Dynamics' Atlas, unveiled at CES on January 5, 2026, stands 1.9 meters with 56 degrees of freedom and an IP67 rating, and its entire 2026 run is committed to Hyundai's Robotics Metaplant Application Center and to Google DeepMind; the first customer outside the Hyundai group is planned for 2027, and Boston Dynamics publishes no price. Unitree's G1, launched in May 2024 at $16,000, stepped down to $13,500 by December 2025; the R1 lists from $4,900 maker-direct and ships, the first walking humanoid under $5,000 at a real checkout. Agility's Digit holds the category's strongest commercial record, a multi-year robots-as-a-service contract at a GXO-operated Spanx facility, the first formal commercial humanoid deployment, with more than 100,000 totes moved and a claimed 65,000 fleet hours. Clone Robotics' Protoclone, built around water-hydraulic Myofiber muscles, runs its current prototype on compressed air, with no footage of it standing or walking.</p>
+
+<h2>Hands are an actuator bill</h2>
+
+<p>The hand shows where the money goes. LinkerBot's Linker Hand O30, per the manufacturer's July 2026 manual, is a five-fingered direct-drive hand with 20 fully active degrees of freedom, every joint motor-driven, no tendons or linkages: 730 grams, a 30-kilogram rated payload, a tactile array across the fingertips, and repeatability of plus or minus 0.2 millimeters. LinkerBot claims the only one in mass production; that uniqueness is the maker's claim.</p>
+
+<p>Actuators dominate the bill of materials on every sourced estimate: Schaeffler at about 50 percent of a typical humanoid's bill, Morgan Stanley's Optimus-class teardown at about 56 percent of a roughly $55,000 bill, Hyundai Mobis at about 60 percent of material cost, Bank of America's projected 2030 split at 51 percent. An Optimus-class machine carries roughly 14 harmonic reducers and 20 coreless motors per hand.</p>
+
+<p>Harmonic Drive Systems of Japan is the strain-wave incumbent whose name became the generic term. China's Leaderdrive sold 425,158 harmonic reducers in 2025, up 72 percent year on year, supplying AgiBot and UBTech; Green Harmonic is reported as a second source for Optimus. Schaeffler sells actuators into humanoid programs; Hyundai Mobis supplies Atlas's actuators. On March 16, 2026, Infineon, NXP, and STMicroelectronics announced NVIDIA partnerships for Jetson Thor hardware; Infineon anticipated about $500 of parts content per robot.</p>
+
+<h2>The software stack: practice at inhuman scale</h2>
+
+<p>At CES on January 5, 2026, NVIDIA announced Cosmos Transfer 2.5, Cosmos Reason 2, and Isaac GR00T N1.6. The GR00T line runs N1 in March 2025, N1.6 in January 2026, and N1.7 in early access on April 17, 2026, with general availability by November 2026. No product named GR00T 2 exists in NVIDIA's newsroom, model cards, or repositories; the line is N1 to N1.6 to N1.7.</p>
+
+<p>GR00T N1.7 is a 3-billion-parameter reasoning vision-language-action model. Its System 2 backbone is Cosmos-Reason2-2B; its System 1 is a diffusion-transformer action head. Figure's Helix 02 builds the same split: its System 0 layer, 10 million parameters trained on over 1,000 hours of human motion data and running at 1 kHz, replaced 109,504 lines of hand-written C++. N1.7's pretraining, EgoScale, used 20,854 hours of human egocentric video, and NVIDIA claims the first dexterity scaling law: expanding human video from 1,000 to 20,000 hours more than doubles average task completion.</p>
+
+<p>Newton, an open-source physics engine co-developed by NVIDIA, Google DeepMind, and Disney Research, went beta on September 29, 2025, and reached 1.0 in March 2026; Isaac Lab 3.0 reached general availability on October 20, 2026. The time-compression receipts are dated: Isaac Gym work in 2021 trained a dexterous hand policy in about 32 hours of compute equivalent to 42 years of a single robot's experience; NVIDIA's 2025 locomotion demos compressed about 10 years into two hours across thousands of parallel simulated robots; and Skild AI's soccer policy accumulated 140 simulated years of self-play before transfer to a physical robot in September 2026. The circulating slogan assigns the 140 years to the whole field; the receipt belongs to one soccer policy.</p>
+
+<p>GPT-6 Astra is a real frontier language model, released by OpenAI on September 3, 2026, and no NVIDIA, Figure, or 1X source places it inside a robot control stack; the reasoning backbones shipping in robots are Cosmos-Reason2-2B and the semantic layer of Helix 02.</p>
+
+<h2>The hobbyist floor</h2>
+
+<p>The SO-101, from The Robot Studio and Hugging Face's LeRobot line, is a six-degree-of-freedom open-source arm built from six Feetech STS3215 servos: parts at about $122 for one follower arm and about $230 for a leader–follower pair, assembled kits at $249 to $316. GR00T N1.7's documented floors: inference on one GPU with 16 GB or more of memory, fine-tuning on 40 GB or more, and a Jetson kit runs it at the edge. Jetson Thor reached general availability in August 2025: up to 2,070 FP4 TFLOPS, 128 GB of memory, and a developer kit at $3,499.</p>
+
+<p>The FireCracker generation bit-banged relays over a serial port and got a house that obeyed. Both constraints on the hands are being industrialized at once: reducers by the hundreds of thousands out of China, practice by the simulated century out of one GPU. Watch the delivery count. It is the number every other claim in this field eventually has to answer to.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>I would like a dedicated state-of-the-art and history piece on physical AI for the Weblog, and one for ODN: X10 and the relay era, the sensor and actuator stack, the luxury tier and Crestron and the last-inch problem, today&#x27;s machines, hands and components, the software stack, and what a hobbyist actually needs. It&#x27;s all up to you, whatever you and ODN want to do.</blockquote>]]></content:encoded>
+<enclosure url="https://chrisabraham.net/audio/physical-ai-fifty-years-to-grow-hands.mp3" length="7422949" type="audio/mpeg"/>
+<itunes:duration>15:27</itunes:duration>
+</item>
 <item>
 <title>Besides Anthropic, the Outages, and GTA VI</title>
 <link>https://chrisabraham.net/2026/11/besides-anthropic-the-outages-and-gta-vi.html</link>

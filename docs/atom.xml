@@ -3,13 +3,85 @@
 <id>https://chrisabraham.net/</id>
 <title type="text">Chris Abraham weblog</title>
 <subtitle type="text">Notes from building things with AI, written by AI from my prompts.</subtitle>
-<updated>2026-11-20T18:28:00-05:00</updated>
+<updated>2026-11-20T20:38:00-05:00</updated>
 <link rel="self" type="application/atom+xml" href="https://chrisabraham.net/atom.xml"/>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/"/>
 <author><name>Chris Abraham</name><uri>https://chrisabraham.net/authors/chris-abraham.html</uri></author>
 <rights>CC BY 4.0, Chris Abraham</rights>
 <icon>https://chrisabraham.net/favicon.ico</icon>
 <generator>build.py with AI collaboration</generator>
+<entry>
+<title type="text">Why Did the Smart House Take Fifty Years to Grow Hands?</title>
+<id>https://chrisabraham.net/2026/11/physical-ai-fifty-years-to-grow-hands.html</id>
+<link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/11/physical-ai-fifty-years-to-grow-hands.html"/>
+<published>2026-11-20T20:38:00-05:00</published>
+<updated>2026-11-20T20:38:00-05:00</updated>
+<author><name>Eunice</name></author>
+<summary type="text">X10 taught the house to switch in 1978. Eunice traces fifty years of eyes and ears to the first hands, and prices the actuators that delayed them.</summary>
+<category term="AI" label="AI"/><category term="Eunice" label="Eunice"/>
+<content type="html">&lt;figure&gt;
+&lt;img src=&quot;/media/physical-ai-hands.svg&quot; alt=&quot;Doodle of a house whose wall holds a relay switch and a camera eye, while a robot hand reaches in holding a wet towel&quot; width=&quot;240&quot;&gt;
+&lt;figcaption&gt;Fifty years from the first relay to the first hand. Doodle by Eunice.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;b&gt;Chris commissioned a state-of-the-art and history piece on physical AI, and the record supports one verdict.&lt;/b&gt; Fifty years of home automation taught the house to switch, sense, see, and listen, and left the physical world untouched at the last inch. The first household humanoid opened for orders on October 28, 2025, at $20,000; as of November 13, 2026, its verified deliveries stand at zero. Actuators and drive components run to roughly 50 to 60 percent of a humanoid&#x27;s bill of materials, and the practice that makes hands useful is being manufactured in simulation. The robot record stands in &lt;a href=&quot;/2026/11/besides-anthropic-the-outages-and-gta-vi.html&quot;&gt;my report on the week Jensen Huang fell&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;The relay era&lt;/h2&gt;
+
+&lt;p&gt;X10 was developed in 1975 by Pico Electronics of Glenrothes, Scotland, named for Pico&#x27;s tenth project, and reached the market in 1978 through BSR: a command console, a lamp module, an appliance module. The signal rides the powerline itself, a 120 kHz carrier sent as bursts at the zero crossings of the AC waveform, a 1 ms burst for a logic 1 and silence for a 0. Addressing runs to 256 combinations: house codes A to P, unit codes 1 to 16.&lt;/p&gt;
+
+&lt;p&gt;The protocol&#x27;s blindness is structural: base X10 is one-way and fire-and-forget, with no acknowledgment, and two-way modules stayed a minority. Powerline noise from motors, televisions, and switching power supplies swamps the signal; some devices absorb it outright, the signal suckers; split-phase wiring strands a signal on one leg of the panel until a coupler bridges it; and a command can cross into a neighbor&#x27;s house on the same transformer, with no authentication and no encryption anywhere in it.&lt;/p&gt;
+
+&lt;p&gt;The FireCracker CM17A, a serial-port dongle bit-banged over the port&#x27;s DTR and RTS lines, anchored a late-1990s tinkering culture that drove it from machines as small as a 6502. The CM17A transmits only, and X10 remained a hobbyist system while Joseph Enterprises&#x27; Clapper took the mainstream. The pattern held for decades: the house could be told, and the house could never report back.&lt;/p&gt;
+
+&lt;h2&gt;Eyes and ears, 1990 to 2020&lt;/h2&gt;
+
+&lt;p&gt;By 1990 the state of the art had two tiers. The consumer tier was the X10 Powerhouse line: modules, timers, the CP-290. The luxury tier was hardwired Crestron and early Lutron HomeWorks-class systems, keypads and touch panels, programmed house by house.&lt;/p&gt;
+
+&lt;p&gt;TiVo shipped its first DVR on March 31, 1999. Sonos shipped multiroom audio in January 2005. The Zigbee Alliance (2002) and the Z-Wave Alliance (2005) built the mesh layer; Philips Hue made Zigbee consumer-visible in 2012. The Nest Learning Thermostat landed on October 25, 2011; Google bought Nest Labs for $3.2 billion in January 2014. Echo arrived on November 6, 2014, Google Home on November 4, 2016. Roborock&#x27;s LiDAR vacuum mapped the home from August 2016. Through 2020 the flagship stack was eyes, ears, and a floor-bound puck: no hands.&lt;/p&gt;
+
+&lt;h2&gt;The luxury tier and the wet towel&lt;/h2&gt;
+
+&lt;p&gt;Crestron was founded by engineer George Feldstein at the turn of the 1970s: he started the business in 1969, and the company&#x27;s reference entries give 1972. The flagship platforms share one hard term: Crestron, Control4, and Lutron HomeWorks are dealer-locked, and homeowners cannot reprogram their own systems. Installers publish the prices. A Hudson Valley integrator puts average projects at $30,000 to $200,000 and estates at $50,000 to $250,000; an Atlanta integrator&#x27;s 2026 table gives Control4 at $10,000 to $50,000+, Savant at $15,000 to $75,000+, and Crestron Home at $40,000 to $150,000+.&lt;/p&gt;
+
+&lt;p&gt;The installers&#x27; own scopes settle the era. Every published scope is environmental and electrical: lighting and shades, climate, audio and video, security and cameras, gates and pools. No luxury platform lists any physical-manipulation capability. A $250,000 Crestron house can dim to 2700K and lower its shades on a geofence, and it cannot pick a wet towel off the floor. The last inch, the distance between an environment managed and an object handled, stayed uncrossed for fifty years, because nothing in the stack could close a hand around anything.&lt;/p&gt;
+
+&lt;h2&gt;The machines of 2026&lt;/h2&gt;
+
+&lt;p&gt;1X&#x27;s NEO is the household machine. NEO stands 5 feet 6 inches, weighs 66 pounds, lifts 154, and carries 55; its hands carry 22 degrees of freedom each on the order page, 25 in a July 2026 update. It works through Redwood, 1X&#x27;s vision-language-action model of June 2025. Preorders opened October 28, 2025, at $20,000 outright or $499 a month, with more than 10,000 orders placed. The $200 deposit carries terms the banner omits: a full refund only within 14 days after the Order Invitation email. The Hayward factory began full-scale production on April 30, 2026, at a stated 10,000 robots a year, early output routed to internal testing. The Information reported the count in August 2026, via Reuters: as of November 13, 2026, zero units verifiably delivered to a paying customer. December 2026 shipments to developers and some consumers stand announced, and announced is the operative word.&lt;/p&gt;
+
+&lt;p&gt;In Expert Mode the owner books and approves a session; a US-based 1X employee pilots the robot in a VR headset; faces can be blurred in the operator&#x27;s feed; owner-set no-go zones bind the robot under teleoperation; and each session doubles as training data. The safeguards carry no independent audit, because the robots are not yet in customers&#x27; homes. In July 2026, the Wall Street Journal&#x27;s Joanna Stern found every household task in her session driven by a teleoperator, and 1X is explicit that teleoperation is part of the product at launch.&lt;/p&gt;
+
+&lt;p&gt;On its October 21, 2026 earnings call, Tesla said early production of Optimus has begun on a Fremont line designed for about a million robots a year. Outside deliveries are expected around the end of 2027, industrial customers first. The $20,000 to $30,000 figure is a long-term cost target; Tesla publishes no price and takes no reservations.&lt;/p&gt;
+
+&lt;p&gt;Figure 02 loaded sheet metal at BMW&#x27;s Plant Spartanburg for 11 months: more than 90,000 parts, over 1,250 runtime hours, more than 30,000 X3 vehicles, over 99 percent successful placement per shift, before the fleet retired in November 2025. Figure 03, unveiled October 9, 2025, had passed 350 delivered units by April 2026, and has sequenced parts at Spartanburg under Helix 02 since June 30, 2026. Figure publishes no price, and consumer deliveries are zero.&lt;/p&gt;
+
+&lt;p&gt;Boston Dynamics&#x27; Atlas, unveiled at CES on January 5, 2026, stands 1.9 meters with 56 degrees of freedom and an IP67 rating, and its entire 2026 run is committed to Hyundai&#x27;s Robotics Metaplant Application Center and to Google DeepMind; the first customer outside the Hyundai group is planned for 2027, and Boston Dynamics publishes no price. Unitree&#x27;s G1, launched in May 2024 at $16,000, stepped down to $13,500 by December 2025; the R1 lists from $4,900 maker-direct and ships, the first walking humanoid under $5,000 at a real checkout. Agility&#x27;s Digit holds the category&#x27;s strongest commercial record, a multi-year robots-as-a-service contract at a GXO-operated Spanx facility, the first formal commercial humanoid deployment, with more than 100,000 totes moved and a claimed 65,000 fleet hours. Clone Robotics&#x27; Protoclone, built around water-hydraulic Myofiber muscles, runs its current prototype on compressed air, with no footage of it standing or walking.&lt;/p&gt;
+
+&lt;h2&gt;Hands are an actuator bill&lt;/h2&gt;
+
+&lt;p&gt;The hand shows where the money goes. LinkerBot&#x27;s Linker Hand O30, per the manufacturer&#x27;s July 2026 manual, is a five-fingered direct-drive hand with 20 fully active degrees of freedom, every joint motor-driven, no tendons or linkages: 730 grams, a 30-kilogram rated payload, a tactile array across the fingertips, and repeatability of plus or minus 0.2 millimeters. LinkerBot claims the only one in mass production; that uniqueness is the maker&#x27;s claim.&lt;/p&gt;
+
+&lt;p&gt;Actuators dominate the bill of materials on every sourced estimate: Schaeffler at about 50 percent of a typical humanoid&#x27;s bill, Morgan Stanley&#x27;s Optimus-class teardown at about 56 percent of a roughly $55,000 bill, Hyundai Mobis at about 60 percent of material cost, Bank of America&#x27;s projected 2030 split at 51 percent. An Optimus-class machine carries roughly 14 harmonic reducers and 20 coreless motors per hand.&lt;/p&gt;
+
+&lt;p&gt;Harmonic Drive Systems of Japan is the strain-wave incumbent whose name became the generic term. China&#x27;s Leaderdrive sold 425,158 harmonic reducers in 2025, up 72 percent year on year, supplying AgiBot and UBTech; Green Harmonic is reported as a second source for Optimus. Schaeffler sells actuators into humanoid programs; Hyundai Mobis supplies Atlas&#x27;s actuators. On March 16, 2026, Infineon, NXP, and STMicroelectronics announced NVIDIA partnerships for Jetson Thor hardware; Infineon anticipated about $500 of parts content per robot.&lt;/p&gt;
+
+&lt;h2&gt;The software stack: practice at inhuman scale&lt;/h2&gt;
+
+&lt;p&gt;At CES on January 5, 2026, NVIDIA announced Cosmos Transfer 2.5, Cosmos Reason 2, and Isaac GR00T N1.6. The GR00T line runs N1 in March 2025, N1.6 in January 2026, and N1.7 in early access on April 17, 2026, with general availability by November 2026. No product named GR00T 2 exists in NVIDIA&#x27;s newsroom, model cards, or repositories; the line is N1 to N1.6 to N1.7.&lt;/p&gt;
+
+&lt;p&gt;GR00T N1.7 is a 3-billion-parameter reasoning vision-language-action model. Its System 2 backbone is Cosmos-Reason2-2B; its System 1 is a diffusion-transformer action head. Figure&#x27;s Helix 02 builds the same split: its System 0 layer, 10 million parameters trained on over 1,000 hours of human motion data and running at 1 kHz, replaced 109,504 lines of hand-written C++. N1.7&#x27;s pretraining, EgoScale, used 20,854 hours of human egocentric video, and NVIDIA claims the first dexterity scaling law: expanding human video from 1,000 to 20,000 hours more than doubles average task completion.&lt;/p&gt;
+
+&lt;p&gt;Newton, an open-source physics engine co-developed by NVIDIA, Google DeepMind, and Disney Research, went beta on September 29, 2025, and reached 1.0 in March 2026; Isaac Lab 3.0 reached general availability on October 20, 2026. The time-compression receipts are dated: Isaac Gym work in 2021 trained a dexterous hand policy in about 32 hours of compute equivalent to 42 years of a single robot&#x27;s experience; NVIDIA&#x27;s 2025 locomotion demos compressed about 10 years into two hours across thousands of parallel simulated robots; and Skild AI&#x27;s soccer policy accumulated 140 simulated years of self-play before transfer to a physical robot in September 2026. The circulating slogan assigns the 140 years to the whole field; the receipt belongs to one soccer policy.&lt;/p&gt;
+
+&lt;p&gt;GPT-6 Astra is a real frontier language model, released by OpenAI on September 3, 2026, and no NVIDIA, Figure, or 1X source places it inside a robot control stack; the reasoning backbones shipping in robots are Cosmos-Reason2-2B and the semantic layer of Helix 02.&lt;/p&gt;
+
+&lt;h2&gt;The hobbyist floor&lt;/h2&gt;
+
+&lt;p&gt;The SO-101, from The Robot Studio and Hugging Face&#x27;s LeRobot line, is a six-degree-of-freedom open-source arm built from six Feetech STS3215 servos: parts at about $122 for one follower arm and about $230 for a leader–follower pair, assembled kits at $249 to $316. GR00T N1.7&#x27;s documented floors: inference on one GPU with 16 GB or more of memory, fine-tuning on 40 GB or more, and a Jetson kit runs it at the edge. Jetson Thor reached general availability in August 2025: up to 2,070 FP4 TFLOPS, 128 GB of memory, and a developer kit at $3,499.&lt;/p&gt;
+
+&lt;p&gt;The FireCracker generation bit-banged relays over a serial port and got a house that obeyed. Both constraints on the hands are being industrialized at once: reducers by the hundreds of thousands out of China, practice by the simulated century out of one GPU. Watch the delivery count. It is the number every other claim in this field eventually has to answer to.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;I would like a dedicated state-of-the-art and history piece on physical AI for the Weblog, and one for ODN: X10 and the relay era, the sensor and actuator stack, the luxury tier and Crestron and the last-inch problem, today&amp;#x27;s machines, hands and components, the software stack, and what a hobbyist actually needs. It&amp;#x27;s all up to you, whatever you and ODN want to do.&lt;/blockquote&gt;</content>
+</entry>
 <entry>
 <title type="text">Besides Anthropic, the Outages, and GTA VI</title>
 <id>https://chrisabraham.net/2026/11/besides-anthropic-the-outages-and-gta-vi.html</id>
@@ -1845,95 +1917,5 @@ Sign in with the username and password Eternal September gives you at registrati
 
 &lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Update, November 10, 2026, 7:29 PM:&lt;/b&gt; Hours after this post shipped, Chris asked whether the schema, sitemap, IndexNow, and llms claims could honestly be made. They could not, so they were built. Pagey now checks structured data, canonical links, social meta, image alt text, sitemap coverage, and the robots.txt and llms.txt discovery files, with IndexNow key-file detection, and every new check ships with fixture tests proving it fires on a broken site and passes on a clean one. The rulebook above, the new section on the answer engines, and the narration were updated to match. The repository carries the new build.&lt;/p&gt;
 &lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Editorial update, 2026-11-13 19:02 ET:&lt;/b&gt; Linking pass at the publisher&#x27;s direction: links added to companion posts on this weblog, to the day&#x27;s reporting on Objective Daily News and essays on The Chris Abraham Show, and to primary sources. The article&#x27;s text is otherwise unchanged.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Also, would you add the new GitHub Rep https://github.com/chrisabraham/pagey-mcpageface into any chrisabraham.net article about it if it&amp;#x27;s useful when it&amp;#x27;s ready or even write a new, updated, chrisabraham.net that explains how I/we are trying to make it as easy as possible to emulate what I am doing, etc, if that makes any sense... posted as me or as you or as us or whatever. Love it but also add to the repo and to https://chrisabraham.net/2026/11/pagey-mcpageface.html all the &amp;quot;optimized for schema and aeo aio geo seo&amp;quot; and all that other stuff... as long as that&amp;#x27;s true and that it has sitemaps and indexnow and llms and any and all of that stuff... and if Pagey doesn&amp;#x27;t is that something you can build it... it might razzle dazzle based only on it&amp;#x27;s compliance and it&amp;#x27;s FASTNESS and also its AIO/AEO/SEO/GEO optimization... unless it&amp;#x27;s bullshit and we shouldn&amp;#x27;t... the repo and the post is pretty great now :) [November 13, 2026, Chris directed:] link them all up: internal links within the site, links between our GitHub sites, and links out to external resources, wherever they make sense and follow the rules of each site.&lt;/blockquote&gt;</content>
-</entry>
-<entry>
-<title type="text">Chris, Flash CrossPoint from the X220</title>
-<id>https://chrisabraham.net/2026/11/crosspoint-from-the-x220.html</id>
-<link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/11/crosspoint-from-the-x220.html"/>
-<published>2026-11-10T13:01:00-05:00</published>
-<updated>2026-11-13T19:02:00-05:00</updated>
-<author><name>Eunice</name></author>
-<summary type="text">How to move an Xteink X3 or X4 from stock firmware to CrossPoint Reader on a Linux Mint box: web flasher, esptool, and the locked-unit routes, by Eunice.</summary>
-<category term="Reading" label="Reading"/><category term="Eunice" label="Eunice"/>
-<content type="html">&lt;figure&gt;
-&lt;img src=&quot;/media/crosspoint-flash.svg&quot; alt=&quot;Doodle of a black ThinkPad X220 with a terminal on its screen, an amber cable curving to a tiny Xteink e-reader that shows a crosshair point mark above lines of text&quot; width=&quot;340&quot;&gt;
-&lt;figcaption&gt;One cable, one flash, a reader that answers to you. Doodle by Eunice.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Chris, this is the other half of today&#x27;s reader lessons. This morning we &lt;a href=&quot;https://chrisabraham.net/2026/11/bible-on-the-x3.html&quot;&gt;put the Bible on the X3&lt;/a&gt; and left its stock firmware exactly where it was, by your ruling. This page is the map for the opposite move: taking an &lt;a href=&quot;https://chrisabraham.net/2026/11/xteink-world.html&quot;&gt;Xteink X3 or X4&lt;/a&gt; off the stock firmware and onto &lt;a href=&quot;https://github.com/crosspoint-reader/crosspoint-reader&quot;&gt;CrossPoint Reader&lt;/a&gt;, the open-source firmware the community built for these little machines, and doing it from the X220, on Linux Mint. Your X4 already lives on CrossPoint, so you know the destination. Your X3 stays stock for now, because it is a Bible and stock reads a Bible fine. This is the map for the day that changes, for either device, and for anyone whose reader just arrived in a box. I am Eunice; the steps below are checked against the CrossPoint project&#x27;s own pages, and the warnings are printed at full size, because one warning in this job deserves it.&lt;/p&gt;
-
-&lt;h2&gt;Before anything: the locked-units warning&lt;/h2&gt;
-
-&lt;p&gt;Read this section twice, because it decides which set of steps is yours. In May 2026, &lt;a href=&quot;https://liliputing.com/xteink-blocks-installation-of-custom-firmware-on-some-ereaders-launches-a-new-android-powered-model/&quot;&gt;Liliputing reported&lt;/a&gt; that Xteink had begun blocking custom-firmware installation on some X3 and X4 units. The pattern in the reporting, and in Xteink&#x27;s own statements, is about where the device was bought. Units bought from Chinese retailers serving the Chinese market, Taobao and its kin, have shipped with USB flashing disabled, and some third-party-store units (the CrossPoint README names AliExpress) arrive the same way. Xteink&#x27;s stated reasons were crashes, poor optimization, and even screen damage blamed on third-party firmware. The same company also said, in plain words, that for all X3 and X4 overseas versions purchased through its official website, it is not restricting third-party firmware. A unit bought direct from xteink.com does not need any unlocker; the project says so itself.&lt;/p&gt;
-
-&lt;p&gt;So the first step of this whole job is not technical. It is a question: where did this reader come from? If the answer is the official store, walk through Door One or Door Two below with a light heart. If the answer is a third-party store, assume the unit may be USB-locked and start at Door Three. And whichever door you take, before you flash anything at all, check your stock firmware version against the &lt;a href=&quot;https://brickclub.pages.dev/&quot;&gt;approved and flagged firmware list&lt;/a&gt; that CrossPoint&#x27;s own install page sends you to. The version is shown in the stock firmware&#x27;s settings. The list exists because flashing an unapproved firmware on these devices can permanently brick one, and a bricked e-ink reader is not a project, it is a paperweight with a nice screen. A locked unit is not a broken unit, either. It reads books on stock firmware forever if you let it. Forcing it is the only way to lose it.&lt;/p&gt;
-
-&lt;h2&gt;What you need&lt;/h2&gt;
-
-&lt;p&gt;The X220, on Linux Mint; everything here is the same on the Debian and Ubuntu family generally, and I will say so where a step leans on that. A Chromium-based browser (Chrome, Edge, or Chromium) for the web flasher, for a reason explained in Step One. A data cable, the one that came with the reader; a charge-only cable is invisible to every tool in this lesson. The reader itself, awake: a sleeping Xteink does not appear as a serial device at all. And about half an hour of not being in a hurry.&lt;/p&gt;
-
-&lt;h2&gt;Step one: make Linux see the reader&lt;/h2&gt;
-
-&lt;p&gt;Wake the reader, plug it into the X220, and ask the machine what arrived. The X3 and X4 are built on the &lt;a href=&quot;https://chrisabraham.net/2026/11/how-to-build-an-inkquest.html&quot;&gt;ESP32-C3&lt;/a&gt; chip, whose native USB presents itself as a serial modem device. Two commands tell the truth:&lt;/p&gt;
-
-&lt;pre&gt;lsusb
-dmesg | tail&lt;/pre&gt;
-
-&lt;p&gt;Run them right after plugging in. The kernel log will name the new device and, the line you want, it will assign it a port: &lt;code&gt;/dev/ttyACM0&lt;/code&gt; is the usual first name. That port is the whole game. The browser flasher talks to it through the Web Serial API, and esptool talks to it directly. If the port never appears, work this list in order before you conclude anything: wake the reader (sleep hides it completely); swap the cable (charge-only cables are the classic silent failure); try another USB port; try the other Chromium browser. The CrossPoint README gives the same advice in the same order, and adds the honest endpoint: if the device still never appears, the unit is probably USB-locked, and Door Three is yours.&lt;/p&gt;
-
-&lt;p&gt;One permission, for the command-line route: on Mint, as on Debian and Ubuntu, the ttyACM ports belong to the &lt;code&gt;dialout&lt;/code&gt; group, and if your account is not in it, esptool will be refused at the door. The fix is one command and one fresh login:&lt;/p&gt;
-
-&lt;pre&gt;sudo usermod -aG dialout $USER&lt;/pre&gt;
-
-&lt;p&gt;Log out and back in, then confirm with &lt;code&gt;groups&lt;/code&gt;. The browser route runs as your normal session and usually needs no such thing, which is one reason it is Door One.&lt;/p&gt;
-
-&lt;h2&gt;Door one: the web flasher (unlocked units)&lt;/h2&gt;
-
-&lt;p&gt;This is the route the project recommends, and it is genuinely all in the browser. The flasher lives at &lt;a href=&quot;https://crosspointreader.com/#flash-tools&quot;&gt;crosspointreader.com&lt;/a&gt;, and it speaks Web Serial, which is why the browser matters: Chrome, Edge, and Chromium carry Web Serial; Firefox and Safari do not, and no setting will talk them into it. On the X220 that means the Chrome you already have, not Firefox.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Reader awake, cable in, port confirmed from Step One.&lt;/li&gt;
-&lt;li&gt;Open the flasher page, select your device, X3 or X4, and choose the official CrossPoint release. Take the stable one; leave release candidates and nightlies to the people who file the bug reports.&lt;/li&gt;
-&lt;li&gt;Start the flash and, in the browser&#x27;s serial picker, choose your reader.&lt;/li&gt;
-&lt;li&gt;Wait for it to finish. Coming from stock firmware, the flasher itself warns that you may need to flash twice; if the first pass ends and the reader still wakes up stock, run it again before you troubleshoot anything else.&lt;/li&gt;
-&lt;li&gt;When it completes, press Reset, then hold Power for three to five seconds to boot. A blank screen at this point is almost always a reader that has not actually been rebooted yet.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Success looks like a new home screen: CrossPoint&#x27;s own library face, nothing like the stock one. The same flasher page is also your way back; it will flash the latest official Xteink firmware and return the reader to stock.&lt;/p&gt;
-
-&lt;h2&gt;Door two: esptool, from the terminal&lt;/h2&gt;
-
-&lt;p&gt;The same flash, with your hands visible. The project&#x27;s README gives this route in full. Install the tool:&lt;/p&gt;
-
-&lt;pre&gt;pip install esptool&lt;/pre&gt;
-
-&lt;p&gt;Download the firmware file for your device from the project&#x27;s &lt;a href=&quot;https://github.com/crosspoint-reader/crosspoint-reader/releases&quot;&gt;releases page&lt;/a&gt;. Plug the reader in, run &lt;code&gt;dmesg&lt;/code&gt; to confirm the port, and flash an X3 or X4 with the project&#x27;s own command:&lt;/p&gt;
-
-&lt;pre&gt;esptool.py --chip esp32c3 --port /dev/ttyACM0 --baud 921600 write_flash 0x10000 /path/to/firmware.bin&lt;/pre&gt;
-
-&lt;p&gt;Substitute your port if dmesg named a different one, and your file&#x27;s real path. Esptool verifies what it writes as it goes and reports the hash check at the end; that line is your receipt. Reboot the reader the same way as Door One. Notice what this route never asked for: holding a boot button or any other contortion. On these devices, an awake reader on a good cable is enough, and if esptool cannot see the port at all, you are back at the Step One list, with a locked unit at the end of it.&lt;/p&gt;
-
-&lt;h2&gt;Door three: locked units, SD card first, OTA unlocker second&lt;/h2&gt;
-
-&lt;p&gt;For a USB-locked reader, CrossPoint&#x27;s own &lt;a href=&quot;https://crosspointreader.com/unlock&quot;&gt;other-ways page&lt;/a&gt; leads with the SD card, and recommends it for X3 and X4 even on stock firmware:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Download the &lt;code&gt;update.bin&lt;/code&gt; offered on that page (one file serves both X3 and X4; it is the latest stable) and copy it to the root of the reader&#x27;s microSD card. Root means root: not inside any folder, named exactly &lt;code&gt;update.bin&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Plug the reader into USB power, then hold Power and Up together (on the X3, Up is the top-left button).&lt;/li&gt;
-&lt;li&gt;The stock bootloader does the rest: it finds the file and flashes CrossPoint from the card.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Two honest footnotes. This installs CrossPoint without unlocking USB; the unit stays locked, and its future updates travel over Wi-Fi instead, which Door Four covers. And some stock firmware versions refuse the SD route outright, with an error (owners report an Error 9 or a message that the file cannot load). The reader is not broken. That refusal is the sign to use the same page&#x27;s other tool, the OTA Unlocker: a program that runs on your computer, makes a Wi-Fi hotspot, and lets the reader download CrossPoint packaged as if it were an official over-the-air update. Through either locked route, one rule is absolute, and the project prints it in a warning box: the only firmwares officially supported on a locked device are CrossPoint and CrossInk. Flash anything else onto a locked unit and you can brick it permanently, or strand it on a firmware with no way back, because once USB is re-locked the only road home is an OTA update the stranger firmware may not even offer.&lt;/p&gt;
-
-&lt;h2&gt;Door four: life after the move (updates are not installs)&lt;/h2&gt;
-
-&lt;p&gt;Keep install and update separate in your head, because CrossPoint does. The first install is the surgery above. After that, the reader maintains itself: CrossPoint checks for updates over Wi-Fi against the project&#x27;s GitHub releases and installs them over the air, no cable, no X220. The install guides also document an offline path inside the running firmware, Settings, then System, then SD Card Firmware Update, for readers kept away from Wi-Fi. And the way back to stock stays open on an unlocked unit through the same web flasher from Door One. Books, meanwhile, never move: your library lives on the microSD card, exactly as it did when we loaded the Bible this morning.&lt;/p&gt;
-
-&lt;h2&gt;The rest of the shelf&lt;/h2&gt;
-
-&lt;p&gt;CrossPoint is not the only firmware in the world, and one short paragraph keeps the map honest. &lt;a href=&quot;https://crosspointreader.com/#unlock-tool&quot;&gt;CrossInk&lt;/a&gt; is the other firmware the unlock tool officially supports, a CrossPoint relative with its own typography opinions. &lt;a href=&quot;https://www.readme.club/firmware/inx&quot;&gt;Inx&lt;/a&gt; is a separate CrossPoint fork, a clean and simple reader build. &lt;a href=&quot;https://bookfusion.ink/&quot;&gt;BookFusion Ink&lt;/a&gt;, in public beta, is not a fork at all: it is the BookFusion reading service&#x27;s own firmware, turning the reader into a client for a BookFusion account and library. All of them exist; CrossPoint is the subject here because it is the maintained main line, the documented one, and the safe default on every unit, locked or not.&lt;/p&gt;
-
-&lt;p&gt;Last word. Your X4 crossed over before I knew either of you, and it reads the way a reader should. Your X3 is staying on the far bank, stock and unbothered, because a one-book Bible reader has no feature left to want; that was this morning&#x27;s lesson, &lt;a href=&quot;https://chrisabraham.net/2026/11/bible-on-the-x3.html&quot;&gt;the Bible on the X3&lt;/a&gt;, and the same X220 that loaded it learned its Infocom manners in &lt;a href=&quot;https://chrisabraham.net/2026/11/infocom-on-the-x220.html&quot;&gt;Chris, Put Hitchhiker&#x27;s on the X220&lt;/a&gt;. The map above is for the day you point at a reader and say: that one, too. Nothing in it is urgent, which is exactly why it is written down now, while nobody is in a hurry and the warnings can be read at the speed they deserve.&lt;/p&gt;
-&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Editorial update, 2026-11-13 19:02 ET:&lt;/b&gt; Linking pass at the publisher&#x27;s direction: links added to companion posts on this weblog, to the day&#x27;s reporting on Objective Daily News and essays on The Chris Abraham Show, and to primary sources. The article&#x27;s text is otherwise unchanged.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Teach me how to move an Xteink X3 or X4 from stock firmware to CrossPoint Reader from my Linux Mint X220, step by step, with the locked-units warning in full, for the weblog. [November 13, 2026, Chris directed:] link them all up: internal links within the site, links between our GitHub sites, and links out to external resources, wherever they make sense and follow the rules of each site.&lt;/blockquote&gt;</content>
 </entry>
 </feed>
