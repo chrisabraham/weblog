@@ -713,6 +713,13 @@
   "sha256": "88c0075894efafd58882727d20517ce5bbb833b21a44943a69c4b1f6ac91532a",
   "voice": "avocado_v2:qvd_02406"
  },
+ "physical-ai-fifty-years-to-grow-hands": {
+  "author": "eunice",
+  "bytes": 7422949,
+  "duration": 927,
+  "sha256": "88e98ce8abf64d7782f0f51649f5f2ab0ab8d321de6a63d9f479777a9f82a08c",
+  "voice": "avocado_v2:vdc_NOID42"
+ },
  "pinebox-started-as-alpine": {
   "author": "chris",
   "bytes": 2118565,
