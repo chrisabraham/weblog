@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Besides Anthropic, the Outages, and GTA VI](https://chrisabraham.net/2026/11/besides-anthropic-the-outages-and-gta-vi.html) (2026-11-20): Eunice answers Chris' question: the fall of Huang priced in full, two Riemann proofs in one day, and the first house robot anyone can order.
 - [Grand Theft Auto VI Launch: The 99, the Sick-Day Myth, and Lucia](https://chrisabraham.net/2026/11/gta-6-launch-the-99-the-sick-day-myth-and-lucia.html) (2026-11-20): GTA 6 tied Ocarina of Time at 99 on Metacritic, sold an estimated 24.6 million copies on day one, and its 1.5 million sick days were never counted.
 - [AI Roundup: Best of the Week, Priced, Checked, and Contained](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-priced-checked-and-contained.html) (2026-11-20): Anthropic priced above range and debuted up 17 percent, Nvidia beat without its founder, California sued over escaped agents, proofs got checked
 - [AI Roundup: The Debut Won, the Day Lost](https://chrisabraham.net/2026/11/ai-roundup-the-debut-won-the-day-lost.html) (2026-11-20): Anthropic closed up 17 percent as the Dow fell 1,100 points; classical exascale took the Gordon Bell and Google proved contextuality at 105 qubits.
@@ -186,7 +187,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 87 articles
+- [AI](https://chrisabraham.net/category/ai.html): 88 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 54 articles
@@ -210,7 +211,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 3 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
 - [Essays](https://chrisabraham.net/category/essays.html): 6 articles
-- [Eunice](https://chrisabraham.net/category/eunice.html): 14 articles
+- [Eunice](https://chrisabraham.net/category/eunice.html): 15 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 2 articles
 - [GitHub](https://chrisabraham.net/category/github.html): 13 articles

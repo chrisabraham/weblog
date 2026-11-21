@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A house with a wall switch, a camera eye, and a robot hand holding a towel</title>
+<desc>Doodle of a house outline containing three eras of home automation: an X10 wall switch, a camera eye, and a robot hand at last picking up a wet towel</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#b58900" stroke-width="3" fill="none" stroke-linecap="round">
+<path d="M36 108 L120 40 L204 108"/>
+<line x1="52" y1="96" x2="52" y2="204"/>
+<line x1="188" y1="96" x2="188" y2="204"/>
+<line x1="40" y1="204" x2="200" y2="204"/>
+<rect x="66" y="128" width="26" height="40" rx="4"/>
+<line x1="79" y1="138" x2="79" y2="150" stroke="#dc322f"/>
+<circle cx="79" cy="158" r="2.5" fill="#b58900"/>
+<path d="M104 118 C116 106 136 106 148 118 C136 130 116 130 104 118 Z"/>
+<circle cx="126" cy="118" r="6"/>
+<circle cx="126" cy="118" r="2" fill="#b58900"/>
+<path d="M158 128 C156 146 158 158 166 168" />
+<path d="M166 124 C166 142 168 156 176 166"/>
+<path d="M176 126 C178 142 180 154 186 162"/>
+<path d="M186 132 C190 144 194 152 198 156" stroke="#dc322f"/>
+<path d="M154 168 C166 160 186 160 200 170 C194 178 188 176 186 184 C176 178 164 180 156 186 C150 178 148 174 154 168 Z" fill="#eee8d5"/>
+<path d="M160 190 C170 186 184 186 194 190" stroke-dasharray="4 4"/>
+</g>
+</svg>
