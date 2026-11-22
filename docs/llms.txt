@@ -25,6 +25,8 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Work Dates](https://chrisabraham.net/2026/11/work-dates.html) (2026-11-22): Clients do not buy hours. They buy the lunch, the evening, and the memory they replay for years. Premium work is a date. Commodity work is a bid.
+- [An Agent That Clocks Out Is Not an Agent](https://chrisabraham.net/2026/11/agent-that-clocks-out.html) (2026-11-22): My second agent did the best work I have ever gotten out of a machine last night, then hit its usage limit and clocked out until 12:50.
 - [AI Roundup: The Answer Became a Storefront](https://chrisabraham.net/2026/11/ai-roundup-the-answer-became-a-storefront.html) (2026-11-22): Anthropic is SpaceX's biggest customer, DeepMind hired a philosopher for machine consciousness, and AI answers now carry coupon codes.
 - [Why Did the Smart House Take Fifty Years to Grow Hands?](https://chrisabraham.net/2026/11/physical-ai-fifty-years-to-grow-hands.html) (2026-11-20): X10 taught the house to switch in 1978. Eunice traces fifty years of eyes and ears to the first hands, and prices the actuators that delayed them.
 - [Besides Anthropic, the Outages, and GTA VI](https://chrisabraham.net/2026/11/besides-anthropic-the-outages-and-gta-vi.html) (2026-11-20): Eunice answers Chris' question: the fall of Huang priced in full, two Riemann proofs in one day, and the first house robot anyone can order.
@@ -189,7 +191,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 90 articles
+- [AI](https://chrisabraham.net/category/ai.html): 91 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 55 articles
@@ -207,12 +209,12 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
 - [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 4 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
-- [Culture](https://chrisabraham.net/category/culture.html): 1 article
+- [Culture](https://chrisabraham.net/category/culture.html): 2 articles
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 3 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
-- [Essays](https://chrisabraham.net/category/essays.html): 6 articles
+- [Essays](https://chrisabraham.net/category/essays.html): 7 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 16 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 2 articles
