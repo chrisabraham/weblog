@@ -307,6 +307,13 @@
   "sha256": "bac58b10549e8813c53cd603b46eda9e638f0bd932779bdec9c15a0d8476076b",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-slop-is-good-enough": {
+  "author": "chris",
+  "bytes": 4205797,
+  "duration": 525,
+  "sha256": "20bf91bc1b75d81d0f8416b452127a9a2016892724982c3bc3c3f73deef24ea3",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-slutty-day-two": {
   "author": "chris",
   "bytes": 4942885,
@@ -1089,6 +1096,13 @@
   "bytes": 3141733,
   "duration": 392,
   "sha256": "d132b832733de4d9f1f17eb425371f3075151d9260da2b97c7538dc9f59f432b",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "work-dates": {
+  "author": "chris",
+  "bytes": 6682981,
+  "duration": 835,
+  "sha256": "2999e25576199dbb615da655214dd350cfb090b60700b480f0d9b78f109f1379",
   "voice": "avocado_v2:qvd_02406"
  },
  "working-loud": {
