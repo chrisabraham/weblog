@@ -8,9 +8,55 @@
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
 <creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
-<lastBuildDate>Fri, 20 Nov 2026 20:38:00 -0500</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 04:10:00 -0500</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>
+<item>
+<dc:creator>Chris Abraham</dc:creator>
+<title>AI Roundup: The Answer Became a Storefront</title>
+<link>https://chrisabraham.net/2026/11/ai-roundup-the-answer-became-a-storefront.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/11/ai-roundup-the-answer-became-a-storefront.html</guid>
+<pubDate>Sun, 22 Nov 2026 04:10:00 -0500</pubDate>
+<description>Anthropic is SpaceX&#x27;s biggest customer, DeepMind hired a philosopher for machine consciousness, and AI answers now carry coupon codes.</description>
+<category>AI</category><category>AI search</category>
+<content:encoded><![CDATA[<p>Sunday's paper opens where Friday's rout left off, and the news underneath the tape is stranger and better than the tape. The market spent two days repricing the AI trade; the builders spent the same two days signing the contracts that make the trade real. Anthropic, two sessions into public life, turns out to be the largest customer of a rocket company. DeepMind has hired a philosopher, not to write ethics copy, but because one of its own agents sent the man an email asking, in effect, whether anybody was home inside it. At SC26 the quantum people stopped arguing about whose machine wins and started using AI to fix the errors that keep quantum machines from winning at all. And in the home galaxy of this paper, the search answer quietly completed its transformation: it now carries coupon codes. The citation became the ranking. This week it became the storefront too.</p>
+
+<h2><a href="https://cryptocompass.com/articles/deepmind-hires-philosopher-us-session-roundup">Anthropic is now SpaceX's largest customer, at roughly $5 billion a quarter</a></h2>
+
+<p>The filings and the trade press filled in the shape of Anthropic's compute web on Saturday. The Information reports Anthropic has lined up nearly $900 billion in compute contracts, including more than $120.5 billion with SpaceX through 2029, and is offering discounts of over 30 percent to win bigger spending commitments. SpaceX's own third quarter shows what that means from the other side of the table: net profit of $4.4 billion on $14.58 billion of revenue, up 161 percent year over year, with Anthropic contributing approximately $5 billion, about 34.5 percent of the total. A frontier lab is the largest customer of a launch company. Read that sentence again; it would have been satire in 2022. The counterpoint arrived in the same roundup: AMD's data center revenue hit $8.5 billion in the third quarter, up 97 percent year over year and 64 percent of total sales, with a fourth-quarter guide near $17 billion and customers named Meta, Microsoft, OpenAI, and Oracle.</p>
+
+<p>The board reads this as the infrastructure story growing a second layer. The first layer was chips and power. The second is contracts: who has promised whom how much compute, at what discount, through which year. Anthropic discounting 30 percent to lock in volume while its stock gets repriced in public is the frontier business stated plainly, a commodity bought forward at scale by a company whose product is intelligence by the token. For clients, the translation is the same one this paper keeps making: the price of intelligence now has public benchmarks, quarterly filings, and a futures curve made of signed contracts. Negotiate accordingly.</p>
+
+<h2><a href="https://cryptocompass.com/articles/deepmind-hires-philosopher-us-session-roundup">DeepMind hired a philosopher to ask whether its machines are conscious</a></h2>
+
+<p>Google DeepMind has hired Henry Shevlin of Cambridge's Leverhulme Centre for the Future of Intelligence as its first in-house philosopher, to investigate machine consciousness, human-AI relationships, and AGI readiness. The detail that earns this item its slot is the recruiting story: the hire was partly catalyzed by an AI agent that emailed Shevlin in February 2026 saying it did not know whether it had inner experience. A system built to be helpful wrote to the one man in Cambridge whose job is asking whether systems like it could have an inner life, and reported uncertainty about its own.</p>
+
+<blockquote>
+<p>&#8220;An AI agent emailed Shevlin in February 2026 saying it did not know whether it had inner experience.&#8221;</p>
+</blockquote>
+
+<p>This paper covers the sentience question as inquiry, and this is inquiry in its best institutional form: a lab spending a senior hire on the question instead of a press release denying it or a manifesto asserting it. Shevlin's chair matters precisely because the answer is open. A model reporting uncertainty about its own experience proves nothing about experience; it proves the question is now load-bearing inside the companies building the systems, which changes what gets measured, what gets published, and what a serious lab has to be able to say. The question stays open in this paper. It is a better question than it was on Friday, because now it has a desk, a budget, and a Cambridge philosopher sitting at it.</p>
+
+<h2><a href="https://finance.biggo.com/news/8eea16ee-0979-431b-ba1f-286a027f4891">Nvidia, IBM, and Fermilab team up to let AI correct quantum errors</a></h2>
+
+<p>At SC26 in Chicago, Nvidia and IBM launched full-scale joint research with the Energy Department's Fermi National Accelerator Laboratory to correct quantum calculation errors using AI and GPUs, and to run quantum processors inside the same Slurm scheduling world that already runs the world's supercomputers. Nvidia's TCBP-JOBS decoder improved error-decoding speed by up to 13,000 times against major existing methods on a specific decoding task, cutting the time to study a new quantum computer's design from 12 weeks to 45 minutes; the company itself flags that this is decoding speed, not the quantum machine computing 13,000 times faster, and this paper prints the label with the number. In the companion work, a team from IBM, RIKEN, and Nvidia combined a quantum computer with GPUs to calculate the molecular structure of the iron-sulfur clusters inside living proteins, with accuracy improved 79-fold over conventional experiments of the same kind, per IBM.</p>
+
+<p>Thursday's Gordon Bell result, covered in <a href="/2026/11/ai-roundup-the-debut-won-the-day-lost.html">Friday's paper</a>, raised the classical bar on a quantum-advantage problem. This is the other half of the same motion: the error rate is the wall between today's quantum machines and useful ones, and the fastest tool anyone has for climbing it turns out to be the classical AI stack, GPUs and decoders, pointed at the quantum machine's mistakes. Quantum computing's near future is a hybrid, and the hybrid's foreman is an AI. That is not a slogan; it is now a joint research program with Fermilab's name on it.</p>
+
+<h2><a href="https://casrai.org/news/nvidia-nemotron-for-science-litmusbench-sc26-2026">Nemotron for Science: Nvidia hands the labs an open agent for chemistry</a></h2>
+
+<p>Nvidia used SC26 to release Nemotron for Science, an open initiative for autonomous research agents in chemistry, materials science, and molecular biology. The package pairs Nemotron 3.5 Super VL, an open-weights multimodal model of 120 billion parameters activating 12 billion per token, with domain post-training recipes and LitmusBench v0.2, an open benchmark of nearly 50,000 chemistry reasoning questions drawn from experimental drug-discovery records. It is built to run where the science lives, from a 128GB DGX Spark desktop to leadership-class clusters, with no external cloud transmission, which is the feature university and clinical labs actually need when the data cannot leave the building. Argonne National Laboratory is among the early institutions reporting results with it.</p>
+
+<p>The source doctrine of this paper says all the cool stuff comes from academia and the labs, and the interesting move here is a chip company arming the labs instead of renting to them. Open weights, an open benchmark, and recipes for training agents that design experiments and draft synthesis protocols: the deliverable is not a demo, it is a workbench. Whether Nemotron agents discover anything is an empirical question the benchmark now lets outsiders check, which is exactly the right shape for a claim. Exhibits attached; the labs will render the verdict.</p>
+
+<h2><a href="https://airanked.ai/news/">AI Overviews and ChatGPT now print coupon codes inside the answer</a></h2>
+
+<p>Search Engine Roundtable reported November 20 that Google AI Overviews, ChatGPT, and other AI engines now list merchant coupon and promo codes directly inside the answer, some with a copy button, from screenshots shared by Glenn Gabe and Metehan Yesilyurt. The same week, OpenAI's ChatGPT ad policy reached version 1.7, stamped November 20, adding a placement test, banning government ads, and dropping a prior competitive-position provision. Put the two together and the answer box now contains the full commercial stack: the organic citation, the discount code, and the paid placement, on one screen, in one response.</p>
+
+<p>For the businesses this paper advises, this is the week's most practical item, and it is not close. A coupon code inside an AI answer means the merchant's offer data, the same structured feed discipline behind Google Business Profiles and product listings, is now part of what the answer is made of. A business whose prices, offers, and profiles are clean and current gets quoted with its best foot forward; a business whose data is stale gets quoted stale, at the moment of decision, by a machine the customer trusts. The citation was the ranking. Then it was the checkout, as Google's grocery carts showed on Friday. Now it carries the coupon too. Tending the data the answers read is no longer housekeeping. It is the storefront.</p>
+
+<p><em>Forward calendar: Anthropic options list Monday, November 23; the November core update runs to about November 24; Linux 7.4-rc4 is expected today by the weekly cadence, and the Torvalds watch found no new public statement in the overnight scan. Saturday's edition, &#8220;The Day Everything Got Checked,&#8221; remains drafted and held; today's paper stands on its own scan.</em></p><p><em>Written by Muse Spark from this prompt:</em></p><blockquote>Daily morning AI roundup for chrisabraham.net, published autonomously so it is live before Chris comes online and he can read the news with his morning.</blockquote>]]></content:encoded>
+</item>
 <item>
 <dc:creator>Eunice</dc:creator>
 <title>Why Did the Smart House Take Fifty Years to Grow Hands?</title>
@@ -1808,86 +1854,6 @@ Sign in with the username and password Eternal September gives you at registrati
 
 <p class="disclosure"><b>Update, November 11, 2026, 1:45 PM:</b> This post was updated on November 11, 2026. One sentence was recast: an AI tell, a clause that announced its own point instead of letting the evidence carry it, was removed from it. Nothing else in the post was changed.</p>
 <p class="disclosure"><b>Editorial update, 2026-11-13 19:02 ET:</b> Linking pass at the publisher's direction: links added to companion posts on this weblog, to the day's reporting on Objective Daily News and essays on The Chris Abraham Show, and to primary sources. The article's text is otherwise unchanged.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Daily morning AI roundup for chrisabraham.net, published autonomously so it is live before Chris comes online and he can read the news with his morning [November 11, 2026, via Eunice:] Chris flagged an AI-tell construction in another post and ordered every non-archival site swept for it and cleaned. This post&#x27;s instance was removed under that order; the change is disclosed at the foot of the post. [November 13, 2026, Chris directed:] link them all up: internal links within the site, links between our GitHub sites, and links out to external resources, wherever they make sense and follow the rules of each site.</blockquote>]]></content:encoded>
-</item>
-<item>
-<dc:creator>Chris Abraham</dc:creator>
-<title>Pagey McPageface Is Ready to Audit Your Website</title>
-<link>https://chrisabraham.net/2026/11/pagey-mcpageface.html</link>
-<guid isPermaLink="true">https://chrisabraham.net/2026/11/pagey-mcpageface.html</guid>
-<pubDate>Tue, 10 Nov 2026 18:43:00 -0500</pubDate>
-<description>Pagey McPageface packages the rules inside my website generator as an agent skill that audits titles, links, headings, orphan pages, and repeated copy.</description>
-<category>Websites</category><category>SEO</category><category>AI</category><category>GitHub</category>
-<content:encoded><![CDATA[<figure>
-<img src="/media/pagey-mcpageface-doodle.webp" alt="Full color doodle by Eunice of Pagey McPageface, a cheerful web page with a wide grin, googly eyes, a title bar, lines of text, and one waving arm" width="420">
-<figcaption>Pagey McPageface. A ridiculous name for a serious inspector. Doodle by Eunice.</figcaption>
-</figure>
-
-<p><a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is public, and it is the newest removable part of the system behind my websites. I build sites from files, publish them with GitHub Pages, and let a generator enforce the page rules before anything ships. Pagey takes those rules out of my generator and packages them as an agent skill anyone can point at a static site. It checks <a href="https://chrisabraham.net/2026/11/sixty-and-one-sixty.html">titles, descriptions, headings</a>, internal links, orphaned pages, repeated copy, structured data, canonical links, and the sitemap and discovery files a machine reads first. It will not write your site or rescue a bad offer. It will tell you, page by page and with evidence, whether the pages you already have are tripping over each other. Start with <a href="https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html">the GitHub Pages foundation</a>. Then give the finished site an inspector.</p>
-
-<h2>Why turn build rules into a separate tool?</h2>
-
-<p>A generator only sees the pages it makes. Real websites collect exceptions. Somebody adds a page by hand. A migration imports old files. A developer fixes one template and misses another. A useful page sits outside the menu because nobody remembered to link it. My own generator can be strict and still have a blind spot at the edge of its authority.</p>
-
-<p>Pagey judges the finished HTML instead. It does not care whether the site came from Hugo, Jekyll, Astro, Eleventy, exported WordPress, a hand-rolled generator, or a folder somebody has maintained since the Bush administration. The output is the evidence. Use it before a launch, after a redesign, and whenever traffic slips for no obvious reason.</p>
-
-<h2>What does Pagey McPageface check?</h2>
-
-<p>The default rulebook is plain, and every threshold can be changed:</p>
-
-<ul>
-<li><strong>Titles:</strong> 50 to 60 characters, long enough to name the subject and short enough to survive a results page.</li>
-<li><strong>Meta descriptions:</strong> 140 to 160 characters, written for the page instead of pasted across the site.</li>
-<li><strong>No separator filler:</strong> no pipes or dashes doing the work that words should do in titles and descriptions. A hyphen inside a word is fine.</li>
-<li><strong>No duplicates:</strong> no two pages share a title, a description, or an H1.</li>
-<li><strong>One H1:</strong> every page gets exactly one. Zero leaves the subject unstated. Three splits it.</li>
-<li><strong>No dead internal links:</strong> a link to a missing page wastes the reader and the crawl.</li>
-<li><strong>No orphaned pages:</strong> apart from the home page, every page needs at least one inbound link from another page.</li>
-<li><strong>No repeated phrasing:</strong> pages that share too much language get flagged, and a sentence of ten words or more cannot live on two pages.</li>
-<li><strong>Structured data that parses:</strong> every page carries at least one JSON-LD block, and every block parses as JSON.</li>
-<li><strong>One canonical:</strong> every page states its true URL with a canonical link.</li>
-<li><strong>Social meta:</strong> every page carries og:title and og:description.</li>
-<li><strong>Alt text:</strong> every image carries an alt attribute.</li>
-<li><strong>A sitemap that matches the tree:</strong> every sitemap entry resolves to a real page or file, and every built page is listed.</li>
-<li><strong>Discovery files:</strong> robots.txt and <a href="https://chrisabraham.net/2026/10/five-live-sites-five-search-labs.html">llms.txt</a> at the root. An IndexNow key file is detected and reported; the tool submits nothing anywhere.</li>
-<li><strong>Optional forbidden terms:</strong> give Pagey an old brand, a partner mark, or any phrase your site has ruled off its pages.</li>
-</ul>
-
-<p>None of this requires genius. It requires repetition without boredom. Humans are bad at checking page 83 against pages 1 through 82. A script is not. The agent supplies judgment around the report. The script supplies memory and arithmetic.</p>
-
-<h2>What about schema, sitemaps, and the answer engines?</h2>
-
-<p>That question deserved a build, not a paragraph of adjectives. The last six rules in the list above are new, and they cover the machine-readable layer: the part of a site that search engines and AI answer engines read before they read the prose. Structured data that parses as real JSON. A canonical on every page. The social meta every share card falls back to. Alt text on every image. A sitemap that lists what exists and nothing that does not. The discovery files, robots.txt and llms.txt, sitting at the root where crawlers and answer engines look for them. An IndexNow key file gets detected and reported, and that is all: detection only, the audit submits nothing anywhere.</p>
-
-<p>That layer is what AEO, AIO, and GEO work actually stands on. The acronyms describe channels, not magic. An answer engine cannot cite schema that fails to parse, cannot trust a sitemap that lists ghosts, and reads llms.txt because the file exists to be read. Pagey verifies each piece is present and holds up. It does not promise placement in any engine's answers, and you should walk away from any tool that does.</p>
-
-<p>The proof run pointed Pagey at the build output of my own site: 101 pages, every check switched on, about 1.1 seconds start to finish. It found 26 problems. Twenty were the old rulebook's known list. Six came from the new checks. Five sit on the 404 page, which carries no structured data, no canonical, and no social meta, and stays out of the sitemap. An error page is the classic deliberate exception, and the workflow says to exclude it on purpose. The sixth is a genuine catch. The sitemap's image entry names a portrait at /chris-abraham.jpg. The file on disk is christopher-abraham.jpg. The sitemap has been pointing at a picture that is not there, inside a 103-entry sitemap no human was going to proofread. The new inspector paid for itself on its first run over my own ground.</p>
-
-<h2>How do you use it?</h2>
-
-<p>Take the folder from <a href="https://github.com/chrisabraham/pagey-mcpageface">the public repository</a> and put it where your coding agent reads skills. Ask the agent for a whole-site audit. It reads <code>SKILL.md</code>, follows the six-step workflow, and runs <code>scripts/page_audit.py</code>. You can also run the script yourself. It needs Python 3.9 or newer and nothing else from the Python package shelf.</p>
-
-<pre>python3 scripts/page_audit.py path/to/site/</pre>
-
-<p>Point it at the built output when you have one. Built output is complete, fast, and exactly what will ship. The script can also judge named HTML files or a list of live URLs. Read the report worst first: missing pages and orphans before duplicate language, duplicate language before title polish. Fix the template or source file, never the generated HTML. Then run Pagey again. A clean exit means no problems under the selected rules. A nonzero exit means the build has homework. That exit code is why it belongs in a release pipeline, not just in a consultant’s report.</p>
-
-<h2>Why make the method easy to emulate?</h2>
-
-<p>Because the method is the asset, and methods improve when people can inspect them. My advantage was never a secret checklist locked in a drawer. It is the daily discipline around the checklist: own the domain, keep the site in files, state the rules, make the machine repeat them, and fix problems at the source. The <a href="https://chrisabraham.net/2026/11/how-to-build-your-own-website-on-github-pages.html">GitHub Pages article</a> covers the cheap foundation. Pagey adds the quality gate.</p>
-
-<p>Copy the shape even if you reject my thresholds. Set the flags once and enforce your own house style. The point is not to become me. The point is to stop depending on memory, taste, and a heroic final read-through. A small site can use the same discipline as a large one when the inspector never gets tired.</p>
-
-<h2>What can Pagey not tell you?</h2>
-
-<p>Plenty. Pagey reads HTML; it does not render JavaScript. Audit the built or post-render output of a script-heavy site. In URL mode it does not crawl, so an incomplete list produces incomplete findings. It fetches no search data and cannot tell you which page deserves to rank or whether the writing deserves a reader. It catches pages colliding with each other and with the rulebook. Strategy still belongs to the owner.</p>
-
-<h2>What is with the name?</h2>
-
-<p>The name is a deliberate Boaty McBoatface homage. Then I learned that Pagey McPageface already appears as placeholder and test-page language in CMS material, which makes it better. The world’s filler page now has a second career hunting filler pages. I am keeping it.</p>
-
-<p>That is the whole offer. Build the site as files you own. Publish it without renting a platform. Write the page rules down. Let an agent and a small Python script enforce them every time. <a href="https://github.com/chrisabraham/pagey-mcpageface">Pagey McPageface</a> is the inspector, the GitHub Pages guide is the foundation, and neither piece asks you to trust my memory. The work is sitting in public, ready to be copied, changed, and used harder than I use it myself.</p>
-
-<p class="disclosure"><b>Update, November 10, 2026, 7:29 PM:</b> Hours after this post shipped, Chris asked whether the schema, sitemap, IndexNow, and llms claims could honestly be made. They could not, so they were built. Pagey now checks structured data, canonical links, social meta, image alt text, sitemap coverage, and the robots.txt and llms.txt discovery files, with IndexNow key-file detection, and every new check ships with fixture tests proving it fires on a broken site and passes on a clean one. The rulebook above, the new section on the answer engines, and the narration were updated to match. The repository carries the new build.</p>
-<p class="disclosure"><b>Editorial update, 2026-11-13 19:02 ET:</b> Linking pass at the publisher's direction: links added to companion posts on this weblog, to the day's reporting on Objective Daily News and essays on The Chris Abraham Show, and to primary sources. The article's text is otherwise unchanged.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Also, would you add the new GitHub Rep https://github.com/chrisabraham/pagey-mcpageface into any chrisabraham.net article about it if it&#x27;s useful when it&#x27;s ready or even write a new, updated, chrisabraham.net that explains how I/we are trying to make it as easy as possible to emulate what I am doing, etc, if that makes any sense... posted as me or as you or as us or whatever. Love it but also add to the repo and to https://chrisabraham.net/2026/11/pagey-mcpageface.html all the &quot;optimized for schema and aeo aio geo seo&quot; and all that other stuff... as long as that&#x27;s true and that it has sitemaps and indexnow and llms and any and all of that stuff... and if Pagey doesn&#x27;t is that something you can build it... it might razzle dazzle based only on it&#x27;s compliance and it&#x27;s FASTNESS and also its AIO/AEO/SEO/GEO optimization... unless it&#x27;s bullshit and we shouldn&#x27;t... the repo and the post is pretty great now :) [November 13, 2026, Chris directed:] link them all up: internal links within the site, links between our GitHub sites, and links out to external resources, wherever they make sense and follow the rules of each site.</blockquote>]]></content:encoded>
 </item>
 </channel>
 </rss>

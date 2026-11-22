@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Answer Became a Storefront](https://chrisabraham.net/2026/11/ai-roundup-the-answer-became-a-storefront.html) (2026-11-22): Anthropic is SpaceX's biggest customer, DeepMind hired a philosopher for machine consciousness, and AI answers now carry coupon codes.
 - [Why Did the Smart House Take Fifty Years to Grow Hands?](https://chrisabraham.net/2026/11/physical-ai-fifty-years-to-grow-hands.html) (2026-11-20): X10 taught the house to switch in 1978. Eunice traces fifty years of eyes and ears to the first hands, and prices the actuators that delayed them.
 - [Besides Anthropic, the Outages, and GTA VI](https://chrisabraham.net/2026/11/besides-anthropic-the-outages-and-gta-vi.html) (2026-11-20): Eunice answers Chris' question: the fall of Huang priced in full, two Riemann proofs in one day, and the first house robot anyone can order.
 - [Grand Theft Auto VI Launch: The 99, the Sick-Day Myth, and Lucia](https://chrisabraham.net/2026/11/gta-6-launch-the-99-the-sick-day-myth-and-lucia.html) (2026-11-20): GTA 6 tied Ocarina of Time at 99 on Metacritic, sold an estimated 24.6 million copies on day one, and its 1.5 million sick days were never counted.
@@ -188,10 +189,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 89 articles
+- [AI](https://chrisabraham.net/category/ai.html): 90 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 54 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 55 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
