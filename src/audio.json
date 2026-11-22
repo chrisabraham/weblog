@@ -48,6 +48,13 @@
   "sha256": "51eb4ac575261465f3663956455b1327dc92545961ce0894817a120b850d4613",
   "voice": "avocado_v2:qvd_02406"
  },
+ "agent-that-clocks-out": {
+  "author": "chris",
+  "bytes": 2327269,
+  "duration": 290,
+  "sha256": "16941e1a112a47a2d5c67ed2161b0f4e6fa14be166e4a86c5a6ef5f5efcbaa44",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-overviews-causal-click-loss": {
   "author": "eunice",
   "bytes": 13508197,
@@ -1082,6 +1089,13 @@
   "bytes": 3141733,
   "duration": 392,
   "sha256": "d132b832733de4d9f1f17eb425371f3075151d9260da2b97c7538dc9f59f432b",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "work-dates": {
+  "author": "chris",
+  "bytes": 6670693,
+  "duration": 833,
+  "sha256": "a0683ba21cf5edbe91a4600f3b8e545aeae82c5700369bfb4e57710bcd2a888a",
   "voice": "avocado_v2:qvd_02406"
  },
  "working-loud": {
