@@ -826,7 +826,7 @@ def hms(seconds):
     return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
 
 
-FEED_STUB = """<!DOCTYPE html>
+FEED_STUB = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -835,7 +835,7 @@ FEED_STUB = """<!DOCTYPE html>
 <link rel="canonical" href="{SITE_URL}/podcast.xml">
 <meta http-equiv="refresh" content="0; url={SITE_URL}/podcast.xml">
 <meta name="robots" content="noindex">
-<style>body{font-family:Georgia,serif;background:#fff;color:#222;margin:0;padding:2rem}main{max-width:640px;margin:0 auto}a{color:#0645ad}</style>
+<style>body{{font-family:Georgia,serif;background:#fff;color:#222;margin:0;padding:2rem}}main{{max-width:640px;margin:0 auto}}a{{color:#0645ad}}</style>
 </head>
 <body>
 <main>
