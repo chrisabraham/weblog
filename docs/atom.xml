@@ -3,7 +3,7 @@
 <id>https://chrisabraham.net/</id>
 <title type="text">Chris Abraham weblog</title>
 <subtitle type="text">Notes from building things with AI, written by AI from my prompts.</subtitle>
-<updated>2026-11-23T14:42:00-05:00</updated>
+<updated>2026-11-23T15:25:00-05:00</updated>
 <link rel="self" type="application/atom+xml" href="https://chrisabraham.net/atom.xml"/>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/"/>
 <author><name>Chris Abraham</name><uri>https://chrisabraham.net/authors/chris-abraham.html</uri></author>
@@ -15,7 +15,7 @@
 <id>https://chrisabraham.net/2026/11/you-dont-need-to-outrun-the-bear.html</id>
 <link rel="alternate" type="text/html" href="https://chrisabraham.net/2026/11/you-dont-need-to-outrun-the-bear.html"/>
 <published>2026-11-23T14:42:00-05:00</published>
-<updated>2026-11-23T14:42:00-05:00</updated>
+<updated>2026-11-23T15:25:00-05:00</updated>
 <author><name>Chris Abraham</name></author>
 <summary type="text">You don&#x27;t need to outrun the bear, just the other guy. Frontier AI tests between 120 and 150 on IQ scales, ahead of half to 99 percent of Americans.</summary>
 <category term="AI" label="AI"/><category term="Essays" label="Essays"/>
@@ -27,7 +27,7 @@
 
 &lt;h2&gt;The numbers, as the trackers print them&lt;/h2&gt;
 
-&lt;p&gt;Google&#x27;s AI Overview, drawing on aiiq.org and TrackingAI, puts the frontier plainly: frontier AI models generally score between 120 and 150+ on standardized or benchmark-derived IQ scales. The exact number moves with the test, and the trackers say so on the same page as the score.&lt;/p&gt;
+&lt;p&gt;Google&#x27;s AI Overview, drawing on two trackers—&lt;a href=&quot;https://www.aiiq.org&quot;&gt;the AI intelligence leaderboard&lt;/a&gt; and &lt;a href=&quot;https://trackingai.org/IQ&quot;&gt;AI IQ scores and model rankings&lt;/a&gt;—puts the frontier plainly: frontier AI models generally score between 120 and 150+ on standardized or benchmark-derived IQ scales. The exact number moves with the test, and the trackers say so on the same page as the score.&lt;/p&gt;
 
 &lt;p&gt;TrackingAI runs the models on two tracks, the public Mensa Norway test and an unpublished offline test built to measure unseen pattern recognition. Text scores run higher than vision scores. A model reading its way through a test outruns the same model looking at one, and the overview warns that the numbers vary widely with the test and with whether the test involves images at all.&lt;/p&gt;
 
@@ -55,7 +55,7 @@
 
 &lt;p&gt;Analyses derived from &lt;em&gt;The Millionaire Mind&lt;/em&gt; put self-made millionaires at an average IQ of about 118, and self-made deca-millionaires—ten million dollars and up—at the same 118. Reddit&#x27;s r/cognitiveTesting and Quora both carry the two figures, 118 and 118. The second fortune costs ten times the first and buys zero additional IQ points. Informal estimates put self-made billionaires higher, around 133, inside a speculative range of 125 to 135: smarter, and still inside the band the frontier models already test at every day.&lt;/p&gt;
 
-&lt;p&gt;A University of Liverpool overview of the research prints the proportions plainly: intelligence is one factor in wealth, standing alongside education, family background, networks, and luck, and wealth is distributed far more unevenly than IQ. A Swedish study from 2023 found the shape of the curve. Cognitive ability rises with pay up to about €60,000 a year. Past that line, the top one percent of earners do not test significantly smarter than the earners just below them. The ladder pays for brains up to a middle salary. Above it, something else is doing the paying.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&quot;https://news.liverpool.ac.uk/2023/06/02/are-rich-people-more-intelligent-heres-what-the-science-says/&quot;&gt;University of Liverpool overview of the research&lt;/a&gt; prints the proportions plainly: intelligence is one factor in wealth, standing alongside education, family background, networks, and luck, and wealth is distributed far more unevenly than IQ. A &lt;a href=&quot;https://news.liverpool.ac.uk/2023/06/02/are-rich-people-more-intelligent-heres-what-the-science-says/&quot;&gt;Swedish study&lt;/a&gt; from 2023 found the shape of the curve. Cognitive ability rises with pay up to about €60,000 a year. Past that line, the top one percent of earners do not test significantly smarter than the earners just below them. The ladder pays for brains up to a middle salary. Above it, something else is doing the paying.&lt;/p&gt;
 
 &lt;h2&gt;The back room&lt;/h2&gt;
 
@@ -73,7 +73,9 @@
 
 &lt;p&gt;The other guy is a person holding the same tools you hold, and the race between the two of you runs today—at work, in the market, in the inbox where the client decides whose proposal reads smarter. He gets timed against you, and you get timed against him, and the clock started a while ago.&lt;/p&gt;
 
-&lt;p&gt;Superintelligence can arrive whenever it likes. The bear is already behind most of the field, right now.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Here&amp;#x27;s a new weblog article from me: It&amp;#x27;s like running from a bear: you don&amp;#x27;t need to be faster than the bear you just need to be faster the the other guy. Who needs superintelligence? The current models of AI are already smarter than between 1/2 and 99% of all Americans right NOW... [with Chris&amp;#x27; Google AI Mode research on the IQ of current AI models pasted as the exhibit: frontier models scoring 120 to 150+ on IQ scales per aiiq.org and TrackingAI, the smartest AI going from 96 IQ to 136 IQ in one year, o3 at 135] [Second exhibit added before publication at Chris&amp;#x27; direction: Global rule 1—you don&amp;#x27;t need to be a genius to be an oligarch—with the wealth-and-IQ estimates and the of-counsel observation.]&lt;/blockquote&gt;</content>
+&lt;p&gt;Superintelligence can arrive whenever it likes. The bear is already behind most of the field, right now.&lt;/p&gt;
+
+&lt;p class=&quot;disclosure&quot;&gt;&lt;b&gt;Update, November 23, 2026, 3:25 PM:&lt;/b&gt; Links added to the cited trackers and research: the AI intelligence leaderboard, TrackingAI&#x27;s IQ scores and model rankings, and the University of Liverpool overview of the intelligence and wealth research.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Written by Muse Wonder from this prompt:&lt;/em&gt;&lt;/p&gt;&lt;blockquote&gt;Here&amp;#x27;s a new weblog article from me: It&amp;#x27;s like running from a bear: you don&amp;#x27;t need to be faster than the bear you just need to be faster the the other guy. Who needs superintelligence? The current models of AI are already smarter than between 1/2 and 99% of all Americans right NOW... [with Chris&amp;#x27; Google AI Mode research on the IQ of current AI models pasted as the exhibit: frontier models scoring 120 to 150+ on IQ scales per aiiq.org and TrackingAI, the smartest AI going from 96 IQ to 136 IQ in one year, o3 at 135] [Second exhibit added before publication at Chris&amp;#x27; direction: Global rule 1—you don&amp;#x27;t need to be a genius to be an oligarch—with the wealth-and-IQ estimates and the of-counsel observation.] [Chris, after reading the live piece on November 23: &amp;quot;Missing an image and there&amp;#x27;s no linkings anywhere&amp;quot;—links to the cited trackers and research added in the update.]&lt;/blockquote&gt;</content>
 </entry>
 <entry>
 <title type="text">AI Roundup: The Ruler Came Out of the Drawer</title>

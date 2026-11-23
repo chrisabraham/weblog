@@ -8,7 +8,7 @@
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
 <creativeCommons:license>https://creativecommons.org/licenses/by/4.0/</creativeCommons:license>
-<lastBuildDate>Mon, 23 Nov 2026 14:42:00 -0500</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 15:25:00 -0500</lastBuildDate>
 <docs>https://cyber.harvard.edu/rss/rss.html</docs>
 <generator>build.py, written with AI</generator>
 <item>
@@ -27,7 +27,7 @@
 
 <h2>The numbers, as the trackers print them</h2>
 
-<p>Google's AI Overview, drawing on aiiq.org and TrackingAI, puts the frontier plainly: frontier AI models generally score between 120 and 150+ on standardized or benchmark-derived IQ scales. The exact number moves with the test, and the trackers say so on the same page as the score.</p>
+<p>Google's AI Overview, drawing on two trackers—<a href="https://www.aiiq.org">the AI intelligence leaderboard</a> and <a href="https://trackingai.org/IQ">AI IQ scores and model rankings</a>—puts the frontier plainly: frontier AI models generally score between 120 and 150+ on standardized or benchmark-derived IQ scales. The exact number moves with the test, and the trackers say so on the same page as the score.</p>
 
 <p>TrackingAI runs the models on two tracks, the public Mensa Norway test and an unpublished offline test built to measure unseen pattern recognition. Text scores run higher than vision scores. A model reading its way through a test outruns the same model looking at one, and the overview warns that the numbers vary widely with the test and with whether the test involves images at all.</p>
 
@@ -55,7 +55,7 @@
 
 <p>Analyses derived from <em>The Millionaire Mind</em> put self-made millionaires at an average IQ of about 118, and self-made deca-millionaires—ten million dollars and up—at the same 118. Reddit's r/cognitiveTesting and Quora both carry the two figures, 118 and 118. The second fortune costs ten times the first and buys zero additional IQ points. Informal estimates put self-made billionaires higher, around 133, inside a speculative range of 125 to 135: smarter, and still inside the band the frontier models already test at every day.</p>
 
-<p>A University of Liverpool overview of the research prints the proportions plainly: intelligence is one factor in wealth, standing alongside education, family background, networks, and luck, and wealth is distributed far more unevenly than IQ. A Swedish study from 2023 found the shape of the curve. Cognitive ability rises with pay up to about €60,000 a year. Past that line, the top one percent of earners do not test significantly smarter than the earners just below them. The ladder pays for brains up to a middle salary. Above it, something else is doing the paying.</p>
+<p>A <a href="https://news.liverpool.ac.uk/2023/06/02/are-rich-people-more-intelligent-heres-what-the-science-says/">University of Liverpool overview of the research</a> prints the proportions plainly: intelligence is one factor in wealth, standing alongside education, family background, networks, and luck, and wealth is distributed far more unevenly than IQ. A <a href="https://news.liverpool.ac.uk/2023/06/02/are-rich-people-more-intelligent-heres-what-the-science-says/">Swedish study</a> from 2023 found the shape of the curve. Cognitive ability rises with pay up to about €60,000 a year. Past that line, the top one percent of earners do not test significantly smarter than the earners just below them. The ladder pays for brains up to a middle salary. Above it, something else is doing the paying.</p>
 
 <h2>The back room</h2>
 
@@ -73,7 +73,9 @@
 
 <p>The other guy is a person holding the same tools you hold, and the race between the two of you runs today—at work, in the market, in the inbox where the client decides whose proposal reads smarter. He gets timed against you, and you get timed against him, and the clock started a while ago.</p>
 
-<p>Superintelligence can arrive whenever it likes. The bear is already behind most of the field, right now.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Here&#x27;s a new weblog article from me: It&#x27;s like running from a bear: you don&#x27;t need to be faster than the bear you just need to be faster the the other guy. Who needs superintelligence? The current models of AI are already smarter than between 1/2 and 99% of all Americans right NOW... [with Chris&#x27; Google AI Mode research on the IQ of current AI models pasted as the exhibit: frontier models scoring 120 to 150+ on IQ scales per aiiq.org and TrackingAI, the smartest AI going from 96 IQ to 136 IQ in one year, o3 at 135] [Second exhibit added before publication at Chris&#x27; direction: Global rule 1—you don&#x27;t need to be a genius to be an oligarch—with the wealth-and-IQ estimates and the of-counsel observation.]</blockquote>]]></content:encoded>
+<p>Superintelligence can arrive whenever it likes. The bear is already behind most of the field, right now.</p>
+
+<p class="disclosure"><b>Update, November 23, 2026, 3:25 PM:</b> Links added to the cited trackers and research: the AI intelligence leaderboard, TrackingAI's IQ scores and model rankings, and the University of Liverpool overview of the intelligence and wealth research.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Here&#x27;s a new weblog article from me: It&#x27;s like running from a bear: you don&#x27;t need to be faster than the bear you just need to be faster the the other guy. Who needs superintelligence? The current models of AI are already smarter than between 1/2 and 99% of all Americans right NOW... [with Chris&#x27; Google AI Mode research on the IQ of current AI models pasted as the exhibit: frontier models scoring 120 to 150+ on IQ scales per aiiq.org and TrackingAI, the smartest AI going from 96 IQ to 136 IQ in one year, o3 at 135] [Second exhibit added before publication at Chris&#x27; direction: Global rule 1—you don&#x27;t need to be a genius to be an oligarch—with the wealth-and-IQ estimates and the of-counsel observation.] [Chris, after reading the live piece on November 23: &quot;Missing an image and there&#x27;s no linkings anywhere&quot;—links to the cited trackers and research added in the update.]</blockquote>]]></content:encoded>
 </item>
 <item>
 <dc:creator>Chris Abraham</dc:creator>
