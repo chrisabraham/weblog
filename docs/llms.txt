@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [You Don't Need to Outrun the Bear](https://chrisabraham.net/2026/11/you-dont-need-to-outrun-the-bear.html) (2026-11-23): You don't need to outrun the bear, just the other guy. Frontier AI tests between 120 and 150 on IQ scales, ahead of half to 99 percent of Americans.
 - [AI Roundup: The Ruler Came Out of the Drawer](https://chrisabraham.net/2026/11/ai-roundup-the-ruler-came-out-of-the-drawer.html) (2026-11-23): OpenAI published the perplexity curve it actually uses, AI Mode citations doubled in a week, and a claimed Riemann proof passed Lean.
 - [AI Slop Is Good Enough](https://chrisabraham.net/2026/11/ai-slop-is-good-enough.html) (2026-11-22): Having taste is rare and the money sits at the top of the bell curve. AI slop is clip art's heir: good enough for the people it was made for.
 - [Work Dates](https://chrisabraham.net/2026/11/work-dates.html) (2026-11-22): Clients do not buy hours. They buy the lunch, the evening, and the memory they replay for years. Premium work is a date. Commodity work is a bid.
@@ -193,7 +194,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 93 articles
+- [AI](https://chrisabraham.net/category/ai.html): 94 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 56 articles
@@ -216,7 +217,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 3 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
-- [Essays](https://chrisabraham.net/category/essays.html): 8 articles
+- [Essays](https://chrisabraham.net/category/essays.html): 9 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 16 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 2 articles
