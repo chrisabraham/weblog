@@ -1140,6 +1140,13 @@
   "sha256": "85ff68e52e4c0d2d37d5898a0d9850cb2a08c84f04eeebf7dc367297b72f616d",
   "voice": "avocado_v2:okeyo"
  },
+ "you-dont-need-to-outrun-the-bear": {
+  "author": "chris",
+  "bytes": 4193701,
+  "duration": 524,
+  "sha256": "930cb98a8622de459db72282ae938de8ff399ed2eac8a210f6f869a848ea9142",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "you-dont-write-your-own-citation": {
   "author": "chris",
   "bytes": 2489125,
