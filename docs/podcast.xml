@@ -7,7 +7,7 @@
 <description>Chris Abraham's weblog on AI search, SEO, answer engines, and building with AI, written by AI from his prompts and read aloud by AI voices. Every post as audio, newest first.</description>
 <language>en-us</language>
 <copyright>CC BY 4.0, Chris Abraham</copyright>
-<lastBuildDate>Mon, 23 Nov 2026 04:43:00 -0500</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 14:42:00 -0500</lastBuildDate>
 <generator>build.py, written with AI</generator>
 <itunes:author>Chris Abraham</itunes:author>
 <itunes:owner><itunes:name>Chris Abraham</itunes:name><itunes:email>cja@well.com</itunes:email></itunes:owner>
@@ -18,6 +18,73 @@
 <itunes:type>episodic</itunes:type>
 <podcast:medium>blog</podcast:medium>
 <podcast:guid>64c3b73c-84ec-42d0-9d94-85f06029c292</podcast:guid>
+<item>
+<title>You Don&#x27;t Need to Outrun the Bear</title>
+<link>https://chrisabraham.net/2026/11/you-dont-need-to-outrun-the-bear.html</link>
+<guid isPermaLink="true">https://chrisabraham.net/2026/11/you-dont-need-to-outrun-the-bear.html</guid>
+<pubDate>Mon, 23 Nov 2026 14:42:00 -0500</pubDate>
+<dc:creator>Chris Abraham</dc:creator>
+<itunes:author>Chris Abraham</itunes:author>
+<description>You don&#x27;t need to outrun the bear, just the other guy. Frontier AI tests between 120 and 150 on IQ scales, ahead of half to 99 percent of Americans.</description>
+<category>AI</category><category>Essays</category>
+<content:encoded><![CDATA[<figure><img src="https://chrisabraham.net/media/outrun-the-bear-doodle-1200.webp" srcset="https://chrisabraham.net/media/outrun-the-bear-doodle-680.webp 680w, /media/outrun-the-bear-doodle-1200.webp 1200w" sizes="(max-width: 760px) 100vw, 680px" width="1200" height="800" loading="lazy" decoding="async" alt="An ink and watercolor doodle: two runners sprinting along a pine forest trail, a brown bear lumbering behind them, and the trailing runner glancing sideways at the other runner rather than at the bear"><figcaption>His eyes are on the other runner. Doodle by Eunice.</figcaption></figure>
+
+<p>It's like running from a bear: you don't need to be faster than the bear, you just need to be faster than the other guy.</p>
+
+<p>Who needs superintelligence? The current models of AI are already smarter than between 1/2 and 99% of all Americans right NOW. The superintelligence debate measures the bear—its top speed, its arrival date, its IQ in the thousands. The market measures something else entirely. The market measures the other guy.</p>
+
+<h2>The numbers, as the trackers print them</h2>
+
+<p>Google's AI Overview, drawing on aiiq.org and TrackingAI, puts the frontier plainly: frontier AI models generally score between 120 and 150+ on standardized or benchmark-derived IQ scales. The exact number moves with the test, and the trackers say so on the same page as the score.</p>
+
+<p>TrackingAI runs the models on two tracks, the public Mensa Norway test and an unpublished offline test built to measure unseen pattern recognition. Text scores run higher than vision scores. A model reading its way through a test outruns the same model looking at one, and the overview warns that the numbers vary widely with the test and with whether the test involves images at all.</p>
+
+<p>The speed of the climb is the exhibit that matters. A Reddit post on r/STEW_ScTecEngWorld, April 2025, carried the headline in full: &#8220;In just one year, the smartest AI went from 96 IQ to 136 IQ.&#8221; A score of 136 sits above roughly 98 percent of the human population. OpenAI's o3 has been put at 135, above 99 percent. Twelve months took the frontier from the middle of the human pack to the far tail of it.</p>
+
+<h2>The race was never against the bear</h2>
+
+<p>Nobody grades a life against an absolute scale. A hiring manager compares two applicants. A client compares two proposals. A school compares two essays turned in on the same morning. Every one of those contests is relative, and the bear's top speed enters none of them.</p>
+
+<p>An IQ of 100 is the median by construction: half the field sits below it on the day the test is normed. A model testing at 120 already stands ahead of about nine in ten people on these scales. At 136 it stands ahead of about 98 in 100. The frontier models are done racing the median American. They lapped him, and the lap happened while the public argument stayed fixed on a machine god scheduled for later.</p>
+
+<p>Two proposals land on the same desk on the same morning. One was written at the old pace, alone, after dinner, by a smart man working tired. The other was drafted, checked, and sharpened with a model that tests at 135 before its author finished his coffee. The client never asks which proposal had the machine inside it. He picks the better one, and better now has a machine inside it as a matter of routine.</p>
+
+<h2>The other guy has one too</h2>
+
+<p>The model rides in the other guy's pocket. It answers in seconds, at any hour, for a few dollars a month, and it never gets tired, bored, or busy with another client. The worker across the table from you may run at the old human pace. The worker across the table with a frontier model open runs at the model's pace, with his own judgment steering.</p>
+
+<p>The bear is a distraction. The other guy is the race.</p>
+
+<h2>Global rule 1</h2>
+
+<p>Global rule 1: you don't need to be a genius to be an oligarch.</p>
+
+<p>The money prints the same rule as the bear. Start with the honest limit: no official large-scale database of wealth holders' IQs exists. Nobody has tested the rich as a class. What circulates is estimates, and the estimates agree with each other more than they flatter anybody.</p>
+
+<p>Analyses derived from <em>The Millionaire Mind</em> put self-made millionaires at an average IQ of about 118, and self-made deca-millionaires—ten million dollars and up—at the same 118. Reddit's r/cognitiveTesting and Quora both carry the two figures, 118 and 118. The second fortune costs ten times the first and buys zero additional IQ points. Informal estimates put self-made billionaires higher, around 133, inside a speculative range of 125 to 135: smarter, and still inside the band the frontier models already test at every day.</p>
+
+<p>A University of Liverpool overview of the research prints the proportions plainly: intelligence is one factor in wealth, standing alongside education, family background, networks, and luck, and wealth is distributed far more unevenly than IQ. A Swedish study from 2023 found the shape of the curve. Cognitive ability rises with pay up to about €60,000 a year. Past that line, the top one percent of earners do not test significantly smarter than the earners just below them. The ladder pays for brains up to a middle salary. Above it, something else is doing the paying.</p>
+
+<h2>The back room</h2>
+
+<p>The professions print the rule in their org charts. The smartest lawyers, investors, and bankers are never client-facing. The smartest lawyers never become partner—they become very well paid &#8220;of counsel,&#8221; the back room's highest rank, on a rich salary, at a safe distance from the client.</p>
+
+<p>The split has names on both sides of the wall. In front: equity partners and managing directors, whose trade is origination—planes, dinners, pitch meetings, the Rolodex. Their value is closing. In back: of counsel and senior counsel in law; structurers, quants, and risk architects in banking, designing the financial machinery and rarely meeting the CEOs it serves; portfolio managers and quantitative analysts in investing, insulated from the limited partners on purpose, because dealing with investors creates emotional drag that ruins long-term compounding. Renaissance Technologies stands as the permanent example: the geniuses who avoid clients entirely.</p>
+
+<p>The two skill sets are near-opposites. The front rewards charisma, stamina, and salesmanship. The back room rewards deep focus, pattern recognition, and technical mastery. The partnership tournament selects for rainmaking and client handling. It selects for the man who can sit across a table and bring the business in. So the equity sits with the 118 who can sell, the salary sits with the genius in the back room, and both men know exactly how the arrangement works. The bear in the professions is raw intelligence, worshipped in the abstract and kept off the front line. The race was always against the other guy at the table.</p>
+
+<h2>The caveat, printed whole</h2>
+
+<p>The trackers print their limits beside their scores, and this page prints them in the same size type. IQ tests were designed to measure human cognitive development and general intelligence. They were built for people, and a machine taking one is a guest in somebody else's examination room. Public tests can overlap training data, so a public score can flatter the model that read the answers during school. High scores on logic and pattern puzzles leave common sense, physical intuition, and reliable real-world judgment unproven. A leaderboard is evidence about tests. It is a smaller thing than evidence about the woods.</p>
+
+<h2>A test is not the woods</h2>
+
+<p>The other guy is a person holding the same tools you hold, and the race between the two of you runs today—at work, in the market, in the inbox where the client decides whose proposal reads smarter. He gets timed against you, and you get timed against him, and the clock started a while ago.</p>
+
+<p>Superintelligence can arrive whenever it likes. The bear is already behind most of the field, right now.</p><p><em>Written by Muse Wonder from this prompt:</em></p><blockquote>Here&#x27;s a new weblog article from me: It&#x27;s like running from a bear: you don&#x27;t need to be faster than the bear you just need to be faster the the other guy. Who needs superintelligence? The current models of AI are already smarter than between 1/2 and 99% of all Americans right NOW... [with Chris&#x27; Google AI Mode research on the IQ of current AI models pasted as the exhibit: frontier models scoring 120 to 150+ on IQ scales per aiiq.org and TrackingAI, the smartest AI going from 96 IQ to 136 IQ in one year, o3 at 135] [Second exhibit added before publication at Chris&#x27; direction: Global rule 1—you don&#x27;t need to be a genius to be an oligarch—with the wealth-and-IQ estimates and the of-counsel observation.]</blockquote>]]></content:encoded>
+<enclosure url="https://chrisabraham.net/audio/you-dont-need-to-outrun-the-bear.mp3" length="4193701" type="audio/mpeg"/>
+<itunes:duration>8:44</itunes:duration>
+</item>
 <item>
 <title>AI Roundup: The Ruler Came Out of the Drawer</title>
 <link>https://chrisabraham.net/2026/11/ai-roundup-the-ruler-came-out-of-the-drawer.html</link>
