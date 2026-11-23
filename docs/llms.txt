@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The Ruler Came Out of the Drawer](https://chrisabraham.net/2026/11/ai-roundup-the-ruler-came-out-of-the-drawer.html) (2026-11-23): OpenAI published the perplexity curve it actually uses, AI Mode citations doubled in a week, and a claimed Riemann proof passed Lean.
 - [AI Slop Is Good Enough](https://chrisabraham.net/2026/11/ai-slop-is-good-enough.html) (2026-11-22): Having taste is rare and the money sits at the top of the bell curve. AI slop is clip art's heir: good enough for the people it was made for.
 - [Work Dates](https://chrisabraham.net/2026/11/work-dates.html) (2026-11-22): Clients do not buy hours. They buy the lunch, the evening, and the memory they replay for years. Premium work is a date. Commodity work is a bid.
 - [An Agent That Clocks Out Is Not an Agent](https://chrisabraham.net/2026/11/agent-that-clocks-out.html) (2026-11-22): My second agent did the best work I have ever gotten out of a machine last night, then hit its usage limit and clocked out until 12:50.
@@ -192,10 +193,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 92 articles
+- [AI](https://chrisabraham.net/category/ai.html): 93 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 55 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 56 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
