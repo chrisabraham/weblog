@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="t d">
+<title id="t">The ladder and the door</title>
+<desc id="d">A night doodle: a small figure climbs a tall ladder whose rungs are marked 20, 40, 60 and 80, past a house with one lit window, toward a closed door at the top with warm light around its edges.</desc>
+<rect x="0" y="0" width="1200" height="675" fill="#faf5ea"/>
+<g stroke="#2b2b2b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="128" cy="96" r="52" fill="#f2b950"/>
+<circle cx="158" cy="76" r="46" fill="#faf5ea" stroke="none"/>
+<path d="M420 74v28M406 88h28" stroke="#7d9dbd" stroke-width="4"/>
+<path d="M636 48v24M624 60h24" stroke="#7d9dbd" stroke-width="4"/>
+<path d="M1096 210v24M1084 222h24" stroke="#7d9dbd" stroke-width="4"/>
+<circle cx="520" cy="140" r="5" fill="#7d9dbd" stroke="none"/>
+<circle cx="716" cy="104" r="5" fill="#c96f4a" stroke="none"/>
+<circle cx="330" cy="180" r="5" fill="#7d9dbd" stroke="none"/>
+<path d="M40 642 Q 300 628 560 640 T 1160 636" fill="none"/>
+<path d="M96 640 L96 452 L210 368 L324 452 L324 640" fill="#e8cfc0"/>
+<path d="M78 456 L210 356 L342 456" fill="none"/>
+<path d="M268 408 L268 362 L296 362 L296 424" fill="#d9d3c3"/>
+<rect x="182" y="486" width="58" height="60" fill="#f2b950"/>
+<path d="M182 516h58M211 486v60" fill="none" stroke-width="4"/>
+<path d="M392 640 C 390 622 386 612 378 602 M398 640 C 400 620 404 610 412 600 M386 640 C 384 626 380 618 372 610" fill="none" stroke-width="4"/>
+<circle cx="376" cy="596" r="11" fill="#c96f4a"/>
+<circle cx="414" cy="594" r="11" fill="#7d9dbd"/>
+<circle cx="395" cy="582" r="11" fill="#f2b950"/>
+<path d="M470 638 L905 150 M545 638 L980 150" fill="none" stroke="#8a6844" stroke-width="10"/>
+<path d="M548 550 Q 585 556 623 550 M635 453 Q 672 459 710 453 M722 355 Q 759 361 797 355 M809 258 Q 846 264 884 258" fill="none" stroke="#8a6844" stroke-width="8"/>
+<path d="M856 150 L1064 150" fill="none" stroke-width="8"/>
+<rect x="902" y="22" width="116" height="132" fill="#f2b950" opacity="0.35" stroke="none"/>
+<rect x="914" y="32" width="92" height="118" fill="#a3b18a"/>
+<rect x="928" y="46" width="64" height="90" fill="#87986a"/>
+<circle cx="982" cy="94" r="5" fill="#f2b950"/>
+<g font-family="Verdana, Geneva, sans-serif" font-size="27" font-weight="bold" fill="#2b2b2b" stroke="none">
+<text x="498" y="560">20</text>
+<text x="585" y="463">40</text>
+<text x="672" y="365">60</text>
+<text x="759" y="268">80</text>
+</g>
+<circle cx="762" cy="266" r="17" fill="#f4e1c1"/>
+<path d="M762 283 L762 322 M762 296 L736 314 M762 296 L792 268 M762 322 L748 352 M762 322 L778 352" fill="none" stroke-width="6"/>
+<path d="M846 268 q 66 -26 118 -6 q 10 30 -8 48 q -52 18 -104 -2 q -14 -22 -6 -40 Z" fill="#ffffff"/>
+<circle cx="884" cy="290" r="5" fill="#2b2b2b" stroke="none"/>
+<circle cx="908" cy="290" r="5" fill="#2b2b2b" stroke="none"/>
+<circle cx="932" cy="290" r="5" fill="#2b2b2b" stroke="none"/>
+<path d="M852 306 q -12 16 -26 22" fill="none" stroke-width="4"/>
+</g>
+</svg>
