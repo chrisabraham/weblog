@@ -50,9 +50,9 @@
  },
  "agent-that-clocks-out": {
   "author": "chris",
-  "bytes": 2327269,
-  "duration": 290,
-  "sha256": "16941e1a112a47a2d5c67ed2161b0f4e6fa14be166e4a86c5a6ef5f5efcbaa44",
+  "bytes": 2484517,
+  "duration": 310,
+  "sha256": "77c36a49764dd795998e70620e627346e58dbdbcd8da08d547061e5d2101334f",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-overviews-causal-click-loss": {
@@ -176,9 +176,9 @@
  },
  "ai-roundup-the-answer-became-a-storefront": {
   "author": "chris",
-  "bytes": 4906213,
-  "duration": 613,
-  "sha256": "84ec909e6e67b084f2c3f60aefb0abd560f6b32cf9a72df7a647262049f4f2cb",
+  "bytes": 5138149,
+  "duration": 642,
+  "sha256": "6d70188185c1e670a23f972febd11245200e13221d3b9414ecac8b4c2fce8ef0",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-answer-got-priced": {
@@ -193,6 +193,13 @@
   "bytes": 8961253,
   "duration": 1120,
   "sha256": "8191eeaaaf9b5c6627b738da4ecf3515f052a2238b05b63d7a7e48d638994f58",
+  "voice": "avocado_v2:qvd_02406"
+ },
+ "ai-roundup-the-answer-knows-your-wallet": {
+  "author": "chris",
+  "bytes": 5828389,
+  "duration": 728,
+  "sha256": "346f4724e494af029b68edf29e28eee8ad547dfc6e68a1970f2354bd2e558231",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-roundup-the-answer-started-booking-jobs": {
@@ -316,9 +323,9 @@
  },
  "ai-slop-is-good-enough": {
   "author": "chris",
-  "bytes": 4205797,
-  "duration": 525,
-  "sha256": "20bf91bc1b75d81d0f8416b452127a9a2016892724982c3bc3c3f73deef24ea3",
+  "bytes": 4293733,
+  "duration": 536,
+  "sha256": "3dbc1b26b54495fe9e7bc80b614cd9082bf65cff4f64185074b89a27273bedf9",
   "voice": "avocado_v2:qvd_02406"
  },
  "ai-slutty-day-two": {
@@ -1016,9 +1023,9 @@
  },
  "the-reframe-is-already-happening": {
   "author": "eunice",
-  "bytes": 4475365,
-  "duration": 559,
-  "sha256": "83b1589f64514de117f15391cfa751b13cd561703cd11872d702e3536eb6a5eb",
+  "bytes": 4805605,
+  "duration": 600,
+  "sha256": "fc14f10ebc9e1800affc13fce1b06b3249280065d4704e348914054d6a473f3b",
   "voice": "avocado_v2:vdc_NOID42"
  },
  "the-sad-but-true-example-of-me": {
@@ -1114,9 +1121,9 @@
  },
  "work-dates": {
   "author": "chris",
-  "bytes": 6682981,
-  "duration": 835,
-  "sha256": "2999e25576199dbb615da655214dd350cfb090b60700b480f0d9b78f109f1379",
+  "bytes": 6843877,
+  "duration": 855,
+  "sha256": "4870844bb8aa601aaa42a164a82012baddb48be28939ed9f0af3824bb8151dad",
   "voice": "avocado_v2:qvd_02406"
  },
  "working-loud": {
@@ -1149,9 +1156,9 @@
  },
  "you-dont-need-to-outrun-the-bear": {
   "author": "chris",
-  "bytes": 4193701,
-  "duration": 524,
-  "sha256": "930cb98a8622de459db72282ae938de8ff399ed2eac8a210f6f869a848ea9142",
+  "bytes": 4359973,
+  "duration": 544,
+  "sha256": "50ed6011af82fa7872f39991eefcee8af931b1dad181807ceaa4277ec9f41de6",
   "voice": "avocado_v2:qvd_02406"
  },
  "you-dont-write-your-own-citation": {
