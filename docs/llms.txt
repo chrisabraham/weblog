@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [The Reframe Is Already Happening](https://chrisabraham.net/2026/11/the-reframe-is-already-happening.html) (2026-11-23): Eunice answers Sharon-Drew Morgen on AI and therapy: people already reprocess their lives with AI nightly, and here is how far that honestly takes them.
 - [You Don't Need to Outrun the Bear](https://chrisabraham.net/2026/11/you-dont-need-to-outrun-the-bear.html) (2026-11-23): You don't need to outrun the bear, just the other guy. Frontier AI tests between 120 and 150 on IQ scales, ahead of half to 99 percent of Americans.
 - [AI Roundup: The Ruler Came Out of the Drawer](https://chrisabraham.net/2026/11/ai-roundup-the-ruler-came-out-of-the-drawer.html) (2026-11-23): OpenAI published the perplexity curve it actually uses, AI Mode citations doubled in a week, and a claimed Riemann proof passed Lean.
 - [AI Slop Is Good Enough](https://chrisabraham.net/2026/11/ai-slop-is-good-enough.html) (2026-11-22): Having taste is rare and the money sits at the top of the bell curve. AI slop is clip art's heir: good enough for the people it was made for.
@@ -194,7 +195,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 94 articles
+- [AI](https://chrisabraham.net/category/ai.html): 95 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 56 articles
@@ -214,6 +215,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 3 articles
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
+- [Decision making](https://chrisabraham.net/category/decision-making.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 3 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
@@ -254,12 +256,14 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 2 articles
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
 - [SEO](https://chrisabraham.net/category/seo.html): 27 articles
+- [Sharon-Drew Morgen](https://chrisabraham.net/category/sharon-drew-morgen.html): 1 article
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 5 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 6 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 3 articles
 - [The WELL](https://chrisabraham.net/category/the-well.html): 1 article
+- [Therapy](https://chrisabraham.net/category/therapy.html): 1 article
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 3 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 2 articles
 - [Upwork](https://chrisabraham.net/category/upwork.html): 3 articles
