@@ -251,6 +251,13 @@
   "sha256": "3b3f25d607bdbdc36a3f5757b208192e71f489ea3ca6025842d5861b459d5005",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-king-returns-the-proof-arrives-unchecked": {
+  "author": "chris",
+  "bytes": 5569278,
+  "duration": 694,
+  "sha256": "c8a0ea7740d8c87aaf4b3de3befeffa9318b714c82eaeac773e14ed143f6fa14",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-model-splits-the-training-gets-a-switch": {
   "author": "chris",
   "bytes": 9774565,
