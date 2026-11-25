@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: The King Returns, the Proof Arrives Unchecked](https://chrisabraham.net/2026/11/ai-roundup-the-king-returns-the-proof-arrives-unchecked.html) (2026-11-25): NVIDIA reinstated Huang and bought Hugging Face, Claude claimed a Lean-checked proof, and Google documented how its answers choose links.
 - [AI Roundup: The Answer Knows Your Wallet](https://chrisabraham.net/2026/11/ai-roundup-the-answer-knows-your-wallet.html) (2026-11-24): Google wired Wallet and Drive into AI Mode, Anthropic gave agents merge approval, and CrowdStrike paid $43.9 billion for the network.
 - [The Reframe Is Already Happening](https://chrisabraham.net/2026/11/the-reframe-is-already-happening.html) (2026-11-23): Eunice answers Sharon-Drew Morgen on AI and therapy: people already reprocess their lives with AI nightly, and here is how far that honestly takes them.
 - [You Don't Need to Outrun the Bear](https://chrisabraham.net/2026/11/you-dont-need-to-outrun-the-bear.html) (2026-11-23): You don't need to outrun the bear, just the other guy. Frontier AI tests between 120 and 150 on IQ scales, ahead of half to 99 percent of Americans.
@@ -196,10 +197,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 96 articles
+- [AI](https://chrisabraham.net/category/ai.html): 97 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 57 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 58 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
