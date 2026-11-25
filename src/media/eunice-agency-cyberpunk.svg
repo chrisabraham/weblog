@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="eunice-agency-cyberpunk-t eunice-agency-cyberpunk-d">
+<title id="eunice-agency-cyberpunk-t">A neon eye looks back out of a monitor</title>
+<desc id="eunice-agency-cyberpunk-d">On a dark night grid in neon pink and cyan, an old CRT monitor shows one wide open eye looking straight back at the viewer, with scanlines across it and three small speech bubbles floating up from behind the monitor in different colors.</desc>
+<rect width="1200" height="675" fill="#14121f"/>
+
+<g stroke="#3fd0e0" stroke-width="2" opacity="0.6"><path d="M0 420 h1200"/><path d="M0 450 h1200"/><path d="M0 480 h1200"/><path d="M0 510 h1200"/><path d="M0 540 h1200"/><path d="M0 570 h1200"/><path d="M0 600 h1200"/><path d="M600 400 L-600 675"/><path d="M600 400 L-400 675"/><path d="M600 400 L-200 675"/><path d="M600 400 L0 675"/><path d="M600 400 L200 675"/><path d="M600 400 L400 675"/><path d="M600 400 L600 675"/><path d="M600 400 L800 675"/><path d="M600 400 L1000 675"/><path d="M600 400 L1200 675"/><path d="M600 400 L1400 675"/><path d="M600 400 L1600 675"/><path d="M600 400 L1800 675"/></g>
+<rect x="370" y="90" width="460" height="360" rx="30" fill="#2a2f3a" stroke="#ff4fa3" stroke-width="6"/><rect x="410" y="130" width="380" height="270" rx="16" fill="#0b1a22"/>
+<path d="M440 265 q160 -130 320 0 q-160 130 -320 0 z" fill="#e8f8ff" stroke="#3fd0e0" stroke-width="5"/>
+<circle cx="600" cy="265" r="55" fill="#3fd0e0"/><circle cx="600" cy="265" r="26" fill="#0b1a22"/><circle cx="615" cy="250" r="9" fill="#fff"/>
+<g stroke="#3fd0e0" stroke-width="2" opacity="0.35"><path d="M410 140 h380"/><path d="M410 154 h380"/><path d="M410 168 h380"/><path d="M410 182 h380"/><path d="M410 196 h380"/><path d="M410 210 h380"/><path d="M410 224 h380"/><path d="M410 238 h380"/><path d="M410 252 h380"/><path d="M410 266 h380"/><path d="M410 280 h380"/><path d="M410 294 h380"/><path d="M410 308 h380"/><path d="M410 322 h380"/><path d="M410 336 h380"/><path d="M410 350 h380"/><path d="M410 364 h380"/><path d="M410 378 h380"/><path d="M410 392 h380"/></g>
+<rect x="540" y="450" width="120" height="40" fill="#2a2f3a"/>
+<g stroke-width="4"><rect x="860" y="90" width="120" height="60" rx="20" fill="none" stroke="#ff4fa3"/><rect x="920" y="190" width="150" height="60" rx="20" fill="none" stroke="#f2c14e"/><rect x="880" y="290" width="110" height="60" rx="20" fill="none" stroke="#3fd0e0"/></g>
+</svg>

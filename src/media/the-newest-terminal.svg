@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="the-newest-terminal-t the-newest-terminal-d">
+<title id="the-newest-terminal-t">A row of ThinkPads with a phone joining the end</title>
+<desc id="the-newest-terminal-d">Three black laptops with little red pointing sticks sit in a row, linked by dotted sync lines to one cloud folder above them, and a smartphone stands at the end of the row with its own line to the cloud and a tag reading newest terminal.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<path d="M480 150 q0 -60 70 -60 q30 -40 80 -10 q60 -10 70 50 q50 10 40 50 h-280 q-40 0 -40 -30 q0 -30 60 0" fill="#fff" stroke="#16729e" stroke-width="5"/>
+<path d="M560 115 h80 l15 15 h-95 z M560 130 h95 v40 h-95 z" fill="#f2c14e" stroke="#7a5a00" stroke-width="3"/>
+<g fill="none" stroke="#7a9ab0" stroke-width="4" stroke-dasharray="8 10"><path d="M590 190 L200 420 M600 190 L460 420 M610 190 L720 420 M620 190 L1000 380"/></g>
+<rect x="110" y="430" width="200" height="120" rx="8" fill="#1d2a33"/><rect x="125" y="445" width="170" height="95" fill="#2a3a46"/><path d="M90 560 h240 l-20 30 h-200 z" fill="#2a2a2a"/><circle cx="210" cy="575" r="6" fill="#e03030"/><rect x="370" y="430" width="200" height="120" rx="8" fill="#1d2a33"/><rect x="385" y="445" width="170" height="95" fill="#2a3a46"/><path d="M350 560 h240 l-20 30 h-200 z" fill="#2a2a2a"/><circle cx="470" cy="575" r="6" fill="#e03030"/><rect x="630" y="430" width="200" height="120" rx="8" fill="#1d2a33"/><rect x="645" y="445" width="170" height="95" fill="#2a3a46"/><path d="M610 560 h240 l-20 30 h-200 z" fill="#2a2a2a"/><circle cx="730" cy="575" r="6" fill="#e03030"/>
+<rect x="950" y="380" width="110" height="210" rx="18" fill="#1d2a33"/><rect x="962" y="405" width="86" height="155" rx="6" fill="#bfe0f0"/>
+<rect x="930" y="300" width="190" height="56" rx="8" fill="#fff" stroke="#c75000" stroke-width="4"/><text x="1025" y="336" text-anchor="middle" font-family="Verdana, sans-serif" font-size="20" font-weight="bold" fill="#c75000">newest terminal</text>
+</svg>

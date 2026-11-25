@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="you-dont-write-your-own-citation-t you-dont-write-your-own-citation-d">
+<title id="you-dont-write-your-own-citation-t">A robot hand writes the caption on your citation card</title>
+<desc id="you-dont-write-your-own-citation-d">A citation card carries a small favicon and the words your site at the top, and below it a mechanical robot hand with a pencil writes the summary line in its own handwriting, while a person off to the side holds up their own crossed-out caption.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<rect x="250" y="120" width="560" height="330" rx="18" fill="#fff" stroke="#16729e" stroke-width="6"/>
+<circle cx="310" cy="185" r="26" fill="#c75000"/><text x="350" y="195" text-anchor="start" font-family="Verdana, sans-serif" font-size="30" font-weight="bold" fill="#1d2a33">your site</text>
+<path d="M300 280 q40 -20 80 0 t80 0 t80 0 t80 0 t80 0" fill="none" stroke="#1d2a33" stroke-width="4"/>
+<path d="M300 350 q40 -20 80 0 t80 0 t80 0" fill="none" stroke="#1d2a33" stroke-width="4"/>
+<g transform="rotate(-25 820 440)"><rect x="800" y="330" width="22" height="160" fill="#f2c14e" stroke="#7a5a00" stroke-width="3"/><path d="M800 330 l11 -30 l11 30 z" fill="#1d2a33"/></g>
+<rect x="840" y="400" width="200" height="90" rx="14" fill="#b8c4cc" stroke="#1d2a33" stroke-width="5"/>
+<path d="M1040 445 h140" stroke="#b8c4cc" stroke-width="40"/><g fill="#1d2a33"><circle cx="880" cy="445" r="8"/><circle cx="920" cy="445" r="8"/></g>
+<g fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(160 600) scale(0.8)"><circle cx="0" cy="-150" r="24"/><path d="M0 -126 L0 -60 M0 -60 l-28 60 M0 -60 l28 60 M0.0 -110 l-40 30 M0.0 -110 l40 30"/></g><rect x="40" y="380" width="170" height="70" fill="#fff" stroke="#7a5a00" stroke-width="4" transform="rotate(-8 125 415)"/>
+<path d="M60 420 q60 -20 120 0" stroke="#1d2a33" stroke-width="3" fill="none" transform="rotate(-8 125 415)"/><path d="M50 395 l150 50" stroke="#c75000" stroke-width="6"/>
+</svg>

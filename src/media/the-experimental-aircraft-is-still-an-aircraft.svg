@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="the-experimental-aircraft-is-still-an-aircraft-t the-experimental-aircraft-is-still-an-aircraft-d">
+<title id="the-experimental-aircraft-is-still-an-aircraft-t">A homebuilt airplane with an EXPERIMENTAL placard and a checklist</title>
+<desc id="the-experimental-aircraft-is-still-an-aircraft-d">A small homebuilt propeller airplane sits on a grass strip, its side painted with the word EXPERIMENTAL, while a clipboard checklist leans against the wheel with three boxes ticked: prompt, source, dated note.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<path d="M200 380 q300 -70 620 -30 q40 5 60 35 q-20 25 -60 30 q-320 40 -620 -35 z" fill="#fff" stroke="#16729e" stroke-width="6"/>
+<path d="M480 360 l-60 -150 h70 l90 145" fill="#dfe7ec" stroke="#16729e" stroke-width="6" stroke-linejoin="round"/>
+<path d="M240 370 l-60 -110 h50 l60 100" fill="#dfe7ec" stroke="#16729e" stroke-width="6" stroke-linejoin="round"/>
+<path d="M880 330 v110" stroke="#1d2a33" stroke-width="10" stroke-linecap="round"/>
+<path d="M640 350 q30 -40 70 -10 q20 20 -10 30 z" fill="#bfe0f0" stroke="#16729e" stroke-width="4"/>
+<g stroke="#1d2a33" stroke-width="6"><path d="M560 410 l-20 140 M700 405 l20 145"/></g><circle cx="540" cy="560" r="32" fill="#1d2a33"/><circle cx="720" cy="560" r="32" fill="#1d2a33"/>
+<text x="420" y="410" font-family="Verdana, sans-serif" font-size="30" font-weight="bold" fill="#c75000">EXPERIMENTAL</text>
+<g transform="rotate(8 1000 470)"><rect x="920" y="340" width="170" height="230" rx="8" fill="#c9965a" stroke="#7a5a00" stroke-width="4"/><rect x="935" y="370" width="140" height="185" fill="#fff"/>
+<rect x="948" y="390" width="26" height="26" fill="none" stroke="#1d2a33" stroke-width="3"/><path d="M952 402 l8 10 l16 -20" fill="none" stroke="#2f8a3e" stroke-width="4"/><rect x="948" y="445" width="26" height="26" fill="none" stroke="#1d2a33" stroke-width="3"/><path d="M952 457 l8 10 l16 -20" fill="none" stroke="#2f8a3e" stroke-width="4"/><rect x="948" y="500" width="26" height="26" fill="none" stroke="#1d2a33" stroke-width="3"/><path d="M952 512 l8 10 l16 -20" fill="none" stroke="#2f8a3e" stroke-width="4"/>
+<text x="985" y="410" font-family="Verdana, sans-serif" font-size="17" fill="#1d2a33">prompt</text><text x="985" y="465" font-family="Verdana, sans-serif" font-size="17" fill="#1d2a33">source</text><text x="985" y="520" font-family="Verdana, sans-serif" font-size="17" fill="#1d2a33">dated note</text></g>
+<g stroke="#2f8a3e" stroke-width="4"><path d="M30 600 l6 -16"/><path d="M77 600 l6 -16"/><path d="M124 600 l6 -16"/><path d="M171 600 l6 -16"/><path d="M218 600 l6 -16"/><path d="M265 600 l6 -16"/><path d="M312 600 l6 -16"/><path d="M359 600 l6 -16"/><path d="M406 600 l6 -16"/><path d="M453 600 l6 -16"/><path d="M500 600 l6 -16"/><path d="M547 600 l6 -16"/><path d="M594 600 l6 -16"/><path d="M641 600 l6 -16"/><path d="M688 600 l6 -16"/><path d="M735 600 l6 -16"/><path d="M782 600 l6 -16"/><path d="M829 600 l6 -16"/><path d="M876 600 l6 -16"/><path d="M923 600 l6 -16"/><path d="M970 600 l6 -16"/><path d="M1017 600 l6 -16"/><path d="M1064 600 l6 -16"/><path d="M1111 600 l6 -16"/><path d="M1158 600 l6 -16"/></g>
+</svg>

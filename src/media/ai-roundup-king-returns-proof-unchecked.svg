@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="ai-roundup-king-returns-proof-unchecked-t ai-roundup-king-returns-proof-unchecked-d">
+<title id="ai-roundup-king-returns-proof-unchecked-t">A crown comes back to its chair while a proof waits for a reader</title>
+<desc id="ai-roundup-king-returns-proof-unchecked-d">A gold crown floats back down onto an empty office chair marked CEO, with a curved arrow showing its return. Beside it a long paper scroll ends in Q.E.D. and a stamp that reads checked by Lean, while a magnifying glass hovers over it with a question mark: checked by whom?</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<g fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M200 600 v-60 M300 600 v-60 M170 540 h160 M180 540 v-150 q0 -30 30 -30 h80 q30 0 30 30 v150"/></g>
+<text x="250" y="470" text-anchor="middle" font-family="Verdana, sans-serif" font-size="28" font-weight="bold" fill="#16729e">CEO</text>
+<path d="M190 250 l20 -60 l40 40 l40 -60 l40 60 l40 -40 l20 60 z" fill="#f2c14e" stroke="#7a5a00" stroke-width="5" stroke-linejoin="round" transform="translate(-20 -60)"/>
+<path d="M250 250 v80" fill="none" stroke="#c75000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 12"/><path d="M225 310 l25 30 l25 -30" fill="none" stroke="#c75000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="rotate(-4 760 330)"><rect x="560" y="120" width="380" height="440" rx="10" fill="#fff" stroke="#7a5a00" stroke-width="4"/>
+<g stroke="#7a9ab0" stroke-width="4"><path d="M600 180 h300 M600 220 h260 M600 260 h290 M600 300 h240 M600 340 h280 M600 380 h200"/></g>
+<text x="750" y="450" text-anchor="middle" font-family="Verdana, sans-serif" font-size="40" font-weight="bold" fill="#1d2a33">Q.E.D.</text>
+<rect x="620" y="480" width="260" height="56" rx="8" fill="none" stroke="#2f8a3e" stroke-width="4"/><text x="750" y="517" text-anchor="middle" font-family="Verdana, sans-serif" font-size="24" fill="#2f8a3e">checked by Lean</text></g>
+<g fill="none" stroke="#c75000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><circle cx="1010" cy="230" r="70"/><path d="M1060 280 l70 80"/></g><text x="1010" y="252" text-anchor="middle" font-family="Verdana, sans-serif" font-size="70" font-weight="bold" fill="#c75000">?</text>
+<text x="1010" y="380" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" fill="#c75000">checked by whom?</text>
+</svg>
