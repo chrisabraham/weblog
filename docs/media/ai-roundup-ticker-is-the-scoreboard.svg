@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="ai-roundup-ticker-is-the-scoreboard-t ai-roundup-ticker-is-the-scoreboard-d">
+<title id="ai-roundup-ticker-is-the-scoreboard-t">A stadium scoreboard that shows a stock price</title>
+<desc id="ai-roundup-ticker-is-the-scoreboard-d">A stadium scoreboard on two posts, lit with bulbs, shows HOME: ANT and a price of 83 dollars where the score should be, and a small pennant flies from the top reading IPO.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<g stroke="#7a5a00" stroke-width="10"><path d="M380 600 v-140 M820 600 v-140"/></g>
+<rect x="260" y="100" width="680" height="360" rx="14" fill="#1d2a33" stroke="#16729e" stroke-width="6"/>
+<g fill="#f2c14e"><circle cx="290" cy="125" r="7"/><circle cx="330" cy="125" r="7"/><circle cx="370" cy="125" r="7"/><circle cx="410" cy="125" r="7"/><circle cx="450" cy="125" r="7"/><circle cx="490" cy="125" r="7"/><circle cx="530" cy="125" r="7"/><circle cx="570" cy="125" r="7"/><circle cx="610" cy="125" r="7"/><circle cx="650" cy="125" r="7"/><circle cx="690" cy="125" r="7"/><circle cx="730" cy="125" r="7"/><circle cx="770" cy="125" r="7"/><circle cx="810" cy="125" r="7"/><circle cx="850" cy="125" r="7"/><circle cx="890" cy="125" r="7"/></g>
+<text x="320" y="230" font-family="Verdana, sans-serif" font-size="44" font-weight="bold" fill="#fff">HOME</text><text x="320" y="300" font-family="Verdana, sans-serif" font-size="60" font-weight="bold" fill="#7fe08a">ANT</text>
+<text x="880" y="300" text-anchor="end" font-family="Courier New, monospace" font-size="120" font-weight="bold" fill="#f2c14e">$83</text>
+<text x="600" y="410" text-anchor="middle" font-family="Verdana, sans-serif" font-size="26" fill="#cfe8d2">the ticker is the scoreboard</text>
+<path d="M600 100 v-70" stroke="#7a5a00" stroke-width="5"/><path d="M600 30 l110 22 l-110 22 z" fill="#c75000"/><text x="640" y="58" text-anchor="middle" font-family="Verdana, sans-serif" font-size="18" font-weight="bold" fill="#fff">IPO</text>
+</svg>

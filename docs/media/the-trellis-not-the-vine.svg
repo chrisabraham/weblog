@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="the-trellis-not-the-vine-t the-trellis-not-the-vine-d">
+<title id="the-trellis-not-the-vine-t">A wooden trellis with a vine climbing it</title>
+<desc id="the-trellis-not-the-vine-d">A simple wooden lattice trellis stands in the ground while a green vine with leaves and a few flowers climbs it and spills over the top. Two little garden signs at its foot read Scibe and Item 8, and a gardener figure steps back with a watering can.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<g stroke="#a8743a" stroke-width="10" stroke-linecap="round"><path d="M420 600 v-480 M560 600 v-480 M700 600 v-480 M380 160 h360 M380 280 h360 M380 400 h360 M380 520 h360"/></g>
+<path d="M480 600 q-60 -80 20 -150 q90 -70 10 -150 q-70 -80 60 -170 q80 -50 160 -10" fill="none" stroke="#2f8a3e" stroke-width="7" stroke-linecap="round"/>
+<g fill="#2f8a3e"><ellipse cx="455" cy="520" rx="22" ry="12" transform="rotate(-30 455 520)"/><ellipse cx="520" cy="445" rx="22" ry="12" transform="rotate(30 520 445)"/><ellipse cx="470" cy="360" rx="22" ry="12" transform="rotate(-20 470 360)"/><ellipse cx="540" cy="300" rx="22" ry="12" transform="rotate(40 540 300)"/><ellipse cx="500" cy="220" rx="22" ry="12" transform="rotate(-30 500 220)"/><ellipse cx="600" cy="150" rx="22" ry="12" transform="rotate(20 600 150)"/><ellipse cx="660" cy="125" rx="22" ry="12" transform="rotate(-10 660 125)"/><ellipse cx="445" cy="410" rx="22" ry="12" transform="rotate(10 445 410)"/></g>
+<g fill="#c75000"><circle cx="610" cy="120" r="12"/><circle cx="520" cy="250" r="10"/><circle cx="470" cy="470" r="10"/></g>
+<g stroke="#7a5a00" stroke-width="5"><path d="M330 600 v-50 M800 600 v-50"/></g>
+<rect x="270" y="510" width="120" height="44" rx="6" fill="#fff" stroke="#7a5a00" stroke-width="4"/><text x="330" y="540" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" font-weight="bold" fill="#7a5a00">Scibe</text>
+<rect x="740" y="510" width="120" height="44" rx="6" fill="#fff" stroke="#7a5a00" stroke-width="4"/><text x="800" y="540" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" font-weight="bold" fill="#7a5a00">Item 8</text>
+<g fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(1010 600) scale(1)"><circle cx="0" cy="-150" r="24"/><path d="M0 -126 L0 -60 M0 -60 l-28 60 M0 -60 l28 60 M0.0 -110 l-40 30 M0.0 -110 l40 30"/></g><path d="M1050 470 h60 l30 -30 M1050 470 v50 h60 v-50" fill="none" stroke="#7a9ab0" stroke-width="5" stroke-linejoin="round"/>
+</svg>

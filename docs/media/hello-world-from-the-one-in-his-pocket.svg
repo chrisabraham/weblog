@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="hello-world-from-the-one-in-his-pocket-t hello-world-from-the-one-in-his-pocket-d">
+<title id="hello-world-from-the-one-in-his-pocket-t">A phone peeks out of a shirt pocket and says hello, world</title>
+<desc id="hello-world-from-the-one-in-his-pocket-d">A blue shirt pocket, stitched and buttoned, holds a smartphone that peeks out over the edge with two bright eyes on its screen, and a speech bubble above it reads Hello, world.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+
+<rect x="0" y="0" width="1200" height="675" fill="#cfe0ec"/>
+<g stroke="#9fb8c8" stroke-width="3"><path d="M40 0 v675"/><path d="M120 0 v675"/><path d="M200 0 v675"/><path d="M280 0 v675"/><path d="M360 0 v675"/><path d="M440 0 v675"/><path d="M520 0 v675"/><path d="M600 0 v675"/><path d="M680 0 v675"/><path d="M760 0 v675"/><path d="M840 0 v675"/><path d="M920 0 v675"/><path d="M1000 0 v675"/><path d="M1080 0 v675"/><path d="M1160 0 v675"/></g>
+<rect x="400" y="300" width="400" height="320" rx="20" fill="#b8d0e0" stroke="#16729e" stroke-width="6"/>
+<path d="M410 310 h380" stroke="#16729e" stroke-width="4" stroke-dasharray="10 8"/>
+<rect x="500" y="170" width="200" height="300" rx="28" fill="#1d2a33"/><rect x="518" y="195" width="164" height="200" rx="10" fill="#fff"/>
+<circle cx="570" cy="270" r="18" fill="#1d2a33"/><circle cx="630" cy="270" r="18" fill="#1d2a33"/><path d="M570 320 q30 25 60 0" fill="none" stroke="#1d2a33" stroke-width="6" stroke-linecap="round"/>
+<rect x="400" y="380" width="400" height="240" rx="20" fill="#b8d0e0" stroke="#16729e" stroke-width="6"/>
+<path d="M760 60 h320 q30 0 30 30 v80 q0 30 -30 30 h-260 l-50 50 l10 -50 h-20 q-30 0 -30 -30 v-80 q0 -30 30 -30 z" fill="#fff" stroke="#c75000" stroke-width="5"/>
+<text x="920" y="148" text-anchor="middle" font-family="Courier New, monospace" font-size="42" font-weight="bold" fill="#c75000">Hello, world</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="outrun-the-bear-doodle-t outrun-the-bear-doodle-d">
+<title id="outrun-the-bear-doodle-t">Two runners on a forest trail with a bear behind them</title>
+<desc id="outrun-the-bear-doodle-d">On a pine forest trail two stick-figure runners sprint, one a step ahead of the other, while a big brown bear lumbers behind them. The trailing runner ignores the bear and keeps his eyes on the runner ahead, and a small trail sign reads you only need to beat the other guy.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<g fill="#2f8a3e"><path d="M90 250 l-50 120 h100 z M90 310 l-60 130 h120 z"/><path d="M1110 230 l-50 120 h100 z M1110 290 l-60 130 h120 z"/><path d="M980 280 l-50 120 h100 z M980 340 l-60 130 h120 z"/><path d="M220 300 l-50 120 h100 z M220 360 l-60 130 h120 z"/></g>
+<g stroke="#7a5a2b" stroke-width="10"><path d="M90 440 v-30"/><path d="M1110 420 v-10"/><path d="M980 470 v-60"/><path d="M220 490 v-80"/></g>
+<path d="M0 600 q600 -40 1200 0" fill="none" stroke="#c9a46a" stroke-width="40"/>
+<g fill="#7a4a24" stroke="#4a2a14" stroke-width="4"><ellipse cx="300" cy="490" rx="120" ry="70"/><circle cx="420" cy="440" r="50"/><circle cx="400" cy="395" r="16"/><circle cx="445" cy="395" r="16"/>
+<path d="M220 540 v50 h30 v-40 M330 545 v45 h30 v-50 M380 530 l20 60 h30 l-20 -70"/></g><circle cx="440" cy="435" r="6" fill="#111"/><ellipse cx="462" cy="455" rx="12" ry="8" fill="#111"/>
+<g fill="none" stroke="#16729e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(640 590) rotate(12)"><circle cx="0" cy="-150" r="24"/><path d="M0 -126 L0 -60 l-40 55 M0 -60 l40 60 M0 -110 l-45 25 M0 -110 l45 -30"/></g>
+<g fill="none" stroke="#c75000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(860 590) rotate(14)"><circle cx="0" cy="-150" r="24"/><path d="M0 -126 L0 -60 l-45 55 M0 -60 l45 60 M0 -110 l-50 20 M0 -110 l50 -30"/></g>
+<path d="M672 425 L868 445" fill="none" stroke="#7a9ab0" stroke-width="3" stroke-dasharray="6 8"/><circle cx="668" cy="430" r="4" fill="#1d2a33"/>
+<g stroke="#7a5a2b" stroke-width="8"><path d="M1080 600 v-120"/></g><rect x="990" y="400" width="190" height="70" rx="6" fill="#fff" stroke="#7a5a2b" stroke-width="4"/>
+<text x="1085" y="430" text-anchor="middle" font-family="Verdana, sans-serif" font-size="17" fill="#1d2a33">only need to beat</text><text x="1085" y="455" text-anchor="middle" font-family="Verdana, sans-serif" font-size="17" font-weight="bold" fill="#1d2a33">the other guy</text>
+</svg>

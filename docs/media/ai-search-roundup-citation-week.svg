@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="ai-search-roundup-citation-week-t ai-search-roundup-citation-week-d">
+<title id="ai-search-roundup-citation-week-t">A web page climbs onto a podium inside an AI answer</title>
+<desc id="ai-search-roundup-citation-week-d">A page icon wearing a blue ribbon stands on the top step of a podium labeled cited, inside a big chat answer frame, while a desk calendar on the side reads Week 1 and an arrow shows the citation moving up.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<rect x="120" y="70" width="760" height="500" rx="24" fill="#fff" stroke="#16729e" stroke-width="6"/>
+<g stroke="#7a9ab0" stroke-width="6"><path d="M170 130 h500 M170 170 h420 M170 210 h460"/></g>
+<rect x="360" y="400" width="200" height="140" fill="#16729e"/><rect x="200" y="460" width="160" height="80" fill="#7a9ab0"/><rect x="560" y="490" width="160" height="50" fill="#7a9ab0"/>
+<text x="460" y="480" text-anchor="middle" font-family="Verdana, sans-serif" font-size="30" font-weight="bold" fill="#fff">cited</text>
+<path d="M410 400 v-130 h70 l30 30 v100 z" fill="#fff" stroke="#1d2a33" stroke-width="5"/><g stroke="#7a9ab0" stroke-width="4"><path d="M425 310 h50 M425 335 h60 M425 360 h55"/></g>
+<circle cx="480" cy="270" r="26" fill="#16729e"/><path d="M468 290 l-10 40 l22 -14 l22 14 l-10 -40" fill="#16729e"/>
+<path d="M760 420 v-170 m-40 40 l40 -40 l40 40" fill="none" stroke="#c75000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="940" y="200" width="200" height="200" rx="12" fill="#fff" stroke="#7a5a00" stroke-width="5"/><rect x="940" y="200" width="200" height="50" fill="#c75000"/><text x="1040" y="340" text-anchor="middle" font-family="Verdana, sans-serif" font-size="36" font-weight="bold" fill="#7a5a00">Week 1</text>
+</svg>

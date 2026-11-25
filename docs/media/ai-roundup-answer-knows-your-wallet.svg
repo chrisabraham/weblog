@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="ai-roundup-answer-knows-your-wallet-t ai-roundup-answer-knows-your-wallet-d">
+<title id="ai-roundup-answer-knows-your-wallet-t">An AI answer bubble peeks into a wallet</title>
+<desc id="ai-roundup-answer-knows-your-wallet-d">A big chat answer bubble with two curious eyes leans over an open leather wallet holding a card and receipts. A folder labeled Drive sits nearby, already open, and a small sign reads AI Mode: now with your stuff.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<path d="M300 110 h420 q40 0 40 40 v170 q0 40 -40 40 h-260 l-70 60 l10 -60 h-100 q-40 0 -40 -40 v-170 q0 -40 40 -40 z" fill="#fff" stroke="#16729e" stroke-width="6"/>
+<circle cx="440" cy="230" r="34" fill="#fff" stroke="#1d2a33" stroke-width="5"/><circle cx="452" cy="244" r="14" fill="#1d2a33"/>
+<circle cx="580" cy="230" r="34" fill="#fff" stroke="#1d2a33" stroke-width="5"/><circle cx="592" cy="244" r="14" fill="#1d2a33"/>
+<path d="M300 600 v-130 q0 -20 20 -20 h300 q20 0 20 20 v130 z" fill="#8a5a2b" stroke="#7a5a00" stroke-width="5"/>
+<rect x="340" y="420" width="170" height="100" rx="10" fill="#16729e" transform="rotate(-8 425 470)"/>
+<path d="M520 440 v-70 h60 v80" fill="#fff" stroke="#7a9ab0" stroke-width="4"/>
+<path d="M820 600 v-170 h80 l30 30 h170 v140 z" fill="#f2c14e" stroke="#7a5a00" stroke-width="5"/><text x="960" y="540" text-anchor="middle" font-family="Verdana, sans-serif" font-size="30" font-weight="bold" fill="#7a5a00">Drive</text>
+<path d="M820 430 l60 -60 h230 l-10 60" fill="#fbe3a0" stroke="#7a5a00" stroke-width="5"/>
+<text x="960" y="180" text-anchor="middle" font-family="Verdana, sans-serif" font-size="26" font-weight="bold" fill="#c75000">AI Mode:</text><text x="960" y="215" text-anchor="middle" font-family="Verdana, sans-serif" font-size="24" fill="#c75000">now with your stuff</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="the-art-of-the-handoff-t the-art-of-the-handoff-d">
+<title id="the-art-of-the-handoff-t">A relay baton passes between two hands with a note taped on</title>
+<desc id="the-art-of-the-handoff-d">Two hands meet mid-stride as one passes a relay baton to the other. A yellow sticky note taped to the baton reads read the log first, and a trail of small dated pages flutters behind the runner who is handing off.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<path d="M120 380 q150 -40 330 0" fill="none" stroke="#16729e" stroke-width="40" stroke-linecap="round"/>
+<path d="M1080 380 q-150 -40 -330 0" fill="none" stroke="#c75000" stroke-width="40" stroke-linecap="round"/>
+<ellipse cx="480" cy="385" rx="50" ry="40" fill="#e8c29a" stroke="#7a5a00" stroke-width="4"/><ellipse cx="720" cy="385" rx="50" ry="40" fill="#c9965a" stroke="#7a5a00" stroke-width="4"/>
+<rect x="470" y="365" width="260" height="40" rx="20" fill="#d0d6da" stroke="#1d2a33" stroke-width="5"/>
+<rect x="540" y="230" width="150" height="110" fill="#fbe3a0" stroke="#7a5a00" stroke-width="3" transform="rotate(-6 615 285)"/>
+<text x="615" y="275" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" fill="#1d2a33" transform="rotate(-6 615 285)">read the</text><text x="615" y="308" text-anchor="middle" font-family="Verdana, sans-serif" font-size="22" font-weight="bold" fill="#1d2a33" transform="rotate(-6 615 285)">log first</text>
+<g fill="#fff" stroke="#7a9ab0" stroke-width="3"><rect x="80" y="150" width="50" height="64" transform="rotate(-15 105 182)"/><rect x="180" y="110" width="50" height="64" transform="rotate(10 205 142)"/><rect x="280" y="170" width="50" height="64" transform="rotate(-5 305 202)"/><rect x="140" y="500" width="50" height="64" transform="rotate(12 165 532)"/><rect x="260" y="470" width="50" height="64" transform="rotate(-10 285 502)"/></g>
+</svg>

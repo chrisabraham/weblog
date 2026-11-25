@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="keeping-the-night-watch-t keeping-the-night-watch-d">
+<title id="keeping-the-night-watch-t">A lantern burns in a watchtower at four in the morning</title>
+<desc id="keeping-the-night-watch-d">Under a crescent moon and stars, a small wooden watchtower holds a glowing lantern, a clock face beside it reads four o clock, and below a little house sleeps with its windows dark and three Zs drifting from the chimney.</desc>
+<rect width="1200" height="675" fill="#1d2a40"/>
+<path d="M0 600 h1200" stroke="#7a9ab0" stroke-width="3"/>
+<g fill="#fff"><circle cx="100" cy="80" r="3"/><circle cx="240" cy="140" r="3"/><circle cx="380" cy="60" r="3"/><circle cx="520" cy="120" r="3"/><circle cx="700" cy="70" r="3"/><circle cx="860" cy="150" r="3"/><circle cx="1100" cy="90" r="3"/><circle cx="980" cy="40" r="3"/><circle cx="160" cy="250" r="3"/><circle cx="640" cy="200" r="3"/></g>
+<path d="M1000 90 a50 50 0 1 0 40 90 a42 42 0 1 1 -40 -90 z" fill="#f2c14e"/>
+<g stroke="#c9965a" stroke-width="10" stroke-linecap="round"><path d="M260 600 l40 -360 M440 600 l-40 -360 M280 420 h140 M270 510 h160"/></g>
+<rect x="250" y="200" width="200" height="40" fill="#8a5a2b"/><path d="M240 200 l110 -80 l110 80 z" fill="#5c3a1c"/>
+<circle cx="350" cy="175" r="40" fill="#f2c14e" opacity="0.4"/><rect x="335" y="155" width="30" height="40" rx="6" fill="#f2c14e" stroke="#7a5a00" stroke-width="3"/>
+<circle cx="580" cy="260" r="60" fill="#fff" stroke="#7a5a00" stroke-width="5"/><path d="M580 260 v-40 M580 260 l-34 20" stroke="#1d2a33" stroke-width="6" stroke-linecap="round"/><text x="580" y="350" text-anchor="middle" font-family="Verdana, sans-serif" font-size="26" font-weight="bold" fill="#fff">4 AM</text>
+<path d="M780 600 v-130 l120 -90 l120 90 v130 z" fill="#3a4a5c" stroke="#9ab" stroke-width="4"/><rect x="820" y="500" width="40" height="40" fill="#1d2a33"/><rect x="940" y="500" width="40" height="40" fill="#1d2a33"/>
+<text x="990" y="360" text-anchor="middle" font-family="Verdana, sans-serif" font-size="30" fill="#cfe8d2">z</text><text x="1020" y="320" text-anchor="middle" font-family="Verdana, sans-serif" font-size="36" fill="#cfe8d2">z</text><text x="1055" y="275" text-anchor="middle" font-family="Verdana, sans-serif" font-size="44" fill="#cfe8d2">z</text>
+</svg>
