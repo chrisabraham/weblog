@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+  <title>Dinner first, in the rain</title>
+  <desc>An origami unicorn standing as the centerpiece on a table set for two, under falling rain, with a small neon sign glowing behind it.</desc>
+  <rect width="480" height="360" fill="#ffffff"/>
+  <!-- rain -->
+  <g stroke="#2f6fe0" stroke-width="3" stroke-linecap="round" opacity="0.55">
+    <path d="M40 18 L28 52"/><path d="M96 10 L84 44"/><path d="M150 22 L138 56"/>
+    <path d="M330 14 L318 48"/><path d="M388 24 L376 58"/><path d="M442 12 L430 46"/>
+    <path d="M66 74 L54 108"/><path d="M414 80 L402 114"/>
+  </g>
+  <!-- neon sign -->
+  <rect x="330" y="52" width="104" height="58" rx="8" fill="none" stroke="#e03a2f" stroke-width="4" opacity="0.8"/>
+  <path d="M348 96 L366 70 L384 96 L402 70 L416 88" fill="none" stroke="#e03a2f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <!-- table -->
+  <path d="M56 262 H424" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+  <path d="M92 262 L84 330 M388 262 L396 330" stroke="#222" stroke-width="5" stroke-linecap="round"/>
+  <!-- plates -->
+  <ellipse cx="140" cy="252" rx="52" ry="12" fill="none" stroke="#222" stroke-width="4"/>
+  <ellipse cx="340" cy="252" rx="52" ry="12" fill="none" stroke="#222" stroke-width="4"/>
+  <!-- chopsticks resting on the plates -->
+  <path d="M104 236 L168 246 M108 228 L170 240" stroke="#2fae4e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M310 240 L376 230 M308 248 L374 240" stroke="#2fae4e" stroke-width="4" stroke-linecap="round"/>
+  <!-- origami unicorn centerpiece -->
+  <g fill="none" stroke="#222" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M240 250 L214 208 L232 190 L252 204 L286 196 L272 224 L282 250"/>
+    <path d="M252 204 L240 250"/>
+    <path d="M232 190 L224 168 L240 184"/>
+    <path d="M224 168 L218 146" stroke="#e03a2f"/>
+    <path d="M286 196 L306 182 L296 208"/>
+    <path d="M222 250 L218 264 M274 250 L280 264"/>
+  </g>
+  <!-- two small glasses -->
+  <path d="M196 262 L192 232 H212 L208 262 M212 240 H210" fill="none" stroke="#2f6fe0" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M272 262 L268 232 H288 L284 262" fill="none" stroke="#2f6fe0" stroke-width="3.5" stroke-linecap="round"/>
+</svg>
