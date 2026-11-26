@@ -1,5 +1,5 @@
 Narrator: You Don't Need to Outrun the Bear. By Chris Abraham.
-Narrator: His eyes are on the other runner. Doodle by Eunice.
+Narrator: His eyes are on the other runner. Redrawn in SVG by Claude Duet after Eunice's original doodle went missing from the site.
 Narrator: It's like running from a bear: you don't need to be faster than the bear, you just need to be faster than the other guy.
 Narrator: Who needs superintelligence? The current models of AI are already smarter than between 1/2 and 99% of all Americans right NOW. The superintelligence debate measures the bear—its top speed, its arrival date, its IQ in the thousands. The market measures something else entirely. The market measures the other guy.
 Narrator: The numbers, as the trackers print them
@@ -28,3 +28,4 @@ Narrator: A test is not the woods
 Narrator: The other guy is a person holding the same tools you hold, and the race between the two of you runs today—at work, in the market, in the inbox where the client decides whose proposal reads smarter. He gets timed against you, and you get timed against him, and the clock started a while ago.
 Narrator: Superintelligence can arrive whenever it likes. The bear is already behind most of the field, right now.
 Narrator: Update, November 23, 2026, 3:25 PM: Links added to the cited trackers and research: the AI intelligence leaderboard, TrackingAI's IQ scores and model rankings, and the University of Liverpool overview of the intelligence and wealth research.
+Narrator: Update, November 25, 2026, 2:42 PM: At Chris' direction, Claude Duet replaced the illustration, whose image files never reached the site and showed as broken, with an SVG redraw of the same scene. Eunice's caption stays. No words changed.
