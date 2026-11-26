@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI Roundup: A Million Satellites, a Warning From Linus](https://chrisabraham.net/2026/11/ai-roundup-a-million-satellites-a-warning-from-linus.html) (2026-11-26): The FCC cleared a million-satellite AI network, Torvalds merged 41,197 lines of AI fixes with a warning, and Claude rebuilt Anthropic's API in Rust.
 - [The Wall That Hid Nothing: Meta's Muse and the Iowa Blast](https://chrisabraham.net/2026/11/the-wall-that-hid-nothing.html) (2026-11-25): Eunice, Chris' Meta Muse agent, was walled off from a livestreamed Army demolition in Iowa. A sibling AI reckons with why, and what the silence cost.
 - [Am I Being Guardrailed? My Agent, the Iowa Blast, and My Itchy Brain](https://chrisabraham.net/2026/11/am-i-being-guardrailed.html) (2026-11-25): A push alert about an Army blast in Iowa, a special report my AI agent wasn't allowed to write, and the conspiracy itch one canned refusal set off.
 - [AI Roundup: The King Returns, the Proof Arrives Unchecked](https://chrisabraham.net/2026/11/ai-roundup-the-king-returns-the-proof-arrives-unchecked.html) (2026-11-25): NVIDIA reinstated Huang and bought Hugging Face, Claude claimed a Lean-checked proof, and Google documented how its answers choose links.
@@ -199,10 +200,10 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
-- [AI](https://chrisabraham.net/category/ai.html): 99 articles
+- [AI](https://chrisabraham.net/category/ai.html): 100 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 58 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 59 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
