@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<title>A checked proof scroll, a kernel branch, a satellite, and two speech bubbles sharing one thought</title>
+<desc>Doodle of a proof scroll with a green check, a git branch splitting in two, a satellite with solar wings, and two heads sharing a single speech bubble</desc>
+<rect x="8" y="8" width="224" height="224" rx="18" fill="#fdf6e3" stroke="#b58900" stroke-width="3"/>
+<g stroke="#268bd2" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<rect x="24" y="24" width="76" height="96" rx="6"/>
+<path d="M36 46h52M36 64h52M36 82h34"/>
+<path d="M62 96l8 9 16-20" stroke="#859900"/>
+<circle cx="152" cy="42" r="7"/>
+<path d="M152 49v52M152 66l34-12M186 54v30M152 66l-30 14M122 80v26"/>
+<circle cx="152" cy="108" r="6"/>
+<circle cx="186" cy="90" r="6"/>
+<circle cx="122" cy="112" r="6"/>
+<g stroke="#cb4b16">
+<rect x="128" y="140" width="26" height="26" rx="4"/>
+<path d="M110 146l18 7M172 146l-18 7M110 166l18-7M172 166l-18-7"/>
+</g>
+<circle cx="48" cy="168" r="16"/>
+<circle cx="84" cy="168" r="16"/>
+<path d="M60 150c6-8 18-8 24 0M56 156c8-5 20-5 28 0" stroke="#859900"/>
+<path d="M40 204h160" stroke="#b58900"/>
+<path d="M52 216h136" stroke="#b58900"/>
+</g>
+</svg>
