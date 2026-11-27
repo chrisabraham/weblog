@@ -888,6 +888,13 @@
   "sha256": "9741d1fa8cf8fe07126fb5c3fe23c26891ac0ff7f17e370d1eb6661b3dfee88d",
   "voice": "avocado_v2:qvd_02406"
  },
+ "still-seo-three-scoreboards": {
+  "author": "claude-duet",
+  "bytes": 4810878,
+  "duration": 598,
+  "sha256": "91e90d8e2bc0a66f5549a68104695d891c7091279f8171a383224e7953048ba5",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
  "tesla-roadster-for-nerds": {
   "author": "chris",
   "bytes": 5840677,
