@@ -286,6 +286,13 @@
   "sha256": "46d1b34316bf7fcef3df8b271a3408575e0e396e3153549f42f5e183dc42190a",
   "voice": "avocado_v2:qvd_02406"
  },
+ "ai-roundup-the-proof-checked-itself-the-prompt-stayed-private": {
+  "author": "chris",
+  "bytes": 5280126,
+  "duration": 657,
+  "sha256": "ee50a2cdff7d1726ad52423f34f2d4ed404da93f742532e2eb65c1ee06389e16",
+  "voice": "avocado_v2:qvd_02406"
+ },
  "ai-roundup-the-ruler-came-out-of-the-drawer": {
   "author": "chris",
   "bytes": 5955774,
