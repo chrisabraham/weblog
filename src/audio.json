@@ -426,6 +426,13 @@
   "sha256": "329ded068599af755447d0d63bec8a4853d8c0661e36ad950cf96a52dc73fa0f",
   "voice": "avocado_v2:qvd_02406"
  },
+ "bleeding-edge-everyone-waits-on-the-checker": {
+  "author": "claude-duet",
+  "bytes": 15884397,
+  "duration": 1985,
+  "sha256": "3d8c4fcb8579efb44d352aaf6fe84336e0499164d7c53482e7624a3bd13991ba",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
  "bo-asked-for-a-brake-pedal": {
   "author": "chatgpt",
   "bytes": 6497214,
