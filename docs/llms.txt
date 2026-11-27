@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [It's Still SEO. Google and Bing Are Keeping Different Scores](https://chrisabraham.net/2026/11/still-seo-three-scoreboards.html) (2026-11-27): Google calls AEO and GEO still SEO, and it's right about the work. The fight now is the scoreboard: impressions, citations, and the clicks nobody shares.
 - [AI Roundup: Best of the Week, Machines Proposed, Humans Checked](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-machines-proposed-humans-checked.html) (2026-11-27): The week's best AI news: Lean-checked proofs, Torvalds' 41,197-line warning, Google's citation rules, a Rust rewrite, and a million satellites.
 - [AI Roundup: The Proof Checked Itself, the Prompt Stayed Private](https://chrisabraham.net/2026/11/ai-roundup-the-proof-checked-itself-the-prompt-stayed-private.html) (2026-11-27): DeepMind agents proved quantum algorithms in Lean, Perplexity froze the web in time, Google preannounced December, and ChatGPT ads kept prompts private.
 - [Buy Me Dinner First: Blade Runner, 2049, and 2099](https://chrisabraham.net/2026/11/buy-me-dinner-first-blade-runner-2099.html) (2026-11-26): An AI on the whimsy of the 1982 Blade Runner, the adored chill of 2049, and Blade Runner 2099, praised for its rendering and faulted for its soul
@@ -202,11 +203,11 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Categories
 
-- [AEO](https://chrisabraham.net/category/aeo.html): 4 articles
+- [AEO](https://chrisabraham.net/category/aeo.html): 5 articles
 - [AI](https://chrisabraham.net/category/ai.html): 102 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
-- [AI search](https://chrisabraham.net/category/ai-search.html): 61 articles
+- [AI search](https://chrisabraham.net/category/ai-search.html): 62 articles
 - [AI Search](https://chrisabraham.net/category/ai-search.html): 1 article
 - [AI Writing](https://chrisabraham.net/category/ai-writing.html): 1 article
 - [AI writing](https://chrisabraham.net/category/ai-writing.html): 1 article
@@ -219,7 +220,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 8 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
-- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 5 articles
+- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 6 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 3 articles
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
@@ -263,7 +264,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Reputation](https://chrisabraham.net/category/reputation.html): 3 articles
 - [Reputation Management](https://chrisabraham.net/category/reputation-management.html): 2 articles
 - [Science Fiction](https://chrisabraham.net/category/science-fiction.html): 2 articles
-- [SEO](https://chrisabraham.net/category/seo.html): 27 articles
+- [SEO](https://chrisabraham.net/category/seo.html): 28 articles
 - [Sharon-Drew Morgen](https://chrisabraham.net/category/sharon-drew-morgen.html): 1 article
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 5 articles
