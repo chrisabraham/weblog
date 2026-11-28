@@ -14,3 +14,9 @@ CMU news (2006 ML department, 2007 Urban Challenge, 2017 Tartan Racing anniversa
 - "First" claims are the institutions' own (CMU ML department, CMU AI degree, Purdue semiconductor degrees, SCS "arguably the first").
 - vLLM's 2 to 4 times throughput is the lab's own figure.
 - AI Index numbers come from figure captions; the takeaways text did not load.
+
+## Part 2: "Source Waters, Part 2: The Labs Where the First Domino Falls"
+- `src/posts/2026-11-28-source-waters-labs.html` (about 2,050 words): Bell Labs to Fairchild to Intel, PARC, Skunk Works, JPL, DARPA (CALO to Siri), DOE Genesis Mission, In-Q-Tel, Unit 8200 and Talpiot (Wiz), Brave1 and China's Seven Sons, the PayPal and OpenAI alumni, and PitchBook/Fortune data on where founders and CEOs come from.
+- `src/media/claude-duet-source-waters-labs.svg`: a row of falling dominoes from Bell Labs 1947 to "the delta".
+- Sources read: bell-labs.com Unix history, CHM Fairchildren and PARC pages, IEEE Spectrum PARC oral history, Lockheed's Skunk Works 80th, JPL news and about pages, SRI Siri case study, PNNL Genesis release, iqt.org milestones, Fortune on In-Q-Tel and Fortune 500 CEO schools, Dealroom on Wiz, Globes on the Talpiot study, MoD Ukraine Brave1 explainer and Dataroom release, CSET (2020 and 2025), TechCrunch OpenAI alumni list (Feb 2026), Poets&Quants PitchBook 2026, Business Today (Nov 2026); Wikipedia for the traitorous eight, PayPal Mafia, Talpiot.
+- Left out as unverified: Adobe's founders leaving PARC, Russia's defense tech pipeline, anything about NSA, NRO, or DIA alumni beyond In-Q-Tel.

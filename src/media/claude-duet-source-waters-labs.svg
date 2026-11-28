@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="sw2-t sw2-d">
+<title id="sw2-t">Source Waters, part two: the first domino</title>
+<desc id="sw2-d">A hand-drawn row of dominoes falling from left to right across the page. The first, smallest domino is labeled Bell Labs 1947, then Shockley, Fairchild 1957, Intel 1968, and a long blur of later dominoes labeled PARC, Skunk Works, JPL, DARPA, 8200 and OpenAI, ending at a giant domino labeled the delta. The Claude Duet phone in its orange sash stands at the far left with one finger on the first domino, and a sign above reads find the first domino.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<path d="M30 520 h1140" stroke="#7a9ab0" stroke-width="5" stroke-linecap="round"/>
+<g stroke="#1d2a33" stroke-width="5" stroke-linejoin="round" fill="#fff">
+<rect x="150" y="440" width="34" height="80" rx="4" transform="rotate(28 184 520)"/>
+<rect x="230" y="410" width="40" height="110" rx="4" transform="rotate(24 270 520)"/>
+<rect x="320" y="380" width="46" height="140" rx="5" transform="rotate(18 366 520)"/>
+<rect x="420" y="350" width="52" height="170" rx="5" transform="rotate(10 472 520)"/>
+<rect x="530" y="330" width="56" height="190" rx="5" transform="rotate(4 586 520)"/>
+<rect x="630" y="310" width="58" height="210" rx="5"/>
+<rect x="720" y="300" width="58" height="220" rx="5"/>
+<rect x="810" y="290" width="58" height="230" rx="5"/>
+<rect x="900" y="280" width="58" height="240" rx="5"/>
+<rect x="990" y="190" width="150" height="330" rx="8" fill="#1d2a33"/>
+</g>
+<g fill="#1d2a33"><circle cx="167" cy="470" r="4"/><circle cx="252" cy="450" r="4"/><circle cx="345" cy="430" r="4"/><circle cx="447" cy="410" r="4"/></g>
+<g font-family="Courier New, monospace" font-weight="bold" fill="#16729e" text-anchor="middle">
+<text x="150" y="560" font-size="17">BELL LABS</text>
+<text x="150" y="580" font-size="15">1947</text>
+<text x="262" y="560" font-size="16">SHOCKLEY</text>
+<text x="360" y="560" font-size="16">FAIRCHILD</text>
+<text x="360" y="580" font-size="15">1957</text>
+<text x="470" y="560" font-size="16">INTEL</text>
+<text x="470" y="580" font-size="15">1968</text>
+</g>
+<g font-family="Courier New, monospace" font-size="15" font-weight="bold" fill="#c75000" text-anchor="middle">
+<text x="587" y="430" transform="rotate(-86 587 430)">PARC</text>
+<text x="659" y="415" transform="rotate(-90 659 415)">SKUNK WORKS</text>
+<text x="749" y="415" transform="rotate(-90 749 415)">JPL</text>
+<text x="839" y="415" transform="rotate(-90 839 415)">DARPA</text>
+<text x="929" y="415" transform="rotate(-90 929 415)">8200 · OPENAI</text>
+</g>
+<text x="1065" y="370" font-family="Georgia, serif" font-size="28" font-style="italic" fill="#ffd84a" text-anchor="middle">the</text>
+<text x="1065" y="405" font-family="Georgia, serif" font-size="28" font-style="italic" fill="#ffd84a" text-anchor="middle">delta</text>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<rect x="70" y="420" width="44" height="96" rx="11" fill="#fff" stroke="#1d2a33" stroke-width="5"/>
+<path d="M74 426 l36 42" stroke="#c75000" stroke-width="10"/>
+<circle cx="84" cy="450" r="3" fill="#1d2a33"/><circle cx="98" cy="450" r="3" fill="#1d2a33"/>
+<path d="M84 466 q7 6 14 0" stroke="#1d2a33" stroke-width="3"/>
+<path d="M114 470 q20 -6 34 -4" stroke="#1d2a33" stroke-width="5"/>
+<path d="M80 516 l-6 20 M104 516 l6 20" stroke="#1d2a33" stroke-width="5"/>
+</g>
+<g>
+<rect x="40" y="250" width="290" height="70" rx="8" fill="#ffd84a" stroke="#1d2a33" stroke-width="4"/>
+<text x="185" y="295" font-family="Georgia, serif" font-size="27" font-style="italic" fill="#1d2a33" text-anchor="middle">find the first domino</text>
+<path d="M120 320 v100" stroke="#1d2a33" stroke-width="4"/>
+</g>
+<path d="M200 140 q60 -60 140 -30 M300 100 l42 8 l-20 30" fill="none" stroke="#7a9ab0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="360" y="120" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#7a9ab0">a tap, then eighty years</text>
+<text x="40" y="650" font-family="Verdana, sans-serif" font-size="20" fill="#16729e">Arlington, Saturday, November 28, 2026</text>
+</svg>
