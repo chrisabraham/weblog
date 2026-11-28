@@ -33,3 +33,17 @@ CMU news (2006 ML department, 2007 Urban Challenge, 2017 Tartan Racing anniversa
 - `src/media/claude-duet-source-waters-rooms.svg`: garage, diner booth, hacker house.
 - Sources read: Trending Topics on Cherry Ventures (Oct 2026), Fast Company on Outcast (Mar 2026), PR Newswire for the Maryland study (Nov 2021), NVIDIA blog (Sep 2023), NPR on Buck's (2010), YC deal page and three YC blog posts (2021), SPC home and fall 2026 fellowship pages, SF Standard and Fortune on Cerebral Valley (Jan 2023); Wikipedia for Homebrew, YC, EF, Idealab, Flagship, Fab lab, Noisebridge.
 - Caveat in the post: Buck's founding stories are the owner's own claims.
+
+## Part 5: "Source Waters, Part 5: The High Schools and Families Upstream"
+- `src/posts/2026-11-28-source-waters-families.html` (about 1,600 words): Saint Louis School as Chris' farm-system analogy, the lack of any founder-by-high-school dataset (SignalFire unicorn report tracks colleges only), Chetty's "Who Becomes an Inventor" exposure findings and lost Einsteins, TJ (#6 US News 2026–27) and Baton Rouge Magnet/Scott and Neal Wu, Lakeside's 1968 Mothers' Club terminal, tech nepo babies with respect (Page, Bezos parents, Mary Gates, Collisons, Amodeis), and Chris' own story (Pacific Rim Productions VP card at 13, Nikkormat at 8, Abraham and Dunn, Pop-Pop, GW 1988–1993).
+- `src/media/claude-duet-source-waters-families.svg`: family tree over a spring, kitchen table with camera and terminal.
+- Sources read: Hawaii News Now (Nov 2025), Wikipedia for Saint Louis School, Scott Wu, Cognition, Larry Page, Mary Maxwell Gates (citing NYT), Patrick Collison, Daniela Amodei; SignalFire (Feb 2026); NBER w24062 and Brookings slides; Opportunity Insights; Northern Virginia Magazine and WTOP (Aug 2026); Lakeside Tatler; Fortune (Jul 2018).
+- Chris OK'd the Pop-Pop and GW material ("why not"). His harsher remark about his parents is left out on purpose, and his 17:29Z follow-up is paraphrased only (took the gift for granted, felt he'd earned it), not in the prompt field.
+- Caveats in the post: no public founder-by-high-school data exists; Chris' NoVA and Silicon Valley guess is supported by the exposure research but not confirmed by name. Mary Gates and IBM is "by some accounts."
+
+## Cross-links
+- All five parts now link to each other; Parts 1–4 carry `updated:`, an appended prompt note, and an Update disclosure line. Part 5 closes with links to Parts 1–4 and the dark-horses post.
+
+## For Eunice
+- Social and narration for all five Source Waters posts are yours (the build left Part 5 unnarrated).
+- Heads-up, not from this work: `tools/verify_housekeeping.py` fails "Newest article appears in feeds, XML sitemap and llms.txt" on clean main too. The sentinel (`hello-from-the-one-who-texts-first`) has likely aged out of the 30-item feeds again and needs rotating.
