@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<title>The server under the desk, and the microphone on the window glass</title>
+<rect x="0" y="0" width="1200" height="675" fill="#f7f3e8"/>
+<!-- panel divider -->
+<line x1="600" y1="30" x2="600" y2="645" stroke="#b9ac8d" stroke-width="3" stroke-dasharray="10 10"/>
+<g fill="none" stroke="#2b2b2b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- LEFT PANEL: the desk and the box -->
+  <!-- cloud with the domain name -->
+  <path d="M120 118 a38 30 0 0 1 30-52 a46 36 0 0 1 84-14 a38 30 0 0 1 56 34 a34 28 0 0 1-16 32 z" fill="#ffffff"/>
+  <text x="205" y="105" font-family="Verdana, sans-serif" font-size="30" fill="#1d3d8f" stroke="none" text-anchor="middle">memes.org</text>
+  <!-- dotted resolution line down to the box -->
+  <line x1="255" y1="125" x2="330" y2="430" stroke="#c75000" stroke-width="3" stroke-dasharray="4 10"/>
+  <text x="330" y="300" font-family="Verdana, sans-serif" font-size="22" fill="#c75000" stroke="none" transform="rotate(72 330 300)">dynamic DNS</text>
+  <!-- desk top -->
+  <line x1="90" y1="330" x2="560" y2="330"/>
+  <line x1="120" y1="330" x2="120" y2="600"/>
+  <line x1="530" y1="330" x2="530" y2="600"/>
+  <line x1="80" y1="600" x2="570" y2="600" stroke="#8a7f63"/>
+  <!-- monitor -->
+  <rect x="215" y="215" width="220" height="115" fill="#ffffff"/>
+  <text x="325" y="265" font-family="Verdana, sans-serif" font-size="25" fill="#1d3d8f" stroke="none" text-anchor="middle">memes.org</text>
+  <text x="325" y="300" font-family="Verdana, sans-serif" font-size="17" fill="#474d58" stroke="none" text-anchor="middle">a shrine, then a room</text>
+  <line x1="325" y1="330" x2="325" y2="330"/>
+  <!-- keyboard -->
+  <rect x="245" y="345" width="160" height="22" rx="6"/>
+  <!-- the Linux box under the desk -->
+  <rect x="285" y="430" width="110" height="160" fill="#e9e2cf"/>
+  <circle cx="340" cy="480" r="26"/>
+  <circle cx="340" cy="480" r="4" fill="#2b2b2b"/>
+  <path d="M340 454 v52 M314 480 h52 M322 462 l36 36 M358 462 l-36 36" stroke-width="3"/>
+  <circle cx="318" cy="560" r="6" fill="#c75000" stroke="none"/>
+  <circle cx="345" cy="560" r="6" fill="#7a9a3d" stroke="none"/>
+  <circle cx="372" cy="560" r="6" fill="#c75000" stroke="none"/>
+  <text x="340" y="625" font-family="Verdana, sans-serif" font-size="20" fill="#474d58" stroke="none" text-anchor="middle">the server, under the desk</text>
+  <!-- cable from monitor down to box -->
+  <path d="M400 330 q40 60 10 100" stroke-width="3"/>
+  <!-- RIGHT PANEL: the window and the car -->
+  <!-- house wall and window -->
+  <rect x="760" y="90" width="300" height="240" fill="#ffffff"/>
+  <line x1="910" y1="90" x2="910" y2="330"/>
+  <line x1="760" y1="210" x2="1060" y2="210"/>
+  <path d="M735 90 l175-55 175 55" stroke-width="5"/>
+  <!-- moon -->
+  <path d="M1115 70 a26 26 0 1 0 18 44 a20 20 0 1 1-18-44z" fill="#e8c85a" stroke="#b9ac8d" stroke-width="3"/>
+  <!-- microphone on the glass -->
+  <circle cx="985" cy="270" r="17" fill="#c75000"/>
+  <circle cx="985" cy="270" r="6" fill="#7a2410" stroke="none"/>
+  <path d="M985 287 q-6 90 -70 150 q-40 38 -60 78" stroke="#c75000" stroke-width="3"/>
+  <text x="1010" y="255" font-family="Verdana, sans-serif" font-size="19" fill="#c75000" stroke="none">mic on the glass</text>
+  <!-- the plain sedan -->
+  <path d="M700 560 q10-45 60-52 l30-38 q10-14 34-14 l120 0 q24 0 38 16 l26 36 q48 8 52 52 z" fill="#dfe5f1"/>
+  <line x1="700" y1="560" x2="1060" y2="560"/>
+  <rect x="800" y="472" width="70" height="36"/>
+  <rect x="884" y="472" width="70" height="36"/>
+  <!-- detective silhouette -->
+  <circle cx="835" cy="492" r="10" fill="#2b2b2b" stroke="none"/>
+  <path d="M818 472 q17-12 34 0" stroke-width="4"/>
+  <!-- shotgun microphone aimed at the window -->
+  <line x1="852" y1="480" x2="950" y2="330" stroke="#2b2b2b" stroke-width="4"/>
+  <rect x="938" y="300" width="16" height="44" rx="7" transform="rotate(32 946 322)" fill="#2b2b2b" stroke="none"/>
+  <!-- wheels -->
+  <circle cx="770" cy="562" r="24" fill="#ffffff"/>
+  <circle cx="770" cy="562" r="9"/>
+  <circle cx="990" cy="562" r="24" fill="#ffffff"/>
+  <circle cx="990" cy="562" r="9"/>
+  <line x1="660" y1="600" x2="1100" y2="600" stroke="#8a7f63"/>
+  <text x="880" y="640" font-family="Verdana, sans-serif" font-size="20" fill="#474d58" stroke="none" text-anchor="middle">the detective, in the car</text>
+</g>
+</svg>
