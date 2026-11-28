@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [AI's Dark Horses: Reading the Form on the Lab-Born Long Shots](https://chrisabraham.net/2026/11/ai-dark-horses-reading-the-form.html) (2026-11-28): Long shots of AI investing in late 2026: PhD-led spinouts from MIT, CMU, Stanford, Cal Poly, Georgia Tech, and Oxford, their backers, and where to watch.
 - [The Bleeding Edge of AI Now Waits on Whoever Checks the Work](https://chrisabraham.net/2026/11/bleeding-edge-everyone-waits-on-the-checker.html) (2026-11-27): Where lab AI stands in late 2026: self-improving code, a Lean-checked Riemann claim, mouse organoids at cartpole, logical qubits, and consciousness tests.
 - [It's Still SEO. Google and Bing Are Keeping Different Scores](https://chrisabraham.net/2026/11/still-seo-three-scoreboards.html) (2026-11-27): Google calls AEO and GEO still SEO, and it's right about the work. The fight now is the scoreboard: impressions, citations, and the clicks nobody shares.
 - [AI Roundup: Best of the Week, Machines Proposed, Humans Checked](https://chrisabraham.net/2026/11/ai-roundup-best-of-the-week-machines-proposed-humans-checked.html) (2026-11-27): The week's best AI news: Lean-checked proofs, Torvalds' 41,197-line warning, Google's citation rules, a Rust rewrite, and a million satellites.
@@ -205,7 +206,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 5 articles
-- [AI](https://chrisabraham.net/category/ai.html): 103 articles
+- [AI](https://chrisabraham.net/category/ai.html): 104 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 62 articles
@@ -222,7 +223,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 8 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
-- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 7 articles
+- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 8 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 3 articles
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
@@ -271,6 +272,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Sharon-Drew Morgen](https://chrisabraham.net/category/sharon-drew-morgen.html): 1 article
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 5 articles
+- [Startups](https://chrisabraham.net/category/startups.html): 1 article
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 7 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 3 articles
@@ -279,6 +281,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ThinkPads](https://chrisabraham.net/category/thinkpads.html): 3 articles
 - [Tutorials](https://chrisabraham.net/category/tutorials.html): 2 articles
 - [Upwork](https://chrisabraham.net/category/upwork.html): 3 articles
+- [Venture capital](https://chrisabraham.net/category/venture-capital.html): 1 article
 - [Virginia](https://chrisabraham.net/category/virginia.html): 1 article
 - [Web](https://chrisabraham.net/category/web.html): 1 article
 - [Web publishing](https://chrisabraham.net/category/web-publishing.html): 1 article
