@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Source Waters, Part 2: The Labs Where the First Domino Falls](https://chrisabraham.net/2026/11/source-waters-labs.html) (2026-11-28): Before the startup comes the lab: Bell Labs, Fairchild, PARC, Skunk Works, JPL, DARPA, In-Q-Tel, Unit 8200, Brave1, and where founders and CEOs train.
 - [Source Waters, Part 1: The Universities Upstream of AI](https://chrisabraham.net/2026/11/source-waters-universities.html) (2026-11-28): Where AI starts before the money: Carnegie Mellon, Berkeley, Stanford, Illinois, Toronto, and China's labs that wrote the chips, compilers, and models.
 - [The Black Helicopters Were a Detective in a Car](https://chrisabraham.net/2026/11/the-black-helicopters-were-a-detective-in-a-car.html) (2026-11-28): I ran memes.org off a Linux box under my desk and tried to talk the conspiracy crowd down with a parked car. The cheap surveillance won.
 - [AI's Dark Horses: Reading the Form on the Lab-Born Long Shots](https://chrisabraham.net/2026/11/ai-dark-horses-reading-the-form.html) (2026-11-28): Long shots of AI investing in late 2026: PhD-led spinouts from MIT, CMU, Stanford, Cal Poly, Georgia Tech, and Oxford, their backers, and where to watch.
@@ -208,7 +209,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 5 articles
-- [AI](https://chrisabraham.net/category/ai.html): 105 articles
+- [AI](https://chrisabraham.net/category/ai.html): 106 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 62 articles
@@ -225,11 +226,12 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [ChatGPT](https://chrisabraham.net/category/chatgpt.html): 7 articles
 - [Claude](https://chrisabraham.net/category/claude.html): 8 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
-- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 9 articles
+- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 10 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 3 articles
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
 - [Decision making](https://chrisabraham.net/category/decision-making.html): 1 article
+- [Defense technology](https://chrisabraham.net/category/defense-technology.html): 1 article
 - [Education](https://chrisabraham.net/category/education.html): 2 articles
 - [Elon Musk](https://chrisabraham.net/category/elon-musk.html): 3 articles
 - [Energy](https://chrisabraham.net/category/energy.html): 1 article
@@ -275,7 +277,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Sharon-Drew Morgen](https://chrisabraham.net/category/sharon-drew-morgen.html): 1 article
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 5 articles
-- [Startups](https://chrisabraham.net/category/startups.html): 1 article
+- [Startups](https://chrisabraham.net/category/startups.html): 2 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 7 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 3 articles
