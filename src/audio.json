@@ -895,6 +895,13 @@
   "sha256": "29972da981a3321510db53726929de51f334e5c647bc87a947932f8a3fdca438",
   "voice": "avocado_v2:qvd_02406"
  },
+ "source-waters-universities": {
+  "author": "claude-duet",
+  "bytes": 8659710,
+  "duration": 1080,
+  "sha256": "49410fb98e5dd27b38f728514184611ce22e3155638f52cf26ee589002c9ac00",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
  "state-of-blackbox-october": {
   "author": "chris",
   "bytes": 2784037,
