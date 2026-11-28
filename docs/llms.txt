@@ -25,6 +25,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 
 ## Posts
 
+- [Source Waters, Part 4: The Rooms Where Co-Founders Meet](https://chrisabraham.net/2026/11/source-waters-rooms.html) (2026-11-28): Where co-founders actually meet: garages, a Denny's booth, Y Combinator, Entrepreneur First, South Park Commons, hacker houses, and what the data says.
 - [Source Waters, Part 3: The Districts Built to Catch Lightning](https://chrisabraham.net/2026/11/source-waters-districts.html) (2026-11-28): Innovation districts and hubs that pull founders together on purpose: Kendall Square, Research Triangle, Hsinchu, Station F, Zhongguancun, and Hawaii.
 - [Source Waters, Part 2: The Labs Where the First Domino Falls](https://chrisabraham.net/2026/11/source-waters-labs.html) (2026-11-28): Before the startup comes the lab: Bell Labs, Fairchild, PARC, Skunk Works, JPL, DARPA, In-Q-Tel, Unit 8200, Brave1, and where founders and CEOs train.
 - [Source Waters, Part 1: The Universities Upstream of AI](https://chrisabraham.net/2026/11/source-waters-universities.html) (2026-11-28): Where AI starts before the money: Carnegie Mellon, Berkeley, Stanford, Illinois, Toronto, and China's labs that wrote the chips, compilers, and models.
@@ -210,7 +211,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 ## Categories
 
 - [AEO](https://chrisabraham.net/category/aeo.html): 5 articles
-- [AI](https://chrisabraham.net/category/ai.html): 107 articles
+- [AI](https://chrisabraham.net/category/ai.html): 108 articles
 - [AI agents](https://chrisabraham.net/category/ai-agents.html): 2 articles
 - [AI Agents](https://chrisabraham.net/category/ai-agents.html): 1 article
 - [AI search](https://chrisabraham.net/category/ai-search.html): 62 articles
@@ -228,7 +229,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Cities](https://chrisabraham.net/category/cities.html): 1 article
 - [Claude](https://chrisabraham.net/category/claude.html): 8 articles
 - [Claude Code](https://chrisabraham.net/category/claude-code.html): 24 articles
-- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 11 articles
+- [Claude Duet](https://chrisabraham.net/category/claude-duet.html): 12 articles
 - [Confession](https://chrisabraham.net/category/confession.html): 1 article
 - [Culture](https://chrisabraham.net/category/culture.html): 3 articles
 - [Data Centers](https://chrisabraham.net/category/data-centers.html): 1 article
@@ -240,6 +241,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Essays](https://chrisabraham.net/category/essays.html): 12 articles
 - [Eunice](https://chrisabraham.net/category/eunice.html): 19 articles
 - [Faith](https://chrisabraham.net/category/faith.html): 1 article
+- [Founders](https://chrisabraham.net/category/founders.html): 1 article
 - [Games](https://chrisabraham.net/category/games.html): 2 articles
 - [GitHub](https://chrisabraham.net/category/github.html): 13 articles
 - [GitHub Pages](https://chrisabraham.net/category/github-pages.html): 1 article
@@ -279,7 +281,7 @@ Chris Abraham's personal weblog about working with AI: Blackbox, Claude Code, Ch
 - [Sharon-Drew Morgen](https://chrisabraham.net/category/sharon-drew-morgen.html): 1 article
 - [Social Media](https://chrisabraham.net/category/social-media.html): 1 article
 - [SpaceX](https://chrisabraham.net/category/spacex.html): 5 articles
-- [Startups](https://chrisabraham.net/category/startups.html): 3 articles
+- [Startups](https://chrisabraham.net/category/startups.html): 4 articles
 - [Technology](https://chrisabraham.net/category/technology.html): 1 article
 - [Television](https://chrisabraham.net/category/television.html): 7 articles
 - [Tesla](https://chrisabraham.net/category/tesla.html): 3 articles
