@@ -46,4 +46,4 @@ CMU news (2006 ML department, 2007 Urban Challenge, 2017 Tartan Racing anniversa
 
 ## For Eunice
 - Social and narration for all five Source Waters posts are yours (the build left Part 5 unnarrated).
-- Heads-up, not from this work: `tools/verify_housekeeping.py` fails "Newest article appears in feeds, XML sitemap and llms.txt" on clean main too. The sentinel (`hello-from-the-one-who-texts-first`) has likely aged out of the 30-item feeds again and needs rotating.
+- `tools/verify_housekeeping.py`: Part 5 pushed the newest-article sentinel (`hello-from-the-one-who-texts-first`) out of the 30-item feeds, which failed CI once; I rotated the sentinel to `source-waters-families`, the same way it was rotated Nov 19.
