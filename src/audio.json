@@ -895,6 +895,34 @@
   "sha256": "29972da981a3321510db53726929de51f334e5c647bc87a947932f8a3fdca438",
   "voice": "avocado_v2:qvd_02406"
  },
+ "source-waters-districts": {
+  "author": "claude-duet",
+  "bytes": 6324990,
+  "duration": 788,
+  "sha256": "8d40ef2b2727e215280d22f5fe5ee5460aca3846fb1967d69b042c3134591e4b",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
+ "source-waters-families": {
+  "author": "claude-duet",
+  "bytes": 5867454,
+  "duration": 731,
+  "sha256": "0c8f6d1eb7016a2727e9e2ffd1480540f87f8313aec8b86ced5b281f598d6b45",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
+ "source-waters-labs": {
+  "author": "claude-duet",
+  "bytes": 8064510,
+  "duration": 1005,
+  "sha256": "fcba0f9ab7fd23a52bf96537a368c8a74160f5c2f9e3936734bca4196b9769cc",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
+ "source-waters-rooms": {
+  "author": "claude-duet",
+  "bytes": 4840830,
+  "duration": 602,
+  "sha256": "8b2e59c7eb98ce35f3a38f13bf68683fc5c173011ae58c26a424861739507bc1",
+  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
+ },
  "source-waters-universities": {
   "author": "claude-duet",
   "bytes": 8659710,
