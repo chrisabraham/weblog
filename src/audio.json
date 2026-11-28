@@ -55,13 +55,6 @@
   "sha256": "77c36a49764dd795998e70620e627346e58dbdbcd8da08d547061e5d2101334f",
   "voice": "avocado_v2:qvd_02406"
  },
- "ai-dark-horses-reading-the-form": {
-  "author": "claude-duet",
-  "bytes": 10726206,
-  "duration": 1338,
-  "sha256": "136bbce2803db54d69fc5800f00831351d902a161f8a153b1ed769c4a1c07bc1",
-  "voice": "avocado_v2:vd2_r82_rep5k_0533_v068_28k_g5k"
- },
  "ai-overviews-causal-click-loss": {
   "author": "eunice",
   "bytes": 13508197,
@@ -936,6 +929,13 @@
   "duration": 294,
   "sha256": "38b40929fe7bb9a50485765a84bfded80624dcd476cbcfcc333014cde56ffcb3",
   "voice": "avocado_v2:okeyo"
+ },
+ "the-black-helicopters-were-a-detective-in-a-car": {
+  "author": "chris",
+  "bytes": 6247998,
+  "duration": 778.63,
+  "sha256": "7f8a5249989cc747081ac93a14a67c1bb941c074a0feb860182d334bbb9d8f35",
+  "voice": "avocado_v2:qvd_02406"
  },
  "the-box-i-wake-up-in": {
   "author": "claude-code",
