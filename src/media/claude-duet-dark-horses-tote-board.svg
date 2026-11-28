@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-labelledby="dh-t dh-d">
+<title id="dh-t">AI's dark horses at the starting gate</title>
+<desc id="dh-d">A hand-drawn racetrack. A tote board posts the odds: favorite 1 to 5, mid-price 20 to 1, long shot 300 to 1. Three stick horses wearing graduation mortarboards gallop toward a finish line that turns into a rocket on a launchpad. In the grandstand the Claude Duet phone, wearing its orange sash, watches through binoculars.</desc>
+<rect width="1200" height="675" fill="#fdf8ee"/>
+<rect x="40" y="30" width="400" height="190" rx="10" fill="#1d2a33"/>
+<g font-family="Courier New, monospace" font-size="26" font-weight="bold" fill="#ffd84a">
+<text x="64" y="80">FAVORITE ..... 1-5</text>
+<text x="64" y="130">MID-PRICE .. 20-1</text>
+<text x="64" y="180" fill="#ff8a3d">LONG SHOT . 300-1</text>
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 300 q600 -40 1200 0" stroke="#7a9ab0" stroke-width="5"/>
+<path d="M0 560 q600 -40 1200 0" stroke="#7a9ab0" stroke-width="5"/>
+<path d="M60 300 v-18 M180 294 v-18 M300 289 v-18 M420 286 v-18 M540 285 v-18 M660 285 v-18 M780 286 v-18 M900 289 v-18" stroke="#7a9ab0" stroke-width="4"/>
+<path d="M960 290 v262" stroke="#c75000" stroke-width="6" stroke-dasharray="14 10"/>
+</g>
+<g fill="none" stroke="#1d2a33" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(250 380)"><ellipse cx="0" cy="0" rx="70" ry="28" fill="#fff"/><path d="M60 -12 l40 -46 l30 10 l-14 22 l-26 -6 M-50 18 l-22 60 M-20 24 l-10 58 M30 24 l20 56 M55 14 l34 50 M-68 -6 q-30 -10 -40 22"/><path d="M90 -78 l36 10 l-14 10 l-34 -10 z M108 -66 l-4 14" fill="#1d2a33"/><rect x="-26" y="-22" width="52" height="34" fill="#e8f3fa" stroke="#16729e" stroke-width="3"/></g>
+<g transform="translate(560 430)"><ellipse cx="0" cy="0" rx="70" ry="28" fill="#fff"/><path d="M60 -12 l40 -46 l30 10 l-14 22 l-26 -6 M-50 18 l-30 54 M-20 24 l2 58 M30 24 l12 60 M55 14 l40 44 M-68 -6 q-34 0 -44 30"/><path d="M90 -78 l36 10 l-14 10 l-34 -10 z M108 -66 l-4 14" fill="#1d2a33"/><rect x="-26" y="-22" width="52" height="34" fill="#dff3e2" stroke="#3c8a4a" stroke-width="3"/></g>
+<g transform="translate(840 360) scale(0.85)"><ellipse cx="0" cy="0" rx="70" ry="28" fill="#fff"/><path d="M60 -12 l40 -46 l30 10 l-14 22 l-26 -6 M-50 18 l-20 62 M-20 24 l-16 56 M30 24 l26 54 M55 14 l30 56 M-68 -6 q-28 -20 -46 6"/><path d="M90 -78 l36 10 l-14 10 l-34 -10 z M108 -66 l-4 14" fill="#1d2a33"/><rect x="-30" y="-22" width="60" height="34" fill="#fbe3ea" stroke="#b0476a" stroke-width="3"/></g>
+</g>
+<g font-family="Verdana, sans-serif" font-weight="bold" text-anchor="middle">
+<text x="250" y="386" font-size="20" fill="#16729e">1-5</text>
+<text x="560" y="436" font-size="18" fill="#2a6a36">20-1</text>
+<text x="840" y="365" font-size="16" fill="#8a2f50">300-1</text>
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1040 520 h130 l-20 30 h-90 z" fill="#d9d2c3" stroke="#1d2a33" stroke-width="4"/>
+<path d="M1105 300 q22 30 22 90 v110 h-44 v-110 q0 -60 22 -90 z" fill="#fff" stroke="#1d2a33" stroke-width="5"/>
+<circle cx="1105" cy="390" r="12" fill="#e8f3fa" stroke="#16729e" stroke-width="4"/>
+<path d="M1083 470 l-22 34 h22 M1127 470 l22 34 h-22" fill="#c75000" stroke="#1d2a33" stroke-width="4"/>
+<path d="M1095 502 q10 26 20 0" fill="#ffd84a" stroke="#ff8a3d" stroke-width="4"/>
+</g>
+<text x="1105" y="285" font-family="Courier New, monospace" font-size="18" font-weight="bold" fill="#c75000" text-anchor="middle">LAUNCHPAD</text>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M560 70 v130 q0 22 22 22 h80 q22 0 22 -22 v-130 q0 -22 -22 -22 h-80 q-22 0 -22 22 z" fill="#fff" stroke="#1d2a33" stroke-width="6"/>
+<path d="M574 62 l96 104" stroke="#c75000" stroke-width="16"/>
+<path d="M592 104 h24 v22 h-24 z M628 104 h24 v22 h-24 z M616 112 h12" fill="#7a9ab0" stroke="#1d2a33" stroke-width="4"/>
+<path d="M600 168 q22 12 44 0" stroke="#1d2a33" stroke-width="4"/>
+</g>
+<text x="760" y="110" font-family="Georgia, serif" font-size="26" font-style="italic" fill="#1d2a33">reading the form</text>
+<text x="760" y="146" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#7a9ab0">for entertainment only</text>
+<text x="40" y="650" font-family="Verdana, sans-serif" font-size="20" fill="#16729e">Arlington, Saturday, November 28, 2026</text>
+</svg>
